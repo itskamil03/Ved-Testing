@@ -1,0 +1,307 @@
+/* <--------------------------------------------- Life At Ved First ------------------------------------------> */
+#lifeatvedfirst {
+  padding: 50px 0px;
+}
+#lifeatvedfirst .lifeatvedfirst-section-head {
+  margin-bottom: 50px;
+}
+#lifeatvedfirst .lifeatvedfirst-section-head .lifeatvedfirst-head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+.lifeatvedfirst-section-head .lifeatvedfirst-head-slogan {
+  padding-left: 20px;
+  border-left: 2px solid #27286d;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.lifeatvedfirst-media-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 0 0 0 20px;
+}
+.lifeatvedfirst-media-card1 {
+  /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5); */
+  width: 100%;
+}
+.lifeatvedfirst-media-card1:nth-child(2n) {
+  transform: translate(0, 50px);
+}
+.lifeatvedfirst-media-card1-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.lifeatvedfirst-media-card1-heading {
+  font-size: 2rem;
+  color: #27286d;
+  text-align: center;
+}
+.lifeatvedfirst-media-card1-slogan {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.lifeatvedfirst-section-content .lifeatvedfirst-content-head {
+  font-size: 2.3rem;
+  font-weight: lighter;
+  margin-bottom: 7px;
+  color: #27286d;
+  position: relative;
+  display: inline-block;
+}
+.lifeatvedfirst-section-content .lifeatvedfirst-content-head::after {
+  content: "";
+  background-color: rgb(144, 149, 8);
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: -55px;
+}
+.lifeatvedfirst-section-content .lifeatvedfirst-content-data {
+  color: #4e4e4e;
+  text-align: justify;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+.lifeatvedfirst-points {
+  display: flex;
+  /* align-items: center; */
+  gap: 0.5rem;
+  margin: 2rem 0rem;
+}
+.lifeatvedfirst-points-items {
+  font-size: 1.5rem;
+}
+.lifeatvedfirst-points-text {
+  font-size: 1.5rem;
+  color: #4e4e4e;
+}
+/* <----------------------------------------------- Life At Ved Second -------------------------------------------> */
+
+#lifeatvedsecond {
+  padding: 50px 0px 0px 0px;
+  background-image: url("/top.svg");
+  object-fit: cover;
+}
+.lifeatvedsecond-section-head {
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+.lifeatvedsecond-section-head .lifeatvedsecond-head-heading {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin: 0px 0 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+}
+
+.lifeatvedsecond-section-head .lifeatvedsecond-head-title {
+  font-size: 3.5rem;
+  line-height: 1.25;
+  margin: 0px 0 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+}
+.lifeatvedsecond-section-head .lifeatvedsecond-head-title::after {
+  background-color: #ed8b00;
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 20px auto 0;
+  width: 70px;
+}
+.lifeatvedsecond-section-head .lifeatvedsecond-head-slogan {
+  font-size: 1.8rem;
+  line-height: 2;
+}
+.lifeatvedsecond-main-box {
+  padding: 1rem;
+  background-color: white;
+}
+.lifeatvedsecond-left-box-title {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 2.3rem;
+  margin-top: 5px;
+  font-family: "Exo", sans-serif;
+}
+.lifeatvedsecond-left-box-heading {
+  padding-bottom: 1rem;
+  font-size: 3.5rem;
+  line-height: 1em;
+  color: #27286d;
+  font-family: "Exo", sans-serif;
+}
+.lifeatvedsecond-left-box-slogan {
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+  margin-top: 5px;
+  font-family: "Exo", sans-serif;
+}
+.lifeatvedsecond-left-box-btn {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  font-family: "Exo", sans-serif;
+}
+
+.lifeatvedsecond-right-imgbox {
+  height: calc(29rem - 1rem);
+  background-color: red;
+}
+/* <----------------------------------------------- Life At Ved Third ------------------------------------------------> */
+
+#lifeatvedthird {
+  padding: 50px 0px 0px 0px;
+  background-color: whitesmoke;
+}
+.lifeatvedthird-section-head {
+  margin: 0 auto 50px auto;
+  text-align: start;
+}
+.lifeatvedthird-section-head .lifeatvedthird-head-title {
+  font-size: 3.5rem;
+  line-height: 1.25;
+  margin: 0px 0 20px;
+  font-weight: bold;
+  text-align: start;
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+}
+.lifeatvedthird-section-head .lifeatvedthird-head-title::after {
+  background-color: #ed8b00;
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 20px auto 0;
+  width: 70px;
+}
+/* .lifeatvedthird-section-head .lifeatvedthird-head-slogan {
+  font-size: 1.8rem;
+  line-height: 2;
+} */
+
+.lifeatvedthird-section-body-img {
+  height: 30rem;
+}
+/* <--------------------------------------------- Life At Ved Fourth --------------------------------------> */
+#lifeatvedfourth {
+  padding: 60px 0px 60px 0px;
+  background-image: url("/top.svg");
+  object-fit: cover;
+}
+.lifeatvedfourth-main-box {
+  padding: 2.5rem;
+  text-align: center;
+}
+.lifeatvedfourth-box-heading {
+  font-size: 4rem;
+  line-height: 1em;
+  color: #27286d;
+  font-family: "Exo", sans-serif;
+}
+.lifeatvedfourth-box-text {
+  font-size: 22px;
+  margin-top: 20px;
+  font-family: "Exo", sans-serif;
+}
+.lifeatvedfourth-box-btn {
+  margin: 20px 0;
+  font-family: "Exo", sans-serif;
+}
+.lifeatvedfourth-box-btn1 {
+  font-size: 2rem;
+  font-family: "Marcellus", serif;
+  border: 2px solid #27286d;
+  padding: 0.5rem;
+  background-color: #27286d;
+  color: white;
+}
+.lifeatvedfourth-box-btn2 {
+  font-size: 2rem;
+  font-family: "Exo", sans-serif;
+  padding: 0.5rem;
+  color: #27286d;
+}
+.lifeatvedfourth-box-slogan {
+  font-size: 22px;
+  margin-top: 5px;
+  font-family: "Exo", sans-serif;
+}
+@media screen and (max-width: 994px) {
+  #lifeatvedfirst {
+    padding: 25px 0px;
+  }
+  .lifeatvedsecond-section-head {
+    margin: 30px auto 30px auto;
+  }
+  .lifeatvedfirst-media-card {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 0 0 0px;
+  }
+  .lifeatvedsecond-right-imgbox {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/0.65;
+    background-color: red;
+  }
+  .lifeatvedfourth-img-box {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/0.55;
+    padding: 2.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  #lifeatvedfirst {
+    padding: 2.5px 0px;
+  }
+  .lifeatvedfirst-media-card {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 0 0 0px;
+  }
+  .lifeatvedfirst-media-card1:nth-child(2n) {
+    transform: none;
+  }
+  .lifeatvedsecond-section-head {
+    margin: 0 auto 30px auto;
+  }
+  .lifeatvedsecond-section-head .lifeatvedsecond-head-title {
+    font-size: 3rem;
+  }
+  .lifeatvedsecond-left-box-heading {
+    font-size: 3rem;
+  }
+  #lifeatvedthird {
+    padding: 30px 0px 30px 0px;
+  }
+  #lifeatvedfourth {
+    padding: 30px 0px 30px 0px;
+  }
+  .lifeatvedfourth-main-box {
+    padding: 2.5rem 0.5rem;
+    text-align: center;
+  }
+  .lifeatvedfourth-box-heading {
+    font-size: 3rem;
+  }
+  .lifeatvedfourth-box-text {
+    font-size: 20px;
+  }
+  .lifeatvedfourth-box-btn {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+  }
+}

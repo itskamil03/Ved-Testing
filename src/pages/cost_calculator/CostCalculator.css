@@ -1,0 +1,219 @@
+/* -- ===========================================
+                MEETING FORM
+=========================================== -- */
+#cost-calculator .video-block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#cost-calculator .video-block .media {
+  width: 100%;
+  height: 100%;
+}
+#cost-calculator .video-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#cost-calculator .video-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px 20px;
+}
+#cost-calculator .video-content .title {
+  color: #000000;
+  font-weight: bold;
+  font-size: 4rem;
+}
+#cost-calculator .video-content .data {
+  color: white;
+  font-size: 1.6rem;
+}
+#cost-calculator .form-tabs {
+  padding: 20px 20px 20px 0;
+}
+#cost-calculator .form-tabs .costform {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+}
+#cost-calculator .form-tabs .costform button {
+  background: #27286d96;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  min-width: auto;
+  box-shadow: none;
+  width: 50%;
+  padding: 8px;
+  font-size: 1.5rem;
+  color: white;
+}
+#cost-calculator .form-tabs .costform button:hover::after {
+  animation: initial;
+}
+#cost-calculator .form-tabs .costform button:hover {
+  opacity: 0.9;
+}
+#cost-calculator .form-tabs .costform button.active {
+  background: #27286d;
+}
+#cost-calculator .form-tabs #create-team {
+  display: block;
+}
+#cost-calculator .form-tabs .group-input {
+  margin-bottom: 20px;
+}
+#cost-calculator .form-tabs .group-input input,
+#cost-calculator .form-tabs .group-input select,
+#cost-calculator .form-tabs .group-input textarea {
+  display: block;
+  width: 100%;
+  padding: 5px 15px;
+  border: 1px solid grey;
+  font-size: 1.4rem;
+}
+#cost-calculator .form-tabs .group-input textarea {
+  height: 120px;
+}
+#cost-calculator .form-tabs .group-input input:focus,
+#cost-calculator .form-tabs .group-input input:focus-visible,
+#cost-calculator .form-tabs .group-input select:focus,
+#cost-calculator .form-tabs .group-input select:focus-visible,
+#cost-calculator .form-tabs .group-input textarea:focus,
+#cost-calculator .form-tabs .group-input textarea:focus-visible {
+  outline: none;
+  border-color: #27286d;
+}
+#cost-calculator .form-tabs .group-input .counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+}
+#cost-calculator .form-tabs .group-input .skill-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#cost-calculator .form-tabs .group-input .skill-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+#cost-calculator .form-tabs .group-input .skill-label button {
+  min-width: auto;
+  min-height: auto;
+  box-shadow: none;
+  background: transparent;
+  color: black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  padding: 0;
+  display: grid;
+  place-items: center;
+}
+#cost-calculator .form-tabs .group-input .skill-label button:hover::after {
+  animation: initial;
+}
+#cost-calculator .form-tabs .group-input .skill-bar select {
+  width: calc(100% - 120px);
+}
+#cost-calculator .form-tabs .group-input .skill-bar i {
+  width: 40px;
+  height: 37px;
+  font-size: 2.3rem;
+  padding-left: 10px;
+  display: grid;
+  place-items: center;
+}
+#cost-calculator .form-tabs .group-input .counter input {
+  width: 30px;
+  padding: 2px 0;
+  border: 0;
+  height: 37px;
+  text-align: center;
+  appearance: none;
+  outline: 0;
+  display: block;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+#cost-calculator .form-tabs .group-input .counter span {
+  padding: 0 5px;
+  background: #27286d;
+  cursor: pointer;
+  color: #ffffff;
+  user-select: none;
+  height: 37px;
+  width: 25px;
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+}
+#cost-calculator .form-tabs .calculate {
+  display: block;
+  margin-left: auto;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-family: "Exo", sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #27286d 5%);
+  border: 0;
+  color: #ffffff;
+  box-shadow: 6px 0px 0px rgb(144, 149, 8);
+  outline: transparent;
+  position: relative;
+  padding: 4px 25px;
+  text-transform: uppercase;
+}
+
+#cost-calculator .form-tabs .group-input label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#cost-calculator .form-tabs .costformcontent {
+  padding: 6px 12px;
+  border-top: none;
+  animation: formEffect 1s;
+}
+@keyframes formEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #cost-calculator .video-content .title {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  #cost-calculator .video-content .data {
+    color: white;
+    font-size: 1.5rem;
+  }
+  #cost-calculator .video-block .media {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/0.8;
+  }
+}

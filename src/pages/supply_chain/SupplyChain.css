@@ -1,0 +1,715 @@
+/* <-------------------------------------------- Supply Chain first ----------------------------------------> */
+#supplychain {
+  padding: 50px 0px;
+}
+.supplychain-section-head {
+  margin-bottom: 50px;
+}
+.supplychain-section-head .supplychain-head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+.supplychain-section-head .supplychain-head-slogan {
+  font-size: 1.7rem;
+  padding-left: 20px;
+  border-left: 2px solid #27286d;
+  text-align: justify;
+}
+#supplychain .supplychain-why-content {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+#supplychain .supplychain-why-grid .supplychain-why-box {
+  padding: 10px;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.5s linear;
+  border-radius: 1.5rem;
+  background-color: white;
+}
+#supplychain .supplychain-why-grid .supplychain-why-box .supplychain-img {
+  border-radius: 1.5rem;
+}
+#supplychain .supplychain-why-grid .supplychain-why-box .supplychain-icon {
+  height: 20rem;
+  width: 100%;
+}
+#supplychain .supplychain-why-grid .supplychain-why-box .supplychain-title {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 7px 0;
+}
+#supplychain .supplychain-why-grid .supplychain-why-box .supplychain-content {
+  font-size: 1.5rem;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  height: 120px;
+}
+
+/* <---------------------------------------------- supply chain second2 ----------------------------------------------> */
+#supplychains2 {
+  padding: 50px 0px;
+  background-color: #3e88ff;
+}
+#supplychains2 .section-head {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Exo", sans-serif;
+  color: white;
+}
+.supplychains2-media-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.supplychains2-media-card1 {
+  box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  border-radius: 2rem;
+  padding: 0 0 1rem 0;
+  background-color: white;
+  padding: 10px;
+}
+.supplychains2-media-card1:nth-child(2n) {
+  transform: translate(0, 50px);
+}
+.supplychains2-media-card1-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.supplychains2-media-card1-heading {
+  font-size: 2rem;
+  color: #27286d;
+  text-align: center;
+}
+.supplychains2-media-card1-slogan {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.supplychains2-right-imgbox {
+  width: 100%;
+  height: 48rem;
+}
+/* <------------------------------------------------------- supply chain third -----------------------------------------------------------> */
+
+#supchainthird {
+  height: 100rem;
+  padding: 50px 0px;
+}
+.supchainthird-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85rem;
+  position: relative;
+  max-width: 740px;
+  margin: 0 auto;
+}
+/* <------ center ------> */
+.supchainthird-center {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #1476f2;
+  height: 30rem;
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.supchainthird-center-chield {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-image: url("https://www.intellectsoft.net/assets/a21ac9a/img/about-page/cube.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25.5rem;
+  width: 26.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.supchainthird-center-chield-text {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+/* <------ end-center ------> */
+/* <------ top ------> */
+.supchainthird-top {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #dccbcb;
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.supchainthird-top-chield {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #efefef;
+  height: 24.7rem;
+  width: 24.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.supchainthird-top-superchield {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #fff;
+  height: 20rem;
+  width: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.supchainthird-top-superchield:hover {
+  height: 25rem;
+  width: 27rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.supchainthird-top-superchield-img {
+  width: 18rem;
+  height: 10rem;
+  margin-top: -3rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.supchainthird-top-superchield-text {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+/* <------end-top ------> */
+/* <------ top-left ------> */
+.supchainthird-topleft {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #dccbcb;
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 17%;
+  left: 0;
+}
+.supchainthird-topleft-chield {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #efefef;
+  height: 24.5rem;
+  width: 26.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.supchainthird-topleft-superchield {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #fff;
+  height: 20rem;
+  width: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.supchainthird-topleft-superchield:hover {
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.supchainthird-topleft-superchield-img {
+  width: 18rem;
+  height: 10rem;
+  margin-top: -3rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.supchainthird-topleft-superchield-text {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+/* <------end-top-left ------> */
+/* <------ top-top-right ------> */
+.supchainthird-topright {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #dccbcb;
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 17%;
+  right: 0;
+}
+.supchainthird-topright-chield {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #efefef;
+  height: 24.5rem;
+  width: 26.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.supchainthird-topright-superchield {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #fff;
+  height: 20rem;
+  width: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.supchainthird-topright-superchield:hover {
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.supchainthird-topright-superchield-img {
+  width: 18rem;
+  height: 10rem;
+  margin-top: -3rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.supchainthird-topright-superchield-text {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+/* <------end-top-right ------> */
+/* <------ bottom ------> */
+.supchainthird-bottom {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #dccbcb;
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.supchainthird-bottom-chield {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #efefef;
+  height: 24.5rem;
+  width: 26.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.supchainthird-bottom-superchield {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #fff;
+  height: 20rem;
+  width: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.supchainthird-bottom-superchield:hover {
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.supchainthird-bottom-superchield-img {
+  width: 18rem;
+  height: 10rem;
+  margin-top: -3rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.supchainthird-bottom-superchield-text {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+/* <------end-bottom ------> */
+/* <------ bottom-left------> */
+.supchainthird-bottomleft {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #dccbcb;
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 17%;
+  left: 0;
+}
+.supchainthird-bottomleft-chield {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #efefef;
+  height: 24.5rem;
+  width: 26.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.supchainthird-bottomleft-superchield {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #fff;
+  height: 20rem;
+  width: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.supchainthird-bottomleft-superchield:hover {
+  height: 25rem;
+  width: 27rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.supchainthird-bottomleft-superchield-img {
+  width: 18rem;
+  height: 10rem;
+  margin-top: -3rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.supchainthird-bottomleft-superchield-text {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+/* <------end-bottom-left ------> */
+/* <------ bottom-right------> */
+.supchainthird-bottomright {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #dccbcb;
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 17%;
+  right: 0;
+}
+.supchainthird-bottomright-chield {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #efefef;
+  height: 24.5rem;
+  width: 26.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.supchainthird-bottomright-superchield {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #fff;
+  height: 20rem;
+  width: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.supchainthird-bottomright-superchield:hover {
+  height: 25rem;
+  width: 27rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.supchainthird-bottomright-superchield-img {
+  width: 18rem;
+  height: 10rem;
+  margin-top: -3rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.supchainthird-bottomright-superchield-text {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+/* <------end-bottom-right ------> */
+
+/* <---------------------------------------------------    Supply Chain last second     ---------------------------------------------------> */
+
+#supsecond {
+  padding: 50px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border: none;
+}
+.supsecond-section-main {
+  display: flex;
+  gap: 2rem;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+}
+.supsecond-section-left {
+  width: 50%;
+}
+.supsecond-section-left-heading {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+.supsecond-section-left-text {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: white;
+  text-align: justify;
+  padding-bottom: 50px;
+}
+.supsecond-section-left-btn {
+  font-size: 1.8rem;
+  background-color: #ffd546;
+  color: #222;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-family: "Exo", sans-serif;
+}
+.supsecond-section-left-btn:hover .supsecond-icon {
+  animation: slide-left 1s ease-in-out infinite;
+}
+.supsecond-section-right {
+  width: 50%;
+}
+/* <-----------> */
+.custom-shape-divider-bottom-1685182583 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1685182583 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 84px;
+}
+
+.custom-shape-divider-bottom-1685182583 .shape-fill {
+  fill: #7dd6ff;
+}
+@media screen and (max-width: 991px) {
+  #supsecond {
+    padding: 25px 0 80px 0;
+  }
+  .supsecond-section-left-text {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .supchainthird-center,
+  .supchainthird-top,
+  .supchainthird-topleft,
+  .supchainthird-topright,
+  .supchainthird-bottom,
+  .supchainthird-bottomleft,
+  .supchainthird-bottomright {
+    position: static;
+    transform: initial;
+  }
+  .supchainthird-container {
+    flex-direction: column;
+    height: initial;
+  }
+  .supchainthird-center {
+    height: 26rem;
+    width: 26rem;
+  }
+  #supchainthird {
+    height: initial;
+  }
+  .supplychains2-right-imgbox {
+    width: 100%;
+    /* height: 100%; */
+    aspect-ratio: 1/1;
+  }
+
+  #supsecond {
+    padding: 0px 0 100px 0;
+  }
+  .supsecond-section-main {
+    flex-direction: column-reverse;
+  }
+  .supsecond-section-left {
+    width: 100%;
+  }
+  .supsecond-section-right {
+    width: 100%;
+  }
+  .supsecond-section-left-text {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #supplychain {
+    padding: 20px 0px;
+  }
+  .supplychain-section-head {
+    margin-bottom: 30px;
+  }
+  .supplychain-section-head .supplychain-head-title {
+    font-size: 2.75rem;
+  }
+  .supplychain-section-head .supplychain-head-slogan {
+    font-size: 1.6rem;
+    padding-left: 10px;
+  }
+  #supplychains2 {
+    padding: 20px 0px;
+  }
+  #supplychains2 .section-head {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .supplychains2-media-card {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 0px;
+  }
+  .supplychains2-media-card1:nth-child(2n) {
+    transform: none;
+  }
+  .supplychains2-right-imgbox {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+  }
+  /* <---hexa---> */
+  #supchainthird {
+    height: 180rem;
+    padding: 50px 0px;
+  }
+  .supchainthird-center {
+    height: 26rem;
+    width: 26rem;
+  }
+  .supchainthird-top {
+    height: 26rem;
+    width: 26rem;
+    top: -60.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .supchainthird-topleft {
+    height: 26rem;
+    width: 26rem;
+    top: -29%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .supchainthird-topright {
+    height: 26rem;
+    width: 26rem;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .supchainthird-bottomright {
+    height: 26rem;
+    width: 26rem;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .supchainthird-bottomleft {
+    height: 26rem;
+    width: 26rem;
+    display: flex;
+    bottom: -29%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .supchainthird-bottom {
+    height: 25rem;
+    width: 25rem;
+    bottom: -59.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .supchainthird-center,
+  .supchainthird-top,
+  .supchainthird-topleft,
+  .supchainthird-topright,
+  .supchainthird-bottom,
+  .supchainthird-bottomleft,
+  .supchainthird-bottomright {
+    position: static;
+    transform: initial;
+  }
+  .supchainthird-container {
+    flex-direction: column;
+    height: initial;
+  }
+  .supchainthird-center {
+    height: 26rem;
+    width: 26rem;
+  }
+  #supchainthird {
+    height: initial;
+  }
+  #supsecond {
+    padding: 0px 0 100px 0;
+  }
+  .supsecond-section-main {
+    flex-direction: column-reverse;
+  }
+  .supsecond-section-left {
+    width: 100%;
+  }
+  .supsecond-section-right {
+    width: 100%;
+  }
+  .supsecond-section-left-text {
+    padding-bottom: 20px;
+  }
+}

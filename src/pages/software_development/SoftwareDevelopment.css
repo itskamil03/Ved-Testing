@@ -1,0 +1,509 @@
+/* -- ===================================================================================
+                            CUSTOMER DEVELOPMENT OUTSOURCING
+=================================================================================== -- */
+
+/* -- -------------------------------
+                WHY VED
+------------------------------- -- */
+#outsourcing-why {
+  padding: 50px 0px;
+}
+#outsourcing-why .section-head .head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+#outsourcing-why .main-content {
+  text-align: justify;
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+}
+
+#outsourcing-why .why-card {
+  padding: 20px;
+  box-shadow: 0 8px 24px #8080806e;
+  transform: rotate(-4deg);
+  position: relative;
+  transition: all 0.5s linear;
+}
+
+#outsourcing-why .why-card .icon {
+  font-size: 2.4rem;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #8080809e;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+#outsourcing-why .why-card .icon .icon-img {
+  width: 35px;
+  height: 35px;
+}
+
+#outsourcing-why .why-card .title {
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+#outsourcing-why .why-card .content {
+  text-align: justify;
+  font-size: 1.3rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 127px;
+}
+
+#outsourcing-why .why-card .dot {
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+#outsourcing-why .why-card .dot div {
+  background: black;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* -- -------------------------------
+            WHY OUTSORCING
+------------------------------- -- */
+#why-software-outsourcing {
+  background: #27286d;
+  padding: 20px 0;
+}
+
+#why-software-outsourcing .outsource-content {
+  display: flex;
+  align-items: center;
+}
+
+#why-software-outsourcing .outsource-content .details {
+  width: calc(100% - 250px);
+  padding-right: 20px;
+}
+
+#why-software-outsourcing .outsource-content .title {
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#why-software-outsourcing .outsource-content .data {
+  text-align: justify;
+  color: #e9e8e8;
+  font-size: 1.3rem;
+}
+
+#why-software-outsourcing .outsource-content .image {
+  width: 250px;
+  aspect-ratio: 1/0.85;
+}
+
+/* -- -------------------------------
+            ADVANTAGES
+------------------------------- -- */
+#outsourcing-advantages .advantagetab {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+#outsourcing-advantages .advantagetab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 20px;
+  background-image: initial;
+  box-shadow: initial;
+  transition: 0.3s;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Exo", sans-serif;
+  border-radius: 20px;
+}
+
+#outsourcing-advantages .advantagetab button:hover {
+  background-color: #ccc;
+}
+
+#outsourcing-advantages .advantagetab button.active {
+  background-color: #27286d59;
+}
+
+#outsourcing-advantages .advantagetabcontent {
+  display: none;
+}
+
+#outsourcing-advantages #Maintainability {
+  display: block;
+}
+
+#outsourcing-advantages .inner-content .image {
+  max-width: 350px;
+  aspect-ratio: 1/1;
+  margin: 0 auto;
+}
+
+#outsourcing-advantages .inner-content .content-block .main-head {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+
+#outsourcing-advantages .inner-content .content-block .content {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+#outsourcing-advantages .inner-content .content-block a {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 2px solid #27286d;
+  color: #27286d;
+  font-weight: bold;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s linear;
+}
+
+#outsourcing-advantages .inner-content .content-block a:hover {
+  letter-spacing: 3px;
+}
+
+/* -- -------------------------------
+            ADVANTAGES
+------------------------------- -- */
+#outsourcing-development {
+  padding: 50px 0px;
+}
+#outsourcing-development .head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+#outsourcing-development .process-block {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-left: 4px solid #27286d;
+  padding: 15px 0;
+}
+
+#outsourcing-development .process-block .number {
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: #27286d;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.3rem;
+}
+
+#outsourcing-development .process-block .icon {
+  width: 150px;
+  text-align: center;
+  font-size: 4.8rem;
+  color: #27286d;
+}
+#outsourcing-development .process-block .icon .icon-img {
+  width: 50px;
+  margin: 0 auto;
+}
+
+#outsourcing-development .process-block .content {
+  width: calc(100% - 200px);
+}
+
+#outsourcing-development .process-block .head {
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+#outsourcing-development .process-block .data {
+  text-align: justify;
+  font-size: 1.3rem;
+}
+
+/* -- -------------------------------
+                ENQUIRY
+------------------------------- -- */
+#outsourcing-enquiry-contain {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#outsourcing-enquiry-contain .board-enquiry {
+  background: #27286d;
+  width: 53%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#outsourcing-enquiry-contain .board-enquiry.left {
+  clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+  padding: 20px 80px 20px 50px;
+}
+
+#outsourcing-enquiry-contain .board-enquiry.right {
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  position: absolute;
+  right: 0;
+  top: 50px;
+  padding: 20px 40px 20px 90px;
+}
+
+#outsourcing-enquiry-contain .board-enquiry .content {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#outsourcing-enquiry-contain .board-enquiry .slogan {
+  color: ghostwhite;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+#outsourcing-enquiry-contain .board-enquiry .enquiry-btn {
+  border: 2px solid white;
+  padding: 5px 15px;
+  color: white;
+  letter-spacing: 1px;
+  transition: all 0.3s linear;
+  font-size: 1.5rem;
+}
+
+#outsourcing-enquiry-contain .board-enquiry .enquiry-btn:hover {
+  letter-spacing: 3px;
+}
+
+/* -- -------------------------------
+              EXPERTISE
+------------------------------- -- */
+#outsourcing-expertise {
+  padding: 50px 0;
+}
+#outsourcing-expertise .expertise-card {
+  padding: 20px;
+  border: 1px solid #8080804d;
+  box-shadow: 0 8px 24px #9e9d9d59;
+  border-radius: 20px;
+  background: white;
+}
+
+#outsourcing-expertise .expertise-card .icon {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid #80808094;
+  font-size: 2.5rem;
+  color: #242323;
+  margin-bottom: 10px;
+}
+#outsourcing-expertise .expertise-card .icon .icon-img {
+  width: 40px;
+  height: 40px;
+}
+
+#outsourcing-expertise .expertise-card .head {
+  font-family: "Exo", sans-serif;
+  font-size: 1.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+#outsourcing-expertise .expertise-card .content {
+  font-size: 1.3rem;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 130px;
+}
+
+/* -- -------------------------------
+            PORTFOLIO
+------------------------------- -- */
+
+#outsourcing-portfolio .client-item {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#outsourcing-portfolio .client-item .client-img {
+  width: 100%;
+  height: 100%;
+}
+
+#outsourcing-portfolio .client-item .client-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background: #00000073;
+}
+
+#outsourcing-portfolio .client-item .logo {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+#outsourcing-portfolio .client-item .logo img {
+  object-fit: contain;
+  object-position: left;
+  filter: grayscale(1) brightness(0.5) invert(1);
+}
+
+#outsourcing-portfolio .client-item .title {
+  font-family: "Exo", sans-serif;
+  color: white;
+  font-size: 2.4rem;
+  margin-bottom: 0px;
+}
+
+#outsourcing-portfolio .client-item .content {
+  font-size: 1.3rem;
+  color: whitesmoke;
+  text-align: justify;
+}
+
+#outsourcing-portfolio .view-more-btn {
+  display: inline-block;
+  border: 2px solid black;
+  padding: 5px 15px;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s linear;
+}
+
+#outsourcing-portfolio .view-more-btn:hover {
+  letter-spacing: 3px;
+  word-spacing: 6px;
+  color: #27286d;
+  border-color: #27286d;
+}
+
+@media screen and (max-width: 768px) {
+  #outsourcing-why {
+    padding: 20px 0px;
+  }
+  #outsourcing-why .section-head .head-title {
+    font-size: 2.8rem;
+  }
+  #why-software-outsourcing .outsource-content {
+    display: flex;
+    gap: 15px;
+    flex-direction: column-reverse;
+  }
+  #why-software-outsourcing .outsource-content .details {
+    width: 100%;
+    padding-right: 0px;
+  }
+  #why-software-outsourcing .outsource-content .title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  #outsourcing-development {
+    padding: 20px 0px;
+  }
+  #outsourcing-development .head-title {
+    font-size: 2.8rem;
+  }
+  #outsourcing-development .process-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 4px solid #27286d;
+    border-left: none;
+    padding: 15px 0;
+  }
+  #outsourcing-development .process-block .number {
+    left: 50%;
+    top: -17px;
+    transform: translate(-50%, 0);
+  }
+  #outsourcing-development .process-block .head {
+    font-size: 2rem;
+  }
+  #outsourcing-development .process-block .data {
+    text-align: left;
+    font-size: 1.3rem;
+  }
+  #outsourcing-development .process-block .content {
+    width: 100%;
+  }
+  #outsourcing-enquiry-contain {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  #outsourcing-enquiry-contain .board-enquiry {
+    background: #27286d;
+    width: 100%;
+    height: 250px;
+  }
+  #outsourcing-enquiry-contain .board-enquiry.left {
+    clip-path: none;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  #outsourcing-enquiry-contain .board-enquiry.right {
+    clip-path: none;
+    width: 100%;
+    position: static;
+    padding: 0;
+  }
+  #outsourcing-expertise {
+    padding: 20px 0;
+  }
+}

@@ -1,0 +1,437 @@
+/* <----------------------------------------------- Industries second section ---------------------------------------> */
+#health {
+    padding: 50px 0px;
+}
+
+.section-head {
+    margin-bottom: 50px;
+}
+
+.section-head .circle {
+    display: none;
+}
+
+.section-head .head-title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Exo", sans-serif;
+}
+
+.section-head .head-slogan {
+    padding-left: 20px;
+    border-left: 2px solid #27286d;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+#health .health-video {
+    margin-left: 4rem;
+    position: relative;
+}
+
+#health .health-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-content .content-head {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #27286d;
+    position: relative;
+    display: inline-block;
+    font-family: "Exo", sans-serif;
+    padding-left: 55px;
+    text-transform: uppercase;
+}
+
+.section-content .content-head::after {
+    content: "";
+    background-color: #27286d;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+}
+
+.section-content .content-data {
+    color: #4e4e4e;
+    text-align: justify;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.health-media2 {
+    margin-right: 2rem;
+}
+
+.request-btn {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* --------------Module---------------------- */
+.module-cms {
+    background-color: #f8f9fa;
+}
+
+.module__cms {
+    min-height: 250px;
+    padding-top: 1px;
+}
+
+.margin-top-15 {
+    margin-top: 15px !important;
+}
+
+.margin-btm-40 {
+    margin-bottom: 40px !important;
+}
+
+.pro-sub-heading h2 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Exo", sans-serif;
+    margin-top: 3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pro-sub-heading {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.university_module_sec.module-cms {
+    background-color: transparent;
+    background-image: none;
+    margin-top: -100px;
+}
+
+.margin-btm-40 {
+    margin-bottom: 40px !important;
+}
+
+.university_module_sec .mod-box {
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.university_module_sec .mod-box .product-heading-bg {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(#05415d, #05415d);
+    box-shadow: inset 0 0 100px hsla(0, 0, 0, 0.3);
+}
+
+#mobileView h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+    position: relative;
+    margin-top: 0;
+    padding: 0 10px;
+}
+
+#mobileView h2 span {
+    display: none;
+}
+
+.offers-section h1 span,
+h2 span {
+    background: #fff;
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin: -18px 0 0;
+    border: 0;
+    font-size: 30px;
+    border-bottom: 0;
+}
+
+.university_module_sec.module-cms .mod-box-content {
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.05);
+    height: 48rem;
+    margin-bottom: 2rem;
+}
+
+.module-cms .mod-box-content {
+    box-shadow: 2px 18px 48px 0 rgb(0 0 0 / 11%);
+    padding: 30px 20px;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+}
+
+.university_module_sec.module-cms ul {
+    margin-bottom: 0;
+}
+
+.module-cms ul {
+    list-style: none;
+    line-height: 3;
+}
+
+.list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.university_module_sec.module-cms ul li {
+    margin-bottom: 0;
+}
+
+.module-cms ul li {
+    border-bottom: 1px dashed #bfbaba;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.module-cms ul li a {
+    position: relative;
+    color: #333;
+    display: inline-block;
+    padding: 0;
+    min-height: 0;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 1s all ease;
+    text-decoration: none;
+}
+
+.module-cms ul li:before {
+    content: "\f138";
+    font-family: FontAwesome;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12px;
+    font-size: 16px;
+    color: #05415d;
+}
+
+.university_module_sec .mod-box:hover {
+    transition: all .4s ease-in-out;
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+.module-cms ul li a:hover {
+    color: #23bbee !important;
+}
+
+.btn {
+    padding: 10px !important;
+    color: #fff !important;
+    border: none !important;
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7) !important;
+    border-radius: 5px !important;
+    font-size: 15px !important;
+    border: none !important;
+}
+
+/* <------------------------------------- ui/ux second -section ------------------------------------------> */
+
+#ui-clients2 {
+    background: #ffffff;
+    position: relative;
+    z-index: 0;
+    padding: 50px 0;
+}
+
+#ui-clients2 .ph-heading-title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#ui-clients2 .ph-heading-title h2 {
+    font-size: calc(1.1rem + 1vw);
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    font-family: "Exo", sans-serif;
+}
+
+#ui-clients2 .ph-heading-title p {
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #505050;
+    line-height: 26px;
+    font-size: 1.5rem;
+    font-family: "Exo", sans-serif;
+}
+
+#ui-clients2 .ph-uiux-box {
+    text-align: center;
+    box-shadow: 0 0 16px 0 RGB(25 6 58/5%);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 12px 0;
+    background: #ffffff;
+    position: relative;
+    height: calc(100% - 24px);
+}
+
+#ui-clients2 .ph-uiux-box .ph-uiux-icon {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #505050;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+#ui-clients2 .ph-uiux-box .ph-uiux-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+#ui-clients2 .ph-uiux-box .ph-small-heding {
+    font-size: 19px;
+    color: #505050;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#ui-clients2 .ph-uiux-box h4 {
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    font-size: calc(0.6rem + 1vw);
+    font-family: "Exo", sans-serif;
+}
+
+#ui-clients2 .ph-uiux-box p {
+    margin-bottom: 0;
+    line-height: 24px;
+    font-size: 1.5rem;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+/* ----------------Benifites----------------------- */
+.benefits-erp-coll {
+    background: #f1f1f1;
+    margin-bottom: 30px;
+}
+
+.pro-sub-heading {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.pro-sub-heading h2 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Exo", sans-serif;
+    margin-top: 3rem;
+}
+
+.benefits-erp-coll .benefit-para {
+    font-size: 15px;
+    text-align: justify;
+    text-align-last: center;
+    border-left: none !important;
+}
+
+.benefits-erp-coll .row {
+    margin-top: 20px;
+}
+
+.benefits-erp-coll .benifits {
+    min-height: 260px !important;
+}
+
+.benifits {
+    /* padding: 20px; */
+    position: relative;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border-top: 4px solid transparent;
+    margin-top: 20px;
+    height: 100%;
+    min-height: 270px;
+    transition: all .4s ease-in-out;
+    border-color: #07455e;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.benifits h3 {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    color: #fff;
+    background-color: #0C3851;
+    /* padding: 10px 10px 13px 15px; */
+    /* border-radius: 0 12px; */
+    padding: 10px 10px 13px 15px;
+    border-radius: 12px 12px 0 0;
+    margin-top: -2px;
+    line-height: 20px;
+    width: 100%;
+}
+
+.benifites-points {
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+}
+
+.benifits .fa-chevron-circle-right {
+    font-size: 16px;
+    color: #05415d;
+    margin-right: 10px;
+    line-height: 27px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-chevron-circle-right:before {
+    content: "\f138";
+}
+
+.benifites-points p {
+    font-size: 1.5rem !important;
+    color: none !important;
+    font-family: "Exo", sans-serif !important;
+    padding-left: 0px !important;
+    border-left: none !important;
+    text-align: none !important;
+    margin: 0 0 10px;
+}
+
+.module_para p {
+    line-height: normal;
+    border-left: none;
+    font-size: 1.3rem;
+    padding-left: 0px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width : 576px) {
+    .university_module_sec.module-cms .mod-box-content {
+        height: 60rem;
+    }
+  }

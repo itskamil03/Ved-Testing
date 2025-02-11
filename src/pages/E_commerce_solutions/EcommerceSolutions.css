@@ -1,0 +1,240 @@
+/* <------------------------------------------- E-commerce Solutions first -------------------------------------------->  */
+#E-comfirst {
+  padding: 50px 0px 0px 0px;
+  background-image: url("/top.svg");
+  object-fit: cover;
+}
+
+.E-comfirst-section-head {
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+.E-comfirst-section-head .E-comfirst-head-title {
+  font-size: 4rem;
+  line-height: 1.25;
+  margin: 0px 0 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+}
+
+.E-comfirst-section-head .E-comfirst-head-title::after {
+  background-color: #ed8b00;
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 20px auto 0;
+  width: 70px;
+}
+
+.E-comfirst-section-head .E-comfirst-head-slogan {
+  font-size: 1.7rem;
+}
+
+#E-comfirst .ecommerce-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+#E-comfirst .ecommerce-box {
+  border-radius: 10px;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 8px 24px #99999999;
+}
+
+#E-comfirst .ecommerce-box .head {
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  background: #27286d;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#E-comfirst .ecommerce-box .details {
+  padding-top: 10px;
+}
+
+#E-comfirst .ecommerce-box .content {
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+#E-comfirst .ecommerce-box .content:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+/* <------------------------------------------- E-commerce Solutions second -------------------------------------------->  */
+#E-comsecond {
+  padding: 50px 0;
+  background-color: black;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.custom-shape-divider-bottom-1684931464 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1684931464 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1684931464 .shape-fill {
+  fill: #f8f9fa;
+}
+
+/* __________________________ */
+
+.E-comsecond-left-content-head {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  font-family: "Exo", sans-serif;
+  padding-left: 55px;
+}
+
+.E-comsecond-left-content-head::after {
+  content: "";
+  background-color: white;
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+}
+
+.E-comsecond-left-content-data {
+  color: rgb(231, 229, 229);
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  font-family: "Exo", sans-serif;
+}
+
+.E-comsecond-left-second-box {
+  height: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.E-comsecond-section-content {
+  padding-bottom: 60px;
+}
+
+/* <------------------------------------------- E-commerce Solutions third -------------------------------------------->  */
+#E-comthird{
+padding: 50px 0;
+}
+.E-comthird-section-head {
+  margin-bottom: 50px;
+}
+
+.E-comthird-section-head .E-comthird-head-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+
+.E-comthird-section-head .E-comthird-head-slogan {
+  font-size: 1.7rem;
+  padding-left: 20px;
+  border-left: 2px solid #27286d;
+  text-align: justify;
+}
+
+#E-comthird .goal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+#E-comthird .E-comthird-value-card {
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  box-shadow: 0 8px 24px #a3a3a394;
+  border-bottom: 3px solid transparent;
+  background: white;
+}
+
+#E-comthird .E-comthird-value-card:hover {
+  transform: translate(0, -10px);
+  border-color: #27286d;
+}
+
+#E-comthird .E-comthird-value-card .E-comthird-icon {
+  height: 15rem;
+  width: 15rem;
+  color: #27286d;
+  margin-bottom: 15px;
+}
+
+#E-comthird .E-comthird-value-card .E-comthird-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+
+#E-comthird .E-comthird-value-card .E-comthird-data .content {
+  font-size: 1.4rem;
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+#E-comthird .E-comthird-value-card .E-comthird-data .content:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+/* <------------------------------------------- E-commerce Solutions responsive -------------------------------------------->  */
+@media screen and (max-width: 768px) {
+  #E-comfirst {
+    padding: 25px 0px 0px 0px;
+  }
+  .E-comfirst-section-head {
+    margin: 0 auto 25px auto;
+  }
+  .E-comfirst-section-head .E-comfirst-head-title {
+    font-size: 3rem;
+  }
+  #E-comfirst .ecommerce-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  #E-comsecond {
+    padding: 25px 0px 50px 0;
+  }
+  #E-comthird{
+    padding: 25px 0;
+    }
+  #E-comthird .goal-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}

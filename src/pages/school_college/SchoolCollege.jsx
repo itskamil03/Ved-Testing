@@ -1,0 +1,862 @@
+import "./SchoolCollage.css";
+import Hero from "../../components/hero_section/Hero";
+import { useState } from "react";
+import ContactForm from "../../components/contact_form/ContactForm";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+function SchoolCollage() {
+  const [selectedTab, setSelectedTab] = useState("tab1");
+  const handleTabChange = (event) => {
+    setSelectedTab(event.target.value);
+  };
+
+  const [activeIndex, setActiveIndex] = useState(1);
+
+  const toggleTab = (index) => {
+    setActiveIndex(index === activeIndex ? null : index);
+  };
+  return (
+    <>
+      <Hero
+        heading="School & College Mangagements System"
+        imgbtn="School & College"
+        src="image/solution/schoolCollage.jpg"
+        // slogan="Effective Project Management Solutions"
+      />
+
+      <section id="ui-clients2" className="ph-uiux-company ph-bg-color">
+        <div className="container">
+          <div className="row">
+            <div className="col-xxl-10 col-xl-10 col-lg-12 col-md-12 mx-auto">
+              <div className="ph-heading-title">
+                <h2>School & College Management System</h2>
+                <p>
+                  Our School & College Management Software is an
+                  all-encompassing platform designed to simplify and streamline
+                  the management of academic and administrative operations. This
+                  user-friendly software offers end-to-end automation for
+                  educational institutions, helping schools and colleges improve
+                  efficiency, boost productivity, and facilitate effective
+                  communication across all departments.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="industry_component" className="bg-light">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="section-head">
+              <div className="title">Components</div>
+              <div className="slogan">
+                The key components of our School & College Management comprises
+                of the following points.
+              </div>
+            </div>
+            <div className="section-content">
+              <div className="component-grid">
+                <div className="component-box">
+                  <div>Student Information Management</div>
+                </div>
+                <div className="component-box">
+                  <div>Attendance & Leave Management</div>
+                </div>
+                <div className="component-box">
+                  <div>Timetable and Scheduling </div>
+                </div>
+                <div className="component-box">
+                  <div>Examination & Grade Management</div>
+                </div>
+                <div className="component-box">
+                  <div>Finance & Fee Management</div>
+                </div>
+                <div className="component-box">
+                  <div>Communication & Notifications</div>
+                </div>
+                <div className="component-box">
+                  <div>Staff & Payroll Management</div>
+                </div>
+                <div className="component-box">
+                  <div>Library & Inventory Management</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* School collage management software  */}
+      <section id="innovate" className="bg-light innovates">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="section-head">
+              <div className="custom-head">
+                <div className="circle"></div>
+                <div className="head-title bg-light">
+                  School & College Management Software
+                </div>
+              </div>
+              <div className="head-slogan">Role-Based Portal Benefits</div>
+            </div>
+            <div className="section-content">
+              <div className="wrapper">
+                <div className="tabs">
+                  <div className="tab">
+                    <input
+                      type="radio"
+                      name="css-tabs"
+                      id="tab-4"
+                      className="tab-switch"
+                      value="tab4"
+                      checked={selectedTab === "tab4"}
+                      onChange={handleTabChange}
+                    />
+                    <label htmlFor="tab-4" className="tab-label">
+                      <LazyLoadImage src="images/icon/management.png" alt="..." loading="lazy" />
+                      <div>For Management </div>
+                    </label>
+                    {selectedTab === "tab4" && (
+                      <div className="tab-content">
+                        <div className="tab-grid">
+                          <div className="tab-grid-head">
+                            <div>For Management</div>
+                          </div>
+                          <div className="row">
+                            <div className="col-lg-6 col-md-6">
+                              <div className="tab-box">
+                                <div className="tab-name">
+                                  A role-based portal provides school and lla
+                                  management with powerful tools to oversee,
+                                  coordinate, and optimize all institutional
+                                  operations. Through a centralized dashboard,
+                                  administrators can access real-time data on
+                                  student attendance, performance metrics, and
+                                  staff activities, enabling them to make
+                                  data-driven decisions for continuous
+                                  improvement. This streamlined access to
+                                  information helps management monitor overall
+                                  school health, identify trends, and allocate
+                                  resources effectively. Automated features like
+                                  attendance tracking, grade submissions, and
+                                  scheduling reduce manual work, freeing up time
+                                  and improving the accuracy of administrative
+                                  processes. Furthermore, the portal enhances
+                                  communication and collaboration among
+                                  departments, teachers, students, and parents,
+                                  fostering a connected and transparent school
+                                  environment. Management can easily share
+                                  announcements, policies, and event details
+                                  with the entire school community, ensuring
+                                  timely communication and high engagement.
+                                  Secure role-based access ensures that each
+                                  user, from staff to parents, can only view
+                                  information relevant to their role, protecting
+                                  privacy while enhancing accountability. By
+                                  centralizing administrative tasks and
+                                  improving access to critical insights, the
+                                  portal enables management to drive
+                                  organizational efficiency and support a
+                                  positive, productive educational experience
+                                  for all stakeholders.
+                                </div>
+                              </div>
+                            </div>
+                            <div className="col-lg-6 col-md-6">
+                              <div className="tab-box">
+                                <LazyLoadImage
+                                  src="image/solution/schoolCollage.jpg"
+                                  alt="..."
+                                  className="w-100 h-100 rounded-5"
+                                  loading="lazy"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                  <div className="tab">
+                    <input
+                      type="radio"
+                      name="css-tabs"
+                      id="tab-3"
+                      className="tab-switch"
+                      value="tab3"
+                      checked={selectedTab === "tab3"}
+                      onChange={handleTabChange}
+                    />
+                    <label htmlFor="tab-3" className="tab-label">
+                      <LazyLoadImage src="images/icon/teacher.png" alt="..." loading="lazy" />
+                      <div>For Teachers</div>
+                    </label>
+                    {selectedTab === "tab3" && (
+                      <div className="tab-content">
+                        <div className="tab-grid">
+                          <div className="tab-grid-head">
+                            <div>For Teachers</div>
+                          </div>
+                          <div className="row">
+                            <div className="col-lg-6 col-md-6">
+                              <div className="tab-box">
+                                <div className="tab-name">
+                                  A role-based portal provides teachers with a
+                                  streamlined platform to manage their classroom
+                                  and administrative responsibilities
+                                  efficiently. Teachers can easily handle class
+                                  information, including attendance, grade
+                                  entry, and assignment tracking, all in one
+                                  centralized system. This digital organization
+                                  reduces paperwork, saves time, and enables
+                                  teachers to focus more on instruction and
+                                  student engagement. Real-time communication
+                                  tools within the portal allow teachers to send
+                                  notifications and reminders to students about
+                                  assignments, exams, and important updates,
+                                  ensuring students and parents stay informed.
+                                  The portal also facilitates direct feedback on
+                                  assignments, enhancing timely and meaningful
+                                  interactions with students. Additionally, exam
+                                  and grading management is simplified, allowing
+                                  teachers to create exams, input grades, and
+                                  generate report cards with ease. The portal’s
+                                  analytics enable teachers to track student
+                                  performance over time, identify learning
+                                  trends, and address areas where students may
+                                  need extra support. Teachers also benefit from
+                                  a digital resource library, where they can
+                                  upload and share lesson materials, study
+                                  guides, and reference materials, supporting
+                                  self-directed learning for students. Beyond
+                                  classroom duties, the portal includes
+                                  performance and professional development
+                                  tracking, allowing teachers to manage
+                                  attendance, engage in training sessions, and
+                                  monitor their own growth. Secure, role-based
+                                  access ensures that teachers can manage class
+                                  information and personal data with confidence,
+                                  ultimately enhancing their capacity to foster
+                                  a structured and supportive learning
+                                  environment.
+                                </div>
+                              </div>
+                            </div>
+                            <div className="col-lg-6 col-md-6">
+                              <div className="tab-box">
+                                <LazyLoadImage
+                                  src="image/solution/teacher.jpg"
+                                  alt="..."
+                                  className="w-100 h-100 rounded-5"
+                                  loading="lazy"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                  <div className="tab">
+                    <input
+                      type="radio"
+                      name="css-tabs"
+                      id="tab-2"
+                      className="tab-switch"
+                      value="tab2"
+                      checked={selectedTab === "tab2"}
+                      onChange={handleTabChange}
+                    />
+                    <label htmlFor="tab-2" className="tab-label">
+                      <LazyLoadImage src="images/icon/hotel.png" alt="..."  loading="lazy"/>
+                      <div>For Hostel</div>
+                    </label>
+                    {selectedTab === "tab2" && (
+                      <div className="tab-content">
+                        <div className="tab-grid">
+                          <div className="tab-grid-head">
+                            <div>For Hostel</div>
+                          </div>
+                          <div className="row">
+                            <div className="col-lg-6 col-md-6">
+                              <div className="tab-box">
+                                <div className="tab-name">
+                                  A role-based portal for hostel management
+                                  significantly enhances the living experience
+                                  for students by providing easy access to
+                                  essential services and information. For
+                                  students, the portal serves as a centralized
+                                  platform where they can manage their
+                                  accommodation details, view room assignments,
+                                  and access information about hostel rules and
+                                  regulations. They can also submit maintenance
+                                  requests, report issues, and communicate with
+                                  hostel management directly through the portal,
+                                  ensuring that their concerns are addressed
+                                  promptly. Additionally, the portal can offer a
+                                  shared calendar of events, allowing students
+                                  to stay informed about activities and social
+                                  gatherings within the hostel community,
+                                  fostering a sense of belonging and engagement.
+                                  For hostel management, the portal streamlines
+                                  administrative tasks and enhances operational
+                                  efficiency. It allows for efficient room
+                                  allocation and tracking of occupancy rates,
+                                  helping management optimize space utilization.
+                                  The system can automate billing processes for
+                                  hostel fees, providing parents and students
+                                  with clear, transparent payment options. With
+                                  real-time analytics and reporting features,
+                                  management can monitor student engagement,
+                                  track maintenance requests, and gather
+                                  feedback on services, enabling data-driven
+                                  decisions to improve the hostel experience.
+                                  Overall, a role-based portal fosters better
+                                  communication, enhances operational
+                                  efficiency, and creates a supportive and
+                                  connected environment for students living in
+                                  hostels.
+                                </div>
+                              </div>
+                            </div>
+                            <div className="col-lg-6 col-md-6">
+                              <div className="tab-box">
+                                <LazyLoadImage
+                                  src="image/solution/students.jpg"
+                                  alt="..."
+                                  className="w-100 h-100 rounded-5"
+                                  loading="lazy"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="tab">
+                    <input
+                      type="radio"
+                      name="css-tabs"
+                      id="tab-1"
+                      className="tab-switch"
+                      value="tab1"
+                      checked={selectedTab === "tab1"}
+                      onChange={handleTabChange}
+                    />
+                    <label htmlFor="tab-1" className="tab-label">
+                      <LazyLoadImage src="images/icon/group.png" alt="..." loading="lazy" />
+                      <div>For Students</div>
+                    </label>
+                    {selectedTab === "tab1" && (
+                      <div className="tab-content">
+                        <div className="tab-grid">
+                          <div className="tab-grid-head">
+                            <div>For Students</div>
+                          </div>
+                          <div className="row">
+                            <div className="col-lg-6 col-md-6">
+                              <div className="tab-box">
+                                <div className="tab-name">
+                                  A role-based portal in school and lla
+                                  management software offers numerous benefits
+                                  for students, providing a secure, personalized
+                                  platform tailored to their needs. One of the
+                                  main advantages is centralized access to
+                                  academic information. Students can easily view
+                                  their grades, report cards, and timetables, as
+                                  well as submit assignments and receive
+                                  feedback, all in one place. Real-time
+                                  notifications keep them updated on exam
+                                  schedules, assignment deadlines, and important
+                                  announcements, while direct communication with
+                                  teachers allows for prompt clarification on
+                                  coursework and general guidance. Parents also
+                                  benefit from the portal’s transparency, as
+                                  they can monitor their child’s progress and
+                                  attendance, fostering accountability and
+                                  support at home. Students can independently
+                                  track their attendance records, access
+                                  summaries of their participation in each
+                                  class, and submit digital leave requests,
+                                  streamlining the process and notifying
+                                  relevant teachers. The portal also provides
+                                  access to a vast array of educational
+                                  resources, including e-books, lecture notes,
+                                  and recorded classes, making learning
+                                  materials available anytime, anywhere.
+                                  Self-assessment tools and quizzes support exam
+                                  preparation and self-paced learning, further
+                                  enhancing their academic experience.
+                                </div>
+                              </div>
+                            </div>
+                            <div className="col-lg-6 col-md-6">
+                              <div className="tab-box">
+                                <LazyLoadImage
+                                  src="image/solution/students.jpg"
+                                  alt="..."
+                                  className="w-100 h-100 rounded-5"
+                                  loading="lazy"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="tab">
+                    <input
+                      type="radio"
+                      name="css-tabs"
+                      id="tab-0"
+                      className="tab-switch"
+                      value="tab0"
+                      checked={selectedTab === "tab0"}
+                      onChange={handleTabChange}
+                    />
+                    <label htmlFor="tab-0" className="tab-label">
+                      <LazyLoadImage src="images/icon/family.png" alt="..." loading="lazy"/>
+                      <div>For Parents</div>
+                    </label>
+                    {selectedTab === "tab0" && (
+                      <div className="tab-content">
+                        <div className="tab-grid">
+                          <div className="tab-grid-head">
+                            <div>For Parents</div>
+                          </div>
+                          <div className="row">
+                            <div className="col-lg-6 col-md-6 ">
+                              <div className="tab-box">
+                                <div className="tab-name">
+                                  A role-based portal offers parents a
+                                  centralized, accessible platform to stay
+                                  closely connected with their child’s academic
+                                  progress and school activities. Through the
+                                  portal, parents can easily monitor attendance
+                                  records, view grades, and track assignment
+                                  deadlines, keeping them informed of their
+                                  child’s day-to-day performance. This real-time
+                                  access to academic information promotes
+                                  accountability, as parents can quickly
+                                  identify any areas where their child may need
+                                  additional support or encouragement.
+                                  Notifications and reminders keep parents
+                                  updated on important school events, exam
+                                  schedules, and upcoming deadlines, reducing
+                                  the risk of missed communication and ensuring
+                                  they remain actively involved in their child’s
+                                  education. Additionally, the portal
+                                  facilitates seamless communication between
+                                  parents and teachers, enabling direct
+                                  messaging for quick inquiries or feedback on
+                                  student progress. Parents can view
+                                  announcements, access meeting schedules, and
+                                  even arrange parent-teacher conferences
+                                  through the portal, making communication with
+                                  the school more convenient and effective. By
+                                  staying connected to classroom activities and
+                                  school events, parents are better positioned
+                                  to support their child’s learning journey.
+                                  Secure role-based access ensures that parents
+                                  can confidently access only their child’s
+                                  information, respecting privacy while
+                                  fostering a safe, supportive, and
+                                  collaborative environment between home and
+                                  school.
+                                </div>
+                              </div>
+                            </div>
+                            <div className="col-lg-6 col-md-6">
+                              <div className="tab-box">
+                                <LazyLoadImage
+                                  src="image/solution/parents.jpg"
+                                  alt="..."
+                                  className="w-100 h-100 rounded-5"
+                                  loading="lazy"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------Request demo------------------------- */}
+      {/* Existing Content */}
+
+      <section id="health">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="section-head">
+              <div className="custom-head">
+                <div className="circle"></div>
+                <div className="head-title">
+                  Start Using Edumarshal ERP for Your School Today!
+                </div>
+              </div>
+
+              <div className="head-slogan">
+                Meet the Team Behind Venturing Digitally : Experts in IT
+                Solutions.
+              </div>
+            </div>
+
+            <div className="section-content">
+              <div className="row align-items-center">
+                <div className="col-lg-6">
+                  <div className="health-media" style={{ marginRight: "0rem" }}>
+                    <div className="health-photo">
+                      <LazyLoadImage
+                        src="image/solution/request-demo.png"
+                        alt="..."
+                        className="w-75 h-auto"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-6">
+                  <div className="health-content">
+                    <div className="form-container">
+                      <div className="form-header">
+                        <h2>Request Free Demo</h2>
+                      </div>
+
+                      <form className="demo-form">
+                        <div className="form-row">
+                          <div className="form-group">
+                            <input type="text" placeholder="First Name" />
+                          </div>
+                          <div className="form-group">
+                            <input type="text" placeholder="Last Name" />
+                          </div>
+                        </div>
+
+                        <div className="form-row">
+                          <div className="form-group">
+                            <input type="email" placeholder="Email" />
+                          </div>
+                          <div className="form-group">
+                            <input type="tel" placeholder="Phone" />
+                          </div>
+                        </div>
+
+                        <div className="form-row">
+                          <div className="form-group">
+                            <input
+                              type="text"
+                              placeholder="Name of the Institute"
+                            />
+                          </div>
+                          <div className="form-group">
+                            <input type="text" placeholder="City" />
+                          </div>
+                        </div>
+
+                        <div className="form-row">
+                          <div className="form-group full-width">
+                            <input
+                              type="number"
+                              placeholder="Number of Students"
+                            />
+                          </div>
+                        </div>
+
+                        <div className="form-row institute-type">
+                          <label>Institute Type *</label>
+                        </div>
+                        <div className="form-row institute-type">
+                          <div className="radio-buttons">
+                            <label>
+                              <input
+                                type="radio"
+                                name="instituteType"
+                                value="Pre-School"
+                              />{" "}
+                              Pre-School
+                            </label>
+                            <label>
+                              <input
+                                type="radio"
+                                name="instituteType"
+                                value="School"
+                              />{" "}
+                              School
+                            </label>
+                            <label>
+                              <input
+                                type="radio"
+                                name="instituteType"
+                                value="lla"
+                              />{" "}
+                              lla
+                            </label>
+                            <label>
+                              <input
+                                type="radio"
+                                name="instituteType"
+                                value="University"
+                              />{" "}
+                              University
+                            </label>
+                            <label>
+                              <input
+                                type="radio"
+                                name="instituteType"
+                                value="Training Center"
+                              />{" "}
+                              Training Center
+                            </label>
+                          </div>
+                        </div>
+
+                        <button type="submit" className="request-btn">
+                          Request Free Demo
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <---------------------------------- UI Wireframe Design Services -----------------------------> */}
+      <section id="ui-clients3" className="uiux-wireframe-sec">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-xxl-6 col-xl-8 col-lg-10 col-md-12 mx-auto">
+              <div className="ph-heading-title">
+                <h2 className="ph-color-white mb-3">
+                  School & College Management Software Features
+                </h2>
+                <p>
+                  Four standout features of school and lla management software
+                  that greatly enhance institutional efficiency and improve the
+                  educational experience for all users:
+                </p>
+              </div>
+            </div>
+            <div className="row align-items-center">
+              <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                <div className="ph-wirframe-box">
+                  <div className="ph-wireframe-inner">
+                    <h6>Centralized Student Information System:</h6>
+                    <p>
+                      This feature consolidates student data, including academic
+                      records, attendance, health details, and behavioral
+                      history, into one platform. It simplifies access for
+                      teachers, administrators, and parents, ensuring a
+                      360-degree view of each student’s progress and needs. This
+                      unified database improves data accuracy, reduces
+                      paperwork, and enables swift, informed decision-making.
+                    </p>
+                  </div>
+                  <div className="ph-wireframe-inner">
+                    <h6>Attendance and Timetable Management:</h6>
+                    <p>
+                      Automating attendance tracking and timetable creation
+                      saves teachers and administrators significant time while
+                      enhancing accuracy. The system supports daily attendance
+                      logs, leave approvals, and monthly summaries, ensuring
+                      accountability and transparency. Real-time timetable
+                      adjustments are instantly visible to all users, reducing
+                      scheduling conflicts and keeping students, teachers, and
+                      parents up-to-date.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                <div className="ph-wireframe-img">
+                  <LazyLoadImage
+                    alt="ui ux wireframe"
+                    src="image/ui-ux-design/ui-ux-section-3.png"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                <div className="ph-wirframe-box">
+                  <div className="ph-wireframe-inner">
+                    <h6>Examination and Grade Management:</h6>
+                    <p>
+                      Teachers can create exams, manage grades, and generate
+                      report cards with ease, helping to streamline the
+                      assessment process. Automated grading and real-time
+                      reporting enable students and parents to track academic
+                      progress, while the system's analytics offer insights into
+                      performance trends, helping educators identify areas for
+                      improvement and support.
+                    </p>
+                  </div>
+                  <div className="ph-wireframe-inner">
+                    <h6>Finance and Fee Management:</h6>
+                    <p>
+                      This feature automates fee invoicing, payment tracking,
+                      and receipt generation, simplifying financial operations.
+                      With online payment options, parents can make payments
+                      conveniently, while management can monitor dues, pending
+                      fees, and financial reports with ease. This reduces
+                      administrative overhead and increases transparency, making
+                      financial management smoother for the institution and
+                      families alike.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="enterprise-faq">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="section-head">
+              <div className="custom-head">
+                <div className="head-title">Frequently Ask Question</div>
+              </div>
+              <div className="head-slogan">
+                Frequently Asked Question For GXP & GMP Software
+              </div>
+            </div>
+            <div className="section-content">
+              <div className="accordion">
+                <div className="accordion-item">
+                  <div
+                    className={
+                      activeIndex === 1
+                        ? "accordion-item-header active"
+                        : "accordion-item-header"
+                    }
+                    onClick={() => toggleTab(1)}
+                  >
+                    What is GxP software, and why is it important?
+                  </div>
+                  {activeIndex === 1 ? (
+                    <div className="accordion-item-body">
+                      <div className="accordion-item-body-content">
+                        GxP software refers to systems designed to comply with
+                        Good Practice (GxP) regulations, which are standards for
+                        ensuring product safety, quality, and efficacy in
+                        industries like pharmaceuticals and biotechnology. This
+                        software is crucial because it helps organizations
+                        maintain compliance with regulatory requirements,
+                        reducing the risk of non-compliance penalties and
+                        ensuring the integrity of their processes.
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+
+              <div className="accordion">
+                <div className="accordion-item">
+                  <div
+                    className={
+                      activeIndex === 2
+                        ? "accordion-item-header active"
+                        : "accordion-item-header"
+                    }
+                    onClick={() => toggleTab(2)}
+                  >
+                    How does GMP software help in regulatory compliance?
+                  </div>
+                  {activeIndex === 2 ? (
+                    <div className="accordion-item-body">
+                      <div className="accordion-item-body-content">
+                        GMP (Good Manufacturing Practice) software helps
+                        organizations adhere to strict guidelines for
+                        manufacturing processes, ensuring products are
+                        consistently produced and controlled according to
+                        quality standards. It automates documentation, tracks
+                        changes, and provides audit trails, making it easier to
+                        comply with regulations and pass inspections by
+                        regulatory bodies.
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+
+              <div className="accordion">
+                <div className="accordion-item">
+                  <div
+                    className={
+                      activeIndex === 3
+                        ? "accordion-item-header active"
+                        : "accordion-item-header"
+                    }
+                    onClick={() => toggleTab(3)}
+                  >
+                    What features should I look for in GxP and GMP software?
+                  </div>
+                  {activeIndex === 3 ? (
+                    <div className="accordion-item-body">
+                      <div className="accordion-item-body-content">
+                        When selecting GxP and GMP software, look for features
+                        like automated documentation, audit trails, electronic
+                        signatures, version control, and real-time monitoring.
+                        The software should also support validation processes,
+                        ensure data integrity, and be easily customizable to fit
+                        the specific regulatory needs of your industry.
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+
+              <div className="accordion">
+                <div className="accordion-item">
+                  <div
+                    className={
+                      activeIndex === 4
+                        ? "accordion-item-header active"
+                        : "accordion-item-header"
+                    }
+                    onClick={() => toggleTab(4)}
+                  >
+                    How does GxP and GMP software ensure data integrity?
+                  </div>
+                  {activeIndex === 4 ? (
+                    <div className="accordion-item-body">
+                      <div className="accordion-item-body-content">
+                        GxP and GMP software ensure data integrity by
+                        implementing features like access controls, audit
+                        trails, and encryption. These measures prevent
+                        unauthorized access, ensure accurate data recording, and
+                        maintain a clear history of changes. This is critical
+                        for maintaining the reliability and trustworthiness of
+                        data used in regulatory submissions and quality control
+                        processes.
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default SchoolCollage;

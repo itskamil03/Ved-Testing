@@ -1,0 +1,580 @@
+import "./Cms.css";
+import Hero from "../../components/hero_section/Hero";
+import cms1 from "../../assets/cms-development-services-cover-picture-03.svg";
+import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+
+const cms_best = [
+  {
+    id: 1,
+    img1: "image/cms/customized.png",
+    head: "Customized Content Management Systems",
+    p1: "We develop custom CMS solutions tailored to your specific business requirements, ensuring seamless content management and publishing workflows.",
+    p2: "Our solutions are designed to provide a user-friendly interface, flexible content editing capabilities, and powerful administrative controls.",
+  },
+  {
+    id: 2,
+    img1: "image/cms/scalable.png",
+    head: "Scalable and Modular Architecture",
+    p1: "Our CMS solutions are built with a scalable and modular architecture that can accommodate your growing content needs and future business expansion.",
+    p2: "We ensure that your CMS platform can handle increasing content volumes, traffic, and functionality without compromising performance.",
+  },
+  {
+    id: 3,
+    img1: "image/cms/seamless.png",
+    head: "Seamless Content Publishing",
+    p1: "Our CMS solutions enable you to create, edit, and publish content effortlessly, allowing you to keep your website updated with fresh and engaging content.",
+    p2: "We provide intuitive content editors, version control, and scheduling capabilities to streamline the content publishing process.",
+  },
+  {
+    id: 4,
+    img1: "image/cms/enhanced.png",
+    head: "Enhanced User Experience",
+    p1: "We prioritize user experience in our CMS solutions, ensuring that your website visitors have a seamless and intuitive browsing experience.",
+    p2: "Our solutions incorporate responsive design, optimized page load times, and intuitive navigation to enhance user engagement and satisfaction.",
+  },
+];
+
+const cms_goal = [
+  {
+    id: "1",
+    head: "Streamlined Content Creation",
+    p1: "Our CMS solutions enable efficient content creation workflows, allowing your team to collaborate, author, and review content seamlessly.",
+    p2: "We provide content templates, approval workflows, and content reuse capabilities to streamline the content creation process.",
+  },
+  {
+    id: "2",
+    head: "Dynamic Content Publishing",
+    p1: "With our CMS solutions, you can easily publish and update content across multiple channels and devices, ensuring consistent messaging and branding.",
+    p2: "We provide content scheduling, preview functionality, and multi-language support to enhance your content publishing capabilities.",
+  },
+  {
+    id: "3",
+    head: "Flexible Content Presentation",
+    p1: "Our CMS solutions empower you to customize and personalize the presentation of your content to create unique and engaging experiences for your audience.",
+    p2: "We offer flexible content layouts, dynamic widgets, and integration with third-party tools to enhance the visual appeal and functionality of your website.",
+  },
+  {
+    id: "4",
+    head: "Robust Content Governance",
+    p1: "We help you establish robust content governance practices, ensuring compliance with content standards, brand guidelines, and regulatory requirements.",
+    p2: "Our solutions offer role-based access controls, content moderation, and version control to maintain content quality and integrity.",
+  },
+];
+
+function Cms() {
+  const [isAgreed, setIsAgreed] = useState(false);
+
+  const handleChange = () => {
+    setIsAgreed(!isAgreed);
+  };
+
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    phone: "",
+    alternate_phone: "",
+    email: "",
+    business: "",
+    date:"",
+    country:"",
+    user:"",
+    address:""
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const [activeIndex, setActiveIndex] = useState(1);
+
+  const toggleTab = (index) => {
+    setActiveIndex(index === activeIndex ? null : index);
+  };
+
+
+  return (
+    <>
+      <Hero
+        heading="Cms Development"
+        imgbtn="Cms"
+        // slogan="Simplify Content Management"
+        src="image/cms/cms.jpeg"
+      />
+      {/* <---------------------------------------- Cms first ----------------------------------------------> */}
+      <section id="cmsfirst" style={{ backgroundImage: "url('/top.svg')" }}>
+        <div className="container-fluid">
+          <div className="container">
+            <div className="cmsfirst-section-head">
+              <div className="cmsfirst-custom-head">
+                <div className="cmsfirst-head-title">
+                  Best-in-Class CMS Solutions
+                </div>
+              </div>
+
+              <div className="cmsfirst-head-slogan">
+                Efficient content management is the cornerstone of a successful
+                online presence. At Venturing Digitally, we offer comprehensive
+                CMS (Content Management System) solutions that empower
+                businesses to streamline their content creation, publishing, and
+                management processes. Our expert team leverages advanced CMS
+                platforms and custom development to provide you with a robust
+                and user-friendly content management solution tailored to your
+                unique needs.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <---------------------------------------- Cms second ----------------------------------------------> */}
+      <section
+        id="cmssecond"
+        style={{ backgroundImage: "url('backgrounds/supply-chain.avif')" }}
+      >
+        <div className="container-fluid">
+          <div className="container">
+            <div className="cmssecond-why-grid">
+              {cms_best.map((sup) => {
+                return (
+                  <div className="cmssecond-why-box" key={sup.id}>
+                    <div className="cmssecond-icon">
+                      <LazyLoadImage
+                        src={sup.img1}
+                        alt="..."
+                        className="cmssecond-img  w-100 h-100"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="details">
+                      <div className="cmssecond-title">{sup.head}</div>
+                      <div className="cmssecond-content">{sup.p1}</div>
+                      <div className="cmssecond-content">{sup.p2}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <---------------------------------------- Cms third ----------------------------------------------> */}
+      <section
+        id="cmsthird"
+        style={{ backgroundImage: "url('backgrounds/cms.svg')" }}
+      >
+        <div className="container-fluid">
+          <div className="container">
+            <div className="cmsthird-section-main">
+              <div className="cmsthird-section-left">
+                <div className="cmsthird-section-left-containt">
+                  <div className="cmsthird-section-left-heading">
+                    Custom CMS Development Services
+                  </div>
+                  <div className="cmsthird-section-left-text">
+                    Partner with Venturing Digitally to unlock the full
+                    potential of your content management efforts. Our CMS
+                    solutions provide you with the tools and capabilities to
+                    streamline content creation, enhance user experiences, and
+                    drive the success of your digital initiatives.
+                  </div>
+                  <Link>
+                    <div className="cmsthird-section-left-btn">
+                      Get a powerful CMS &nbsp;
+                      <BsArrowRight className="cmsthird-icon" />
+                    </div>
+                  </Link>
+                </div>
+              </div>
+              <div className="cmsthird-section-right">
+                <div className="cmsthird-section-right-img">
+                  <LazyLoadImage src={cms1} className="w-100 h-100" loading="lazy"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <---------------------------------------- Cms fourth ----------------------------------------------> */}
+      <section id="cmsforth" className="bg-light">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="cmsforth-section-head">
+              <div className="cmsforth-custom-head">
+                <div className="cmsforth-head-title">CMS GOALS</div>
+              </div>
+              <div className="cmsforth-head-slogan">
+                Empowering Your Content Management
+              </div>
+            </div>
+            <div className="cmsforth-section-content">
+              <div className="cms-goal-grid">
+                {cms_goal.map((data) => {
+                  return (
+                    <div className="cmsforth-value-card" key={data.id}>
+                      <div className="cmsforth-title">{data.head}</div>
+                      <div className="cmsforth-data">
+                        <div className="content">{data.p1}</div>
+                        <div className="content">{data.p2}</div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <------------- contact form -----------> */}
+      <section id="health">
+        <div className="container-fluid">
+          <div className="container">
+          
+            <div className="section-content">
+              <div className="row align-items-center">
+               
+              <div className="col-lg-6">
+                  <div className="health-media" style={{ marginRight: "0rem" }}>
+                    <div className="health-photo">
+                      <LazyLoadImage
+                        src="crm.jpeg"
+                        alt="..."
+                        className="w-75 h-auto"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-6">
+                  <div className="health-content">
+                    <div className="form-container">
+                      <div className="form-header">
+                        <h2>Request Free Demo</h2>
+                      </div>
+
+                      <form>
+                          <div className="form-input-new" style={{paddingBottom:"0px"}}>
+                            <div className="col-lg-6">
+                              <div className="left-placeholder">
+                                <input
+                                  type="text"
+                                  name="first_name"
+                                  className="form-control fs-3 first-input"
+                                  placeholder="First Name*"
+                                  value={formData.first_name}
+                                  onChange={handleInputChange}
+                                  required
+                                />
+                              </div>
+                             
+                             
+
+                              <div className="email-placholder">
+                                <input
+                                  type="text"
+                                  name="title"
+                                  className="form-control fs-3 second-input"
+                                  placeholder="Title/Position*"
+                                  value={formData.title}
+                                  onChange={handleInputChange}
+                                  required
+                                />
+                              </div>
+
+                              <div className="email-placholder">
+                                <input
+                                  type="tel"
+                                  name="phone"
+                                  className="form-control fs-3 second-input"
+                                  placeholder="Mobile No*"
+                                  value={formData.phone}
+                                  onChange={handleInputChange}
+                                  required
+                                />
+                              </div>
+
+                              <div className="email-placholder">
+                                <input
+                                  type="email"
+                                  name="email"
+                                  className="form-control fs-3 second-input"
+                                  placeholder="Email*"
+                                  value={formData.email}
+                                  onChange={handleInputChange}
+                                  required
+                                />
+                              </div>
+                              <div className="email-placholder">
+                                <input
+                                  type="text"
+                                  name="address"
+                                  className="form-control fs-3 second-input"
+                                  placeholder="Address*"
+                                  value={formData.address}
+                                  onChange={handleInputChange}
+                                  required
+                                />
+                              </div>
+
+                           
+                             
+                            </div>
+                            <div className="col-lg-6">
+                              <div className="left-placholder">
+                                <input
+                                  type="text"
+                                  name="last_name"
+                                  className="form-control fs-3 first-input"
+                                  placeholder="Last Name*"
+                                  value={formData.last_name}
+                                  onChange={handleInputChange}
+                                  required
+                                />
+                              </div>
+                              <div className="email-placholder">
+                                <input
+                                  type="text"
+                                  name="business"
+                                  className="form-control fs-3 second-input"
+                                  placeholder="Organisation/Business Name*"
+                                  value={formData.business}
+                                  onChange={handleInputChange}
+                                  required
+                                />
+                              </div>
+                             
+                             
+                              
+                              <div className="email-placholder">
+                                <input
+                                  type="text"
+                                  name="country"
+                                  className="form-control fs-3 second-input"
+                                  placeholder="Country*"
+                                  value={formData.country}
+                                  onChange={handleInputChange}
+                                  required
+                                />
+                              </div>
+
+                           
+
+                              <div className="email-placholder">
+                                <input
+                                  type="number"
+                                  name="user"
+                                  className="form-control fs-3 second-input"
+                                  placeholder="No. of user access*"
+                                  value={formData.user}
+                                  onChange={handleInputChange}
+                                  required
+                                />
+                              </div>
+
+                              <div className="email-placholder">
+                                <input
+                                  type="date"
+                                  name="date"
+                                  className="form-control fs-3 second-input"
+                                  placeholder="Preffered Date & Time*"
+                                  value={formData.date}
+                                  onChange={handleInputChange}
+                                  required
+                                />
+                              </div>
+
+                           
+
+                            </div>
+                            
+                          </div>
+                          <div className="form-input-new" style={{padding:"0px 4px 0px 15px"}}>
+                          <div className="col-lg-12">
+                       
+                          <div className="email-placholder">
+                              <textarea
+                              
+                                rows={3}
+                                name="about"
+                                className="form-control fs-3 second-input"
+                                placeholder="Tell us About Project*"
+                                value={formData.about}
+                                onChange={handleInputChange}
+                                required
+                              ></textarea>
+                              </div>
+
+                              <div >
+                                <label style={{display:'flex', gridColumnGap:"8px", alignItems:"start", fontSize:"12px"}}>
+                                  <input
+                                    type="radio"
+                                    name="agreement"
+                                    checked={isAgreed}
+                                    onChange={handleChange}
+                                  />
+                                 I agree to the use of personal information collected from myself in organization software demo purpose and other IT related support from your company.
+                                </label>
+                              
+                              </div>
+                              </div>
+                              </div>
+                          
+                        <button type="submit" className="request-btn">
+                          Request Free Demo
+                        </button>
+
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="enterprise-faq">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="section-head">
+              <div className="custom-head">
+                <div className="head-title">Frequently Ask Question</div>
+              </div>
+              <div className="head-slogan">
+                Frequently Asked Question For GXP & GMP Software
+              </div>
+            </div>
+            <div className="section-content">
+              <div className="accordion">
+                <div className="accordion-item">
+                  <div
+                    className={
+                      activeIndex === 1
+                        ? "accordion-item-header active"
+                        : "accordion-item-header"
+                    }
+                    onClick={() => toggleTab(1)}
+                  >
+                    What is GxP software, and why is it important?
+                  </div>
+                  {activeIndex === 1 ? (
+                    <div className="accordion-item-body">
+                      <div className="accordion-item-body-content">
+                        GxP software refers to systems designed to comply with
+                        Good Practice (GxP) regulations, which are standards for
+                        ensuring product safety, quality, and efficacy in
+                        industries like pharmaceuticals and biotechnology. This
+                        software is crucial because it helps organizations
+                        maintain compliance with regulatory requirements,
+                        reducing the risk of non-compliance penalties and
+                        ensuring the integrity of their processes.
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+
+              <div className="accordion">
+                <div className="accordion-item">
+                  <div
+                    className={
+                      activeIndex === 2
+                        ? "accordion-item-header active"
+                        : "accordion-item-header"
+                    }
+                    onClick={() => toggleTab(2)}
+                  >
+                    How does GMP software help in regulatory compliance?
+                  </div>
+                  {activeIndex === 2 ? (
+                    <div className="accordion-item-body">
+                      <div className="accordion-item-body-content">
+                        GMP (Good Manufacturing Practice) software helps
+                        organizations adhere to strict guidelines for
+                        manufacturing processes, ensuring products are
+                        consistently produced and controlled according to
+                        quality standards. It automates documentation, tracks
+                        changes, and provides audit trails, making it easier to
+                        comply with regulations and pass inspections by
+                        regulatory bodies.
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+
+              <div className="accordion">
+                <div className="accordion-item">
+                  <div
+                    className={
+                      activeIndex === 3
+                        ? "accordion-item-header active"
+                        : "accordion-item-header"
+                    }
+                    onClick={() => toggleTab(3)}
+                  >
+                    What features should I look for in GxP and GMP software?
+                  </div>
+                  {activeIndex === 3 ? (
+                    <div className="accordion-item-body">
+                      <div className="accordion-item-body-content">
+                        When selecting GxP and GMP software, look for features
+                        like automated documentation, audit trails, electronic
+                        signatures, version control, and real-time monitoring.
+                        The software should also support validation processes,
+                        ensure data integrity, and be easily customizable to fit
+                        the specific regulatory needs of your industry.
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+
+              <div className="accordion">
+                <div className="accordion-item">
+                  <div
+                    className={
+                      activeIndex === 4
+                        ? "accordion-item-header active"
+                        : "accordion-item-header"
+                    }
+                    onClick={() => toggleTab(4)}
+                  >
+                    How does GxP and GMP software ensure data integrity?
+                  </div>
+                  {activeIndex === 4 ? (
+                    <div className="accordion-item-body">
+                      <div className="accordion-item-body-content">
+                        GxP and GMP software ensure data integrity by
+                        implementing features like access controls, audit
+                        trails, and encryption. These measures prevent
+                        unauthorized access, ensure accurate data recording, and
+                        maintain a clear history of changes. This is critical
+                        for maintaining the reliability and trustworthiness of
+                        data used in regulatory submissions and quality control
+                        processes.
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default Cms;

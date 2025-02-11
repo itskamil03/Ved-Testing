@@ -1,0 +1,238 @@
+/* <-------------------------------------------- Document Management first ----------------------------------------------> */
+#docfirst {
+  padding: 50px 0px;
+}
+#docfirst .docfirst-section-head {
+  margin-bottom: 50px;
+}
+#docfirst .docfirst-section-head .docfirst-head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+#docfirst .docfirst-section-head .docfirst-head-slogan {
+  font-size: 1.6rem;
+  padding-left: 20px;
+  border-left: 2px solid #27286d;
+  text-align: justify;
+}
+#docfirst .main-content {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-bottom: 60px;
+}
+#docfirst .why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+#docfirst .docfirst-why-card {
+  box-shadow: 0 20px 25px #bbbbbb78;
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 3px solid #3692f2;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#docfirst .docfirst-why-card .docfirst-title {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #3b3c3d;
+  padding-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+#docfirst .docfirst-why-card .docfirst-data-list {
+  list-style: none;
+  padding-left: 0;
+}
+#docfirst .docfirst-why-card .docfirst-data-list li {
+  position: relative;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+/* <-------------------------------------------- Document Management Second ----------------------------------------------> */
+#docsecond {
+  padding: 50px 0px;
+}
+.docsecond-section-head {
+  margin-bottom: 50px;
+}
+.docsecond-section-head .docsecond-head-title {
+  font-size: 4rem;
+  width: 800px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0px auto 30px auto;
+  font-family: "Exo", sans-serif;
+}
+.docsecond-section-head .docsecond-head-slogan {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #27286d;
+}
+.docsecond-img-box {
+  margin-top: 20px;
+  width: 100%;
+  aspect-ratio: 1 / 0.23;
+  object-fit: cover;
+}
+/* <---------------------------------  Document Management third ------------------------------------> */
+#docthird {
+  padding: 50px 0;
+  margin-top: 50px;
+}
+#docthird .docthird-section-head {
+  margin-bottom: 50px;
+}
+#docthird .docthird-section-head .docthird-head-title {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Exo", sans-serif;
+}
+#docthird .docthird-section-head .docthird-head-slogan {
+  font-size: 1.7rem;
+  padding-left: 20px;
+  text-align: justify;
+}
+#docthird .docthird-value-card:hover {
+  box-shadow: 0 20px 25px rgba(65, 65, 65, 0.5);
+  background: white;
+}
+#docthird .docthird-value-card {
+  max-width: 500px;
+  margin: 0px auto 20px;
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  box-shadow: 0 18px 24px rgba(150, 150, 150, 0.3);
+  min-height: 300px;
+}
+#docthird .docthird-value-card .docthird-icon {
+  height: 80px;
+  max-width: 80px;
+  text-align: left;
+  color: #27286d;
+  margin: 0 auto 20px;
+}
+#docthird .docthird-value-card .docthird-title {
+  font-size: 2.3rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#docthird .docthird-value-card .docthird-data {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#doc-support .section-head {
+  margin-bottom: 50px;
+}
+#doc-support .section-head .title {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Exo", sans-serif;
+}
+#doc-support .support-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#doc-support .support-box {
+  box-shadow: 0 8px 24px #ababab66;
+  transition: all 0.3s linear;
+  padding: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#doc-support .support-box:hover {
+  transform: translate(0, -10px);
+}
+@media screen and (max-width: 994px) {
+  #docfirst {
+    padding: 30px 0px;
+  }
+  #docfirst .docfirst-section-head {
+    margin-bottom: 50px;
+  }
+  #docfirst .docfirst-section-head .docfirst-head-title {
+    font-size: 3rem;
+  }
+  #docfirst .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .docsecond-section-head .docsecond-head-title {
+    font-size: 3.5rem;
+    width: 100%;
+  }
+  .docsecond-section-head .docsecond-head-slogan {
+    font-size: 1.7rem;
+  }
+    #doc-support .section-head {
+    margin-bottom: 30px;
+  }
+  #doc-support .support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #docfirst {
+    padding: 30px 0px;
+  }
+  #docfirst .docfirst-section-head {
+    margin-bottom: 30px;
+  }
+  #docfirst .docfirst-section-head .docfirst-head-title {
+    font-size: 2.9rem;
+  }
+  #docfirst .why-grid {
+    grid-template-columns: 1fr;
+  }
+  #docsecond {
+    padding: 30px 0px;
+  }
+  .docsecond-section-head .docsecond-head-title {
+    font-size: 3rem;
+    width: 100%;
+  }
+  .docsecond-section-head .docsecond-head-slogan {
+    font-size: 1.6rem;
+  }
+  #docthird {
+    margin-top: 30px;
+    padding: 20px 0;
+  }
+  #docthird .docthird-section-head {
+    margin-bottom: 30px;
+  }
+  #docthird .docthird-section-head .docthird-head-slogan {
+    font-size: 1.5rem;
+    padding-left: 20px;
+    text-align: justify;
+  }
+  #doc-support .section-head {
+    margin-bottom: 30px;
+  }
+  #doc-support .support-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,273 @@
+/* <-------------------------------------------- Why Venturing Digitally ----------------------------------------------> */
+#board-why {
+  padding: 50px 0px;
+}
+
+#board-why .section-head {
+  margin-bottom: 30px;
+}
+
+#board-why .section-head .head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+
+#board-why .section-head .head-slogan {
+  font-size: 1.6rem;
+  padding-left: 20px;
+  border-left: 2px solid #27286d;
+  text-align: justify;
+}
+
+#board-why .main-content {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-bottom: 60px;
+}
+
+#board-why .why-card {
+  border-radius: 20% 20% 5% 5% / 50% 50% 5% 5%;
+  position: relative;
+  box-shadow: 0 8px 24px #a9a9a985;
+  padding: 40px 20px 20px;
+  text-align: center;
+  margin-bottom: 65px;
+  cursor: pointer;
+  display: grid;
+  grid-row-gap: 8px;
+}
+
+#board-why .why-card .icon {
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #b5b5b5;
+  font-size: 2.5rem;
+  color: #27286d;
+}
+
+#board-why .why-card .title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#board-why .why-card .data {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: auto;
+}
+
+/* <-------------------------------------- board-enquiry-contain --------------------> */
+#board-enquiry-contain {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#board-enquiry-contain .board-enquiry.left {
+  clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+  padding: 20px 80px 20px 50px;
+}
+
+#board-enquiry-contain .board-enquiry .content {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#board-enquiry-contain .board-enquiry .enquiry-btn {
+  border: 2px solid white;
+  font-size: 1.5rem;
+  padding: 5px 15px;
+  color: white;
+  letter-spacing: 1px;
+  transition: all 0.3s linear;
+}
+
+#board-enquiry-contain .board-enquiry .enquiry-btn:hover {
+  letter-spacing: 3px;
+}
+
+#board-enquiry-contain .board-enquiry.right {
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  position: absolute;
+  right: 0;
+  top: 50px;
+  padding: 20px 40px 20px 90px;
+}
+
+#board-enquiry-contain .board-enquiry .slogan {
+  color: ghostwhite;
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+}
+
+#board-enquiry-contain .board-enquiry {
+  background: #27286d;
+  width: 53%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* <-------------------------------- We Render Maintaining Refined Brand Reputation Easy ----------------------> */
+
+#board-render {
+  padding: 50px 0px;
+}
+
+#board-render .section-head {
+  margin-bottom: 30px;
+}
+
+#board-render .section-head .head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+
+#board-render .section-head .head-slogan {
+  font-size: 1.6;
+  padding-left: 20px;
+  border-left: 2px solid #27286d;
+  text-align: justify;
+}
+
+#board-render .main-content {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+#board-render .accordion {
+  margin-bottom: 20px;
+}
+
+#board-render .accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+#board-render .accordion-item-header {
+  padding: 10px 20px;
+  font-weight: bold;
+  display: flex;
+  gap: 5px;
+  font-size: 1.6rem;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+#board-render .accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 15px);
+  width: 30px;
+  height: 30px;
+  background: #27286d;
+  border-radius: 50%;
+  color: white;
+  display: grid;
+  place-items: center;
+}
+
+#board-render .accordion-item-header.active::after {
+  content: "\002D";
+  font-size: 2rem;
+  position: absolute;
+  right: -15px;
+  top: calc(50% - 15px);
+  width: 30px;
+  height: 30px;
+  background: #27286d;
+  border-radius: 50%;
+  color: white;
+  display: grid;
+  place-items: center;
+}
+
+#board-render .accordion-item-body-content {
+  padding: 1rem;
+  font-size: 1.5rem;
+  /* line-height: 1.5rem; */
+  border-top: 1px solid;
+  transition: max-height 0.2s ease-out;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+#board-render .accordion {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 994px) {
+  #board-why {
+    padding: 15px 0px;
+  }
+
+  #board-why .section-head {
+    margin-bottom: 25px;
+  }
+
+  #board-why .section-head .head-title {
+    font-size: 2.7rem;
+  }
+
+  #board-enquiry-contain {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  #board-enquiry-contain .board-enquiry.left {
+    clip-path: none;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #board-enquiry-contain .board-enquiry.right {
+    clip-path: none;
+    position: static;
+    padding: 10px;
+    width: 100%;
+  }
+
+  #board-enquiry-contain .board-enquiry {
+    width: 100%;
+    height: 300px;
+  }
+
+  #board-render {
+    padding: 15px 0px;
+  }
+
+  #board-render .section-head {
+    margin-bottom: 20px;
+  }
+
+  #board-render .section-head .head-title {
+    font-size: 2.5rem;
+  }
+
+  #board-render .accordion-item-header svg {
+    display: none;
+  }
+}

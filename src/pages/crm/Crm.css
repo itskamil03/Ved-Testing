@@ -1,0 +1,437 @@
+/* -- ===================================================================================
+                            CUSTOMER RELATIONSHIP MANAGEMENT
+=================================================================================== -- */
+
+/* -- -------------------------------
+                RESULTS
+------------------------------- -- */
+#crm-results {
+  padding: 50px 0;
+}
+#crm-results .section-head .head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+#crm-results .section-head {
+  margin-bottom: 50px;
+}
+#crm-results .result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#crm-results .result-grid .result-card {
+  border: 1px solid #80808082;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#crm-results .result-grid .result-card .icon {
+  position: absolute;
+  left: 20px;
+  bottom: -1.6rem;
+  font-size: 8rem;
+  color: #27286d24;
+}
+
+#crm-results .result-grid .result-card .number {
+  font-size: 4rem;
+  font-family: "Exo", sans-serif;
+  color: #27286d;
+}
+
+#crm-results .result-grid .result-card .title {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+/* -- -------------------------------
+            ASSISTANCE
+------------------------------- -- */
+#crm-assistance {
+  padding: 50px 0;
+}
+#crm-assistance .section-head .head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+#crm-assistance .section-head {
+  margin-bottom: 50px;
+}
+#crm-assistance .assistance-wrapper {
+  position: relative;
+  perspective: 40em;
+  display: grid;
+  transform-style: preserve-3d;
+  margin: 0 10px;
+}
+
+#crm-assistance .assistance-card {
+  padding: 20px;
+  border: 1px solid #80808082;
+  background: #ffffff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+#crm-assistance .assistance-card .icon {
+  font-size: 2.5rem;
+  background: #27286d;
+  display: inline-grid;
+  width: 50px;
+  aspect-ratio: 1/1;
+  place-items: center;
+  color: white;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#crm-assistance .assistance-card .title {
+  font-family: "Exo", sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#crm-assistance .assistance-card .content {
+  text-align: justify;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+#crm-assistance .assistance-card .content:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+/* -- -------------------------------
+               CONTACT BAR
+------------------------------- -- */
+#crm-contact-bar {
+  padding: 50px 0;
+}
+#crm-contact-bar {
+  background: #27286d;
+}
+
+#crm-contact-bar .contact-container {
+  display: flex;
+  align-items: center;
+}
+
+#crm-contact-bar .contact-container .details {
+  width: calc(100% - 300px);
+}
+
+#crm-contact-bar .contact-container .title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+}
+
+#crm-contact-bar .contact-container .title span {
+  background: white;
+  color: #27286d;
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+#crm-contact-bar .contact-container .button {
+  width: 300px;
+}
+
+#crm-contact-bar .contact-container .button a {
+  font-family: "Exo", sans-serif;
+  color: white;
+  font-size: 2.4rem;
+  display: block;
+  text-align: center;
+  padding: 20px 10px;
+  position: relative;
+}
+
+#crm-contact-bar .contact-container .button a::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  transition: all 0.5s linear;
+}
+
+#crm-contact-bar .contact-container .button a::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: all 0.5s linear;
+}
+
+#crm-contact-bar .contact-container .button a:hover:before {
+  transform: translate(280px, 0px) rotate(90deg);
+}
+
+#crm-contact-bar .contact-container .button a:hover:after {
+  transform: translate(-280px, 0px) rotate(90deg);
+}
+
+/* -- -------------------------------
+               WHY VED
+------------------------------- -- */
+#crm-why {
+  padding: 50px 0;
+}
+#crm-why .section-head {
+  margin-bottom: 50px;
+}
+#crm-why .section-head .head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+#crm-why .why-grid {
+  display: flex;
+  gap: 20px;
+  scrollbar-width: none;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow: auto;
+  padding: 20px 10px;
+}
+
+#crm-why .why-grid::-webkit-scrollbar {
+  display: none;
+}
+
+#crm-why .why-card {
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
+  background-image: linear-gradient(to top, #d0d6da 0%, #eff3f6 100%);
+  padding: 20px;
+  box-shadow: 0 8px 24px #b4b3b36e;
+}
+
+#crm-why .why-card .icon {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid;
+  background: white;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+#crm-why .why-card .title {
+  font-family: "Exo", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#crm-why .why-card .content {
+  text-align: justify;
+  height: 100px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 1.5rem;
+  padding-top: 8px;
+}
+
+/* -- -------------------------------
+            SUCCESS STORIES
+------------------------------- -- */
+
+#crm-success {
+  padding: 50px 0px;
+}
+#crm-success .section-head .head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
+}
+#crm-success .section-head {
+  margin-bottom: 50px;
+}
+#crm-success .client-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px;
+  border: 1px solid #8080805e;
+}
+
+#crm-success .client-item .image {
+  width: 100%;
+  aspect-ratio: 1/1.2;
+}
+
+#crm-success .client-item .details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#crm-success .client-item .details .client-image {
+  width: 120px;
+  aspect-ratio: 1/1;
+  margin-bottom: 10px;
+}
+
+#crm-success .client-item .details .client-image img {
+  object-fit: contain;
+  object-position: left;
+}
+
+#crm-success .client-item .details .title {
+  font-weight: bold;
+  font-family: "Exo", sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 5px;
+}
+
+#crm-success .client-item .details .content {
+  text-align: justify;
+  font-size: 1.3rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media screen and (max-width: 994px) {
+  #crm-results {
+    padding: 30px 0;
+  }
+  #crm-results .section-head .head-title {
+    font-size: 2.8rem;
+  }
+  #crm-results .section-head {
+    margin-bottom: 30px;
+  }
+  #crm-results .result-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  #crm-contact-bar {
+    padding: 30px 0;
+  }
+  #crm-contact-bar .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #crm-contact-bar .contact-container .details {
+    width: 100%;
+  }
+  #crm-contact-bar .contact-container .title {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #crm-results {
+    padding: 20px 0;
+  }
+  #crm-results .section-head .head-title {
+    font-size: 2.8rem;
+  }
+  #crm-results .section-head {
+    margin-bottom: 30px;
+  }
+  #crm-results .result-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  #crm-assistance {
+    padding: 20px 0;
+  }
+  #crm-assistance .section-head .head-title {
+    font-size: 2.9rem;
+  }
+  #crm-assistance .section-head {
+    margin-bottom: 30px;
+  }
+  #crm-assistance .assistance-card {
+    margin-bottom: 10px;
+  }
+  #crm-contact-bar {
+    padding: 20px 0;
+  }
+  #crm-contact-bar .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #crm-contact-bar .contact-container .details {
+    width: 100%;
+  }
+  #crm-contact-bar .contact-container .title {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  #crm-why {
+    padding: 20px 0;
+  }
+  #crm-why .section-head .head-title {
+    font-size: 2.9rem;
+  }
+  #crm-why .section-head {
+    margin-bottom: 30px;
+  }
+  #crm-success {
+    padding: 20px 0px;
+  }
+  #crm-success .section-head .head-title {
+    font-size: 2.9rem;
+  }
+  #crm-success .section-head {
+    margin-bottom: 30px;
+  }
+  #crm-success .client-item {
+    grid-template-columns: 1fr;
+  }
+  #crm-success .client-item .image {
+    width: 100%;
+    aspect-ratio: 1/0.8;
+    order: 1;
+  }
+  #crm-success .client-item .details {
+    padding: 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 2;
+  }
+}

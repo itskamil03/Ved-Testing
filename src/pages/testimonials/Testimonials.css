@@ -1,0 +1,71 @@
+/* <----------------------------------------------- why we are diffrent ---------------------------------------------> */
+#why-different {
+  padding: 50px 0px;
+}
+.align-items-center {
+  align-items: center !important;
+}
+#why-different .left-box {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px #80808059;
+  margin-bottom: 20px;
+}
+#why-different .left-box .title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#why-different .left-box .content {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+#why-different .left-box a {
+  display: block;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  color: black;
+  font-weight: bold;
+  transition: all 0.3s linear;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+#why-different .left-box a:hover {
+  letter-spacing: 4px;
+  word-spacing: 10px;
+}
+#why-different .right-grid .right-box {
+  margin-bottom: 25px;
+}
+#why-different .right-grid .right-box .icon {
+  font-size: 1.8rem;
+}
+#why-different .right-grid .right-box .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#why-different .right-grid .right-box .content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  #why-different {
+    padding: 15px 0px;
+  }
+  #why-different .left-box {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  #why-different .left-box .title {
+    font-size: 2.5rem;
+  }
+  #why-different .left-box .content {
+    font-size: 1.3rem;
+  }
+}
