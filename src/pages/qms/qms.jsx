@@ -53,7 +53,7 @@ const Qms = () => {
             <div className="head-image-main">
               <LazyLoadImage className="qms-icon-image" src="/qms-letter.jpg"  loading="lazy"/>
 
-              <div id="qms-heading">Quality Management Software (QMS/EQMS)</div>
+              <div id="qms-heading">Best Quality Management Software with Venturing Digitally (QMS/EQMS)</div>
             </div>
             <div className="head-image-containt">
               <div className="qms-heading-containt">
@@ -190,7 +190,7 @@ const Qms = () => {
                       </div>
                     </div>
                     <div className="head-slogan">
-                      Quality Management Software (QMS) offers several benefits
+                      Quality Management Software developed by venturing digitally (QMS) offers several benefits
                       for organizations looking to streamline their quality
                       processes and improve overall efficiency:
                     </div>

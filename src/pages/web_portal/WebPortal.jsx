@@ -86,13 +86,12 @@ function WebPortal() {
             <div className="webportal-section-head">
               <div className="webportal-custom-head">
                 <div className="webportal-head-title">
-                  Tailored Web Portals for Your Unique Needs
+                  Tailored Web Portals for Your Business and Industry
                 </div>
               </div>
 
               <div className="webportal-head-slogan">
-                Meet the Team Behind Venturing Digitally : Experts in IT
-                Solutions.
+              Best Web Portals for Your Business and Industry with venturing Digitally
               </div>
             </div>
 

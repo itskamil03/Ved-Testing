@@ -34,13 +34,13 @@ function ApplicationDevelopment() {
             <div className="section-head">
               <div className="custom-head">
                 <div className="head-title">
-                  Our Expertise With Major Mobile Application Development
+                  Our Expertise With Major Mobile Application Developmentat venturing digitally 
                 </div>
               </div>
               <div className="head-slogan page_title">
                 Building a digital front door for your business with stunning
                 mobile application design and development that attracts
-                customers and drives growth.
+                customers and drives growth with venturing digitally.
               </div>
             </div>
             <div className="section-content">

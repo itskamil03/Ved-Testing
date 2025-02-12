@@ -45,11 +45,11 @@ function EnterpriseSoftware() {
             <div className="section-head">
               <div className="custom-head">
                 <div className="head-title">
-                  Enterprise Software Development Services
+                  Enterprise Software Development Services with Venturing Digitally
                 </div>
               </div>
               <div className="head-slogan page_title">
-                Empowering Your Enterprise through Customized Software Solutions
+                Empowering Your Enterprise through best Customized Software Solutions with venturing digitally
               </div>
             </div>
             <div className="section-content">

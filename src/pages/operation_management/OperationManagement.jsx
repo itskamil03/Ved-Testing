@@ -105,7 +105,7 @@ function OperationManagement() {
                   Efficient operations management is crucial for businesses to
                   achieve operational excellence, maximize productivity, and
                   deliver superior customer experiences. At Venturing Digitally,
-                  we offer comprehensive operations management solutions that
+                  we offer best comprehensive operations management solutions that
                   empower organizations to streamline their processes, optimize
                   resource utilization, and drive business growth.
                 </div>
@@ -148,7 +148,7 @@ function OperationManagement() {
                   specific operational needs.
                 </div>
                 <div className="opermsecond-content-head mb-4">
-                  Key Features of Our Operations Management Solutions
+                  Key Features of venturing digitally Operations Management Solutions
                 </div>
               </div>
             </div>
