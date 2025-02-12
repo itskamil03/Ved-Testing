@@ -18,7 +18,7 @@ function AboutComponents() {
                   className="head-title wow slideInLeft"
                   data-wow-duration="2s"
                 >
-                 Venturing Digitally: Your One-Stop Custom Software Outsourcing Partner!
+                 Venturing Digitally : Best Software Company For Your One-Stop Software Solutions!
                 </h2>
               </div>
 
@@ -57,7 +57,7 @@ function AboutComponents() {
                       Venturing Digitally Pvt. Ltd.
                     </h3>
                     <div className="content-data page_title">
-                      We are IT & software company based in Jamshedpur,
+                      Venturing Digitally is IT & software company based in Jamshedpur,
                       Bhopal, Bangalore, Kolkata & Nagpur who are passionate in
                       providing innovative IT Services & solutions to businesses.
                       Our team brings together diverse skills and experience to
