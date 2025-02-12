@@ -44,13 +44,13 @@ function HomeHeroImg() {
             {/* </div> */}
             <div className="homeheroimg-contant">
               <div className="homeheroimg-slogan">
-                Transform Your Business Online
+                Transform Your Business Online 
               </div>
               <div className="homeheroimg-heading">
                 GxP software solutions EQMS, DMS, TMS, <br /> HRMS, ERP...
               </div>
               <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
-                GET STARTED
+                Contact Us
               </NavLink>
             </div>
           </div>
@@ -75,7 +75,7 @@ function HomeHeroImg() {
                 software solutions
               </div>
               <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
-                GET STARTED
+              Contact Us
               </NavLink>
             </div>
           </div>
@@ -99,7 +99,7 @@ function HomeHeroImg() {
                 GxP Training and Mentoring
               </div>
               <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
-                GET STARTED
+              Contact Us
               </NavLink>
             </div>
           </div>
@@ -123,7 +123,7 @@ function HomeHeroImg() {
                 Web Development, App Development, CRM <br /> Software, and More!
               </div>
               <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
-                GET STARTED
+              Contact Us
               </NavLink>
             </div>
           </div>
@@ -146,7 +146,7 @@ function HomeHeroImg() {
               <div className="homeheroimg-heading">
                 Android & iOS App Development <br /> for Your Business
               </div>
-              <div className="homeheroimg-imgbtn">GET STARTED</div>
+              <div className="homeheroimg-imgbtn">Contact Us</div>
             </div>
           </div>
         </div>
@@ -169,7 +169,7 @@ function HomeHeroImg() {
                 Custom CRM Software Solutions
               </div>
 
-              <div className="homeheroimg-imgbtn">GET STARTED</div>
+              <div className="homeheroimg-imgbtn">Contact Us</div>
             </div>
           </div>
         </div>
@@ -191,7 +191,7 @@ function HomeHeroImg() {
               <div className="homeheroimg-heading">
                 SEO, PPC, Social Media, and More!
               </div>
-              <div className="homeheroimg-imgbtn">GET STARTED</div>
+              <div className="homeheroimg-imgbtn">Contact Us</div>
             </div>
           </div>
         </div>
@@ -211,9 +211,9 @@ function HomeHeroImg() {
                 Training & Internship At Venturing Digitally
               </div>
               <div className="homeheroimg-heading">
-                School, College & More!
+                AI/ML,Java,Next JS, Node JS and more!
               </div>
-              <div className="homeheroimg-imgbtn">GET STARTED</div>
+              <div className="homeheroimg-imgbtn">Contact Us</div>
             </div>
           </div>
         </div>
