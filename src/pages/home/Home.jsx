@@ -1142,7 +1142,7 @@ function Home({ target, label }) {
               <div className="row">
                 <div className="col-lg-6 my-auto">
                   <div className="milestone-info">
-                    <div className="head">Our Expertise</div>
+                    <div className="head">Who We Are</div>
                     <div className="content page_title">
                       Venturing digitally lies in delivering Top-quality IT Services &
                       Solutions across a wide range of industries. With over 80+
@@ -1160,35 +1160,49 @@ function Home({ target, label }) {
                 </div>
                 <div className="col-lg-6">
                   <div className="row">
-                    <div className="col-lg-6 col-sm-12 col-md-6">
+                    <div className="col-lg-6 col-sm-12 col-md-6 who-we-are" >
+
                       <div className="milestone-box">
                         <div className="milestone-count">{counters[0].value}+</div>
                         <div className="milestone-name">
                           Successful Websites Delivered
                         </div>
+                        <div className="milestone-description">
+                         High-performance websites built with user-focused designs.
+                        </div>
                       </div>
-                    </div>
-                    <div className="col-lg-6 col-sm-12 col-md-6">
                       <div className="milestone-box">
                         <div className="milestone-count">{counters[1].value}+</div>
                         <div className="milestone-name">
                           Mobile Applications Developed
                         </div>
+                        <div className="milestone-description">
+                          Custom mobile apps delivering seamless user experiences
+                        </div>
                       </div>
+
                     </div>
+                    
                     <div className="col-lg-6 col-sm-12 col-md-6">
+
                       <div className="milestone-box">
                         <div className="milestone-count">{counters[2].value}+</div>
                         <div className="milestone-name">
                           Software Solutions Deployed
                         </div>
+                        <div className="milestone-description">
+                          Innovative software solutions tailored to client needs.
+                        </div>
                       </div>
-                    </div>
-                    <div className="col-lg-6 col-sm-12 col-md-6">
+                   
                       <div className="milestone-box">
                         <div className="milestone-count">{counters[3].value}+</div>
-                        <div className="milestone-name">Successful Clients</div>
+                        <div className="milestone-name" >Successful Clients</div>
+                        <div className="milestone-description">
+                         Satisfied clients benefiting from our expertise.
+                        </div>
                       </div>
+
                     </div>
                   </div>
                 </div>
