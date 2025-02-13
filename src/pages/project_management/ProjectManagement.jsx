@@ -120,8 +120,7 @@ function ProjectManagement() {
             <div className="profirst-section-head">
               <div className="profirst-custom-head">
                 <div className="profirst-head-title">
-                  Streamline Your Projects with Our Robust Project Management
-                  Tools
+                  Streamline Your Projects with Our Robust Project Management Software 
                 </div>
               </div>
             </div>
@@ -160,8 +159,7 @@ function ProjectManagement() {
                 <div className="prosecond-head-title">Project Management</div>
               </div>
               <div className="prosecond-head-slogan">
-                Meet the Team Behind Venturing Digitally : Experts in IT
-                Solutions.
+                Best Project Management Software with venturing Digitally
               </div>
             </div>
 

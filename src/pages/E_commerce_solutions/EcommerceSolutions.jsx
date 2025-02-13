@@ -118,7 +118,7 @@ function EcommerceSolutions() {
             <div className="E-comfirst-section-head">
               <div className="E-comfirst-custom-head">
                 <div className="E-comfirst-head-title">
-                  Best-in-Class E-commerce Solutions
+                  Best-in-Class E-commerce Solutions with venturing digitally
                 </div>
               </div>
 
@@ -163,7 +163,7 @@ function EcommerceSolutions() {
                   <div className="E-comsecond-left-box">
                     <div className="E-comsecond-left-about-content">
                       <div className="E-comsecond-left-content-head">
-                        E Commerce Solutions with VED
+                        E Commerce Solutions with Venturing digitally
                       </div>
                       <div className="E-comsecond-left-content-data">
                         Partner with Venturing Digitally to unlock the full
@@ -220,7 +220,7 @@ function EcommerceSolutions() {
                 <div className="E-comthird-head-title">E-commerce Goals</div>
               </div>
               <div className="E-comthird-head-slogan">
-                Driving Online Success
+                Driving Online Success with venturing digitally
               </div>
             </div>
             <div className="E-comthird-section-content">

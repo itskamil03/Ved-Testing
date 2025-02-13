@@ -146,7 +146,7 @@ function UIUXDesign() {
           <div className="row">
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
               <div className="ph-heading-title">
-                <h2 className="head_title">Leading UI/UX Design Company</h2>
+                <h2 className="head_title">Leading UI/UX Design Company | Venturing Digitally</h2>
                 <p className="page_title">
                   A classnameic user interface helps you build a strong brand
                   identity and inspires confidence in your audience. A visually
@@ -349,7 +349,7 @@ function UIUXDesign() {
               <div className="ph-heading-title">
                 <h2 className="ph-heading-title mb-3">
                   Accelerating UI/UX Design Services For Mobile and Webite and
-                  Software Platforms
+                  Software Platforms with venturing digitally
                 </h2>
                 <p className="mb-5 page_title">
                   Your investment in the right expertise, experience, knowledge,

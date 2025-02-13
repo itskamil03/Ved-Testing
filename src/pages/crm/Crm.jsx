@@ -135,15 +135,14 @@ function Crm() {
                   className="head-title wow slideInLeft"
                   data-wow-duration="2s"
                 >
-                  Impressive Results of Companies Working with a Professional
-                  CRM
+                  Best CRM software solution with ventruing digitally
                 </div>
               </div>
               <div
                 className="head-slogan wow slideInRight page_title"
                 data-wow-duration="2s"
               >
-                Our CRM solution helps you effectively manage and leverage
+                Our best CRM software solution helps you effectively manage and leverage
                 customer data to drive business growth and enhance customer
                 experiences.
               </div>
@@ -213,7 +212,7 @@ function Crm() {
                   className="head-title wow slideInLeft"
                   data-wow-duration="2s"
                 >
-                  All-Round Assistance for Your CRM Goals
+                  All-Round Assistance for Your CRM Goals with venturing digitally CRM software
                 </div>
               </div>
               <div
@@ -330,9 +329,9 @@ function Crm() {
           <div className="container">
             <div className="section-head">
               <div className="custom-head">
-                <div className="head-title">Why Venturing Digitally</div>
+                <div className="head-title">Why Venturing Digitally for CRM software</div>
               </div>
-              <div className="head-slogan page_title">Trustworthy CRM Experts</div>
+              <div className="head-slogan page_title">Trustworthy Customized CRM Experts in Market</div>
             </div>
             <div className="section-content">
               <div className="why-grid">

@@ -52,7 +52,7 @@ function GxPSoftware() {
                 efficiently organizes, stores, and retrieves documents. It
                 offers features such as version control, secure access, and
                 collaborative tools, improving team productivity and data
-                security.
+                security, connect venturing digitally for best document management software
               </div>
               <div className="list">
                 <div>Template Management</div>
@@ -70,7 +70,7 @@ function GxPSoftware() {
               </div>
             </div>
             <div className="content-block">
-              <div className="content">Document Management Software(EDMS)</div>
+              <div className="content">Document Management Software(EDMS) | ventruing Digitally</div>
               <div className="inner-grid">
                 <div className="data">
                   Document management software (DMS) is designed to streamline
@@ -84,7 +84,7 @@ function GxPSoftware() {
                   ensures flexibility and accessibility. Widely used across
                   industries like business, legal, healthcare, education, and
                   government, DMS boosts efficiency, improves document control,
-                  and reduces administrative costs.
+                  and reduces administrative costs, connect venturing digitally for best document management software
                 </div>
                 <div className="image">
                   <LazyLoadImage
@@ -132,7 +132,7 @@ function GxPSoftware() {
                     training. Integration with existing systems ensures seamless
                     operation. This LMS enhances training efficiency, ensures
                     regulatory compliance, and supports the continuous
-                    development of pharmaceutical professionals.
+                    development of pharmaceutical professionals, connect venturing digitally for best learning management software
                   </div>
                 </div>
                 <div className="media">
@@ -219,7 +219,7 @@ function GxPSoftware() {
                   with existing systems and offers mobile accessibility for
                   on-the-go quality management. Ultimately, QMS improves
                   compliance, reduces errors, and fosters continuous improvement
-                  in pharmaceutical manufacturing processes.
+                  in pharmaceutical manufacturing processes,connect venturing digitally for best quality management software
                 </div>
                 <div className="demo-btn">
                   <a href="ContactUs">Book Demo</a>

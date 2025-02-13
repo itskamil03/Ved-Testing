@@ -122,7 +122,7 @@ function Hrms() {
           <div className="container">
             <div className="crmfirst-section-head">
               <div className="crmfirst-custom-head">
-                <div className="crmfirst-head-title">Why Chose Us?</div>
+                <div className="crmfirst-head-title">Why Choose Venturing Digitally for HRMS</div>
               </div>
 
               <div className="crmfirst-head-slogan">
@@ -196,7 +196,7 @@ function Hrms() {
           <div className="container">
             <div className="crm-goals-section-head">
               <div className="crm-goals-custom-head">
-                <div className="crm-goals-head-title">HRMS GOALS</div>
+                <div className="crm-goals-head-title">Some HRMS Feature and Module</div>
               </div>
               <div className="crm-goals-head-slogan">
                 At Venturing Digitally, our HRMS solutions are designed with

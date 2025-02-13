@@ -134,13 +134,13 @@ function DocumentManagement() {
             <div className="docfirst-section-head">
               <div className="docfirst-custom-head">
                 <div className="docfirst-head-title">
-                  Why Venturing Digitally
+                  Document Management Software 
                 </div>
               </div>
               <div className="docfirst-head-slogan">
                 Streamline your document management processes and unlock the
                 power of seamless information organization with our advanced
-                Documeny Management Software.
+                Documeny Management Software with venturing digitally.
               </div>
             </div>
             <div className="docfirst-section-content">
@@ -197,7 +197,7 @@ function DocumentManagement() {
           <div className="container">
             <div className="docthird-section-head">
               <div className="docthird-custom-head">
-                <div className="docthird-head-title">Overview of Our DMS</div>
+                <div className="docthird-head-title">Overview of Our Document Management System (EDMS)</div>
               </div>
               <div className="docthird-head-slogan">
                 Our Document Management System (DMS) offers a comprehensive

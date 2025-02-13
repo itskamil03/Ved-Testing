@@ -56,7 +56,7 @@ function CustomerSoftware() {
                 <div className="head-title">Customized Software Solutions</div>
               </div>
               <div className="head-slogan page_title">
-                Tailored Solutions for Your Unique Business Needs
+                Best Tailored Customized Solutions and software for Your Business Needs with venturing digitally
               </div>
             </div>
             <div className="section-content">
@@ -223,7 +223,7 @@ function CustomerSoftware() {
                 </div>
               </div>
               <div className="head-slogan page_title">
-                Our Customized Software Design and Development Process
+                Our Customized Software Design and Development Process at venturing digitally
               </div>
             </div>
             <div className="section-content">
@@ -426,7 +426,7 @@ function CustomerSoftware() {
                 <div className="head-title">Our Success Stories</div>
               </div>
               <div className="head-slogan page_title">
-                Our Premium client to whom we have successfully deliver project
+                Our Premium client to whom venturing digitally have successfully deliver project
               </div>
             </div>
             <div className="section-content">
@@ -448,7 +448,7 @@ function CustomerSoftware() {
                         />
                       </div>
                       <div className="details">
-                        <div className="title">Classy Service Software and Application</div>
+                        <div className="title">Service Software and Application</div>
                         <div className="content">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Excepturi doloribus alias ab. Quibusdam eos

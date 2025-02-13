@@ -312,7 +312,7 @@ function Home({ target, label }) {
                               />
                             </div>
                             <h3 className="what-do-name">
-                              Small & Medium Business
+                              Manufacturing & Production
                             </h3>
                           </div>
                         </Link>
@@ -346,7 +346,7 @@ function Home({ target, label }) {
                                    loading="lazy"
                               />
                             </div>
-                            <h3 className="what-do-name">Agencies</h3>
+                            <h3 className="what-do-name">OIL & GAS</h3>
                           </div>
                         </Link>
                       </div>

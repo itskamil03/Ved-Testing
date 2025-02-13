@@ -38,7 +38,7 @@ function WebsiteDevelopment() {
                 </div>
               </div>
               <div className="head-slogan page_title">
-                Crafting Exceptional Websites for Your Digital Success
+                Crafting Exceptional Websites for Your Business with Venturing Digitally best website development company 
               </div>
             </div>
             <div className="section-content">
@@ -161,7 +161,7 @@ function WebsiteDevelopment() {
                 <div className="head-title">Technologies We Work On</div>
               </div>
               <div className="head-slogan page_title">
-                Harnessing the Power of Cutting-Edge Technologies
+                Harnessing the Power of Cutting-Edge Technologies at venturing digitally
               </div>
             </div>
 

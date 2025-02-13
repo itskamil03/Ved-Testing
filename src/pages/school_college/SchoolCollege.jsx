@@ -33,8 +33,8 @@ function SchoolCollage() {
                 <p>
                   Our School & College Management Software is an
                   all-encompassing platform designed to simplify and streamline
-                  the management of academic and administrative operations. This
-                  user-friendly software offers end-to-end automation for
+                  the management of academic and administrative operations. Venturing digitally
+                  user-friendly school & college management software offers end-to-end automation for
                   educational institutions, helping schools and colleges improve
                   efficiency, boost productivity, and facilitate effective
                   communication across all departments.
@@ -503,13 +503,12 @@ function SchoolCollage() {
               <div className="custom-head">
                 <div className="circle"></div>
                 <div className="head-title">
-                  Start Using Edumarshal ERP for Your School Today!
+                  Start Using Venturing digitally ERP for your School & College Today!
                 </div>
               </div>
 
               <div className="head-slogan">
-                Meet the Team Behind Venturing Digitally : Experts in IT
-                Solutions.
+                Best School & College Management Software in market
               </div>
             </div>
 
