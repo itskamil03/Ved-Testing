@@ -109,7 +109,7 @@ function Insights() {
         </div>
       </section>
 
-      <section id="newsletter">
+      {/* <section id="newsletter">
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
@@ -134,7 +134,7 @@ function Insights() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id="insight" className="bg-light">
         <div className="container-fluid">
@@ -179,7 +179,7 @@ function Insights() {
         </div>
       </section>
 
-      <section id="contact-form">
+      {/* <section id="contact-form">
         <div className="container-form">
           <div className="container">
             <div className="section-content">
@@ -237,7 +237,7 @@ function Insights() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

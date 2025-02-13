@@ -7,19 +7,26 @@ import {
   FaAccusoft,
   FaBalanceScale,
   FaBars,
+  FaBullseye,
   FaCentos,
+  FaChalkboard,
   FaChevronDown,
   FaCode,
+  FaCog,
   FaConnectdevelop,
+  FaDribbble,
   FaFileCode,
+  FaGem,
   FaGlobe,
   FaGlobeAsia,
+  FaHandHolding,
   FaIndustry,
   FaLink,
   FaMedkit,
   FaPalette,
   FaRoad,
   FaSeedling,
+  FaSith,
   FaStore,
   FaTerminal,
   FaTimes,
@@ -281,9 +288,75 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="megadrop-item-about">
-                                <FaTerminal />
+                                <FaHandHolding />
 
                                 <strong>Support And Maintenance</strong>
+                              </div>
+                            </NavLink>
+                            <NavLink
+                              to="/Seo"
+                              onClick={() => setMenubtn(!menubtn)}
+                              className="megadrop-item-link"
+                            >
+                              <div className="megadrop-item-about">
+                                <FaSith />
+
+                                <strong>SEO</strong>
+                              </div>
+                            </NavLink>
+                            <NavLink
+                              to="/DigitalMarketing"
+                              onClick={() => setMenubtn(!menubtn)}
+                              className="megadrop-item-link"
+                            >
+                              <div className="megadrop-item-about">
+                                <FaBullseye />
+
+                                <strong>Digital Marketing</strong>
+                              </div>
+                            </NavLink>
+                            <NavLink
+                              to="/AI-ML"
+                              onClick={() => setMenubtn(!menubtn)}
+                              className="megadrop-item-link"
+                            >
+                              <div className="megadrop-item-about">
+                                <FaChalkboard />
+
+                                <strong>AI/ML</strong>
+                              </div>
+                            </NavLink>
+                            <NavLink
+                              to="/CloudServices"
+                              onClick={() => setMenubtn(!menubtn)}
+                              className="megadrop-item-link"
+                            >
+                              <div className="megadrop-item-about">
+                                <FaCog />
+
+                                <strong>Cloud Services</strong>
+                              </div>
+                            </NavLink>
+                            <NavLink
+                              to="/MVPConsulting"
+                              onClick={() => setMenubtn(!menubtn)}
+                              className="megadrop-item-link"
+                            >
+                              <div className="megadrop-item-about">
+                                <FaDribbble />
+
+                                <strong>MVP IT Consulting</strong>
+                              </div>
+                            </NavLink>
+                            <NavLink
+                              to="/QaTesting"
+                              onClick={() => setMenubtn(!menubtn)}
+                              className="megadrop-item-link"
+                            >
+                              <div className="megadrop-item-about">
+                                <FaGem />
+
+                                <strong>QA testing & Security</strong>
                               </div>
                             </NavLink>
                           </div>

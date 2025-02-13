@@ -138,6 +138,36 @@ function Footer() {
                      Support and Maintenance
                     </Link>
                   </li>
+                  <li>
+                    <Link to="/Seo">
+                     SEO
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/DigitalMarketing">
+                    Digital Marketing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/AI-ML">
+                    AI/ML
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/CloudServices">
+                    Cloud Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/MVPConsulting">
+                    MVP Consulting
+                    </Link>
+                  </li> <li>
+                    <Link to="/QaTesting">
+                    QA testing & Security
+                    </Link>
+                  </li>
+
                 </ul>
 
              
