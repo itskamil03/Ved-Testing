@@ -49,8 +49,6 @@ const operman = [
   },
 ];
 function OperationManagement() {
-
-
   const [isAgreed, setIsAgreed] = useState(false);
 
   const handleChange = () => {
@@ -64,10 +62,10 @@ function OperationManagement() {
     alternate_phone: "",
     email: "",
     business: "",
-    date:"",
-    country:"",
-    user:"",
-    address:""
+    date: "",
+    country: "",
+    user: "",
+    address: "",
   });
 
   const handleInputChange = (e) => {
@@ -105,9 +103,9 @@ function OperationManagement() {
                   Efficient operations management is crucial for businesses to
                   achieve operational excellence, maximize productivity, and
                   deliver superior customer experiences. At Venturing Digitally,
-                  we offer best comprehensive operations management solutions that
-                  empower organizations to streamline their processes, optimize
-                  resource utilization, and drive business growth.
+                  we offer best comprehensive operations management solutions
+                  that empower organizations to streamline their processes,
+                  optimize resource utilization, and drive business growth.
                 </div>
               </div>
             </div>
@@ -148,7 +146,8 @@ function OperationManagement() {
                   specific operational needs.
                 </div>
                 <div className="opermsecond-content-head mb-4">
-                  Key Features of venturing digitally Operations Management Solutions
+                  Key Features of venturing digitally Operations Management
+                  Solutions
                 </div>
               </div>
             </div>
@@ -159,7 +158,12 @@ function OperationManagement() {
                   return (
                     <div className="opermsecond-why-card" key={oper.id}>
                       <div className="opermsecond-card-imgbox">
-                        <LazyLoadImage src={oper.img} alt="" className="w-100 h-100" loading="lazy"/>
+                        <LazyLoadImage
+                          src={oper.img}
+                          alt=""
+                          className="w-100 h-100"
+                          loading="lazy"
+                        />
                       </div>
                       <div className="prosecond-title">{oper.head}</div>
                       <div className="opermsecond-data">
@@ -323,11 +327,9 @@ function OperationManagement() {
       <section id="health">
         <div className="container-fluid">
           <div className="container">
-          
             <div className="section-content">
               <div className="row align-items-center">
-               
-              <div className="col-lg-6">
+                <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
                       <LazyLoadImage
@@ -348,147 +350,138 @@ function OperationManagement() {
                       </div>
 
                       <form>
-                          <div className="form-input-new" style={{paddingBottom:"0px"}}>
-                            <div className="col-lg-6">
-                              <div className="left-placeholder">
-                                <input
-                                  type="text"
-                                  name="first_name"
-                                  className="form-control fs-3 first-input"
-                                  placeholder="First Name*"
-                                  value={formData.first_name}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                             
-                             
-
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="title"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Title/Position*"
-                                  value={formData.title}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="tel"
-                                  name="phone"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Mobile No*"
-                                  value={formData.phone}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="email"
-                                  name="email"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Email*"
-                                  value={formData.email}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="address"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Address*"
-                                  value={formData.address}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                           
-                             
+                        <div
+                          className="form-input-new"
+                          style={{ paddingBottom: "0px" }}
+                        >
+                          <div className="col-lg-6">
+                            <div className="left-placeholder">
+                              <input
+                                type="text"
+                                name="first_name"
+                                className="form-control fs-3 first-input"
+                                placeholder="First Name*"
+                                value={formData.first_name}
+                                onChange={handleInputChange}
+                                required
+                              />
                             </div>
-                            <div className="col-lg-6">
-                              <div className="left-placholder">
-                                <input
-                                  type="text"
-                                  name="last_name"
-                                  className="form-control fs-3 first-input"
-                                  placeholder="Last Name*"
-                                  value={formData.last_name}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="business"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Organisation/Business Name*"
-                                  value={formData.business}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                             
-                             
-                              
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="country"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Country*"
-                                  value={formData.country}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
 
-                           
-
-                              <div className="email-placholder">
-                                <input
-                                  type="number"
-                                  name="user"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="No. of user access*"
-                                  value={formData.user}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="date"
-                                  name="date"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Preffered Date & Time*"
-                                  value={formData.date}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                           
-
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="title"
+                                className="form-control fs-3 second-input"
+                                placeholder="Title/Position*"
+                                value={formData.title}
+                                onChange={handleInputChange}
+                                required
+                              />
                             </div>
-                            
+
+                            <div className="email-placholder">
+                              <input
+                                type="tel"
+                                name="phone"
+                                className="form-control fs-3 second-input"
+                                placeholder="Mobile No*"
+                                value={formData.phone}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="email"
+                                name="email"
+                                className="form-control fs-3 second-input"
+                                placeholder="Email*"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="address"
+                                className="form-control fs-3 second-input"
+                                placeholder="Address*"
+                                value={formData.address}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
                           </div>
-                          <div className="form-input-new" style={{padding:"0px 4px 0px 15px"}}>
+                          <div className="col-lg-6">
+                            <div className="left-placholder">
+                              <input
+                                type="text"
+                                name="last_name"
+                                className="form-control fs-3 first-input"
+                                placeholder="Last Name*"
+                                value={formData.last_name}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="business"
+                                className="form-control fs-3 second-input"
+                                placeholder="Organisation/Business Name*"
+                                value={formData.business}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="country"
+                                className="form-control fs-3 second-input"
+                                placeholder="Country*"
+                                value={formData.country}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="number"
+                                name="user"
+                                className="form-control fs-3 second-input"
+                                placeholder="No. of user access*"
+                                value={formData.user}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="date"
+                                name="date"
+                                className="form-control fs-3 second-input"
+                                placeholder="Preffered Date & Time*"
+                                value={formData.date}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="form-input-new"
+                          style={{ padding: "0px 4px 0px 15px" }}
+                        >
                           <div className="col-lg-12">
-                       
-                          <div className="email-placholder">
+                            <div className="email-placholder">
                               <textarea
-                              
                                 rows={3}
                                 name="about"
                                 className="form-control fs-3 second-input"
@@ -497,28 +490,36 @@ function OperationManagement() {
                                 onChange={handleInputChange}
                                 required
                               ></textarea>
-                              </div>
+                            </div>
 
-                              <div >
-                                <label style={{display:'flex', gridColumnGap:"8px", alignItems:"start", fontSize:"12px"}}>
-                                  <input
-                                    type="radio"
-                                    name="agreement"
-                                    checked={isAgreed}
-                                    onChange={handleChange}
-                                  />
-                                 I agree to the use of personal information collected from myself in organization software demo purpose and other IT related support from your company.
-                                </label>
-                              
-                              </div>
-                              </div>
-                              </div>
-                          
+                            <div>
+                              <label
+                                style={{
+                                  display: "flex",
+                                  gridColumnGap: "8px",
+                                  alignItems: "start",
+                                  fontSize: "12px",
+                                }}
+                              >
+                                <input
+                                  type="radio"
+                                  name="agreement"
+                                  checked={isAgreed}
+                                  onChange={handleChange}
+                                />
+                                I agree to the use of personal information
+                                collected from myself in organization software
+                                demo purpose and other IT related support from
+                                your company.
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
                         <button type="submit" className="request-btn">
                           Request Free Demo
                         </button>
-
-                        </form>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -550,19 +551,19 @@ function OperationManagement() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is operations management software, and how can it
+                    benefit my business?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                        Operations management software is a digital solution
+                        that helps businesses streamline workflows, automate
+                        processes, and optimize resource allocation. It improves
+                        efficiency by integrating key functions like inventory
+                        management, production tracking, supply chain
+                        coordination, and performance monitoring, leading to
+                        reduced costs and enhanced productivity.
                       </div>
                     </div>
                   ) : null}
@@ -579,19 +580,18 @@ function OperationManagement() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    What features should I look for in operations management
+                    software?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                        When selecting an operations management system, look for
+                        features such as real-time data analytics, workflow
+                        automation, inventory tracking, project management,
+                        reporting tools, and integration with ERP and CRM
+                        systems. A cloud-based, scalable solution ensures
+                        flexibility and long-term business growth.
                       </div>
                     </div>
                   ) : null}
@@ -608,17 +608,18 @@ function OperationManagement() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    Can operations management software integrate with other
+                    business tools?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                        Yes! Most modern operations management solutions offer
+                        seamless integration with ERP, CRM, accounting software,
+                        supply chain management tools, and HR systems. These
+                        integrations help businesses improve collaboration,
+                        reduce manual errors, and achieve end-to-end operational
+                        visibility.
                       </div>
                     </div>
                   ) : null}
@@ -635,18 +636,18 @@ function OperationManagement() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    How does operations management software improve efficiency
+                    and decision-making?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
+                        By automating repetitive tasks, providing real-time data
+                        insights, and enabling predictive analytics, operations
+                        management software helps businesses make data-driven
+                        decisions. It minimizes bottlenecks, reduces operational
+                        risks, and ensures optimal resource utilization, leading
+                        to increased profitability and smoother business
                         processes.
                       </div>
                     </div>

@@ -86,7 +86,6 @@ const docsecond = [
 ];
 
 function DocumentManagement() {
-
   const [isAgreed, setIsAgreed] = useState(false);
 
   const handleChange = () => {
@@ -100,10 +99,10 @@ function DocumentManagement() {
     alternate_phone: "",
     email: "",
     business: "",
-    date:"",
-    country:"",
-    user:"",
-    address:""
+    date: "",
+    country: "",
+    user: "",
+    address: "",
   });
 
   const handleInputChange = (e) => {
@@ -134,7 +133,7 @@ function DocumentManagement() {
             <div className="docfirst-section-head">
               <div className="docfirst-custom-head">
                 <div className="docfirst-head-title">
-                  Document Management Software 
+                  Document Management Software
                 </div>
               </div>
               <div className="docfirst-head-slogan">
@@ -184,7 +183,12 @@ function DocumentManagement() {
             <div className="docsecond-section-content">
               <div>
                 <div className="docsecond-img-box">
-                  <LazyLoadImage src={docsecondimg} alt="" className="w-100 h-100" loading="lazy"/>
+                  <LazyLoadImage
+                    src={docsecondimg}
+                    alt=""
+                    className="w-100 h-100"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -197,7 +201,9 @@ function DocumentManagement() {
           <div className="container">
             <div className="docthird-section-head">
               <div className="docthird-custom-head">
-                <div className="docthird-head-title">Overview of Our Document Management System (EDMS)</div>
+                <div className="docthird-head-title">
+                  Overview of Our Document Management System (EDMS)
+                </div>
               </div>
               <div className="docthird-head-slogan">
                 Our Document Management System (DMS) offers a comprehensive
@@ -237,14 +243,12 @@ function DocumentManagement() {
         </div>
       </section>
 
-        <section id="health">
+      <section id="health">
         <div className="container-fluid">
           <div className="container">
-          
             <div className="section-content">
               <div className="row align-items-center">
-               
-              <div className="col-lg-6">
+                <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
                       <LazyLoadImage
@@ -265,147 +269,138 @@ function DocumentManagement() {
                       </div>
 
                       <form>
-                          <div className="form-input-new" style={{paddingBottom:"0px"}}>
-                            <div className="col-lg-6">
-                              <div className="left-placeholder">
-                                <input
-                                  type="text"
-                                  name="first_name"
-                                  className="form-control fs-3 first-input"
-                                  placeholder="First Name*"
-                                  value={formData.first_name}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                             
-                             
-
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="title"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Title/Position*"
-                                  value={formData.title}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="tel"
-                                  name="phone"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Mobile No*"
-                                  value={formData.phone}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="email"
-                                  name="email"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Email*"
-                                  value={formData.email}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="address"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Address*"
-                                  value={formData.address}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                           
-                             
+                        <div
+                          className="form-input-new"
+                          style={{ paddingBottom: "0px" }}
+                        >
+                          <div className="col-lg-6">
+                            <div className="left-placeholder">
+                              <input
+                                type="text"
+                                name="first_name"
+                                className="form-control fs-3 first-input"
+                                placeholder="First Name*"
+                                value={formData.first_name}
+                                onChange={handleInputChange}
+                                required
+                              />
                             </div>
-                            <div className="col-lg-6">
-                              <div className="left-placholder">
-                                <input
-                                  type="text"
-                                  name="last_name"
-                                  className="form-control fs-3 first-input"
-                                  placeholder="Last Name*"
-                                  value={formData.last_name}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="business"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Organisation/Business Name*"
-                                  value={formData.business}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                             
-                             
-                              
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="country"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Country*"
-                                  value={formData.country}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
 
-                           
-
-                              <div className="email-placholder">
-                                <input
-                                  type="number"
-                                  name="user"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="No. of user access*"
-                                  value={formData.user}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="date"
-                                  name="date"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Preffered Date & Time*"
-                                  value={formData.date}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                           
-
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="title"
+                                className="form-control fs-3 second-input"
+                                placeholder="Title/Position*"
+                                value={formData.title}
+                                onChange={handleInputChange}
+                                required
+                              />
                             </div>
-                            
+
+                            <div className="email-placholder">
+                              <input
+                                type="tel"
+                                name="phone"
+                                className="form-control fs-3 second-input"
+                                placeholder="Mobile No*"
+                                value={formData.phone}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="email"
+                                name="email"
+                                className="form-control fs-3 second-input"
+                                placeholder="Email*"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="address"
+                                className="form-control fs-3 second-input"
+                                placeholder="Address*"
+                                value={formData.address}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
                           </div>
-                          <div className="form-input-new" style={{padding:"0px 4px 0px 15px"}}>
+                          <div className="col-lg-6">
+                            <div className="left-placholder">
+                              <input
+                                type="text"
+                                name="last_name"
+                                className="form-control fs-3 first-input"
+                                placeholder="Last Name*"
+                                value={formData.last_name}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="business"
+                                className="form-control fs-3 second-input"
+                                placeholder="Organisation/Business Name*"
+                                value={formData.business}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="country"
+                                className="form-control fs-3 second-input"
+                                placeholder="Country*"
+                                value={formData.country}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="number"
+                                name="user"
+                                className="form-control fs-3 second-input"
+                                placeholder="No. of user access*"
+                                value={formData.user}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="date"
+                                name="date"
+                                className="form-control fs-3 second-input"
+                                placeholder="Preffered Date & Time*"
+                                value={formData.date}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="form-input-new"
+                          style={{ padding: "0px 4px 0px 15px" }}
+                        >
                           <div className="col-lg-12">
-                       
-                          <div className="email-placholder">
+                            <div className="email-placholder">
                               <textarea
-                              
                                 rows={3}
                                 name="about"
                                 className="form-control fs-3 second-input"
@@ -414,28 +409,36 @@ function DocumentManagement() {
                                 onChange={handleInputChange}
                                 required
                               ></textarea>
-                              </div>
+                            </div>
 
-                              <div >
-                                <label style={{display:'flex', gridColumnGap:"8px", alignItems:"start", fontSize:"12px"}}>
-                                  <input
-                                    type="radio"
-                                    name="agreement"
-                                    checked={isAgreed}
-                                    onChange={handleChange}
-                                  />
-                                 I agree to the use of personal information collected from myself in organization software demo purpose and other IT related support from your company.
-                                </label>
-                              
-                              </div>
-                              </div>
-                              </div>
-                          
+                            <div>
+                              <label
+                                style={{
+                                  display: "flex",
+                                  gridColumnGap: "8px",
+                                  alignItems: "start",
+                                  fontSize: "12px",
+                                }}
+                              >
+                                <input
+                                  type="radio"
+                                  name="agreement"
+                                  checked={isAgreed}
+                                  onChange={handleChange}
+                                />
+                                I agree to the use of personal information
+                                collected from myself in organization software
+                                demo purpose and other IT related support from
+                                your company.
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
                         <button type="submit" className="request-btn">
                           Request Free Demo
                         </button>
-
-                        </form>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -493,19 +496,19 @@ function DocumentManagement() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is document management software, and why does my
+                    business need it?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                        Document management software (DMS) is a digital solution
+                        that helps businesses store, organize, secure, and
+                        retrieve documents efficiently. It eliminates
+                        paper-based processes, improves collaboration, ensures
+                        compliance, and enhances data security. A DMS saves
+                        time, reduces costs, and boosts productivity by enabling
+                        seamless document access from anywhere.
                       </div>
                     </div>
                   ) : null}
@@ -522,19 +525,19 @@ function DocumentManagement() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    How do I choose the best document management system for my
+                    company?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                        To choose the best DMS, consider factors like cloud vs.
+                        on-premise storage, security features, ease of
+                        integration with existing tools, compliance
+                        requirements, and scalability. Look for features such as
+                        version control, OCR (optical character recognition),
+                        automated workflows, and advanced search capabilities to
+                        maximize efficiency.
                       </div>
                     </div>
                   ) : null}
@@ -551,17 +554,18 @@ function DocumentManagement() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    Is document management software secure?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                        Yes, a reliable document management system offers strong
+                        security features like encryption, access controls,
+                        audit trails, and automated backups. Cloud-based DMS
+                        solutions also provide multi-factor authentication and
+                        data redundancy to protect against cyber threats. Always
+                        choose a DMS with compliance certifications like GDPR,
+                        HIPAA, or ISO 27001 for added security.
                       </div>
                     </div>
                   ) : null}
@@ -578,19 +582,19 @@ function DocumentManagement() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    Can document management software integrate with my existing
+                    business applications?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
-                        processes.
+                        Most modern DMS solutions integrate seamlessly with
+                        business tools like CRM, ERP, cloud storage platforms
+                        (Google Drive, Dropbox), and productivity software
+                        (Microsoft Office, Slack). API-based integrations allow
+                        businesses to streamline workflows, enhance
+                        collaboration, and automate document-related tasks
+                        efficiently.
                       </div>
                     </div>
                   ) : null}

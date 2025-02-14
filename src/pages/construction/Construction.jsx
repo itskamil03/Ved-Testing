@@ -431,19 +431,20 @@ function Construction() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is construction management software, and how can it
+                    benefit my business?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                        Construction management software is a digital solution
+                        that helps construction companies streamline project
+                        planning, budgeting, resource allocation, and
+                        communication. It enhances efficiency by automating
+                        scheduling, tracking materials, improving team
+                        collaboration, and ensuring compliance with safety
+                        regulations, ultimately reducing project delays and
+                        costs.
                       </div>
                     </div>
                   ) : null}
@@ -460,19 +461,19 @@ function Construction() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    What key features should I look for in construction
+                    management software?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                        When choosing a construction management system, look for
+                        essential features such as project scheduling, budget
+                        and cost tracking, document management, equipment
+                        management, subcontractor coordination, real-time
+                        reporting, and integration with accounting and ERP
+                        systems. Cloud-based solutions also allow remote access
+                        and team collaboration.
                       </div>
                     </div>
                   ) : null}
@@ -489,17 +490,18 @@ function Construction() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    Can construction management software improve project
+                    efficiency and reduce costs?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                        Yes! Construction software optimizes workflows by
+                        automating tasks like bidding, progress tracking, and
+                        financial reporting. It reduces costly errors, improves
+                        communication between teams, and ensures better resource
+                        management, leading to faster project completion and
+                        lower operational expenses.
                       </div>
                     </div>
                   ) : null}
@@ -516,19 +518,18 @@ function Construction() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    Is construction management software secure for handling
+                    project data?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
-                        processes.
+                        Most modern construction software solutions provide
+                        robust security measures, including cloud encryption,
+                        access controls, real-time backups, and compliance with
+                        industry standards. Choosing a secure system ensures
+                        that sensitive project data, contracts, and financial
+                        records remain protected from cyber threats.
                       </div>
                     </div>
                   ) : null}

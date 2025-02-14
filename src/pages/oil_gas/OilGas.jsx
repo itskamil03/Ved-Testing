@@ -448,19 +448,19 @@ function OilGas() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is oil and gas industry software, and how can it
+                    benefit my business?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                        Oil and gas industry software is a digital solution
+                        designed to optimize operations, asset management,
+                        compliance tracking, and data analytics for exploration,
+                        drilling, production, and distribution. It helps improve
+                        efficiency, reduce costs, enhance safety, and ensure
+                        regulatory compliance across the entire energy supply
+                        chain.
                       </div>
                     </div>
                   ) : null}
@@ -477,19 +477,17 @@ function OilGas() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    What key features should I look for in oil and gas software?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                        When choosing oil and gas software, look for features
+                        such as real-time asset monitoring, predictive
+                        maintenance, reservoir management, supply chain
+                        optimization, health and safety compliance, IoT and AI
+                        integration, and cloud-based data management for remote
+                        accessibility.
                       </div>
                     </div>
                   ) : null}
@@ -506,17 +504,18 @@ function OilGas() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    How can oil and gas software improve operational efficiency
+                    and reduce costs?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                        By automating workflows, monitoring equipment
+                        performance, and using AI-driven predictive analytics,
+                        oil and gas software minimizes downtime, prevents costly
+                        failures, optimizes fuel and resource consumption, and
+                        improves overall decision-making, leading to significant
+                        cost savings.
                       </div>
                     </div>
                   ) : null}
@@ -533,19 +532,19 @@ function OilGas() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    Is oil and gas software secure for handling critical
+                    operational and financial data?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
-                        processes.
+                        Yes! Most modern oil and gas management systems come
+                        with strong security features, including end-to-end
+                        encryption, multi-factor authentication, role-based
+                        access control, and compliance with industry regulations
+                        like ISO 27001 and GDPR. These measures protect
+                        sensitive operational, financial, and environmental data
+                        from cyber threats.
                       </div>
                     </div>
                   ) : null}

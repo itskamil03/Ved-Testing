@@ -70,7 +70,6 @@ const ecom_best = [
   },
 ];
 function EcommerceSolutions() {
-
   const [isAgreed, setIsAgreed] = useState(false);
 
   const handleChange = () => {
@@ -84,10 +83,10 @@ function EcommerceSolutions() {
     alternate_phone: "",
     email: "",
     business: "",
-    date:"",
-    country:"",
-    user:"",
-    address:""
+    date: "",
+    country: "",
+    user: "",
+    address: "",
   });
 
   const handleInputChange = (e) => {
@@ -229,7 +228,12 @@ function EcommerceSolutions() {
                   return (
                     <div className="E-comthird-value-card" key={goal.id}>
                       <div className="E-comthird-icon">
-                        <LazyLoadImage src={goal.imgs} alt="" className="w-100 h-100" loading="lazy" />
+                        <LazyLoadImage
+                          src={goal.imgs}
+                          alt=""
+                          className="w-100 h-100"
+                          loading="lazy"
+                        />
                       </div>
                       <div className="E-comthird-title">{goal.head}</div>
                       <div className="E-comthird-data">
@@ -248,11 +252,9 @@ function EcommerceSolutions() {
       <section id="health">
         <div className="container-fluid">
           <div className="container">
-          
             <div className="section-content">
               <div className="row align-items-center">
-               
-              <div className="col-lg-6">
+                <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
                       <LazyLoadImage
@@ -273,147 +275,138 @@ function EcommerceSolutions() {
                       </div>
 
                       <form>
-                          <div className="form-input-new" style={{paddingBottom:"0px"}}>
-                            <div className="col-lg-6">
-                              <div className="left-placeholder">
-                                <input
-                                  type="text"
-                                  name="first_name"
-                                  className="form-control fs-3 first-input"
-                                  placeholder="First Name*"
-                                  value={formData.first_name}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                             
-                             
-
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="title"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Title/Position*"
-                                  value={formData.title}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="tel"
-                                  name="phone"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Mobile No*"
-                                  value={formData.phone}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="email"
-                                  name="email"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Email*"
-                                  value={formData.email}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="address"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Address*"
-                                  value={formData.address}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                           
-                             
+                        <div
+                          className="form-input-new"
+                          style={{ paddingBottom: "0px" }}
+                        >
+                          <div className="col-lg-6">
+                            <div className="left-placeholder">
+                              <input
+                                type="text"
+                                name="first_name"
+                                className="form-control fs-3 first-input"
+                                placeholder="First Name*"
+                                value={formData.first_name}
+                                onChange={handleInputChange}
+                                required
+                              />
                             </div>
-                            <div className="col-lg-6">
-                              <div className="left-placholder">
-                                <input
-                                  type="text"
-                                  name="last_name"
-                                  className="form-control fs-3 first-input"
-                                  placeholder="Last Name*"
-                                  value={formData.last_name}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="business"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Organisation/Business Name*"
-                                  value={formData.business}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                             
-                             
-                              
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="country"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Country*"
-                                  value={formData.country}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
 
-                           
-
-                              <div className="email-placholder">
-                                <input
-                                  type="number"
-                                  name="user"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="No. of user access*"
-                                  value={formData.user}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="date"
-                                  name="date"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Preffered Date & Time*"
-                                  value={formData.date}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                           
-
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="title"
+                                className="form-control fs-3 second-input"
+                                placeholder="Title/Position*"
+                                value={formData.title}
+                                onChange={handleInputChange}
+                                required
+                              />
                             </div>
-                            
+
+                            <div className="email-placholder">
+                              <input
+                                type="tel"
+                                name="phone"
+                                className="form-control fs-3 second-input"
+                                placeholder="Mobile No*"
+                                value={formData.phone}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="email"
+                                name="email"
+                                className="form-control fs-3 second-input"
+                                placeholder="Email*"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="address"
+                                className="form-control fs-3 second-input"
+                                placeholder="Address*"
+                                value={formData.address}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
                           </div>
-                          <div className="form-input-new" style={{padding:"0px 4px 0px 15px"}}>
+                          <div className="col-lg-6">
+                            <div className="left-placholder">
+                              <input
+                                type="text"
+                                name="last_name"
+                                className="form-control fs-3 first-input"
+                                placeholder="Last Name*"
+                                value={formData.last_name}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="business"
+                                className="form-control fs-3 second-input"
+                                placeholder="Organisation/Business Name*"
+                                value={formData.business}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="country"
+                                className="form-control fs-3 second-input"
+                                placeholder="Country*"
+                                value={formData.country}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="number"
+                                name="user"
+                                className="form-control fs-3 second-input"
+                                placeholder="No. of user access*"
+                                value={formData.user}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="date"
+                                name="date"
+                                className="form-control fs-3 second-input"
+                                placeholder="Preffered Date & Time*"
+                                value={formData.date}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="form-input-new"
+                          style={{ padding: "0px 4px 0px 15px" }}
+                        >
                           <div className="col-lg-12">
-                       
-                          <div className="email-placholder">
+                            <div className="email-placholder">
                               <textarea
-                              
                                 rows={3}
                                 name="about"
                                 className="form-control fs-3 second-input"
@@ -422,28 +415,36 @@ function EcommerceSolutions() {
                                 onChange={handleInputChange}
                                 required
                               ></textarea>
-                              </div>
+                            </div>
 
-                              <div >
-                                <label style={{display:'flex', gridColumnGap:"8px", alignItems:"start", fontSize:"12px"}}>
-                                  <input
-                                    type="radio"
-                                    name="agreement"
-                                    checked={isAgreed}
-                                    onChange={handleChange}
-                                  />
-                                 I agree to the use of personal information collected from myself in organization software demo purpose and other IT related support from your company.
-                                </label>
-                              
-                              </div>
-                              </div>
-                              </div>
-                          
+                            <div>
+                              <label
+                                style={{
+                                  display: "flex",
+                                  gridColumnGap: "8px",
+                                  alignItems: "start",
+                                  fontSize: "12px",
+                                }}
+                              >
+                                <input
+                                  type="radio"
+                                  name="agreement"
+                                  checked={isAgreed}
+                                  onChange={handleChange}
+                                />
+                                I agree to the use of personal information
+                                collected from myself in organization software
+                                demo purpose and other IT related support from
+                                your company.
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
                         <button type="submit" className="request-btn">
                           Request Free Demo
                         </button>
-
-                        </form>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -475,19 +476,20 @@ function EcommerceSolutions() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is e-commerce software, and how can it benefit my
+                    business?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                        E-commerce software is a digital platform that enables
+                        businesses to create, manage, and optimize online
+                        stores. It provides essential features like product
+                        management, payment processing, customer relationship
+                        tools, and order fulfillment automation. With e-commerce
+                        software, businesses can expand their reach, increase
+                        sales, and offer a seamless shopping experience to
+                        customers.
                       </div>
                     </div>
                   ) : null}
@@ -504,19 +506,17 @@ function EcommerceSolutions() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    What features should I look for in an e-commerce platform?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                        When choosing e-commerce software, consider key features
+                        like mobile responsiveness, secure payment gateways,
+                        inventory management, SEO tools, multi-channel selling,
+                        and integration with CRM and ERP systems. Look for
+                        scalability and customization options to support
+                        business growth and unique branding.
                       </div>
                     </div>
                   ) : null}
@@ -533,17 +533,18 @@ function EcommerceSolutions() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    How does e-commerce software improve online sales and
+                    customer experience?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                        E-commerce platforms enhance sales by offering
+                        personalized recommendations, abandoned cart recovery,
+                        seamless checkout processes, and fast website
+                        performance. Advanced analytics and AI-driven insights
+                        help businesses optimize marketing strategies, improve
+                        customer retention, and boost conversion rates.
                       </div>
                     </div>
                   ) : null}
@@ -560,19 +561,18 @@ function EcommerceSolutions() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    Can e-commerce software integrate with my existing business
+                    tools?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
-                        processes.
+                        Yes! Most modern e-commerce solutions integrate with
+                        ERP, CRM, payment processors, shipping providers, and
+                        digital marketing tools. API-based integrations enable
+                        automated workflows, efficient inventory management, and
+                        a streamlined customer experience across multiple sales
+                        channels.
                       </div>
                     </div>
                   ) : null}

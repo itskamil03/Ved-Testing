@@ -75,7 +75,6 @@ const CRMGoals = [
   },
 ];
 function Hrms() {
-
   const [isAgreed, setIsAgreed] = useState(false);
 
   const handleChange = () => {
@@ -89,10 +88,10 @@ function Hrms() {
     alternate_phone: "",
     email: "",
     business: "",
-    date:"",
-    country:"",
-    user:"",
-    address:""
+    date: "",
+    country: "",
+    user: "",
+    address: "",
   });
 
   const handleInputChange = (e) => {
@@ -122,7 +121,9 @@ function Hrms() {
           <div className="container">
             <div className="crmfirst-section-head">
               <div className="crmfirst-custom-head">
-                <div className="crmfirst-head-title">Why Choose Venturing Digitally for HRMS</div>
+                <div className="crmfirst-head-title">
+                  Why Choose Venturing Digitally for HRMS
+                </div>
               </div>
 
               <div className="crmfirst-head-slogan">
@@ -196,7 +197,9 @@ function Hrms() {
           <div className="container">
             <div className="crm-goals-section-head">
               <div className="crm-goals-custom-head">
-                <div className="crm-goals-head-title">Some HRMS Feature and Module</div>
+                <div className="crm-goals-head-title">
+                  Some HRMS Feature and Module
+                </div>
               </div>
               <div className="crm-goals-head-slogan">
                 At Venturing Digitally, our HRMS solutions are designed with
@@ -265,7 +268,12 @@ function Hrms() {
                   </div>
                 </div>
                 <div className="crm-third-right">
-                  <LazyLoadImage src={ctacrmservices} alt="..." className="w-100 h-100" loading="lazy" />
+                  <LazyLoadImage
+                    src={ctacrmservices}
+                    alt="..."
+                    className="w-100 h-100"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -276,11 +284,9 @@ function Hrms() {
       <section id="health">
         <div className="container-fluid">
           <div className="container">
-          
             <div className="section-content">
               <div className="row align-items-center">
-               
-              <div className="col-lg-6">
+                <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
                       <LazyLoadImage
@@ -301,147 +307,138 @@ function Hrms() {
                       </div>
 
                       <form>
-                          <div className="form-input-new" style={{paddingBottom:"0px"}}>
-                            <div className="col-lg-6">
-                              <div className="left-placeholder">
-                                <input
-                                  type="text"
-                                  name="first_name"
-                                  className="form-control fs-3 first-input"
-                                  placeholder="First Name*"
-                                  value={formData.first_name}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                             
-                             
-
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="title"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Title/Position*"
-                                  value={formData.title}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="tel"
-                                  name="phone"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Mobile No*"
-                                  value={formData.phone}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="email"
-                                  name="email"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Email*"
-                                  value={formData.email}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="address"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Address*"
-                                  value={formData.address}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                           
-                             
+                        <div
+                          className="form-input-new"
+                          style={{ paddingBottom: "0px" }}
+                        >
+                          <div className="col-lg-6">
+                            <div className="left-placeholder">
+                              <input
+                                type="text"
+                                name="first_name"
+                                className="form-control fs-3 first-input"
+                                placeholder="First Name*"
+                                value={formData.first_name}
+                                onChange={handleInputChange}
+                                required
+                              />
                             </div>
-                            <div className="col-lg-6">
-                              <div className="left-placholder">
-                                <input
-                                  type="text"
-                                  name="last_name"
-                                  className="form-control fs-3 first-input"
-                                  placeholder="Last Name*"
-                                  value={formData.last_name}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="business"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Organisation/Business Name*"
-                                  value={formData.business}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                             
-                             
-                              
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="country"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Country*"
-                                  value={formData.country}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
 
-                           
-
-                              <div className="email-placholder">
-                                <input
-                                  type="number"
-                                  name="user"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="No. of user access*"
-                                  value={formData.user}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="date"
-                                  name="date"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Preffered Date & Time*"
-                                  value={formData.date}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                           
-
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="title"
+                                className="form-control fs-3 second-input"
+                                placeholder="Title/Position*"
+                                value={formData.title}
+                                onChange={handleInputChange}
+                                required
+                              />
                             </div>
-                            
+
+                            <div className="email-placholder">
+                              <input
+                                type="tel"
+                                name="phone"
+                                className="form-control fs-3 second-input"
+                                placeholder="Mobile No*"
+                                value={formData.phone}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="email"
+                                name="email"
+                                className="form-control fs-3 second-input"
+                                placeholder="Email*"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="address"
+                                className="form-control fs-3 second-input"
+                                placeholder="Address*"
+                                value={formData.address}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
                           </div>
-                          <div className="form-input-new" style={{padding:"0px 4px 0px 15px"}}>
+                          <div className="col-lg-6">
+                            <div className="left-placholder">
+                              <input
+                                type="text"
+                                name="last_name"
+                                className="form-control fs-3 first-input"
+                                placeholder="Last Name*"
+                                value={formData.last_name}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="business"
+                                className="form-control fs-3 second-input"
+                                placeholder="Organisation/Business Name*"
+                                value={formData.business}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="country"
+                                className="form-control fs-3 second-input"
+                                placeholder="Country*"
+                                value={formData.country}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="number"
+                                name="user"
+                                className="form-control fs-3 second-input"
+                                placeholder="No. of user access*"
+                                value={formData.user}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="date"
+                                name="date"
+                                className="form-control fs-3 second-input"
+                                placeholder="Preffered Date & Time*"
+                                value={formData.date}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="form-input-new"
+                          style={{ padding: "0px 4px 0px 15px" }}
+                        >
                           <div className="col-lg-12">
-                       
-                          <div className="email-placholder">
+                            <div className="email-placholder">
                               <textarea
-                              
                                 rows={3}
                                 name="about"
                                 className="form-control fs-3 second-input"
@@ -450,28 +447,36 @@ function Hrms() {
                                 onChange={handleInputChange}
                                 required
                               ></textarea>
-                              </div>
+                            </div>
 
-                              <div >
-                                <label style={{display:'flex', gridColumnGap:"8px", alignItems:"start", fontSize:"12px"}}>
-                                  <input
-                                    type="radio"
-                                    name="agreement"
-                                    checked={isAgreed}
-                                    onChange={handleChange}
-                                  />
-                                 I agree to the use of personal information collected from myself in organization software demo purpose and other IT related support from your company.
-                                </label>
-                              
-                              </div>
-                              </div>
-                              </div>
-                          
+                            <div>
+                              <label
+                                style={{
+                                  display: "flex",
+                                  gridColumnGap: "8px",
+                                  alignItems: "start",
+                                  fontSize: "12px",
+                                }}
+                              >
+                                <input
+                                  type="radio"
+                                  name="agreement"
+                                  checked={isAgreed}
+                                  onChange={handleChange}
+                                />
+                                I agree to the use of personal information
+                                collected from myself in organization software
+                                demo purpose and other IT related support from
+                                your company.
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
                         <button type="submit" className="request-btn">
                           Request Free Demo
                         </button>
-
-                        </form>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -503,19 +508,18 @@ function Hrms() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is HRMS software, and how can it benefit my business?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                        HRMS (Human Resource Management System) software is a
+                        digital solution that automates HR functions such as
+                        payroll processing, employee records management,
+                        recruitment, and performance tracking. It helps
+                        businesses streamline HR operations, improve compliance,
+                        enhance employee experience, and reduce administrative
+                        workload.
                       </div>
                     </div>
                   ) : null}
@@ -532,19 +536,17 @@ function Hrms() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    What key features should I look for in an HRMS solution?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                        When selecting an HRMS, look for essential features such
+                        as payroll management, attendance tracking, employee
+                        self-service portals, recruitment automation,
+                        performance evaluation, and integration with accounting
+                        or ERP systems. A cloud-based HRMS ensures scalability
+                        and remote accessibility.
                       </div>
                     </div>
                   ) : null}
@@ -561,17 +563,18 @@ function Hrms() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    Can HRMS software improve employee engagement and
+                    productivity?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                        Yes! An HRMS enhances employee engagement by providing
+                        self-service options, real-time feedback tools, and
+                        automated workflows for leave requests and performance
+                        appraisals. It also boosts productivity by reducing
+                        manual HR tasks, ensuring accurate payroll processing,
+                        and enabling data-driven decision-making.
                       </div>
                     </div>
                   ) : null}
@@ -588,19 +591,17 @@ function Hrms() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    Is HRMS software secure for storing employee data?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
-                        processes.
+                        Most modern HRMS solutions come with robust security
+                        measures, including encryption, multi-factor
+                        authentication, role-based access control, and
+                        compliance with data protection laws like GDPR and
+                        HIPAA. Choosing a secure HRMS ensures confidential
+                        employee data is protected from cyber threats.
                       </div>
                     </div>
                   ) : null}
