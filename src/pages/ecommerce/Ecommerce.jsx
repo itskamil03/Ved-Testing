@@ -447,19 +447,12 @@ function Ecommerce() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is e-commerce software, and how can it benefit my business?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                      E-commerce software is a digital solution that enables businesses to build, manage, and optimize online stores. It streamlines product listings, order processing, payment transactions, and customer management. By automating operations, e-commerce software enhances user experience, boosts sales, and enables seamless multi-channel selling.
                       </div>
                     </div>
                   ) : null}
@@ -476,19 +469,12 @@ function Ecommerce() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    What key features should I look for in e-commerce software?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                      When selecting e-commerce software, consider essential features such as mobile-friendly design, secure payment gateways, inventory management, AI-powered product recommendations, multi-channel integration (Amazon, eBay, social media), SEO tools, and analytics for tracking customer behavior and sales performance.
                       </div>
                     </div>
                   ) : null}
@@ -505,17 +491,12 @@ function Ecommerce() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    How can e-commerce software improve sales and customer retention?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                      E-commerce platforms enhance sales through personalized shopping experiences, AI-driven recommendations, abandoned cart recovery, fast and secure checkout processes, and automated marketing tools like email campaigns and loyalty programs. A seamless customer journey leads to higher retention and conversion rates.
                       </div>
                     </div>
                   ) : null}
@@ -532,19 +513,12 @@ function Ecommerce() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    Is e-commerce software secure for handling transactions and customer data?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
-                        processes.
+                      Yes! Reliable e-commerce platforms come with security features like SSL encryption, PCI-DSS compliance, fraud detection, multi-factor authentication, and secure payment integrations. These measures protect customer data, prevent cyber threats, and build trust with online shoppers.
                       </div>
                     </div>
                   ) : null}

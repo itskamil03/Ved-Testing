@@ -33,11 +33,12 @@ function SchoolCollage() {
                 <p>
                   Our School & College Management Software is an
                   all-encompassing platform designed to simplify and streamline
-                  the management of academic and administrative operations. Venturing digitally
-                  user-friendly school & college management software offers end-to-end automation for
-                  educational institutions, helping schools and colleges improve
-                  efficiency, boost productivity, and facilitate effective
-                  communication across all departments.
+                  the management of academic and administrative operations.
+                  Venturing digitally user-friendly school & college management
+                  software offers end-to-end automation for educational
+                  institutions, helping schools and colleges improve efficiency,
+                  boost productivity, and facilitate effective communication
+                  across all departments.
                 </p>
               </div>
             </div>
@@ -114,7 +115,11 @@ function SchoolCollage() {
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-4" className="tab-label">
-                      <LazyLoadImage src="images/icon/management.png" alt="..." loading="lazy" />
+                      <LazyLoadImage
+                        src="images/icon/management.png"
+                        alt="..."
+                        loading="lazy"
+                      />
                       <div>For Management </div>
                     </label>
                     {selectedTab === "tab4" && (
@@ -189,7 +194,11 @@ function SchoolCollage() {
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-3" className="tab-label">
-                      <LazyLoadImage src="images/icon/teacher.png" alt="..." loading="lazy" />
+                      <LazyLoadImage
+                        src="images/icon/teacher.png"
+                        alt="..."
+                        loading="lazy"
+                      />
                       <div>For Teachers</div>
                     </label>
                     {selectedTab === "tab3" && (
@@ -269,7 +278,11 @@ function SchoolCollage() {
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-2" className="tab-label">
-                      <LazyLoadImage src="images/icon/hotel.png" alt="..."  loading="lazy"/>
+                      <LazyLoadImage
+                        src="images/icon/hotel.png"
+                        alt="..."
+                        loading="lazy"
+                      />
                       <div>For Hostel</div>
                     </label>
                     {selectedTab === "tab2" && (
@@ -347,7 +360,11 @@ function SchoolCollage() {
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-1" className="tab-label">
-                      <LazyLoadImage src="images/icon/group.png" alt="..." loading="lazy" />
+                      <LazyLoadImage
+                        src="images/icon/group.png"
+                        alt="..."
+                        loading="lazy"
+                      />
                       <div>For Students</div>
                     </label>
                     {selectedTab === "tab1" && (
@@ -420,7 +437,11 @@ function SchoolCollage() {
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-0" className="tab-label">
-                      <LazyLoadImage src="images/icon/family.png" alt="..." loading="lazy"/>
+                      <LazyLoadImage
+                        src="images/icon/family.png"
+                        alt="..."
+                        loading="lazy"
+                      />
                       <div>For Parents</div>
                     </label>
                     {selectedTab === "tab0" && (
@@ -503,7 +524,8 @@ function SchoolCollage() {
               <div className="custom-head">
                 <div className="circle"></div>
                 <div className="head-title">
-                  Start Using Venturing digitally ERP for your School & College Today!
+                  Start Using Venturing digitally ERP for your School & College
+                  Today!
                 </div>
               </div>
 
@@ -724,7 +746,6 @@ function SchoolCollage() {
         </div>
       </section>
 
-
       <section id="enterprise-faq">
         <div className="container-fluid">
           <div className="container">
@@ -747,19 +768,19 @@ function SchoolCollage() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is school and college management software, and how does
+                    it benefit educational institutions?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                        School and college management software is a digital
+                        solution that automates administrative, academic, and
+                        communication processes for educational institutions. It
+                        streamlines student admissions, fee management,
+                        attendance tracking, timetable scheduling, and online
+                        learning, enhancing efficiency and improving
+                        student-teacher collaboration.
                       </div>
                     </div>
                   ) : null}
@@ -776,19 +797,18 @@ function SchoolCollage() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    What key features should I look for in school and college
+                    management software?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                        When choosing an education management system, look for
+                        features such as online admission management, fee
+                        payment automation, attendance tracking, student
+                        performance analytics, library management,
+                        parent-teacher communication tools, and integration with
+                        Learning Management Systems (LMS) for e-learning.
                       </div>
                     </div>
                   ) : null}
@@ -805,17 +825,17 @@ function SchoolCollage() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    Can school and college management software support online
+                    learning and exams?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                        Yes! Most modern education management platforms include
+                        e-learning modules, online exam management, digital
+                        report cards, and real-time student progress tracking.
+                        These features enable remote education, making learning
+                        more flexible and accessible for students and educators.
                       </div>
                     </div>
                   ) : null}
@@ -832,19 +852,18 @@ function SchoolCollage() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    Is school and college management software secure for
+                    handling student and institutional data?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
-                        processes.
+                        Yes, a reliable school and college management system
+                        includes strong security measures like data encryption,
+                        role-based access control, cloud backups, and compliance
+                        with education data protection regulations (such as
+                        FERPA and GDPR). This ensures that sensitive student and
+                        institutional data remain safe from cyber threats.
                       </div>
                     </div>
                   ) : null}

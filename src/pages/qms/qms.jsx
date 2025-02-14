@@ -5,8 +5,6 @@ import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Qms = () => {
-
-
   const [isAgreed, setIsAgreed] = useState(false);
 
   const handleChange = () => {
@@ -20,10 +18,10 @@ const Qms = () => {
     alternate_phone: "",
     email: "",
     business: "",
-    date:"",
-    country:"",
-    user:"",
-    address:""
+    date: "",
+    country: "",
+    user: "",
+    address: "",
   });
 
   const handleInputChange = (e) => {
@@ -51,9 +49,16 @@ const Qms = () => {
         <div id="container-fluid">
           <div className="container">
             <div className="head-image-main">
-              <LazyLoadImage className="qms-icon-image" src="/qms-letter.jpg"  loading="lazy"/>
+              <LazyLoadImage
+                className="qms-icon-image"
+                src="/qms-letter.jpg"
+                loading="lazy"
+              />
 
-              <div id="qms-heading">Best Quality Management Software with Venturing Digitally (QMS/EQMS)</div>
+              <div id="qms-heading">
+                Best Quality Management Software with Venturing Digitally
+                (QMS/EQMS)
+              </div>
             </div>
             <div className="head-image-containt">
               <div className="qms-heading-containt">
@@ -66,12 +71,20 @@ const Qms = () => {
                 quality standards and regulatory requirements.
               </div>
               <div className="image-qms-containt">
-                <LazyLoadImage className="qms123" src="qms123.jpg" loading="lazy"/>
+                <LazyLoadImage
+                  className="qms123"
+                  src="qms123.jpg"
+                  loading="lazy"
+                />
               </div>
             </div>
             <div className="qms-main-cards">
               <div className="qms-cards-heading">
-                <LazyLoadImage className="qms-icon-image1" src="/qms-letter.jpg" loading="lazy" />
+                <LazyLoadImage
+                  className="qms-icon-image1"
+                  src="/qms-letter.jpg"
+                  loading="lazy"
+                />
                 &nbsp;&nbsp;Key Components of a EQMS/QMS Include
               </div>
               <div className="row">
@@ -151,7 +164,11 @@ const Qms = () => {
             </div>
             <div className="main-text-image ">
               <div className="main-containt">
-                <LazyLoadImage className="qms-icon-image111" src="/img_technology.png" loading="lazy"/>
+                <LazyLoadImage
+                  className="qms-icon-image111"
+                  src="/img_technology.png"
+                  loading="lazy"
+                />
                 &nbsp;&nbsp;&nbsp; QMS is often governed by international
                 standards like ISO 9001, which provides a set of principles for
                 managing quality. Implementing a QMS can offer several benefits
@@ -190,9 +207,10 @@ const Qms = () => {
                       </div>
                     </div>
                     <div className="head-slogan">
-                      Quality Management Software developed by venturing digitally (QMS) offers several benefits
-                      for organizations looking to streamline their quality
-                      processes and improve overall efficiency:
+                      Quality Management Software developed by venturing
+                      digitally (QMS) offers several benefits for organizations
+                      looking to streamline their quality processes and improve
+                      overall efficiency:
                     </div>
                   </div>
                   <div className="section-content">
@@ -459,11 +477,9 @@ const Qms = () => {
       <section id="health">
         <div className="container-fluid">
           <div className="container">
-          
             <div className="section-content">
               <div className="row align-items-center">
-               
-              <div className="col-lg-6">
+                <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
                       <LazyLoadImage
@@ -484,147 +500,138 @@ const Qms = () => {
                       </div>
 
                       <form>
-                          <div className="form-input-new" style={{paddingBottom:"0px"}}>
-                            <div className="col-lg-6">
-                              <div className="left-placeholder">
-                                <input
-                                  type="text"
-                                  name="first_name"
-                                  className="form-control fs-3 first-input"
-                                  placeholder="First Name*"
-                                  value={formData.first_name}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                             
-                             
-
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="title"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Title/Position*"
-                                  value={formData.title}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="tel"
-                                  name="phone"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Mobile No*"
-                                  value={formData.phone}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="email"
-                                  name="email"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Email*"
-                                  value={formData.email}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="address"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Address*"
-                                  value={formData.address}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                           
-                             
+                        <div
+                          className="form-input-new"
+                          style={{ paddingBottom: "0px" }}
+                        >
+                          <div className="col-lg-6">
+                            <div className="left-placeholder">
+                              <input
+                                type="text"
+                                name="first_name"
+                                className="form-control fs-3 first-input"
+                                placeholder="First Name*"
+                                value={formData.first_name}
+                                onChange={handleInputChange}
+                                required
+                              />
                             </div>
-                            <div className="col-lg-6">
-                              <div className="left-placholder">
-                                <input
-                                  type="text"
-                                  name="last_name"
-                                  className="form-control fs-3 first-input"
-                                  placeholder="Last Name*"
-                                  value={formData.last_name}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="business"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Organisation/Business Name*"
-                                  value={formData.business}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                             
-                             
-                              
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="country"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Country*"
-                                  value={formData.country}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
 
-                           
-
-                              <div className="email-placholder">
-                                <input
-                                  type="number"
-                                  name="user"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="No. of user access*"
-                                  value={formData.user}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="date"
-                                  name="date"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Preffered Date & Time*"
-                                  value={formData.date}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                           
-
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="title"
+                                className="form-control fs-3 second-input"
+                                placeholder="Title/Position*"
+                                value={formData.title}
+                                onChange={handleInputChange}
+                                required
+                              />
                             </div>
-                            
+
+                            <div className="email-placholder">
+                              <input
+                                type="tel"
+                                name="phone"
+                                className="form-control fs-3 second-input"
+                                placeholder="Mobile No*"
+                                value={formData.phone}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="email"
+                                name="email"
+                                className="form-control fs-3 second-input"
+                                placeholder="Email*"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="address"
+                                className="form-control fs-3 second-input"
+                                placeholder="Address*"
+                                value={formData.address}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
                           </div>
-                          <div className="form-input-new" style={{padding:"0px 4px 0px 15px"}}>
+                          <div className="col-lg-6">
+                            <div className="left-placholder">
+                              <input
+                                type="text"
+                                name="last_name"
+                                className="form-control fs-3 first-input"
+                                placeholder="Last Name*"
+                                value={formData.last_name}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="business"
+                                className="form-control fs-3 second-input"
+                                placeholder="Organisation/Business Name*"
+                                value={formData.business}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="country"
+                                className="form-control fs-3 second-input"
+                                placeholder="Country*"
+                                value={formData.country}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="number"
+                                name="user"
+                                className="form-control fs-3 second-input"
+                                placeholder="No. of user access*"
+                                value={formData.user}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="date"
+                                name="date"
+                                className="form-control fs-3 second-input"
+                                placeholder="Preffered Date & Time*"
+                                value={formData.date}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="form-input-new"
+                          style={{ padding: "0px 4px 0px 15px" }}
+                        >
                           <div className="col-lg-12">
-                       
-                          <div className="email-placholder">
+                            <div className="email-placholder">
                               <textarea
-                              
                                 rows={3}
                                 name="about"
                                 className="form-control fs-3 second-input"
@@ -633,28 +640,36 @@ const Qms = () => {
                                 onChange={handleInputChange}
                                 required
                               ></textarea>
-                              </div>
+                            </div>
 
-                              <div >
-                                <label style={{display:'flex', gridColumnGap:"8px", alignItems:"start", fontSize:"12px"}}>
-                                  <input
-                                    type="radio"
-                                    name="agreement"
-                                    checked={isAgreed}
-                                    onChange={handleChange}
-                                  />
-                                 I agree to the use of personal information collected from myself in organization software demo purpose and other IT related support from your company.
-                                </label>
-                              
-                              </div>
-                              </div>
-                              </div>
-                          
+                            <div>
+                              <label
+                                style={{
+                                  display: "flex",
+                                  gridColumnGap: "8px",
+                                  alignItems: "start",
+                                  fontSize: "12px",
+                                }}
+                              >
+                                <input
+                                  type="radio"
+                                  name="agreement"
+                                  checked={isAgreed}
+                                  onChange={handleChange}
+                                />
+                                I agree to the use of personal information
+                                collected from myself in organization software
+                                demo purpose and other IT related support from
+                                your company.
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
                         <button type="submit" className="request-btn">
                           Request Free Demo
                         </button>
-
-                        </form>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -686,19 +701,19 @@ const Qms = () => {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is Quality Management Software (QMS), and why is it
+                    important for businesses?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                        Quality Management Software (QMS) is a digital solution
+                        that helps businesses standardize processes, ensure
+                        compliance, and improve product quality. It automates
+                        workflows related to document control, audits, risk
+                        management, and corrective actions. A QMS enhances
+                        efficiency, reduces errors, and helps companies meet
+                        regulatory standards like ISO 9001, FDA, and GMP.
                       </div>
                     </div>
                   ) : null}
@@ -715,19 +730,19 @@ const Qms = () => {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    How do I choose the best Quality Management System (QMS) for
+                    my company?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                        To select the right QMS, consider factors like
+                        industry-specific compliance requirements, cloud vs.
+                        on-premise deployment, user-friendly interface,
+                        integration capabilities, and scalability. Look for
+                        features like document control, non-conformance
+                        tracking, audit management, and real-time reporting to
+                        optimize quality processes.
                       </div>
                     </div>
                   ) : null}
@@ -744,17 +759,17 @@ const Qms = () => {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    Can a QMS help with regulatory compliance and audits?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                        Yes, a QMS ensures compliance with industry standards
+                        like ISO 9001, FDA 21 CFR Part 11, and GMP by automating
+                        document management, tracking corrective actions, and
+                        maintaining audit trails. It simplifies compliance
+                        audits by providing real-time reporting and centralized
+                        access to quality documentation.
                       </div>
                     </div>
                   ) : null}
@@ -771,19 +786,18 @@ const Qms = () => {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    How does a Quality Management Software improve business
+                    efficiency and product quality?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
-                        processes.
+                        A QMS improves efficiency by automating quality control
+                        processes, reducing manual errors, and streamlining
+                        workflows. It enhances product quality by identifying
+                        defects early, ensuring regulatory compliance, and
+                        enabling continuous improvement through real-time data
+                        insights and corrective action tracking.
                       </div>
                     </div>
                   ) : null}

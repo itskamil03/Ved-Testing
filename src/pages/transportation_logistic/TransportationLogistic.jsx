@@ -454,19 +454,19 @@ function TransportationLogistic() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is transportation and logistics software, and how can
+                    it benefit my business?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                        Transportation and logistics software is a digital
+                        solution that helps businesses optimize fleet
+                        management, shipment tracking, route planning, and
+                        supply chain operations. It improves efficiency, reduces
+                        fuel costs, enhances real-time visibility, and ensures
+                        faster deliveries, leading to higher customer
+                        satisfaction.
                       </div>
                     </div>
                   ) : null}
@@ -483,19 +483,18 @@ function TransportationLogistic() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    What key features should I look for in transportation and
+                    logistics software?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                        When selecting logistics software, consider essential
+                        features such as GPS tracking, automated route
+                        optimization, fleet management, warehouse inventory
+                        control, order management, real-time analytics, and
+                        integration with ERP and e-commerce platforms for
+                        seamless operations.
                       </div>
                     </div>
                   ) : null}
@@ -512,17 +511,18 @@ function TransportationLogistic() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    How can logistics software improve delivery efficiency and
+                    reduce operational costs?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                        Logistics software enhances delivery efficiency by
+                        optimizing routes, reducing idle time, and automating
+                        dispatching. AI-powered demand forecasting helps manage
+                        inventory effectively, while real-time tracking
+                        minimizes delays and fuel expenses, significantly
+                        lowering overall operational costs.
                       </div>
                     </div>
                   ) : null}
@@ -539,19 +539,18 @@ function TransportationLogistic() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    Is transportation and logistics software secure for handling
+                    shipment and customer data?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
-                        processes.
+                        Yes! Reliable logistics management software includes
+                        end-to-end encryption, multi-factor authentication,
+                        role-based access control, and compliance with industry
+                        regulations such as GDPR and ISO 27001. These security
+                        measures protect shipment details, customer information,
+                        and financial transactions from cyber threats.
                       </div>
                     </div>
                   ) : null}
