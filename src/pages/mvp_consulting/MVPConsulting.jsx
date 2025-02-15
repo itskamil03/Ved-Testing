@@ -17,7 +17,7 @@ function MVPConsulting() {
       <Hero
         imgbtn="Contact Us"
         heading="MVP IT Consulting"
-        src="image/support-maintenance/hero.webp"
+        src="image/consulting/consulting.webp"
       />
       <section id="support-first">
         <div className="container-fluid">

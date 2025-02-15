@@ -17,7 +17,7 @@ function AIML() {
       <Hero
         imgbtn="Contact Us"
         heading="AI-ML"
-        src="image/support-maintenance/hero.webp"
+        src="image/ai/ai-ml.webp"
       />
       <section id="support-first">
         <div className="container-fluid">

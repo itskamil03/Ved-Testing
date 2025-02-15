@@ -17,7 +17,7 @@ function QaTesting() {
       <Hero
         imgbtn="Contact Us"
         heading="QA testing & Security"
-        src="image/support-maintenance/hero.webp"
+        src="image/testing/testing.webp"
       />
       <section id="support-first">
         <div className="container-fluid">

@@ -17,7 +17,7 @@ function DigitalMarketing() {
       <Hero
         imgbtn="Contact Us"
         heading="Digital Marketing"
-        src="image/support-maintenance/hero.webp"
+        src="image/digitalmarketing/digitalmarketing.webp"
       />
       <section id="support-first">
         <div className="container-fluid">
