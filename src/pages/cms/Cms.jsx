@@ -5,6 +5,8 @@ import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const cms_best = [
   {
@@ -74,21 +76,23 @@ function Cms() {
   const [formData, setFormData] = useState({
     first_name: "",
     last_name: "",
-    phone: "",
-    alternate_phone: "",
+    mobile: "",
+    title:"",
+    desc: "",
     email: "",
-    business: "",
+    business_name: "",
     date: "",
     country: "",
-    user: "",
+    user_access: "",
     address: "",
+    agreement: false,
   });
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
+      [name]: type === "checkbox" ? checked : value,
     }));
   };
 
@@ -97,6 +101,93 @@ function Cms() {
   const toggleTab = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
+
+  const handleSubmit= async (e)=>
+    {
+
+       e.preventDefault();
+  
+      if (!validateEmail(formData.email)) {
+        toast.error("Please enter a valid email address", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+        return;
+      }
+  
+      if (!validatePhone(formData.mobile)) {
+        toast.error("Please enter a valid phone number", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+        return;
+      }
+
+      if (!formData.agreement) {
+        toast.error("Please accept the agreement before submitting.", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+        return;
+      }
+  
+      try {
+  
+  
+        const response = await fetch(
+          "https://ved.venturingdigitally.com/api/createSolution",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          }
+        );
+  
+        if (response.status == 200) {
+  
+          setFormData({ first_name: "",
+            last_name: "",
+            mobile: "",
+            title:"",
+            desc: "",
+            email: "",
+            business_name: "",
+            date: "",
+            country: "",
+            user_access: "",
+            address: "",
+          })
+  
+  
+          toast.success("Form Submitted Successfully", {
+            position: "top-right",
+            autoClose: 2000,
+          });
+      
+        } else {
+          toast.error("Submission failed. Please try again.", {
+            position: "top-right",
+            autoClose: 2000,
+          });
+        }
+        
+      } catch (error) {
+        console.error("An error occurred while submitting the form:", error);
+      }
+    
+}
+  
+    const validateEmail = (email) => {
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      return emailRegex.test(email);
+    };
+  
+    const validatePhone = (phone) => {
+      const phoneRegex = /^[6-9]\d{9}$/;
+      return phoneRegex.test(phone);
+    };
 
   return (
     <>
@@ -263,7 +354,7 @@ function Cms() {
                         <h2>Request Free Demo</h2>
                       </div>
 
-                      <form>
+                      <form onSubmit={handleSubmit}>
                         <div
                           className="form-input-new"
                           style={{ paddingBottom: "0px" }}
@@ -296,10 +387,10 @@ function Cms() {
                             <div className="email-placholder">
                               <input
                                 type="tel"
-                                name="phone"
+                                name="mobile"
                                 className="form-control fs-3 second-input"
                                 placeholder="Mobile No*"
-                                value={formData.phone}
+                                value={formData.mobile}
                                 onChange={handleInputChange}
                                 required
                               />
@@ -343,10 +434,10 @@ function Cms() {
                             <div className="email-placholder">
                               <input
                                 type="text"
-                                name="business"
+                                name="business_name"
                                 className="form-control fs-3 second-input"
                                 placeholder="Organisation/Business Name*"
-                                value={formData.business}
+                                value={formData.business_name}
                                 onChange={handleInputChange}
                                 required
                               />
@@ -367,10 +458,10 @@ function Cms() {
                             <div className="email-placholder">
                               <input
                                 type="number"
-                                name="user"
+                                name="user_access"
                                 className="form-control fs-3 second-input"
                                 placeholder="No. of user access*"
-                                value={formData.user}
+                                value={formData.user_access}
                                 onChange={handleInputChange}
                                 required
                               />
@@ -397,10 +488,10 @@ function Cms() {
                             <div className="email-placholder">
                               <textarea
                                 rows={3}
-                                name="about"
+                                name="desc"
                                 className="form-control fs-3 second-input"
                                 placeholder="Tell us About Project*"
-                                value={formData.about}
+                                value={formData.desc}
                                 onChange={handleInputChange}
                                 required
                               ></textarea>
@@ -415,12 +506,7 @@ function Cms() {
                                   fontSize: "12px",
                                 }}
                               >
-                                <input
-                                  type="radio"
-                                  name="agreement"
-                                  checked={isAgreed}
-                                  onChange={handleChange}
-                                />
+                                  <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />
                                 I agree to the use of personal information
                                 collected from myself in organization software
                                 demo purpose and other IT related support from

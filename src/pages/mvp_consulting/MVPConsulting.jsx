@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero_section/Hero";
+import "./MVPConsulting.css";
 import { Link } from "react-router-dom";
 import ContactForm from "../../components/contact_form/ContactForm";
 import { useState } from "react";
@@ -19,397 +20,284 @@ function MVPConsulting() {
         heading="MVP IT Consulting"
         src="image/consulting/consulting.webp"
       />
-      <section id="support-first">
+      <section id="consulting-first">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
               <div className="head-title">
-               Software Support & Maintenance for Digital Growth
+              Accelerate Your Product Development with Expert IT Consulting
               </div>
               <div className="head-slogan page_title">
-                The post-implementation stage holds as much importance as the
-                development and deployment of your software solution. Availing
-                of robust software maintenance services during this stage can
-                significantly enhance your chances of achieving desired business
-                objectives.
+              Our expert IT consulting services help you streamline the development process, 
+              reduce time-to-market, and ensure a scalable, high-performance solution.
+               We provide strategic guidance, cutting-edge technologies, and continuous support
+                to optimize workflows, enhance security, and drive innovation. With our tailored
+               approach, you can accelerate growth, improve efficiency, and stay ahead in a competitive market.
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="support-second">
+      <section id="consulting-second">
         <div className="container-fluid">
           <div className="container">
             <div className="section">
-              <div className="left">
-                <div class="text-box">
-                  <ul>
-                    <li>Accelerate software updates deployment</li>
-                    <li>
-                      Spot the issues before the system performance plummets
-                    </li>
-                    <li>Fix urgent problems in no time</li>
-                    <li>Prevent major malfunctions </li>
-                    <li>Increase user satisfaction rate</li>
-                    <li>
-                      Optimize the software maintenance costs and the total cost
-                      of ownership
-                    </li>
-                  </ul>
-                </div>
+            <div className="head-title">
+              Why Choose Venturing Digitally Pvt Ltd for MVP Development?
               </div>
-              <div className="right">
-                <LazyLoadImage
-                  src="image/support-maintenance/sup1.jpg"
-                  alt=""
-                  className="w-100 h-100"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section id="support-third">
-        <div className="container-fluid">
-          <div className="container">
-            <div className="section-top">
-              <div className="head-title">
-              At Venturing Digitally, we ensure your product stays bug-free
-              and up-to-date with a multi-level approach.
-              </div>
               <div className="head-slogan page_title">
-                To deliver efficient IT maintenance services that won’t cost you
-                a fortune, we provide professionals of different seniority
-                levels.
+              At Venturing Digitally Pvt Ltd, we excel in transforming innovative 
+              ideas into successful MVPs with precision and expertise. Our tailored
+               approach ensures rapid development, minimizes risks, and maximizes
+                potential. With a strong track record of delivering impactful solutions,
+                 we prioritize essential features that align with market demands and drive 
+                 growth. Partner with us to turn your vision into reality with confidence.
               </div>
-            </div>
 
-            <div className="section-content">
-              <div className="top-grid">
-                <div className="left">
-                  <div className="image">
-                    <LazyLoadImage
-                      src="image/support-maintenance/level1.png"
-                      alt="..."
-                      className="w-100 h-100"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <div className="right">
-                  <div className="text">
-                    At the entry-level, junior developers{" "}
-                    <b>solve 70% of commonplace problems.</b>{" "}
-                  </div>
-                </div>
-              </div>
-              <div className="center-grid">
-                <div className="left">
-                  <div className="text">
-                    At this stage, middle-level specialists who have access to
-                    all monitoring systems &nbsp;
-                    <b>deal with 20% of more serious issues.</b>
-                  </div>
-                </div>
-                <div className="right">
-                  <div className="image">
-                    <LazyLoadImage
-                      src="image/support-maintenance/level2.png"
-                      alt=""
-                      className="w-100 h-100"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-grid">
-                <div className="left">
-                  <div className="image">
-                    <LazyLoadImage
-                      src="image/support-maintenance/level3.png"
-                      alt="..."
-                      className="w-100 h-100"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <div className="right">
-                  <div className="text">
-                    At the final stage, senior developers and reliability
-                    engineers operate at the code level to fix the problem and{" "}
-                    <b>cover 10% of the most complicated challenges.</b>{" "}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+              <div className="row">
 
-      <section id="support-four">
-        <div className="section-top">
-          <div className="head-slogan page_title">
-            <p>
-              Wondering which type of collaboration suits your business needs
-              better?
-            </p>
-          </div>
-          <div className="head-btn">
-            <Link to="">LET'S CHAT</Link>
-          </div>
-        </div>
-      </section>
-
-      <section id="support-five">
-        <div className="section-top">
-          <div className="container">
-          <div className="head-title">
-            Ongoing Or On-Demand IT Maintenance Services: We Can Do Both
-          </div>
-          <div className="head-slogan page_title">
-            At Venturing Digitally, we understand that support and maintenance
-            services cannot be approached with a one-size-fits-all playbook.
-            That’s why we provide our clients with different options to choose
-            from.
-          </div>
-          </div>
-        </div>
-
-        <div className="section-box">
-          <div className="top">
-            <div className="left">
-              <div className="image">
-                <LazyLoadImage
-                  src="image/support-maintenance/img1.webp"
-                  alt="..."
-                  className="w-100 h-100"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <div className="right">
-              <div className="text">
-                <div className="top">
-                  Keep The Lights On (KTLO) approach to application support &
-                  maintenance
-                </div>
-                <div className="bottom">
-                  Take advantage of this model to keep your business critical
-                  systems and infrastructure working and stable. KTLO tasks
-                  incorporate scheduled system maintenance, ad-hoc requests,
-                  standard updates, and other garden-variety undertakings. KTLO
-                  is an effective way to maintain the software in optimal
-                  condition without draining your IT budget.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bottom">
-            <div className="left">
-              <div className="text">
-                <div className="top">
-                  On-demand application support services
-                </div>
-                <div className="bottom">
-                  If your software requires continuous support, our team is
-                  always ready to adjust to your maintenance needs, even during
-                  your busiest hours. Whether you’re an education provider
-                  looking for 8–12 hours of support daily, or an ecommerce giant
-                  in need of extended hours during seasonal sales, we’ve got you
-                  covered. Our dedication to providing top-notch support
-                  services ensures your systems run smoothly at all times.
-                </div>
-              </div>
-            </div>
-            <div className="right">
-              <div className="image">
-                <LazyLoadImage
-                  src="image/support-maintenance/img2.webp"
-                  alt="..."
-                  className="w-100 h-100"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="support-six">
-        <div className="container-fluid">
-          <div className="container">
-            <div className="section-top">
-              <div className="head-title">
-                We provide application support and maintenance services for a
-                wide range of solutions
-              </div>
-              <div className="head-slogan page_title">
-                With Venturing Digitally 4+ years of experience in crafting
-                sleek software and taking care of its upkeep, you can rest
-                assured that your IT infrastructure is in capable hands.
-              </div>
-            </div>
-
-            <div className="section-container">
-              <div className="section-box">
-                <div className="row">
-                  <div className="col-lg-6 ">
-                    <div className="left">
-                      <div className="icon">
+              <div className="col-md-6 col-lg-6 col-sm-12 mb-5">
+                 <div className="consulting-item">
+                 <div className="consulting-head">
+                  <div className="consulting-heading">Expert Guidance</div>
+          
+                  <div className="icon">
                         <span className="fa">
-                          <i class="fa-regular fa-credit-card"></i>
+                          <i class="fa fa-users"></i>
                         </span>
                       </div>
-                      <div className="text">
-                        Website maintenance and support
-                      </div>
-                    </div>
+                 </div>
 
-                    <div className="right">
-                      <div className="top">
-                        Venturing Digitally enhances your website’s performance
-                        and helps your business deliver a fast, secure, and
-                        seamless online experience.
-                      </div>
-                      <div className="bottom">
-                        Our website support and maintenance services cover:
-                      </div>
-                      <div className="list">
-                        <ul>
-                          <li>Updating website software</li>
-                          <li>
-                            Improving website speed Security scans and patches
-                          </li>
-                          <li> Monitoring your website analytics</li>
-                          <li> Fixing broken links</li>
-                          <li> Correcting HTML errors</li>
-                          <li> Backing up files</li>
-                        </ul>
-                      </div>
-                    </div>
+                 <div className="consulting-title" >Our team provides expert advice to help you define and 
+                  develop your Minimum Viable Product (MVP) efficiently.</div>
                   </div>
-
-                  <div className="col-lg-6 ">
-
-                  <div className="left">
-                    <div className="icon">
-                      <span className="fa">
-                        <i class="fa-solid fa-gear"></i>
-                      </span>
-                    </div>
-                    <div className="text">CRM maintenance and support</div>
-                  </div>
-
-                  <div className="right">
-                    <div className="top">
-                      Your customer relationship management system should stay
-                      flawless and up-to-date to bolster your business
-                      development teams’ efforts.
-                    </div>
-                    <div className="bottom">
-                      Our CRM IT maintenance services incorporate:
-                    </div>
-                    <div className="list">
-                      <ul>
-                        <li>System analysis and diagnosis</li>
-                        <li>Features updates</li>
-                        <li>Security and performance audits</li>
-                        <li>Workaround provisioning</li>
-                        <li>Updates and new releases</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  </div>
-
-                </div>
-                
-              </div>
-
-
-              <div className="section-box3">
-                <div className="row">
-                  <div className="col-lg-6 ">
-                    <div className="left">
-                      <div className="icon">
-                        <span className="fa">
-                          <i class="fa-solid fa-chart-line"></i>
-                        </span>
-                      </div>
-                      <div className="text">ERP maintenance and support</div>
-                    </div>
-               
-                    <div className="right">
-                      <div className="top">
-                        Neglecting the proper upkeep of ERP software can result
-                        in unexpected breakdowns, system outages, and data loss,
-                        disrupting your business operations and leading to
-                        financial damage. Prioritize regular monitoring of your
-                        ERP to make sure it operates like clockwork.
-                      </div>
-                      <div className="bottom">
-                        Our ERP maintenance services include:
-                      </div>
-                      <div className="list">
-                        <ul>
-                          <li>Post-implementation support</li>
-                          <li> Regular backups and patches</li>
-                          <li> Installing updates</li>
-                          <li> Monitoring ERP application servers</li>
-                          <li>Tracking the state of the ERP backend servers</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="col-lg-6 ">
-                    <div className="left">
-                      <div className="icon">
-                        <span className="fa">
-                          <i class="fa-solid fa-mobile-screen-button"></i>
-                        </span>
-                      </div>
-                      <div className="text">
-                        Android and iOS mobile application support and
-                        maintenance
-                      </div>
-                    </div>
-              
-                    <div className="right">
-                      <div className="top">
-                        As your tech partner, venturing digitally ensures your
-                        app will remain solid and secure under any conditions.
-                      </div>
-                      <div className="bottom">
-                        Our application support and maintenance offering
-                        encompasses:
-                      </div>
-                      <div className="list">
-                        <ul>
-                          <li>Bug fixes</li> <li>App updates</li>
-                          <li>OS and library updates</li>
-                          <li>App monitoring</li>
-                          <li>Code maintenance&nbsp;</li>
-                          <li>Application security management</li>
-                          <li>Performance enhancements</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
               </div>
 
             
+              <div className="col-md-6 col-lg-6 col-sm-12 mb-5">
+              <div className="consulting-item">
+              <div className="consulting-head">
+              <div className="consulting-heading">Strategic Insights</div>
+
+              <div className="icon">
+                    <span className="fa">
+                      <i class="fa fa-briefcase"></i>
+                    </span>
+                  </div>
+              </div>
+
+              <div className="consulting-title">Benefit from strategic insights and market analysis to ensure your 
+                MVP meets user needs and stands out in the market.</div>
+               </div>
+              </div>
+
+              <div className="col-md-6 col-lg-6 col-sm-12 mb-5">
+              <div className="consulting-item">
+              <div className="consulting-head">
+            <div className="consulting-heading">Agile Development</div>
+
+            <div className="icon">
+                  <span className="fa">
+                    <i class="fa fa-random"></i>
+                  </span>
+                </div>
+            </div>
+
+            <div className="consulting-title">Our agile approach allows for rapid iteration and adjustments
+               based on feedback, ensuring your MVP evolves effectively..</div>
+             </div>
+            </div>
+
+            <div className="col-md-6 col-lg-6 col-sm-12 mb-5">
+            <div className="consulting-item">
+            <div className="consulting-head">
+            <div className="consulting-heading">Proven Results</div>
+
+            <div className="icon">
+                  <span className="fa">
+                    <i class="fa fa-star"></i>
+                  </span>
+                </div>
+            </div>
+
+            <div className="consulting-title">We focus on delivering measurable outcomes, ensuring your
+               MVP achieves key milestones and drives business growth.</div>
+           </div>
+            </div>
+
+            </div>
             </div>
           </div>
         </div>
       </section>
 
+      <section id="consulting-third">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="section-top">
+              <div className="head-title">
+              How We Stand Out from the Competition ?
+              </div>
+              <div className="head-slogan page_title">
+              At Venturing Digitally Pvt Ltd, we go beyond conventional solutions 
+              to deliver innovative, scalable, and future-ready technology services.
+               Our expertise in AI, cloud automation, and IT consulting ensures that 
+               your business stays ahead in the ever-evolving digital landscape. With
+                a client-centric approach, tailored strategies, and cutting-edge technology,
+                 we transform ideas into impactful solutions. Experience the difference with 
+                 our commitment to quality, efficiency, and long-term success.
+              </div>
+            </div>
+
+               <div className="row">
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-5">
+
+                    <div className="solution-item">
+                    <div className="icon">
+                  <span className="fa">
+                    <i class="fa fa-location-arrow"></i>
+                  </span>
+                   </div>
+                      <div className="item-title">Customized Solutions</div>
+                    </div>
+                  </div>
+
+                  <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-5">
+              
+                    <div className="solution-item">
+                    <div className="icon">
+                  <span className="fa">
+                    <i class="fa fa-location-arrow"></i>
+                  </span>
+                   </div>
+                      <div className="item-title">Innovative Designs</div>
+                    </div>
+                  </div>
+
+                  <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-5">
+              
+                    <div className="solution-item">
+                    <div className="icon">
+                  <span className="fa">
+                    <i class="fa fa-location-arrow"></i>
+                  </span>
+                   </div>
+                      <div className="item-title">User-Centric Approach</div>
+                    </div>
+                  </div>
+
+                  <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-5">
+              
+                    <div className="solution-item">
+                    <div className="icon">
+                  <span className="fa">
+                    <i class="fa fa-location-arrow"></i>
+                  </span>
+                   </div>
+                      <div className="item-title">Agile Methodology</div>
+                    </div>
+                    </div>
+                  </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="consulting-four" >
+        <div className="container-fluid">
+          <div className="container">
+            <div className="section-head">
+              <div className="custom-head">
+                <div className="head-title">
+                Key Phases in Our MVP Consulting & Development Process
+                </div>
+              </div>
+              <div className="head-slogan page_title">
+              Our MVP Consulting & Development Framework: From Concept to Scalable Product
+              </div>
+            </div>
+            <div className="section-content">
+              <div className="page">
+                <div className="timeline">
+                  <div className="timeline__group">
+                    <span className="timeline__year time" aria-hidden="true">
+                    Discovery & Planning
+                    </span>
+                    <div className="timeline__cards">
+                      <div className="timeline__card card">
+                        <div className="card__content">
+                        Conducted market research to identify user needs and pain points.
+                        Defined project scope, goals, and success metrics.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="timeline__group">
+                    <span className="timeline__year time" aria-hidden="true">
+                    Design Phase
+                    </span>
+                    <div className="timeline__cards">
+                      <div className="timeline__card card">
+                        <div className="card__content">
+                        Developed wireframes and prototypes based on user requirements
+                        Created a appealing UI/UX design that aligns with the brand identity. Conducted user testing for feedback.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="timeline__group">
+                    <span className="timeline__year time" aria-hidden="true">
+                    Development
+                    </span>
+                    <div className="timeline__cards">
+                      <div className="timeline__card card">
+                        <div className="card__content">
+                        Built the application using a modular and scalable architecture.
+                        Integrated essential features such as secure payment gateways and product catalog management.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="timeline__group">
+                    <span className="timeline__year time" aria-hidden="true">
+                    Testing
+                    </span>
+                    <div className="timeline__cards">
+                      <div className="timeline__card card">
+                        <div className="card__content">
+                        Conduct thorough testing for usability, performance, and security.
+                        Performed functionality, usability, and performance testing.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="timeline__group">
+                    <span className="timeline__year time" aria-hidden="true">
+                    Deployment
+                    </span>
+                    <div className="timeline__cards">
+                      <div className="timeline__card card">
+                        <div className="card__content">
+                        Deploying the app with best practices and providing ongoing support.
+                        Conducting performance optimization before launch.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+     
       <section id="enterprise-faq">
         <div className="container-fluid">
           <div className="container">

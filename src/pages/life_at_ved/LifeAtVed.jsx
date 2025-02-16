@@ -11,6 +11,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { useState } from "react";
 import { MultiSelect } from "primereact/multiselect";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const solutions = [
   { name: "Web Development", code: "Web Development" },
@@ -138,12 +140,100 @@ function LifeAtVed() {
     location: ""
   });
 
+
+
   const handleInputChange = (e) => {
+
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
+ 
+  };
+
+
+  const handleSubmit= async (e)=>
+  {
+    e.preventDefault();
+
+    if (!validateEmail(formData.email)) {
+      toast.error("Please enter a valid email address", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    if (!validatePhone(formData.mobile)) {
+      toast.error("Please enter a valid phone number", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    const trainingData = selectedService.map(item => item.name);
+
+    const courseData = selectedSolutions.map(item => item.name);
+
+    try {
+
+    const userdata={
+      ...formData,
+      training: trainingData,
+      courses: courseData
+    }
+
+      const response = await fetch(
+        "https://ved.venturingdigitally.com/api/createRegistration",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userdata),
+        }
+      );
+
+      if (response.status == 200) {
+
+        setFormData({ first_name: "",
+          last_name: "",
+          qualification: "",
+          mobile: "",
+          email: "",
+          location: ""
+        })
+
+        setSelectedService([])
+        setSelectedSolutions([])
+
+        toast.success("Registered Successfully", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+    
+      } else {
+        toast.error("Registration failed. Please try again.", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+      }
+      
+    } catch (error) {
+      console.error("An error occurred while submitting the form:", error);
+    }
+  }
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  };
+
+  const validatePhone = (phone) => {
+    const phoneRegex = /^[6-9]\d{9}$/;
+    return phoneRegex.test(phone);
   };
 
   return (
@@ -315,7 +405,7 @@ function LifeAtVed() {
                         <h2>Registration From</h2>
                       </div>
 
-                      <form>
+                      <form onSubmit={handleSubmit}>
                           <div className="form-input-new">
                             <div className="col-lg-6">
                               <div className="left-placeholder">
@@ -340,6 +430,7 @@ function LifeAtVed() {
                                   onChange={handleInputChange}
                                   required
                                 />
+
                               </div>
                               <div className="left-placeholder">
                                 <input
