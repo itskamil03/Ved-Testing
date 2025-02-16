@@ -1,4 +1,5 @@
 import React from "react";
+import "./Seo.css";
 import Hero from "../../components/hero_section/Hero";
 import { Link } from "react-router-dom";
 import ContactForm from "../../components/contact_form/ContactForm";
@@ -23,15 +24,11 @@ function Seo() {
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
-              <div className="head-title">
-               Software Support & Maintenance for Digital Growth
-              </div>
-              <div className="head-slogan page_title">
-                The post-implementation stage holds as much importance as the
-                development and deployment of your software solution. Availing
-                of robust software maintenance services during this stage can
-                significantly enhance your chances of achieving desired business
-                objectives.
+              <div className="head-title">Search Engine Optimization</div>
+              <div className="head-slogan">
+                SEO boosts your website’s visibility on search engines, driving
+                organic traffic and improving rankings. It involves optimizing
+                content, keywords, and site structure for better performance.
               </div>
             </div>
           </div>
@@ -44,26 +41,25 @@ function Seo() {
             <div className="section">
               <div className="left">
                 <div class="text-box">
-                  <ul>
-                    <li>Accelerate software updates deployment</li>
-                    <li>
-                      Spot the issues before the system performance plummets
-                    </li>
-                    <li>Fix urgent problems in no time</li>
-                    <li>Prevent major malfunctions </li>
-                    <li>Increase user satisfaction rate</li>
-                    <li>
-                      Optimize the software maintenance costs and the total cost
-                      of ownership
-                    </li>
-                  </ul>
+                  SEO is essential for website design, ensuring your site ranks
+                  higher on search engines and attracts organic traffic. At
+                  Digital Webix, we integrate SEO best practices into every
+                  aspect of your website design. From optimizing on-page
+                  elements like meta tags, headers, and content to ensuring fast
+                  load times and mobile responsiveness, we enhance your site's
+                  visibility and user experience.
+                </div>
+                <div class="text-bottom">
+                  All business is basically about customers and marketing and
+                  making money and capitalism and winning and promoting it and
+                  having something someone.
                 </div>
               </div>
               <div className="right">
                 <LazyLoadImage
-                  src="image/support-maintenance/sup1.jpg"
+                  src="image/seo/seo_1.jpg"
                   alt=""
-                  className="w-100 h-100"
+                  className="w-80 h-80"
                   loading="lazy"
                 />
               </div>
@@ -72,93 +68,51 @@ function Seo() {
         </div>
       </section>
 
-      <section id="support-third">
+      <section id="support-second">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-top">
-              <div className="head-title">
-              At Venturing Digitally, we ensure your product stays bug-free
-              and up-to-date with a multi-level approach.
+            <div className="section">
+              <div className="left">
+                <LazyLoadImage
+                  src="image/seo/Why.jpg"
+                  alt=""
+                  className="w-80 h-80"
+                  loading="lazy"
+                />
               </div>
-              <div className="head-slogan page_title">
-                To deliver efficient IT maintenance services that won’t cost you
-                a fortune, we provide professionals of different seniority
-                levels.
-              </div>
-            </div>
-
-            <div className="section-content">
-              <div className="top-grid">
-                <div className="left">
-                  <div className="image">
-                    <LazyLoadImage
-                      src="image/support-maintenance/level1.png"
-                      alt="..."
-                      className="w-100 h-100"
-                      loading="lazy"
-                    />
-                  </div>
+              <div className="right">
+                <div className="top-heading">Why SEO Is Need?</div>
+                <div class="text-box">
+                  SEO is crucial for website design, ensuring your site is
+                  visible to search engines and easily found by potential
+                  customers. Without SEO, even a beautifully designed website
+                  can be lost in search results. SEO optimizes your site’s
+                  structure, content, and performance, boosting search rankings
+                  and driving organic traffic. This increased visibility leads
+                  to more visitors, better engagement, and higher conversions.
                 </div>
-                <div className="right">
-                  <div className="text">
-                    At the entry-level, junior developers{" "}
-                    <b>solve 70% of commonplace problems.</b>{" "}
-                  </div>
+                <div className="list">
+                  <ul>
+                    <li>
+                      {" "}
+                      SEO drives traffic, boosts visibility, and enhances your
+                      online presence.
+                    </li>
+                    <li> SEO boosts profits fast.</li>
+                    <li> Get Great Result For Your Business</li>
+                    <li> SEO drives success, customers, and growth.</li>
+                    <li> Correcting HTML errors</li>
+                    <li> SEO fuels business growth.</li>
+                  </ul>
                 </div>
-              </div>
-              <div className="center-grid">
-                <div className="left">
-                  <div className="text">
-                    At this stage, middle-level specialists who have access to
-                    all monitoring systems &nbsp;
-                    <b>deal with 20% of more serious issues.</b>
-                  </div>
-                </div>
-                <div className="right">
-                  <div className="image">
-                    <LazyLoadImage
-                      src="image/support-maintenance/level2.png"
-                      alt=""
-                      className="w-100 h-100"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-grid">
-                <div className="left">
-                  <div className="image">
-                    <LazyLoadImage
-                      src="image/support-maintenance/level3.png"
-                      alt="..."
-                      className="w-100 h-100"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <div className="right">
-                  <div className="text">
-                    At the final stage, senior developers and reliability
-                    engineers operate at the code level to fix the problem and{" "}
-                    <b>cover 10% of the most complicated challenges.</b>{" "}
-                  </div>
+                <div class="text-box">
+                  SEO is essential for business success. It enhances visibility,
+                  attracts customers, and drives growth by ensuring your site
+                  ranks high in search results, leading to more traffic and
+                  conversions.
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="support-four">
-        <div className="section-top">
-          <div className="head-slogan page_title">
-            <p>
-              Wondering which type of collaboration suits your business needs
-              better?
-            </p>
-          </div>
-          <div className="head-btn">
-            <Link to="">LET'S CHAT</Link>
           </div>
         </div>
       </section>
@@ -166,73 +120,80 @@ function Seo() {
       <section id="support-five">
         <div className="section-top">
           <div className="container">
-          <div className="head-title">
-            Ongoing Or On-Demand IT Maintenance Services: We Can Do Both
-          </div>
-          <div className="head-slogan page_title">
-            At Venturing Digitally, we understand that support and maintenance
-            services cannot be approached with a one-size-fits-all playbook.
-            That’s why we provide our clients with different options to choose
-            from.
-          </div>
+            <div className="head-title">
+              We Tackle the Most Competitive Keywords
+            </div>
+            <div className="head-slogan page_title">
+              Keyword research is one of the most important steps in SEO. Use
+              the wrong keywords and you’ll show up in irrelevant searches or
+              not at all. But if you use the right keywords, you can dominate a
+              competitive market and take your business to the next level.
+            </div>
           </div>
         </div>
 
         <div className="section-box">
           <div className="top">
-            <div className="left">
+            <div className="bottom">
               <div className="image">
                 <LazyLoadImage
-                  src="image/support-maintenance/img1.webp"
+                  src="image/seo/keywords.webp"
                   alt="..."
-                  className="w-100 h-100"
+                  className="w-80 h-80"
                   loading="lazy"
                 />
-              </div>
-            </div>
-            <div className="right">
-              <div className="text">
-                <div className="top">
-                  Keep The Lights On (KTLO) approach to application support &
-                  maintenance
-                </div>
-                <div className="bottom">
-                  Take advantage of this model to keep your business critical
-                  systems and infrastructure working and stable. KTLO tasks
-                  incorporate scheduled system maintenance, ad-hoc requests,
-                  standard updates, and other garden-variety undertakings. KTLO
-                  is an effective way to maintain the software in optimal
-                  condition without draining your IT budget.
-                </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="bottom">
-            <div className="left">
-              <div className="text">
-                <div className="top">
-                  On-demand application support services
-                </div>
-                <div className="bottom">
-                  If your software requires continuous support, our team is
-                  always ready to adjust to your maintenance needs, even during
-                  your busiest hours. Whether you’re an education provider
-                  looking for 8–12 hours of support daily, or an ecommerce giant
-                  in need of extended hours during seasonal sales, we’ve got you
-                  covered. Our dedication to providing top-notch support
-                  services ensures your systems run smoothly at all times.
-                </div>
-              </div>
+      <section id="support-five">
+        <div className="section-top">
+          <div className="container">
+            <div className="head-title">We Are The Best in SEO</div>
+            <div className="head-slogan page_title">
+              With over 300 outstanding SEO client case studies and a large team
+              of SEO specialists from all over the world, Coalition Technologies
+              is one of the most recommended SEO services companies in the US.
+              Instead of guessing, we base our SEO strategies on over a decade
+              of research and scientifically proven data so you get real results
+              and the highest ROI possible. Get a free account and competitor
+              strategy review today and see how fast Coalition can push your
+              website to the top.
             </div>
-            <div className="right">
+          </div>
+        </div>
+
+        <div className="section-box">
+          <div className="top">
+            <div className="bestSeo">
               <div className="image">
                 <LazyLoadImage
-                  src="image/support-maintenance/img2.webp"
+                  src="image/seo/keywords.webp"
                   alt="..."
-                  className="w-100 h-100"
+                  className="w-72 h-72"
                   loading="lazy"
                 />
+                <h4>#1 in Google Search</h4>
+              </div>
+              <div className="image">
+                <LazyLoadImage
+                  src="image/seo/keywords.webp"
+                  alt="..."
+                  className="w-72 h-72"
+                  loading="lazy"
+                />
+                <h4>4.9 Clutch Rating</h4>
+              </div>
+              <div className="image">
+                <LazyLoadImage
+                  src="image/seo/keywords.webp"
+                  alt="..."
+                  className="w-72 h-72"
+                  loading="lazy"
+                />
+                <h4>#1 in Google Places</h4>
               </div>
             </div>
           </div>
@@ -243,21 +204,17 @@ function Seo() {
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
-              <div className="head-title">
-                We provide application support and maintenance services for a
-                wide range of solutions
-              </div>
+              <div className="head-title">Auditing Your Website</div>
               <div className="head-slogan page_title">
-                With Venturing Digitally 4+ years of experience in crafting
-                sleek software and taking care of its upkeep, you can rest
-                assured that your IT infrastructure is in capable hands.
+                As part of our SEO services, we will audit your website and look
+                for anything that needs to be added or upgraded. Here are a few
+                of the key aspects that our SEO company considers.
               </div>
             </div>
-
             <div className="section-container">
               <div className="section-box">
                 <div className="row">
-                  <div className="col-lg-6 ">
+                  <div className="col-lg-6">
                     <div className="left">
                       <div className="icon">
                         <span className="fa">
@@ -265,71 +222,41 @@ function Seo() {
                         </span>
                       </div>
                       <div className="text">
-                        Website maintenance and support
+                        TITLE TAGS, META DESCRIPTIONS, PAGE TITLES, PAGE COPY,
+                        ALT TEXT:
                       </div>
                     </div>
 
                     <div className="right">
                       <div className="top">
-                        Venturing Digitally enhances your website’s performance
-                        and helps your business deliver a fast, secure, and
-                        seamless online experience.
-                      </div>
-                      <div className="bottom">
-                        Our website support and maintenance services cover:
-                      </div>
-                      <div className="list">
-                        <ul>
-                          <li>Updating website software</li>
-                          <li>
-                            Improving website speed Security scans and patches
-                          </li>
-                          <li> Monitoring your website analytics</li>
-                          <li> Fixing broken links</li>
-                          <li> Correcting HTML errors</li>
-                          <li> Backing up files</li>
-                        </ul>
+                        Writing keywords into these areas of your website
+                        contribute significantly to its ranking power for those
+                        terms.
                       </div>
                     </div>
                   </div>
 
                   <div className="col-lg-6 ">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa-solid fa-gear"></i>
+                        </span>
+                      </div>
+                      <div className="text">URL STRUCTURE:</div>
+                    </div>
 
-                  <div className="left">
-                    <div className="icon">
-                      <span className="fa">
-                        <i class="fa-solid fa-gear"></i>
-                      </span>
-                    </div>
-                    <div className="text">CRM maintenance and support</div>
-                  </div>
-
-                  <div className="right">
-                    <div className="top">
-                      Your customer relationship management system should stay
-                      flawless and up-to-date to bolster your business
-                      development teams’ efforts.
-                    </div>
-                    <div className="bottom">
-                      Our CRM IT maintenance services incorporate:
-                    </div>
-                    <div className="list">
-                      <ul>
-                        <li>System analysis and diagnosis</li>
-                        <li>Features updates</li>
-                        <li>Security and performance audits</li>
-                        <li>Workaround provisioning</li>
-                        <li>Updates and new releases</li>
-                      </ul>
+                    <div className="right">
+                      <div className="top">
+                        URLs should contain real words and include your
+                        keywords. They should be structured in such a way that
+                        search engines can easily crawl your site based on your
+                        URLs alone.
+                      </div>
                     </div>
                   </div>
-
-                  </div>
-
                 </div>
-                
               </div>
-
 
               <div className="section-box3">
                 <div className="row">
@@ -340,71 +267,90 @@ function Seo() {
                           <i class="fa-solid fa-chart-line"></i>
                         </span>
                       </div>
-                      <div className="text">ERP maintenance and support</div>
+                      <div className="text">NAVIGATION STRUCTURE:</div>
                     </div>
-               
+
                     <div className="right">
                       <div className="top">
-                        Neglecting the proper upkeep of ERP software can result
-                        in unexpected breakdowns, system outages, and data loss,
-                        disrupting your business operations and leading to
-                        financial damage. Prioritize regular monitoring of your
-                        ERP to make sure it operates like clockwork.
-                      </div>
-                      <div className="bottom">
-                        Our ERP maintenance services include:
-                      </div>
-                      <div className="list">
-                        <ul>
-                          <li>Post-implementation support</li>
-                          <li> Regular backups and patches</li>
-                          <li> Installing updates</li>
-                          <li> Monitoring ERP application servers</li>
-                          <li>Tracking the state of the ERP backend servers</li>
-                        </ul>
+                        Can users and search engine robots easily navigate your
+                        website? Your navigation structure should be simple,
+                        consistent, and organized. This is important not only
+                        for SEO but also for usability and conversion
+                        optimization.
                       </div>
                     </div>
                   </div>
-                  
-                  <div className="col-lg-6 ">
+
+                  <div className="col-lg-6">
                     <div className="left">
                       <div className="icon">
                         <span className="fa">
                           <i class="fa-solid fa-mobile-screen-button"></i>
                         </span>
                       </div>
-                      <div className="text">
-                        Android and iOS mobile application support and
-                        maintenance
-                      </div>
+                      <div className="text">DUPLICATE COPY CHECK:</div>
                     </div>
-              
+
                     <div className="right">
                       <div className="top">
-                        As your tech partner, venturing digitally ensures your
-                        app will remain solid and secure under any conditions.
-                      </div>
-                      <div className="bottom">
-                        Our application support and maintenance offering
-                        encompasses:
-                      </div>
-                      <div className="list">
-                        <ul>
-                          <li>Bug fixes</li> <li>App updates</li>
-                          <li>OS and library updates</li>
-                          <li>App monitoring</li>
-                          <li>Code maintenance&nbsp;</li>
-                          <li>Application security management</li>
-                          <li>Performance enhancements</li>
-                        </ul>
+                        Duplicate copy can actually damage your ranking power.
+                        If you’re repeating the same content on multiple pages
+                        or other websites are stealing your content, it’s best
+                        to have it re-written as soon as possible.
                       </div>
                     </div>
                   </div>
-                  
                 </div>
               </div>
 
-            
+              <div className="section-box">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                        <i class="fa-solid fa-chart-column"></i>
+                        </span>
+                      </div>
+                      <div className="text">A/B AND MULTIVARIATE TESTING:</div>
+                    </div>
+
+                    <div className="right">
+                      <div className="top">
+                        If you want to get the most from your SEO campaign, it’s
+                        important to test a variety of scenarios to determine
+                        the path to the best possible conversion rates and the
+                        highest rankings. Targeted A/B testing and multivariate
+                        testing can deliver real-time results to help you
+                        determine the best course of action.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                        <i class="fa-solid fa-link"></i>
+                        </span>
+                      </div>
+                      <div className="text">BACKLINK REVIEW:</div>
+                    </div>
+
+                    <div className="right">
+                      <div className="top">
+                        Backlinks are important, but it’s a priority to keep
+                        tabs on the pages that link back to your website to
+                        ensure the links are still active and not engaging in
+                        questionable activities. Bad links can hurt your own SEO
+                        value. You should also review your competitor’s
+                        backlinks to find new possible link partners and improve
+                        your search engine rankings.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -418,7 +364,7 @@ function Seo() {
                 <div className="head-title">Frequently Ask Question</div>
               </div>
               <div className="head-slogan">
-              Frequently Asked Question For Support and Maintainance
+                Frequently Asked Question For Support and Maintainance
               </div>
             </div>
             <div className="section-content">
@@ -432,12 +378,20 @@ function Seo() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is included in software support and maintenance services?
+                    What is included in software support and maintenance
+                    services?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Support and maintenance services typically include regular updates, bug fixes, performance monitoring, and technical support. This may involve addressing any issues or errors that arise, ensuring compatibility with new systems or technologies, and implementing security patches. Maintenance also often includes periodic reviews to enhance software performance and add new features based on user feedback.
+                        Support and maintenance services typically include
+                        regular updates, bug fixes, performance monitoring, and
+                        technical support. This may involve addressing any
+                        issues or errors that arise, ensuring compatibility with
+                        new systems or technologies, and implementing security
+                        patches. Maintenance also often includes periodic
+                        reviews to enhance software performance and add new
+                        features based on user feedback.
                       </div>
                     </div>
                   ) : null}
@@ -459,7 +413,13 @@ function Seo() {
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Ongoing software maintenance is crucial for ensuring that the software remains functional, secure, and up-to-date. It helps address vulnerabilities, adapt to changing technology environments, and fix bugs that may arise over time. Regular maintenance ensures optimal performance, extends the lifespan of the software, and provides users with a reliable and effective tool.
+                        Ongoing software maintenance is crucial for ensuring
+                        that the software remains functional, secure, and
+                        up-to-date. It helps address vulnerabilities, adapt to
+                        changing technology environments, and fix bugs that may
+                        arise over time. Regular maintenance ensures optimal
+                        performance, extends the lifespan of the software, and
+                        provides users with a reliable and effective tool.
                       </div>
                     </div>
                   ) : null}
@@ -481,7 +441,14 @@ function Seo() {
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Signs that your software needs maintenance or support include frequent crashes or errors, slow performance, compatibility issues with new systems or updates, and user complaints about functionality or usability. Additionally, if your software has not been updated in a while or if there are new security threats, it's a good idea to schedule a maintenance review to ensure continued reliability and security.
+                        Signs that your software needs maintenance or support
+                        include frequent crashes or errors, slow performance,
+                        compatibility issues with new systems or updates, and
+                        user complaints about functionality or usability.
+                        Additionally, if your software has not been updated in a
+                        while or if there are new security threats, it's a good
+                        idea to schedule a maintenance review to ensure
+                        continued reliability and security.
                       </div>
                     </div>
                   ) : null}
@@ -498,12 +465,21 @@ function Seo() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    What should I consider when choosing a support and maintenance provider?
+                    What should I consider when choosing a support and
+                    maintenance provider?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When choosing a support and maintenance provider, consider their experience with your specific type of software, their response times for support requests, and their ability to provide regular updates and proactive maintenance. Look for providers with a strong track record of reliability, transparent pricing, and good communication practices. It’s also beneficial if the provider offers flexible service levels to match your needs and budget.
+                        When choosing a support and maintenance provider,
+                        consider their experience with your specific type of
+                        software, their response times for support requests, and
+                        their ability to provide regular updates and proactive
+                        maintenance. Look for providers with a strong track
+                        record of reliability, transparent pricing, and good
+                        communication practices. It’s also beneficial if the
+                        provider offers flexible service levels to match your
+                        needs and budget.
                       </div>
                     </div>
                   ) : null}
