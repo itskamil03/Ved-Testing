@@ -93,23 +93,112 @@ function Crm() {
   const [formData, setFormData] = useState({
     first_name: "",
     last_name: "",
-    phone: "",
-    alternate_phone: "",
+    mobile: "",
+    title:"",
+    desc: "",
     email: "",
-    business: "",
+    business_name: "",
     date: "",
     country: "",
-    user: "",
+    user_access: "",
     address: "",
+    agreement: false,
   });
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
+      [name]: type === "checkbox" ? checked : value,
     }));
   };
+
+  const handleSubmit= async (e)=>
+    {
+
+       e.preventDefault();
+  
+      if (!validateEmail(formData.email)) {
+        toast.error("Please enter a valid email address", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+        return;
+      }
+  
+      if (!validatePhone(formData.mobile)) {
+        toast.error("Please enter a valid phone number", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+        return;
+      }
+
+      if (!formData.agreement) {
+        toast.error("Please accept the agreement before submitting.", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+        return;
+      }
+  
+      try {
+  
+  
+        const response = await fetch(
+          "https://ved.venturingdigitally.com/api/createSolution",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          }
+        );
+  
+        if (response.status == 200) {
+  
+          setFormData({ first_name: "",
+            last_name: "",
+            mobile: "",
+            title:"",
+            desc: "",
+            email: "",
+            business_name: "",
+            date: "",
+            country: "",
+            user_access: "",
+            address: "",
+          })
+  
+  
+          toast.success("Form Submitted Successfully", {
+            position: "top-right",
+            autoClose: 2000,
+          });
+      
+        } else {
+          toast.error("Submission failed. Please try again.", {
+            position: "top-right",
+            autoClose: 2000,
+          });
+        }
+        
+      } catch (error) {
+        console.error("An error occurred while submitting the form:", error);
+      }
+    
+}
+  
+    const validateEmail = (email) => {
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      return emailRegex.test(email);
+    };
+  
+    const validatePhone = (phone) => {
+      const phoneRegex = /^[6-9]\d{9}$/;
+      return phoneRegex.test(phone);
+    };
 
   return (
     <>
@@ -541,10 +630,10 @@ function Crm() {
                             <div className="email-placholder">
                               <input
                                 type="tel"
-                                name="phone"
+                                name="mobile"
                                 className="form-control fs-3 second-input"
                                 placeholder="Mobile No*"
-                                value={formData.phone}
+                                value={formData.mobile}
                                 onChange={handleInputChange}
                                 required
                               />

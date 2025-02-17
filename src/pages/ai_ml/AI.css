@@ -1,0 +1,298 @@
+#ai-first {
+    padding: 50px 0 50px 0;
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+  }
+  #ai-first .section-top .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "Exo", sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #ai-first .section-top .head-slogan {
+    line-height: 1.56em;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 auto;
+    font-family: "Exo", sans-serif;
+    color: rgb(70, 63, 63);
+  }
+  #ai-second {
+    padding: 0px 0 30px 0;
+    background-color: #ececec;
+    padding: 50px 0px;
+  }
+  #ai-second .ai-heading {
+    font-size: 2.2rem;
+    color: #000000;
+ }
+
+ #ai-second .ai-title {
+   font-size: 1.4rem;
+   color: #000000;
+}
+
+#ai-second .development{
+  
+    background-color: #ffffff;
+    height: 320px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+#ai-second .solution-item {
+  height: 160px;
+}
+
+#ai-second .solution-item img {
+  border-radius: 20px 20px 0px 0px;
+  border-bottom: 1.2px solid #c4c3c3;
+}
+
+  #ai-second .head-title {
+    
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "Exo", sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #ai-second .ai-head{
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     grid-row-gap: 8px;
+  }
+ 
+ 
+  
+ #ai-third {
+    padding: 50px 0 30px 0;
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+  }
+ #ai-third .section-top {
+    margin-bottom: 50px;
+  }
+ #ai-third .section-top .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "Exo", sans-serif;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+ #ai-third .section-top .head-slogan {
+    line-height: 1.56em;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 auto;
+    font-family: "Exo", sans-serif;
+    color: rgb(70, 63, 63);
+  }
+
+  #ai-third .icon {
+    background-color: #011e52;
+    width: fit-content;
+    padding: 40px;
+    border-radius: 100%;
+    height: fit-content;
+    aspect-ratio: 1;
+
+  }
+  #ai-third .fa {
+    color: #ffffff;
+    font-size: 30px;
+  }
+
+  #ai-third .development_heading{
+    font-size: 2.3rem;
+    color: #000000;
+    text-align: center;
+  }
+  #ai-third .development_title{
+    font-size: 1.6rem;
+  }
+
+  #ai-third .development_head {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100%; 
+    box-shadow: 0 8px 24px #e4dfdf;
+    padding: 20px;
+    border-radius: 10px;
+    grid-row-gap: 10px;
+  }
+
+  #ai-third .icon-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  #ai-four {
+    padding: 50px 0;
+    background-color: #011e52;
+  }
+  #ai-four .section-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  #ai-four .section-top .head-slogan {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  #ai-four .section-top .head-slogan p {
+    font-family: "Exo", sans-serif;
+    width: 80%;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+  }
+  #ai-four .section-top .head-btn {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+  }
+  #ai-four .section-top .head-btn a {
+    font-family: "Exo", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.857em;
+    fill: #011e52;
+    color: #011e52;
+    background-color: #ffffff;
+    border-radius: 0px 0px 0px 0px;
+    padding: 1rem 3rem 1rem 3rem;
+    transform: skewX(-12deg);
+    transition: all 0.3s;
+  }
+  #ai-four .section-top .head-btn a:hover {
+    color: #fff;
+    background-color: #b5b5b5;
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    #ai-first {
+      padding: 30px 0 30px 0;
+    }
+    #ai-first .section-top .head-title {
+      font-size: 22px;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    #ai-first .section-top .head-slogan {
+      text-align: justify;
+    }
+    #ai-second .section {
+      flex-direction: column-reverse;
+    }
+    #ai-second .section .left {
+      width: 100%;
+    }
+    #ai-second .section .right {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+   #ai-third {
+      padding: 00px 0 30px 0;
+    }
+   #ai-third .section-top {
+      margin-bottom: 30px;
+    }
+   #ai-third .section-top .head-title {
+      font-size: 24px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+   #ai-third .section-top .head-slogan {
+      font-size: 18px;
+      text-align: justify;
+    }
+   #ai-third .section-content .top-grid {
+      flex-direction: column;
+      gap: 10px;
+    }
+   #ai-third .section-content .top-grid .left {
+      width: 50%;
+    }
+   #ai-third .section-content .top-grid .left .image {
+      width: 250px;
+    }
+   #ai-third .section-content .top-grid .right {
+      width: 100%;
+    }
+   #ai-third .section-content .top-grid .right .text {
+      font-size: 18px;
+      padding: 10px 0 15px 0;
+    }
+  
+   #ai-third .section-content .center-grid {
+      flex-direction: column-reverse;
+    }
+   #ai-third .section-content .center-grid .left {
+      width: 100%;
+    }
+   #ai-third .section-content .center-grid .left .text {
+      font-size: 18px;
+      text-align: justify;
+    }
+   #ai-third .section-content .center-grid .right {
+      margin-right: 0px;
+    }
+   #ai-third .section-content .bottom-grid {
+      flex-direction: column;
+      padding-top: 20px;
+    }
+   #ai-third .section-content .bottom-grid .right {
+      width: 100%;
+    }
+   #ai-third .section-content .bottom-grid .right .text {
+      font-size: 18px;
+      text-align: justify;
+    }
+    #ai-four {
+      padding: 30px 0;
+      background-color: #1b438e;
+    }
+    #ai-four .section-top {
+      flex-direction: column;
+    }
+    #ai-four .section-top .head-slogan {
+      width: 100%;
+      justify-content: center;
+    }
+    #ai-four .section-top .head-slogan p {
+      width: 100%;
+      font-size: 22px;
+      text-align: center;
+    }
+    #ai-four .section-top .head-btn {
+      width: 100%;
+      justify-content: center;
+      padding-left: 0px;
+    }
+   
+  }
+  

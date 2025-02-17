@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero_section/Hero";
+import './QaTesting.css';
 import { Link } from "react-router-dom";
 import ContactForm from "../../components/contact_form/ContactForm";
 import { useState } from "react";
@@ -19,238 +20,278 @@ function QaTesting() {
         heading="QA testing & Security"
         src="image/testing/testing.webp"
       />
-      <section id="support-first">
+      <section id="qa-first">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
               <div className="head-title">
-               Software Support & Maintenance for Digital Growth
+              Comprehensive QA Testing & Security Solutions for Robust Software
               </div>
               <div className="head-slogan page_title">
-                The post-implementation stage holds as much importance as the
-                development and deployment of your software solution. Availing
-                of robust software maintenance services during this stage can
-                significantly enhance your chances of achieving desired business
-                objectives.
+              Ensuring the efficiency, security, and scalability of your 
+              software is crucial. Investing in reliable support and maintenance 
+              services helps optimize performance, mitigate risks, and ensure long-term business success.
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="support-second">
+      <section id="qa-second">
         <div className="container-fluid">
           <div className="container">
-            <div className="section">
-              <div className="left">
-                <div class="text-box">
-                  <ul>
-                    <li>Accelerate software updates deployment</li>
-                    <li>
-                      Spot the issues before the system performance plummets
-                    </li>
-                    <li>Fix urgent problems in no time</li>
-                    <li>Prevent major malfunctions </li>
-                    <li>Increase user satisfaction rate</li>
-                    <li>
-                      Optimize the software maintenance costs and the total cost
-                      of ownership
-                    </li>
-                  </ul>
+          <div className="section-container">
+              <div className="section-box">
+             
+              <div className="head-title">
+              Our Software Testing & QA Services
+              </div>
+             
+                  <div className="cloud-automation">
+
+                    <div className="cloud-services">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-address-book"></i>
+                        </span>
+                      </div>
+                      <div className="text">
+                      Usability Testing
+                      </div>
+                    </div>
+                    <div>
+                    Ensures a seamless and user-friendly experience
+                    </div>
+                    </div>
+
+
+                    <div className="cloud-services">
+
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-adjust"></i>
+                        </span>
+                      </div>
+                      <div className="text">
+                       Security Testing
+                      </div>
+                    </div>
+                       <div>
+                       Identifies vulnerabilities and strengthens security
+                       </div>
+                    </div>
+               
+                    <div className="cloud-services">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-archive"></i>
+                        </span>
+                      </div>
+                      
+                      <div className="text">
+                      Load Testing
+                      </div>
+                      </div>
+                      <div>
+                      Assesses performance under peak loads
+                      </div>
+                    </div>
+               
+                    <div className="cloud-services">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-database"></i>
+                        </span>
+                      </div>
+                      <div className="text">
+                      Integration Testing
+                      </div>
+                    </div>
+                    <div>Verifies smooth interactions between different modules.</div>
+                    </div>
+              
+                    <div className="cloud-services">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-tree"></i>
+                        </span>
+                      </div>
+                      <div className="text">
+                      Functional Testing
+                      </div>
+                      </div>
+                      <div>
+                      Ensures all features work as intended
+                      </div>
+
+                    </div>
+
+                    <div className="cloud-services">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-drivers-license"></i>
+                        </span>
+                      </div>
+                      <div className="text">
+                      Compatibility Testing
+                      </div>
+                    </div>
+                    <div>Confirms functionality across different devices, browsers, and operating systems.</div>
+                    </div>
+
+                    <div className="cloud-services">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-image"></i>
+                        </span>
+                      </div>
+                      <div className="text">
+                      Acceptance Testing
+                      </div>
+                    </div>
+                    <div>Validates the system against business requirements.</div>
+                    </div>
+
+                    <div className="cloud-services">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-inbox"></i>
+                        </span>
+                      </div>
+                      <div className="text">
+                      Performance Testing
+                      </div>
+                    </div>
+                    <div>Tests system speed, scalability, and stability.</div>
+                    </div>
+
+                    <div className="cloud-services">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-print"></i>
+                        </span>
+                      </div>
+                      <div className="text">
+                      Regression Testing
+                      </div>
+                    </div>
+                    <div>Ensures new updates do not break existing functionality.</div>
+                    </div>
+
+                    <div className="cloud-services">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-puzzle-piece"></i>
+                        </span>
+                      </div>
+                      <div className="text">
+                      Smoke Testing
+                      </div>
+                    </div>
+                    <div>Checks the basic stability of the application..</div>
+                    </div>
+
+                    <div className="cloud-services">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-rocket"></i>
+                        </span>
+                      </div>
+                      <div className="text">
+                      Unit Testing 
+                      </div>
+                    </div>
+                    <div>Evaluates individual components for correctness.</div>
+                    </div>
+
+                    <div className="cloud-services">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-rss"></i>
+                        </span>
+                      </div>
+                      <div className="text">
+                      API Testing
+                      </div>
+                    </div>
+                    <div>Ensures seamless API functionality, security, and performance.</div>
+                    </div>
+
+                    <div className="cloud-services">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-ship"></i>
+                        </span>
+                      </div>
+                      <div className="text">
+                      Penetration Testing
+                      </div>
+                    </div>
+                    <div>Simulates real-world cyberattacks to identify security risks.</div>
+                    </div>
+
+                    <div className="cloud-services">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-suitcase"></i>
+                        </span>
+                      </div>
+                      <div className="text">
+                      Exploratory Testing
+                      </div>
+                    </div>
+                    <div>Detects unexpected issues through unscripted testing.</div>
+                    </div>
+
+                    <div className="cloud-services">
+                    <div className="left">
+                      <div className="icon">
+                        <span className="fa">
+                          <i class="fa fa-tachometer"></i>
+                        </span>
+                      </div>
+                      <div className="text">
+                      Accessibility Testing
+                      </div>
+                    </div>
+                    <div>Ensures software usability for people with disabilities.</div>
+                    </div>
+                
                 </div>
-              </div>
-              <div className="right">
-                <LazyLoadImage
-                  src="image/support-maintenance/sup1.jpg"
-                  alt=""
-                  className="w-100 h-100"
-                  loading="lazy"
-                />
-              </div>
+                
+              </div>            
             </div>
           </div>
         </div>
       </section>
 
-      <section id="support-third">
+      <section id="qa-third">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
               <div className="head-title">
-              At Venturing Digitally, we ensure your product stays bug-free
-              and up-to-date with a multi-level approach.
+              Security Testing Types and Techniques
               </div>
               <div className="head-slogan page_title">
-                To deliver efficient IT maintenance services that won’t cost you
-                a fortune, we provide professionals of different seniority
-                levels.
-              </div>
-            </div>
-
-            <div className="section-content">
-              <div className="top-grid">
-                <div className="left">
-                  <div className="image">
-                    <LazyLoadImage
-                      src="image/support-maintenance/level1.png"
-                      alt="..."
-                      className="w-100 h-100"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <div className="right">
-                  <div className="text">
-                    At the entry-level, junior developers{" "}
-                    <b>solve 70% of commonplace problems.</b>{" "}
-                  </div>
-                </div>
-              </div>
-              <div className="center-grid">
-                <div className="left">
-                  <div className="text">
-                    At this stage, middle-level specialists who have access to
-                    all monitoring systems &nbsp;
-                    <b>deal with 20% of more serious issues.</b>
-                  </div>
-                </div>
-                <div className="right">
-                  <div className="image">
-                    <LazyLoadImage
-                      src="image/support-maintenance/level2.png"
-                      alt=""
-                      className="w-100 h-100"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-grid">
-                <div className="left">
-                  <div className="image">
-                    <LazyLoadImage
-                      src="image/support-maintenance/level3.png"
-                      alt="..."
-                      className="w-100 h-100"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <div className="right">
-                  <div className="text">
-                    At the final stage, senior developers and reliability
-                    engineers operate at the code level to fix the problem and{" "}
-                    <b>cover 10% of the most complicated challenges.</b>{" "}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="support-four">
-        <div className="section-top">
-          <div className="head-slogan page_title">
-            <p>
-              Wondering which type of collaboration suits your business needs
-              better?
-            </p>
-          </div>
-          <div className="head-btn">
-            <Link to="">LET'S CHAT</Link>
-          </div>
-        </div>
-      </section>
-
-      <section id="support-five">
-        <div className="section-top">
-          <div className="container">
-          <div className="head-title">
-            Ongoing Or On-Demand IT Maintenance Services: We Can Do Both
-          </div>
-          <div className="head-slogan page_title">
-            At Venturing Digitally, we understand that support and maintenance
-            services cannot be approached with a one-size-fits-all playbook.
-            That’s why we provide our clients with different options to choose
-            from.
-          </div>
-          </div>
-        </div>
-
-        <div className="section-box">
-          <div className="top">
-            <div className="left">
-              <div className="image">
-                <LazyLoadImage
-                  src="image/support-maintenance/img1.webp"
-                  alt="..."
-                  className="w-100 h-100"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <div className="right">
-              <div className="text">
-                <div className="top">
-                  Keep The Lights On (KTLO) approach to application support &
-                  maintenance
-                </div>
-                <div className="bottom">
-                  Take advantage of this model to keep your business critical
-                  systems and infrastructure working and stable. KTLO tasks
-                  incorporate scheduled system maintenance, ad-hoc requests,
-                  standard updates, and other garden-variety undertakings. KTLO
-                  is an effective way to maintain the software in optimal
-                  condition without draining your IT budget.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bottom">
-            <div className="left">
-              <div className="text">
-                <div className="top">
-                  On-demand application support services
-                </div>
-                <div className="bottom">
-                  If your software requires continuous support, our team is
-                  always ready to adjust to your maintenance needs, even during
-                  your busiest hours. Whether you’re an education provider
-                  looking for 8–12 hours of support daily, or an ecommerce giant
-                  in need of extended hours during seasonal sales, we’ve got you
-                  covered. Our dedication to providing top-notch support
-                  services ensures your systems run smoothly at all times.
-                </div>
-              </div>
-            </div>
-            <div className="right">
-              <div className="image">
-                <LazyLoadImage
-                  src="image/support-maintenance/img2.webp"
-                  alt="..."
-                  className="w-100 h-100"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="support-six">
-        <div className="container-fluid">
-          <div className="container">
-            <div className="section-top">
-              <div className="head-title">
-                We provide application support and maintenance services for a
-                wide range of solutions
-              </div>
-              <div className="head-slogan page_title">
-                With Venturing Digitally 4+ years of experience in crafting
-                sleek software and taking care of its upkeep, you can rest
-                assured that your IT infrastructure is in capable hands.
+              Security testing is a crucial part of the software development lifecycle (SDLC)
+               to ensure that applications, systems, and networks are safeguarded against
+                potential vulnerabilities, cyber threats, and unauthorized access. 
+                By identifying and mitigating security flaws early, businesses can prevent 
+                data breaches, financial loss, and reputational damage.
               </div>
             </div>
 
@@ -261,33 +302,25 @@ function QaTesting() {
                     <div className="left">
                       <div className="icon">
                         <span className="fa">
-                          <i class="fa-regular fa-credit-card"></i>
+                          <i class="fa fa-address-book"></i>
                         </span>
                       </div>
                       <div className="text">
-                        Website maintenance and support
+                       Vulnerability Assessment
                       </div>
                     </div>
 
                     <div className="right">
-                      <div className="top">
-                        Venturing Digitally enhances your website’s performance
-                        and helps your business deliver a fast, secure, and
-                        seamless online experience.
-                      </div>
-                      <div className="bottom">
-                        Our website support and maintenance services cover:
-                      </div>
                       <div className="list">
                         <ul>
-                          <li>Updating website software</li>
+                          <li>Identifies security weaknesses using automated tools</li>
                           <li>
-                            Improving website speed Security scans and patches
+                          Helps prioritize remediation efforts
                           </li>
-                          <li> Monitoring your website analytics</li>
-                          <li> Fixing broken links</li>
-                          <li> Correcting HTML errors</li>
-                          <li> Backing up files</li>
+                          <li>Detects outdated software and misconfigurations</li>
+                          <li> Reduces exposure to known vulnerabilities</li>
+                          <li> Common in compliance audits</li>
+                          <li> ools: Nessus, Qualys, OpenVAS</li>
                         </ul>
                       </div>
                     </div>
@@ -298,28 +331,22 @@ function QaTesting() {
                   <div className="left">
                     <div className="icon">
                       <span className="fa">
-                        <i class="fa-solid fa-gear"></i>
+                        <i class="fa fa-briefcase"></i>
                       </span>
                     </div>
-                    <div className="text">CRM maintenance and support</div>
+                    <div className="text">Penetration Testing</div>
                   </div>
 
                   <div className="right">
-                    <div className="top">
-                      Your customer relationship management system should stay
-                      flawless and up-to-date to bolster your business
-                      development teams’ efforts.
-                    </div>
-                    <div className="bottom">
-                      Our CRM IT maintenance services incorporate:
-                    </div>
+                  
                     <div className="list">
                       <ul>
-                        <li>System analysis and diagnosis</li>
-                        <li>Features updates</li>
-                        <li>Security and performance audits</li>
-                        <li>Workaround provisioning</li>
-                        <li>Updates and new releases</li>
+                        <li>Simulates real-world cyberattacks</li>
+                        <li>Identifies exploitable security gaps</li>
+                        <li>Tests network, application, and system security</li>
+                        <li>Helps strengthen defensive measures</li>
+                        <li>Types: Black Box, White Box, Gray Box</li>
+                        <li>Tools: Metasploit, Burp Suite, Kali Linux</li>
                       </ul>
                     </div>
                   </div>
@@ -337,30 +364,22 @@ function QaTesting() {
                     <div className="left">
                       <div className="icon">
                         <span className="fa">
-                          <i class="fa-solid fa-chart-line"></i>
+                          <i class="fa fa-dashboard"></i>
                         </span>
                       </div>
-                      <div className="text">ERP maintenance and support</div>
+                      <div className="text">Security Code Review (SAST & DAST)</div>
                     </div>
                
                     <div className="right">
-                      <div className="top">
-                        Neglecting the proper upkeep of ERP software can result
-                        in unexpected breakdowns, system outages, and data loss,
-                        disrupting your business operations and leading to
-                        financial damage. Prioritize regular monitoring of your
-                        ERP to make sure it operates like clockwork.
-                      </div>
-                      <div className="bottom">
-                        Our ERP maintenance services include:
-                      </div>
+                    
                       <div className="list">
                         <ul>
-                          <li>Post-implementation support</li>
-                          <li> Regular backups and patches</li>
-                          <li> Installing updates</li>
-                          <li> Monitoring ERP application servers</li>
-                          <li>Tracking the state of the ERP backend servers</li>
+                          <li>Analyzes source code for vulnerabilities</li>
+                          <li>Detects SQL injections, XSS, and buffer overflows</li>
+                          <li>Identifies runtime security flaws in applications</li>
+                          <li>Helps developers fix security issues early</li>
+                          <li>Combines static and dynamic analysis</li>
+                          <li>Tools: SonarQube, Checkmarx, OWASP ZAP</li>
                         </ul>
                       </div>
                     </div>
@@ -370,32 +389,25 @@ function QaTesting() {
                     <div className="left">
                       <div className="icon">
                         <span className="fa">
-                          <i class="fa-solid fa-mobile-screen-button"></i>
+                          <i class="fa fa-id-card"></i>
                         </span>
                       </div>
                       <div className="text">
-                        Android and iOS mobile application support and
-                        maintenance
+                       Security Auditing & Compliance Testing
                       </div>
                     </div>
               
                     <div className="right">
-                      <div className="top">
-                        As your tech partner, venturing digitally ensures your
-                        app will remain solid and secure under any conditions.
-                      </div>
-                      <div className="bottom">
-                        Our application support and maintenance offering
-                        encompasses:
-                      </div>
+                  
                       <div className="list">
                         <ul>
-                          <li>Bug fixes</li> <li>App updates</li>
-                          <li>OS and library updates</li>
-                          <li>App monitoring</li>
-                          <li>Code maintenance&nbsp;</li>
-                          <li>Application security management</li>
-                          <li>Performance enhancements</li>
+                          <li>Evaluates security policies and controls</li>
+                           <li>Ensures adherence to industry standards</li>
+                          <li>Identifies compliance gaps</li>
+                          <li>Reduces risk of regulatory penalties</li>
+                          <li>Improves overall cybersecurity posture</li>
+                          <li>Frameworks: ISO 27001, GDPR, HIPAA, PCI-DSS</li>
+                
                         </ul>
                       </div>
                     </div>
