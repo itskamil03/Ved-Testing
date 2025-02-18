@@ -28,7 +28,7 @@ function Seo() {
               <div className="head-slogan">
                 SEO boosts your website’s visibility on search engines, driving
                 organic traffic and improving rankings. It involves optimizing
-                content, keywords, and site structure for better performance.
+                content, keywords, and site structure for better performanc,connect with our best Search engine optimization team for ranking your website 
               </div>
             </div>
           </div>
@@ -43,7 +43,7 @@ function Seo() {
                 <div class="text-box">
                   SEO is essential for website design, ensuring your site ranks
                   higher on search engines and attracts organic traffic. At
-                  Digital Webix, we integrate SEO best practices into every
+                  Venturing digitally, we integrate SEO best practices into every
                   aspect of your website design. From optimizing on-page
                   elements like meta tags, headers, and content to ensuring fast
                   load times and mobile responsiveness, we enhance your site's
@@ -153,8 +153,8 @@ function Seo() {
           <div className="container">
             <div className="head-title">We Are The Best in SEO</div>
             <div className="head-slogan page_title">
-              With over 300 outstanding SEO client case studies and a large team
-              of SEO specialists from all over the world, Coalition Technologies
+              With over 400 outstanding SEO client case studies and a large team
+              of SEO specialists from all over the world,Venturing Digitally
               is one of the most recommended SEO services companies in the US.
               Instead of guessing, we base our SEO strategies on over a decade
               of research and scientifically proven data so you get real results

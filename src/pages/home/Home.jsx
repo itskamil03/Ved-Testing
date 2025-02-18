@@ -346,7 +346,7 @@ function Home({ target, label }) {
                                    loading="lazy"
                               />
                             </div>
-                            <h3 className="what-do-name">OIL & GAS</h3>
+                            <h3 className="what-do-name">OIL & GAS Industry</h3>
                           </div>
                         </Link>
                       </div>
@@ -1374,7 +1374,7 @@ function Home({ target, label }) {
                   <div className="milestone-info">
                     <div className="head">Why Choose Us?</div>
                     <div className="content page_title">
-                    With over 2 years of experience in the software industry, we empower
+                    With over 3+ years of experience in the software industry, we empower
                      businesses to thrive in the digital world with tailor-made, high-quality
                       solutions. Our expert team harnesses cutting-edge technology and 
                       industry best practices to deliver innovative, scalable, and efficient

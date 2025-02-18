@@ -29,7 +29,7 @@ function QaTesting() {
               </div>
               <div className="head-slogan page_title">
               Ensuring the efficiency, security, and scalability of your 
-              software is crucial. Investing in reliable support and maintenance 
+              software is crucial with Venturing digitally. Investing in reliable support and maintenance 
               services helps optimize performance, mitigate risks, and ensure long-term business success.
               </div>
             </div>
@@ -291,7 +291,7 @@ function QaTesting() {
                to ensure that applications, systems, and networks are safeguarded against
                 potential vulnerabilities, cyber threats, and unauthorized access. 
                 By identifying and mitigating security flaws early, businesses can prevent 
-                data breaches, financial loss, and reputational damage.
+                data breaches, financial loss, and reputational damage,so connect with Venturing digitally team for your crucial software and product 
               </div>
             </div>
 

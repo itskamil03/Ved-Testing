@@ -26,8 +26,8 @@ function DigitalMarketing() {
             <div className="section-top">
               <div className="head-title">Digital Marketing Service</div>
               <div className="head-slogan page_title">
-                Colan Infotech provides end-to-end digital marketing services
-                for SEO, PPC, Social Media Marketing, Email Marketing & more.
+                Venturing Digitally (P) Ltd. provides end-to-end digital marketing services
+                for SEO, PPC, Social Media Marketing, Email Marketing & more to ouir clients to help to rank therir website on top.
                 See your ROI increase with huge conversion rates in real time.
               </div>
             </div>
@@ -41,7 +41,7 @@ function DigitalMarketing() {
             <div className="section">
               <div className="left">
                 <div class="text-box">
-                  At our digital marketing agency, we utilize an audience-led
+                  At our digital marketing agency, we utilize an audience-lead
                   and customer-focused approach to help you convert visitors
                   into leads. Our team takes a comprehensive approach to
                   understanding your unique business challenges, and we then
@@ -72,7 +72,7 @@ function DigitalMarketing() {
             <div className="section-top">
               <div className="head-title">Our Digital Marketing Approach</div>
               <div className="head-slogan page_title">
-                At Techstalwarts, we follow a data-driven and results-oriented
+                At Venturing Digitally, we follow a data-driven and results-oriented
                 approach to digital marketing, tailored to your brand's unique
                 needs and objectives
               </div>
@@ -207,7 +207,7 @@ function DigitalMarketing() {
                   <ul>
                     <li>
                       {" "}
-                      As your digital partner, we work with you to develop
+                      Venturing Digitally as your digital partner, we work with you to develop
                       strategic plans that will increase the reach of your
                       business globally and generate leads.
                     </li>
@@ -315,8 +315,7 @@ function DigitalMarketing() {
             <div class="process-content">
               <h2>Strategy Formulation</h2>
               <h6>
-                voluptatem accusantium doloremque laudantium totam rem aperiam
-                eaque ipsa quae ab illo inventore veritatis et quasi architecto
+              Strengthen domain authority through guest blogging, collaborations, and acquiring high-quality backlinks.
               </h6>
             </div>
           </div>
@@ -345,7 +344,7 @@ function DigitalMarketing() {
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
-              <div className="head-title">Tools & Technology</div>
+              <div className="head-title">Tools & Technology We Use</div>
               <div className="head-slogan page_title">
                 Our toolkit includes a range of powerful digital marketing tools
                 and technologies that amplify the effectiveness of our campaigns
@@ -500,7 +499,7 @@ function DigitalMarketing() {
             </div>
             <div className="head-slogan page_title">
               In the dynamic world of digital business, a strong online presence
-              is essential for success. At Techstalwarts, our Digital Marketing
+              is essential for success. At Venturing Digitally, our Digital Marketing
               services provide you with a strategic edge, helping your brand
               flourish in the digital landscape. Our approach combines expert
               insights, innovative strategies, and cutting-edge tools to deliver
