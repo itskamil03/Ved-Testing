@@ -1,0 +1,273 @@
+#consulting-first {
+    padding: 50px 0 50px 0;
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+  }
+  #consulting-first .section-top .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "Exo", sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #consulting-first .section-top .head-slogan {
+    line-height: 1.56em;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 auto;
+    font-family: "Exo", sans-serif;
+    color: rgb(70, 63, 63);
+  }
+  #consulting-second {
+    padding: 0px 0 30px 0;
+    background-color: #ececec;
+
+  }
+  #consulting-second .section {
+    padding-block:50px 0px ;
+  }
+
+  #consulting-second .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "Exo", sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #consulting-second .consulting-head {
+     
+    display: flex;
+    justify-content: space-between;
+  }
+  #consulting-second .consulting-heading {
+     font-size: 2.1rem;
+     color: #000000;
+  }
+
+  #consulting-second .consulting-title {
+    font-size: 1.6rem;
+    color: #000000;
+ }
+ #consulting-second .consulting-item {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 8px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px -4px #00000026;
+    padding: 20px;
+    margin-top: 20px;
+ }
+
+ #consulting-second .icon {
+    color: #011e52;
+    font-size: 24px;
+ }
+  
+ #consulting-third {
+    padding: 50px 0 30px 0;
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+  }
+ #consulting-third .section-top {
+    margin-bottom: 50px;
+  }
+ #consulting-third .section-top .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "Exo", sans-serif;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+ #consulting-third .section-top .head-slogan {
+    line-height: 1.56em;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 auto;
+    font-family: "Exo", sans-serif;
+    color: rgb(70, 63, 63);
+  }
+ 
+  #consulting-third .solution-item {
+     display: flex;
+     grid-column-gap: 20px;
+     align-items: center;
+     box-shadow: 0 10px 20px -4px #030c1326;
+     border-radius: 30px;
+     justify-content: center;
+  }
+
+  #consulting-third .icon {
+     
+    font-size: 30px;
+    padding-top: 10px;
+    transform:rotateY(180deg);
+   
+  }
+
+  #consulting-third .item-title {
+    font-size: 1.6rem;
+    font-weight: 550px;
+  }
+  
+  #consulting-four {
+    padding: 50px 0;
+  }
+  
+  #consulting-four .section-head .head-title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Exo", sans-serif;
+  }
+  
+  #consulting-four .card {
+    border-left: 3px solid #27286d;
+    box-shadow: 0 8px 24px #b1aeae87;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  #consulting-four .timeline {
+    border-left: 3px solid #27286d;
+    padding-top: 1.6rem;
+    padding-bottom: 2.3rem;
+    display: grid;
+    grid-row-gap: 3.2rem;
+  }
+  
+  #consulting-four .timeline__year {
+    background: #27286d;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 5px 20px;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    display: inline-flex;
+    font-family: "Exo", sans-serif;
+  }
+  
+  #consulting-four .timeline__card {
+    position: relative;
+    margin-left: 1.3rem;
+  }
+  
+  #consulting-four .timeline__card .card__content {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  
+  #consulting-four .timeline__cards {
+    overflow: hidden;
+  }
+  
+  #consulting-four .timeline__card::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #27286d;
+    position: absolute;
+    top: 1.6rem;
+    left: -50%;
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 768px) {
+    #consulting-first {
+      padding: 30px 0 30px 0;
+    }
+    #consulting-first .section-top .head-title {
+      font-size: 22px;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    #consulting-first .section-top .head-slogan {
+      text-align: justify;
+    }
+    #consulting-second .section {
+      flex-direction: column-reverse;
+    }
+    #consulting-second .section .left {
+      width: 100%;
+    }
+    #consulting-second .section .right {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+   #consulting-third {
+      padding: 00px 0 30px 0;
+    }
+   #consulting-third .section-top {
+      margin-bottom: 30px;
+    }
+   #consulting-third .section-top .head-title {
+      font-size: 24px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+   #consulting-third .section-top .head-slogan {
+      font-size: 18px;
+      text-align: justify;
+    }
+   #consulting-third .section-content .top-grid {
+      flex-direction: column;
+      gap: 10px;
+    }
+   #consulting-third .section-content .top-grid .left {
+      width: 50%;
+    }
+   #consulting-third .section-content .top-grid .left .image {
+      width: 250px;
+    }
+   #consulting-third .section-content .top-grid .right {
+      width: 100%;
+    }
+   #consulting-third .section-content .top-grid .right .text {
+      font-size: 18px;
+      padding: 10px 0 15px 0;
+    }
+  
+   #consulting-third .section-content .center-grid {
+      flex-direction: column-reverse;
+    }
+   #consulting-third .section-content .center-grid .left {
+      width: 100%;
+    }
+   #consulting-third .section-content .center-grid .left .text {
+      font-size: 18px;
+      text-align: justify;
+    }
+   #consulting-third .section-content .center-grid .right {
+      margin-right: 0px;
+    }
+   #consulting-third .section-content .bottom-grid {
+      flex-direction: column;
+      padding-top: 20px;
+    }
+   #consulting-third .section-content .bottom-grid .right {
+      width: 100%;
+    }
+   #consulting-third .section-content .bottom-grid .right .text {
+      font-size: 18px;
+      text-align: justify;
+    }
+    #app-steps {
+        padding: 20px 0;
+      }
+    
+      #app-steps .section-head .head-title {
+        font-size: 2.8rem;
+      }
+  }
+  

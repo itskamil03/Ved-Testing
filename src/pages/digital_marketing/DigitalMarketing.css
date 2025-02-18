@@ -1,0 +1,136 @@
+#support-second .section .image {
+  width: 50%;
+}
+
+@media (min-width: 1024px) {
+  #support-second .section .image img {
+    width: 36rem;
+    display: flex;
+    justify-self: center;
+  }
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0 auto;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 2.6rem;
+  max-width: 1200px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.image img {
+  width: 64px;
+  object-fit: cover;
+  border-radius: 10px;
+  padding-bottom: 2.6rem;
+}
+
+.card-content h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 156%;
+  color: #1d2939;
+  margin-bottom: 2rem;
+}
+
+.card-content p {
+  font-size: 1.6rem;
+  color: #333;
+}
+
+/* process card */
+.process-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.process-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: scale-down;
+  transition: transform 0.3s ease;
+}
+
+.process:hover .process-image img {
+  transform: scale(1.05);
+}
+
+.process-content {
+  padding: 20px;
+}
+
+.process-content h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 156%;
+  color: #1d2939;
+  margin-bottom: 2rem;
+}
+
+.process-content h6 {
+  font-size: 1.6rem;
+  color: #333;
+}
+
+/* tools & technologies */
+
+.tools-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+  gap: 2rem;
+}
+.tool-card {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: bold;
+}
+.tool-card img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  object-fit: contain;
+}

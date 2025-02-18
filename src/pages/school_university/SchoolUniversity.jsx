@@ -15,11 +15,9 @@ function SchoolUniversity() {
 
   const navigate = useNavigate();
 
-
-  const handleDemo=()=>
-  {
-     navigate("/ContactUs")
-  }
+  const handleDemo = () => {
+    navigate("/ContactUs");
+  };
 
   return (
     <>
@@ -55,23 +53,24 @@ function SchoolUniversity() {
                       School and university software encompasses a range of
                       digital solutions designed to streamline the management
                       and operations of educational institutions, including
-                      primary schools, llas, and universities. These
-                      software systems integrate various functions such as
-                      student information management, learning management
-                      systems (LMS), attendance tracking, grading, communication
-                      tools, financial management, and reporting and analytics.
-                      By automating administrative tasks, enhancing
-                      communication among students, teachers, parents, and
-                      administrators, and providing valuable data insights, this
-                      software improves operational efficiency and supports
-                      academic success. Ultimately, school and university
-                      software aims to create a more organized, effective, and
-                      engaging educational environment for all stakeholders
-                      involved.
+                      primary schools, llas, and universities. These software
+                      systems integrate various functions such as student
+                      information management, learning management systems (LMS),
+                      attendance tracking, grading, communication tools,
+                      financial management, and reporting and analytics. By
+                      automating administrative tasks, enhancing communication
+                      among students, teachers, parents, and administrators, and
+                      providing valuable data insights, this software improves
+                      operational efficiency and supports academic success.
+                      Ultimately, school and university software aims to create
+                      a more organized, effective, and engaging educational
+                      environment for all stakeholders involved.
                     </div>
                   </div>
                   <div className="mt-5">
-                    <button className="request-btn" onClick={handleDemo}>Request Demo</button>
+                    <button className="request-btn" onClick={handleDemo}>
+                      Request Demo
+                    </button>
                   </div>
                 </div>
 
@@ -132,7 +131,9 @@ function SchoolUniversity() {
                     </div>
                   </div>
                   <div className="mt-5">
-                    <button className="request-btn" onClick={handleDemo}>Request Demo</button>
+                    <button className="request-btn" onClick={handleDemo}>
+                      Request Demo
+                    </button>
                   </div>
                 </div>
               </div>
@@ -678,16 +679,15 @@ function SchoolUniversity() {
               <div className="ph-heading-title">
                 <h2>Looking for the best school management software?</h2>
                 <p>
-                  Our School & lla Management Software is designed to
-                  streamline the day-to-day operations of educational
-                  institutions, making management simpler, faster, and more
-                  efficient.
+                  Our School & lla Management Software is designed to streamline
+                  the day-to-day operations of educational institutions, making
+                  management simpler, faster, and more efficient.
                 </p>
                 <p>
-                  This all-in-one solution enables schools and llas to
-                  manage their activities, from student enrollment and
-                  attendance tracking to staff management and reporting, all
-                  through an intuitive, user-friendly interface.
+                  This all-in-one solution enables schools and llas to manage
+                  their activities, from student enrollment and attendance
+                  tracking to staff management and reporting, all through an
+                  intuitive, user-friendly interface.
                 </p>
               </div>
             </div>
@@ -1028,19 +1028,19 @@ function SchoolUniversity() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is school and college management software, and how can
+                    it benefit educational institutions?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                        School and college management software is a digital
+                        solution designed to automate administrative, academic,
+                        and communication processes in educational institutions.
+                        It streamlines student enrollment, fee collection,
+                        attendance tracking, exam management, and online
+                        learning, enhancing efficiency and improving the overall
+                        learning experience.
                       </div>
                     </div>
                   ) : null}
@@ -1057,19 +1057,18 @@ function SchoolUniversity() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    What key features should I look for in school and college
+                    management software?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                        When selecting an education management system, look for
+                        features such as online admissions, student and faculty
+                        management, attendance automation, timetable scheduling,
+                        fee payment integration, learning management system
+                        (LMS) support, exam and grade management, and a
+                        parent-teacher communication portal.
                       </div>
                     </div>
                   ) : null}
@@ -1086,17 +1085,18 @@ function SchoolUniversity() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    How can school and college management software improve
+                    student performance and engagement?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                        Education software enhances student engagement through
+                        personalized learning tools, interactive dashboards,
+                        AI-driven progress tracking, online assignments, and
+                        automated feedback. It also allows teachers to track
+                        student performance in real time and provide data-driven
+                        interventions for academic improvement.
                       </div>
                     </div>
                   ) : null}
@@ -1113,19 +1113,18 @@ function SchoolUniversity() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    Is school and college management software secure for
+                    handling student and institutional data?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
-                        processes.
+                        Yes! Reliable education software solutions come with
+                        advanced security features like role-based access
+                        control, data encryption, cloud backups, and compliance
+                        with data protection regulations such as FERPA and GDPR.
+                        These security measures ensure that sensitive student
+                        and institutional data remain safe from cyber threats.
                       </div>
                     </div>
                   ) : null}

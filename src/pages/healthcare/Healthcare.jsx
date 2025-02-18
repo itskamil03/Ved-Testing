@@ -458,19 +458,18 @@ function Healthcare() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is healthcare management software, and how can it
+                    benefit my medical practice or hospital?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                        Healthcare management software is a digital solution
+                        that automates patient records, appointment scheduling,
+                        billing, and compliance tracking. It improves
+                        operational efficiency, enhances patient care, reduces
+                        administrative workload, and ensures secure access to
+                        medical data for better decision-making.
                       </div>
                     </div>
                   ) : null}
@@ -487,19 +486,18 @@ function Healthcare() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    What key features should I look for in healthcare software?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                        When selecting healthcare software, consider features
+                        like Electronic Health Records (EHR), patient
+                        management, telemedicine integration, billing
+                        automation, HIPAA/GDPR compliance, AI-powered
+                        diagnostics, and interoperability with other healthcare
+                        systems. Cloud-based solutions offer scalability and
+                        remote access for better flexibility.
                       </div>
                     </div>
                   ) : null}
@@ -516,17 +514,18 @@ function Healthcare() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    How does healthcare software improve patient experience and
+                    engagement?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                        Modern healthcare software enhances patient experience
+                        through online appointment scheduling, telehealth
+                        services, automated reminders, patient portals for
+                        medical history access, and AI-driven health insights.
+                        These features ensure better communication, faster
+                        service, and improved healthcare outcomes.
                       </div>
                     </div>
                   ) : null}
@@ -543,19 +542,18 @@ function Healthcare() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    Is healthcare software secure for handling sensitive patient
+                    data?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
-                        processes.
+                        Yes! Reliable healthcare software includes robust
+                        security features such as data encryption, multi-factor
+                        authentication, role-based access control, and
+                        compliance with industry regulations like HIPAA, GDPR,
+                        and HL7. These measures ensure that patient data remains
+                        confidential and protected from cyber threats.
                       </div>
                     </div>
                   ) : null}

@@ -47,6 +47,12 @@ import SiteMap from "./pages/site_map/siteMap";
 import BlogDetails from "./pages/blog_details/BlogDetails";
 import SchoolCollege from "./pages/school_college/SchoolCollege";
 import SchoolUniversity from "./pages/school_university/SchoolUniversity";
+import CloudServices from "./pages/cloud_services/CloudServices";
+import Seo from "./pages/seo/Seo";
+import DigitalMarketing from "./pages/digital_marketing/DigitalMarketing";
+import AIML from "./pages/ai_ml/AI-ML";
+import MVPConsulting from "./pages/mvp_consulting/MVPConsulting";
+import QaTesting from "./pages/qa_testing/QaTesting";
 
 function App() {
   return (
@@ -78,6 +84,21 @@ function App() {
           <Route path="/EnterpriseSoftware" element={<EnterpriseSoftware />} />
           <Route path="/CustomSoftware" element={<CustomerSoftware />} />
           <Route path="/SupportMaintenance" element={<SupportMaintenance />} />
+
+           <Route path="/CloudServices" element={<CloudServices />} />
+
+          <Route
+            path="/Seo"
+            element={<Seo />}
+          />
+
+          <Route
+            path="/DigitalMarketing"
+            element={<DigitalMarketing />}
+          />
+          <Route path="/AI-ML" element={<AIML/>} />
+          <Route path="/MVPConsulting" element={<MVPConsulting />} />
+          <Route path="/QaTesting" element={<QaTesting />} /> 
 
           <Route path="/Crm" element={<Crm />} />
           <Route path="/Qms" element={<Qms />} />

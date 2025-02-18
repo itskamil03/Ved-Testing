@@ -7,10 +7,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import ContactForm from "../../components/contact_form/ContactForm";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-
-
 function Crm() {
-
   const [isAgreed, setIsAgreed] = useState(false);
 
   const handleChange = () => {
@@ -96,23 +93,112 @@ function Crm() {
   const [formData, setFormData] = useState({
     first_name: "",
     last_name: "",
-    phone: "",
-    alternate_phone: "",
+    mobile: "",
+    title:"",
+    desc: "",
     email: "",
-    business: "",
-    date:"",
-    country:"",
-    user:"",
-    address:""
+    business_name: "",
+    date: "",
+    country: "",
+    user_access: "",
+    address: "",
+    agreement: false,
   });
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
+      [name]: type === "checkbox" ? checked : value,
     }));
   };
+
+  const handleSubmit= async (e)=>
+    {
+
+       e.preventDefault();
+  
+      if (!validateEmail(formData.email)) {
+        toast.error("Please enter a valid email address", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+        return;
+      }
+  
+      if (!validatePhone(formData.mobile)) {
+        toast.error("Please enter a valid phone number", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+        return;
+      }
+
+      if (!formData.agreement) {
+        toast.error("Please accept the agreement before submitting.", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+        return;
+      }
+  
+      try {
+  
+  
+        const response = await fetch(
+          "https://ved.venturingdigitally.com/api/createSolution",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          }
+        );
+  
+        if (response.status == 200) {
+  
+          setFormData({ first_name: "",
+            last_name: "",
+            mobile: "",
+            title:"",
+            desc: "",
+            email: "",
+            business_name: "",
+            date: "",
+            country: "",
+            user_access: "",
+            address: "",
+          })
+  
+  
+          toast.success("Form Submitted Successfully", {
+            position: "top-right",
+            autoClose: 2000,
+          });
+      
+        } else {
+          toast.error("Submission failed. Please try again.", {
+            position: "top-right",
+            autoClose: 2000,
+          });
+        }
+        
+      } catch (error) {
+        console.error("An error occurred while submitting the form:", error);
+      }
+    
+}
+  
+    const validateEmail = (email) => {
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      return emailRegex.test(email);
+    };
+  
+    const validatePhone = (phone) => {
+      const phoneRegex = /^[6-9]\d{9}$/;
+      return phoneRegex.test(phone);
+    };
 
   return (
     <>
@@ -142,9 +228,9 @@ function Crm() {
                 className="head-slogan wow slideInRight page_title"
                 data-wow-duration="2s"
               >
-                Our best CRM software solution helps you effectively manage and leverage
-                customer data to drive business growth and enhance customer
-                experiences.
+                Our best CRM software solution helps you effectively manage and
+                leverage customer data to drive business growth and enhance
+                customer experiences.
               </div>
             </div>
             <div className="section-content">
@@ -212,7 +298,8 @@ function Crm() {
                   className="head-title wow slideInLeft"
                   data-wow-duration="2s"
                 >
-                  All-Round Assistance for Your CRM Goals with venturing digitally CRM software
+                  All-Round Assistance for Your CRM Goals with venturing
+                  digitally CRM software
                 </div>
               </div>
               <div
@@ -329,9 +416,13 @@ function Crm() {
           <div className="container">
             <div className="section-head">
               <div className="custom-head">
-                <div className="head-title">Why Venturing Digitally for CRM software</div>
+                <div className="head-title">
+                  Why Venturing Digitally for CRM software
+                </div>
               </div>
-              <div className="head-slogan page_title">Trustworthy Customized CRM Experts in Market</div>
+              <div className="head-slogan page_title">
+                Trustworthy Customized CRM Experts in Market
+              </div>
             </div>
             <div className="section-content">
               <div className="why-grid">
@@ -480,16 +571,13 @@ function Crm() {
           </div>
         </div>
       </section>
-   
 
       <section id="health">
         <div className="container-fluid">
           <div className="container">
-          
             <div className="section-content">
               <div className="row align-items-center">
-               
-              <div className="col-lg-6">
+                <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
                       <LazyLoadImage
@@ -510,147 +598,138 @@ function Crm() {
                       </div>
 
                       <form>
-                          <div className="form-input-new" style={{paddingBottom:"0px"}}>
-                            <div className="col-lg-6">
-                              <div className="left-placeholder">
-                                <input
-                                  type="text"
-                                  name="first_name"
-                                  className="form-control fs-3 first-input"
-                                  placeholder="First Name*"
-                                  value={formData.first_name}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                             
-                             
-
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="title"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Title/Position*"
-                                  value={formData.title}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="tel"
-                                  name="phone"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Mobile No*"
-                                  value={formData.phone}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="email"
-                                  name="email"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Email*"
-                                  value={formData.email}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="address"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Address*"
-                                  value={formData.address}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                           
-                             
+                        <div
+                          className="form-input-new"
+                          style={{ paddingBottom: "0px" }}
+                        >
+                          <div className="col-lg-6">
+                            <div className="left-placeholder">
+                              <input
+                                type="text"
+                                name="first_name"
+                                className="form-control fs-3 first-input"
+                                placeholder="First Name*"
+                                value={formData.first_name}
+                                onChange={handleInputChange}
+                                required
+                              />
                             </div>
-                            <div className="col-lg-6">
-                              <div className="left-placholder">
-                                <input
-                                  type="text"
-                                  name="last_name"
-                                  className="form-control fs-3 first-input"
-                                  placeholder="Last Name*"
-                                  value={formData.last_name}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="business"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Organisation/Business Name*"
-                                  value={formData.business}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-                             
-                             
-                              
-                              <div className="email-placholder">
-                                <input
-                                  type="text"
-                                  name="country"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Country*"
-                                  value={formData.country}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
 
-                           
-
-                              <div className="email-placholder">
-                                <input
-                                  type="number"
-                                  name="user"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="No. of user access*"
-                                  value={formData.user}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                              <div className="email-placholder">
-                                <input
-                                  type="date"
-                                  name="date"
-                                  className="form-control fs-3 second-input"
-                                  placeholder="Preffered Date & Time*"
-                                  value={formData.date}
-                                  onChange={handleInputChange}
-                                  required
-                                />
-                              </div>
-
-                           
-
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="title"
+                                className="form-control fs-3 second-input"
+                                placeholder="Title/Position*"
+                                value={formData.title}
+                                onChange={handleInputChange}
+                                required
+                              />
                             </div>
-                            
+
+                            <div className="email-placholder">
+                              <input
+                                type="tel"
+                                name="mobile"
+                                className="form-control fs-3 second-input"
+                                placeholder="Mobile No*"
+                                value={formData.mobile}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="email"
+                                name="email"
+                                className="form-control fs-3 second-input"
+                                placeholder="Email*"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="address"
+                                className="form-control fs-3 second-input"
+                                placeholder="Address*"
+                                value={formData.address}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
                           </div>
-                          <div className="form-input-new" style={{padding:"0px 4px 0px 15px"}}>
+                          <div className="col-lg-6">
+                            <div className="left-placholder">
+                              <input
+                                type="text"
+                                name="last_name"
+                                className="form-control fs-3 first-input"
+                                placeholder="Last Name*"
+                                value={formData.last_name}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="business"
+                                className="form-control fs-3 second-input"
+                                placeholder="Organisation/Business Name*"
+                                value={formData.business}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="text"
+                                name="country"
+                                className="form-control fs-3 second-input"
+                                placeholder="Country*"
+                                value={formData.country}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="number"
+                                name="user"
+                                className="form-control fs-3 second-input"
+                                placeholder="No. of user access*"
+                                value={formData.user}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+
+                            <div className="email-placholder">
+                              <input
+                                type="date"
+                                name="date"
+                                className="form-control fs-3 second-input"
+                                placeholder="Preffered Date & Time*"
+                                value={formData.date}
+                                onChange={handleInputChange}
+                                required
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="form-input-new"
+                          style={{ padding: "0px 4px 0px 15px" }}
+                        >
                           <div className="col-lg-12">
-                       
-                          <div className="email-placholder">
+                            <div className="email-placholder">
                               <textarea
-                              
                                 rows={3}
                                 name="about"
                                 className="form-control fs-3 second-input"
@@ -659,28 +738,36 @@ function Crm() {
                                 onChange={handleInputChange}
                                 required
                               ></textarea>
-                              </div>
+                            </div>
 
-                              <div >
-                                <label style={{display:'flex', gridColumnGap:"8px", alignItems:"start", fontSize:"12px"}}>
-                                  <input
-                                    type="radio"
-                                    name="agreement"
-                                    checked={isAgreed}
-                                    onChange={handleChange}
-                                  />
-                                 I agree to the use of personal information collected from myself in organization software demo purpose and other IT related support from your company.
-                                </label>
-                              
-                              </div>
-                              </div>
-                              </div>
-                          
+                            <div>
+                              <label
+                                style={{
+                                  display: "flex",
+                                  gridColumnGap: "8px",
+                                  alignItems: "start",
+                                  fontSize: "12px",
+                                }}
+                              >
+                                <input
+                                  type="radio"
+                                  name="agreement"
+                                  checked={isAgreed}
+                                  onChange={handleChange}
+                                />
+                                I agree to the use of personal information
+                                collected from myself in organization software
+                                demo purpose and other IT related support from
+                                your company.
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
                         <button type="submit" className="request-btn">
                           Request Free Demo
                         </button>
-
-                        </form>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -712,19 +799,18 @@ function Crm() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is a CRM solution, and how can it benefit my business?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                        A CRM (Customer Relationship Management) solution is a
+                        digital tool that helps businesses manage customer
+                        interactions, automate sales processes, and improve
+                        customer service. By using a CRM, your company can
+                        increase efficiency, track leads, analyze customer
+                        behavior, and enhance overall customer satisfaction,
+                        leading to higher conversions and revenue.
                       </div>
                     </div>
                   ) : null}
@@ -741,19 +827,18 @@ function Crm() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    How do I choose the best CRM software for my business?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                        Choosing the best CRM software depends on factors like
+                        your business size, industry needs, budget, and required
+                        features. Look for a CRM with automation capabilities,
+                        customization options, integration with existing tools,
+                        and strong data security. Cloud-based CRMs are ideal for
+                        scalability, while on-premise solutions offer more
+                        control over data.
                       </div>
                     </div>
                   ) : null}
@@ -770,17 +855,18 @@ function Crm() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    How much does it cost to implement a CRM system?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                        CRM costs vary based on features, user licenses, and
+                        customization needs. Small businesses can start with
+                        free or affordable cloud-based CRMs ($10–$50 per
+                        user/month), while enterprise-level CRMs with advanced
+                        analytics and automation can cost hundreds of dollars
+                        per user. Always compare pricing plans and scalability
+                        before investing.
                       </div>
                     </div>
                   ) : null}
@@ -797,19 +883,18 @@ function Crm() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    Can a CRM improve my company's sales and marketing efforts?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
-                        processes.
+                        Yes! A CRM enhances sales by automating lead tracking,
+                        follow-ups, and pipeline management. It also boosts
+                        marketing efforts by enabling personalized campaigns,
+                        customer segmentation, and performance analytics. With
+                        AI-driven insights, a CRM helps businesses make
+                        data-driven decisions and optimize customer engagement
+                        strategies.
                       </div>
                     </div>
                   ) : null}

@@ -62,20 +62,19 @@
   text-align: justify;
 }
 #milestones .milestone-box {
-  padding: 20px;
+  padding: 40px 20px;
   box-shadow: 0 8px 24px #e4dfdf;
-  border-radius: 20px;
-  text-align: center;
-  max-width: 230px;
-  margin: 0px auto 20px;
+  border-radius: 10px;
+  max-width: 250px;
+  margin: 0px auto 30px;
   background: white;
   transition: all 0.3s linear;
   cursor: pointer;
-  height: 113px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+
 }
 #milestones .milestone-count {
   font-size: 2.3rem;
@@ -86,7 +85,7 @@
 #milestones .milestone-name {
   color: #27286d;
   transition: all 0.3s linear;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 @media (max-width: 640px) {

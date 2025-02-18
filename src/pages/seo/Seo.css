@@ -1,0 +1,96 @@
+#support-second .text-box {
+  width: 80%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Exo", sans-serif;
+}
+
+#support-second .text-bottom {
+  padding-top: 2.6rem;
+  width: 80%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Exo", sans-serif;
+}
+
+#support-second .right .top-heading {
+  width: 80%;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.214em;
+  margin-bottom: 30px;
+}
+
+#support-second .right .list ul {
+  list-style: none;
+}
+
+#support-second .right .list ul > li {
+  position: relative;
+  padding-left: 24px;
+  font-size: 16px;
+  padding-top: 10px;
+  font-family: "Exo", sans-serif;
+}
+
+#support-second .right .list ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+  height: 12px;
+  width: 14px;
+  min-width: 14px;
+  background-color: #2267e7;
+  transform: skewX(-12deg);
+  display: block;
+  margin-right: 10px;
+}
+
+#support-five .section-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#support-five .section-box .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 30px;
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+#support-five .section-box .bestSeo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  grid-column-gap: 56px;
+}
+
+#support-five .section-box .bestSeo .image img {
+  border-radius: 100%;
+}
+
+#support-five .section-box .bestSeo .image h4 {
+  padding-top: 2.6rem;
+  font-size: clamp(1.8rem, 5vw, 2.4rem) !important;
+  font-weight: 600;
+  text-align: center;
+}
+
+#support-six .section-box .top, .text {
+    padding-right: 2rem;
+}
+
+#support-six .section-box .left, .text {
+    padding-right: 2rem;
+}
+
+#support-six .section-box3 .right .top {
+    padding-right: 2rem;
+}
+
+

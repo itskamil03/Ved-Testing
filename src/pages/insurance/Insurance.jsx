@@ -447,19 +447,18 @@ function Insurance() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is insurance management software, and how can it
+                    benefit my business?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                        Insurance management software is a digital solution
+                        designed to automate policy management, claims
+                        processing, customer relationship management (CRM), and
+                        compliance tracking. It enhances operational efficiency,
+                        reduces manual errors, improves customer service, and
+                        streamlines underwriting and risk assessment processes.
                       </div>
                     </div>
                   ) : null}
@@ -476,19 +475,17 @@ function Insurance() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    What key features should I look for in insurance software?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                        When selecting insurance software, consider features
+                        such as policy administration, claims automation,
+                        customer self-service portals, fraud detection,
+                        compliance management, integration with payment
+                        gateways, and AI-driven risk assessment. A cloud-based
+                        solution ensures scalability and remote accessibility.
                       </div>
                     </div>
                   ) : null}
@@ -505,17 +502,18 @@ function Insurance() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    Can insurance management software improve customer
+                    experience?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                        Yes! Modern insurance software enhances customer
+                        experience by providing self-service options, automated
+                        claim tracking, personalized policy recommendations, and
+                        seamless communication via chatbots and mobile apps.
+                        Faster response times and digital access improve
+                        customer satisfaction and retention.
                       </div>
                     </div>
                   ) : null}
@@ -532,19 +530,18 @@ function Insurance() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    Is insurance management software secure for handling
+                    sensitive customer data?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
-                        processes.
+                        Yes, reputable insurance software solutions come with
+                        advanced security measures, including data encryption,
+                        multi-factor authentication, access controls, and
+                        compliance with industry regulations such as GDPR,
+                        HIPAA, and PCI-DSS. These features ensure that customer
+                        and policyholder data remain safe from cyber threats.
                       </div>
                     </div>
                   ) : null}

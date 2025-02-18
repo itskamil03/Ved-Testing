@@ -1,0 +1,426 @@
+#qa-first {
+    padding: 50px 0 10px 0;
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+  }
+  #qa-first .section-top .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "Exo", sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #qa-first .section-top .head-slogan {
+    line-height: 1.56em;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 auto;
+    font-family: "Exo", sans-serif;
+    color: rgb(70, 63, 63);
+  }
+
+  #qa-second {
+    padding: 50px 0 30px 0;
+    background-color: rgb(253, 252, 252);
+  }
+  #qa-second .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  #qa-second .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "Exo", sans-serif;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #qa-second .section-box {
+    padding-bottom: 50px;
+  }
+  #qa-second .section-box .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #qa-second .section-box .left .icon {
+    color: #011e52;
+    font-size: 30px;
+  }
+  #qa-second .section-box .left .text {
+    width: auto;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    letter-spacing: -0.008em;
+    font-family: "Exo", sans-serif;
+  }
+
+  #qa-second .cloud-services
+  {
+      background-color: #ffffff;
+      font-size: 14px;
+      box-shadow: 0 8px 24px #a9a9a985;
+      padding: 20px;
+      border-radius: 10px;
+     
+  }
+
+  #qa-second .cloud-automation {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    grid-gap: 20px;
+    width: 100%
+  }
+  
+  #qa-third {
+    padding: 50px 0 30px 0;
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+  }
+  #qa-third .section-top .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "Exo", sans-serif;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #qa-third .section-top .head-slogan {
+    line-height: 1.56em;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 auto;
+    font-family: "Exo", sans-serif;
+    color: rgb(70, 63, 63);
+    margin-bottom: 50px;
+  }
+  
+  #qa-third .section-box {
+    padding-bottom: 50px;
+  }
+  #qa-third .section-box .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  #qa-third .section-box .left .icon {
+    color: #809ccf;
+    font-size: 60px;
+  }
+  #qa-third .section-box .left .text {
+    width: auto;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.225em;
+    letter-spacing: -0.008em;
+    font-family: "Exo", sans-serif;
+  }
+  #qa-third .section-box .right .top {
+    line-height: 1.56em;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Exo", sans-serif;
+    color: rgb(70, 63, 63);
+    margin-bottom: 10px;
+  }
+  #qa-third .section-box .right .bottom {
+    line-height: 1.56em;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Exo", sans-serif;
+    color: rgb(70, 63, 63);
+    margin-bottom: 10px;
+  }
+  #qa-third .section-box .right .list ul {
+    list-style: none;
+  }
+  #qa-third .section-box .right .list ul > li {
+    position: relative;
+    padding-left: 24px;
+    font-size: 16px;
+    padding-top: 10px;
+    font-family: "Exo", sans-serif;
+  }
+  #qa-third .section-box .right .list ul > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    height: 12px;
+    width: 14px;
+    min-width: 14px;
+    background-color: #809ccf;
+    transform: skewX(-12deg);
+    display: block;
+    margin-right: 10px;
+  }
+  
+  #qa-third .section-box2 {
+    padding-bottom: 50px;
+  }
+  #qa-third .section-box2 .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  #qa-third .section-box2 .left .icon {
+    color: #ffc000;
+    font-size: 60px;
+  }
+  #qa-third .section-box2 .left .text {
+    width: auto;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.225em;
+    letter-spacing: -0.008em;
+    font-family: "Exo", sans-serif;
+  }
+  #qa-third .section-box2 .right .top {
+    line-height: 1.56em;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Exo", sans-serif;
+    color: rgb(70, 63, 63);
+    margin-bottom: 10px;
+  }
+  #qa-third .section-box2 .right .bottom {
+    line-height: 1.56em;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Exo", sans-serif;
+    color: rgb(70, 63, 63);
+    margin-bottom: 10px;
+  }
+  #qa-third .section-box2 .right .list ul {
+    list-style: none;
+  }
+  #qa-third .section-box2 .right .list ul > li {
+    position: relative;
+    padding-left: 24px;
+    font-size: 16px;
+    padding-top: 10px;
+    font-family: "Exo", sans-serif;
+  }
+  #qa-third .section-box2 .right .list ul > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    height: 12px;
+    width: 14px;
+    min-width: 14px;
+    background-color: #ffc000;
+    transform: skewX(-12deg);
+    display: block;
+    margin-right: 10px;
+  }
+  
+  #qa-third .section-box3 {
+    padding-bottom: 50px;
+  }
+  #qa-third .section-box3 .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  #qa-third .section-box3 .left .icon {
+    color: #9c0;
+    font-size: 65px;
+  }
+  #qa-third .section-box3 .left .text {
+    width: auto;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.225em;
+    letter-spacing: -0.008em;
+    font-family: "Exo", sans-serif;
+  }
+  #qa-third .section-box3 .right .top {
+    line-height: 1.56em;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Exo", sans-serif;
+    color: rgb(70, 63, 63);
+    margin-bottom: 10px;
+  }
+  #qa-third .section-box3 .right .bottom {
+    line-height: 1.56em;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Exo", sans-serif;
+    color: rgb(70, 63, 63);
+    margin-bottom: 10px;
+  }
+  #qa-third .section-box3 .right .list ul {
+    list-style: none;
+  }
+  #qa-third .section-box3 .right .list ul > li {
+    position: relative;
+    padding-left: 24px;
+    font-size: 16px;
+    padding-top: 10px;
+    font-family: "Exo", sans-serif;
+  }
+  #qa-third .section-box3 .right .list ul > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    height: 12px;
+    width: 14px;
+    min-width: 14px;
+    background-color: #9c0;
+    transform: skewX(-12deg);
+    display: block;
+    margin-right: 10px;
+  }
+  
+  #qa-third .section-box4 {
+    padding-bottom: 50px;
+  }
+  #qa-third .section-box4 .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  #qa-third .section-box4 .left .icon {
+    color: red;
+    font-size: 60px;
+  }
+  #qa-third .section-box4 .left .text {
+    width: auto;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.225em;
+    letter-spacing: -0.008em;
+    font-family: "Exo", sans-serif;
+  }
+  #qa-third .section-box4 .right .top {
+    line-height: 1.56em;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Exo", sans-serif;
+    color: rgb(70, 63, 63);
+    margin-bottom: 10px;
+  }
+  #qa-third .section-box4 .right .bottom {
+    line-height: 1.56em;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Exo", sans-serif;
+    color: rgb(70, 63, 63);
+    margin-bottom: 10px;
+  }
+  #qa-third .section-box4 .right .list ul {
+    list-style: none;
+  }
+  #qa-third .section-box4 .right .list ul > li {
+    position: relative;
+    padding-left: 24px;
+    font-size: 16px;
+    padding-top: 10px;
+    font-family: "Exo", sans-serif;
+  }
+  #qa-third .section-box4 .right .list ul > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    height: 12px;
+    width: 14px;
+    min-width: 14px;
+    background-color: red;
+    transform: skewX(-12deg);
+    display: block;
+    margin-right: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #qa-first {
+      padding: 30px 0 30px 0;
+    }
+    #qa-first .section-top .head-title {
+      font-size: 22px;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    #qa-first .section-top .head-slogan {
+      text-align: justify;
+    }
+    #qa-second .section {
+      flex-direction: column-reverse;
+    }
+    #qa-second .section-box {
+        padding-bottom: 20px;
+      }
+      #qa-second .section-box .left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+    #qa-third {
+      padding: 20px 0 30px 0;
+    }
+    #qa-third .section-top .head-title {
+      font-size: 22px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #qa-third .section-top .head-slogan {
+      font-size: 17px;
+      text-align: justify;
+      padding: 0 10px;
+      margin-bottom: 30px;
+    }
+    #qa-third .section-box {
+      padding-bottom: 20px;
+    }
+    #qa-third .section-box .left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    #qa-third .section-box2 {
+      padding-bottom: 30px;
+    }
+    #qa-third .section-box2 .left {
+      gap: 20px;
+    }
+    #qa-third .section-box2 .left .text {
+      width: 100%;
+    }
+    #qa-third .section-box3 {
+      padding-bottom: 30px;
+    }
+    #qa-third .section-box3 .left {
+      gap: 20px;
+    }
+    #qa-third .section-box3 .left .text {
+      width: 100%;
+    }
+    #qa-third .section-box4 {
+      padding-bottom: 30px;
+    }
+    #qa-third .section-box4 .left {
+      gap: 20px;
+    }
+    #qa-third .section-box4 .left .text {
+      width: 100%;
+    }
+    #qa-third .section-box4 .right .top {
+      padding-top: 20px;
+    }
+  }
+  

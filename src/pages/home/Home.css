@@ -16,6 +16,10 @@
   background: #00000038;
   z-index: 1;
 }
+.who-we-are
+{
+  padding-top: 40px;
+}
 
 #what-do .section-content {
   z-index: 2;
@@ -247,6 +251,11 @@ textarea {
   margin-bottom: 5px;
 }
 
+.milestone-description
+{
+  font-size: 14px;
+  font-weight: 600;
+}
 
 #internship-data .milestone-info .head {
   font-size: 2.7rem;
@@ -266,20 +275,19 @@ textarea {
 }
 
 #milestones .milestone-box {
-  padding: 20px;
+  padding: 40px 20px;
   box-shadow: 0 8px 24px #e4dfdf;
   border-radius: 20px;
-  text-align: center;
-  max-width: 230px;
-  margin: 0px auto 20px;
+  max-width: 300px;
+  margin: 0px auto 30px;
   background: white;
   transition: all 0.3s linear;
   cursor: pointer;
-  height: 113px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  grid-row-gap: 8px;
 }
 
 #milestones .milestone-count {
@@ -292,7 +300,97 @@ textarea {
 #milestones .milestone-name {
   color: #27286d;
   transition: all 0.3s linear;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+}
+
+/* <------------------------------------------------------- Why choose us -----------------------------------------------------------> */
+
+#why_choose_us {
+  padding: 50px 0px;
+}
+
+#why_choose_us .milestone-info {
+  margin-bottom: 20px;
+}
+
+#why_choose_us .milestone-info .head {
+  font-size: 2.7rem;
+  color: #27286d;
+  margin-bottom: 5px;
+}
+
+.milestone-description
+{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#internship-data .milestone-info .head {
+  font-size: 2.7rem;
+  color: #27286d;
+  margin-bottom: 5px;
+}
+
+.solution_title
+{
+   font-size: 2.2rem !important;
+}
+
+.solution_explore_more
+{
+  font-size: 1.6rem !important;
+  color: #ffffff !important;
+}
+
+#why_choose_us .milestone-info .content {
+  font-size: 1.5rem;
+  color: #4e4e4e;
+  text-align: justify;
+}
+
+#why_choose_us .milestone-box .tab-icon {
+  width:60px;
+  height: 60px;
+  object-fit: contain;
+  aspect-ratio: 1;
+}
+
+#why_choose_us .milestone-box .tab-icon img{
+ background-color: #e4e1e1;
+ border-radius: 50%;
+ width:24px;
+ height: 24px;
+padding: 12px;
+
+ 
+}
+
+#why_choose_us .milestone-box {
+  padding:20px;
+  margin: 0px auto 30px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  height: auto;
+  display: flex;
+  grid-column-gap: 20px;
+}
+
+#why_choose_us .milestone-count {
+  font-size: 2.3rem;
+  line-height: 25px;
+  color: #27286d;
+  transition: all 0.3s linear;
+}
+
+#why_choose_us .milestone-name {
+  transition: all 0.3s linear;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#why_choose_us .milestone_heading {
+   display: grid;
+   grid-row-gap: 8px;
 }
 
 /* <------------------------------------------------------- Industries We Serve -----------------------------------------------------------> */
@@ -392,6 +490,17 @@ textarea {
   color: #e3e2e2;
   font-size: 1.5rem;
   text-align: center;
+}
+
+#industries .industries_link {
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  bottom: 40px;
+  letter-spacing: .5px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 /* <------------------------------------------- What's New -----------------------------------------------------> */
@@ -538,7 +647,14 @@ textarea {
   .innovates {
     height: auto;
   }
-
+  .who-we-are
+  {
+    padding-top: 0px;
+  }
+  .milestone-description
+  {
+    font-size: 12px;
+  }
   #innovate .tab-content {
     /* height: 500px; */
     top: 85px;
@@ -668,10 +784,32 @@ main {
   letter-spacing: .5px;
 }
 
+#solutions .solution_link {
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  bottom: 40px;
+  letter-spacing: .5px;
+}
+
 #solutions .solution_info h1 {
   font-size: 2.3rem;
   color: white;
   margin: 0;
+}
+
+#join .solutin_btn {
+  display: flex;
+  justify-content: center;
+}
+
+#join .more_btn_solution {
+  padding: 10px 10px;
+  color: white;
+  border: none;
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  border-radius: 5px;
+  font-size: 15px;
 }
 
 @media (max-width: 930px) {

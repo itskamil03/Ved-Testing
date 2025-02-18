@@ -190,7 +190,6 @@ function TravelHospitality() {
                           alt="..."
                           className="w-100 h-100"
                           loading="lazy"
-                          
                         />
                       </div>
                     </div>
@@ -456,19 +455,19 @@ function TravelHospitality() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is GxP software, and why is it important?
+                    What is travel and hospitality management software, and how
+                    can it benefit my business?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP software refers to systems designed to comply with
-                        Good Practice (GxP) regulations, which are standards for
-                        ensuring product safety, quality, and efficacy in
-                        industries like pharmaceuticals and biotechnology. This
-                        software is crucial because it helps organizations
-                        maintain compliance with regulatory requirements,
-                        reducing the risk of non-compliance penalties and
-                        ensuring the integrity of their processes.
+                        Travel and hospitality management software is a digital
+                        solution that automates bookings, reservations, customer
+                        management, and operational workflows for hotels, travel
+                        agencies, and tour operators. It enhances efficiency,
+                        improves guest experience, optimizes resource
+                        allocation, and increases revenue through better
+                        data-driven decision-making.
                       </div>
                     </div>
                   ) : null}
@@ -485,19 +484,19 @@ function TravelHospitality() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    How does GMP software help in regulatory compliance?
+                    What key features should I look for in travel and
+                    hospitality software?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GMP (Good Manufacturing Practice) software helps
-                        organizations adhere to strict guidelines for
-                        manufacturing processes, ensuring products are
-                        consistently produced and controlled according to
-                        quality standards. It automates documentation, tracks
-                        changes, and provides audit trails, making it easier to
-                        comply with regulations and pass inspections by
-                        regulatory bodies.
+                        When selecting travel and hospitality software, consider
+                        features such as online booking systems, channel
+                        management, customer relationship management (CRM),
+                        automated invoicing, itinerary planning, mobile
+                        compatibility, and integration with third-party
+                        platforms like OTAs (Online Travel Agencies) and payment
+                        gateways.
                       </div>
                     </div>
                   ) : null}
@@ -514,17 +513,18 @@ function TravelHospitality() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    What features should I look for in GxP and GMP software?
+                    How does travel and hospitality software improve customer
+                    experience?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When selecting GxP and GMP software, look for features
-                        like automated documentation, audit trails, electronic
-                        signatures, version control, and real-time monitoring.
-                        The software should also support validation processes,
-                        ensure data integrity, and be easily customizable to fit
-                        the specific regulatory needs of your industry.
+                        Travel and hospitality software enhances customer
+                        experience by offering seamless online booking,
+                        personalized recommendations, AI-powered chat support,
+                        automated check-ins, and loyalty programs. These
+                        features ensure faster service, improved engagement, and
+                        higher customer satisfaction.
                       </div>
                     </div>
                   ) : null}
@@ -541,19 +541,18 @@ function TravelHospitality() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    How does GxP and GMP software ensure data integrity?
+                    Is travel and hospitality software secure for handling
+                    customer data and online transactions?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        GxP and GMP software ensure data integrity by
-                        implementing features like access controls, audit
-                        trails, and encryption. These measures prevent
-                        unauthorized access, ensure accurate data recording, and
-                        maintain a clear history of changes. This is critical
-                        for maintaining the reliability and trustworthiness of
-                        data used in regulatory submissions and quality control
-                        processes.
+                        Yes! A reliable travel and hospitality management system
+                        includes strong security features such as encrypted
+                        payment processing, GDPR compliance, multi-factor
+                        authentication, and role-based access control. These
+                        security measures protect customer data from breaches
+                        and ensure safe online transactions.
                       </div>
                     </div>
                   ) : null}
