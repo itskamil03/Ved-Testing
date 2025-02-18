@@ -527,6 +527,7 @@ function SchoolCollage() {
                   </div>
                 </div>
 
+
                 <div className="col-lg-6">
                   <div className="health-content">
                     <div className="form-container">
