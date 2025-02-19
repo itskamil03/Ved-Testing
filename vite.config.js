@@ -4,16 +4,16 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist', // Output directory
-    minify: 'esbuild', // Use Esbuild for minification (default)
+    outDir: 'dist',
+    minify: 'esbuild',
     terserOptions: {
       compress: {
-        drop_console: true, // Remove console logs
-        drop_debugger: true, // Remove debugger statements
+        drop_console: true,
+        drop_debugger: true,
       },
     },
   },
-  base: '/',
+  base: './', // Change from '/' to './' for correct asset loading
   resolve: {
     alias: {
       '@': '/src',
