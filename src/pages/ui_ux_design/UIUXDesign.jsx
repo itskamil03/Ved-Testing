@@ -210,6 +210,7 @@ function UIUXDesign() {
                 </p>
               </div>
             </div>
+            
             <div className="col-xl-4 col-lg-4 col-md-12">
               <div className="ph-uiux-box">
                 <div className="ph-uiux-icon">
