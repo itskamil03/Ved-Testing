@@ -19,6 +19,7 @@ function Blogs() {
       .then((result) => result.json())
       .then((resp) => {
         setBlogs(resp.data);
+
       });
   }, []);
 
@@ -26,6 +27,8 @@ function Blogs() {
   {
      localStorage.setItem("blogId",blogId)
   }
+
+  
 
   return (
     <>
@@ -44,12 +47,12 @@ function Blogs() {
                       loading="lazy"
                     />
                   </div>
-                  <div className="bloges-card-titels">
+                  <div className="blogs-card-title">
                     <div className="bloges-card-time">{card.blog_title}</div>
                     <div className="bloges-card-heading">{card.category}</div>
-                    <div
+                    <div           
                       className="name-block"
-                      dangerouslySetInnerHTML={{ __html: card.content }}
+                      dangerouslySetInnerHTML={{ __html: card.content.replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '') }}
                     ></div>
                     <Link to="/BlogDetails" onClick={()=>handleBlog(card.id)} className="read-more-button">
                       Read More

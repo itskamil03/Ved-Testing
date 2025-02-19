@@ -42,10 +42,15 @@
 }
 
 .image img {
-  width: 64px;
   object-fit: cover;
   border-radius: 10px;
-  padding-bottom: 2.6rem;
+}
+
+#support-third .image img {
+    width: 64px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-bottom: 2.6rem;
 }
 
 .card-content h2 {

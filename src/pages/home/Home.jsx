@@ -243,7 +243,7 @@ function Home({ target, label }) {
     },
   ];
   const [showAll, setShowAll] = useState(false);
-  const displayedIndustries = showAll ? industries : industries.slice(0, 4);
+  const displayedIndustries = showAll ? industries : industries.slice(0, 5);
 
   return (
     <>
@@ -1369,10 +1369,12 @@ function Home({ target, label }) {
         <div className="container-fluid">
           <div className="container">
             <div className="milestone-grid">
-              <div className="row">
-                <div className="col-lg-5 my-auto">
+
+         
+
+          
                   <div className="milestone-info">
-                    <div className="head">Why Choose Us?</div>
+                    <div className="head_title">Why Choose Us?</div>
                     <div className="content page_title">
                     With over 3+ years of experience in the software industry, we empower
                      businesses to thrive in the digital world with tailor-made, high-quality
@@ -1384,8 +1386,9 @@ function Home({ target, label }) {
                         to enhance productivity, streamline operations, and stay ahead in the competitive digital landscape.
                     </div>
                   </div>
-                </div>
-                <div className="col-lg-7">
+            
+
+          
                   <div className="row">
                     <div className="col-lg-6 col-sm-12 col-md-6" >
 
@@ -1525,8 +1528,9 @@ function Home({ target, label }) {
 
                     </div>
                   </div>
-                </div>
-              </div>
+          
+       
+
             </div>
           </div>
         </div>
@@ -1552,7 +1556,7 @@ function Home({ target, label }) {
               <div className="row">
                 <main>
                   {cards
-                    .slice(0, showMore ? cards.length : 4)
+                    .slice(0, showMore ? cards.length : 5)
                     .map((card, index) => (
                       <Link
                         className="solution_card"
@@ -1601,6 +1605,8 @@ function Home({ target, label }) {
           </div>
         </div>
       </section>
+
+
       {/* Internship & Training  */}
       <section id="internship-data">
         <div className="container-fluid">
@@ -1726,6 +1732,7 @@ function Home({ target, label }) {
           </div>
         </div>
       </section>  */}
+
        <section id="lifeatvedthird">
         <div className="container-fluid">
           <div className="container">
@@ -1875,8 +1882,8 @@ function Home({ target, label }) {
 
               
           
- {/* Industries We Serve */}
- <section id="industries" className="bg-light">
+      {/* Industries We Serve */}
+       <section id="industries" className="bg-light">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">
@@ -1892,10 +1899,11 @@ function Home({ target, label }) {
               </div>
             </div>
             <div className="section-content">
-              <div className="row">
+              <div className="main">
+                
                 {displayedIndustries.map((inds) => (
-                  <div className="col-lg-3 col-md-4 col-sm-6" key={inds.id}>
-                    <div className="industry-box">
+                 
+                    <div className="industry-box"  key={inds.id}>
                       <Link to={inds.link}>
                         <div className="industry-img">
                           <LazyLoadImage
@@ -1925,12 +1933,12 @@ function Home({ target, label }) {
                         </Link>
 
                       </Link>
-                    </div>
+               
                   </div>
                 ))}
               </div>
               {/* View More Button */}
-              {industries.length > 4 && (
+              {industries.length > 5 && (
                 <div className="text-center mt-3">
                   <button
                     className="more-btn-industrial"
@@ -1968,6 +1976,7 @@ function Home({ target, label }) {
                 <div className="tab-container">
                   {blogs &&
                     blogs.slice(0, 3).map((item) => {
+                      const cleanedDescription = item.content.replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '');
                       return (
                         <NavLink to="/Blogs" className="blog-box" key={item.id}>
                           <div className="blog-img">
@@ -1988,7 +1997,7 @@ function Home({ target, label }) {
                             {/* <div className="name-block">{item.content}</div> */}
                             <div
                               className="name-block"
-                              dangerouslySetInnerHTML={{ __html: item.content }}
+                              dangerouslySetInnerHTML={{ __html:cleanedDescription }}
                             ></div>
                           </div>
                         </NavLink>

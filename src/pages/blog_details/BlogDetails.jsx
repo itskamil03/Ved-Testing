@@ -14,6 +14,8 @@ function BlogDetails() {
 
   const BlogId=localStorage.getItem("blogId")
 
+  const [loading, setloading] = useState(false)
+
   useEffect(() => {
     fetch(`https://ved.venturingdigitally.com/api/blog_details/${BlogId}`, {
       method: "POST",
@@ -28,6 +30,7 @@ function BlogDetails() {
         setBlogLatest(resp.latest_two_data)
         setBlogTrends(resp.recent_trends)
         setBlogPost(resp.recent_posts)
+        setloading(true)
       });
   }, []);
 
@@ -35,6 +38,7 @@ function BlogDetails() {
 
   return (
     <div>
+      {loading && <>
       <BlogDetailsHero />
 
       {/* BLOG SECTION */}
@@ -60,8 +64,9 @@ function BlogDetails() {
                     <Link to="#" className="title">
                       {blogDetail.blog_title}
                     </Link>
-                    <p>
-                     {blogDetail.content}
+                    <p
+                    dangerouslySetInnerHTML={{ __html: blogDetail.content.replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '').replace(/\s\s+/g, ' ') }}>
+                     
                     </p>
                   </section>
                   </div>
@@ -87,7 +92,10 @@ function BlogDetails() {
                 <Link to="#" className="title">
                 {card.blog_title}
                 </Link>
-                <p>{card.content}</p>
+                <p           
+                     
+                      dangerouslySetInnerHTML={{ __html: card.content.replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '').replace(/\s\s+/g, ' ') }}
+                    ></p>
               </section>
             </div>
             ))}
@@ -106,7 +114,7 @@ function BlogDetails() {
               </span>
               <section>
                
-                {blogPost.map((card) => (
+                {blogPost.slice(0,2).map((card) => (
                 <Link to="#" key={card.id}>
                 
                     <LazyLoadImage
@@ -116,7 +124,14 @@ function BlogDetails() {
                       className="bloges-card-img-img w-10 h-20"
                       style={{width:"60px"}}
                     />
-                      <p>{card.content}</p>
+                       <p  style ={{fontSize:"14px"}} dangerouslySetInnerHTML={{ 
+                __html: card.content
+                  .replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '') 
+                  .replace(/\s\s+/g, ' ') 
+                  .split(/\s+/) 
+                  .slice(0, 18) 
+                  .join(' ') + '...' 
+              }}></p>
                 
                 </Link>
               ))}
@@ -138,9 +153,16 @@ function BlogDetails() {
                   onMouseOut={(e) => e.target.start()}
                   className="marquee2"
                 >
-                   {blogtrends.map((card) => (
+                   {blogtrends.slice(0,2).map((card) => (
                
-                      <p>{card.content}</p>
+               <p style ={{fontSize:"14px"}} dangerouslySetInnerHTML={{ 
+                __html: card.content
+                  .replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '') 
+                  .replace(/\s\s+/g, ' ') 
+                  .split(/\s+/) 
+                  .slice(0, 18) 
+                  .join(' ') + '...' 
+              }}></p>
                 
               
                    ))}
@@ -151,6 +173,8 @@ function BlogDetails() {
           </div>
         </div>
       </div>
+      </>
+}
     </div>
   );
 }

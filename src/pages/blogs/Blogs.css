@@ -25,6 +25,12 @@
   overflow: hidden;
   transition: transform 0.3s;
   border-radius: 5px;
+  box-shadow: 0 8px 24px #e4dfdf;
+}
+
+.blogs-card-title
+{
+   padding: 10px 20px 0px;
 }
 
 .bloges-card-img {
@@ -39,7 +45,7 @@
 }
 
 .bloges-card-time {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #27286d;
   padding: 6px 0px;
@@ -55,7 +61,7 @@
   color: blue;
   padding: 3px 10px;
   border-radius: 15px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -97,7 +103,7 @@
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: rgb(13 110 253);
+  background-color: rgb(1, 30, 75);
   color: white;
   text-decoration: none;
   border-radius: 5px;
