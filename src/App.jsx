@@ -53,8 +53,18 @@ import DigitalMarketing from "./pages/digital_marketing/DigitalMarketing";
 import AIML from "./pages/ai_ml/AI-ML";
 import MVPConsulting from "./pages/mvp_consulting/MVPConsulting";
 import QaTesting from "./pages/qa_testing/QaTesting";
+import { React, useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    })
+  }, [])
+
   return (
     <BrowserRouter>
       <SmoothScroll>
@@ -85,7 +95,7 @@ function App() {
           <Route path="/CustomSoftware" element={<CustomerSoftware />} />
           <Route path="/SupportMaintenance" element={<SupportMaintenance />} />
 
-           <Route path="/CloudServices" element={<CloudServices />} />
+          <Route path="/CloudServices" element={<CloudServices />} />
 
           <Route
             path="/Seo"
@@ -96,9 +106,9 @@ function App() {
             path="/DigitalMarketing"
             element={<DigitalMarketing />}
           />
-          <Route path="/AI-ML" element={<AIML/>} />
+          <Route path="/AI-ML" element={<AIML />} />
           <Route path="/MVPConsulting" element={<MVPConsulting />} />
-          <Route path="/QaTesting" element={<QaTesting />} /> 
+          <Route path="/QaTesting" element={<QaTesting />} />
 
           <Route path="/Crm" element={<Crm />} />
           <Route path="/Qms" element={<Qms />} />
