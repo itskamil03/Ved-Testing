@@ -59,7 +59,7 @@ function Services() {
                   </div>
                 </div>
 
-                <div className="col-lg-6">
+                <div className="col-lg-6" style={{paddingBottom:"20px"}}>
                 <div className="left-box"> 
                       <div  className="allservice">
                         <div className="text">
@@ -127,7 +127,7 @@ function Services() {
                   </div>
   
 
-                <div className="col-lg-6">
+                <div className="col-lg-6" style={{paddingBottom:"20px"}}>
 
                 <div className="left-box"> 
                       <div  className="allservice">
@@ -161,7 +161,7 @@ function Services() {
                     </div>
                 </div>
                  
-                <div className="col-lg-6">
+                <div className="col-lg-6" style={{paddingBottom:"20px"}}>
                 <div className="left-box"> 
                       <div  className="allservice">
                         <div className="text">
@@ -192,7 +192,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className="col-lg-6">
+                <div className="col-lg-6" style={{paddingBottom:"20px"}}>
                 <div className="left-box"> 
                       <div  className="allservice">
                         <div className="text">

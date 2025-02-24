@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const cms_best = [
@@ -103,10 +103,10 @@ function Cms() {
   };
 
   const handleSubmit= async (e)=>
-    {
+  {
 
-       e.preventDefault();
-  
+      e.preventDefault();
+
       if (!validateEmail(formData.email)) {
         toast.error("Please enter a valid email address", {
           position: "top-right",
@@ -160,7 +160,6 @@ function Cms() {
             address: "",
           })
   
-  
           toast.success("Form Submitted Successfully", {
             position: "top-right",
             autoClose: 2000,
@@ -191,6 +190,7 @@ function Cms() {
 
   return (
     <>
+    <ToastContainer/>
       <Hero
         heading="Cms Development"
         imgbtn="Cms"
@@ -380,7 +380,7 @@ function Cms() {
                                 placeholder="Title/Position*"
                                 value={formData.title}
                                 onChange={handleInputChange}
-                                required
+                               required
                               />
                             </div>
 
@@ -520,6 +520,7 @@ function Cms() {
                           Request Free Demo
                         </button>
                       </form>
+
                     </div>
                   </div>
                 </div>

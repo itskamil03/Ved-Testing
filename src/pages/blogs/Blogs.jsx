@@ -41,7 +41,7 @@ function Blogs() {
                 <Link className="bloges-card" key={card.id}>
                   <div className="bloges-card-img">
                     <LazyLoadImage
-                      src={`https://ved.venturingdigitally.com/assets/img/blog/${card.image}`}
+                      src={`${card.image}`}
                       alt={card.blog_title}
                       className="bloges-card-img-img w-100 h-100"
                       loading="lazy"

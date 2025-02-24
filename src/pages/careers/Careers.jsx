@@ -7,15 +7,18 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import Hero from "../../components/hero_section/Hero";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { toast, ToastContainer } from "react-toastify";
 
 export default function Careers() {
   const [show, setShow] = useState(false);
   const [showForm, setShowForm] = useState(false);
-  const formHandle = () => setShowForm(true);
+
   const closeForm = () => setShowForm(false);
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
+
+ 
 
 
   const [careers, setCareers] = useState([]);
@@ -44,6 +47,11 @@ export default function Careers() {
     setShow(false);
   };
 
+  const formHandle=()=>
+    {
+        setShowForm(true)
+        setShow(false);
+    }
 
   const [formData, setFormData] = useState({
     name: "",
@@ -56,6 +64,7 @@ export default function Careers() {
   });
 
   const handleSubmit = async (e) => {
+
     e.preventDefault();
     try {
       const response = await fetch(
@@ -85,7 +94,20 @@ export default function Careers() {
         closeForm();
     }, 1500);
          
+      toast.success("Job Application Submitted Successfully", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+
       } 
+      
+      else {
+        toast.error("Submission failed. Please try again.", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+      }
+
     } catch (error) {
       console.error("An error occurred while submitting the form:", error);
     }
@@ -115,8 +137,21 @@ export default function Careers() {
           job_type: "",
           apply_for:"",
           file:""})
+
+          toast.success("Job Application Submitted Successfully", {
+            position: "top-right",
+            autoClose: 2000,
+          });
        
+      }
+      else {
+
+        toast.error("Submission failed. Please try again.", {
+          position: "top-right",
+          autoClose: 2000,
+         });
       } 
+      
     } catch (error) {
       console.error("An error occurred while submitting the form:", error);
     }
@@ -144,8 +179,12 @@ export default function Careers() {
       }
     };
 
+
+
   return (
     <>
+
+       <ToastContainer/>
       <Hero heading="Careers" imgbtn="Careers" src="heroimg/Careers.avif" />
       {/* {{-- ===========================================
                             CAREERS CARDS
@@ -293,7 +332,7 @@ export default function Careers() {
                        onChange={handleChange} required={true} />
                     </div>
                     <div className="input-field">
-                      <select name="gender" value={formData.gender} onChange={handleChange} required disabled selected>
+                      <select name="gender" value={formData.gender} onChange={handleChange} required >
                         <option value="">Select your Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -351,7 +390,7 @@ export default function Careers() {
                       <BsFolderFill className="text-warning" />
                       <i className="fa-solid fa-folder-open text-warning"></i> &nbsp;
                       {formData.file ? (
-                        <span>{formData.file.name}</span> 
+                        <span>{formData.file}</span> 
                       ) : (
                         "Submit your CV"
                       )}
@@ -414,7 +453,18 @@ export default function Careers() {
                         <div className="head">{career.title}</div>
                         <div className="data">{career.content}</div>
                       </div>
-                      <div className="bottom">{career.created_at}</div>
+                      <div className="bottom">
+                      {new Date(career.created_at).toLocaleString("en-IN", {
+                        day: "2-digit",
+                        month: "short",
+                        year: "numeric",
+                        hour: "2-digit",
+                        minute: "2-digit",
+                        hour12: true,
+                        timeZone: "Asia/Kolkata",
+                      }).replace("am", "AM").replace("pm", "PM")}
+                    </div>
+
                     </div>
                   </div>
                 ))}
@@ -433,6 +483,7 @@ export default function Careers() {
         aria-labelledby="contained-modal-title-vcenter"
         centered
         id="job-modal"
+         
       >
         <Modal.Header closeButton>
           <Modal.Title>Job Application</Modal.Title>
@@ -442,7 +493,7 @@ export default function Careers() {
           <Modal.Body>
             <div className="modal-containt">
               {" "}
-              <p>{selectedCareer.content}</p>
+              <p  dangerouslySetInnerHTML={{ __html: selectedCareer.content.replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '') }}></p>
             </div>
           </Modal.Body>
         )}
@@ -451,6 +502,8 @@ export default function Careers() {
           <Button onClick={formHandle}>Apply</Button>
         </Modal.Footer>
       </Modal>
+
+      
       {/* apply job ,model  */}/
       <Modal
         show={showForm}

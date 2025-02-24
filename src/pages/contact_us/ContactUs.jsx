@@ -6,6 +6,7 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 import { MultiSelect } from "primereact/multiselect";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
+import {toast, ToastContainer } from "react-toastify";
 
 const solutions = [
   { name: "CRM", code: "CRM" },
@@ -62,21 +63,22 @@ function ContactUs() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true); // Start loading
 
-    // Collecting services and solutions from the selected options
+    e.preventDefault();
+    setLoading(true); 
+
+ 
     const servicesArray = selectedService.map((service) => service.name);
     const solutionsArray = selectedSolutions.map((solution) => solution.name);
 
-    // Creating payload with services and solutions
+   
     const payload = {
       ...formData,
-      product: solutionsArray.join(", "), // Joining solutions array into string
-      services: servicesArray.join(", "), // Joining services array into string
+      product: solutionsArray.join(", "), 
+      services: servicesArray.join(", "), 
     };
 
-    // API call
+
     fetch("https://ved.venturingdigitally.com/api/GeneralEnquiry", {
       method: "POST",
       headers: {
@@ -100,19 +102,35 @@ function ContactUs() {
           });
           setSelectedService([]);
           setSelectedSolutions([]);
+
+          toast.success("Form Submitted Successfully", {
+            position: "top-right",
+            autoClose: 2000,
+          });
+
         } else {
+
+          toast.error("Submission failed. Please try again.", {
+            position: "top-right",
+            autoClose: 2000,
+          });
           setMessage("Error: " + data.message);
         }
-        setLoading(false); // End loading
+        setLoading(false); 
       })
       .catch((error) => {
         setMessage("Error submitting form: " + error.message);
-        setLoading(false); // End loading
+        setLoading(false); 
       });
+
+
   };
+
+
 
   return (
     <>
+    <ToastContainer/>
       <Hero
         heading="Contact Us"
         imgbtn="Let's Talk"

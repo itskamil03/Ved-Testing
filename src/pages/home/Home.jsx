@@ -72,8 +72,12 @@ function Home({ target, label }) {
         items: 1,
         nav: false,
       },
-      991: {
+      768: {
         items: 3,
+        nav: false,
+      },
+      991: {
+        items: 4,
         nav: true,
       },
     },
@@ -179,15 +183,29 @@ function Home({ target, label }) {
     navigate("/training-and-internship");
   };
 
-  const settings = useMemo(() => ({
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
+  const settings = {
+    infinite: true,  // Loop carousel
+    speed: 1000,     // Transition speed
+    slidesToShow: 3, // Number of slides to show at a time
     slidesToScroll: 1,
-    autoFocus: false,
-    autoplaySpeed: 2000,
-  }), []);
+    autoplay: true,  // Enable autoplay
+    autoplaySpeed: 2000, // Speed of autoplay
+    rtl: true,       // Enables right-to-left scrolling
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   const slides = [
     {
@@ -1365,176 +1383,7 @@ function Home({ target, label }) {
         </div>
       </section>
 
-      <section id="why_choose_us">
-        <div className="container-fluid">
-          <div className="container">
-            <div className="milestone-grid">
-
-         
-
-          
-                  <div className="milestone-info">
-                    <div className="head_title">Why Choose Us?</div>
-                    <div className="content page_title">
-                    With over 3+ years of experience in the software industry, we empower
-                     businesses to thrive in the digital world with tailor-made, high-quality
-                      solutions. Our expert team harnesses cutting-edge technology and 
-                      industry best practices to deliver innovative, scalable, and efficient
-                       software solutions. From strategic planning and development to seamless
-                        deployment and continuous support, we ensure timely delivery, 
-                        reliability, and long-term success. Start venturing digitally with us 
-                        to enhance productivity, streamline operations, and stay ahead in the competitive digital landscape.
-                    </div>
-                  </div>
-            
-
-          
-                  <div className="row">
-                    <div className="col-lg-6 col-sm-12 col-md-6" >
-
-                      <div className="milestone-box">
-                      
-                      <div className="tab-icon">
-
-                          <LazyLoadImage
-                            src="icons/team.png"
-                            alt="expert team"
-                            className="w-100 h-100"
-                                loading="lazy"
-                          />
-
-                                </div>
-                                
-                            <div className="milestone_heading">
-
-                          <div className="milestone-name">
-                            Expert Team
-                          </div>
-                       
-                        <div className="milestone-description">
-                          We've got really skilled people who are great at making top-notch software for different kinds of businesses.
-                        </div>
-
-                        </div>
-
-                      </div>
-
-                      <div className="milestone-box">
-
-                      <div className="tab-icon">
-                                  <LazyLoadImage
-                                    src="icons/computer.png"
-                                    alt="customized software"
-                                    className="w-100 h-100"
-                                       loading="lazy"
-                                  />
-                                </div>
-
-                          <div className="milestone_heading">
-                        <div className="milestone-name">
-                         Customized Software
-                        </div>
-                        <div className="milestone-description">
-                        We make software that fits exactly what your business needs
-                        </div>
-                        </div>
-
-                      </div>
-                      <div className="milestone-box">
-
-                      <div className="tab-icon">
-                                  <LazyLoadImage
-                                    src="icons/achievement.png"
-                                    alt="using the latest tech"
-                                    className="w-100 h-100"
-                                       loading="lazy"
-                                  />
-                                </div>
-
-                          <div className="milestone_heading">
-                        <div className="milestone-name">
-                        Using the Latest Tech
-                        </div>
-                        <div className="milestone-description">
-                        We always use new and advanced technology so your software is modern and ready for the future
-                        </div>
-                        </div>
-
-                      </div>
-
-                    </div>
-                    
-                    <div className="col-lg-6 col-sm-12 col-md-6">
-
-                      <div className="milestone-box">
-                      <div className="tab-icon">
-                                  <LazyLoadImage
-                                    src="icons/call.png"
-                                    alt="all about quality"
-                                    className="w-100 h-100"
-                                       loading="lazy"
-                                  />
-                                </div>
-
-                                <div className="milestone_heading">
-                        <div className="milestone-name">
-                          All About Quality
-                        </div>
-                        <div className="milestone-description">
-                         We focus on making sure everything is high-quality, from the start of the project to the end.
-                        </div>
-                        </div>
-
-                      </div>
-                   
-                      <div className="milestone-box">
-                      <div className="tab-icon">
-                                  <LazyLoadImage
-                                    src="icons/delivered.png"
-                                    alt="on-time delivery"
-                                    className="w-100 h-100"
-                                       loading="lazy"
-                                  />
-                                </div>
-                                
-                                <div className="milestone_heading">
-                        <div className="milestone-name" >On-Time Delivery</div>
-                        <div className="milestone-description">
-                        We know time is important, so we make sure to finish your project on schedule without compromising quality.
-                        </div>
-                        </div>
-
-                      </div>
-
-                      <div className="milestone-box">
-
-                      <div className="tab-icon">
-                                  <LazyLoadImage
-                                    src="icons/help.png"
-                                    alt="help and upkeep"
-                                    className="w-100 h-100"
-                                       loading="lazy"
-                                  />
-                                </div>
-                               
-                                <div className="milestone_heading">
-                        <div className="milestone-name" >Help and Upkeep</div>
-                        <div className="milestone-description">
-                        Even after your software is up and running, we're here to help and keep it working great.
-                        </div>
-                        </div>
-
-                      </div>
-
-                    </div>
-                  </div>
-          
-       
-
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
        
       {/* <------------------------------------------------------- Our Solutins -----------------------------------------------------------> */}
@@ -1953,6 +1802,177 @@ function Home({ target, label }) {
         </div>
       </section>
 
+      <section id="why_choose_us">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="milestone-grid">
+
+         
+
+          
+                  <div className="milestone-info">
+                    <div className="head_title">Why Choose Us?</div>
+                    <div className="content page_title">
+                    With over 3+ years of experience in the software industry, we empower
+                     businesses to thrive in the digital world with tailor-made, high-quality
+                      solutions. Our expert team harnesses cutting-edge technology and 
+                      industry best practices to deliver innovative, scalable, and efficient
+                       software solutions. From strategic planning and development to seamless
+                        deployment and continuous support, we ensure timely delivery, 
+                        reliability, and long-term success. Start venturing digitally with us 
+                        to enhance productivity, streamline operations, and stay ahead in the competitive digital landscape.
+                    </div>
+                  </div>
+            
+
+          
+                  <div className="row">
+                    <div className="col-lg-6 col-sm-12 col-md-6" >
+
+                      <div className="milestone-box">
+                      
+                      <div className="tab-icon">
+
+                          <LazyLoadImage
+                            src="icons/team.png"
+                            alt="expert team"
+                            className="w-100 h-100"
+                                loading="lazy"
+                          />
+
+                                </div>
+                                
+                            <div className="milestone_heading">
+
+                          <div className="milestone-name">
+                            Expert Team
+                          </div>
+                       
+                        <div className="milestone-description">
+                          We've got really skilled people who are great at making top-notch software for different kinds of businesses.
+                        </div>
+
+                        </div>
+
+                      </div>
+
+                      <div className="milestone-box">
+
+                      <div className="tab-icon">
+                                  <LazyLoadImage
+                                    src="icons/computer.png"
+                                    alt="customized software"
+                                    className="w-100 h-100"
+                                       loading="lazy"
+                                  />
+                                </div>
+
+                          <div className="milestone_heading">
+                        <div className="milestone-name">
+                         Customized Software
+                        </div>
+                        <div className="milestone-description">
+                        We make software that fits exactly what your business needs
+                        </div>
+                        </div>
+
+                      </div>
+                      <div className="milestone-box">
+
+                      <div className="tab-icon">
+                                  <LazyLoadImage
+                                    src="icons/achievement.png"
+                                    alt="using the latest tech"
+                                    className="w-100 h-100"
+                                       loading="lazy"
+                                  />
+                                </div>
+
+                          <div className="milestone_heading">
+                        <div className="milestone-name">
+                        Using the Latest Tech
+                        </div>
+                        <div className="milestone-description">
+                        We always use new and advanced technology so your software is modern and ready for the future
+                        </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                    
+                    <div className="col-lg-6 col-sm-12 col-md-6">
+
+                      <div className="milestone-box">
+                      <div className="tab-icon">
+                                  <LazyLoadImage
+                                    src="icons/call.png"
+                                    alt="all about quality"
+                                    className="w-100 h-100"
+                                       loading="lazy"
+                                  />
+                                </div>
+
+                                <div className="milestone_heading">
+                        <div className="milestone-name">
+                          All About Quality
+                        </div>
+                        <div className="milestone-description">
+                         We focus on making sure everything is high-quality, from the start of the project to the end.
+                        </div>
+                        </div>
+
+                      </div>
+                   
+                      <div className="milestone-box">
+                      <div className="tab-icon">
+                                  <LazyLoadImage
+                                    src="icons/delivered.png"
+                                    alt="on-time delivery"
+                                    className="w-100 h-100"
+                                       loading="lazy"
+                                  />
+                                </div>
+                                
+                                <div className="milestone_heading">
+                        <div className="milestone-name" >On-Time Delivery</div>
+                        <div className="milestone-description">
+                        We know time is important, so we make sure to finish your project on schedule without compromising quality.
+                        </div>
+                        </div>
+
+                      </div>
+
+                      <div className="milestone-box">
+
+                      <div className="tab-icon">
+                                  <LazyLoadImage
+                                    src="icons/help.png"
+                                    alt="help and upkeep"
+                                    className="w-100 h-100"
+                                       loading="lazy"
+                                  />
+                                </div>
+                               
+                                <div className="milestone_heading">
+                        <div className="milestone-name" >Help and Upkeep</div>
+                        <div className="milestone-description">
+                        Even after your software is up and running, we're here to help and keep it working great.
+                        </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+          
+       
+
+            </div>
+          </div>
+        </div>
+      </section>
+
        {/* <------------------------------------------- What's New -----------------------------------------------------> */}
        <section id="whats-new">
         <div className="container-fluid">
@@ -1974,8 +1994,9 @@ function Home({ target, label }) {
             <div className="section-content">
               <div className="whats-tabs">
                 <div className="tab-container">
+                <Slider {...settings}>
                   {blogs &&
-                    blogs.slice(0, 3).map((item) => {
+                    blogs.map((item) => {
                       const cleanedDescription = item.content.replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '');
                       return (
                         <NavLink to="/Blogs" className="blog-box" key={item.id}>
@@ -2003,6 +2024,7 @@ function Home({ target, label }) {
                         </NavLink>
                       );
                     })}
+                    </Slider>
                 </div>
               </div>
             </div>

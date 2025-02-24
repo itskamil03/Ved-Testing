@@ -4,6 +4,7 @@ import "./BlogDetails.css";
 import BlogDetailsHero from "../../components/BlogDetails_components/BlogDetailsHero";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+
 function BlogDetails() {
 
   const [blogDetail, setBlogDetails] = useState([]);
@@ -34,7 +35,12 @@ function BlogDetails() {
       });
   }, []);
 
+  const decodeHtmlEntities = (html) => {
+    const doc = new DOMParser().parseFromString(html, "text/html");
+    return doc.body.innerHTML;
+  };
 
+  
 
   return (
     <div>
@@ -45,14 +51,11 @@ function BlogDetails() {
       <div className="blog_container">
         <div className="blog_content" style={{width:"100%"}}>
           <div className="left_content">
-            {/* CARD BEGINNING */}
-           
-              
-
+         
                   <div className="blog_card">
                   <Link to="/article" className="figure" key={blogDetail.id}>
                     <LazyLoadImage
-                    src={`https://ved.venturingdigitally.com/assets/img/blog/${blogDetail.image}`}
+                    src={`${blogDetail.image}`}
                      alt={blogDetail.blog_title}
                      loading="lazy"
                      className="bloges-card-img-img w-100 h-100"
@@ -64,16 +67,18 @@ function BlogDetails() {
                     <Link to="#" className="title">
                       {blogDetail.blog_title}
                     </Link>
-                    <p
-                    dangerouslySetInnerHTML={{ __html: blogDetail.content.replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '').replace(/\s\s+/g, ' ') }}>
-                     
-                    </p>
+
+                    <div style={{fontSize:"13px"}}
+                     dangerouslySetInnerHTML={{
+                    __html: decodeHtmlEntities(blogDetail.content)
+                }}
+              />
+
                   </section>
                   </div>
             
            
-            {/* CARD ENDS */}
-            {/* Other blog cards go here... */}
+       
 
             {blogLatest.map((card) => (
                 
@@ -81,7 +86,7 @@ function BlogDetails() {
             <div className="blog_card">
               <Link to="/article" className="figure" key={card.id}>
                 <LazyLoadImage
-                  src={`https://ved.venturingdigitally.com/assets/img/blog/${card.image}`}
+                  src={`${card.image}`}
                   alt=""
                   loading="lazy"
                   className="bloges-card-img-img w-100 h-100"
@@ -92,10 +97,11 @@ function BlogDetails() {
                 <Link to="#" className="title">
                 {card.blog_title}
                 </Link>
-                <p           
-                     
-                      dangerouslySetInnerHTML={{ __html: card.content.replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '').replace(/\s\s+/g, ' ') }}
-                    ></p>
+                <div style={{fontSize:"13px"}}
+                dangerouslySetInnerHTML={{
+                  __html: decodeHtmlEntities(blogDetail.content)
+                }}
+              />
               </section>
             </div>
             ))}
@@ -118,21 +124,20 @@ function BlogDetails() {
                 <Link to="#" key={card.id}>
                 
                     <LazyLoadImage
-                      src={`https://ved.venturingdigitally.com/assets/img/blog/${card.image}`}
+                      src={`${card.image}`}
                       alt={card.blog_title}
                       loading="lazy"
                       className="bloges-card-img-img w-10 h-20"
                       style={{width:"60px"}}
                     />
-                       <p  style ={{fontSize:"14px"}} dangerouslySetInnerHTML={{ 
-                __html: card.content
-                  .replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '') 
-                  .replace(/\s\s+/g, ' ') 
-                  .split(/\s+/) 
-                  .slice(0, 18) 
-                  .join(' ') + '...' 
-              }}></p>
-                
+                           <div style={{fontSize:"12px"}}
+                      dangerouslySetInnerHTML={{
+                        __html: decodeHtmlEntities(card.content)
+                          .split(" ")
+                          .slice(0, 20)
+                          .join(" ") + "..."
+                      }}
+                    />
                 </Link>
               ))}
               </section>
@@ -152,17 +157,18 @@ function BlogDetails() {
                   onMouseOver={(e) => e.target.stop()}
                   onMouseOut={(e) => e.target.start()}
                   className="marquee2"
+                  height="200px"
                 >
-                   {blogtrends.slice(0,2).map((card) => (
+                   {blogtrends.slice(0,3).map((card) => (
                
-               <p style ={{fontSize:"14px"}} dangerouslySetInnerHTML={{ 
-                __html: card.content
-                  .replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '') 
-                  .replace(/\s\s+/g, ' ') 
-                  .split(/\s+/) 
-                  .slice(0, 18) 
-                  .join(' ') + '...' 
-              }}></p>
+               <div style={{fontSize:"12px"}}
+               dangerouslySetInnerHTML={{
+                 __html: decodeHtmlEntities(card.content)
+                   .split(" ")
+                   .slice(0, 20)
+                   .join(" ") + "..."
+               }}
+             />
                 
               
                    ))}

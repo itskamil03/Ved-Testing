@@ -3,6 +3,7 @@ import "./CostCalculator.css";
 import Hero from "../../components/hero_section/Hero";
 import Calculateimage from "../../assets/calculator.png"
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { toast,ToastContainer } from "react-toastify";
 
 function CostCalculator() {
   const [activeTab, setActiveTab] = useState(1);
@@ -11,11 +12,13 @@ function CostCalculator() {
   // Add a new field with initial values
   const handleAddField = () => {
     setFields([...fields, { value: "", count: 0 }]);
+  
   };
 
   // Remove a specific field by index
   const handleRemoveField = (index) => {
     setFields(fields.filter((_, idx) => idx !== index));
+
   };
 
   // Change the skill count dynamically
@@ -27,6 +30,7 @@ function CostCalculator() {
           : field
       )
     );
+ 
   };
 
   // Handle tab switching
@@ -42,15 +46,35 @@ function CostCalculator() {
     desc:"",
   });
 
+  const [formCreate, setFormCreate] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    location:"",
+    desc:"",
+    skills:[]
+  });
+
   const handleChange = (e) => {
 
     const { name } = e.target;
 
-     
        setFormData({
          ...formData,
          [name]: e.target.value,
        });
+     
+   };
+
+   const handleChangeTeam = (e) => {
+
+
+       const { name } = e.target;
+    
+       setFormCreate({
+          ...formCreate,
+          [name]: e.target.value,
+        });
      
    };
 
@@ -76,14 +100,78 @@ function CostCalculator() {
           mobile: "",
           location: "",
           desc: "",})  
+
+          toast.success("Form Submitted Successfully", {
+            position: "top-right",
+            autoClose: 2000,
+          });
       } 
+
+      else {
+        toast.error("Submission failed. Please try again.", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+      }
     } catch (error) {
       console.error("An error occurred while submitting the form:", error);
     }
   }
 
+  const handleSkillChange = (index, value) => {
+    const updatedFields = fields.map((f, idx) =>
+      idx === index ? { ...f, value } : f
+    );
+    setFields(updatedFields);
+    setFormCreate((prev) => ({ ...prev, skills: updatedFields }));
+  };
+
+  const handleClick = async(e)=>
+    {
+      e.preventDefault();
+      try {
+        const response = await fetch(
+          "https://ved.venturingdigitally.com/api/createTeam",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formCreate),
+          }
+        );
+  
+        if (response.status == 200) {
+         
+          setFormCreate({ name: "",
+            email: "",
+            mobile: "",
+            location: "",
+            desc: "",
+            skills:[]
+          })  
+          toast.success("Form Submitted Successfully", {
+            position: "top-right",
+            autoClose: 2000,
+          });
+        } 
+        else {
+          toast.error("Submission failed. Please try again.", {
+            position: "top-right",
+            autoClose: 2000,
+          });
+        }
+      } catch (error) {
+        console.error("An error occurred while submitting the form:", error);
+      }
+    }
+
+  
+
   return (
     <>
+
+      <ToastContainer/>
       <Hero
         heading="Development Cost Calculator"
         imgbtn="Calculator"
@@ -129,10 +217,11 @@ function CostCalculator() {
                     <div className="tab-content">
                       {/* Tab 1: Create Team */}
                       {activeTab === 1 && (
-                        <div id="create-team" className="costformcontent">
+                        <form id="create-team" onSubmit={handleClick} className="costformcontent">
                           <div className="group-input">
-                            <label htmlFor="address">Address</label>
-                            <input type="text" name="address" />
+                            <label htmlFor="location">Address</label>
+                            <input type="text" name="location" value={formCreate.location} onChange={handleChangeTeam}
+                          required={true} />
                           </div>
                           <div className="group-input">
                             <div className="skill-label">
@@ -149,15 +238,8 @@ function CostCalculator() {
                                   <select
                                     name="skill"
                                     value={field.value}
-                                    onChange={(e) =>
-                                      setFields((prevFields) =>
-                                        prevFields.map((f, idx) =>
-                                          idx === index
-                                            ? { ...f, value: e.target.value }
-                                            : f
-                                        )
-                                      )
-                                    }
+                                    required={true}
+                                    onChange={(e) => handleSkillChange(index, e.target.value)}
                                   >
                                     <option value="nextjs">Next Js</option>
                                     <option value="nodejs">Node Js</option>
@@ -201,26 +283,30 @@ function CostCalculator() {
                           </div>
                           <div className="group-input">
                             <label htmlFor="name">Company Name</label>
-                            <input type="text" name="name" />
+                            <input type="text" name="name" value={formCreate.name}  onChange={handleChangeTeam}
+                          required={true} />
                           </div>
                           <div className="group-input">
                             <label htmlFor="email">Company E-Mail</label>
-                            <input type="email" name="email" />
+                            <input type="email" name="email" value={formCreate.email} onChange={handleChangeTeam}
+                          required={true} />
                           </div>
                           <div className="group-input">
-                            <label htmlFor="contact">Company Contact Number</label>
-                            <input type="number" name="contact" />
+                            <label htmlFor="mobile">Company Contact Number</label>
+                            <input type="number" name="mobile" value={formCreate.mobile}  onChange={handleChangeTeam}
+                          required={true} />
                           </div>
                           <div className="group-input">
-                            <label htmlFor="about">Tell more about that</label>
-                            <textarea name="about"></textarea>
+                            <label htmlFor="desc">Tell more about that</label>
+                            <textarea name="desc" value={formCreate.desc} onChange={handleChangeTeam}
+                          required={true}></textarea>
                           </div>
                           <div className="group-input">
                             <button className="calculate" type="submit">
                               Calculate
                             </button>
                           </div>
-                        </div>
+                        </form>
                       )}
 
                       {/* Tab 2: Request Sales */}

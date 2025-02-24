@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useState } from "react";
 import { MultiSelect } from "primereact/multiselect";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const solutions = [
@@ -238,6 +238,7 @@ function LifeAtVed() {
 
   return (
     <>
+       <ToastContainer/>
       <Hero
         heading="Training & Internship"
         imgbtn="Training & Internship"
@@ -402,7 +403,7 @@ function LifeAtVed() {
                   <div className="health-content">
                     <div className="form-container">
                       <div className="form-header">
-                        <h2>Registration From</h2>
+                        <h2>Registration Form</h2>
                       </div>
 
                       <form onSubmit={handleSubmit}>

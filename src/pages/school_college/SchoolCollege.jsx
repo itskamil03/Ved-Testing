@@ -15,6 +15,7 @@ function SchoolCollage() {
   const toggleTab = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
+  
   return (
     <>
       <Hero

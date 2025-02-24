@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./ContactForm.css";
 // import VideoBg from "../../assets/contact-form/contact-form.mp4";
 import { Button } from "@mui/material";
+import {toast ,ToastContainer } from "react-toastify";
 // import { Link, unstable_HistoryRouter } from "react-router-dom";
 
 function ContactForm() {
@@ -13,6 +14,8 @@ function ContactForm() {
     business_type: "",
     about_project: "",
   });
+
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -28,7 +31,7 @@ function ContactForm() {
         }
       );
 
-      // Handle the response from the Laravel API
+
       if (response.status == 200) {
 
         setFormData({ name: "",
@@ -36,16 +39,25 @@ function ContactForm() {
           mobile: "",
           business_type: "",
           about_project: ""})
-        // Form submission was successful
+ 
+          toast.success("Form Submitted Successfully", {
+            position: "top-right",
+            autoClose: 2000,
+          });
     
       } else {
-        // Form submission failed
+        toast.error("Submission failed. Please try again.", {
+          position: "top-right",
+          autoClose: 2000,
+        });
      
       }
     } catch (error) {
       console.error("An error occurred while submitting the form:", error);
     }
   };
+
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -57,6 +69,7 @@ function ContactForm() {
   };
   return (
     <>
+       <ToastContainer/>
       <div className="contact-forms">
         <div className="container-fluid">
           <div className="container">
