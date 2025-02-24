@@ -63,13 +63,13 @@ function ContactForm() {
             <div className="contact-form-container">
               <div className="form-container-main">
                 <div className="form-container-left">
-                  <div className="contact-form-leftside">
+                  <div data-aos="fade-right" className="contact-form-leftside">
                     <div>Have a Project?</div>
                     <div>We would love to help.</div>
                   </div>
                 </div>
 
-                <div className="form-container-form">
+                <div data-aos="fade-left" className="form-container-form">
                   <form onSubmit={handleSubmit}>
                     <div className="input-block">
                       <div className="input-head">Send us a message!</div>

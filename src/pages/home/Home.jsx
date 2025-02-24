@@ -51,7 +51,7 @@ function Home({ target, label }) {
 
 
 
-  const targets = [80, 11, 10, 110]; 
+  const targets = [80, 11, 10, 110];
 
   const formemories = {
     responsiveClass: true,
@@ -78,9 +78,9 @@ function Home({ target, label }) {
       },
     },
   };
-  
 
-  const [counters, setCounters] = useState(targets.map(() => ({ value: 0 }))); 
+
+  const [counters, setCounters] = useState(targets.map(() => ({ value: 0 })));
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -91,7 +91,7 @@ function Home({ target, label }) {
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 } 
+      { threshold: 0.3 }
     );
 
     if (sectionRef.current) {
@@ -169,7 +169,7 @@ function Home({ target, label }) {
     },
   ];
 
- 
+
 
   const handleViewMore = () => {
     setShowMore(!showMore);
@@ -263,8 +263,8 @@ function Home({ target, label }) {
             <div className="section-content">
               <div className="row">
                 <div className="col-lg-4 my-auto">
-                  <h1 className="title-1">Who We Work With</h1>
-                  <p className="title-2 page_title">
+                  <h1 data-aos="fade-right" className="title-1">Who We Work With</h1>
+                  <p data-aos="fade-right" className="title-2 page_title">
                     Venturing Digitally as a leading Software Design, Development and Service company
                     in India, we worked with 120+ businesses either it is a
                     start-up or enterprise and delivers the best solution in the
@@ -276,7 +276,7 @@ function Home({ target, label }) {
                 <div className="col-lg-8">
                   <div className="what-do-grid">
                     <div className="row">
-                      <div className="col-lg-6 col-md-6">
+                      <div data-aos="fade-left" className="col-lg-6 col-md-6">
                         <Link
                           className="whatwedo-link"
                           to="/WebsiteDevelopment"
@@ -297,7 +297,7 @@ function Home({ target, label }) {
                         </Link>
                       </div>
 
-                      <div className="col-lg-6 col-md-6">
+                      <div data-aos="fade-left" className="col-lg-6 col-md-6">
                         <Link
                           className="whatwedo-link"
                           to="/ApplicationDevelopment"
@@ -317,7 +317,7 @@ function Home({ target, label }) {
                           </div>
                         </Link>
                       </div>
-                      <div className="col-lg-6 col-md-6">
+                      <div data-aos="fade-left" className="col-lg-6 col-md-6">
                         <Link
                           className="whatwedo-link"
                           to="/SoftwareDevelopment"
@@ -335,7 +335,7 @@ function Home({ target, label }) {
                           </div>
                         </Link>
                       </div>
-                      <div className="col-lg-6 col-md-6">
+                      <div data-aos="fade-left" className="col-lg-6 col-md-6">
                         <Link className="whatwedo-link" to="/BrandReputation">
                           <div className="what-do-box">
                             <div className="what-do-icon">
@@ -343,7 +343,7 @@ function Home({ target, label }) {
                                 src="image/home/work/Agencies.png"
                                 alt="brand reputation"
                                 className="w-100 h-100"
-                                   loading="lazy"
+                                loading="lazy"
                               />
                             </div>
                             <h3 className="what-do-name">OIL & GAS Industry</h3>
@@ -359,9 +359,9 @@ function Home({ target, label }) {
         </div>
       </section>
 
-       {/* <------------------------------------------------- Development Process --------------------------------------------> */}
-      
-      
+      {/* <------------------------------------------------- Development Process --------------------------------------------> */}
+
+
       {/* <----------------------Improve and Innovate with the Tech Trends----------------> */}
       <section id="innovate" className="bg-light">
         <div className="container-fluid">
@@ -369,11 +369,11 @@ function Home({ target, label }) {
             <div className="section-head">
               <div className="custom-head">
                 <div className="circle"></div>
-                <h2 className="head-title bg-light">
+                <h2 data-aos="zoom-in" className="head-title bg-light">
                   Improve and Innovate with the Tech Trends
                 </h2>
               </div>
-              <div className="head-slogan page_title">
+              <div data-aos="zoom-in" className="head-slogan page_title">
                 At Venturing Digitally, we pride ourselves on staying at the
                 forefront of technological innovation. Our team of experts is
                 always exploring the latest trends in web development, mobile
@@ -382,7 +382,7 @@ function Home({ target, label }) {
                 competitive edge.
               </div>
             </div>
-            <div className="section-content" style={{height:"560px"}}>
+            <div className="section-content" style={{ height: "560px" }}>
               <div className="wrapper">
                 <div className="tabs">
                   <div className="tab">
@@ -395,30 +395,30 @@ function Home({ target, label }) {
                       checked={selectedTab === "tab1"}
                       onChange={handleTabChange}
                     />
-                    <label htmlFor="tab-1" className="tab-label">
-                      <LazyLoadImage src="images/icon/web-development.png" alt="web development"    loading="lazy"/>
-                      <h6 style={{fontSize:"1.2rem", paddingTop:"4px"}}>Web Development</h6>
+                    <label htmlFor="tab-1" data-aos="fade-left" className="tab-label">
+                      <LazyLoadImage src="images/icon/web-development.png" alt="web development" loading="lazy" />
+                      <h6 style={{ fontSize: "1.2rem", paddingTop: "4px" }}>Web Development</h6>
                     </label>
                     {selectedTab === "tab1" && (
                       <div className="tab-content">
-                        <div className="info page_title">
+                        <div data-aos="fade-right" className="info page_title">
                           Building a Digital front door for your business with
                           stunning website design and development that attracts
                           customers and drives growth.
                         </div>
                         <div className="tab-grid">
-                          <div className="tab-grid-head">
+                          <div data-aos="fade-up" className="tab-grid-head">
                             <div>Service Included</div>
                           </div>
                           <div className="row">
                             <div className="col-lg-6 col-md-6 ">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="website development"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -427,13 +427,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="industrial website development"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -442,13 +442,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="enterprise website development"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -456,14 +456,14 @@ function Home({ target, label }) {
                                 </h5>
                               </div>
                             </div>
-                            <div className="col-lg-6 col-md-6">
+                            <div data-aos="fade-left" className="col-lg-6 col-md-6">
                               <div className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="e-commerce website development"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -471,14 +471,14 @@ function Home({ target, label }) {
                                 </h5>
                               </div>
                             </div>
-                            <div className="col-lg-6 col-md-6">
+                            <div data-aos="fade-right" className="col-lg-6 col-md-6">
                               <div className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="content management systems (CMS) development"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -486,14 +486,14 @@ function Home({ target, label }) {
                                 </h5>
                               </div>
                             </div>
-                            <div className="col-lg-6 col-md-6">
+                            <div data-aos="fade-left" className="col-lg-6 col-md-6">
                               <div className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="mobile responsive website design"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -501,14 +501,14 @@ function Home({ target, label }) {
                                 </h5>
                               </div>
                             </div>
-                            <div className="col-lg-6 col-md-6">
+                            <div data-aos="fade-right" className="col-lg-6 col-md-6">
                               <div className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="web application development"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -516,14 +516,14 @@ function Home({ target, label }) {
                                 </h5>
                               </div>
                             </div>
-                            <div className="col-lg-6 col-md-6">
+                            <div data-aos="fade-left" className="col-lg-6 col-md-6">
                               <div className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="website maintenance and support"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -547,30 +547,30 @@ function Home({ target, label }) {
                       checked={selectedTab === "tab2"}
                       onChange={handleTabChange}
                     />
-                    <label htmlFor="tab-2" className="tab-label">
-                      <LazyLoadImage src="images/icon/app-development.png" alt="..."    loading="lazy"/>
-                      <h6 style={{fontSize:"1.2rem", paddingTop:"4px"}}>Mobile App Development</h6>
+                    <label htmlFor="tab-2" data-aos="fade-left" className="tab-label">
+                      <LazyLoadImage src="images/icon/app-development.png" alt="..." loading="lazy" />
+                      <h6 style={{ fontSize: "1.2rem", paddingTop: "4px" }}>Mobile App Development</h6>
                     </label>
                     {selectedTab === "tab2" && (
                       <div className="tab-content">
-                        <div className="info">
+                        <div data-aos="fade-right" className="info">
                           Empowering your business to go with customized-built
                           Mobile Application that bring your products and
                           services to your customers fingertips.
                         </div>
                         <div className="tab-grid">
-                          <div className="tab-grid-head">
+                          <div data-aos="fade-up" className="tab-grid-head">
                             <div>Service Included</div>
                           </div>
                           <div className="row">
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="mobile application development"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -579,13 +579,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="cross-platform application development"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -594,13 +594,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="hybrid application development"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -609,13 +609,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="mobile game application development"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -624,13 +624,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="mobile application development"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -639,13 +639,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="mobile app testing"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -654,13 +654,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="mobile app maintenance and support"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -684,30 +684,30 @@ function Home({ target, label }) {
                       checked={selectedTab === "tab3"}
                       onChange={handleTabChange}
                     />
-                    <label htmlFor="tab-3" className="tab-label">
-                      <LazyLoadImage src="images/icon/software.png" alt="software"    loading="lazy"/>
-                      <h6 style={{fontSize:"1.2rem", paddingTop:"4px"}}>Software</h6>
+                    <label htmlFor="tab-3" data-aos="fade-left" className="tab-label">
+                      <LazyLoadImage src="images/icon/software.png" alt="software" loading="lazy" />
+                      <h6 style={{ fontSize: "1.2rem", paddingTop: "4px" }}>Software</h6>
                     </label>
                     {selectedTab === "tab3" && (
                       <div className="tab-content">
-                        <div className="info">
+                        <div data-aos="fade-left" className="info">
                           Streamlining your business processes and maximizing
                           customer satisfaction with powerful software solutions
                           that provide real-time insights.
                         </div>
                         <div className="tab-grid">
-                          <div className="tab-grid-head">
+                          <div data-aos="fade-up" className="tab-grid-head">
                             <div>Service Included</div>
                           </div>
                           <div className="row">
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="hospital management software"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -716,13 +716,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="sales & service CRM"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -731,13 +731,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="inventory management software"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -746,13 +746,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="human resource management software"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -761,13 +761,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="document management software"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -776,13 +776,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="learning management software"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -791,13 +791,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="quality management software"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -806,26 +806,26 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="billing software"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">Billing Software</h5>
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="e-LogBook and e-BMR"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -834,13 +834,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="lubricant managemnt software"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -863,30 +863,30 @@ function Home({ target, label }) {
                       checked={selectedTab === "tab4"}
                       onChange={handleTabChange}
                     />
-                    <label htmlFor="tab-4" className="tab-label">
-                      <LazyLoadImage src="images/icon/digitalmarketing.png" alt="digital marketing"    loading="lazy" />
-                      <h6 style={{fontSize:"1.2rem", paddingTop:"4px"}}>Digital Marketing </h6>
+                    <label htmlFor="tab-4" data-aos="fade-left" className="tab-label">
+                      <LazyLoadImage src="images/icon/digitalmarketing.png" alt="digital marketing" loading="lazy" />
+                      <h6 style={{ fontSize: "1.2rem", paddingTop: "4px" }}>Digital Marketing </h6>
                     </label>
                     {selectedTab === "tab4" && (
                       <div className="tab-content">
-                        <div className="info">
+                        <div data-aos="fade-right" className="info">
                           Harnessing the power of online marketing to drive
                           traffic, increase brand awareness, and boost your ROI
                           with targeted SEO, PPC, and social media campaigns.
                         </div>
                         <div className="tab-grid">
-                          <div className="tab-grid-head">
+                          <div data-aos="fade-up" className="tab-grid-head">
                             <div>Service Included</div>
                           </div>
                           <div className="row">
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="search engine optimization"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h6 className="tab-name">
@@ -895,13 +895,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="pay-per-click (PPC) advertising"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h6 className="tab-name">
@@ -910,13 +910,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="social media marketing"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h6 className="tab-name">
@@ -925,26 +925,26 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="email marketing"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h6 className="tab-name">Email marketing</h6>
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="content marketing"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h6 className="tab-name">
@@ -953,26 +953,26 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="video marketing"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h6 className="tab-name">Video marketing</h6>
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="affiliate marketing"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h6 className="tab-name">
@@ -981,13 +981,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="analytics and reporting"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h6 className="tab-name">
@@ -1010,43 +1010,43 @@ function Home({ target, label }) {
                       checked={selectedTab === "tab5"}
                       onChange={handleTabChange}
                     />
-                    <label htmlFor="tab-5" className="tab-label">
-                      <LazyLoadImage src="images/icon/ui.png" alt="..."    loading="lazy" />
-                      <h5 style={{fontSize:"1.2rem", paddingTop:"4px"}}>UI/UX Design</h5>
+                    <label htmlFor="tab-5" data-aos="fade-left" className="tab-label">
+                      <LazyLoadImage src="images/icon/ui.png" alt="..." loading="lazy" />
+                      <h5 style={{ fontSize: "1.2rem", paddingTop: "4px" }}>UI/UX Design</h5>
                     </label>
                     {selectedTab === "tab5" && (
                       <div className="tab-content">
-                        <div className="info">
+                        <div data-aos="fade-right" className="info">
                           Crafting immersive, user-centered design experiences
                           that captivate your audience and drive engagement,
                           loyalty, and growth.
                         </div>
                         <div className="tab-grid">
-                          <div className="tab-grid-head">
+                          <div data-aos="fade-up" className="tab-grid-head">
                             <div>Service Included</div>
                           </div>
                           <div className="row">
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="user research"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h6 className="tab-name">User Research</h6>
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="information architecture"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h6 className="tab-name">
@@ -1055,52 +1055,52 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="wireframing"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h6 className="tab-name">Wireframing</h6>
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="prototyping"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h6 className="tab-name">Prototyping</h6>
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="visual design"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h6 className="tab-name">Visual Design</h6>
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="interaction design"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <div className="tab-name">
@@ -1109,13 +1109,13 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="user testing"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h6 className="tab-name">User Testing</h6>
@@ -1137,45 +1137,45 @@ function Home({ target, label }) {
                       checked={selectedTab === "tab6"}
                       onChange={handleTabChange}
                     />
-                    <label htmlFor="tab-6" className="tab-label">
-                      <LazyLoadImage src="images/icon/devops.png" alt="devops"    loading="lazy"/>
-                      <h6 style={{fontSize:"1.2rem", paddingTop:"4px"}}>DevOps</h6>
+                    <label htmlFor="tab-6" data-aos="fade-left" className="tab-label">
+                      <LazyLoadImage src="images/icon/devops.png" alt="devops" loading="lazy" />
+                      <h6 style={{ fontSize: "1.2rem", paddingTop: "4px" }}>DevOps</h6>
                     </label>
                     {selectedTab === "tab6" && (
                       <div className="tab-content">
-                        <div className="info page_title">
-                        Building a robust and scalable digital infrastructure for your business with
-                         cutting-edge DevOps practices. From CI/CD automation to cloud deployment,
-                        we ensure seamless development, efficient operations, and rapid delivery, driving innovation and growth.
+                        <div data-aos="fade-right" className="info page_title">
+                          Building a robust and scalable digital infrastructure for your business with
+                          cutting-edge DevOps practices. From CI/CD automation to cloud deployment,
+                          we ensure seamless development, efficient operations, and rapid delivery, driving innovation and growth.
                         </div>
                         <div className="tab-grid">
-                          <div className="tab-grid-head">
+                          <div data-aos="fade-up" className="tab-grid-head">
                             <div>Service Included</div>
                           </div>
                           <div className="row">
                             <div className="col-lg-6 col-md-6 ">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="ci/cd"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
-                                Continuous Integration & Continuous Deployment
+                                  Continuous Integration & Continuous Deployment
                                 </h5>
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="infrastructure as code"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -1184,43 +1184,43 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="configuration management"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
-                                Configuration Management
+                                  Configuration Management
                                 </h5>
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="cloud computing"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
-                                Cloud Computing & Deployment
+                                  Cloud Computing & Deployment
                                 </h5>
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="monitoring & logging"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
@@ -1229,47 +1229,47 @@ function Home({ target, label }) {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="security & compliance"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
-                                 Security & Compliance
+                                  Security & Compliance
                                 </h5>
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-right" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="automated testing"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
-                                 Automated Testing
+                                  Automated Testing
                                 </h5>
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div className="tab-box">
+                              <div data-aos="fade-left" className="tab-box">
                                 <div className="tab-icon">
                                   <LazyLoadImage
                                     src="images/icon/check.png"
                                     alt="site reliability engineering"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    loading="lazy"
                                   />
                                 </div>
                                 <h5 className="tab-name">
-                                Site Reliability Engineering
+                                  Site Reliability Engineering
                                 </h5>
                               </div>
                             </div>
@@ -1295,8 +1295,8 @@ function Home({ target, label }) {
               <div className="row">
                 <div className="col-lg-6 my-auto">
                   <div className="milestone-info">
-                    <div className="head">Who We Are</div>
-                    <div className="content page_title">
+                    <div data-aos="fade-right" className="head">Who We Are</div>
+                    <div data-aos="fade-right" className="content page_title">
                       Venturing digitally lies in delivering Top-quality IT Services &
                       Solutions across a wide range of industries. With over 80+
                       successful websites delivered, 11+ mobile applications
@@ -1315,16 +1315,16 @@ function Home({ target, label }) {
                   <div className="row">
                     <div className="col-lg-6 col-sm-12 col-md-6 who-we-are" >
 
-                      <div className="milestone-box">
+                      <div data-aos="fade-left" className="milestone-box">
                         <div className="milestone-count">{counters[0].value}+</div>
                         <div className="milestone-name">
                           Successful Websites Delivered
                         </div>
                         <div className="milestone-description">
-                         High-performance websites built with user-focused designs.
+                          High-performance websites built with user-focused designs.
                         </div>
                       </div>
-                      <div className="milestone-box">
+                      <div data-aos="fade-left" className="milestone-box">
                         <div className="milestone-count">{counters[1].value}+</div>
                         <div className="milestone-name">
                           Mobile Applications Developed
@@ -1335,10 +1335,10 @@ function Home({ target, label }) {
                       </div>
 
                     </div>
-                    
+
                     <div className="col-lg-6 col-sm-12 col-md-6">
 
-                      <div className="milestone-box">
+                      <div data-aos="fade-left" className="milestone-box">
                         <div className="milestone-count">{counters[2].value}+</div>
                         <div className="milestone-name">
                           Software Solutions Deployed
@@ -1347,12 +1347,12 @@ function Home({ target, label }) {
                           Innovative software solutions tailored to client needs.
                         </div>
                       </div>
-                   
-                      <div className="milestone-box">
+
+                      <div data-aos="fade-left" className="milestone-box">
                         <div className="milestone-count">{counters[3].value}+</div>
                         <div className="milestone-name" >Successful Clients</div>
                         <div className="milestone-description">
-                         Satisfied clients benefiting from our expertise.
+                          Satisfied clients benefiting from our expertise.
                         </div>
                       </div>
 
@@ -1370,173 +1370,165 @@ function Home({ target, label }) {
           <div className="container">
             <div className="milestone-grid">
 
-         
 
-          
-                  <div className="milestone-info">
-                    <div className="head_title">Why Choose Us?</div>
-                    <div className="content page_title">
-                    With over 3+ years of experience in the software industry, we empower
-                     businesses to thrive in the digital world with tailor-made, high-quality
-                      solutions. Our expert team harnesses cutting-edge technology and 
-                      industry best practices to deliver innovative, scalable, and efficient
-                       software solutions. From strategic planning and development to seamless
-                        deployment and continuous support, we ensure timely delivery, 
-                        reliability, and long-term success. Start venturing digitally with us 
-                        to enhance productivity, streamline operations, and stay ahead in the competitive digital landscape.
+
+
+              <div className="milestone-info">
+                <div data-aos="zoom-in" className="head_title">Why Choose Us?</div>
+                <div data-aos="zoom-in" className="content page_title">
+                  With over 3+ years of experience in the software industry, we empower
+                  businesses to thrive in the digital world with tailor-made, high-quality
+                  solutions. Our expert team harnesses cutting-edge technology and
+                  industry best practices to deliver innovative, scalable, and efficient
+                  software solutions. From strategic planning and development to seamless
+                  deployment and continuous support, we ensure timely delivery,
+                  reliability, and long-term success. Start venturing digitally with us
+                  to enhance productivity, streamline operations, and stay ahead in the competitive digital landscape.
+                </div>
+              </div>
+
+
+
+              <div className="row">
+                <div className="col-lg-6 col-sm-12 col-md-6" >
+
+                  <div data-aos="fade-right" className="milestone-box">
+
+                    <div className="tab-icon">
+
+                      <LazyLoadImage
+                        src="icons/team.png"
+                        alt="expert team"
+                        className="w-100 h-100"
+                        loading="lazy"
+                      />
+
                     </div>
-                  </div>
-            
 
-          
-                  <div className="row">
-                    <div className="col-lg-6 col-sm-12 col-md-6" >
+                    <div className="milestone_heading">
 
-                      <div className="milestone-box">
-                      
-                      <div className="tab-icon">
-
-                          <LazyLoadImage
-                            src="icons/team.png"
-                            alt="expert team"
-                            className="w-100 h-100"
-                                loading="lazy"
-                          />
-
-                                </div>
-                                
-                            <div className="milestone_heading">
-
-                          <div className="milestone-name">
-                            Expert Team
-                          </div>
-                       
-                        <div className="milestone-description">
-                          We've got really skilled people who are great at making top-notch software for different kinds of businesses.
-                        </div>
-
-                        </div>
-
+                      <div className="milestone-name">
+                        Expert Team
                       </div>
 
-                      <div className="milestone-box">
+                      <div className="milestone-description">
+                        We've got really skilled people who are great at making top-notch software for different kinds of businesses.
+                      </div>
 
-                      <div className="tab-icon">
-                                  <LazyLoadImage
-                                    src="icons/computer.png"
-                                    alt="customized software"
-                                    className="w-100 h-100"
-                                       loading="lazy"
-                                  />
-                                </div>
+                    </div>
 
-                          <div className="milestone_heading">
-                        <div className="milestone-name">
-                         Customized Software
-                        </div>
-                        <div className="milestone-description">
+                  </div>
+
+                  <div data-aos="fade-right" className="milestone-box">
+
+                    <div className="tab-icon">
+                      <LazyLoadImage
+                        src="icons/computer.png"
+                        alt="customized software"
+                        className="w-100 h-100"
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <div className="milestone_heading">
+                      <div className="milestone-name">
+                        Customized Software
+                      </div>
+                      <div className="milestone-description">
                         We make software that fits exactly what your business needs
-                        </div>
-                        </div>
-
                       </div>
-                      <div className="milestone-box">
-
-                      <div className="tab-icon">
-                                  <LazyLoadImage
-                                    src="icons/achievement.png"
-                                    alt="using the latest tech"
-                                    className="w-100 h-100"
-                                       loading="lazy"
-                                  />
-                                </div>
-
-                          <div className="milestone_heading">
-                        <div className="milestone-name">
-                        Using the Latest Tech
-                        </div>
-                        <div className="milestone-description">
-                        We always use new and advanced technology so your software is modern and ready for the future
-                        </div>
-                        </div>
-
-                      </div>
-
                     </div>
-                    
-                    <div className="col-lg-6 col-sm-12 col-md-6">
 
-                      <div className="milestone-box">
-                      <div className="tab-icon">
-                                  <LazyLoadImage
-                                    src="icons/call.png"
-                                    alt="all about quality"
-                                    className="w-100 h-100"
-                                       loading="lazy"
-                                  />
-                                </div>
+                  </div>
+                  <div data-aos="fade-right" className="milestone-box">
 
-                                <div className="milestone_heading">
-                        <div className="milestone-name">
-                          All About Quality
-                        </div>
-                        <div className="milestone-description">
-                         We focus on making sure everything is high-quality, from the start of the project to the end.
-                        </div>
-                        </div>
+                    <div className="tab-icon">
+                      <LazyLoadImage
+                        src="icons/achievement.png"
+                        alt="using the latest tech"
+                        className="w-100 h-100"
+                        loading="lazy"
+                      />
+                    </div>
 
+                    <div className="milestone_heading">
+                      <div className="milestone-name">
+                        Using the Latest Tech
                       </div>
-                   
-                      <div className="milestone-box">
-                      <div className="tab-icon">
-                                  <LazyLoadImage
-                                    src="icons/delivered.png"
-                                    alt="on-time delivery"
-                                    className="w-100 h-100"
-                                       loading="lazy"
-                                  />
-                                </div>
-                                
-                                <div className="milestone_heading">
-                        <div className="milestone-name" >On-Time Delivery</div>
-                        <div className="milestone-description">
+                      <div className="milestone-description">
+                        We always use new and advanced technology so your software is modern and ready for the future
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div className="col-lg-6 col-sm-12 col-md-6">
+
+                  <div data-aos="fade-left" className="milestone-box">
+                    <div className="tab-icon">
+                      <LazyLoadImage
+                        src="icons/call.png"
+                        alt="all about quality"
+                        className="w-100 h-100"
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <div className="milestone_heading">
+                      <div className="milestone-name">
+                        All About Quality
+                      </div>
+                      <div className="milestone-description">
+                        We focus on making sure everything is high-quality, from the start of the project to the end.
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div data-aos="fade-left" className="milestone-box">
+                    <div className="tab-icon">
+                      <LazyLoadImage
+                        src="icons/delivered.png"
+                        alt="on-time delivery"
+                        className="w-100 h-100"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="milestone_heading">
+                      <div className="milestone-name" >On-Time Delivery</div>
+                      <div className="milestone-description">
                         We know time is important, so we make sure to finish your project on schedule without compromising quality.
-                        </div>
-                        </div>
-
                       </div>
+                    </div>
 
-                      <div className="milestone-box">
+                  </div>
 
-                      <div className="tab-icon">
-                                  <LazyLoadImage
-                                    src="icons/help.png"
-                                    alt="help and upkeep"
-                                    className="w-100 h-100"
-                                       loading="lazy"
-                                  />
-                                </div>
-                               
-                                <div className="milestone_heading">
-                        <div className="milestone-name" >Help and Upkeep</div>
-                        <div className="milestone-description">
+                  <div data-aos="fade-left" className="milestone-box">
+                    <div className="tab-icon">
+                      <LazyLoadImage
+                        src="icons/help.png"
+                        alt="help and upkeep"
+                        className="w-100 h-100"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="milestone_heading">
+                      <div className="milestone-name" >Help and Upkeep</div>
+                      <div className="milestone-description">
                         Even after your software is up and running, we're here to help and keep it working great.
-                        </div>
-                        </div>
-
                       </div>
-
                     </div>
                   </div>
-          
-       
-
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-       
+
       {/* <------------------------------------------------------- Our Solutins -----------------------------------------------------------> */}
       <section id="solutions" className="bg-light">
         <div className="container-fluid">
@@ -1544,16 +1536,16 @@ function Home({ target, label }) {
             <div className="section-head">
               <div className="custom-head">
                 <div className="circle"></div>
-                <h2 className="head-title bg-light">Our Solutions</h2>
+                <h2 data-aos="zoom-in" className="head-title bg-light">Our Solutions</h2>
               </div>
-              <div className="head-slogan page_title">
+              <div data-aos="zoom-in" className="head-slogan page_title">
                 Venturing Digitally cater to diverse industries, providing customized IT
                 solutions to meet their unique needs. We have the expertise to
                 deliver exceptional results for any industry.
               </div>
             </div>
             <div className="section-content">
-              <div className="row">
+              <div data-aos="zoom-out-up" className="row">
                 <main>
                   {cards
                     .slice(0, showMore ? cards.length : 5)
@@ -1572,22 +1564,22 @@ function Home({ target, label }) {
                           />
                           <div className="solution_info">
                             <h2 className="solution_title">{card.title}</h2>
-                            </div>
-
-                            <Link to={card.link} className="solution_link">
-                          <div
-                            className="solution_explore_more"
-                            style={{
-                              color: '#007BFF',
-                              cursor: 'pointer',
-                              textDecoration: 'underline', 
-                              textUnderlineOffset: '10px'
-                            }}
-                          >
-                            Explore More &rarr;
                           </div>
-                        </Link>
-                        
+
+                          <Link to={card.link} className="solution_link">
+                            <div
+                              className="solution_explore_more"
+                              style={{
+                                color: '#007BFF',
+                                cursor: 'pointer',
+                                textDecoration: 'underline',
+                                textUnderlineOffset: '10px'
+                              }}
+                            >
+                              Explore More &rarr;
+                            </div>
+                          </Link>
+
                         </div>
                       </Link>
                     ))}
@@ -1612,11 +1604,11 @@ function Home({ target, label }) {
         <div className="container-fluid">
           <div className="container">
             <div className="milestone-grid">
-            <h2 className="cservice-head-title head_title">
-                  Internship & Training at VED
-                </h2>
+              <h2 data-aos="zoom-in" className="cservice-head-title head_title">
+                Internship & Training at VED
+              </h2>
               <div className="row">
-                <div className="col-lg-6">
+                <div data-aos="fade-right" className="col-lg-6">
                   <LazyLoadImage
                     src="image/solution/training.jpg"
                     alt="training"
@@ -1626,12 +1618,12 @@ function Home({ target, label }) {
                 </div>
                 <div className="col-lg-6 my-auto">
                   <div className="milestone-info">
-                    <div className="head">Internship & Training</div>
+                    <div data-aos="fade-lift" className="head">Internship & Training</div>
                     <div
                       className="content page_title"
                       style={{ display: "grid", gridRowGap: "6px" }}
                     >
-                      <div>
+                      <div data-aos="fade-lift">
                         Venturing Digitally Pvt. Ltd. is dedicated to shaping
                         the future of digital professionals through focused
                         training and internships. Our programs are tailored for
@@ -1640,17 +1632,17 @@ function Home({ target, label }) {
                         aspirations.
                       </div>
                       <br />
-                      <div style={{ fontWeight: 600 }}>
+                      <div data-aos="fade-lift" style={{ fontWeight: 600 }}>
                         Explore Endless Possibilities with Us
                       </div>
-                      <div>
+                      <div data-aos="fade-lift">
                         Our mission is to equip you with real-world skills and
                         experiences that go beyond traditional classroom
                         learning. Here’s what makes our program unique:
                       </div>
                       <br />
                       <ul>
-                        <li>
+                        <li data-aos="fade-lift">
                           <span style={{ fontWeight: 600 }}>
                             {" "}
                             Flexible Options:
@@ -1659,7 +1651,7 @@ function Home({ target, label }) {
                           commitment level and learning goals.
                         </li>
                         <br />
-                        <li>
+                        <li data-aos="fade-lift">
                           <span style={{ fontWeight: 600 }}>
                             Hands-On Experience:
                           </span>{" "}
@@ -1668,7 +1660,7 @@ function Home({ target, label }) {
                           takes to thrive in the industry.
                         </li>
                         <br />
-                        <li>
+                        <li data-aos="fade-lift">
                           <span style={{ fontWeight: 600 }}>
                             Short-Term and Long-Term Internships:
                           </span>{" "}
@@ -1686,7 +1678,7 @@ function Home({ target, label }) {
         </div>
       </section>
 
-       {/* <section>
+      {/* <section>
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">
@@ -1733,12 +1725,12 @@ function Home({ target, label }) {
         </div>
       </section>  */}
 
-       <section id="lifeatvedthird">
+      <section id="lifeatvedthird">
         <div className="container-fluid">
           <div className="container">
             <div className="lifeatvedthird-section-head">
               <div className="lifeatvedthird-custom-head">
-                <h2 className="head_title">Training Verticals At VED</h2>
+                <h2 data-aos="zoom-in" className="head_title">Training Verticals At VED</h2>
               </div>
             </div>
             <OwlCarousel
@@ -1852,46 +1844,46 @@ function Home({ target, label }) {
         </div>
       </section>
 
-              <section id="join">
-              <div className="container-fluid">
+      <section id="join">
+        <div className="container-fluid">
           <div className="container">
             <div className="section-head">
-                <div
-                  style={{ display: "grid", gridRowGap: "20px" }}
-                >
-                  <div className="head-slogan page_title">
-                    Join Venturing Digitally Pvt. Ltd. to kick start your
-                    journey into the world of digital excellence. Our
-                    internships are more than just learning
-                    opportunities—they’re a Launchpad for a successful career.
-                  </div>
+              <div
+                style={{ display: "grid", gridRowGap: "20px" }}
+              >
+                <div data-aos="fade-left" className="head-slogan page_title">
+                  Join Venturing Digitally Pvt. Ltd. to kick start your
+                  journey into the world of digital excellence. Our
+                  internships are more than just learning
+                  opportunities—they’re a Launchpad for a successful career.
+                </div>
 
-                  <div className="solutin_btn">
-                    <button
-                      onClick={handleTraining}
-                      className="more_btn_solution"
-                    >
-                      View More
-                    </button>
-                  </div>
+                <div data-aos="fade-left" className="solutin_btn">
+                  <button
+                    onClick={handleTraining}
+                    className="more_btn_solution"
+                  >
+                    View More
+                  </button>
                 </div>
-                </div>
-                </div>
-                </div>
-              </section>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              
-          
+
+
       {/* Industries We Serve */}
-       <section id="industries" className="bg-light">
+      <section id="industries" className="bg-light">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">
               <div className="custom-head">
                 <div className="circle"></div>
-                <h2 className="head-title bg-light">Industries We Serve</h2>
+                <h2 data-aos="zoom-in" className="head-title bg-light">Industries We Serve</h2>
               </div>
-              <div className="head-slogan page_title">
+              <div data-aos="zoom-in" className="head-slogan page_title">
                 We cater to diverse industries, providing customized IT
                 solutions to meet their unique needs. From healthcare and
                 finance to retail and education, we have the expertise to
@@ -1900,46 +1892,46 @@ function Home({ target, label }) {
             </div>
             <div className="section-content">
               <div className="main">
-                
-                {displayedIndustries.map((inds) => (
-                 
-                    <div className="industry-box"  key={inds.id}>
-                      <Link to={inds.link}>
-                        <div className="industry-img">
-                          <LazyLoadImage
-                            src={inds.img}
-                            alt={inds.heading}
-                            className="w-100 h-100"
-                               loading="lazy"
-                          />
-                        </div>
-                        <div className="industry-content">
-                          <div className="head">{inds.heading}</div>
-                          {/* <div className="info">{inds.title}</div> */}
-                        </div>
-                        
-                        <Link to={inds.link} className="industries_link">
-                          <div
-                            className="solution_explore_more"
-                            style={{
-                              color: '#007BFF',
-                              cursor: 'pointer',
-                              textDecoration: 'underline', 
-                              textUnderlineOffset: '10px'
-                            }}
-                          >
-                            Explore More &rarr;
-                          </div>
-                        </Link>
 
+                {displayedIndustries.map((inds) => (
+
+                  <div data-aos="fade-right" className="industry-box" key={inds.id}>
+                    <Link to={inds.link}>
+                      <div className="industry-img">
+                        <LazyLoadImage
+                          src={inds.img}
+                          alt={inds.heading}
+                          className="w-100 h-100"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div className="industry-content">
+                        <div className="head">{inds.heading}</div>
+                        {/* <div className="info">{inds.title}</div> */}
+                      </div>
+
+                      <Link to={inds.link} className="industries_link">
+                        <div
+                          className="solution_explore_more"
+                          style={{
+                            color: '#007BFF',
+                            cursor: 'pointer',
+                            textDecoration: 'underline',
+                            textUnderlineOffset: '10px'
+                          }}
+                        >
+                          Explore More &rarr;
+                        </div>
                       </Link>
-               
+
+                    </Link>
+
                   </div>
                 ))}
               </div>
               {/* View More Button */}
               {industries.length > 5 && (
-                <div className="text-center mt-3">
+                <div data-aos="fade-right" className="text-center mt-3">
                   <button
                     className="more-btn-industrial"
                     onClick={() => setShowAll(!showAll)}
@@ -1953,16 +1945,16 @@ function Home({ target, label }) {
         </div>
       </section>
 
-       {/* <------------------------------------------- What's New -----------------------------------------------------> */}
-       <section id="whats-new">
+      {/* <------------------------------------------- What's New -----------------------------------------------------> */}
+      <section id="whats-new">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">
               <div className="custom-head">
                 <div className="circle"></div>
-                <h2 className="head-title">Our Latest Blogs</h2>
+                <h2 data-aos="zoom-in" className="head-title">Our Latest Blogs</h2>
               </div>
-              <div className="head-slogan page_title">
+              <div data-aos="zoom-in" className="head-slogan page_title">
                 Check out our blog section for articles and insightful thoughts
                 on the latest trends and developments in the IT industry, From
                 web development and mobile app design to digital marketing and
@@ -1997,7 +1989,7 @@ function Home({ target, label }) {
                             {/* <div className="name-block">{item.content}</div> */}
                             <div
                               className="name-block"
-                              dangerouslySetInnerHTML={{ __html:cleanedDescription }}
+                              dangerouslySetInnerHTML={{ __html: cleanedDescription }}
                             ></div>
                           </div>
                         </NavLink>
@@ -2009,7 +2001,7 @@ function Home({ target, label }) {
           </div>
         </div>
       </section>
-    
+
       <ContactForm />
       <Testimonial />
       <div>
