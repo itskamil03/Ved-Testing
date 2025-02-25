@@ -15,7 +15,7 @@ function AboutComponents() {
               <div className="custom-head">
                 <div className="circle"></div>
                 <h2
-                  data-aos="zoom-in"
+                  // data-aos="zoom-in"
                   className="head-title"
                 >
                   Venturing Digitally : Best Software Company For Your One-Stop Software Solutions!
@@ -23,7 +23,7 @@ function AboutComponents() {
               </div>
 
               <div
-                data-aos="zoom-in"
+                // data-aos="zoom-in"
                 className="head-slogan page_title"
               >
                 Best website development, Mobile Application development and ERP software in Jamshedpur, Bhopal, Bangalore, Kolkata & Nagpur - Experts in IT Solutions and Services.
@@ -34,7 +34,7 @@ function AboutComponents() {
               <div className="row">
                 <div className="col-lg-6">
                   <div className="about-media">
-                    <div data-aos="fade-right" className="about-video">
+                    <div  className="about-video"> {/*data-aos="fade-right" */}
                       <div className="about-photo">
                         <video
                           loop={true}
@@ -53,14 +53,18 @@ function AboutComponents() {
                 </div>
                 <div className="col-lg-6">
                   <div className="about-content">
-                    <h3 data-aos="fade-left"
-                      data-aos-offset="300"
-                      data-aos-easing="ease-in-sine" className="content-head">
+                    <h3 
+                    // data-aos="fade-left"
+                    //   data-aos-offset="300"
+                    //   data-aos-easing="ease-in-sine" 
+                      className="content-head">
                       Venturing Digitally Pvt. Ltd.
                     </h3>
-                    <div data-aos="fade-left"
-                      data-aos-offset="300"
-                      data-aos-easing="ease-in-sine" className="content-data page_title">
+                    <div 
+                    //  data-aos="fade-left"
+                    //   data-aos-offset="300"
+                    //   data-aos-easing="ease-in-sine"
+                       className="content-data page_title">
                       Venturing Digitally is IT & software company based in Jamshedpur,
                       Bhopal, Bangalore, Kolkata & Nagpur who are passionate in
                       providing innovative IT Services & solutions to businesses.
@@ -74,14 +78,18 @@ function AboutComponents() {
                       us help you take your business to the next level with our
                       reliable and cost-effective IT services.
                     </div>
-                    <div data-aos="fade-left"
-                      data-aos-offset="300"
-                      data-aos-easing="ease-in-sine" className="about-content-data-btn">
+                    <div 
+                    // data-aos="fade-left"
+                    //   data-aos-offset="300"
+                    //   data-aos-easing="ease-in-sine" 
+                      className="about-content-data-btn">
                       <button className="aboutc-btn">Who We Are</button>
                     </div>
-                    <div data-aos="fade-left"
-                      data-aos-offset="300"
-                      data-aos-easing="ease-in-sine" className="value-block">
+                    <div 
+                    // data-aos="fade-left"
+                    //   data-aos-offset="300"
+                    //   data-aos-easing="ease-in-sine"
+                       className="value-block">
                       <div className="value-icon">
                         <LazyLoadImage src={Team} alt="" className="w-100 h-100" />
                       </div>
@@ -96,9 +104,11 @@ function AboutComponents() {
                         </div>
                       </div>
                     </div>
-                    <div data-aos="fade-left"
-                      data-aos-offset="300"
-                      data-aos-easing="ease-in-sine" className="value-block">
+                    <div 
+                    // data-aos="fade-left"
+                    //   data-aos-offset="300"
+                    //   data-aos-easing="ease-in-sine"
+                       className="value-block">
                       <div className="value-icon">
                         <LazyLoadImage src={Stats} alt="" className="w-100 h-100" />
                       </div>

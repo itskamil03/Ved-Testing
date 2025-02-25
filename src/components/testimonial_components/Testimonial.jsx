@@ -38,9 +38,9 @@ function Testimonials() {
             <div className="tmc-section-head">
               <div className="tmc-custom-head">
                 <div className="tmc-circle"></div>
-                <h2 data-aos="zoom-in" className="tmc-head-title head_title">What Our Clients Say!</h2>
+                <h2  className="tmc-head-title head_title">What Our Clients Say!</h2> {/*data-aos="zoom-in" */}
               </div>
-              <div data-aos="zoom-in" className="tmc-head-slogan page_title">
+              <div  className="tmc-head-slogan page_title"> {/*data-aos="zoom-in" */}
                 Our clients consistently praise us for our exceptional customer
                 service, attention to detail, and timely delivery of projects.
                 Many have also noted our ability to understand their unique

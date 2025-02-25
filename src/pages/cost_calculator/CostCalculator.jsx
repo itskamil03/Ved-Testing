@@ -124,7 +124,12 @@ function CostCalculator() {
     );
     setFields(updatedFields);
     setFormCreate((prev) => ({ ...prev, skills: updatedFields }));
+
   };
+
+
+
+
 
   const handleClick = async(e)=>
     {
