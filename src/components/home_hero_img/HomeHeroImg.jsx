@@ -29,6 +29,8 @@ function HomeHeroImg() {
       },
     },
   };
+
+  
   return (
     <>
       <OwlCarousel loop className="owl-theme" {...forservices} margin={0}>

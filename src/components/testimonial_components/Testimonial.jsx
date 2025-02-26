@@ -5,6 +5,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Testimonials() {
+  
   const testimonial = {
     responsiveClass: true,
     nav: true,
