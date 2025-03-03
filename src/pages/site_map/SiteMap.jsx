@@ -45,6 +45,11 @@ function SiteMap() {
                         Development Process
                       </Link>
                     </li>
+                    <li>
+                      <Link to="#">
+                        Events
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -154,6 +159,9 @@ function SiteMap() {
                     <li>
                       <Link to="/WebPortal">Web Portal</Link>
                     </li>
+                    <li>
+                      <Link to="/SchoolCollege">Schools & Colleges</Link>
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -187,6 +195,11 @@ function SiteMap() {
                         Transportation & Logistic
                       </Link>
                     </li>
+                    <li>
+                      <Link to="/SchoolUniversity">
+                        School & University
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -200,6 +213,9 @@ function SiteMap() {
                     </li>
                     <li>
                       <Link to="/Careers">Careers</Link>
+                    </li>
+                    <li>
+                      <Link to="/training-and-internship">Training & Internship</Link>
                     </li>
                   </ul>
                 </li>

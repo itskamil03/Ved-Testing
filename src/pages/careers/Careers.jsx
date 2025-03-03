@@ -17,9 +17,15 @@ export default function Careers() {
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
-
- 
-
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    gender: "",
+    job_type:"",
+    apply_for:"",
+    file: "",
+  });
 
   const [careers, setCareers] = useState([]);
   useEffect(() => {
@@ -36,9 +42,12 @@ export default function Careers() {
       });
   }, []);
 
+
   const [selectedCareer, setSelectedCareer] = useState(null);
 
   const handleShow = (career) => {
+
+    setFormData({...formData, apply_for:career.title})
     setSelectedCareer(career);
     setShow(true);
   };
@@ -53,15 +62,8 @@ export default function Careers() {
         setShow(false);
     }
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    mobile: "",
-    gender: "",
-    job_type:"",
-    apply_for:"",
-    file: "",
-  });
+
+console.log("formData",formData)
 
   const handleSubmit = async (e) => {
 
@@ -372,9 +374,14 @@ export default function Careers() {
                         <option value="backend">Backend Developer</option>
                         <option value="full-stack">Full Stack Developer</option>
                         <option value="java">Java Developer</option>
-                        <option value="devops">Devops</option>
+                        <option value="devops">DevOps</option>
                         <option value="python">Python Developer</option>
                         <option value="flutter">Flutter Developer</option>
+                        <option value="ai-ml">AI-ML Developer</option>
+                        <option value="bde">Business Development Executive</option>
+                        <option value="human-resource">Human Resource</option>
+                        <option value="data-analytics">Data Analytics</option>
+                        <option value="digital-marketing">Digital Marketing</option>
                       </select>
                     </div>
                    
@@ -576,13 +583,18 @@ export default function Careers() {
                     <option value="" disabled selected>
                       Apply for
                     </option>
-                    <option value="frontend">Frontend Developer</option>
-                    <option value="backend">Backend Developer</option>
-                    <option value="full-stack">Full Stack Developer</option>
-                    <option value="java">Java Developer</option>
-                    <option value="devops">Devops</option>
-                    <option value="python">Python Developer</option>
-                    <option value="flutter">Flutter Developer</option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="Full Stack Developer">Full Stack Developer</option>
+                    <option value="Java Developer">Java Developer</option>
+                    <option value="DevOps">DevOps</option>
+                    <option value="Python Developer">Python Developer</option>
+                    <option value="Flutter Developer">Flutter Developer</option>
+                    <option value="AI-ML Developer">AI-ML Developer</option>
+                    <option value="Business Development Executive">Business Development Executive</option>
+                    <option value="Human Resource">Human Resource</option>
+                    <option value="Data Analytics">Data Analytics</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
                   </select>
                 </div>
                 <div className="group-input">

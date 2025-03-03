@@ -157,6 +157,16 @@
   height: calc(29rem - 1rem);
   background-color: red;
 }
+
+.training {
+  font-size: calc(0.4rem + 0.6vw) !important;
+}
+
+.p-dropdown-label{
+  font-size: 1.9rem !important;
+  margin-left: 8px !important;
+}
+
 /* <----------------------------------------------- Life At Ved Third ------------------------------------------------> */
 
 #lifeatvedthird {

@@ -43,7 +43,7 @@ import CostCalculator from "./pages/cost_calculator/CostCalculator";
 import SupportMaintenance from "./pages/support_and_maintenance/SupportMaintenance";
 import GxPSoftware from "./pages/gxp_software/GxPSoftware";
 import { Blogspage } from "./pages/blogs/Blogspage";
-import SiteMap from "./pages/site_map/siteMap";
+import SiteMap from "./pages/site_map/SiteMap";
 import BlogDetails from "./pages/blog_details/BlogDetails";
 import SchoolCollege from "./pages/school_college/SchoolCollege";
 import SchoolUniversity from "./pages/school_university/SchoolUniversity";

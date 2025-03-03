@@ -8,20 +8,26 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MultiSelect } from "primereact/multiselect";
+import { Dropdown } from "primereact/dropdown";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+import "primereact/resources/primereact.min.css";
 
 const solutions = [
+  { name: "AI/ML Development", code: "AI/ML Development" }, 
   { name: "Web Development", code: "Web Development" },
   { name: "Android Development", code: "Android Development" },
   { name: "IOS Development", code: "IOS Development" },
   { name: "Software Development", code: "Software Development" },
   { name: "Digital Marketing", code: "Digital Marketing" },
-  { name: "Graphics Desigining", code: "Graphics Desigining" },
+  { name: "Graphics Designing", code: "Graphics Designing" },
   { name: "Business Development", code: "Business Development" },
+  { name: "Cloud Development", code: "Cloud Development" },
+  { name: "Data Analytics Development", code: "Data Development" },
   { name: "Human Resource", code: "Human Resource" },
 ];
 
@@ -40,6 +46,8 @@ function LifeAtVed() {
 
   const [selectedService, setSelectedService] = useState([]);
   const [selectedSolutions, setSelectedSolutions] = useState([]);
+
+  const [solutions, setSolutions] = useState([])
 
   const formemories = {
     responsiveClass: true,
@@ -140,6 +148,65 @@ function LifeAtVed() {
     location: ""
   });
 
+  const customOption = (option) => {
+
+    return (
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <input
+          type="checkbox"
+          checked={selectedService.name === option.name}
+          style={{ margin: "4px 8px 4px 0px", width: "18px", 
+            height: "18px",}}
+          
+        />
+        <span className="training">{option.name}</span>
+      </div>
+    );
+  };
+
+  useEffect(()=> {
+    if(selectedService.name==="Internship") {
+      setSolutions([ { name: "AI/ML Development", code: "AI/ML Development" }, 
+        { name: "Web Development", code: "Web Development" },
+        { name: "Android Development", code: "Android Development" },
+        { name: "IOS Development", code: "IOS Development" },
+        { name: "Software Development", code: "Software Development" },
+        { name: "Digital Marketing", code: "Digital Marketing" },
+        { name: "Graphics Designing", code: "Graphics Designing" },
+        { name: "Business Development", code: "Business Development" },
+        { name: "Cloud Development", code: "Cloud Development" },
+        { name: "Data Analytics Development", code: "Data Development" },
+        { name: "Human Resource", code: "Human Resource" },])
+    } 
+   else {
+    setSolutions([ { name: "JavaScript", code: "JavaScript" }, 
+      { name: "React Js", code: "React Js" },
+      { name: "Next Js", code: "Next Js" },
+      { name: "Node Js", code: "Node Js" },
+      { name: "Java & SpringBoot", code: "Java & SpringBoot" },
+      { name: "Python", code: "Python" },
+      { name: "AI-ML", code: "AI-ML" },
+      { name: "DevOps", code: "DevOps" },
+      { name: "PHP", code: "PHP" },
+      { name: "Laravel", code: "Laravel" },])
+   }
+  },[selectedService])
+
+  const customCourses = (option) => {
+
+    return (
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <input
+          type="checkbox"
+          checked={selectedSolutions.name === option.name}
+          style={{ margin: "4px 8px 4px 0px", width: "18px", 
+            height: "18px",}}
+          
+        />
+        <span className="training">{option.name}</span>
+      </div>
+    );
+  };
 
 
   const handleInputChange = (e) => {
@@ -433,12 +500,37 @@ function LifeAtVed() {
                                 />
 
                               </div>
-                              <div className="left-placeholder">
+
+                              <div className="left-placeholder" style={{marginTop:"12px"}}>
+                                <input
+                                  type="text"
+                                  name="college_name"
+                                  className="form-control fs-3 second-input"
+                                  placeholder="College Name"
+                                  value={formData.college_name}
+                                  onChange={handleInputChange}
+                                  required
+                                />
+                              </div>
+
+                              <div className="left-placeholder" style={{marginTop:"12px"}}>
+                                <input
+                                  type="text"
+                                  name="session"
+                                  className="form-control fs-3 second-input"
+                                  placeholder="Session"
+                                  value={formData.session}
+                                  onChange={handleInputChange}
+                                  required
+                                />
+                              </div>
+
+                              <div className="left-placeholder" style={{marginTop:"12px"}}>
                                 <input
                                   type="text"
                                   name="qualification"
                                   className="form-control fs-3 second-input"
-                                  placeholder="Qualification*"
+                                  placeholder="Qualification"
                                   value={formData.qualification}
                                   onChange={handleInputChange}
                                   required
@@ -446,20 +538,30 @@ function LifeAtVed() {
                               </div>
 
                               <div className="location-placholder">
-                                <MultiSelect
+                                {/* <MultiSelect
                                   options={services}
                                   value={selectedService}
                                   onChange={(e) => setSelectedService(e.value)}
                                   optionLabel="name"
                                   placeholder="Select Training"
-                                  maxSelectedLabels={3}
+                                  maxSelectedLabels={1}
                                   style={{
                                     backgroundColor: "white",
                                     color: "black",
                                     width:"100%"
                                   }}
                                    className="fs-2 second-input"
-                                />
+                                /> */}
+                                 <Dropdown
+                          options={services}
+                          value={selectedService}
+                          onChange={(e) => setSelectedService(e.value)}
+                          optionLabel="name"
+                          placeholder="Select Training"
+                          itemTemplate={customOption} 
+                          style={{ width: "100%" }}
+                          className="fs-2 second-input"
+                        />
                               </div>
                             </div>
                             <div className="col-lg-6">
@@ -485,19 +587,41 @@ function LifeAtVed() {
                                   required
                                 />
                               </div>
-                              <div className="location-placholder">
+                              <div className="right-placholder" style={{marginTop:"12px"}}>
+                                <input
+                                  type="text"
+                                  name="courses"
+                                  className="form-control fs-3 second-input"
+                                  placeholder="Courses"
+                                  value={formData.courses}
+                                  onChange={handleInputChange}
+                                />
+                              </div>
+
+                              <div className="right-placholder" style={{marginTop:"12px"}}>
+                                <input
+                                  type="text"
+                                  name="semester"
+                                  className="form-control fs-3 second-input"
+                                  placeholder="Semester"
+                                  value={formData.semester}
+                                  onChange={handleInputChange}
+                                  required
+                                />
+                              </div>
+                              <div className="location-placholder" style={{marginTop:"12px"}}>
                                 <input
                                   type="text"
                                   name="location"
                                   className="form-control fs-3 second-input"
-                                  placeholder="Location*"
+                                  placeholder="Location"
                                   value={formData.location}
                                   onChange={handleInputChange}
                                   required
                                 />
                               </div>
                               <div className="location-placholder" >
-                                <MultiSelect
+                                {/* <MultiSelect
                                   options={solutions}
                                   value={selectedSolutions}
                                   onChange={(e) =>
@@ -512,7 +636,21 @@ function LifeAtVed() {
                                     width:"100%"
                                   }}
                                  className="fs-2 second-input"
-                                />
+                                /> */}
+                              
+                              <Dropdown
+                          options={solutions}
+                          value={selectedSolutions}
+                          onChange={(e) =>
+                            setSelectedSolutions(e.value)
+                          }
+                          optionLabel="name"
+                          placeholder="Select Courses"
+                          itemTemplate={customCourses} 
+                         style={{ width: "100%" }}
+                          className="fs-2 second-input"
+                        />
+
                               </div>
                             </div>
                           </div>
@@ -538,3 +676,38 @@ function LifeAtVed() {
 }
 
 export default LifeAtVed;
+
+/*   <MultiSelect
+                                  options={services}
+                                  value={selectedService}
+                                  onChange={(e) => setSelectedService(e.value)}
+                                  optionLabel="name"
+                                  placeholder="Select Training"
+                                  maxSelectedLabels={3}
+                                  style={{
+                                    backgroundColor: "white",
+                                    color: "black",
+                                    width:"100%"
+                                  }}
+                                   className="fs-2 second-input"
+                                /> 
+                                
+                                
+                                  <MultiSelect
+                                  options={solutions}
+                                  value={selectedSolutions}
+                                  onChange={(e) =>
+                                    setSelectedSolutions(e.value)
+                                  }
+                                  optionLabel="name"
+                                  placeholder="Select Courses"
+                                  maxSelectedLabels={3}
+                                  style={{
+                                    backgroundColor: "white",
+                                    color: "black",
+                                    width:"100%"
+                                  }}
+                                 className="fs-2 second-input"
+                                />
+                                
+                                */

@@ -180,6 +180,17 @@ function Header() {
                                   <strong>Development Process</strong>
                                 </div>
                               </NavLink>
+                              <NavLink
+                                to="#"
+                                onClick={() => setMenubtn(!menubtn)}
+                                className="megadrop-item-link"
+                              >
+                                <div className="megadrop-item-about">
+                                  <FaConnectdevelop />
+                                  &nbsp;&nbsp;
+                                  <strong>Events</strong>
+                                </div>
+                              </NavLink>
                             </div>
                           </div>
                         </div>
