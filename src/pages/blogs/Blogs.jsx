@@ -33,6 +33,25 @@ function Blogs() {
   return (
     <>
       <BlogsHero />
+           
+      <section id="lifeatvedfirst">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="lifeatvedfirst-section-head">
+              <div className="lifeatvedfirst-custom-head">
+                <div className="lifeatvedfirst-head-title">
+                  Our Latest Blog || Venturing digitally.
+                </div>
+              </div>
+
+              <div className="lifeatvedfirst-head-slogan">
+              Venturing Digitally Pvt Ltd - Empowering Tomorrow's Digital Innovators keep update with out latest blogs.
+              </div>
+            </div>
+            </div>
+            </div>
+            </section>
+
       <section id="bloges-container">
         <div className="container-fluid">
           <div className="container">

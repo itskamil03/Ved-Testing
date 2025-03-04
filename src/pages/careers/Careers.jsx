@@ -193,6 +193,26 @@ export default function Careers() {
       {/* {{-- ===========================================
                             CAREERS CARDS
             =========================================== --}} */}
+
+     <section id="lifeatvedfirst">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="lifeatvedfirst-section-head">
+              <div className="lifeatvedfirst-custom-head">
+                <div className="lifeatvedfirst-head-title">
+                  Start your career with venturing digitally.
+                </div>
+              </div>
+
+              <div className="lifeatvedfirst-head-slogan">
+              Venturing Digitally Pvt Ltd - Empowering Tomorrow's Digital Innovators join our team and start journey with us.
+              </div>
+            </div>
+            </div>
+            </div>
+            </section>
+
+
       <section id="career-cards">
         <div className="container-fluid">
           <div className="container">
