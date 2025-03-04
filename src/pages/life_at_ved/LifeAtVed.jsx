@@ -318,12 +318,12 @@ function LifeAtVed() {
             <div className="lifeatvedfirst-section-head">
               <div className="lifeatvedfirst-custom-head">
                 <div className="lifeatvedfirst-head-title">
-                  Training & Internship
+                  Training & Internship at venturing digitally
                 </div>
               </div>
 
               <div className="lifeatvedfirst-head-slogan">
-              Venturing Digitally Pvt Ltd - Empowering Tomorrow's Digital Innovators
+              Venturing Digitally Pvt Ltd - Empowering Tomorrow's Digital Innovators join our training and internsip courses for your bright future.
               </div>
             </div>
 
