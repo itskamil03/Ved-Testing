@@ -3,6 +3,7 @@ import Hero from "../../components/hero_section/Hero";
 import { useState } from "react";
 import ContactForm from "../../components/contact_form/ContactForm";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { toast,ToastContainer } from "react-toastify";
 
 function SchoolCollage() {
   const [selectedTab, setSelectedTab] = useState("tab1");
@@ -15,9 +16,101 @@ function SchoolCollage() {
   const toggleTab = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
+
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    phone: "",
+    name_of_institute: "",
+    city:"",
+    name_of_student:"",
+    institute:""
+  });
+
+  
+  const handleSubmit = async (e) => {
+
+    e.preventDefault();
+  
+    if (!validateEmail(formData.email)) {
+      toast.error("Please enter a valid email address", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    if (!validatePhone(formData.phone)) {
+      toast.error("Please enter a valid phone number", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+
+    try {
+      const response = await fetch(
+        "https://ved.venturingdigitally.com/api/Schoolmanagement",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+
+      if (response.status == 200) {
+
+        setFormData({first_name: "",
+          last_name: "",
+          email: "",
+          phone: "",
+          name_of_institute: "",
+          city:"",
+          name_of_student:"",
+          institute:""})
+ 
+          toast.success("Form Submitted Successfully", {
+            position: "top-right",
+            autoClose: 2000,
+          });
+    
+      } else {
+        toast.error("Submission failed. Please try again.", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+     
+      }
+    } catch (error) {
+      console.error("An error occurred while submitting the form:", error);
+    }
+  };
+
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  };
+
+  const validatePhone = (phone) => {
+    const phoneRegex = /^[6-9]\d{9}$/;
+    return phoneRegex.test(phone);
+  };
   
   return (
     <>
+         
+         <ToastContainer/>
+
       <Hero
         heading="School & College Mangagements System"
         imgbtn="School & College"
@@ -558,22 +651,33 @@ function SchoolCollage() {
                         <h2>Request Free Demo</h2>
                       </div>
 
-                      <form className="demo-form">
+                      <form className="demo-form" onSubmit={handleSubmit}>
                         <div className="form-row">
                           <div className="form-group">
-                            <input type="text" placeholder="First Name" />
+                            <input type="text" placeholder="First Name"   
+                            name="first_name"  
+                              value={formData.first_name}
+                               required
+                                onChange={handleChange}
+                                />
                           </div>
                           <div className="form-group">
-                            <input type="text" placeholder="Last Name" />
+                            <input type="text" name="last_name" placeholder="Last Name" value={formData.last_name}
+                               required
+                                onChange={handleChange} />
                           </div>
                         </div>
 
                         <div className="form-row">
                           <div className="form-group">
-                            <input type="email" placeholder="Email" />
+                            <input type="email" name="email" placeholder="Email" value={formData.email}
+                               required
+                                onChange={handleChange} />
                           </div>
                           <div className="form-group">
-                            <input type="tel" placeholder="Phone" />
+                            <input type="tel" name="phone" placeholder="Phone" value={formData.phone}
+                               required
+                                onChange={handleChange} />
                           </div>
                         </div>
 
@@ -582,10 +686,16 @@ function SchoolCollage() {
                             <input
                               type="text"
                               placeholder="Name of the Institute"
+                              value={formData.name_of_institute}
+                              name="name_of_institute"
+                               required
+                                onChange={handleChange}
                             />
                           </div>
                           <div className="form-group">
-                            <input type="text" placeholder="City" />
+                            <input type="text" name="city" placeholder="City" value={formData.city}
+                               required
+                                onChange={handleChange} />
                           </div>
                         </div>
 
@@ -594,6 +704,10 @@ function SchoolCollage() {
                             <input
                               type="number"
                               placeholder="Number of Students"
+                              name="name_of_student"
+                              value={formData.name_of_student}
+                               required
+                                onChange={handleChange}
                             />
                           </div>
                         </div>
@@ -602,48 +716,23 @@ function SchoolCollage() {
                           <label>Institute Type *</label>
                         </div>
                         <div className="form-row institute-type">
-                          <div className="radio-buttons">
-                            <label>
-                              <input
-                                type="radio"
-                                name="instituteType"
-                                value="Pre-School"
-                              />{" "}
-                              Pre-School
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="instituteType"
-                                value="School"
-                              />{" "}
-                              School
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="instituteType"
-                                value="lla"
-                              />{" "}
-                              lla
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="instituteType"
-                                value="University"
-                              />{" "}
-                              University
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="instituteType"
-                                value="Training Center"
-                              />{" "}
-                              Training Center
-                            </label>
-                          </div>
+                        <div className="radio-buttons">
+              {["Pre-School", "School", "lla", "University", "Training Center"].map(
+                    (type) => (
+                      <label key={type}>
+                        <input
+                          type="radio"
+                          name="institute"
+                          value={type}
+                          checked={formData.institute === type}
+                          onChange={handleChange}
+                          required
+                        />
+                        {type}
+                      </label>
+                    )
+                  )}
+           </div>
                         </div>
 
                         <button type="submit" className="request-btn">

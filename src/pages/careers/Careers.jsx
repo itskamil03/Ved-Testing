@@ -42,6 +42,10 @@ export default function Careers() {
       });
   }, []);
 
+  const decodeHtmlEntities = (html) => {
+    const doc = new DOMParser().parseFromString(html, "text/html");
+    return doc.body.innerHTML.replace(/<\/?p[^>]*>/g, '<div>').replace(/<\/div>\s*<div>/g, '');
+  };
 
   const [selectedCareer, setSelectedCareer] = useState(null);
 
@@ -62,8 +66,6 @@ export default function Careers() {
         setShow(false);
     }
 
-
-console.log("formData",formData)
 
   const handleSubmit = async (e) => {
 
@@ -437,8 +439,11 @@ console.log("formData",formData)
             </div>
             <div className="section-content">
               <div className="row">
-                {careers.map((career) => (
-                  <div className="col-lg-4 col-md-6" key={career.id}>
+                {careers.map((career) => {
+                  
+                   return (
+                    <>
+                     <div className="col-lg-4 col-md-6" key={career.id}>
                     <div className="job-card">
                       <div className="top">
                         <div className="logo">
@@ -458,7 +463,15 @@ console.log("formData",formData)
                       </div>
                       <div className="middle">
                         <div className="head">{career.title}</div>
-                        <div className="data">{career.content}</div>
+                        {/* <div className="data">{cleanedDescription}</div> */}
+                        <div style={{fontSize:"12px"}}
+               dangerouslySetInnerHTML={{
+                 __html: decodeHtmlEntities(career.content)
+                   .split(" ")
+                   .slice(0, 40)
+                   .join(" ") + "..."
+               }}
+             />
                       </div>
                       <div className="bottom">
                       {new Date(career.created_at).toLocaleString("en-IN", {
@@ -474,7 +487,10 @@ console.log("formData",formData)
 
                     </div>
                   </div>
-                ))}
+                    </>
+                   )
+                 
+})}
               </div>
             </div>
           </div>
@@ -485,13 +501,13 @@ console.log("formData",formData)
             =========================================== --}} */}
       {/* Modal */}
       <Modal
-        show={show}
-        onHide={handleClose}
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-        id="job-modal"
-         
-      >
+      show={show}
+      onHide={handleClose}
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+      id="job-modal"
+      dialogClassName="custom-modal-width" 
+>
         <Modal.Header closeButton>
           <Modal.Title>Job Application</Modal.Title>
         </Modal.Header>
@@ -500,7 +516,11 @@ console.log("formData",formData)
           <Modal.Body>
             <div className="modal-containt">
               {" "}
-              <p  dangerouslySetInnerHTML={{ __html: selectedCareer.content.replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '') }}></p>
+              <div style={{fontSize:"13px"}}
+                dangerouslySetInnerHTML={{
+                  __html: decodeHtmlEntities(selectedCareer.content)
+                }}
+              />
             </div>
           </Modal.Body>
         )}
@@ -580,22 +600,8 @@ console.log("formData",formData)
                 <div className="group-input">
                   <label htmlFor="apply_for">Apply For</label>
                   <select name="apply_for" value={formData.apply_for} onChange={handleChange} required>
-                    <option value="" disabled selected>
-                      Apply for
-                    </option>
-                    <option value="Frontend Developer">Frontend Developer</option>
-                    <option value="Backend Developer">Backend Developer</option>
-                    <option value="Full Stack Developer">Full Stack Developer</option>
-                    <option value="Java Developer">Java Developer</option>
-                    <option value="DevOps">DevOps</option>
-                    <option value="Python Developer">Python Developer</option>
-                    <option value="Flutter Developer">Flutter Developer</option>
-                    <option value="AI-ML Developer">AI-ML Developer</option>
-                    <option value="Business Development Executive">Business Development Executive</option>
-                    <option value="Human Resource">Human Resource</option>
-                    <option value="Data Analytics">Data Analytics</option>
-                    <option value="Digital Marketing">Digital Marketing</option>
-                  </select>
+              {formData.apply_for && <option value={formData.apply_for}>{formData.apply_for}</option>}
+            </select>
                 </div>
                 <div className="group-input">
                   <label htmlFor="file">Resume</label>
@@ -621,3 +627,21 @@ console.log("formData",formData)
     </>
   );
 }
+
+/* <select name="apply_for" value={formData.apply_for} onChange={handleChange} required>
+                    <option value="" disabled selected>
+                      Apply for
+                    </option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="Full Stack Developer">Full Stack Developer</option>
+                    <option value="Java Developer">Java Developer</option>
+                    <option value="DevOps">DevOps</option>
+                    <option value="Python Developer">Python Developer</option>
+                    <option value="Flutter Developer">Flutter Developer</option>
+                    <option value="AI-ML Developer">AI-ML Developer</option>
+                    <option value="Business Development Executive">Business Development Executive</option>
+                    <option value="Human Resource">Human Resource</option>
+                    <option value="Data Analytics">Data Analytics</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                  </select> */

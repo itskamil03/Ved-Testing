@@ -31,24 +31,29 @@ function Home({ target, label }) {
 
   const navigate = useNavigate();
 
+  const [loading, setLoading] = useState(true)
+
   useEffect(() => {
-    fetch("https://ved.venturingdigitally.com/api/show_blog", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: null,
-    }).then((result) => {
-      result.json().then((resp) => {
-        setBlogs(resp.data);
-      });
-    });
-  }, []);
+    if(loading)
+    {
+        fetch("https://ved.venturingdigitally.com/api/show_blog", {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: null,
+        }).then((result) => {
+          result.json().then((resp) => {
+            setBlogs(resp.data);
+          });
+        });
+        setLoading(false)
+  }
+  }, [loading]);
 
 
   const [showMore, setShowMore] = useState(false);
-
 
 
   const targets = [80, 11, 10, 110];
@@ -147,11 +152,46 @@ function Home({ target, label }) {
     },
   ];
 
+  const forcrm = {
+    margin: 30,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    navText: [
+      '<i class="las la-angle-left"></i>',
+      '<i class="las la-angle-right"></i>',
+    ],
+    smartSpeed: 500,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      768: {
+        items: 1,
+        nav: false,
+      },
+      769: {
+        items: 1,
+        nav: false,
+      },
+      1220: {
+        items: 1,
+        nav: false,
+      },
+    },
+  };
+
 
 
   const handleViewMore = () => {
     setShowMore(!showMore);
   };
+
+  const handleViewBlog=()=>{
+    navigate("/Blogs");
+  }
 
   const handleTraining = () => {
     navigate("/training-and-internship");
@@ -1441,38 +1481,48 @@ function Home({ target, label }) {
             <div className="section-content">
               <div className="whats-tabs">
                 <div className="tab-container">
-                <Slider {...settings}>
-                  {blogs &&
-                    blogs.map((item) => {
+             
+                  {
+                    blogs?.slice(0,3).map((item) => {
                       const cleanedDescription = item.content.replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '');
+                     
                       return (
                         <NavLink to="/Blogs" className="blog-box" key={item.id}>
-                          <div className="blog-img">
-                            <LazyLoadImage
-                              src={`https://ved.venturingdigitally.com/assets/img/blog/${item.image}`}
-                              alt={item.category}
-                              className="w-100 h-100"
-                              loading="lazy"
-                            />
+                        <div className="blog-img">
+                          <LazyLoadImage
+                            src={item.image}
+                            alt={item.category}
+                            className="w-100 h-100"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div className="blog-content">
+                          <div className="top-block">
+                            <div>{item.category}</div>
                           </div>
-                          <div className="blog-content">
-                            <div className="top-block">
-                              <div>{item.category}</div>
-                            </div>
-                          </div>
-                          <div className="bottom-block">
-                            <div className="head">{item.blog_title}</div>
-                       
-                            <div
-                              className="name-block"
-                              dangerouslySetInnerHTML={{ __html: cleanedDescription }}
-                            ></div>
-                          </div>
-                        </NavLink>
+                        </div>
+                        <div className="bottom-block">
+                          <div className="head">{item.blog_title}</div>
+                     
+                          <div
+                            className="name-block"
+                            dangerouslySetInnerHTML={{ __html: cleanedDescription }}
+                          ></div>
+                        </div>
+                      </NavLink>
                       );
                     })}
-                    </Slider>
+             
                 </div>
+                <div className="solutin_btn">
+                  <button
+                    className="more_btn_solution"
+                    onClick={handleViewBlog}
+                  >
+                    View More
+                  </button>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -1489,4 +1539,6 @@ function Home({ target, label }) {
 }
 
 export default Home;
+
+/*  */
 

@@ -71,6 +71,17 @@
   box-shadow: 6px 0px 0px #909508;
 }
 
+.modal-dialog {
+ max-width: 800px !important;
+  width: 90% !important; 
+}
+
+.modal-containt{
+  max-height: 600px !important;
+  overflow-y:auto;
+}
+
+
 /* JOB CARDS */
 #job-cards {
   padding: 50px 0;
@@ -80,7 +91,7 @@
   padding: 20px 20px 10px;
   box-shadow: 0 8px 24px #8080804f;
   border-radius: 10px;
-  max-width: 350px;
+  /* max-width: 350px; */
   margin: 0px auto 20px;
 }
 

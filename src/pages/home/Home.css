@@ -413,6 +413,19 @@ padding: 12px;
   margin-bottom: 10px;
 }
 
+#whats-new .solutin_btn {
+  display: flex;
+  justify-content: center;
+}
+#whats-new .more_btn_solution {
+  padding: 10px 10px;
+  color: white;
+  border: none;
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  border-radius: 5px;
+  font-size: 15px;
+}
+
 #whats-new .btn:hover {
   background-color: #ddd;
 }
