@@ -28,6 +28,8 @@ function SchoolCollage() {
     institute:""
   });
 
+
+  
   
   const handleSubmit = async (e) => {
 
