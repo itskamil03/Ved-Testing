@@ -1514,7 +1514,7 @@ function Home({ target, label }) {
                     })}
              
                 </div>
-                <div className="solutin_btn">
+                <div className="solutin_btn" style={{marginTop:"20px"}}>
                   <button
                     className="more_btn_solution"
                     onClick={handleViewBlog}
