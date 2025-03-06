@@ -5,6 +5,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { NavLink } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useEffect } from "react";
 
 function HomeHeroImg() {
   const forservices = {
@@ -31,8 +32,8 @@ function HomeHeroImg() {
   };
 
   useEffect(() => {
-    // Reinitialize carousel after mounting
-    $(".owl-carousel").owlCarousel(forsupports);
+   
+    $(".owl-carousel").owlCarousel(forservices);
   }, []);
   
   return (
