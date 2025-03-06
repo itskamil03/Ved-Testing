@@ -197,7 +197,7 @@ export default function Careers() {
      <section id="lifeatvedfirst">
         <div className="container-fluid">
           <div className="container">
-            <div className="lifeatvedfirst-section-head">
+            <div className="lifeatvedfirst-section-head" style={{marginBottom:"0px"}}>
               <div className="lifeatvedfirst-custom-head">
                 <div className="lifeatvedfirst-head-title">
                   Start your career with venturing digitally.

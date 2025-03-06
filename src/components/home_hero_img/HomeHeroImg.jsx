@@ -17,7 +17,7 @@ function HomeHeroImg() {
       '<i class="las la-angle-left"></i>',
       '<i class="las la-angle-right"></i>',
     ],
-    smartSpeed: 2000,
+    smartSpeed: 800,
     responsive: {
       0: {
         items: 1,
@@ -30,6 +30,10 @@ function HomeHeroImg() {
     },
   };
 
+  useEffect(() => {
+    // Reinitialize carousel after mounting
+    $(".owl-carousel").owlCarousel(forsupports);
+  }, []);
   
   return (
     <>
@@ -41,7 +45,8 @@ function HomeHeroImg() {
               src="image/home-slider/Slider_1.webp"
               alt="..."
               className="homeheroimg-img"
-              loading="lazy"
+              loading="eager"
+              fetchpriority="high"
             />
             {/* </div> */}
             <div className="homeheroimg-contant">
@@ -65,7 +70,8 @@ function HomeHeroImg() {
               src="image/home-slider/Slider_2.webp"
               alt="..."
               className="homeheroimg-img"
-              loading="lazy"
+              loading="eager"
+              fetchpriority="high"
             />
             {/* </div> */}
             <div className="homeheroimg-contant">
@@ -90,7 +96,8 @@ function HomeHeroImg() {
               src="image/home-slider/Slider_3.webp"
               alt="..."
               className="homeheroimg-img"
-              loading="lazy"
+              loading="eager"
+              fetchpriority="high"
             />
             {/* </div> */}
             <div className="homeheroimg-contant">
@@ -114,7 +121,8 @@ function HomeHeroImg() {
               src="image/home-slider/slide_1.webp"
               alt="..."
               className="homeheroimg-img"
-              loading="lazy"
+              loading="eager"
+              fetchpriority="high"
             />
             {/* </div> */}
             <div className="homeheroimg-contant">
@@ -138,7 +146,8 @@ function HomeHeroImg() {
               src="image/home-slider/slide_2.webp"
               alt="home_slider"
               className="homeheroimg-img"
-              loading="lazy"
+              loading="eager"
+              fetchpriority="high"
             />
             {/* </div> */}
             <div className="homeheroimg-contant">
@@ -160,7 +169,8 @@ function HomeHeroImg() {
               src="image/home-slider/slide_3.webp"
               alt=""
               className="homeheroimg-img"
-              loading="lazy"
+              loading="eager"
+              fetchpriority="high"
             />
             {/* </div> */}
             <div className="homeheroimg-contant">
@@ -183,7 +193,8 @@ function HomeHeroImg() {
               src="image/home-slider/slide_4.webp"
               alt=""
               className="homeheroimg-img"
-              loading="lazy"
+              loading="eager"
+              fetchpriority="high"
             />
             {/* </div> */}
             <div className="homeheroimg-contant">
@@ -205,7 +216,8 @@ function HomeHeroImg() {
               src="image/home-slider/training_slider.webp"
               alt=""
               className="homeheroimg-img"
-              loading="lazy"
+              loading="eager"
+              fetchpriority="high"
             />
             {/* </div> */}
             <div className="homeheroimg-contant">

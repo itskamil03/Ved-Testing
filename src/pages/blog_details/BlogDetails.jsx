@@ -80,7 +80,7 @@ function BlogDetails() {
            
        
 
-            {blogLatest.map((card) => (
+            {/* {blogLatest.map((card) => (
                 
              
             <div className="blog_card">
@@ -104,7 +104,7 @@ function BlogDetails() {
               />
               </section>
             </div>
-            ))}
+            ))} */}
 
           </div>
 

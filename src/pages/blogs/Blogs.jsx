@@ -37,7 +37,7 @@ function Blogs() {
       <section id="lifeatvedfirst">
         <div className="container-fluid">
           <div className="container">
-            <div className="lifeatvedfirst-section-head">
+            <div className="lifeatvedfirst-section-head" style={{marginBottom:"0px"}}>
               <div className="lifeatvedfirst-custom-head">
                 <div className="lifeatvedfirst-head-title">
                   Our Latest Blog || Venturing digitally.

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./CostCalculator.css";
 import Hero from "../../components/hero_section/Hero";
 import Calculateimage from "../../assets/calculator.png"
@@ -6,22 +6,12 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { toast,ToastContainer } from "react-toastify";
 
 function CostCalculator() {
+
+
   const [activeTab, setActiveTab] = useState(1);
-  const [fields, setFields] = useState([{ value: "", count: 0 }]);
+  const [fields, setFields] = useState([{ value: "Next Js", count: 0 }]);
 
-  // Add a new field with initial values
-  const handleAddField = () => {
-    setFields([...fields, { value: "", count: 0 }]);
-  
-  };
 
-  // Remove a specific field by index
-  const handleRemoveField = (index) => {
-    setFields(fields.filter((_, idx) => idx !== index));
-
-  };
-
-  // Change the skill count dynamically
   const handleCountChange = (index, increment) => {
     setFields((prevFields) =>
       prevFields.map((field, idx) =>
@@ -33,7 +23,7 @@ function CostCalculator() {
  
   };
 
-  // Handle tab switching
+
   const handleTabClick = (tabNumber) => {
     setActiveTab(tabNumber);
   };
@@ -52,8 +42,19 @@ function CostCalculator() {
     mobile: "",
     location:"",
     desc:"",
-    skills:[]
+    skill:[]
   });
+
+
+  const handleAddField = () => {
+    setFields([...fields, { value: "Next Js", count: 0 }]);
+  };
+
+
+  const handleRemoveField = (index) => {
+    setFields(fields.filter((_, idx) => idx !== index));
+  };
+
 
   const handleChange = (e) => {
 
@@ -63,11 +64,10 @@ function CostCalculator() {
          ...formData,
          [name]: e.target.value,
        });
-     
    };
 
-   const handleChangeTeam = (e) => {
 
+   const handleChangeTeam = (e) => {
 
        const { name } = e.target;
     
@@ -77,6 +77,24 @@ function CostCalculator() {
         });
      
    };
+
+   console.log("fields", fields)
+
+   useEffect(()=>
+    {
+
+      console.log("fieldsdata", fields)
+
+      const skillValues = fields.map(field => field.value);
+  
+        setFormCreate((prev) => ({
+          ...prev,
+          skill: skillValues.join(', ')
+        }));
+  
+    },[fields])
+
+    console.log("formCreate", formCreate)
 
   const handleSubmit = async(e)=>
   {
@@ -123,11 +141,13 @@ function CostCalculator() {
       idx === index ? { ...f, value } : f
     );
     setFields(updatedFields);
-    setFormCreate((prev) => ({ ...prev, skills: updatedFields }));
-
+  
+    setFormCreate((prev) => ({
+      ...prev,
+      skill: [...new Set([...(prev.skill || []), value])].join(", ") 
+    }));
   };
-
-
+  
 
 
 
@@ -153,7 +173,7 @@ function CostCalculator() {
             mobile: "",
             location: "",
             desc: "",
-            skills:[]
+            skill:[]
           })  
           toast.success("Form Submitted Successfully", {
             position: "top-right",
@@ -246,18 +266,18 @@ function CostCalculator() {
                                     required={true}
                                     onChange={(e) => handleSkillChange(index, e.target.value)}
                                   >
-                                    <option value="nextjs">Next Js</option>
-                                    <option value="nodejs">Node Js</option>
-                                    <option value="python">Python</option>
-                                    <option value="java">Java (Springboot)</option>
-                                    <option value="php">PHP</option>
-                                    <option value="laravel">Laravel</option>
-                                    <option value="wordpress">Wordpress</option>
-                                    <option value="react">React Js</option>
-                                    <option value="android">Android</option>
-                                    <option value="reactnative">React Native</option>
-                                    <option value="flutter">Flutter</option>
-                                    <option value=".net">Dot Net</option>
+                                    <option value="Next Js">Next Js</option>
+                                    <option value="Node Js">Node Js</option>
+                                    <option value="Python">Python</option>
+                                    <option value="Java (Springboot)">Java (Springboot)</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="Laravel">Laravel</option>
+                                    <option value="Wordpress">Wordpress</option>
+                                    <option value="React Js">React Js</option>
+                                    <option value="Android">Android</option>
+                                    <option value="React Native">React Native</option>
+                                    <option value="Flutter">Flutter</option>
+                                    <option value="Dot Net">Dot Net</option>
                                   </select>
 
                                   {/* Counter */}

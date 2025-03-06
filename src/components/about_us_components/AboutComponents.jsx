@@ -91,7 +91,7 @@ function AboutComponents() {
                     //   data-aos-easing="ease-in-sine"
                        className="value-block">
                       <div className="value-icon">
-                        <LazyLoadImage src={Team} alt="" className="w-100 h-100" />
+                        <LazyLoadImage src={Team} alt="" className="w-100 h-100" loading="lazy" />
                       </div>
                       <div className="value-content flex-fill">
                         <div className="value-head">
@@ -110,7 +110,7 @@ function AboutComponents() {
                     //   data-aos-easing="ease-in-sine"
                        className="value-block">
                       <div className="value-icon">
-                        <LazyLoadImage src={Stats} alt="" className="w-100 h-100" />
+                        <LazyLoadImage src={Stats} alt="" className="w-100 h-100" loading="lazy" />
                       </div>
                       <div className="value-content flex-fill">
                         <div className="value-head">Continuous Innovation</div>
