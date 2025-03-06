@@ -11,9 +11,9 @@ function Services() {
           <div className="container">
             <div className="cservice-section-head">
               <div className="cservice-custom-head">
-                <h2 className="cservice-head-title head_title">
+                <h1 className="cservice-head-title head_title">
                   Our Best Exceptional Service For You
-                </h2>
+                </h1>
               </div>
               <div className="cservice-head-slogan page_title">
                 At Venturing Digitally we measure our success by the growth and
@@ -43,7 +43,6 @@ function Services() {
                           src="image/home/service/Web_development.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
                           style={{borderRadius:"10px"}}
                         />
                       
@@ -76,7 +75,6 @@ function Services() {
                             src="image/home/service/Ui_ux.jpg"
                             alt="..."
                             className="w-100 h-100"
-                            loading="lazy"
                             style={{borderRadius:"10px"}}
                           />
                         
@@ -110,7 +108,6 @@ function Services() {
                             src="image/home/service/App_development.jpg"
                             alt="..."
                             className="w-100 h-100"
-                            loading="lazy"
                             style={{borderRadius:"10px"}}
                           />
                         
@@ -145,7 +142,6 @@ function Services() {
                             src="image/home/service/software-dev.jpg"
                             alt="..."
                             className="w-100 h-100"
-                            loading="lazy"
                             style={{borderRadius:"10px"}}
                           />
                         
@@ -176,7 +172,6 @@ function Services() {
                             src="image/home/service/Support_maintainence.jpg"
                             alt="..."
                             className="w-100 h-100"
-                            loading="lazy"
                             style={{borderRadius:"10px"}}
                           />
                         
@@ -209,7 +204,6 @@ function Services() {
                           src="image/home/service/Custom_software.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
                           style={{borderRadius:"10px"}}
                         />
                         

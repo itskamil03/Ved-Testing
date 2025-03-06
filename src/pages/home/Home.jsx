@@ -304,7 +304,7 @@ function Home({ target, label }) {
                                 src="image/home/work/start-up.png"
                                 alt="website development"
                                 className="w-100 h-100"
-                                loading="lazy"
+                                
                               />
                             </div>
                             <h3 className="what-do-name">
@@ -325,7 +325,7 @@ function Home({ target, label }) {
                                 src="image/home/work/Business.png"
                                 alt="application development"
                                 className="w-100 h-100"
-                                loading="lazy"
+                            
                               />
                             </div>
                             <h3 className="what-do-name">
@@ -345,7 +345,7 @@ function Home({ target, label }) {
                                 src="image/home/work/Enterprise.png"
                                 alt="software development"
                                 className="w-100 h-100"
-                                loading="lazy"
+                          
                               />
                             </div>
                             <h3 className="what-do-name">Schools & Colleges</h3>
@@ -360,7 +360,7 @@ function Home({ target, label }) {
                                 src="image/home/work/Agencies.png"
                                 alt="brand reputation"
                                 className="w-100 h-100"
-                                loading="lazy"
+                      
                               />
                             </div>
                             <h3 className="what-do-name">OIL & GAS Industry</h3>
@@ -420,7 +420,7 @@ function Home({ target, label }) {
               <LazyLoadImage
                 src="images/icon/web-development.png"
                 alt="Web Development"
-                loading="lazy"
+             
               />
               <h6>Web Development</h6>
             </label>
@@ -441,7 +441,7 @@ function Home({ target, label }) {
               <LazyLoadImage
                 src="images/icon/app-development.png"
                 alt="Mobile App Development"
-                loading="lazy"
+            
               />
               <h6>Mobile App Development</h6>
             </label>
@@ -463,7 +463,7 @@ function Home({ target, label }) {
                   <LazyLoadImage
                     src="images/icon/software.png"
                     alt="Software"
-                    loading="lazy"
+                 
                   />
                   <h6>Software</h6>
                 </label>
@@ -484,7 +484,7 @@ function Home({ target, label }) {
               <LazyLoadImage
                 src="images/icon/app-development.png"
                 alt="Digital Marketing"
-                loading="lazy"
+          
               />
               <h6>Digital Marketing</h6>
             </label>
@@ -505,7 +505,7 @@ function Home({ target, label }) {
               <LazyLoadImage
                 src="images/icon/ui.png"
                 alt="UI/UX Design"
-                loading="lazy"
+             
               />
               <h6>UI/UX Design</h6>
             </label>
@@ -526,7 +526,7 @@ function Home({ target, label }) {
               <LazyLoadImage
                 src="images/icon/devops.png"
                 alt="DevOps"
-                loading="lazy"
+           
               />
               <h6>DevOps</h6>
             </label>
@@ -567,7 +567,7 @@ function Home({ target, label }) {
                             src="images/icon/check.png"
                             alt={service}
                             className="w-100 h-100"
-                            loading="lazy"
+                    
                           />
                         </div>
                         <h5 className="tab-name">{service}</h5>
@@ -609,7 +609,7 @@ function Home({ target, label }) {
                             src="images/icon/check.png"
                             alt={service}
                             className="w-100 h-100"
-                            loading="lazy"
+                        
                           />
                         </div>
                         <h5 className="tab-name">{service}</h5>
@@ -652,7 +652,7 @@ function Home({ target, label }) {
                             src="images/icon/check.png"
                             alt={service}
                             className="w-100 h-100"
-                            loading="lazy"
+                          
                           />
                         </div>
                         <h5 className="tab-name">{service}</h5>
@@ -693,7 +693,7 @@ function Home({ target, label }) {
                             src="images/icon/check.png"
                             alt={service}
                             className="w-100 h-100"
-                            loading="lazy"
+                     
                           />
                         </div>
                         <h5 className="tab-name">{service}</h5>
@@ -733,7 +733,7 @@ function Home({ target, label }) {
                             src="images/icon/check.png"
                             alt={service}
                             className="w-100 h-100"
-                            loading="lazy"
+                     
                           />
                         </div>
                         <h5 className="tab-name">{service}</h5>
@@ -774,7 +774,7 @@ function Home({ target, label }) {
                             src="images/icon/check.png"
                             alt={service}
                             className="w-100 h-100"
-                            loading="lazy"
+                        
                           />
                         </div>
                         <h5 className="tab-name">{service}</h5>
@@ -907,7 +907,7 @@ function Home({ target, label }) {
                             id="solution_img"
                             src={card.img}
                             alt={card.title}
-                            loading="lazy"
+                         
                           />
                           <div className="solution_info">
                             <h2 className="solution_title">{card.title}</h2>
@@ -960,7 +960,7 @@ function Home({ target, label }) {
                     src="image/solution/training.jpg"
                     alt="training"
                     className="w-100 h-100"
-                    loading="lazy"
+               
                   />
                 </div>
                 <div className="col-lg-6 my-auto">
@@ -1090,7 +1090,7 @@ function Home({ target, label }) {
                       src="icons/frontend.png"
                       alt="frontend-training"
                       className="w-100 h-100"
-                      loading="lazy"
+                  
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -1107,7 +1107,7 @@ function Home({ target, label }) {
                       src="icons/backend.png"
                       alt="backend-training"
                       className="w-100 h-100"
-                      loading="lazy"
+                
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -1124,7 +1124,7 @@ function Home({ target, label }) {
                       src="icons/fullstack.png"
                       alt="fullstack-training"
                       className="w-100 h-100"
-                      loading="lazy"
+                
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -1141,7 +1141,7 @@ function Home({ target, label }) {
                       src="icons/java.png"
                       alt="java-training"
                       className="w-100 h-100"
-                      loading="lazy"
+                   
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -1158,7 +1158,7 @@ function Home({ target, label }) {
                       src="icons/ai.png"
                       alt="ai-ml-training"
                       className="w-100 h-100"
-                      loading="lazy"
+               
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -1174,7 +1174,7 @@ function Home({ target, label }) {
                       src="icons/bde.png"
                       alt="java-training"
                       className="w-100 h-100"
-                      loading="lazy"
+                    
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -1246,7 +1246,7 @@ function Home({ target, label }) {
                           src={inds.img}
                           alt={inds.heading}
                           className="w-100 h-100"
-                          loading="lazy"
+                       
                         />
                       </div>
                       <div className="industry-content">
@@ -1324,7 +1324,7 @@ function Home({ target, label }) {
                             src="icons/team.png"
                             alt="expert team"
                             className="w-100 h-100"
-                                loading="lazy"
+                              
                           />
 
                                 </div>
@@ -1350,7 +1350,7 @@ function Home({ target, label }) {
                                     src="icons/computer.png"
                                     alt="customized software"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                   
                                   />
                                 </div>
 
@@ -1371,7 +1371,7 @@ function Home({ target, label }) {
                                     src="icons/achievement.png"
                                     alt="using the latest tech"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                      
                                   />
                                 </div>
 
@@ -1396,7 +1396,7 @@ function Home({ target, label }) {
                                     src="icons/call.png"
                                     alt="all about quality"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    
                                   />
                                 </div>
 
@@ -1417,7 +1417,7 @@ function Home({ target, label }) {
                                     src="icons/delivered.png"
                                     alt="on-time delivery"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    
                                   />
                                 </div>
                                 
@@ -1437,7 +1437,7 @@ function Home({ target, label }) {
                                     src="icons/help.png"
                                     alt="help and upkeep"
                                     className="w-100 h-100"
-                                       loading="lazy"
+                                    
                                   />
                                 </div>
                                
@@ -1493,7 +1493,7 @@ function Home({ target, label }) {
                             src={item.image}
                             alt={item.category}
                             className="w-100 h-100"
-                            loading="lazy"
+                         
                           />
                         </div>
                         <div className="blog-content">

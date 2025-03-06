@@ -14,20 +14,20 @@ function AboutComponents() {
             <div className="section-head">
               <div className="custom-head">
                 <div className="circle"></div>
-                <h2
+                <h1
                   // data-aos="zoom-in"
                   className="head-title"
                 >
                   Venturing Digitally : Best Software Company For Your One-Stop Software Solutions!
-                </h2>
+                </h1>
               </div>
 
-              <div
+              <h2
                 // data-aos="zoom-in"
                 className="head-slogan page_title"
               >
                 Best website development, Mobile Application development and ERP software in Jamshedpur, Bhopal, Bangalore, Kolkata & Nagpur - Experts in IT Solutions and Services.
-              </div>
+              </h2>
             </div>
 
             <div className="section-content">
@@ -91,7 +91,7 @@ function AboutComponents() {
                     //   data-aos-easing="ease-in-sine"
                        className="value-block">
                       <div className="value-icon">
-                        <LazyLoadImage src={Team} alt="" className="w-100 h-100" loading="lazy" />
+                        <LazyLoadImage src={Team} alt="" className="w-100 h-100"  />
                       </div>
                       <div className="value-content flex-fill">
                         <div className="value-head">
@@ -110,7 +110,7 @@ function AboutComponents() {
                     //   data-aos-easing="ease-in-sine"
                        className="value-block">
                       <div className="value-icon">
-                        <LazyLoadImage src={Stats} alt="" className="w-100 h-100" loading="lazy" />
+                        <LazyLoadImage src={Stats} alt="" className="w-100 h-100"  />
                       </div>
                       <div className="value-content flex-fill">
                         <div className="value-head">Continuous Innovation</div>
