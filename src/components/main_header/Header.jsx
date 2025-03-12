@@ -181,14 +181,14 @@ function Header() {
                                 </div>
                               </NavLink>
                               <NavLink
-                                to="#"
+                                to="/Events"
                                 onClick={() => setMenubtn(!menubtn)}
                                 className="megadrop-item-link"
                               >
                                 <div className="megadrop-item-about">
                                   <FaConnectdevelop />
                                   &nbsp;&nbsp;
-                                  <strong>Events</strong>
+                                  <strong>News & Events</strong>
                                 </div>
                               </NavLink>
                             </div>

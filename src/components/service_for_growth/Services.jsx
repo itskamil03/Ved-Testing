@@ -11,9 +11,9 @@ function Services() {
           <div className="container">
             <div className="cservice-section-head">
               <div className="cservice-custom-head">
-                <h1 className="cservice-head-title head_title">
+                <h2 className="cservice-head-title head_title">
                   Our Best Exceptional Service For You
-                </h1>
+                </h2>
               </div>
               <div className="cservice-head-slogan page_title">
                 At Venturing Digitally we measure our success by the growth and
