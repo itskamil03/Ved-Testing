@@ -34,6 +34,79 @@ const [activeTab, setActiveTab] = useState("All");
 
 const tabs = ["All", "Seminar", "Interview", "Press News", "Events"];
 
+const eventsData = [
+  {
+    id: 1,
+    category: "Seminar",
+    title: "Seminar on Software Development Conducted at Srinath University",
+    image: "/events/srinathcollege_seminar.jpeg",
+    date: "Mar 11 2025",
+    description:
+      "We successfully conducted an insightful seminar on software development process with integration of power bi at Srinath University, Jamshedpur, aimed at educating students about building industry-level websites.",
+  },
+  {
+    id: 2,
+    category: "Press News",
+    title: "Coverage on Seminar in Newspapers",
+    image: "/events/karimcity_newsevent.jpeg",
+    date: "Mar 09 2025",
+    description:
+      "The successful seminar at Karim City College was covered in major newspapers, highlighting its impact on students and the local tech community. Industry experts shared insights on modern web technologies and career opportunities",
+  },
+  {
+    id: 3,
+    category: "Seminar",
+    title: "Seminar on Web Development at Karim City College",
+    image: "/events/karimcity_seminar.jpeg",
+    date: "Mar 08 2025",
+    description:
+      "This event provided in-depth knowledge about modern web technologies, best practices in the IT industry, and the latest trends in web development. Students gained hands-on experience with latest technologies"
+  },
+
+  {
+    id: 4,
+    category: "Seminar",
+    title: "Web Development Awareness Seminar for Jamshedpur Women’s University Students",
+    image: "/events/jamshedpur_womencollege_seminar.jpeg",
+    date: "Feb 25 2025",
+    description:
+      "Our institute hosted students from Jamshedpur Women’s University for an engaging seminar on Web Development, covering industry-level website development, modern web technologies, and career opportunities in the IT sector.",
+  },
+  {
+    id: 5,
+    category: "Press News",
+    title: "Coverage on Seminar in Newspapers",
+    image: "/events/co-operative_newspaper.jpeg",
+    date: "Feb 22 2025",
+    description:
+      "The successful seminar at Co-operative College was covered in major newspapers, highlighting its impact and the importance of web development skills in today's digital world.",
+  },
+  {
+    id: 6,
+    category: "Seminar",
+    title: "Seminar on Web Development at Cooperative College",
+    image: "/events/co-operativecollege_seminar.jpeg",
+    date: "Feb 21 2025",
+    description:
+      "This event provided in-depth knowledge about modern web technologies and best practices in the IT industry, helping students understand real-world applications and career opportunities.",
+  },
+  {
+    id: 7,
+    category: "Seminar",
+    title: "Web Development Awareness Program",
+    image: "/events/events.jpeg",
+    date: "Deb 16 2024",
+    description:
+      "This event provided in-depth knowledge about modern web technologies, best practices in the IT industry, practical insights into career growth opportunities, and hands-on experience with real-world applications.",
+  },
+
+];
+
+const filteredEvents =
+activeTab === "All"
+  ? eventsData
+  : eventsData.filter((events) => events.category === activeTab);
+
 const handletab=(tab)=>
 {
   setActiveTab(tab)
@@ -84,35 +157,28 @@ const handletab=(tab)=>
 
             <div className="blogesc-main">
                   
-                <Link className="bloges-card" key="id">
-                  <div className="bloges-card-img">
-                    <LazyLoadImage
-                      src="/backgrounds/news.jpg"
-                      alt="Events"
-                      className="bloges-card-img-img w-100 h-100"
-                      loading="lazy"
-                    />
-                          
-                  <div className="date">Mar 08 2025</div> 
-                  </div>
-                
-                  <div className="events-card-title">
+            {filteredEvents.map((event) => (
+          <Link className="bloges-card" key={event.id}>
+            <div className="events-card-img">
+              <LazyLoadImage
+                src={event.image}
+                alt={event.title}
+                className="bloges-card-img-img w-100 h-100"
+                loading="lazy"
+              />
+              <div className="date">{event.date}</div>
+            </div>
 
-                    <div className="events-card-heading">Seminar on Web Development Conducted at Karim City College, Jamshedpur, Jharkhand</div>
-                    <div className="name-block">
-                    We successfully conducted an insightful seminar on Web Development at Karim City College, Jamshedpur, aimed at educating students about building industry-level websites. The event provided in-depth knowledge 
-                    about modern web technologies, best practices, and career opportunities in the IT industry.
-                    </div>
-
-                    <Link to="/EventDetails"  className="read-more-button">
-                      Read More
-                    </Link>
-
-                  </div>
-                </Link>
+            <div className="events-card-title">
+              <div className="events-card-heading">{event.title}</div>
+              <div className="event-description">{event.description}</div>
+            </div>
+          </Link>
+        ))}
             
             </div>
           </div>
+
         </div>
       </section>
       <ContactForm />

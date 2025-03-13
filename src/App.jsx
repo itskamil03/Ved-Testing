@@ -57,7 +57,7 @@ import { React, useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Events from "./pages/news_events/Events";
-import EventDetails from "./pages/events_details/EventDetails";
+
 
 function App() {
   useEffect(() => {
@@ -80,7 +80,7 @@ function App() {
           <Route path="/MissionVision" element={<MissionVision />} />
           <Route path="/DevelopmentProcess" element={<DevelopmentProcess />} />
           <Route path="/Events" element={<Events />} />
-          <Route path="/EventDetails" element={<EventDetails />} />
+     
           
           <Route path="/WebsiteDevelopment" element={<WebsiteDevelopment />} />
           <Route path="/UIUXDesign" element={<UIUXDesign />} />
