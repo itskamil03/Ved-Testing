@@ -32,10 +32,10 @@ function HomeHeroImg() {
   };
 
   useEffect(() => {
-   
+
     $(".owl-carousel").owlCarousel(forservices);
   }, []);
-  
+
   return (
     <>
       <OwlCarousel loop className="owl-theme" {...forservices} margin={0}>
@@ -52,7 +52,7 @@ function HomeHeroImg() {
             {/* </div> */}
             <div className="homeheroimg-contant">
               <div className="homeheroimg-slogan">
-                Transform Your Business Online 
+                Transform Your Business Online
               </div>
               <div className="homeheroimg-heading">
                 GxP software solutions EQMS, DMS, TMS, <br /> HRMS, ERP...
@@ -67,7 +67,14 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            <LazyLoadImage
+            {/* <LazyLoadImage
+              src="image/home-slider/Slider_2.webp"
+              alt="..."
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            /> */}
+            <img
               src="image/home-slider/Slider_2.webp"
               alt="..."
               className="homeheroimg-img"
@@ -84,7 +91,7 @@ function HomeHeroImg() {
                 software solutions
               </div>
               <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
-              Contact Us
+                Contact Us
               </NavLink>
             </div>
           </div>
@@ -93,7 +100,14 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            <LazyLoadImage
+            {/* <LazyLoadImage
+              src="image/home-slider/Slider_3.webp"
+              alt="..."
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            /> */}
+            <img
               src="image/home-slider/Slider_3.webp"
               alt="..."
               className="homeheroimg-img"
@@ -109,7 +123,7 @@ function HomeHeroImg() {
                 GxP Training and Mentoring
               </div>
               <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
-              Contact Us
+                Contact Us
               </NavLink>
             </div>
           </div>
@@ -118,7 +132,14 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            <LazyLoadImage
+            {/* <LazyLoadImage
+              src="image/home-slider/slide_1.webp"
+              alt="..."
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            /> */}
+            <img
               src="image/home-slider/slide_1.webp"
               alt="..."
               className="homeheroimg-img"
@@ -134,7 +155,7 @@ function HomeHeroImg() {
                 Web Development, App Development, CRM <br /> Software, and More!
               </div>
               <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
-              Contact Us
+                Contact Us
               </NavLink>
             </div>
           </div>
@@ -143,7 +164,14 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            <LazyLoadImage
+            {/* <LazyLoadImage
+              src="image/home-slider/slide_2.webp"
+              alt="home_slider"
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            /> */}
+            <img
               src="image/home-slider/slide_2.webp"
               alt="home_slider"
               className="homeheroimg-img"
@@ -166,7 +194,14 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            <LazyLoadImage
+            {/* <LazyLoadImage
+              src="image/home-slider/slide_3.webp"
+              alt=""
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            /> */}
+            <img
               src="image/home-slider/slide_3.webp"
               alt=""
               className="homeheroimg-img"
@@ -190,7 +225,14 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            <LazyLoadImage
+            {/* <LazyLoadImage
+              src="image/home-slider/slide_4.webp"
+              alt=""
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            /> */}
+            <img
               src="image/home-slider/slide_4.webp"
               alt=""
               className="homeheroimg-img"
@@ -213,7 +255,14 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            <LazyLoadImage
+            {/* <LazyLoadImage
+              src="image/home-slider/training_slider.webp"
+              alt=""
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            /> */}
+            <img
               src="image/home-slider/training_slider.webp"
               alt=""
               className="homeheroimg-img"
