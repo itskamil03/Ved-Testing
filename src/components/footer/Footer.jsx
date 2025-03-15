@@ -73,6 +73,9 @@ function Footer() {
                     <Link to="/DevelopmentProcess">Development Process</Link>
                   </li>
                   <li>
+                    <Link to="/Events">News & Events</Link>
+                  </li>
+                  <li>
                     <Link className="site_link" to="/">
                       Privacy & Policy
                     </Link>

@@ -46,8 +46,8 @@ function SiteMap() {
                       </Link>
                     </li>
                     <li>
-                      <Link to="#">
-                        Events
+                      <Link to="/Events">
+                        News & Events
                       </Link>
                     </li>
                   </ul>
