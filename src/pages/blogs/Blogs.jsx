@@ -59,11 +59,11 @@ function Blogs() {
               {blogs.map((card) => (
                 <Link className="bloges-card" key={card.id}>
                   <div className="bloges-card-img">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src={`${card.image}`}
                       alt={card.blog_title}
                       className="bloges-card-img-img w-100 h-100"
-                      loading="lazy"
+                       
                     />
                   </div>
                   <div className="blogs-card-title">

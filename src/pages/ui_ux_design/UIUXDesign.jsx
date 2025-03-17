@@ -69,7 +69,7 @@ function UIUXDesign() {
                   <div>
                     <div>
                       <div className="client-item">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/clients/walt-disney.png"
                           alt="..."
                           className="w-100 h-100"
@@ -81,7 +81,7 @@ function UIUXDesign() {
                   <div>
                     <div>
                       <div className="client-item">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/clients/walt-disney.png"
                           alt="..."
                           className="w-100 h-100"
@@ -93,7 +93,7 @@ function UIUXDesign() {
                   <div>
                     <div>
                       <div className="client-item">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/clients/walt-disney.png"
                           alt="..."
                           className="w-100 h-100"
@@ -104,7 +104,7 @@ function UIUXDesign() {
                   <div>
                     <div>
                       <div className="client-item">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/clients/walt-disney.png"
                           alt="..."
                           className="w-100 h-100"
@@ -115,7 +115,7 @@ function UIUXDesign() {
                   <div>
                     <div>
                       <div className="client-item">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/clients/walt-disney.png"
                           alt="..."
                           className="w-100 h-100"
@@ -126,7 +126,7 @@ function UIUXDesign() {
                   <div>
                     <div>
                       <div className="client-item">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/clients/walt-disney.png"
                           alt="..."
                           className="w-100 h-100"
@@ -172,7 +172,7 @@ function UIUXDesign() {
               <div className="ph-uiux-box">
                 <div className="ph-uiux-icon">
                   <span>
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       alt="research image"
                       src="image/ui-ux-design/second-1.svg"
                     />
@@ -193,7 +193,7 @@ function UIUXDesign() {
               <div className="ph-uiux-box">
                 <div className="ph-uiux-icon">
                   <span>
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       alt="wireframes"
                       src="image/ui-ux-design/second-2.svg"
                     />
@@ -215,7 +215,7 @@ function UIUXDesign() {
               <div className="ph-uiux-box">
                 <div className="ph-uiux-icon">
                   <span>
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       alt="code development image"
                       src="image/ui-ux-design/second-3.svg"
                     />
@@ -278,7 +278,7 @@ function UIUXDesign() {
               </div>
               <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                 <div className="ph-wireframe-img">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     alt="ui ux wireframe"
                     src="image/ui-ux-design/ui-ux-section-3.png"
                   />

@@ -56,11 +56,11 @@ function AIML() {
                 <div className="development">
            
                  <div className="solution-item">
-                 <LazyLoadImage
+                 <img loading="eager" fetchpriority="high"
                       src="image/ai/ai_integration.jpg"
                       alt="AI Integration"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
            
                  </div>
@@ -77,11 +77,11 @@ function AIML() {
               <div className="col-md-4 col-lg-4 col-sm-6 mb-5">
               <div className="development">
               <div className="solution-item">
-                 <LazyLoadImage
+                 <img loading="eager" fetchpriority="high"
                       src="image/ai/automation.jpg"
                       alt="AI Integration"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
               </div>
 
@@ -97,11 +97,11 @@ function AIML() {
              <div className="col-md-4 col-lg-4 col-sm-6 mb-5">
              <div className="development">
              <div className="solution-item">
-                 <LazyLoadImage
+                 <img loading="eager" fetchpriority="high"
                       src="image/ai/power-bi.webp"
                       alt="AI Integration"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
               </div>
                 <div className="ai-head">

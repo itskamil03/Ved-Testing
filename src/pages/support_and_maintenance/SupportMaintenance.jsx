@@ -61,11 +61,11 @@ function SupportMaintenance() {
                 </div>
               </div>
               <div className="right">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/support-maintenance/sup1.jpg"
                   alt=""
                   className="w-100 h-100"
-                  loading="lazy"
+                   
                 />
               </div>
             </div>
@@ -92,11 +92,11 @@ function SupportMaintenance() {
               <div className="top-grid">
                 <div className="left">
                   <div className="image">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="image/support-maintenance/level1.png"
                       alt="..."
                       className="w-100 h-100"
-                      loading="lazy"
+                       
                     />
                   </div>
                 </div>
@@ -117,11 +117,11 @@ function SupportMaintenance() {
                 </div>
                 <div className="right">
                   <div className="image">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="image/support-maintenance/level2.png"
                       alt=""
                       className="w-100 h-100"
-                      loading="lazy"
+                       
                     />
                   </div>
                 </div>
@@ -129,11 +129,11 @@ function SupportMaintenance() {
               <div className="bottom-grid">
                 <div className="left">
                   <div className="image">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="image/support-maintenance/level3.png"
                       alt="..."
                       className="w-100 h-100"
-                      loading="lazy"
+                       
                     />
                   </div>
                 </div>
@@ -183,11 +183,11 @@ function SupportMaintenance() {
           <div className="top">
             <div className="left">
               <div className="image">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/support-maintenance/img1.webp"
                   alt="..."
                   className="w-100 h-100"
-                  loading="lazy"
+                   
                 />
               </div>
             </div>
@@ -228,11 +228,11 @@ function SupportMaintenance() {
             </div>
             <div className="right">
               <div className="image">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/support-maintenance/img2.webp"
                   alt="..."
                   className="w-100 h-100"
-                  loading="lazy"
+                   
                 />
               </div>
             </div>

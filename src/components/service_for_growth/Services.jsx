@@ -39,7 +39,7 @@ function Services() {
                          </div>
 
                       <div className="image" >
-                        {/* <LazyLoadImage
+                        {/* <img loading="eager" fetchpriority="high"
                           // src="image/home/service/Web_development.jpg"
                           src="https://media.istockphoto.com/id/2154221615/photo/cobweb.jpg?s=1024x1024&w=is&k=20&c=b6gRGD-px5L4Fy_F6Fge_m2ggryfDjreyAJv72dNa5w="
                           alt="..."
@@ -74,7 +74,7 @@ function Services() {
                            </div>
   
                         <div className="image" >
-                        {/* <LazyLoadImage
+                        {/* <img loading="eager" fetchpriority="high"
                             src="image/home/service/Ui_ux.jpg"
                             alt="..."
                             className="w-100 h-100"
@@ -109,7 +109,7 @@ function Services() {
                            </div>
   
                         <div className="image" >
-                        {/* <LazyLoadImage
+                        {/* <img loading="eager" fetchpriority="high"
                             src="image/home/service/App_development.jpg"
                             alt="..."
                             className="w-100 h-100"
@@ -145,7 +145,7 @@ function Services() {
                            </div>
   
                         <div className="image" >
-                        {/* <LazyLoadImage
+                        {/* <img loading="eager" fetchpriority="high"
                             // src="image/home/service/software-dev.jpg"
                             src="https://media.istockphoto.com/id/2154221615/photo/cobweb.jpg?s=1024x1024&w=is&k=20&c=b6gRGD-px5L4Fy_F6Fge_m2ggryfDjreyAJv72dNa5w="
                             alt="..."
@@ -178,7 +178,7 @@ function Services() {
                            </div>
   
                         <div className="image" >
-                        {/* <LazyLoadImage
+                        {/* <img loading="eager" fetchpriority="high"
                             src="image/home/service/Support_maintainence.jpg"
                             alt="..."
                             className="w-100 h-100"
@@ -212,7 +212,7 @@ function Services() {
                            </div>
   
                         <div className="image" >
-                        {/* <LazyLoadImage
+                        {/* <img loading="eager" fetchpriority="high"
                           src="image/home/service/Custom_software.jpg"
                           alt="..."
                           className="w-100 h-100"

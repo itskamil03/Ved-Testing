@@ -143,10 +143,10 @@ const Qms = () => {
         <div id="container-fluid">
           <div className="container">
             <div className="head-image-main">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                 className="qms-icon-image"
                 src="/qms-letter.jpg"
-                loading="lazy"
+                 
               />
 
               <div id="qms-heading">
@@ -165,19 +165,19 @@ const Qms = () => {
                 quality standards and regulatory requirements.
               </div>
               <div className="image-qms-containt">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   className="qms123"
                   src="qms123.jpg"
-                  loading="lazy"
+                   
                 />
               </div>
             </div>
             <div className="qms-main-cards">
               <div className="qms-cards-heading">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   className="qms-icon-image1"
                   src="/qms-letter.jpg"
-                  loading="lazy"
+                   
                 />
                 &nbsp;&nbsp;Key Components of a EQMS/QMS Include
               </div>
@@ -258,10 +258,10 @@ const Qms = () => {
             </div>
             <div className="main-text-image ">
               <div className="main-containt">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   className="qms-icon-image111"
                   src="/img_technology.png"
-                  loading="lazy"
+                   
                 />
                 &nbsp;&nbsp;&nbsp; QMS is often governed by international
                 standards like ISO 9001, which provides a set of principles for
@@ -276,10 +276,10 @@ const Qms = () => {
                 requirements.
               </div>
               <div className="qms-image1">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   className="assistance-image"
                   src="https://media.istockphoto.com/id/1138286481/photo/light-teal-defocused-blurred-motion-abstract-background.webp?b=1&s=170667a&w=0&k=20&c=QT2Bne_LKwFzcYObQqQCvTPWZYA31Ul08_7bvhMwu74="
-                  loading="lazy"
+                   
                 />
               </div>
               {/* <div className="main-containt"> */}
@@ -292,10 +292,10 @@ const Qms = () => {
                   <div className="section-head">
                     <div className="custom-head">
                       <div className="head-title">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           className="qms-icon-image1"
                           src="/qms-letter.jpg"
-                          loading="lazy"
+                           
                         />
                         &nbsp; Benefit of EQMS/QMS Software in Pharma Industry
                       </div>
@@ -317,11 +317,11 @@ const Qms = () => {
                             </div>
                             <div className="top">
                               <div className="icon">
-                                <LazyLoadImage
+                                <img loading="eager" fetchpriority="high"
                                   src="image/enterprise-software/Tailored Software Solutions.png"
                                   alt=""
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="head">
@@ -345,11 +345,11 @@ const Qms = () => {
                             </div>
                             <div className="top">
                               <div className="icon">
-                                <LazyLoadImage
+                                <img loading="eager" fetchpriority="high"
                                   src="image/enterprise-software/Scalable and Secure Systems.png"
                                   alt=""
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="head">
@@ -372,11 +372,11 @@ const Qms = () => {
                             </div>
                             <div className="top">
                               <div className="icon">
-                                <LazyLoadImage
+                                <img loading="eager" fetchpriority="high"
                                   src="image/enterprise-software/Integration and Compatibility.png"
                                   alt=""
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="head">Improved Compliance</div>
@@ -397,11 +397,11 @@ const Qms = () => {
                             </div>
                             <div className="top">
                               <div className="icon">
-                                <LazyLoadImage
+                                <img loading="eager" fetchpriority="high"
                                   src="image/enterprise-software/Streamlined Business Processes.png"
                                   alt=""
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="head">
@@ -424,11 +424,11 @@ const Qms = () => {
                             </div>
                             <div className="top">
                               <div className="icon">
-                                <LazyLoadImage
+                                <img loading="eager" fetchpriority="high"
                                   src="image/enterprise-software/User-Centric Design.png"
                                   alt=""
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="head"> Risk Management</div>
@@ -449,11 +449,11 @@ const Qms = () => {
                             </div>
                             <div className="top">
                               <div className="icon">
-                                <LazyLoadImage
+                                <img loading="eager" fetchpriority="high"
                                   src="image/enterprise-software/Ongoing Support and Maintenance.png"
                                   alt=""
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="head">
@@ -480,10 +480,10 @@ const Qms = () => {
                   <div className="section-head">
                     <div className="custom-head">
                       <div className="head-title">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           className="qms-icon-image1"
                           src="/qms-letter.jpg"
-                          loading="lazy"
+                           
                         />
                         &nbsp;Our QMS/EQMS overview
                       </div>
@@ -576,11 +576,11 @@ const Qms = () => {
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
                         className="w-75 h-auto"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>

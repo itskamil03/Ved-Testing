@@ -65,7 +65,7 @@ function SoftwareDevelopment() {
                     <div className="why-card">
                       <div className="icon">
                         <div className="icon-img">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/software-development/first/Accelerate Project Timelines.png"
                             alt="..."
                             className="w-100 h-100"
@@ -88,7 +88,7 @@ function SoftwareDevelopment() {
                     <div className="why-card">
                       <div className="icon">
                         <div className="icon-img">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/software-development/first/Cost Savings.png"
                             alt="..."
                             className="w-100 h-100"
@@ -112,7 +112,7 @@ function SoftwareDevelopment() {
                     <div className="why-card">
                       <div className="icon">
                         <div className="icon-img">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/software-development/first/Access to Specialized Skills.png"
                             alt="..."
                             className="w-100 h-100"
@@ -160,7 +160,7 @@ function SoftwareDevelopment() {
                   </div>
                 </div>
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="images/icon/outsource.png"
                     alt="..."
                     className="w-100 h-100"
@@ -225,7 +225,7 @@ function SoftwareDevelopment() {
                   <div className="row align-items-center">
                     <div className="col-xl-5 col-lg-6">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/advantage/maintain.jpg"
                           alt="..."
                           className="w-100 h-100"
@@ -257,7 +257,7 @@ function SoftwareDevelopment() {
                   <div className="row align-items-center">
                     <div className="col-xl-5 col-lg-6">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/advantage/speed.jpg"
                           alt="..."
                           className="w-100 h-100"
@@ -289,7 +289,7 @@ function SoftwareDevelopment() {
                   <div className="row align-items-center">
                     <div className="col-xl-5 col-lg-6">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/advantage/quality.jpg"
                           alt="..."
                           className="w-100 h-100"
@@ -321,7 +321,7 @@ function SoftwareDevelopment() {
                   <div className="row align-items-center">
                     <div className="col-xl-5 col-lg-6">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/advantage/partner.jpg"
                           alt="..."
                           className="w-100 h-100"
@@ -373,7 +373,7 @@ function SoftwareDevelopment() {
                 <div className="number">01</div>
                 <div className="icon">
                   <div className="icon-img">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="image/software-development/third/Requirements Gathering.png"
                       alt="..."
                       className="w-100 h-100"
@@ -393,7 +393,7 @@ function SoftwareDevelopment() {
                 <div className="number">02</div>
                 <div className="icon">
                   <div className="icon-img">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="image/software-development/third/Planning and Design.png"
                       alt="..."
                       className="w-100 h-100"
@@ -413,7 +413,7 @@ function SoftwareDevelopment() {
                 <div className="number">03</div>
                 <div className="icon">
                   <div className="icon-img">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="image/software-development/third/Development and Testing.png"
                       alt="..."
                       className="w-100 h-100"
@@ -434,7 +434,7 @@ function SoftwareDevelopment() {
                 <div className="number">04</div>
                 <div className="icon">
                   <div className="icon-img">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="image/software-development/third/Deployment and Integration.png"
                       alt="..."
                       className="w-100 h-100"
@@ -455,7 +455,7 @@ function SoftwareDevelopment() {
                 <div className="number">05</div>
                 <div className="icon">
                   <div className="icon-img">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="image/software-development/third/Maintenance and Support.png"
                       alt="..."
                       className="w-100 h-100"
@@ -528,7 +528,7 @@ function SoftwareDevelopment() {
                     <div className="expertise-card">
                       <div className="icon">
                         <div className="icon-img">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/software-development/five/RESOURCE OPTIMIZATION.png"
                             alt="..."
                             className="w-100 h-100"
@@ -548,7 +548,7 @@ function SoftwareDevelopment() {
                     <div className="expertise-card">
                       <div className="icon">
                         <div className="icon-img">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/software-development/five/DOMAIN EXPERTISE.png"
                             alt="..."
                             className="w-100 h-100"
@@ -568,7 +568,7 @@ function SoftwareDevelopment() {
                     <div className="expertise-card">
                       <div className="icon">
                         <div className="icon-img">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/software-development/five/SCALABLE SOLUTIONS.png"
                             alt="..."
                             className="w-100 h-100"
@@ -612,7 +612,7 @@ function SoftwareDevelopment() {
                   <div className="col-lg-4 col-md-6">
                     <div className="client-item">
                       <div className="client-img">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
@@ -620,7 +620,7 @@ function SoftwareDevelopment() {
                       </div>
                       <div className="client-content">
                         <div className="logo">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="images/logo.png"
                             alt="..."
                             className="w-100 h-100"
@@ -641,7 +641,7 @@ function SoftwareDevelopment() {
                   <div className="col-lg-4 col-md-6">
                     <div className="client-item">
                       <div className="client-img">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
@@ -649,7 +649,7 @@ function SoftwareDevelopment() {
                       </div>
                       <div className="client-content">
                         <div className="logo">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="images/logo.png"
                             alt="..."
                             className="w-100 h-100"
@@ -670,7 +670,7 @@ function SoftwareDevelopment() {
                   <div className="col-lg-4 col-md-6">
                     <div className="client-item">
                       <div className="client-img">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
@@ -678,7 +678,7 @@ function SoftwareDevelopment() {
                       </div>
                       <div className="client-content">
                         <div className="logo">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="images/logo.png"
                             alt="..."
                             className="w-100 h-100"

@@ -23,7 +23,7 @@ function OurDevelopmentProcess() {
                 <div className="process-box">
                   <div className="icon-box">
                     <div className="icon">
-                      <LazyLoadImage src="/image/development-process/icon.png" alt="..." className="w-100 h-100" loading="lazy"/>
+                      <img loading="eager" fetchpriority="high" src="/image/development-process/icon.png" alt="..." className="w-100 h-100"  />
                     </div>
                   </div>
                   <div className="title">
@@ -34,7 +34,7 @@ function OurDevelopmentProcess() {
                 <div className="process-box">
                   <div className="icon-box">
                     <div className="icon">
-                      <LazyLoadImage src="/image/development-process/icon.png" alt="..." className="w-100 h-100" />
+                      <img loading="eager" fetchpriority="high" src="/image/development-process/icon.png" alt="..." className="w-100 h-100" />
                     </div>
                   </div>
                   <div className="title">
@@ -45,7 +45,7 @@ function OurDevelopmentProcess() {
                 <div className="process-box">
                   <div className="icon-box">
                     <div className="icon">
-                      <LazyLoadImage src="/image/development-process/icon.png" alt="..." className="w-100 h-100" />
+                      <img loading="eager" fetchpriority="high" src="/image/development-process/icon.png" alt="..." className="w-100 h-100" />
                     </div>
                   </div>
                   <div className="title">
@@ -56,7 +56,7 @@ function OurDevelopmentProcess() {
                 <div className="process-box">
                   <div className="icon-box">
                     <div className="icon">
-                      <LazyLoadImage src="/image/development-process/icon.png" alt="..." className="w-100 h-100" />
+                      <img loading="eager" fetchpriority="high" src="/image/development-process/icon.png" alt="..." className="w-100 h-100" />
                     </div>
                   </div>
                   <div className="title">
@@ -67,7 +67,7 @@ function OurDevelopmentProcess() {
                 <div className="process-box">
                   <div className="icon-box">
                     <div className="icon">
-                      <LazyLoadImage src="/image/development-process/icon.png" alt="..." className="w-100 h-100" />
+                      <img loading="eager" fetchpriority="high" src="/image/development-process/icon.png" alt="..." className="w-100 h-100" />
                     </div>
                   </div>
                   <div className="title">
@@ -78,7 +78,7 @@ function OurDevelopmentProcess() {
                 <div className="process-box">
                   <div className="icon-box">
                     <div className="icon">
-                      <LazyLoadImage src="/image/development-process/icon.png" alt="..." className="w-100 h-100" />
+                      <img loading="eager" fetchpriority="high" src="/image/development-process/icon.png" alt="..." className="w-100 h-100" />
                     </div>
                   </div>
                   <div className="title">
@@ -89,7 +89,7 @@ function OurDevelopmentProcess() {
                 <div className="process-box">
                   <div className="icon-box">
                     <div className="icon">
-                      <LazyLoadImage src="/image/development-process/icon.png" alt="..." className="w-100 h-100" />
+                      <img loading="eager" fetchpriority="high" src="/image/development-process/icon.png" alt="..." className="w-100 h-100" />
                     </div>
                   </div>
                   <div className="title">

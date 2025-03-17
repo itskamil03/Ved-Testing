@@ -235,11 +235,11 @@ function Cms() {
                 return (
                   <div className="cmssecond-why-box" key={sup.id}>
                     <div className="cmssecond-icon">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src={sup.img1}
                         alt="..."
                         className="cmssecond-img  w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="details">
@@ -285,10 +285,10 @@ function Cms() {
               </div>
               <div className="cmsthird-section-right">
                 <div className="cmsthird-section-right-img">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src={cms1}
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>
@@ -337,11 +337,11 @@ function Cms() {
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
                         className="w-75 h-auto"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>

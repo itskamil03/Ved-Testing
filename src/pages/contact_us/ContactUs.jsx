@@ -146,7 +146,7 @@ function ContactUs() {
                     <div className="main-form">
                       <div className="col-lg-4">
                         <div className="image-box">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             className="image-form"
                             src="/venturing-form-image.png"
                           />
@@ -325,11 +325,11 @@ function ContactUs() {
                         >
                           <div className="what-do-box">
                             <div className="what-do-icon location">
-                              <LazyLoadImage
+                              <img loading="eager" fetchpriority="high"
                                 src="image/home/work/jamshedpur.jpg"
                                 alt=""
                                 className="w-100 h-100"
-                                loading="lazy"
+                                 
                               />
                             </div>
                             <div className="what-do-name">
@@ -346,11 +346,11 @@ function ContactUs() {
                         >
                           <div className="what-do-box">
                             <div className="what-do-icon location">
-                              <LazyLoadImage
+                              <img loading="eager" fetchpriority="high"
                                 src="image/home/work/bhopal.jpg"
                                 alt=""
                                 className="w-100 h-100"
-                                loading="lazy"
+                                 
                               />
                             </div>
                             <div className="what-do-name">
@@ -366,11 +366,11 @@ function ContactUs() {
                         >
                           <div className="what-do-box">
                             <div className="what-do-icon location">
-                              <LazyLoadImage
+                              <img loading="eager" fetchpriority="high"
                                 src="image/home/work/kolkata.jpg"
                                 alt=""
                                 className="w-100 h-100"
-                                loading="lazy"
+                                 
                               />
                             </div>
                             <div className="what-do-name">Kolkata</div>
@@ -382,11 +382,11 @@ function ContactUs() {
                         <div className="whatwedo-link">
                           <div className="what-do-box">
                             <div className="what-do-icon location">
-                              <LazyLoadImage
+                              <img loading="eager" fetchpriority="high"
                                 src="image/home/work/bengaluru.jpg"
                                 alt=""
                                 className="w-100 h-100"
-                                   loading="lazy"
+                                    
                               />
                             </div>
                             <div className="what-do-name">Bengaluru</div>
@@ -400,11 +400,11 @@ function ContactUs() {
                         >
                           <div className="what-do-box">
                             <div className="what-do-icon location">
-                              <LazyLoadImage
+                              <img loading="eager" fetchpriority="high"
                                 src="image/home/work/nagpur.jpeg"
                                 alt=""
                                 className="w-100 h-100"
-                                loading="lazy"
+                                 
                               />
                             </div>
                             <div className="what-do-name">

@@ -72,11 +72,11 @@ function Testimonials() {
                     </div>
                     <div className="bottom-block">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/icon/profile-f.png"
                           alt="Operation Head"
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div>
@@ -99,11 +99,11 @@ function Testimonials() {
                     </div>
                     <div className="bottom-block">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/icon/profile-f.png"
                           alt="Multivendor E-commerce Website/App"
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div>
@@ -126,11 +126,11 @@ function Testimonials() {
                     </div>
                     <div className="bottom-block">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/icon/profile-m.png"
                           alt="E-commerce App & Website"
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div>
@@ -149,11 +149,11 @@ function Testimonials() {
                     </div>
                     <div className="bottom-block">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/icon/profile-f.png"
                           alt="Learning Management Software"
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div>
@@ -172,11 +172,11 @@ function Testimonials() {
                     </div>
                     <div className="bottom-block">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/icon/profile-f.png"
                           alt="Oil Management Software"
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div>
@@ -195,11 +195,11 @@ function Testimonials() {
                     </div>
                     <div className="bottom-block">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/icon/profile-f.png"
                           alt="HRMS"
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div>
@@ -218,11 +218,11 @@ function Testimonials() {
                     </div>
                     <div className="bottom-block">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/icon/profile-f.png"
                           alt="CRM"
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div>
@@ -241,11 +241,11 @@ function Testimonials() {
                     </div>
                     <div className="bottom-block">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/icon/profile-f.png"
                           alt="Hospital Management Software"
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div>

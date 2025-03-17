@@ -255,7 +255,7 @@ function WebPortal() {
                   return (
                     <div className="type-box" key={data.is}>
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src={data.img}
                           alt="..."
                           className="w-100 h-100"
@@ -303,11 +303,11 @@ function WebPortal() {
               </div>
               <div className="webporthird-section-right">
                 <div className="webporthird-section-right-img">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src={Ecom1}
                     className="w-100 h-100"
                     autoPlay={true}
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>
@@ -405,7 +405,7 @@ function WebPortal() {
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
                         className="w-75 h-auto"

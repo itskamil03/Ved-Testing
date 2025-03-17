@@ -220,11 +220,11 @@ function ProjectManagement() {
                 <div className="row justify-content-center">
                   <div>
                     <div className="profirst-img-box">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/project-management/project management cover.png"
                         alt=""
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>
@@ -312,11 +312,11 @@ function ProjectManagement() {
             </div>
             <div className="prothird-section-content">
               <div className="prothird-img-box">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="images/project-management/project1.svg"
                   alt="..."
                   className="w-100 h-100"
-                  loading="lazy"
+                   
                 />
               </div>
               <div className="why-grid">
@@ -343,11 +343,11 @@ function ProjectManagement() {
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
                         className="w-75 h-auto"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>

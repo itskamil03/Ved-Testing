@@ -724,7 +724,7 @@ padding: 12px;
   }
 }
 
-#solutions #solution_img {
+#solutions, .solution_img {
   width: 100%;
   height: 100%;
 }

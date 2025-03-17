@@ -207,11 +207,11 @@ function OperationManagement() {
                 <div className="row justify-content-center">
                   <div>
                     <div className="opermfirst-img-box">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src={operationsmanagement}
                         alt=""
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>
@@ -251,11 +251,11 @@ function OperationManagement() {
                   return (
                     <div className="opermsecond-why-card" key={oper.id}>
                       <div className="opermsecond-card-imgbox">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src={oper.img}
                           alt=""
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="prosecond-title">{oper.head}</div>
@@ -290,11 +290,11 @@ function OperationManagement() {
                   </div>
                 </div>
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="images/icon/outsource.png"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>
@@ -320,11 +320,11 @@ function OperationManagement() {
             <div className="opermthird-section-body">
               <div className="opermthird-body-box1">
                 <div className="opermthird-body-box1-img">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/operation-management/EFFICIENCY ENHANCEMENT.png"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
                 <div className="opermthird-body-box1-text">
@@ -357,22 +357,22 @@ function OperationManagement() {
                   </div>
                 </div>
                 <div className="opermthird-body-box1-img">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/operation-management/COST REDUCTION0.png"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>
 
               <div className="opermthird-body-box1">
                 <div className="opermthird-body-box1-img">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/operation-management/RISK MITIGATION.png"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
                 <div className="opermthird-body-box1-text">
@@ -405,11 +405,11 @@ function OperationManagement() {
                   </div>
                 </div>
                 <div className="opermthird-body-box1-img">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/operation-management/SCALABILITY AND AGILITY.png"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>
@@ -425,11 +425,11 @@ function OperationManagement() {
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
                         className="w-75 h-auto"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>
