@@ -14,7 +14,7 @@ function Footer() {
           <div className="footer-container">
             <div className="footercon-left">
               <div className="footerimg-logo">
-                <LazyLoadImage src={Logo} alt="logo" className="footer-logoimg-img" loading="lazy" />
+                <img loading="eager" fetchpriority="high" src={Logo} alt="logo" className="footer-logoimg-img"   />
               </div>
               <div className="footer-left-about page_title">
                 We are IT & software company  based in Jamshedpur

@@ -87,11 +87,11 @@ function GxPSoftware() {
                   and reduces administrative costs, connect venturing digitally for best document management software
                 </div>
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="/image/gxp/dms_screen.png"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>
@@ -144,11 +144,11 @@ function GxPSoftware() {
               <div className="benefit-grid">
                 <div className="images-block">
                   <div className="image">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="/image/gxp/tms_screen.png"
                       alt="..."
                       className="w-100 h-100"
-                      loading="lazy"
+                       
                     />
                   </div>
                 </div>
@@ -262,11 +262,11 @@ function GxPSoftware() {
                 </div>
               </div>
               <div className="image">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="/image/gxp/rcms_screen.png"
                   alt="..."
                   className="w-100 h-100"
-                  loading="lazy"
+                   
                 />
               </div>
             </div>

@@ -73,11 +73,11 @@ function CustomerSoftware() {
                   </div>
                 </div> */}
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="images/services/screen.png"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
                 {/* <div className="content-block">
@@ -127,11 +127,11 @@ function CustomerSoftware() {
       <div id="customer-results">
         <div className="solution first">
           <div className="background">
-            <LazyLoadImage
+            <img loading="eager" fetchpriority="high"
               src="images/blog/blog-1.jpg"
               alt="..."
               className="w-100 h-100"
-              loading="lazy"
+               
             />
           </div>
           <div className="details">
@@ -148,11 +148,11 @@ function CustomerSoftware() {
 
         <div className="solution second">
           <div className="background">
-            <LazyLoadImage
+            <img loading="eager" fetchpriority="high"
               src="images/blog/blog-2.jpg"
               alt="..."
               className="w-100 h-100"
-              loading="lazy"
+               
             />
           </div>
           <div className="details">
@@ -169,11 +169,11 @@ function CustomerSoftware() {
 
         <div className="solution third">
           <div className="background">
-            <LazyLoadImage
+            <img loading="eager" fetchpriority="high"
               src="images/blog/blog-3.jpg"
               alt="..."
               className="w-100 h-100"
-              loading="lazy"
+               
             />
           </div>
           <div className="details">
@@ -190,11 +190,11 @@ function CustomerSoftware() {
 
         <div className="solution second fourth">
           <div className="background">
-            <LazyLoadImage
+            <img loading="eager" fetchpriority="high"
               src="images/blog/blog-2.jpg"
               alt="..."
               className="w-100 h-100"
-              loading="lazy"
+               
             />
           </div>
           <div className="details">
@@ -303,11 +303,11 @@ function CustomerSoftware() {
               </div>
               <div className="image-block">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="images/services/laptop.png"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>
@@ -347,11 +347,11 @@ function CustomerSoftware() {
                   <div className="col-lg-4 col-md-6">
                     <div className="boost-card">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="image/custom-software/five1.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="details">
@@ -368,11 +368,11 @@ function CustomerSoftware() {
                   <div className="col-lg-4 col-md-6">
                     <div className="boost-card">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="image/custom-software/five2.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="details">
@@ -389,11 +389,11 @@ function CustomerSoftware() {
                   <div className="col-lg-4 col-md-6">
                     <div className="boost-card">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="image/custom-software/five3.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="details">
@@ -440,11 +440,11 @@ function CustomerSoftware() {
                   <div className="story-content">
                     <div className="story-card">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/home/about.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="details">
@@ -469,11 +469,11 @@ function CustomerSoftware() {
                   <div className="story-content">
                     <div className="story-card">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="details">
@@ -498,11 +498,11 @@ function CustomerSoftware() {
                   <div className="story-content">
                     <div className="story-card">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="details">
@@ -527,11 +527,11 @@ function CustomerSoftware() {
                   <div className="story-content">
                     <div className="story-card">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="details">
@@ -556,11 +556,11 @@ function CustomerSoftware() {
                   <div className="story-content">
                     <div className="story-card">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="details">
@@ -585,11 +585,11 @@ function CustomerSoftware() {
                   <div className="story-content">
                     <div className="story-card">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="details">
@@ -614,11 +614,11 @@ function CustomerSoftware() {
                   <div className="story-content">
                     <div className="story-card">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="details">
@@ -643,11 +643,11 @@ function CustomerSoftware() {
                   <div className="story-content">
                     <div className="story-card">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="details">
@@ -672,11 +672,11 @@ function CustomerSoftware() {
                   <div className="story-content">
                     <div className="story-card">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="details">
@@ -700,11 +700,11 @@ function CustomerSoftware() {
                   <div className="story-content">
                     <div className="story-card">
                       <div className="image">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="details">

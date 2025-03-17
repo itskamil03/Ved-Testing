@@ -160,11 +160,11 @@ const handletab=(tab)=>
             {filteredEvents.map((event) => (
           <Link className="bloges-card" key={event.id}>
             <div className="events-card-img">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                 src={event.image}
                 alt={event.title}
                 className="bloges-card-img-img w-100 h-100"
-                loading="lazy"
+                 
               />
               <div className="date">{event.date}</div>
             </div>

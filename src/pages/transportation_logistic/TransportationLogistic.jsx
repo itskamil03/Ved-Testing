@@ -29,11 +29,11 @@ function TransportationLogistic() {
       <div className="heroimg">
         <div className="hero-container">
           {/* <div className="heroimg-main"> */}
-          <LazyLoadImage
+          <img loading="eager" fetchpriority="high"
             src="image/transportation-logistic/transportation.jpeg"
             alt="Hero-Image"
             className="heroimg-img"
-            loading="lazy"
+             
           />
           {/* </div> */}
           <div className="heroimg-contant">
@@ -111,11 +111,11 @@ function TransportationLogistic() {
                   <div className="IndustriesMain-health-media">
                     <div className="IndustriesMain-health-video">
                       <div className="IndustriesMain-health-photo">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="image/transportation-logistic/first1.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                     </div>
@@ -166,11 +166,11 @@ function TransportationLogistic() {
                   <div className="health-media">
                     <div className="health-video">
                       <div className="health-photo">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="image/transportation-logistic/second1.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                     </div>
@@ -186,11 +186,11 @@ function TransportationLogistic() {
                   <div className="health-media" style={{ marginRight: "2rem" }}>
                     <div className="health-video-second">
                       <div className="health-photo">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="image/transportation-logistic/second2.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                     </div>
@@ -300,47 +300,47 @@ function TransportationLogistic() {
               <div className="row">
                 <div className="col-lg-6">
                   <div className="softsolutions-left">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       className="softsolutions-left-main"
                       src={illustration}
                       alt="..."
-                      loading="lazy"
+                       
                     />
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       className="softsolutions-left-first"
                       src={Group_1}
                       alt=""
-                      loading="lazy"
+                       
                     />
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       className="softsolutions-left-second"
                       src={Group_2}
                       alt=""
-                      loading="lazy"
+                       
                     />
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       className="softsolutions-left-third"
                       src={Group_3}
                       alt=""
-                      loading="lazy"
+                       
                     />
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       className="softsolutions-left-fourth"
                       src={Group_4}
                       alt=""
-                      loading="lazy"
+                       
                     />
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       className="softsolutions-left-fifth"
                       src={Group_5}
                       alt=""
-                      loading="lazy"
+                       
                     />
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       className="softsolutions-left-sixth"
                       src={Group_6}
                       alt=""
-                      loading="lazy"
+                       
                     />
                   </div>
                 </div>

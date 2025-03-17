@@ -20,21 +20,21 @@ function Locations() {
             <div className="section-content">
               <div className="location-card">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="images/location/loc-1.jpg"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
                 <div className="content">
                   <div className="top-content">
                     <div className="icon">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="/images/location/loc-1-1.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="title">Bhopal Branch</div>
@@ -56,22 +56,22 @@ function Locations() {
 
               <div className="location-card invert">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="/images/location/loc-1.jpg"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
                 <div className="content">
                   <div className="top-content">
                     <div className="title">Jamshedpur Branch</div>
                     <div className="icon">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="images/location/loc-1-1.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>
@@ -94,7 +94,7 @@ function Locations() {
 
               {/* <div className="location-card">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="https://venturingdigitally.com/assets/images/location/loc-1.jpg"
                     alt="..."
                     className="w-100 h-100"
@@ -103,7 +103,7 @@ function Locations() {
                 <div className="content">
                   <div className="top-content">
                     <div className="icon">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="https://venturingdigitally.com/assets/images/location/loc-1-1.png"
                         alt="..."
                         className="w-100 h-100"

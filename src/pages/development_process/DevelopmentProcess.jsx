@@ -103,7 +103,7 @@ function DevelopmentProcess() {
                   <div className="approach-card" key={devp.id}>
                     <div className="top-bar">
                       <div className="icon">
-                        <LazyLoadImage src={devp.img} alt="..." className="w-100 h-100" loading="lazy" />
+                        <img loading="eager" fetchpriority="high" src={devp.img} alt="..." className="w-100 h-100"   />
                       </div>
                       <div className="title">{devp.title}</div>
                     </div>

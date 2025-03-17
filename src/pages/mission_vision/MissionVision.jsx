@@ -18,11 +18,11 @@ function MissionVision() {
             <div className="section-content">
               <div className="image-block">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/mission-vision/boost-your-business.jpg"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   
                   />
                 </div>
@@ -65,11 +65,11 @@ function MissionVision() {
                 <div className="col-xl-3 col-lg-4 col-md-6 mb-3">
                   <div className="strength-card">
                     <div className="icon">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="images/icon/creativity.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="title">Comprehensive IT Solutions</div>
@@ -85,11 +85,11 @@ function MissionVision() {
                 <div className="col-xl-3 col-lg-4 col-md-6 mb-3">
                   <div className="strength-card">
                     <div className="icon">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="images/icon/efficacy.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="title">Driving Growth and Efficiency</div>
@@ -105,11 +105,11 @@ function MissionVision() {
                 <div className="col-xl-3 col-lg-4 col-md-6 mb-3">
                   <div className="strength-card">
                     <div className="icon">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="images/icon/trophy.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="title">Stay Ahead of the Competition</div>
@@ -126,11 +126,11 @@ function MissionVision() {
                 <div className="col-xl-3 col-lg-4 col-md-6 mb-3">
                   <div className="strength-card">
                     <div className="icon">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="images/icon/result.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="title">
@@ -180,11 +180,11 @@ function MissionVision() {
                   </div>
                 </div>
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/mission-vision/our-mission.jpg"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>
@@ -199,11 +199,11 @@ function MissionVision() {
             <div className="section-content">
               <div className="image-block">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/mission-vision/vision.jpg"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
                 <div className="content">

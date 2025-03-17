@@ -319,11 +319,11 @@ function EcommerceSolutions() {
                   return (
                     <div className="E-comthird-value-card" key={goal.id}>
                       <div className="E-comthird-icon">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src={goal.imgs}
                           alt=""
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="E-comthird-title">{goal.head}</div>
@@ -348,11 +348,11 @@ function EcommerceSolutions() {
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
                         className="w-75 h-auto"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>

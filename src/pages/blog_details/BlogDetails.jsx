@@ -54,10 +54,10 @@ function BlogDetails() {
          
                   <div className="blog_card">
                   <Link to="/article" className="figure" key={blogDetail.id}>
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                     src={`${blogDetail.image}`}
                      alt={blogDetail.blog_title}
-                     loading="lazy"
+                      
                      className="bloges-card-img-img w-100 h-100"
                      
                     />
@@ -85,10 +85,10 @@ function BlogDetails() {
              
             <div className="blog_card">
               <Link to="/article" className="figure" key={card.id}>
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src={`${card.image}`}
                   alt=""
-                  loading="lazy"
+                   
                   className="bloges-card-img-img w-100 h-100"
                 />
                 <span className="tag">{card.tag}</span>
@@ -123,10 +123,10 @@ function BlogDetails() {
                 {blogPost.slice(0,2).map((card) => (
                 <Link to="#" key={card.id}>
                 
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src={`${card.image}`}
                       alt={card.blog_title}
-                      loading="lazy"
+                       
                       className="bloges-card-img-img w-10 h-20"
                       style={{width:"60px"}}
                     />

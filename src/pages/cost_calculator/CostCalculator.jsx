@@ -213,7 +213,7 @@ function CostCalculator() {
                 <div className="col-xl-7 col-lg-6">
                   <div className="video-block">
                     <div className="media">
-                     <LazyLoadImage src={Calculateimage} alt="calculator" loading="lazy"/>
+                     <img loading="eager" fetchpriority="high" src={Calculateimage} alt="calculator"  />
                     </div>
                    
                   </div>

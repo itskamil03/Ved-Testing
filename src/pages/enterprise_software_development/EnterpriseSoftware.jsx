@@ -62,11 +62,11 @@ function EnterpriseSoftware() {
                       </div>
                       <div className="top">
                         <div className="icon">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/enterprise-software/Tailored Software Solutions.png"
                             alt=""
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <div className="head">Tailored Software Solutions</div>
@@ -89,11 +89,11 @@ function EnterpriseSoftware() {
                       </div>
                       <div className="top">
                         <div className="icon">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/enterprise-software/Scalable and Secure Systems.png"
                             alt=""
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <div className="head">Scalable and Secure Systems</div>
@@ -116,11 +116,11 @@ function EnterpriseSoftware() {
                       </div>
                       <div className="top">
                         <div className="icon">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/enterprise-software/Integration and Compatibility.png"
                             alt=""
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <div className="head">
@@ -145,11 +145,11 @@ function EnterpriseSoftware() {
                       </div>
                       <div className="top">
                         <div className="icon">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/enterprise-software/Streamlined Business Processes.png"
                             alt=""
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <div className="head">
@@ -174,11 +174,11 @@ function EnterpriseSoftware() {
                       </div>
                       <div className="top">
                         <div className="icon">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/enterprise-software/User-Centric Design.png"
                             alt=""
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <div className="head">User-Centric Design</div>
@@ -200,11 +200,11 @@ function EnterpriseSoftware() {
                       </div>
                       <div className="top">
                         <div className="icon">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/enterprise-software/Ongoing Support and Maintenance.png"
                             alt=""
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <div className="head">

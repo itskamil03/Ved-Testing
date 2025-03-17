@@ -54,11 +54,11 @@ function DigitalMarketing() {
                 </div>
               </div>
               <div className="image">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/services.jpg"
                   alt=""
                   className="w-64 h-64"
-                  loading="lazy"
+                   
                 />
               </div>
             </div>
@@ -82,10 +82,10 @@ function DigitalMarketing() {
             <div class="card">
               <div class="card-content">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/marketing/depth.png"
                     alt="image"
-                    loading="lazy"
+                     
                   />
                 </div>
                 <h2>In-Depth Analysis and Strategy Development</h2>
@@ -101,10 +101,10 @@ function DigitalMarketing() {
             <div class="card">
               <div class="card-content">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/marketing/search.png"
                     alt="image"
-                    loading="lazy"
+                     
                   />
                 </div>
                 <h2>Search Engine Optimization (SEO)</h2>
@@ -119,10 +119,10 @@ function DigitalMarketing() {
             <div class="card">
               <div class="card-content">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/marketing/click.png"
                     alt="image"
-                    loading="lazy"
+                     
                   />
                 </div>
                 <h2>Pay-Per-Click (PPC) Advertising</h2>
@@ -137,10 +137,10 @@ function DigitalMarketing() {
             <div class="card">
               <div class="card-content">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/marketing/lead.png"
                     alt="image"
-                    loading="lazy"
+                     
                   />
                 </div>
                 <h2>Lead Generation Services</h2>
@@ -153,10 +153,10 @@ function DigitalMarketing() {
             <div class="card">
               <div class="card-content">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/marketing/branding.png"
                     alt="image"
-                    loading="lazy"
+                     
                   />
                 </div>
                 <h2>Branding Services</h2>
@@ -169,10 +169,10 @@ function DigitalMarketing() {
             <div class="card">
               <div class="card-content">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/marketing/content.png"
                     alt="image"
-                    loading="lazy"
+                     
                   />
                 </div>
                 <h2>Content Marketing Services</h2>
@@ -192,11 +192,11 @@ function DigitalMarketing() {
           <div className="container">
             <div className="section">
               <div className="left">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/why.jpg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
               </div>
               <div className="right">
@@ -251,11 +251,11 @@ function DigitalMarketing() {
         <div class="process-container">
           <div class="process">
             <div className="process-image">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                 src="image/marketing/proc1.jpg"
                 alt=""
                 className="w-80 h-80"
-                loading="lazy"
+                 
               />
             </div>
             <div class="process-content">
@@ -269,11 +269,11 @@ function DigitalMarketing() {
           </div>
           <div class="process">
             <div class="process-image">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                 src="image/marketing/proc2.jpg"
                 alt=""
                 className="w-80 h-80"
-                loading="lazy"
+                 
               />
             </div>
             <div class="process-content">
@@ -287,11 +287,11 @@ function DigitalMarketing() {
           </div>
           <div class="process">
             <div class="process-image">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                 src="image/marketing/proc3.jpg"
                 alt=""
                 className="w-80 h-80"
-                loading="lazy"
+                 
               />
             </div>
             <div class="process-content">
@@ -305,11 +305,11 @@ function DigitalMarketing() {
           </div>
           <div class="process">
             <div class="process-image">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                 src="image/marketing/proc4.jpg"
                 alt=""
                 className="w-80 h-80"
-                loading="lazy"
+                 
               />
             </div>
             <div class="process-content">
@@ -321,11 +321,11 @@ function DigitalMarketing() {
           </div>
           <div class="process">
             <div class="process-image">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                 src="image/marketing/proc5.jpg"
                 alt=""
                 className="w-80 h-80"
-                loading="lazy"
+                 
               />
             </div>
             <div class="process-content">
@@ -352,137 +352,137 @@ function DigitalMarketing() {
             </div>
             <div class="tools-container">
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/sem.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
                 SEMrush
               </div>
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/ahef.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
                 Ahrefs
               </div>
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/mailchimp.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
                 Mailchimp
               </div>
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/constant.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />{" "}
                 Constant Contact
               </div>
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/google.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
                 GoogleAnalytics
               </div>
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/tableau.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
                 Tableau
               </div>
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/ai.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
                 Adobe Illustrator
               </div>
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/prem.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
                 Premiere Pro
               </div>
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/optimi.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
                 Optimizely
               </div>
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/google-optimize.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
                 GoogleOptimize
               </div>
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/gpt.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
                 ChatGPT
               </div>
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/hootsuite.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
                 Hootsuite
               </div>
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/hubspot.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
                 HubSpot
               </div>
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/mark.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
                 Marketo
               </div>
               <div class="tool-card">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/marketing/buffer.svg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
                 Buffer
               </div>
@@ -510,11 +510,11 @@ function DigitalMarketing() {
         <div class="process-container">
           <div class="process">
             <div className="process-image">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                 src="image/marketing/process1.jpg"
                 alt=""
                 className="w-80 h-80"
-                loading="lazy"
+                 
               />
             </div>
             <div class="process-content">
@@ -530,11 +530,11 @@ function DigitalMarketing() {
           </div>
           <div class="process">
             <div class="process-image">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                 src="image/marketing/process2.jpg"
                 alt=""
                 className="w-80 h-80"
-                loading="lazy"
+                 
               />
             </div>
             <div class="process-content">
@@ -549,11 +549,11 @@ function DigitalMarketing() {
           </div>
           <div class="process">
             <div class="process-image">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                 src="image/marketing/process3.jpg"
                 alt=""
                 className="w-80 h-80"
-                loading="lazy"
+                 
               />
             </div>
             <div class="process-content">
@@ -568,11 +568,11 @@ function DigitalMarketing() {
           </div>
           <div class="process">
             <div class="process-image">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                 src="image/marketing/process4.jpg"
                 alt=""
                 className="w-80 h-80"
-                loading="lazy"
+                 
               />
             </div>
             <div class="process-content">
@@ -587,11 +587,11 @@ function DigitalMarketing() {
           </div>
           <div class="process">
             <div class="process-image">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                 src="image/marketing/process5.jpg"
                 alt=""
                 className="w-80 h-80"
-                loading="lazy"
+                 
               />
             </div>
             <div class="process-content">
@@ -607,11 +607,11 @@ function DigitalMarketing() {
           </div>
           <div class="process">
             <div class="process-image">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                 src="image/marketing/process6.jpg"
                 alt=""
                 className="w-80 h-80"
-                loading="lazy"
+                 
               />
             </div>
             <div class="process-content">

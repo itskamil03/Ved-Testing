@@ -77,11 +77,11 @@ function SchoolUniversity() {
                 <div className="col-lg-6">
                   <div className="health-media">
                     <div className="health-photo">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/solution/schoolCollage2.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>
@@ -94,11 +94,11 @@ function SchoolUniversity() {
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "2rem" }}>
                     <div className="health-photo">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/solution/schoolCollage.jpg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>

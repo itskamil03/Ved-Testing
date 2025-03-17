@@ -276,11 +276,11 @@ function DocumentManagement() {
             <div className="docsecond-section-content">
               <div>
                 <div className="docsecond-img-box">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src={docsecondimg}
                     alt=""
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>
@@ -317,11 +317,11 @@ function DocumentManagement() {
                     <div className="col-lg-4 col-md-6 mb-3" key={doct.id}>
                       <div className="docthird-value-card">
                         <div className="docthird-icon">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src={doct.image}
                             alt=""
                             className="docthird-img w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <div className="docthird-title">{doct.title}</div>
@@ -344,11 +344,11 @@ function DocumentManagement() {
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
                         className="w-75 h-auto"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>
