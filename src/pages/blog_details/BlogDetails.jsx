@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./BlogDetails.css";
 import BlogDetailsHero from "../../components/BlogDetails_components/BlogDetailsHero";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useNavigate } from "react-router-dom";
 
 
 function BlogDetails() {
@@ -13,11 +14,15 @@ function BlogDetails() {
   const [blogtrends, setBlogTrends] = useState([]);
   const [blogPost, setBlogPost] = useState([]);
 
-  const BlogId=localStorage.getItem("blogId")
+  const Navigate = useNavigate()
 
-  const [loading, setloading] = useState(false)
+  const [loading, setloading] = useState(true)
 
   useEffect(() => {
+    if(loading)
+    {
+      const BlogId=localStorage.getItem("blogId")
+
     fetch(`https://ved.venturingdigitally.com/api/blog_details/${BlogId}`, {
       method: "POST",
       headers: {
@@ -31,20 +36,34 @@ function BlogDetails() {
         setBlogLatest(resp.latest_two_data)
         setBlogTrends(resp.recent_trends)
         setBlogPost(resp.recent_posts)
-        setloading(true)
+        setloading(false)
       });
-  }, []);
+    }
+  }, [loading]);
 
   const decodeHtmlEntities = (html) => {
     const doc = new DOMParser().parseFromString(html, "text/html");
     return doc.body.innerHTML;
   };
 
+  const handleClick = (blogId) => {
+ 
+    localStorage.setItem("blogId",blogId)
+      setloading(true)
+  }
+
+  const handleTrendsClick=(blogId, blogTitle)=> {
+   
+    Navigate(`/BlogDetails/${blogTitle}`)
+    localStorage.setItem("blogId",blogId)
+    setloading(true)
+
+  }
   
 
   return (
     <div>
-      {loading && <>
+      {!loading && <>
       <BlogDetailsHero />
 
       {/* BLOG SECTION */}
@@ -118,10 +137,10 @@ function BlogDetails() {
                   <i className="fa fa-share"></i>
                 </Link>
               </span>
-              <section>
+              <section className="recentPosts">
                
-                {blogPost.slice(0,2).map((card) => (
-                <Link to="#" key={card.id}>
+                {blogPost.map((card) => (
+                <Link to={`/BlogDetails/${card.blog_title}`} onClick={()=>handleClick(card.id)} key={card.id}>
                 
                     <LazyLoadImage
                       src={`${card.image}`}
@@ -129,7 +148,8 @@ function BlogDetails() {
                       loading="lazy"
                       className="bloges-card-img-img w-10 h-20"
                       style={{width:"60px"}}
-                    />
+                    />    
+                         
                            <div style={{fontSize:"12px"}}
                       dangerouslySetInnerHTML={{
                         __html: decodeHtmlEntities(card.content)
@@ -158,10 +178,11 @@ function BlogDetails() {
                   onMouseOut={(e) => e.target.start()}
                   className="marquee2"
                   height="200px"
+                  
                 >
-                   {blogtrends.slice(0,3).map((card) => (
+                   {blogtrends.map((card) => (
                
-               <div style={{fontSize:"12px"}}
+               <div style={{fontSize:"12px"}} onClick={()=>handleTrendsClick(card.id, card.blog_title)}
                dangerouslySetInnerHTML={{
                  __html: decodeHtmlEntities(card.content)
                    .split(" ")

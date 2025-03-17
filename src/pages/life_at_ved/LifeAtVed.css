@@ -173,6 +173,14 @@
   padding: 50px 0px 0px 0px;
   background-color: whitesmoke;
 }
+
+#lifeatvedthird .image_title{
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+
 .lifeatvedthird-section-head {
   margin: 0 auto 50px auto;
   text-align: start;
@@ -199,8 +207,10 @@
   line-height: 2;
 } */
 
+
 .lifeatvedthird-section-body-img {
   height: 30rem;
+
 }
 /* <--------------------------------------------- Life At Ved Fourth --------------------------------------> */
 #lifeatvedfourth {

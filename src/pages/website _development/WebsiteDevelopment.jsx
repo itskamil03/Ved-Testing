@@ -191,6 +191,12 @@ function WebsiteDevelopment() {
                 >
                   Database
                 </button>
+                <button
+                  onClick={() => handleTabClick(5)}
+                  className={activeTab === 5 ? "active" : ""}
+                >
+                  DevOps
+                </button>
               </div>
             </div>
 
@@ -370,6 +376,18 @@ function WebsiteDevelopment() {
                       <a href="">
                         <div class="inner-box m-auto">
                           <LazyLoadImage
+                            src="image/website-development/tech/nextjs.png"
+                            alt="nextjs"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="mt-3 d-inline-flex">NextJS</span>
+                      </a>
+                    </div>
+                    <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
+                      <a href="">
+                        <div class="inner-box m-auto">
+                          <LazyLoadImage
                             src="image/website-development/tech/angular.svg"
                             alt="angular"
                             loading="lazy"
@@ -515,6 +533,128 @@ function WebsiteDevelopment() {
                   </div>
                 </div>
               </div>
+
+              <div style={{ display: activeTab === 5 ? "block" : "none" }}>
+                <div className="tech-grid">
+                  <div class="d-flex row py-5 justify-content-center">
+                    <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
+                      <a href="">
+                        <div class="inner-box m-auto">
+                          <LazyLoadImage
+                            src="image/website-development/tech/aws.png"
+                            alt="aws"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="mt-3 d-inline-flex">AWS</span>
+                      </a>
+                    </div>
+                    <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
+                      <a href="">
+                        <div class="inner-box m-auto">
+                          <LazyLoadImage
+                            src="image/website-development/tech/azure.png"
+                            alt="azure"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="mt-3 d-inline-flex">Azure</span>
+                      </a>
+                    </div>
+                    <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
+                      <a href="">
+                        <div class="inner-box m-auto">
+                          <LazyLoadImage
+                            src="image/website-development/tech/docker.png"
+                            alt="javascript"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="mt-3 d-inline-flex">Docker</span>
+                      </a>
+                    </div>
+                    <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
+                      <a href="">
+                        <div class="inner-box m-auto">
+                          <LazyLoadImage
+                            src="image/website-development/tech/kubernetes.png"
+                            width="50px"
+                            alt="docker"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="mt-3 d-inline-flex">Kubernetes</span>
+                      </a>
+                    </div>
+                    <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
+                      <a href="">
+                        <div class="inner-box m-auto">
+                          <LazyLoadImage
+                            src="image/website-development/tech/terraform.png"
+                            alt="kubernetes"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="mt-3 d-inline-flex">Terraform</span>
+                      </a>
+                    </div>
+                    <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
+                      <a href="">
+                        <div class="inner-box m-auto">
+                          <LazyLoadImage
+                            src="image/website-development/tech/ansible.png"
+                            alt="terraform"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="mt-3 d-inline-flex">Ansible</span>
+                      </a>
+                    </div>
+
+                    <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
+                      <a href="">
+                        <div class="inner-box m-auto">
+                          <LazyLoadImage
+                            src="image/website-development/tech/grafana.png"
+                            alt="grafana"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="mt-3 d-inline-flex">Grafana</span>
+                      </a>
+                    </div>
+
+                    <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
+                      <a href="">
+                        <div class="inner-box m-auto">
+                          <LazyLoadImage
+                            src="image/website-development/tech/prometheus.png"
+                            alt="prometheus"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="mt-3 d-inline-flex">Prometheus</span>
+                      </a>
+                    </div>
+
+                    <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
+                      <a href="">
+                        <div class="inner-box m-auto">
+                          <LazyLoadImage
+                            src="image/website-development/tech/sonarqube.png"
+                            alt="sonarqube"
+                            loading="lazy"
+                             width="50px"
+                          />
+                        </div>
+                        <span class="mt-3 d-inline-flex">SonarQube</span>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

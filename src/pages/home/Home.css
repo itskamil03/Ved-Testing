@@ -106,24 +106,25 @@
 
 /* <----------------------------------- Our Expertise -----------------------> */
 
-#milestones {
+#who_we_are {
   padding: 50px 0px;
 }
 
-#milestones .milestone-info {
+#who_we_are .milestone-info {
   margin-bottom: 20px;
 }
 
-#milestones .milestone-info .head {
+#who_we_are .milestone-info .head {
   font-size: 2.7rem;
   color: #27286d;
   margin-bottom: 5px;
 }
 
-.milestone-description
+#who_we_are .milestone-description
 {
   font-size: 14px;
   font-weight: 600;
+  color: #ffffff;
 }
 
 #internship-data .milestone-info .head {
@@ -137,19 +138,19 @@
    font-size: 2.2rem !important;
 }
 
-#milestones .milestone-info .content {
+#who_we_are .milestone-info .content {
   font-size: 1.5rem;
   color: #4e4e4e;
   text-align: justify;
 }
 
-#milestones .milestone-box {
+#who_we_are .milestone-box {
   padding: 40px 20px;
   box-shadow: 0 8px 24px #e4dfdf;
   border-radius: 20px;
   max-width: 300px;
   margin: 0px auto 30px;
-  background: white;
+  background: #1a1b5a;
   transition: all 0.3s linear;
   cursor: pointer;
   height: auto;
@@ -159,17 +160,18 @@
   grid-row-gap: 8px;
 }
 
-#milestones .milestone-count {
+#who_we_are .milestone-count {
   font-size: 2.3rem;
   line-height: 25px;
-  color: #27286d;
+  color: #ffffff;
   transition: all 0.3s linear;
 }
 
-#milestones .milestone-name {
-  color: #27286d;
+#who_we_are .milestone-name {
+  color: #ffffff;
   transition: all 0.3s linear;
-  font-size: 1.4rem;
+  font-size: 16px;
+ 
 }
 
 /* <------------------------------------------------------- Why choose us -----------------------------------------------------------> */
@@ -188,10 +190,10 @@
   margin-bottom: 5px;
 }
 
-.milestone-description
+#why_choose_us .milestone-description
 {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #internship-data .milestone-info .head {

@@ -117,7 +117,7 @@ function Seo() {
         </div>
       </section>
 
-      <section id="support-five">
+      <section id="support-fives">
         <div className="section-top">
           <div className="container">
             <div className="head-title">
@@ -148,7 +148,7 @@ function Seo() {
         </div>
       </section>
 
-      <section id="support-five">
+      <section id="support-fives">
         <div className="section-top">
           <div className="container">
             <div className="head-title">We Are The Best in SEO</div>
@@ -222,8 +222,8 @@ function Seo() {
                         </span>
                       </div>
                       <div className="text">
-                        TITLE TAGS, META DESCRIPTIONS, PAGE TITLES, PAGE COPY,
-                        ALT TEXT:
+                        Title Tags, Meta Description, Page Titles, Page Copy,
+                        Alt Text:
                       </div>
                     </div>
 
@@ -243,7 +243,7 @@ function Seo() {
                           <i class="fa-solid fa-gear"></i>
                         </span>
                       </div>
-                      <div className="text">URL STRUCTURE:</div>
+                      <div className="text">Url Structure:</div>
                     </div>
 
                     <div className="right">
@@ -267,7 +267,7 @@ function Seo() {
                           <i class="fa-solid fa-chart-line"></i>
                         </span>
                       </div>
-                      <div className="text">NAVIGATION STRUCTURE:</div>
+                      <div className="text">Navigation Structure:</div>
                     </div>
 
                     <div className="right">
@@ -288,7 +288,7 @@ function Seo() {
                           <i class="fa-solid fa-mobile-screen-button"></i>
                         </span>
                       </div>
-                      <div className="text">DUPLICATE COPY CHECK:</div>
+                      <div className="text">Duplicate Copy Check:</div>
                     </div>
 
                     <div className="right">
@@ -312,7 +312,7 @@ function Seo() {
                         <i class="fa-solid fa-chart-column"></i>
                         </span>
                       </div>
-                      <div className="text">A/B AND MULTIVARIATE TESTING:</div>
+                      <div className="text">A/B and Multivariate Testing:</div>
                     </div>
 
                     <div className="right">
@@ -334,7 +334,7 @@ function Seo() {
                         <i class="fa-solid fa-link"></i>
                         </span>
                       </div>
-                      <div className="text">BACKLINK REVIEW:</div>
+                      <div className="text">Backlinks Review:</div>
                     </div>
 
                     <div className="right">

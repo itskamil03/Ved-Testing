@@ -76,7 +76,7 @@ function HomeHeroImg() {
             /> */}
             <img
               src="image/home-slider/Slider_2.webp"
-              alt="..."
+              alt="GxP software"
               className="homeheroimg-img"
               loading="eager"
               fetchpriority="high"
@@ -109,7 +109,7 @@ function HomeHeroImg() {
             /> */}
             <img
               src="image/home-slider/Slider_3.webp"
-              alt="..."
+              alt="Transform Your Business Online"
               className="homeheroimg-img"
               loading="eager"
               fetchpriority="high"
@@ -141,7 +141,7 @@ function HomeHeroImg() {
             /> */}
             <img
               src="image/home-slider/slide_1.webp"
-              alt="..."
+              alt="Web Development"
               className="homeheroimg-img"
               loading="eager"
               fetchpriority="high"
@@ -173,7 +173,7 @@ function HomeHeroImg() {
             /> */}
             <img
               src="image/home-slider/slide_2.webp"
-              alt="home_slider"
+              alt="Android & iOS App Development"
               className="homeheroimg-img"
               loading="eager"
               fetchpriority="high"
@@ -203,7 +203,7 @@ function HomeHeroImg() {
             /> */}
             <img
               src="image/home-slider/slide_3.webp"
-              alt=""
+              alt="Streamline Your Business Processes"
               className="homeheroimg-img"
               loading="eager"
               fetchpriority="high"
@@ -234,7 +234,7 @@ function HomeHeroImg() {
             /> */}
             <img
               src="image/home-slider/slide_4.webp"
-              alt=""
+              alt="Grow Your Business with Digital Marketing"
               className="homeheroimg-img"
               loading="eager"
               fetchpriority="high"
@@ -264,7 +264,7 @@ function HomeHeroImg() {
             /> */}
             <img
               src="image/home-slider/training_slider.webp"
-              alt=""
+              alt="Training & Internship At Venturing Digitally"
               className="homeheroimg-img"
               loading="eager"
               fetchpriority="high"

@@ -217,7 +217,7 @@
 #gxp_dms .bottom-grid .content-block .inner-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    align-items: end;
+    align-items: center;
     gap: 30px;
 }
 
@@ -366,7 +366,7 @@
     grid-template-columns: 1fr 500px;
     padding: 0 40px;
     gap: 40px;
-    align-items: start;
+    align-items: center;
 }
 
 #gxp_rcms .bottom-grid .benefit-block .head {

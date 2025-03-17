@@ -24,7 +24,7 @@ function Services() {
             </div>
 
             <div className="section-content">
-              <div className="row mb-4">
+              <div className="row mb-4" style={{flexGrow:1}}>
                 <div className="col-lg-6" style={{paddingBottom:"20px"}}>
                     
                   <div className="left-box"> 
@@ -47,7 +47,7 @@ function Services() {
                           style={{borderRadius:"10px"}}
                         /> */}
                       <img src="image/home/service/Web_development.jpg"
-                      alt="..." className="w-100 h-100" style={{borderRadius:"10px"}}/>
+                      alt="Web Development" className="w-100 h-100" style={{borderRadius:"10px"}}/>
                       
                     </div>
                     </div>
@@ -81,7 +81,7 @@ function Services() {
                             style={{borderRadius:"10px"}}
                           /> */}
                           <img src="image/home/service/Ui_ux.jpg"
-                      alt="..." className="w-100 h-100" style={{borderRadius:"10px"}}/>
+                      alt="UI/UX Design" className="w-100 h-100" style={{borderRadius:"10px"}}/>
                         
                       </div>
                       </div>
@@ -116,7 +116,7 @@ function Services() {
                             style={{borderRadius:"10px"}}
                           /> */}
                           <img src="image/home/service/App_development.jpg"
-                      alt="..." className="w-100 h-100" style={{borderRadius:"10px"}}/>
+                      alt="Application Development" className="w-100 h-100" style={{borderRadius:"10px"}}/>
                         
                       </div>
                       </div>
@@ -129,6 +129,40 @@ function Services() {
                       </div>
                     </div>
                   </div>
+
+                  <div className="col-lg-6" style={{paddingBottom:"20px"}}>
+                <div className="left-box"> 
+                      <div  className="allservice">
+                        <div className="text">
+                        <h2 className="heading" style={{fontSize:"3rem"}}>Custom Software Development</h2>
+                        <div className="slogan page_title" style={{paddingBlock:"10px"}}>
+                        Building a digital front door for your business with
+                      stunning Custom Software that attracts
+                      customers and drives growth.
+                           </div>
+                           </div>
+  
+                        <div className="image" >
+                        {/* <LazyLoadImage
+                          src="image/home/service/Custom_software.jpg"
+                          alt="..."
+                          className="w-100 h-100"
+                          style={{borderRadius:"10px"}}
+                        /> */}
+                        <img src="image/home/service/Custom_software.jpg"
+                      alt="Custom Software" className="w-100 h-100" style={{borderRadius:"10px"}}/>
+                        
+                      </div>
+                      </div>
+                   
+                      <div className="bottom-btn">
+                       <Link to="/CustomSoftware">
+                          Read More
+                          {/* <i class="fa-solid fa-arrow-right fa-fade"></i> */}
+                        </Link>
+                      </div>
+                    </div>
+                </div>
   
 
                 <div className="col-lg-6" style={{paddingBottom:"20px"}}>
@@ -153,7 +187,7 @@ function Services() {
                             style={{borderRadius:"10px"}}
                           /> */}
                           <img src="image/home/service/software-dev.jpg"
-                      alt="..." className="w-100 h-100" style={{borderRadius:"10px"}}/>
+                      alt="Software Development" className="w-100 h-100" style={{borderRadius:"10px"}}/>
                         
                       </div>
                       </div>
@@ -185,7 +219,7 @@ function Services() {
                             style={{borderRadius:"10px"}}
                           /> */}
                           <img src="image/home/service/Support_maintainence.jpg"
-                      alt="..." className="w-100 h-100" style={{borderRadius:"10px"}}/>
+                      alt="Support & Maintenance" className="w-100 h-100" style={{borderRadius:"10px"}}/>
                         
                       </div>
                       </div>
@@ -199,39 +233,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className="col-lg-6" style={{paddingBottom:"20px"}}>
-                <div className="left-box"> 
-                      <div  className="allservice">
-                        <div className="text">
-                        <h2 className="heading" style={{fontSize:"3rem"}}>Custom Software</h2>
-                        <div className="slogan page_title" style={{paddingBlock:"10px"}}>
-                        Building a digital front door for your business with
-                      stunning Custom Software that attracts
-                      customers and drives growth.
-                           </div>
-                           </div>
-  
-                        <div className="image" >
-                        {/* <LazyLoadImage
-                          src="image/home/service/Custom_software.jpg"
-                          alt="..."
-                          className="w-100 h-100"
-                          style={{borderRadius:"10px"}}
-                        /> */}
-                        <img src="image/home/service/Custom_software.jpg"
-                      alt="..." className="w-100 h-100" style={{borderRadius:"10px"}}/>
-                        
-                      </div>
-                      </div>
-                   
-                      <div className="bottom-btn">
-                       <Link to="/CustomSoftware">
-                          Read More
-                          {/* <i class="fa-solid fa-arrow-right fa-fade"></i> */}
-                        </Link>
-                      </div>
-                    </div>
-                </div>
+               
               </div>
             </div>
           </div>

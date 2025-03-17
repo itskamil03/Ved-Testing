@@ -73,7 +73,7 @@ function Blogs() {
                       className="name-block"
                       dangerouslySetInnerHTML={{ __html: card.content.replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '') }}
                     ></div>
-                    <Link to="/BlogDetails" onClick={()=>handleBlog(card.id)} className="read-more-button">
+                    <Link to={`/BlogDetails/${card.blog_title}`} onClick={()=>handleBlog(card.id)} className="read-more-button">
                       Read More
                     </Link>
                   </div>

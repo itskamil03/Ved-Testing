@@ -143,7 +143,7 @@ function App() {
             element={<TransportationLogistic />}
           />
           <Route path="/SiteMap" element={<SiteMap />} />
-          <Route path="BlogDetails" element={<BlogDetails />} />
+          <Route path="/BlogDetails/:id" element={<BlogDetails />} />
 
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/Blogs" element={<Blogs />} />

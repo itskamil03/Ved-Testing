@@ -323,6 +323,12 @@ fieldset {
     -webkit-animation: animate-vertical 20s linear infinite;
     -moz-animation: animate-vertical 20s linear infinite;
     animation: animate-vertical 20s linear infinite;
+    cursor: pointer;
+}
+
+.recentPosts{
+    overflow: auto;
+    height: 220px;
 }
 
 @keyframes animate-vertical {

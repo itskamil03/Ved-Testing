@@ -88,7 +88,7 @@ function GxPSoftware() {
                 </div>
                 <div className="image">
                   <LazyLoadImage
-                    src="/image/gxp/dms_screen.png"
+                    src="/image/gxp/DMS.png"
                     alt="..."
                     className="w-100 h-100"
                     loading="lazy"
@@ -145,7 +145,7 @@ function GxPSoftware() {
                 <div className="images-block">
                   <div className="image">
                     <LazyLoadImage
-                      src="/image/gxp/tms_screen.png"
+                      src="/image/gxp/LMS.png"
                       alt="..."
                       className="w-100 h-100"
                       loading="lazy"
@@ -263,7 +263,7 @@ function GxPSoftware() {
               </div>
               <div className="image">
                 <LazyLoadImage
-                  src="/image/gxp/rcms_screen.png"
+                  src="/image/gxp/QMS.png"
                   alt="..."
                   className="w-100 h-100"
                   loading="lazy"
@@ -282,7 +282,7 @@ function GxPSoftware() {
                 <div className="head-title">Frequently Ask Question</div>
               </div>
               <div className="head-slogan">
-                Frequently Asked Question For GXP & GMP Software
+                Frequently Asked Question For GXP & GMP Softwar
               </div>
             </div>
             <div className="section-content">

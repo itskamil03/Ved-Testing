@@ -116,38 +116,38 @@ function Home({ target, label }) {
   }, [isVisible, targets]);
   
   const cards = [
-    { link: "/crm", img: "image/solution/crm_img.jpg", title: "CRM" },
+    { link: "/crm", img: "/image/solution/crm_img.jpg", title: "CRM" },
     {
       link: "/OperationManagement",
-      img: "image/solution/operation_img.jpeg",
+      img: "/image/solution/operation_img.jpeg",
       title: "Operation Management",
     },
     {
       link: "/DocumentManagement",
-      img: "image/solution/document_img.webp",
+      img: "/image/solution/document_img.webp",
       title: "Document Management",
     },
     {
       link: "/EcommerceSolutions",
-      img: "image/solution/ecommarce_img.jpg",
+      img: "/image/solution/ecommarce_img.jpg",
       title: "E-commerce Solutions",
     },
     { link: "/qms", img: "image/solution/qms.jpg", title: "QMS" },
     { link: "/Cms", img: "image/solution/cms.jpg", title: "CMS" },
     {
       link: "/ProjectManagement",
-      img: "image/solution/project_img.jpg",
+      img: "/image/solution/project_img.jpg",
       title: "Project Management",
     },
     { link: "/Hrms", img: "image/solution/hrms.png", title: "HRMS" },
     {
       link: "/WebPortal",
-      img: "image/solution/web_server.jpg",
+      img: "/image/solution/web_server.jpg",
       title: "Web Server",
     },
     {
       link: "/SchoolCollege",
-      img: "image/solution/schoolCollage.jpg",
+      img: "/image/solution/schoolCollage.jpg",
       title: "School & College Management Systems",
     },
   ];
@@ -261,6 +261,11 @@ function Home({ target, label }) {
     ],
   };
   
+
+  const handleBlog=(blogId)=>
+  {
+    localStorage.setItem("blogId",blogId)
+  }
 
   return (
     <>
@@ -465,7 +470,7 @@ function Home({ target, label }) {
                     alt="Software"
                  
                   />
-                  <h6>Software</h6>
+                  <h6>Software Development</h6>
                 </label>
               </div>
 
@@ -795,7 +800,7 @@ function Home({ target, label }) {
      
 
       {/* <----------------------------------------- Our Expertise -------------------------------> */}
-      <section id="milestones"  >  
+      <section id="who_we_are"  >  
       {/* ref={sectionRef} */}
         <div className="container-fluid">
           <div className="container">
@@ -1298,7 +1303,7 @@ function Home({ target, label }) {
 
           
                   <div className="milestone-info">
-                    <div className="head_title">Why Choose Us?</div>
+                    <div className="head_title">Why Choose Venturing Digitally?</div>
                     <div className="content page_title">
                     With over 3+ years of experience in the software industry, we empower
                      businesses to thrive in the digital world with tailor-made, high-quality
@@ -1318,13 +1323,12 @@ function Home({ target, label }) {
 
                       <div className="milestone-box">
                       
-                      <div className="tab-icon">
+                      <div className="tab-icon ">
 
                           <LazyLoadImage
                             src="icons/team.png"
                             alt="expert team"
-                            className="w-100 h-100"
-                              
+                            className="w-100 h-100 team-icon"
                           />
 
                                 </div>
@@ -1332,7 +1336,7 @@ function Home({ target, label }) {
                             <div className="milestone_heading">
 
                           <div className="milestone-name">
-                            Expert Team
+                            Expert Development Team
                           </div>
                        
                         <div className="milestone-description">
@@ -1356,10 +1360,11 @@ function Home({ target, label }) {
 
                           <div className="milestone_heading">
                         <div className="milestone-name">
-                         Customized Software
+                         Customized ERP Software Solution
                         </div>
                         <div className="milestone-description">
                         We make software that fits exactly what your business needs
+
                         </div>
                         </div>
 
@@ -1377,7 +1382,7 @@ function Home({ target, label }) {
 
                           <div className="milestone_heading">
                         <div className="milestone-name">
-                        Using the Latest Tech
+                        Using the Latest Tech Language
                         </div>
                         <div className="milestone-description">
                         We always use new and advanced technology so your software is modern and ready for the future
@@ -1402,7 +1407,7 @@ function Home({ target, label }) {
 
                                 <div className="milestone_heading">
                         <div className="milestone-name">
-                          All About Quality
+                          All About Quality of Product & Solution
                         </div>
                         <div className="milestone-description">
                          We focus on making sure everything is high-quality, from the start of the project to the end.
@@ -1442,7 +1447,7 @@ function Home({ target, label }) {
                                 </div>
                                
                                 <div className="milestone_heading">
-                        <div className="milestone-name" >Help and Upkeep</div>
+                        <div className="milestone-name" >Best Support & Maintenance</div>
                         <div className="milestone-description">
                         Even after your software is up and running, we're here to help and keep it working great.
                         </div>
@@ -1487,7 +1492,7 @@ function Home({ target, label }) {
                       const cleanedDescription = item.content.replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '');
                      
                       return (
-                        <NavLink to="/Blogs" className="blog-box" key={item.id}>
+                        <NavLink to={`/BlogDetails/${item.blog_title}`} onClick={()=>handleBlog(item.id)} className="blog-box" key={item.id}>
                         <div className="blog-img">
                           <LazyLoadImage
                             src={item.image}

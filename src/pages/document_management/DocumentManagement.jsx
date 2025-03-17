@@ -232,7 +232,7 @@ function DocumentManagement() {
               <div className="docfirst-head-slogan">
                 Streamline your document management processes and unlock the
                 power of seamless information organization with our advanced
-                Documeny Management Software with venturing digitally.
+                Document Management Software with venturing digitally.
               </div>
             </div>
             <div className="docfirst-section-content">

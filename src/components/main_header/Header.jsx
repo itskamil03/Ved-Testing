@@ -418,7 +418,7 @@ function Header() {
                                   <div className="megadrop-item-about">
                                     <FaWarehouse />
                                     &nbsp;&nbsp;
-                                    <strong>CRM</strong>
+                                    <strong>Customer Relationship Management (CRM)</strong>
                                   </div>
                                 </NavLink>
 
@@ -430,7 +430,7 @@ function Header() {
                                   <div className="megadrop-item-about">
                                     <CgListTree />
                                     &nbsp;&nbsp;
-                                    <strong>Document Management</strong>
+                                    <strong>Document Management System (DMS)</strong>
                                   </div>
                                 </NavLink>
                                 <NavLink
@@ -441,7 +441,7 @@ function Header() {
                                   <div className="megadrop-item-about">
                                     <FaCentos />
                                     &nbsp;&nbsp;
-                                    <strong>QMS</strong>
+                                    <strong>Quality Management System (QMS)</strong>
                                   </div>
                                 </NavLink>
                                 <NavLink
@@ -452,7 +452,7 @@ function Header() {
                                   <div className="megadrop-item-about">
                                     <FaCentos />
                                     &nbsp;&nbsp;
-                                    <strong>Project Management</strong>
+                                    <strong>Project Management System</strong>
                                   </div>
                                 </NavLink>
 
@@ -489,7 +489,7 @@ function Header() {
                                   <div className="megadrop-item-about">
                                     <FaUbuntu />
                                     &nbsp;&nbsp;
-                                    <strong>Operation Management</strong>
+                                    <strong>Operation Management Software</strong>
                                   </div>
                                 </NavLink>
 
@@ -513,7 +513,7 @@ function Header() {
                                   <div className="megadrop-item-about">
                                     <FaAccusoft />
                                     &nbsp;&nbsp;
-                                    <strong>CMS</strong>
+                                    <strong>Content Management System (CMS)</strong>
                                   </div>
                                 </NavLink>
 
@@ -525,7 +525,7 @@ function Header() {
                                   <div className="megadrop-item-about">
                                     <IoIosPeople />
                                     &nbsp;&nbsp;
-                                    <strong>HRMS</strong>
+                                    <strong>Human Resource Management System (HRMS)</strong>
                                   </div>
                                 </NavLink>
                                 <NavLink
@@ -572,7 +572,7 @@ function Header() {
                             >
                               <div className="image">
                                 <LazyLoadImage
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                   loading="lazy"
@@ -591,7 +591,7 @@ function Header() {
                             >
                               <div className="image">
                                 <LazyLoadImage
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                   loading="lazy"
@@ -610,7 +610,7 @@ function Header() {
                             >
                               <div className="image">
                                 <LazyLoadImage
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                   loading="lazy"
@@ -629,7 +629,7 @@ function Header() {
                             >
                               <div className="image">
                                 <LazyLoadImage
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                   loading="lazy"
@@ -648,7 +648,7 @@ function Header() {
                             >
                               <div className="image">
                                 <LazyLoadImage
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                   loading="lazy"
@@ -667,7 +667,7 @@ function Header() {
                             >
                               <div className="image">
                                 <LazyLoadImage
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                   loading="lazy"
@@ -686,7 +686,7 @@ function Header() {
                             >
                               <div className="image">
                                 <LazyLoadImage
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                   loading="lazy"
@@ -705,7 +705,7 @@ function Header() {
                             >
                               <div className="image">
                                 <LazyLoadImage
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                   loading="lazy"
@@ -724,7 +724,7 @@ function Header() {
                             >
                               <div className="image">
                                 <LazyLoadImage
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                   loading="lazy"
@@ -832,7 +832,7 @@ function Header() {
                               <div className="megadrop-item-about">
                                 <div className="image">
                                   <LazyLoadImage
-                                    src="images/career/c1.jpg"
+                                    src="/images/career/c1.jpg"
                                     alt="..."
                                     className="w-100 h-100"
                                     loading="lazy"
