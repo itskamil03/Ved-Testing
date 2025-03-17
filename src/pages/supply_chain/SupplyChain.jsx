@@ -94,11 +94,11 @@ function SupplyChain() {
                       <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12" key={sup.id}>
                         <div className="supplychain-why-box">
                           <div className="supplychain-icon">
-                            <LazyLoadImage
+                            <img loading="eager" fetchpriority="high"
                               src={sup.img1}
                               alt="..."
                               className="supplychain-img  w-100 h-100"
-                              loading="lazy"
+                               
                             />
                           </div>
                           <div className="supplychain-title">{sup.head}</div>
@@ -128,11 +128,11 @@ function SupplyChain() {
                   <div className="supplychains2-media-card">
                     <div className="supplychains2-media-card1">
                       <div className="supplychains2-media-card1-img">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="icons/Social Media Content Monitoring.gif"
                           alt=""
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="supplychains2-media-card1-heading">
@@ -144,11 +144,11 @@ function SupplyChain() {
                     </div>
                     <div className="supplychains2-media-card1">
                       <div className="supplychains2-media-card1-img">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="icons/Social Media Content Monitoring.gif"
                           alt=""
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="supplychains2-media-card1-heading">
@@ -160,11 +160,11 @@ function SupplyChain() {
                     </div>
                     <div className="supplychains2-media-card1">
                       <div className="supplychains2-media-card1-img">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="icons/Social Media Content Monitoring.gif"
                           alt=""
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="supplychains2-media-card1-heading">
@@ -176,11 +176,11 @@ function SupplyChain() {
                     </div>
                     <div className="supplychains2-media-card1">
                       <div className="supplychains2-media-card1-img">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="icons/Social Media Content Monitoring.gif"
                           alt=""
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="supplychains2-media-card1-heading">
@@ -228,11 +228,11 @@ function SupplyChain() {
                 <div className="supchainthird-top-chield">
                   <div className="supchainthird-top-superchield">
                     <div className="supchainthird-top-superchield-img">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src={blockchaintechnology}
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                       <div className="supchainthird-top-superchield-text">
                         Demand Management
@@ -247,11 +247,11 @@ function SupplyChain() {
                 <div className="supchainthird-topleft-chield">
                   <div className="supchainthird-topleft-superchield">
                     <div className="supchainthird-topleft-superchield-img">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src={blockchaintechnology}
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                       <div className="supchainthird-topleft-superchield-text">
                         Procurement and Sourcing
@@ -266,11 +266,11 @@ function SupplyChain() {
                 <div className="supchainthird-topright-chield">
                   <div className="supchainthird-topright-superchield">
                     <div className="supchainthird-topright-superchield-img">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src={blockchaintechnology}
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                       <div className="supchainthird-topright-superchield-text">
                         Production Planning and Control
@@ -287,11 +287,11 @@ function SupplyChain() {
                 <div className="supchainthird-bottom-chield">
                   <div className="supchainthird-bottom-superchield">
                     <div className="supchainthird-bottom-superchield-img">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src={blockchaintechnology}
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                       <div className="supchainthird-bottom-superchield-text">
                         Order Fulfillment
@@ -308,11 +308,11 @@ function SupplyChain() {
                 <div className="supchainthird-bottomleft-chield">
                   <div className="supchainthird-bottomleft-superchield">
                     <div className="supchainthird-bottomleft-superchield-img">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src={blockchaintechnology}
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                       <div className="supchainthird-bottomleft-superchield-text">
                         Supply Chain Visibility
@@ -328,11 +328,11 @@ function SupplyChain() {
                 <div className="supchainthird-bottomright-chield">
                   <div className="supchainthird-bottomright-superchield">
                     <div className="supchainthird-bottomright-superchield-img">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src={blockchaintechnology}
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                       <div className="supchainthird-bottomright-superchield-text">
                         Reverse Logistics
@@ -372,7 +372,7 @@ function SupplyChain() {
               </div>
               <div className="supsecond-section-right">
                 <div className="supsecond-section-right-img">
-                  <LazyLoadImage src={supchainimg} className="w-100 h-100" loading="lazy"/>
+                  <img loading="eager" fetchpriority="high" src={supchainimg} className="w-100 h-100"  />
                 </div>
               </div>
             </div>

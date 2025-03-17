@@ -51,11 +51,11 @@ function CloudServices() {
                
                <div className="cloud-gap">
                <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/iteration.png"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
                 <div className="cloud-heading">End-to-End Cloud Solutions</div>
@@ -69,11 +69,11 @@ function CloudServices() {
 
                <div className="cloud-gap">
                <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/technician.png"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
               <div className="cloud-heading">Robust Toolchain Integration</div>
@@ -88,11 +88,11 @@ function CloudServices() {
 
               <div className="cloud-gap">
               <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/efficacy.png"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
               <div className="cloud-heading">Enhanced Efficiency</div>
@@ -106,11 +106,11 @@ function CloudServices() {
 
               <div className="cloud-gap">
               <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/cyber-security.png"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
             <div className="cloud-heading">Security-First Approach</div>
@@ -125,11 +125,11 @@ function CloudServices() {
 
             <div className="cloud-gap">
             <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/business-innovation.png"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
             <div className="cloud-heading">Enterprise and Startup Solutions</div>
@@ -143,11 +143,11 @@ function CloudServices() {
             <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
             <div className="cloud-gap">
             <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/data-driven.png"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
             <div className="cloud-heading">Data-Driven Insights</div>
@@ -177,11 +177,11 @@ function CloudServices() {
               <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
                     <div className="solution-item">
                     <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/aws.svg"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
                       <div className="item-title">Amazon Web Services</div>
@@ -191,11 +191,11 @@ function CloudServices() {
                   <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
                     <div className="solution-item">
                     <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/azure.svg"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
                       <div className="item-title">Microsoft Azure</div>
@@ -204,11 +204,11 @@ function CloudServices() {
                   <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
                     <div className="solution-item">
                     <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/frame_icon.svg"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
                       <div className="item-title">Google Cloud Platform</div>
@@ -217,11 +217,11 @@ function CloudServices() {
                   <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
                     <div className="solution-item">
                     <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/docker.svg"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
                       <div className="item-title">Docker</div>
@@ -230,11 +230,11 @@ function CloudServices() {
                   <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
                     <div className="solution-item">
                     <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/kubernets.svg"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
                       <div className="item-title">Kubernetes</div>
@@ -243,11 +243,11 @@ function CloudServices() {
                   <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
                     <div className="solution-item">
                     <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/terraform.svg"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
                       <div className="item-title">Terraform</div>
@@ -256,11 +256,11 @@ function CloudServices() {
                   <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
                     <div className="solution-item">
                     <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/git.svg"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
                       <div className="item-title">Github</div>
@@ -269,11 +269,11 @@ function CloudServices() {
                   <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
                     <div className="solution-item">
                     <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/tensorflow.svg"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
                       <div className="item-title">Tensorflow</div>
@@ -282,11 +282,11 @@ function CloudServices() {
                   <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
                     <div className="solution-item">
                     <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/promo.svg"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
                       <div className="item-title">Prometheus</div>
@@ -295,11 +295,11 @@ function CloudServices() {
                   <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
                     <div className="solution-item">
                     <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/ansible.svg"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
                       <div className="item-title">Ansible</div>
@@ -308,11 +308,11 @@ function CloudServices() {
                   <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
                     <div className="solution-item">
                     <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/jekn.svg"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
                       <div className="item-title">Jenkins</div>
@@ -321,11 +321,11 @@ function CloudServices() {
                   <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
                     <div className="solution-item">
                     <div className="tab-icon">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="icons/hashicorp.svg"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
                   </div>
                       <div className="item-title">HashiCorp Valut</div>
@@ -360,11 +360,11 @@ function CloudServices() {
                   </div>
                   <div className="bottom-bar">
                     <div className="image">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/website-development/develop/Artboard 1.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="content-block">
@@ -385,11 +385,11 @@ function CloudServices() {
                   </div>
                   <div className="bottom-bar">
                     <div className="image">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/website-development/develop/Artboard 2.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="content-block">
@@ -410,11 +410,11 @@ function CloudServices() {
                   </div>
                   <div className="bottom-bar">
                     <div className="image">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/website-development/develop/Artboard 3.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="content-block">
@@ -435,11 +435,11 @@ function CloudServices() {
                   </div>
                   <div className="bottom-bar">
                     <div className="image">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/website-development/develop/Artboard 4.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="content-block">
@@ -460,11 +460,11 @@ function CloudServices() {
                   </div>
                   <div className="bottom-bar">
                     <div className="image">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/website-development/develop/Artboard 5.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="content-block">
@@ -498,11 +498,11 @@ function CloudServices() {
             <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-5">
              <div className="benefits">
               <div className="solution-item">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                       src="icons/scalability.webp"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
               </div>
               <div className="solution-title">
@@ -518,11 +518,11 @@ function CloudServices() {
              <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-5">
              <div className="benefits">
              <div className="solution-item">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                       src="icons/cost-efficiency.webp"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
               </div>
               <div className="solution-title">
@@ -538,11 +538,11 @@ function CloudServices() {
              <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-5">
              <div className="benefits">
              <div className="solution-item">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                       src="icons/data.webp"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
               </div>
               <div className="solution-title">
@@ -557,11 +557,11 @@ function CloudServices() {
              <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-5">
              <div className="benefits">
              <div className="solution-item">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                       src="icons/flexibility.webp"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
               </div>
               <div className="solution-title">
@@ -576,11 +576,11 @@ function CloudServices() {
              <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-5"> 
              <div className="benefits">
              <div className="solution-item">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                       src="icons/disaster.webp"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
               </div>
               <div className="solution-title">
@@ -595,11 +595,11 @@ function CloudServices() {
              <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-5">
               <div className="benefits">
              <div className="solution-item">
-              <LazyLoadImage
+              <img loading="eager" fetchpriority="high"
                       src="icons/automatic.webp"
                       alt="Cloud solution"
                       className="w-100 h-100"
-                          loading="lazy"
+                           
                     />
               </div>
               <div className="solution-title">

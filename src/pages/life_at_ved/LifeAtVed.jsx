@@ -393,11 +393,11 @@ function LifeAtVed() {
                 <div className="col-lg-6">
                   <div>
                     <div className="lifeatvedfirst-media-card1">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="icons/internship.jpeg"
                         alt=""
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>
@@ -547,7 +547,7 @@ function LifeAtVed() {
             <div className="lifeatvedsecond-section-head">
               <div className="lifeatvedsecond-custom-head">
                 <div className="lifeatvedsecond-head-heading">
-                  <LazyLoadImage src="training_module.jpg" loading="lazy"/>
+                  <img loading="eager" fetchpriority="high" src="training_module.jpg"  />
                 </div>
                 <div className="lifeatvedsecond-head-title">
                   Training Modules At Venturing Digitally
@@ -587,11 +587,11 @@ function LifeAtVed() {
                       </div>
                       <div className="col-lg-4">
                         <div className="lifeatvedsecond-right-imgbox">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src={slide.imgSrc}
                             alt="..."
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                       </div>

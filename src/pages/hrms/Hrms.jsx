@@ -270,11 +270,11 @@ function Hrms() {
                   <div className="crmfirst-media">
                     <div className="crmfirst-video">
                       <div className="crmfirst-photo">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="image/hrms/Why Chose Us.png"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                     </div>
@@ -311,11 +311,11 @@ function Hrms() {
                   return (
                     <div className="crm-goals-value-card" key={crm.id}>
                       <div className="crm-goals-icon">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src={crm.img}
                           alt="..."
                           className="crm-goalsimg1 w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="crm-goals-title">{crm.head}</div>
@@ -362,11 +362,11 @@ function Hrms() {
                   </div>
                 </div>
                 <div className="crm-third-right">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src={ctacrmservices}
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>
@@ -383,11 +383,11 @@ function Hrms() {
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
                         className="w-75 h-auto"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>

@@ -40,7 +40,7 @@ function Erp() {
               </div>
               <div className="erpfirst-section-right">
                 <div className="erpfirst-section-right-img">
-                  <LazyLoadImage src={erp1} className="w-100 h-100" loading="lazy"/>
+                  <img loading="eager" fetchpriority="high" src={erp1} className="w-100 h-100"  />
                 </div>
               </div>
             </div>
@@ -98,11 +98,11 @@ function Erp() {
                   <div className="erpsecond-body-left">
                     <div className="erpsecond-body-left-points">
                       <div className="erpsecond-body-left-points-items">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/erp/links.svg"
                           alt="..."
                           className="erpsecond-icons w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="erpsecond-body-left-points-text">
@@ -115,11 +115,11 @@ function Erp() {
                     </div>
                     <div className="erpsecond-body-left-points">
                       <div className="erpsecond-body-left-points-items">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/erp/links.svg"
                           alt="..."
                           className="erpsecond-icons w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="erpsecond-body-left-points-text">
@@ -132,11 +132,11 @@ function Erp() {
                     </div>
                     <div className="erpsecond-body-left-points">
                       <div className="erpsecond-body-left-points-items">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/erp/links.svg"
                           alt="..."
                           className="erpsecond-icons w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="erpsecond-body-left-points-text">
@@ -151,11 +151,11 @@ function Erp() {
                   <div className="erpsecond-body-right">
                     <div className="erpsecond-body-left-points">
                       <div className="erpsecond-body-left-points-items">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/erp/links.svg"
                           alt="..."
                           className="erpsecond-icons w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="erpsecond-body-left-points-text">
@@ -168,11 +168,11 @@ function Erp() {
                     </div>
                     <div className="erpsecond-body-left-points">
                       <div className="erpsecond-body-left-points-items">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/erp/links.svg"
                           alt="..."
                           className="erpsecond-icons w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="erpsecond-body-left-points-text">
@@ -201,11 +201,11 @@ function Erp() {
                   <div className="col-lg-4 col-md-6">
                     <div className="erpthird-why-card">
                       <div className="erpthird-icon">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/erp/erp-imgicon1.avif"
                           alt=""
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="erpthird-title">
@@ -225,11 +225,11 @@ function Erp() {
                   <div className="col-lg-4 col-md-6">
                     <div className="erpthird-why-card">
                       <div className="erpthird-icon">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/erp/erp-imgicon2.avif"
                           alt=""
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="erpthird-title">
@@ -249,11 +249,11 @@ function Erp() {
                   <div className="col-lg-4 col-md-6">
                     <div className="erpthird-why-card">
                       <div className="erpthird-icon">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/erp/erp-imgicon2.avif"
                           alt=""
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="erpthird-title">
@@ -272,11 +272,11 @@ function Erp() {
                   <div className="col-lg-4 col-md-6">
                     <div className="erpthird-why-card">
                       <div className="erpthird-icon">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/erp/erp-imgicon1.avif"
                           alt=""
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="erpthird-title">
@@ -295,11 +295,11 @@ function Erp() {
                   <div className="col-lg-4 col-md-6">
                     <div className="erpthird-why-card">
                       <div className="erpthird-icon">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/erp/erp-imgicon2.avif"
                           alt=""
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="erpthird-title">
@@ -319,11 +319,11 @@ function Erp() {
                   <div className="col-lg-4 col-md-6">
                     <div className="erpthird-why-card">
                       <div className="erpthird-icon">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/erp/erp-imgicon1.avif"
                           alt=""
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="erpthird-title">
@@ -353,11 +353,11 @@ function Erp() {
             <div className="erpforth-section-content">
               <div className="erpforth-left">
                 <div className="erpforth-left-imgbox">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="images/erp/team-leader.avif"
                     alt=""
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>
@@ -416,11 +416,11 @@ function Erp() {
               </div>
               <div className="erpfift-right">
                 <div className="erpfift-left-imgbox">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="images/erp/people.avif"
                     alt=""
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>

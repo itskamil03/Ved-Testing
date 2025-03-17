@@ -46,11 +46,11 @@ function Insights() {
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">
                   <div className="career-img">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="images/career/c1.jpg"
                       alt="..."
                       className="w-100 h-100"
-                      loading="lazy"
+                       
                     />
                   </div>
                 </div>
@@ -73,11 +73,11 @@ function Insights() {
             <div className="section-content">
               <div className="image-block">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="images/market.png"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>
@@ -114,7 +114,7 @@ function Insights() {
           <div className="container">
             <div className="section-content">
               <div className="icon">
-                <LazyLoadImage src="images/email.png" alt="..." className="w-100 h-100" loading="lazy" />
+                <img loading="eager" fetchpriority="high" src="images/email.png" alt="..." className="w-100 h-100"   />
               </div>
               <div className="content-block">
                 <div className="top-block">

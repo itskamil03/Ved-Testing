@@ -11,10 +11,10 @@ function App() {
     <>
       <div>
         <a href="https://vitejs.dev" target="_blank">
-          <LazyLoadImage src={viteLogo} className="logo" alt="Vite logo" />
+          <img loading="eager" fetchpriority="high" src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
-          <LazyLoadImage src={reactLogo} className="logo react" alt="React logo" />
+          <img loading="eager" fetchpriority="high" src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
 

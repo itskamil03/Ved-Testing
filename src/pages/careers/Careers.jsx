@@ -220,11 +220,11 @@ export default function Careers() {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="career-img"> 
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="image/career/Shortlist.jpg"
                       alt="..."
                       className="w-100 h-100"
-                      loading="lazy"
+                       
                     />
                   </div>
                 </div>
@@ -270,21 +270,21 @@ export default function Careers() {
                 </div>
                 <div className="col-lg-6">
                   <div className="career-img">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="image/career/Talent.jpg"
                       alt="..."
                       className="w-100 h-100"
-                      loading="lazy"
+                       
                     />
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="career-img">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="image/career/Boarding.jpg"
                       alt="..."
                       className="w-100 h-100"
-                      loading="lazy"
+                       
                     />
                   </div>
                 </div>
@@ -467,11 +467,11 @@ export default function Careers() {
                     <div className="job-card">
                       <div className="top">
                         <div className="logo">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src={`https://ved.venturingdigitally.com/assets/img/blog/${career.image}`}
                             alt={career.title}
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <button

@@ -42,7 +42,7 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            <LazyLoadImage
+            <img loading="eager" fetchpriority="high"
               src="image/home-slider/Slider_1.webp"
               alt="..."
               className="homeheroimg-img"
@@ -67,7 +67,7 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            {/* <LazyLoadImage
+            {/* <img loading="eager" fetchpriority="high"
               src="image/home-slider/Slider_2.webp"
               alt="..."
               className="homeheroimg-img"
@@ -100,7 +100,7 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            {/* <LazyLoadImage
+            {/* <img loading="eager" fetchpriority="high"
               src="image/home-slider/Slider_3.webp"
               alt="..."
               className="homeheroimg-img"
@@ -132,7 +132,7 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            {/* <LazyLoadImage
+            {/* <img loading="eager" fetchpriority="high"
               src="image/home-slider/slide_1.webp"
               alt="..."
               className="homeheroimg-img"
@@ -164,7 +164,7 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            {/* <LazyLoadImage
+            {/* <img loading="eager" fetchpriority="high"
               src="image/home-slider/slide_2.webp"
               alt="home_slider"
               className="homeheroimg-img"
@@ -194,7 +194,7 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            {/* <LazyLoadImage
+            {/* <img loading="eager" fetchpriority="high"
               src="image/home-slider/slide_3.webp"
               alt=""
               className="homeheroimg-img"
@@ -225,7 +225,7 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            {/* <LazyLoadImage
+            {/* <img loading="eager" fetchpriority="high"
               src="image/home-slider/slide_4.webp"
               alt=""
               className="homeheroimg-img"
@@ -255,7 +255,7 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            {/* <LazyLoadImage
+            {/* <img loading="eager" fetchpriority="high"
               src="image/home-slider/training_slider.webp"
               alt=""
               className="homeheroimg-img"

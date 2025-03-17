@@ -46,11 +46,11 @@ function ApplicationDevelopment() {
             <div className="section-content">
               <div className="app-card">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/application-development/android.png"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
                 <div className="details">
@@ -64,35 +64,35 @@ function ApplicationDevelopment() {
                   </div>
                   <div className="tech-list">
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/flutter.svg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/kotlin.svg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/react-native.svg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/xamarin.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>
@@ -111,56 +111,56 @@ function ApplicationDevelopment() {
                   </div>
                   <div className="tech-list">
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/flutter.svg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/kotlin.svg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/react-native.svg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/swift-icon.svg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>
                 </div>
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/application-development/ios.png"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>
 
               <div className="app-card">
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/application-development/cross-platform.png"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
                 <div className="details">
@@ -176,35 +176,35 @@ function ApplicationDevelopment() {
                   </div>
                   <div className="tech-list">
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/flutter.svg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/ionic.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/react-native.svg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/swift-icon.svg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>
@@ -223,53 +223,53 @@ function ApplicationDevelopment() {
                   </div>
                   <div className="tech-list">
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/html.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/css.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/javascript.svg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/react-js.svg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div>
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/application-development/tech/laravel.svg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>
                 </div>
                 <div className="image">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     src="image/application-development/web.png"
                     alt="..."
                     className="w-100 h-100"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>
@@ -299,11 +299,11 @@ function ApplicationDevelopment() {
                       <a href="/cost-calculator">Check Now !</a>
                     </div>
                     <div className="image">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="images/blog/blog-3.jpg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>
@@ -477,20 +477,20 @@ function ApplicationDevelopment() {
                   <div className="col-lg-4 col-md-6">
                     <div className="client-item">
                       <div className="client-img">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="client-content">
                         <div className="logo">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="images/logo.png"
                             alt="..."
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <div className="title">Lorem, ipsum dolor.</div>
@@ -508,20 +508,20 @@ function ApplicationDevelopment() {
                   <div className="col-lg-4 col-md-6">
                     <div className="client-item">
                       <div className="client-img">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
-                          loading="lazy"
+                           
                         />
                       </div>
                       <div className="client-content">
                         <div className="logo">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="images/logo.png"
                             alt="..."
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <div className="title">Lorem, ipsum dolor.</div>
@@ -539,7 +539,7 @@ function ApplicationDevelopment() {
                   <div className="col-lg-4 col-md-6">
                     <div className="client-item">
                       <div className="client-img">
-                        <LazyLoadImage
+                        <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
                           alt="..."
                           className="w-100 h-100"
@@ -547,11 +547,11 @@ function ApplicationDevelopment() {
                       </div>
                       <div className="client-content">
                         <div className="logo">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="images/logo.png"
                             alt="..."
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <div className="title">Lorem, ipsum dolor.</div>

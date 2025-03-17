@@ -9,7 +9,7 @@ function Hero(propes) {
       <div id="hero-section">
         <div className="heroimg">
           <div className="hero-container">
-            <LazyLoadImage src={propes.src} alt="Hero-Image" className="heroimg-img" loading="lazy" />
+            <img loading="eager" fetchpriority="high" src={propes.src} alt="Hero-Image" className="heroimg-img"   />
             <div className="heroimg-contant">
               <div className="heroimg-heading">{propes.heading}</div>
               <div className="heroimg-slogan">{propes.slogan}</div>

@@ -515,11 +515,11 @@ function Crm() {
                 <div className="client-item">
                   <div className="details">
                     <div className="client-image">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="images/clients/walt-disney.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="title">Lorem, ipsum.</div>
@@ -530,22 +530,22 @@ function Crm() {
                     </div>
                   </div>
                   <div className="image">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="/images/home/about.jpg"
                       alt="..."
                       className="w-100 h-100"
-                      loading="lazy"
+                       
                     />
                   </div>
                 </div>
                 <div className="client-item">
                   <div className="details">
                     <div className="client-image">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="images/clients/walt-disney.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="title">Lorem, ipsum.</div>
@@ -556,11 +556,11 @@ function Crm() {
                     </div>
                   </div>
                   <div className="image">
-                    <LazyLoadImage
+                    <img loading="eager" fetchpriority="high"
                       src="images/home/about.jpg"
                       alt="..."
                       className="w-100 h-100"
-                      loading="lazy"
+                       
                     />
                   </div>
                 </div>
@@ -578,11 +578,11 @@ function Crm() {
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
                         className="w-75 h-auto"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>

@@ -8,11 +8,11 @@ function BlogsHero() {
       <div id="blogs"> 
         <div className="blog-hero-contain">
           <div className="image">
-            <LazyLoadImage
+            <img loading="eager" fetchpriority="high"
               src="backgrounds/bread-bg.jpg" 
               alt="Hero-Image" 
               className="blogsheroimg-img w-100 h-100" 
-                 loading="lazy"
+                  
             />
           </div>
           <div className="content">

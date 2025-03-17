@@ -72,11 +72,11 @@ function Header() {
               <div className="header-container">
                 {color ? (
                   <NavLink to="/">
-                    <LazyLoadImage src={Logo} alt="logo" className="header-logo" loading="lazy" />
+                    <img loading="eager" fetchpriority="high" src={Logo} alt="logo" className="header-logo"   />
                   </NavLink>
                 ) : (
                   <NavLink to="/">
-                    <LazyLoadImage src={Logo1} alt="logo" className="header-logo"loading="lazy" />
+                    <img loading="eager" fetchpriority="high" src={Logo1} alt="logo" className="header-logo"  />
                   </NavLink>
                 )}
                 <nav className="header-navbar">
@@ -106,11 +106,11 @@ function Header() {
                             <div className="drop-img-grid">
                               <div className="img-item">
                                 <div className="image">
-                                  <LazyLoadImage
+                                  <img loading="eager" fetchpriority="high"
                                     src="/image/header/ch1.jpg"
                                     alt="..."
                                     className="w-100 h-100"
-                                    loading="lazy"
+                                     
                                   />
                                 </div>
                                 <div className="text">
@@ -120,11 +120,11 @@ function Header() {
                               </div>
                               <div className="img-item">
                                 <div className="image">
-                                  <LazyLoadImage
+                                  <img loading="eager" fetchpriority="high"
                                     src="/image/header/ch2.jpg"
                                     alt="..."
                                     className="w-100 h-100"
-                                    loading="lazy"
+                                     
                                   />
                                 </div>
                                 <div className="text">
@@ -395,11 +395,11 @@ function Header() {
                               <div className="col-lg-6">
                                 <div className="img-item">
                                   <div className="image-solution-header">
-                                    <LazyLoadImage
+                                    <img loading="eager" fetchpriority="high"
                                       src="/image/header/sh.png"
                                       alt="..."
                                       className="w-100 h-100"
-                                      loading="lazy"
+                                       
                                     />
                                   </div>
                                   <div className="text">
@@ -571,11 +571,11 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
-                                <LazyLoadImage
-                                  src="/images/career/c1.jpg"
+                                <img loading="eager" fetchpriority="high"
+                                  src="images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -590,11 +590,11 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
-                                <LazyLoadImage
-                                  src="/images/career/c1.jpg"
+                                <img loading="eager" fetchpriority="high"
+                                  src="images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -609,11 +609,11 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
-                                <LazyLoadImage
-                                  src="/images/career/c1.jpg"
+                                <img loading="eager" fetchpriority="high"
+                                  src="images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -628,11 +628,11 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
-                                <LazyLoadImage
-                                  src="/images/career/c1.jpg"
+                                <img loading="eager" fetchpriority="high"
+                                  src="images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -647,11 +647,11 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
-                                <LazyLoadImage
-                                  src="/images/career/c1.jpg"
+                                <img loading="eager" fetchpriority="high"
+                                  src="images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -666,11 +666,11 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
-                                <LazyLoadImage
-                                  src="/images/career/c1.jpg"
+                                <img loading="eager" fetchpriority="high"
+                                  src="images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -685,11 +685,11 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
-                                <LazyLoadImage
-                                  src="/images/career/c1.jpg"
+                                <img loading="eager" fetchpriority="high"
+                                  src="images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -704,11 +704,11 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
-                                <LazyLoadImage
-                                  src="/images/career/c1.jpg"
+                                <img loading="eager" fetchpriority="high"
+                                  src="images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -723,11 +723,11 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
-                                <LazyLoadImage
-                                  src="/images/career/c1.jpg"
+                                <img loading="eager" fetchpriority="high"
+                                  src="images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -762,11 +762,11 @@ function Header() {
                               className="megadrop-item-link megadrop-item-about"
                             >
                               <div className="image">
-                                <LazyLoadImage
+                                <img loading="eager" fetchpriority="high"
                                   src="/image/header/blog.png"
                                   alt="..."
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="content">
@@ -784,11 +784,11 @@ function Header() {
                               className="megadrop-item-link megadrop-item-about"
                             >
                               <div className="image">
-                                <LazyLoadImage
+                                <img loading="eager" fetchpriority="high"
                                   src="/image/header/insight.png"
                                   alt="..."
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="content">
@@ -807,11 +807,11 @@ function Header() {
                               className="megadrop-item-link megadrop-item-about"
                             >
                               <div className="image">
-                                <LazyLoadImage
+                                <img loading="eager" fetchpriority="high"
                                   src="/image/header/career.png"
                                   alt="..."
                                   className="w-100 h-100"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                               <div className="content">
@@ -831,11 +831,11 @@ function Header() {
                             >
                               <div className="megadrop-item-about">
                                 <div className="image">
-                                  <LazyLoadImage
-                                    src="/images/career/c1.jpg"
+                                  <img loading="eager" fetchpriority="high"
+                                    src="images/career/c1.jpg"
                                     alt="..."
                                     className="w-100 h-100"
-                                    loading="lazy"
+                                     
                                   />
                                 </div>
                                 <div className="content">

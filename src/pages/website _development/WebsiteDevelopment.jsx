@@ -59,11 +59,11 @@ function WebsiteDevelopment() {
                     <div className="why-box">
                       <div className="icon">
                         <div className="icon-img">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/icon/Customized Solutions.png"
                             alt="..."
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                       </div>
@@ -83,11 +83,11 @@ function WebsiteDevelopment() {
                     <div className="why-box">
                       <div className="icon">
                         <div className="icon-img">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/icon/Responsive Design.png"
                             alt="..."
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                       </div>
@@ -105,11 +105,11 @@ function WebsiteDevelopment() {
                     <div className="why-box">
                       <div className="icon">
                         <div className="icon-img">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/icon/Scalability and Performance.png"
                             alt="..."
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                       </div>
@@ -127,11 +127,11 @@ function WebsiteDevelopment() {
                     <div className="why-box">
                       <div className="icon">
                         <div className="icon-img">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/icon/User-Centric Approach.png"
                             alt="..."
                             className="w-100 h-100"
-                            loading="lazy"
+                             
                           />
                         </div>
                       </div>
@@ -207,10 +207,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/android.svg"
                             alt="android"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Android</span>
@@ -220,11 +220,11 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/apple-icon.svg"
                             width="53px"
                             alt="ios"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">iOS</span>
@@ -234,10 +234,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/flutter.svg"
                             alt="flutter"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Flutter</span>
@@ -246,10 +246,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/react-native.svg"
                             alt="react-native"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">React Native</span>
@@ -258,10 +258,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/kotlin.svg"
                             alt="kotlin"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Kotlin</span>
@@ -270,11 +270,11 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/swift-icon.svg"
                             width="53px"
                             alt="swift"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Swift</span>
@@ -283,10 +283,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/ipad.svg"
                             alt="ipad"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">iPad</span>
@@ -295,10 +295,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/windows.svg"
                             alt="windows"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Windows</span>
@@ -314,10 +314,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/html.png"
                             alt="senchatouch"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Html</span>
@@ -326,10 +326,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/css.png"
                             alt="senchatouch"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Css</span>
@@ -338,10 +338,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/javascript.svg"
                             alt="javascript"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">JavaScript</span>
@@ -350,11 +350,11 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/typescript.svg"
                             width="50px"
                             alt="typescript"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">TypeScript</span>
@@ -363,10 +363,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/react-js.svg"
                             alt="reactjs"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">ReactJS</span>
@@ -390,7 +390,7 @@ function WebsiteDevelopment() {
                           <LazyLoadImage
                             src="image/website-development/tech/angular.svg"
                             alt="angular"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Angular JS</span>
@@ -406,10 +406,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/php.svg"
                             alt="php"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">PHP</span>
@@ -418,10 +418,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/laravel.svg"
                             alt="laravel"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Laravel</span>
@@ -430,10 +430,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/codeigniter.svg"
                             alt="codeigniter"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">CodeIgniter</span>
@@ -442,10 +442,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/java.svg"
                             alt="java"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Java</span>
@@ -454,10 +454,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/nodejs.svg"
                             alt="nodejs"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">NodeJS</span>
@@ -466,10 +466,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/python.svg"
                             alt="django"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Python</span>
@@ -478,10 +478,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/django.svg"
                             alt="django"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Django</span>
@@ -496,10 +496,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/sql.png"
                             alt="senchatouch"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">SQL</span>
@@ -508,11 +508,11 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/mongodb.png"
                             width="50px"
                             alt="typescript"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">MongoDB</span>
@@ -521,10 +521,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img loading="eager" fetchpriority="high"
                             src="image/website-development/tech/cloud.png"
                             alt="angular"
-                            loading="lazy"
+                             
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Cloud</span>
@@ -675,11 +675,11 @@ function WebsiteDevelopment() {
                       <Link to="/development-cost-calculator">Check Now !</Link>
                     </div>
                     <div className="image">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/website-development/Calculator.jpg"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>
@@ -711,11 +711,11 @@ function WebsiteDevelopment() {
                   </div>
                   <div className="bottom-bar">
                     <div className="image">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/website-development/develop/Artboard 1.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="content-block">
@@ -738,11 +738,11 @@ function WebsiteDevelopment() {
                   </div>
                   <div className="bottom-bar">
                     <div className="image">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/website-development/develop/Artboard 2.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="content-block">
@@ -765,11 +765,11 @@ function WebsiteDevelopment() {
                   </div>
                   <div className="bottom-bar">
                     <div className="image">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/website-development/develop/Artboard 3.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="content-block">
@@ -793,11 +793,11 @@ function WebsiteDevelopment() {
                   </div>
                   <div className="bottom-bar">
                     <div className="image">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/website-development/develop/Artboard 4.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="content-block">
@@ -819,11 +819,11 @@ function WebsiteDevelopment() {
                   </div>
                   <div className="bottom-bar">
                     <div className="image">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/website-development/develop/Artboard 5.png"
                         alt="..."
                         className="w-100 h-100"
-                        loading="lazy"
+                         
                       />
                     </div>
                     <div className="content-block">

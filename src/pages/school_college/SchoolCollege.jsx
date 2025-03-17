@@ -211,10 +211,10 @@ function SchoolCollage() {
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-4" className="tab-label">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="images/icon/management.png"
                         alt="..."
-                        loading="lazy"
+                         
                       />
                       <div>For Management </div>
                     </label>
@@ -266,11 +266,11 @@ function SchoolCollage() {
                             </div>
                             <div className="col-lg-6 col-md-6">
                               <div className="tab-box">
-                                <LazyLoadImage
+                                <img loading="eager" fetchpriority="high"
                                   src="image/solution/schoolCollage.jpg"
                                   alt="..."
                                   className="w-100 h-100 rounded-5"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                             </div>
@@ -290,10 +290,10 @@ function SchoolCollage() {
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-3" className="tab-label">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="images/icon/teacher.png"
                         alt="..."
-                        loading="lazy"
+                         
                       />
                       <div>For Teachers</div>
                     </label>
@@ -350,11 +350,11 @@ function SchoolCollage() {
                             </div>
                             <div className="col-lg-6 col-md-6">
                               <div className="tab-box">
-                                <LazyLoadImage
+                                <img loading="eager" fetchpriority="high"
                                   src="image/solution/teacher.jpg"
                                   alt="..."
                                   className="w-100 h-100 rounded-5"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                             </div>
@@ -374,10 +374,10 @@ function SchoolCollage() {
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-2" className="tab-label">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="images/icon/hotel.png"
                         alt="..."
-                        loading="lazy"
+                         
                       />
                       <div>For Hostel</div>
                     </label>
@@ -431,11 +431,11 @@ function SchoolCollage() {
                             </div>
                             <div className="col-lg-6 col-md-6">
                               <div className="tab-box">
-                                <LazyLoadImage
+                                <img loading="eager" fetchpriority="high"
                                   src="image/solution/students.jpg"
                                   alt="..."
                                   className="w-100 h-100 rounded-5"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                             </div>
@@ -456,10 +456,10 @@ function SchoolCollage() {
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-1" className="tab-label">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="images/icon/group.png"
                         alt="..."
-                        loading="lazy"
+                         
                       />
                       <div>For Students</div>
                     </label>
@@ -508,11 +508,11 @@ function SchoolCollage() {
                             </div>
                             <div className="col-lg-6 col-md-6">
                               <div className="tab-box">
-                                <LazyLoadImage
+                                <img loading="eager" fetchpriority="high"
                                   src="image/solution/students.jpg"
                                   alt="..."
                                   className="w-100 h-100 rounded-5"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                             </div>
@@ -533,10 +533,10 @@ function SchoolCollage() {
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-0" className="tab-label">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="images/icon/family.png"
                         alt="..."
-                        loading="lazy"
+                         
                       />
                       <div>For Parents</div>
                     </label>
@@ -590,11 +590,11 @@ function SchoolCollage() {
                             </div>
                             <div className="col-lg-6 col-md-6">
                               <div className="tab-box">
-                                <LazyLoadImage
+                                <img loading="eager" fetchpriority="high"
                                   src="image/solution/parents.jpg"
                                   alt="..."
                                   className="w-100 h-100 rounded-5"
-                                  loading="lazy"
+                                   
                                 />
                               </div>
                             </div>
@@ -635,11 +635,11 @@ function SchoolCollage() {
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
-                      <LazyLoadImage
+                      <img loading="eager" fetchpriority="high"
                         src="image/solution/request-demo.png"
                         alt="..."
                         className="w-75 h-auto"
-                        loading="lazy"
+                         
                       />
                     </div>
                   </div>
@@ -798,10 +798,10 @@ function SchoolCollage() {
               </div>
               <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                 <div className="ph-wireframe-img">
-                  <LazyLoadImage
+                  <img loading="eager" fetchpriority="high"
                     alt="ui ux wireframe"
                     src="image/ui-ux-design/ui-ux-section-3.png"
-                    loading="lazy"
+                     
                   />
                 </div>
               </div>

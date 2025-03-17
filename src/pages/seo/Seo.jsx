@@ -56,11 +56,11 @@ function Seo() {
                 </div>
               </div>
               <div className="right">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/seo/seo_1.jpg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
               </div>
             </div>
@@ -73,11 +73,11 @@ function Seo() {
           <div className="container">
             <div className="section">
               <div className="left">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/seo/Why.jpg"
                   alt=""
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
               </div>
               <div className="right">
@@ -136,11 +136,11 @@ function Seo() {
           <div className="top">
             <div className="bottom">
               <div className="image">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/seo/keywords.webp"
                   alt="..."
                   className="w-80 h-80"
-                  loading="lazy"
+                   
                 />
               </div>
             </div>
@@ -169,29 +169,29 @@ function Seo() {
           <div className="top">
             <div className="bestSeo">
               <div className="image">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/seo/keywords.webp"
                   alt="..."
                   className="w-72 h-72"
-                  loading="lazy"
+                   
                 />
                 <h4>#1 in Google Search</h4>
               </div>
               <div className="image">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/seo/keywords.webp"
                   alt="..."
                   className="w-72 h-72"
-                  loading="lazy"
+                   
                 />
                 <h4>4.9 Clutch Rating</h4>
               </div>
               <div className="image">
-                <LazyLoadImage
+                <img loading="eager" fetchpriority="high"
                   src="image/seo/keywords.webp"
                   alt="..."
                   className="w-72 h-72"
-                  loading="lazy"
+                   
                 />
                 <h4>#1 in Google Places</h4>
               </div>
