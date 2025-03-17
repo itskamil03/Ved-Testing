@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
 import { MultiSelect } from "primereact/multiselect";
 import { Dropdown } from "primereact/dropdown";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { img } from "react-lazy-load-image-component";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
@@ -422,11 +422,11 @@ function LifeAtVed() {
               <div className="lifeatvedthird-section-body">
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-img">
-                    <LazyLoadImage
+                    <img
                       src="/events/srinathcollege_seminar.jpeg"
                       alt="srinathcollege_seminar"
                       className="w-100 h-100"
-                  
+                  loading="eager" fetchpriority="high"
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -439,10 +439,11 @@ function LifeAtVed() {
               <div className="lifeatvedthird-section-body">
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-img">
-                    <LazyLoadImage
+                    <img
                       src="/events/karimcity_newsevent.jpeg"
                       alt="karimcity_newsevent"
                       className="w-100 h-100"
+                      loading="eager" fetchpriority="high"
                 
                     />
                   </div>
@@ -456,11 +457,11 @@ function LifeAtVed() {
               <div className="lifeatvedthird-section-body">
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-img">
-                    <LazyLoadImage
+                    <img
                       src="/events/karimcity_seminar.jpeg"
                       alt="karimcity_seminar"
                       className="w-100 h-100"
-                
+                loading="eager" fetchpriority="high"
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -473,11 +474,11 @@ function LifeAtVed() {
               <div className="lifeatvedthird-section-body">
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-img">
-                    <LazyLoadImage
+                    <img
                       src="/events/jamshedpur_womencollege_seminar.jpeg"
                       alt="jamshedpur_womencollege_seminar"
                       className="w-100 h-100"
-                   
+                   loading="eager" fetchpriority="high"
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -489,11 +490,11 @@ function LifeAtVed() {
               <div className="lifeatvedthird-section-body">
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-img">
-                    <LazyLoadImage
+                    <img
                       src="/events/co-operative_newspaper.jpeg"
                       alt="co-operative_newspaper"
                       className="w-100 h-100"
-                    
+                    loading="eager" fetchpriority="high"
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -505,11 +506,11 @@ function LifeAtVed() {
               <div className="lifeatvedthird-section-body">
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-img">
-                    <LazyLoadImage
+                    <img
                       src="/events/co-operativecollege_seminar.jpeg"
                       alt="co-operativecollege_seminar"
                       className="w-100 h-100"
-               
+               loading="eager" fetchpriority="high"
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -522,11 +523,11 @@ function LifeAtVed() {
               <div className="lifeatvedthird-section-body">
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-img">
-                    <LazyLoadImage
+                    <img
                       src="/events/events.jpeg"
                       alt="events"
                       className="w-100 h-100"
-               
+               loading="eager" fetchpriority="high"
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">

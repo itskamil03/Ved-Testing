@@ -572,7 +572,7 @@ function Header() {
                             >
                               <div className="image">
                                 <img loading="eager" fetchpriority="high"
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                    
@@ -591,7 +591,7 @@ function Header() {
                             >
                               <div className="image">
                                 <img loading="eager" fetchpriority="high"
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                    
@@ -610,7 +610,7 @@ function Header() {
                             >
                               <div className="image">
                                 <img loading="eager" fetchpriority="high"
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                    
@@ -629,7 +629,7 @@ function Header() {
                             >
                               <div className="image">
                                 <img loading="eager" fetchpriority="high"
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                    
@@ -648,7 +648,7 @@ function Header() {
                             >
                               <div className="image">
                                 <img loading="eager" fetchpriority="high"
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                    
@@ -667,7 +667,7 @@ function Header() {
                             >
                               <div className="image">
                                 <img loading="eager" fetchpriority="high"
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                    
@@ -686,7 +686,7 @@ function Header() {
                             >
                               <div className="image">
                                 <img loading="eager" fetchpriority="high"
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                    
@@ -705,7 +705,7 @@ function Header() {
                             >
                               <div className="image">
                                 <img loading="eager" fetchpriority="high"
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                    
@@ -724,7 +724,7 @@ function Header() {
                             >
                               <div className="image">
                                 <img loading="eager" fetchpriority="high"
-                                  src="images/career/c1.jpg"
+                                  src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                    
@@ -832,7 +832,7 @@ function Header() {
                               <div className="megadrop-item-about">
                                 <div className="image">
                                   <img loading="eager" fetchpriority="high"
-                                    src="images/career/c1.jpg"
+                                    src="/images/career/c1.jpg"
                                     alt="..."
                                     className="w-100 h-100"
                                      

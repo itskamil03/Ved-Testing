@@ -16,7 +16,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { img } from "react-lazy-load-image-component";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -305,11 +305,11 @@ function Home({ target, label }) {
                         >
                           <div className="what-do-box">
                             <div className="what-do-icon">
-                              <LazyLoadImage
+                              <img
                                 src="image/home/work/start-up.png"
                                 alt="website development"
                                 className="w-100 h-100"
-                                
+                                loading="eager" fetchpriority="high"
                               />
                             </div>
                             <h3 className="what-do-name">
@@ -326,11 +326,11 @@ function Home({ target, label }) {
                         >
                           <div className="what-do-box">
                             <div className="what-do-icon">
-                              <LazyLoadImage
+                              <img
                                 src="image/home/work/Business.png"
                                 alt="application development"
                                 className="w-100 h-100"
-                            
+                            loading="eager" fetchpriority="high"
                               />
                             </div>
                             <h3 className="what-do-name">
@@ -346,11 +346,11 @@ function Home({ target, label }) {
                         >
                           <div className="what-do-box">
                             <div className="what-do-icon">
-                              <LazyLoadImage
+                              <img
                                 src="image/home/work/Enterprise.png"
                                 alt="software development"
                                 className="w-100 h-100"
-                          
+                          loading="eager" fetchpriority="high"
                               />
                             </div>
                             <h3 className="what-do-name">Schools & Colleges</h3>
@@ -361,11 +361,11 @@ function Home({ target, label }) {
                         <Link className="whatwedo-link" to="/BrandReputation">
                           <div className="what-do-box">
                             <div className="what-do-icon">
-                              <LazyLoadImage
+                              <img
                                 src="image/home/work/Agencies.png"
                                 alt="brand reputation"
                                 className="w-100 h-100"
-                      
+                      loading="eager" fetchpriority="high"
                               />
                             </div>
                             <h3 className="what-do-name">OIL & GAS Industry</h3>
@@ -422,10 +422,10 @@ function Home({ target, label }) {
               onChange={handleTabChange}
             />
             <label htmlFor="tab-1" className="tab-label">
-              <LazyLoadImage
+              <img
                 src="images/icon/web-development.png"
                 alt="Web Development"
-             
+             loading="eager" fetchpriority="high"
               />
               <h6>Web Development</h6>
             </label>
@@ -443,10 +443,10 @@ function Home({ target, label }) {
               onChange={handleTabChange}
             />
             <label htmlFor="tab-2" className="tab-label">
-              <LazyLoadImage
+              <img
                 src="images/icon/app-development.png"
                 alt="Mobile App Development"
-            
+            loading="eager" fetchpriority="high"
               />
               <h6>Mobile App Development</h6>
             </label>
@@ -465,10 +465,10 @@ function Home({ target, label }) {
                   onChange={handleTabChange}
                 />
                 <label htmlFor="tab-3" className="tab-label">
-                  <LazyLoadImage
+                  <img
                     src="images/icon/software.png"
                     alt="Software"
-                 
+                 loading="eager" fetchpriority="high"
                   />
                   <h6>Software Development</h6>
                 </label>
@@ -486,10 +486,10 @@ function Home({ target, label }) {
               onChange={handleTabChange}
             />
             <label htmlFor="tab-4" className="tab-label">
-              <LazyLoadImage
+              <img
                 src="images/icon/app-development.png"
                 alt="Digital Marketing"
-          
+          loading="eager" fetchpriority="high"
               />
               <h6>Digital Marketing</h6>
             </label>
@@ -507,10 +507,10 @@ function Home({ target, label }) {
               onChange={handleTabChange}
             />
             <label htmlFor="tab-5" className="tab-label">
-              <LazyLoadImage
+              <img
                 src="images/icon/ui.png"
                 alt="UI/UX Design"
-             
+             loading="eager" fetchpriority="high"
               />
               <h6>UI/UX Design</h6>
             </label>
@@ -528,10 +528,10 @@ function Home({ target, label }) {
               onChange={handleTabChange}
             />
             <label htmlFor="tab-6" className="tab-label">
-              <LazyLoadImage
+              <img
                 src="images/icon/devops.png"
                 alt="DevOps"
-           
+           loading="eager" fetchpriority="high"
               />
               <h6>DevOps</h6>
             </label>
@@ -568,7 +568,7 @@ function Home({ target, label }) {
                     <div key={index} className="col-lg-6 col-md-6">
                       <div className="tab-box">
                         <div className="tab-icon">
-                          <LazyLoadImage
+                          <img
                             src="images/icon/check.png"
                             alt={service}
                             className="w-100 h-100"
@@ -610,11 +610,11 @@ function Home({ target, label }) {
                     <div key={index} className="col-lg-6 col-md-6">
                       <div className="tab-box">
                         <div className="tab-icon">
-                          <LazyLoadImage
+                          <img
                             src="images/icon/check.png"
                             alt={service}
                             className="w-100 h-100"
-                        
+                        loading="eager" fetchpriority="high"
                           />
                         </div>
                         <h5 className="tab-name">{service}</h5>
@@ -653,11 +653,11 @@ function Home({ target, label }) {
                     <div key={index} className="col-lg-6 col-md-6">
                       <div className="tab-box">
                         <div className="tab-icon">
-                          <LazyLoadImage
+                          <img
                             src="images/icon/check.png"
                             alt={service}
                             className="w-100 h-100"
-                          
+                          loading="eager" fetchpriority="high"
                           />
                         </div>
                         <h5 className="tab-name">{service}</h5>
@@ -694,11 +694,11 @@ function Home({ target, label }) {
                     <div key={index} className="col-lg-6 col-md-6">
                       <div className="tab-box">
                         <div className="tab-icon">
-                          <LazyLoadImage
+                          <img
                             src="images/icon/check.png"
                             alt={service}
                             className="w-100 h-100"
-                     
+                     loading="eager" fetchpriority="high"
                           />
                         </div>
                         <h5 className="tab-name">{service}</h5>
@@ -734,11 +734,11 @@ function Home({ target, label }) {
                     <div key={index} className="col-lg-6 col-md-6">
                       <div className="tab-box">
                         <div className="tab-icon">
-                          <LazyLoadImage
+                          <img
                             src="images/icon/check.png"
                             alt={service}
                             className="w-100 h-100"
-                     
+                     loading="eager" fetchpriority="high"
                           />
                         </div>
                         <h5 className="tab-name">{service}</h5>
@@ -775,11 +775,11 @@ function Home({ target, label }) {
                     <div key={index} className="col-lg-6 col-md-6">
                       <div className="tab-box">
                         <div className="tab-icon">
-                          <LazyLoadImage
+                          <img
                             src="images/icon/check.png"
                             alt={service}
                             className="w-100 h-100"
-                        
+                        loading="eager" fetchpriority="high"
                           />
                         </div>
                         <h5 className="tab-name">{service}</h5>
@@ -908,11 +908,11 @@ function Home({ target, label }) {
                         key={index}
                       >
                         <div>
-                          <LazyLoadImage
+                          <img
                             id="solution_img"
                             src={card.img}
                             alt={card.title}
-                         
+                         loading="eager" fetchpriority="high"
                           />
                           <div className="solution_info">
                             <h2 className="solution_title">{card.title}</h2>
@@ -961,11 +961,11 @@ function Home({ target, label }) {
               </h2>
               <div className="row">
                 <div  className="col-lg-6"> 
-                  <LazyLoadImage
+                  <img
                     src="image/solution/training.jpg"
                     alt="training"
                     className="w-100 h-100"
-               
+               loading="eager" fetchpriority="high"
                   />
                 </div>
                 <div className="col-lg-6 my-auto">
@@ -1059,7 +1059,7 @@ function Home({ target, label }) {
                         </div>
                         <div className="col-lg-4">
                           <div className="lifeatvedsecond-right-imgbox">
-                            <LazyLoadImage
+                            <img
                               src={slide.imgSrc}
                               alt="..."
                               className="w-100 h-100"
@@ -1091,11 +1091,11 @@ function Home({ target, label }) {
               <div className="lifeatvedthird-section-body">
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-img">
-                    <LazyLoadImage
+                    <img
                       src="icons/frontend.png"
                       alt="frontend-training"
                       className="w-100 h-100"
-                  
+                  loading="eager" fetchpriority="high"
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -1108,11 +1108,11 @@ function Home({ target, label }) {
               <div className="lifeatvedthird-section-body">
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-img">
-                    <LazyLoadImage
+                    <img
                       src="icons/backend.png"
                       alt="backend-training"
                       className="w-100 h-100"
-                
+                loading="eager" fetchpriority="high"
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -1125,11 +1125,11 @@ function Home({ target, label }) {
               <div className="lifeatvedthird-section-body">
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-img">
-                    <LazyLoadImage
+                    <img
                       src="icons/fullstack.png"
                       alt="fullstack-training"
                       className="w-100 h-100"
-                
+                loading="eager" fetchpriority="high"
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -1142,11 +1142,11 @@ function Home({ target, label }) {
               <div className="lifeatvedthird-section-body">
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-img">
-                    <LazyLoadImage
+                    <img
                       src="icons/java.png"
                       alt="java-training"
                       className="w-100 h-100"
-                   
+                   loading="eager" fetchpriority="high"
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -1159,11 +1159,11 @@ function Home({ target, label }) {
               <div className="lifeatvedthird-section-body">
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-img">
-                    <LazyLoadImage
+                    <img
                       src="icons/ai.png"
                       alt="ai-ml-training"
                       className="w-100 h-100"
-               
+               loading="eager" fetchpriority="high"
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -1175,11 +1175,11 @@ function Home({ target, label }) {
               <div className="lifeatvedthird-section-body">
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-img">
-                    <LazyLoadImage
+                    <img
                       src="icons/bde.png"
                       alt="java-training"
                       className="w-100 h-100"
-                    
+                    loading="eager" fetchpriority="high"
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
@@ -1247,11 +1247,11 @@ function Home({ target, label }) {
                   <div  className="industry-box" key={inds.id}> 
                     <Link to={inds.link}>
                       <div className="industry-img">
-                        <LazyLoadImage
+                        <img
                           src={inds.img}
                           alt={inds.heading}
                           className="w-100 h-100"
-                       
+                       loading="eager" fetchpriority="high"
                         />
                       </div>
                       <div className="industry-content">
@@ -1325,10 +1325,11 @@ function Home({ target, label }) {
                       
                       <div className="tab-icon ">
 
-                          <LazyLoadImage
+                          <img
                             src="icons/team.png"
                             alt="expert team"
                             className="w-100 h-100 team-icon"
+                            loading="eager" fetchpriority="high"
                           />
 
                                 </div>
@@ -1350,11 +1351,11 @@ function Home({ target, label }) {
                       <div className="milestone-box">
 
                       <div className="tab-icon">
-                                  <LazyLoadImage
+                                  <img
                                     src="icons/computer.png"
                                     alt="customized software"
                                     className="w-100 h-100"
-                                   
+                                   loading="eager" fetchpriority="high"
                                   />
                                 </div>
 
@@ -1372,11 +1373,11 @@ function Home({ target, label }) {
                       <div className="milestone-box">
 
                       <div className="tab-icon">
-                                  <LazyLoadImage
+                                  <img
                                     src="icons/achievement.png"
                                     alt="using the latest tech"
                                     className="w-100 h-100"
-                                      
+                                      loading="eager" fetchpriority="high"
                                   />
                                 </div>
 
@@ -1397,11 +1398,11 @@ function Home({ target, label }) {
 
                       <div className="milestone-box">
                       <div className="tab-icon">
-                                  <LazyLoadImage
+                                  <img
                                     src="icons/call.png"
                                     alt="all about quality"
                                     className="w-100 h-100"
-                                    
+                                    loading="eager" fetchpriority="high"
                                   />
                                 </div>
 
@@ -1418,11 +1419,11 @@ function Home({ target, label }) {
                    
                       <div className="milestone-box">
                       <div className="tab-icon">
-                                  <LazyLoadImage
+                                  <img
                                     src="icons/delivered.png"
                                     alt="on-time delivery"
                                     className="w-100 h-100"
-                                    
+                                    loading="eager" fetchpriority="high"
                                   />
                                 </div>
                                 
@@ -1438,11 +1439,11 @@ function Home({ target, label }) {
                       <div className="milestone-box">
 
                       <div className="tab-icon">
-                                  <LazyLoadImage
+                                  <img
                                     src="icons/help.png"
                                     alt="help and upkeep"
                                     className="w-100 h-100"
-                                    
+                                    loading="eager" fetchpriority="high"
                                   />
                                 </div>
                                
@@ -1494,11 +1495,11 @@ function Home({ target, label }) {
                       return (
                         <NavLink to={`/BlogDetails/${item.blog_title}`} onClick={()=>handleBlog(item.id)} className="blog-box" key={item.id}>
                         <div className="blog-img">
-                          <LazyLoadImage
+                          <img
                             src={item.image}
                             alt={item.category}
                             className="w-100 h-100"
-                         
+                         loading="eager" fetchpriority="high"
                           />
                         </div>
                         <div className="blog-content">

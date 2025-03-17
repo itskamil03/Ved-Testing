@@ -9,7 +9,7 @@ function BlogDetailsHero() {
         <div className="blog-hero-contain">
           <div className="image">
             <img loading="eager" fetchpriority="high"
-              src="backgrounds/banner_blog.jpg"
+              src="/backgrounds/banner_blog.jpg"
               alt="Hero-Image"
               className="blogsheroimg-img w-100 h-100"
                   

@@ -3,7 +3,7 @@ import "./WebsiteDevelopment.css";
 import Hero from "../../components/hero_section/Hero";
 import ContactForm from "../../components/contact_form/ContactForm";
 import { Link } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { img } from "react-lazy-load-image-component";
 
 function WebsiteDevelopment() {
   const [activeTab, setActiveTab] = useState(1);
@@ -375,10 +375,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img
                             src="image/website-development/tech/nextjs.png"
                             alt="nextjs"
-                            loading="lazy"
+                           loading="eager" fetchpriority="high"
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">NextJS</span>
@@ -387,7 +387,7 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img
                             src="image/website-development/tech/angular.svg"
                             alt="angular"
                              
@@ -540,10 +540,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img
                             src="image/website-development/tech/aws.png"
                             alt="aws"
-                            loading="lazy"
+                          loading="eager" fetchpriority="high"
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">AWS</span>
@@ -552,10 +552,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img
                             src="image/website-development/tech/azure.png"
                             alt="azure"
-                            loading="lazy"
+                           loading="eager" fetchpriority="high"
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Azure</span>
@@ -564,10 +564,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img
                             src="image/website-development/tech/docker.png"
                             alt="javascript"
-                            loading="lazy"
+                           loading="eager" fetchpriority="high"
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Docker</span>
@@ -576,11 +576,11 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img
                             src="image/website-development/tech/kubernetes.png"
                             width="50px"
                             alt="docker"
-                            loading="lazy"
+                         loading="eager" fetchpriority="high"
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Kubernetes</span>
@@ -589,10 +589,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img
                             src="image/website-development/tech/terraform.png"
                             alt="kubernetes"
-                            loading="lazy"
+                          loading="eager" fetchpriority="high"
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Terraform</span>
@@ -601,10 +601,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img
                             src="image/website-development/tech/ansible.png"
                             alt="terraform"
-                            loading="lazy"
+                          loading="eager" fetchpriority="high"
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Ansible</span>
@@ -614,10 +614,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img
                             src="image/website-development/tech/grafana.png"
                             alt="grafana"
-                            loading="lazy"
+                          loading="eager" fetchpriority="high"
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Grafana</span>
@@ -627,10 +627,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img
                             src="image/website-development/tech/prometheus.png"
                             alt="prometheus"
-                            loading="lazy"
+                           loading="eager" fetchpriority="high"
                           />
                         </div>
                         <span class="mt-3 d-inline-flex">Prometheus</span>
@@ -640,10 +640,10 @@ function WebsiteDevelopment() {
                     <div class="d-inline-flex flex-column col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 text-center my-3 my-md-3 mt-lg-5">
                       <a href="">
                         <div class="inner-box m-auto">
-                          <LazyLoadImage
+                          <img
                             src="image/website-development/tech/sonarqube.png"
                             alt="sonarqube"
-                            loading="lazy"
+                           loading="eager" fetchpriority="high"
                              width="50px"
                           />
                         </div>
