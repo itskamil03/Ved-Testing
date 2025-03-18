@@ -214,12 +214,43 @@ function DocumentManagement() {
     <>
      <ToastContainer/>
       <Hero
-        heading="Document Management"
+        heading="Document Management System"
         imgbtn="Documents"
         src="image/document-management/document-management.jpeg"
         // slogan="Efficient Document Management Solutions"
       />
       {/* <-------------------------------------------- Document Management first ------------------------------------------> */}
+
+      <section id="solution">
+        <div className="container-fluid">
+          <div className="container">
+            
+             <div className="head_title margin_bottom-20">Document Management System (DMS)</div>
+
+            <div className="section">
+              <div className="left">
+              <div className="image">
+                <img loading="eager" fetchpriority="high"
+                  src="/image/gxp/DMS.png"
+                  alt=""
+                  className="w-100 h-100"
+                   
+                />
+              </div>
+              </div>
+              <div className="section">
+              <div className="right">
+              <div class="text-box">
+              DMS (Document Management System) Software streamlines document storage, organization, and retrieval for businesses. It ensures secure access, version control, and compliance with industry regulations to enhance efficiency. With automated workflows, indexing, and OCR (Optical Character Recognition), users can quickly search and manage documents. Integration with cloud storage, collaboration tools, and access control systems improves security and teamwork. Cloud-based DMS enables remote access, scalability, and real-time document tracking for seamless operations. Implementing DMS Software reduces paperwork, enhances productivity, and improves document security. It also prevents data loss through automated backups and ensures seamless sharing across teams. A well-structured DMS enhances workflow automation, boosting overall business efficiency and decision-making.
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section id="docfirst" className="pb-0">
         <div className="container-fluid">
           <div className="container">

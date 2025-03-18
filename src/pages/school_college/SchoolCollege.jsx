@@ -114,11 +114,39 @@ function SchoolCollage() {
          <ToastContainer/>
 
       <Hero
-        heading="School & College Mangagements System"
+        heading="School & College Management System"
         imgbtn="School & College"
         src="image/solution/schoolCollage.jpg"
         // slogan="Effective Project Management Solutions"
       />
+        <section id="solution">
+          <div className="container-fluid">
+            <div className="container">
+            
+             <div className="head_title margin_bottom-20">School & College Management System</div>
+
+            <div className="section">
+              <div className="left">
+              <div className="image">
+                <img loading="eager" fetchpriority="high"
+                  src="/image/solution/HumanResource.png"
+                  alt=""
+                  className="w-100 h-100"
+                   
+                />
+              </div>
+              </div>
+              <div className="section">
+              <div className="right">
+              <div class="text-box">
+              School & College Management System simplifies academic and administrative operations by automating student enrollment, attendance, and performance tracking. It ensures efficient timetable scheduling, fee management, and exam monitoring to enhance institutional productivity. With parent-teacher communication, library management, and e-learning integration, educational institutions can improve engagement and learning outcomes. Integration with LMS, accounting software, and student portals ensures seamless operations and data synchronization. Cloud-based systems provide remote access, data security, and real-time updates for effective management. Implementing School & College Management Software enhances efficiency, reduces paperwork, and improves student performance tracking. It also automates routine tasks, ensuring better compliance and institutional growth. A well-structured system fosters better collaboration, streamlined administration, and an improved learning experience.
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="ui-clients2" className="ph-uiux-company ph-bg-color">
         <div className="container">

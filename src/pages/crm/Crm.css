@@ -5,6 +5,33 @@
 /* -- -------------------------------
                 RESULTS
 ------------------------------- -- */
+
+
+#solution {
+  background-color: rgb(253, 252, 252);
+}
+#solution .section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 20px;
+  width: 100%;
+}
+#solution .section .left {
+  width: 100%;
+}
+
+#solution .margin_bottom-20 {
+
+  margin-bottom: 40px !important;
+}
+#solution .section .right .text-box {
+  position: relative;
+  padding-left: 24px;
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+
 #crm-results {
   padding: 50px 0;
 }

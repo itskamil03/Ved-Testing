@@ -178,11 +178,41 @@ function OperationManagement() {
     <>
        <ToastContainer/>
       <Hero
-        heading="Operation Management"
+        heading="Operation Management Software"
         imgbtn="Operation"
         // slogan="Streamline and Optimize Your Operations"
         src="image/operation-management/operation.jpeg"
       />
+
+      <section id="solution">
+          <div className="container-fluid">
+            <div className="container">
+            
+             <div className="head_title margin_bottom-20">Operation Management Software</div>
+
+            <div className="section">
+              <div className="left">
+              <div className="image">
+                <img loading="eager" fetchpriority="high"
+                  src="/image/gxp/QMS.png"
+                  alt=""
+                  className="w-100 h-100"
+                   
+                />
+              </div>
+              </div>
+              <div className="section">
+              <div className="right">
+              <div class="text-box">
+              Operation Management Software optimizes business processes by streamlining workflows, resource allocation, and performance tracking. It ensures efficient task management, real-time monitoring, and automated reporting to enhance productivity. With inventory control, workforce scheduling, and compliance tracking, businesses can minimize errors and improve efficiency. Integration with ERP, CRM, and financial systems ensures seamless operations and data synchronization. Cloud-based solutions provide remote access, scalability, and secure data management for operational excellence. Implementing Operation Management Software enhances efficiency, reduces costs, and improves decision-making. It also automates routine processes, ensuring consistency and faster execution of tasks. A well-structured system fosters better collaboration, optimized resource utilization, and overall business growth.
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* <-------------------------------------------- Operation Management first ----------------------------------> */}
       <section id="opermfirst" className="pb-0">
         <div className="container-fluid">

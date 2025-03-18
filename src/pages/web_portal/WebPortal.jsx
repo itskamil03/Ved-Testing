@@ -173,6 +173,37 @@ function WebPortal() {
         src="image/web-portal/web-portal.jpeg"
         slogan="Empowering Your Digital Presence"
       />
+
+     <section id="solution">
+          <div className="container-fluid">
+            <div className="container">
+            
+             <div className="head_title margin_bottom-20">WebPortal</div>
+
+            <div className="section">
+              <div className="left">
+              <div className="image">
+                <img loading="eager" fetchpriority="high"
+                  src="/image/gxp/QMS.png"
+                  alt=""
+                  className="w-100 h-100"
+                   
+                />
+              </div>
+              </div>
+              <div className="section">
+              <div className="right">
+              <div class="text-box">
+              Web Portal Software serves as a centralized platform for businesses, enabling seamless access to information, services, and collaboration tools. It ensures secure user authentication, personalized dashboards, and efficient data management for enhanced user experience. With content management, self-service functionalities, and real-time updates, organizations can improve engagement and workflow automation. Integration with third-party applications, databases, and cloud services ensures scalability and streamlined operations. Cloud-based web portals provide remote accessibility, robust security, and multi-device compatibility for seamless interactions. Implementing Web Portal Software enhances communication, boosts efficiency, and improves service delivery. It also optimizes business processes by automating routine tasks and providing real-time analytics. A well-structured web portal fosters better collaboration, data-driven decision-making, and improved customer engagement.
+
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* <------------------------------------------------ web portal first ----------------------------------------------> */}
       <section id="webportal">
         <div className="container-fluid">

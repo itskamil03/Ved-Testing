@@ -201,6 +201,36 @@ function EcommerceSolutions() {
         // slogan="Empower Your Online Business"
         src="image/Ecommerce-solutions/Ecommerce.jpeg"
       />
+
+    <section id="solution">
+          <div className="container-fluid">
+            <div className="container">
+            
+             <div className="head_title margin_bottom-20">Ecommerce Solutions</div>
+
+            <div className="section">
+              <div className="left">
+              <div className="image">
+                <img loading="eager" fetchpriority="high"
+                  src="/image/gxp/QMS.png"
+                  alt=""
+                  className="w-100 h-100"
+                   
+                />
+              </div>
+              </div>
+              <div className="section">
+              <div className="right">
+              <div class="text-box">
+              E-commerce Solutions empower businesses to sell products and services online with seamless functionality and security. They ensure user-friendly navigation, secure payment processing, and inventory management for a smooth shopping experience. With order tracking, marketing automation, and customer analytics, businesses can optimize sales and engagement. Integration with CRM, ERP, and third-party logistics enhances efficiency and scalability. Cloud-based platforms provide remote accessibility, real-time updates, and multi-device compatibility for seamless operations. Implementing E-commerce Solutions boosts sales, enhances customer satisfaction, and streamlines business processes. They also support multi-vendor capabilities, personalized recommendations, and AI-driven insights. A well-structured e-commerce system fosters brand growth, market expansion, and increased profitability.
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* <------------------------------------------- E-commerce Solutions first --------------------------------------------> */}
       <section id="E-comfirst">
         <div className="container-fluid">

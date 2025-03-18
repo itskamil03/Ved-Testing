@@ -192,11 +192,42 @@ function Cms() {
     <>
     <ToastContainer/>
       <Hero
-        heading="Cms Development"
+        heading="Content Management System (CMS)"
         imgbtn="Cms"
         // slogan="Simplify Content Management"
         src="image/cms/cms.jpeg"
       />
+
+      <section id="solution">
+          <div className="container-fluid">
+            <div className="container">
+            
+             <div className="head_title margin_bottom-20">Content Management System (CMS)</div>
+
+            <div className="section">
+              <div className="left">
+              <div className="image">
+                <img loading="eager" fetchpriority="high"
+                  src="/image/gxp/QMS.png"
+                  alt=""
+                  className="w-100 h-100"
+                   
+                />
+              </div>
+              </div>
+              <div className="section">
+              <div className="right">
+              <div class="text-box">
+              CMS (Content Management System) Software enables businesses to create, manage, and publish digital content efficiently. It ensures user-friendly content editing, media management, and workflow automation for seamless website updates. With SEO optimization, role-based access control, and version management, organizations can maintain content quality and security. Integration with e-commerce, analytics, and third-party plugins enhances functionality and scalability. Cloud-based CMS provides remote accessibility, real-time collaboration, and secure data storage for efficient content management. Implementing CMS Software improves productivity, enhances user engagement, and streamlines website operations. It also supports multi-language content, customizable templates, and AI-driven recommendations. A well-structured CMS fosters brand consistency, digital growth, and seamless user experience.
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+
       {/* <---------------------------------------- Cms first ----------------------------------------------> */}
       <section id="cmsfirst" style={{ backgroundImage: "url('/top.svg')" }}>
         <div className="container-fluid">

@@ -204,12 +204,43 @@ function Hrms() {
     <>
     <ToastContainer/>
       <Hero
-        heading="HRMS Solution"
+        heading="Human Resource Management System (HRMS)"
         imgbtn="HRMS"
         // slogan="Streamline HR Operations"
         src="image/hrms/hrms.jpeg"
       />
       {/* <----------------------------------------- hrms first -----------------------------------------> */}
+
+      <section id="solution">
+          <div className="container-fluid">
+            <div className="container">
+            
+             <div className="head_title margin_bottom-20">Human Resource Management System (HRMS)</div>
+
+            <div className="section">
+              <div className="left">
+              <div className="image">
+                <img loading="eager" fetchpriority="high"
+                  src="/image/solution/HumanResource.png"
+                  alt=""
+                  className="w-100 h-100"
+                   
+                />
+              </div>
+              </div>
+              <div className="section">
+              <div className="right">
+              <div class="text-box">
+              HRMS (Human Resource Management System) Software streamlines HR processes by automating employee management, payroll, and performance tracking. It ensures efficient recruitment, attendance monitoring, and compliance management to enhance workforce productivity. With self-service portals, benefits administration, and real-time analytics, businesses can optimize HR operations and employee engagement. Integration with payroll systems, time tracking, and learning management tools enhances efficiency and accuracy. Cloud-based HRMS provides remote access, data security, and scalability for seamless HR management. Implementing HRMS Software improves efficiency, reduces administrative workload, and enhances employee satisfaction. It also automates routine HR tasks, ensuring better compliance and decision-making. A well-structured HRMS fosters organizational growth, talent retention, and workforce optimization
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+
       <section id="crm">
         <div className="container-fluid">
           <div className="container">

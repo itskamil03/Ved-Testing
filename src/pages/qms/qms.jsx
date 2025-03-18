@@ -134,11 +134,41 @@ const Qms = () => {
     <>
       <ToastContainer/>
       <Hero
-        heading="QMS / EQMS"
+        heading="Quality Management System (QMS)"
         slogan="Streamline Your Customer Relationships"
         imgbtn="qms"
         src="/QMS.jpg"
       />
+ 
+       <section id="solution">
+        <div className="container-fluid">
+          <div className="container">
+            
+             <div className="head_title margin_bottom-20">Quality Management System (DMS)</div>
+
+            <div className="section">
+              <div className="left">
+              <div className="image">
+                <img loading="eager" fetchpriority="high"
+                  src="/image/gxp/QMS.png"
+                  alt=""
+                  className="w-100 h-100"
+                   
+                />
+              </div>
+              </div>
+              <div className="section">
+              <div className="right">
+              <div class="text-box">
+              QMS (Quality Management System) Software ensures compliance, process efficiency, and continuous improvement in businesses. It enables automated quality control, audit management, and regulatory compliance tracking to maintain high standards. With real-time monitoring, corrective action workflows, and performance analytics, organizations can enhance product and service quality. Integration with document control, training management, and risk assessment tools streamlines operations and ensures consistency. Cloud-based QMS provides scalability, remote access, and secure data management for seamless quality oversight. Implementing QMS Software reduces errors, improves efficiency, and enhances customer satisfaction. It also helps businesses identify risks early and implement corrective actions effectively. A well-structured QMS fosters continuous improvement, regulatory adherence, and overall operational excellence
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div className="main-qms">
         <div id="container-fluid">
           <div className="container">

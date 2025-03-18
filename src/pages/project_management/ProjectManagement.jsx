@@ -197,12 +197,42 @@ function ProjectManagement() {
     <>
     <ToastContainer/>
       <Hero
-        heading="Project Management"
+        heading="Project Management System"
         imgbtn="Projects"
         src="image/project-management/project-management.jpeg"
         // slogan="Effective Project Management Solutions"
       />
 
+     <section id="solution">
+          <div className="container-fluid">
+            <div className="container">
+            
+             <div className="head_title margin_bottom-20">Project Management System (PMS)</div>
+
+            <div className="section">
+              <div className="left">
+              <div className="image">
+                <img loading="eager" fetchpriority="high"
+                  src="/image/gxp/QMS.png"
+                  alt=""
+                  className="w-100 h-100"
+                   
+                />
+              </div>
+              </div>
+              <div className="section">
+              <div className="right">
+              <div class="text-box">
+           
+              PMS (Project Management System) Software helps businesses plan, track, and manage projects efficiently. It enables task scheduling, resource allocation, and real-time collaboration to ensure smooth execution. With automated workflows, milestone tracking, and performance analytics, teams can stay on schedule and within budget. Integration with time tracking, document sharing, and communication tools enhances productivity and teamwork. Cloud-based PMS provides remote access, scalability, and secure data storage for seamless project oversight. Implementing PMS Software improves efficiency, enhances transparency, and boosts project success rates. It also streamlines decision-making with real-time insights and ensures better risk management. A well-structured PMS enhances team coordination, accountability, and overall business growth.
+
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* <------------------------------------Project Managemen first--------------------------------------------> */}
       <section id="profirst">
         <div className="container-fluid">

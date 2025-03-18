@@ -442,7 +442,7 @@ function CustomerSoftware() {
                       <div className="image">
                         <img loading="eager" fetchpriority="high"
                           src="images/home/about.jpg"
-                          alt="..."
+                          alt="Service Software and Application"
                           className="w-100 h-100"
                            
                         />
@@ -450,17 +450,7 @@ function CustomerSoftware() {
                       <div className="details">
                         <div className="title">Service Software and Application</div>
                         <div className="content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Excepturi doloribus alias ab. Quibusdam eos
-                          illo, quasi doloribus animi odio, ducimus harum cum
-                          modi perspiciatis cupiditate! Ipsam, odio? Repellat
-                          eligendi, animi nisi ipsa doloremque assumenda
-                          suscipit rem neque deserunt dolor nesciunt distinctio
-                          reiciendis eos. Animi harum nam explicabo cum soluta
-                          laudantium perferendis incidunt illum fuga, at, ad
-                          voluptas cupiditate inventore laboriosam consequuntur
-                          sapiente nisi placeat eveniet quod. Porro ad
-                          laboriosam adipisci?
+                        Service Software and Application streamline service management by automating scheduling, customer requests, and job tracking. It ensures efficient task allocation, real-time updates, and secure data management for businesses. With automated invoicing, CRM integration, and performance tracking, companies can enhance productivity and customer satisfaction. Mobile applications enable field technicians to update job status, access service history, and process payments on the go. Cloud-based access ensures scalability, remote monitoring, and seamless collaboration.
                         </div>
                       </div>
                     </div>
@@ -471,7 +461,7 @@ function CustomerSoftware() {
                       <div className="image">
                         <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
-                          alt="..."
+                          alt="Enterprise Website"
                           className="w-100 h-100"
                            
                         />
@@ -479,17 +469,7 @@ function CustomerSoftware() {
                       <div className="details">
                         <div className="title">Enterprise Website</div>
                         <div className="content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Excepturi doloribus alias ab. Quibusdam eos
-                          illo, quasi doloribus animi odio, ducimus harum cum
-                          modi perspiciatis cupiditate! Ipsam, odio? Repellat
-                          eligendi, animi nisi ipsa doloremque assumenda
-                          suscipit rem neque deserunt dolor nesciunt distinctio
-                          reiciendis eos. Animi harum nam explicabo cum soluta
-                          laudantium perferendis incidunt illum fuga, at, ad
-                          voluptas cupiditate inventore laboriosam consequuntur
-                          sapiente nisi placeat eveniet quod. Porro ad
-                          laboriosam adipisci?
+                        Our Enterprise Website is built to provide businesses with a seamless digital experience, ensuring scalability, security, and high performance. Designed with modern technologies, it supports organizations of all sizes by delivering a fast, reliable, and intuitive platform that enhances productivity and engagement. Whether handling high traffic, large datasets, or complex workflows, our website architecture ensures stability and efficiency, making it a future-proof solution for growing enterprises.
                         </div>
                       </div>
                     </div>
@@ -499,8 +479,8 @@ function CustomerSoftware() {
                     <div className="story-card">
                       <div className="image">
                         <img loading="eager" fetchpriority="high"
-                          src="images/blog/blog-1.jpg"
-                          alt="..."
+                          src="/image/gxp/DMS.png"
+                          alt="DMS,QMS and LMS Software"
                           className="w-100 h-100"
                            
                         />
@@ -508,17 +488,7 @@ function CustomerSoftware() {
                       <div className="details">
                         <div className="title">DMS,QMS and LMS Software</div>
                         <div className="content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Excepturi doloribus alias ab. Quibusdam eos
-                          illo, quasi doloribus animi odio, ducimus harum cum
-                          modi perspiciatis cupiditate! Ipsam, odio? Repellat
-                          eligendi, animi nisi ipsa doloremque assumenda
-                          suscipit rem neque deserunt dolor nesciunt distinctio
-                          reiciendis eos. Animi harum nam explicabo cum soluta
-                          laudantium perferendis incidunt illum fuga, at, ad
-                          voluptas cupiditate inventore laboriosam consequuntur
-                          sapiente nisi placeat eveniet quod. Porro ad
-                          laboriosam adipisci?
+                        DMS, QMS, and LMS software streamline business operations by managing documents, ensuring quality compliance, and enhancing learning. DMS (Document Management System) enables secure storage, easy retrieval, and version control of business documents. QMS (Quality Management System) automates audits, compliance tracking, and corrective actions to maintain high standards. LMS (Learning Management System) facilitates online training, assessments, and employee skill development. These systems boost efficiency, reduce risks, and improve collaboration across organizations. Implementing DMS, QMS, and LMS ensures seamless workflow, regulatory compliance, and continuous business growth.
                         </div>
                       </div>
                     </div>
@@ -529,7 +499,7 @@ function CustomerSoftware() {
                       <div className="image">
                         <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
-                          alt="..."
+                          alt="Billing Software"
                           className="w-100 h-100"
                            
                         />
@@ -537,17 +507,7 @@ function CustomerSoftware() {
                       <div className="details">
                         <div className="title">Billing Software</div>
                         <div className="content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Excepturi doloribus alias ab. Quibusdam eos
-                          illo, quasi doloribus animi odio, ducimus harum cum
-                          modi perspiciatis cupiditate! Ipsam, odio? Repellat
-                          eligendi, animi nisi ipsa doloremque assumenda
-                          suscipit rem neque deserunt dolor nesciunt distinctio
-                          reiciendis eos. Animi harum nam explicabo cum soluta
-                          laudantium perferendis incidunt illum fuga, at, ad
-                          voluptas cupiditate inventore laboriosam consequuntur
-                          sapiente nisi placeat eveniet quod. Porro ad
-                          laboriosam adipisci?
+                        Billing Software simplifies and automates invoicing, payment processing, and financial tracking for businesses. It ensures accurate billing, tax calculations, and secure transactions, reducing manual errors. With real-time reporting and analytics, businesses can track revenue, outstanding payments, and financial performance effortlessly. Integration with accounting systems and payment gateways streamlines financial management. Cloud-based billing solutions enable secure access from anywhere, improving efficiency and scalability. Implementing Billing Software enhances accuracy, compliance, and operational efficiency for seamless financial management.
                         </div>
                       </div>
                     </div>
@@ -557,8 +517,8 @@ function CustomerSoftware() {
                     <div className="story-card">
                       <div className="image">
                         <img loading="eager" fetchpriority="high"
-                          src="images/blog/blog-1.jpg"
-                          alt="..."
+                          src="/image/solution/HumanResource.png"
+                          alt="HRMS Software"
                           className="w-100 h-100"
                            
                         />
@@ -566,17 +526,7 @@ function CustomerSoftware() {
                       <div className="details">
                         <div className="title">HRMS Software</div>
                         <div className="content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Excepturi doloribus alias ab. Quibusdam eos
-                          illo, quasi doloribus animi odio, ducimus harum cum
-                          modi perspiciatis cupiditate! Ipsam, odio? Repellat
-                          eligendi, animi nisi ipsa doloremque assumenda
-                          suscipit rem neque deserunt dolor nesciunt distinctio
-                          reiciendis eos. Animi harum nam explicabo cum soluta
-                          laudantium perferendis incidunt illum fuga, at, ad
-                          voluptas cupiditate inventore laboriosam consequuntur
-                          sapiente nisi placeat eveniet quod. Porro ad
-                          laboriosam adipisci?
+                        HRMS Software (Human Resource Management System) streamlines HR operations by automating payroll, attendance, recruitment, and employee management. It ensures efficient workforce tracking, compliance management, and secure employee data handling. With self-service portals and real-time analytics, businesses can enhance productivity and decision-making. Integration with payroll and performance evaluation tools simplifies salary processing and talent management. Cloud-based HRMS enables remote access, scalability, and seamless collaboration. Implementing HRMS Software improves efficiency, reduces manual workload, and enhances overall HR operations.
                         </div>
                       </div>
                     </div>
@@ -587,7 +537,7 @@ function CustomerSoftware() {
                       <div className="image">
                         <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
-                          alt="..."
+                          alt="Business Website"
                           className="w-100 h-100"
                            
                         />
@@ -595,17 +545,7 @@ function CustomerSoftware() {
                       <div className="details">
                         <div className="title">Business Website</div>
                         <div className="content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Excepturi doloribus alias ab. Quibusdam eos
-                          illo, quasi doloribus animi odio, ducimus harum cum
-                          modi perspiciatis cupiditate! Ipsam, odio? Repellat
-                          eligendi, animi nisi ipsa doloremque assumenda
-                          suscipit rem neque deserunt dolor nesciunt distinctio
-                          reiciendis eos. Animi harum nam explicabo cum soluta
-                          laudantium perferendis incidunt illum fuga, at, ad
-                          voluptas cupiditate inventore laboriosam consequuntur
-                          sapiente nisi placeat eveniet quod. Porro ad
-                          laboriosam adipisci?
+                        Business Website serves as a digital identity, showcasing products, services, and brand values to a global audience. It ensures professional online presence, credibility, and customer engagement through responsive design and intuitive navigation. With SEO optimization and fast-loading pages, businesses can attract more visitors and improve search rankings. Integration with e-commerce, CRM, and analytics tools enhances functionality and performance tracking. A secure, mobile-friendly, and scalable website enables seamless user experience across all devices. Implementing a Business Website boosts brand visibility, customer trust, and business growth.
                         </div>
                       </div>
                     </div>
@@ -616,7 +556,7 @@ function CustomerSoftware() {
                       <div className="image">
                         <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
-                          alt="..."
+                          alt="Hospital Management Software"
                           className="w-100 h-100"
                            
                         />
@@ -624,17 +564,7 @@ function CustomerSoftware() {
                       <div className="details">
                         <div className="title">Hospital Management Software</div>
                         <div className="content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Excepturi doloribus alias ab. Quibusdam eos
-                          illo, quasi doloribus animi odio, ducimus harum cum
-                          modi perspiciatis cupiditate! Ipsam, odio? Repellat
-                          eligendi, animi nisi ipsa doloremque assumenda
-                          suscipit rem neque deserunt dolor nesciunt distinctio
-                          reiciendis eos. Animi harum nam explicabo cum soluta
-                          laudantium perferendis incidunt illum fuga, at, ad
-                          voluptas cupiditate inventore laboriosam consequuntur
-                          sapiente nisi placeat eveniet quod. Porro ad
-                          laboriosam adipisci?
+                        Hospital Management Software (HMS) streamlines hospital operations by managing patient records, appointments, billing, and inventory. It ensures efficient workflow, data security, and compliance with healthcare regulations. With electronic health records (EHR) and automated billing, hospitals can reduce paperwork and improve financial management. Integration with laboratory, pharmacy, and insurance systems enhances coordination and patient care. Cloud-based HMS enables remote access, scalability, and real-time monitoring. Implementing HMS improves operational efficiency, patient experience, and overall healthcare management.
                         </div>
                       </div>
                     </div>
@@ -644,8 +574,8 @@ function CustomerSoftware() {
                     <div className="story-card">
                       <div className="image">
                         <img loading="eager" fetchpriority="high"
-                          src="images/blog/blog-1.jpg"
-                          alt="..."
+                          src="/image/solution/Ecommerce.png"
+                          alt="Single & Multi Vendor E commerce Website"
                           className="w-100 h-100"
                            
                         />
@@ -653,17 +583,7 @@ function CustomerSoftware() {
                       <div className="details">
                         <div className="title">Single & Multi Vendor E commerce Website and application</div>
                         <div className="content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Excepturi doloribus alias ab. Quibusdam eos
-                          illo, quasi doloribus animi odio, ducimus harum cum
-                          modi perspiciatis cupiditate! Ipsam, odio? Repellat
-                          eligendi, animi nisi ipsa doloremque assumenda
-                          suscipit rem neque deserunt dolor nesciunt distinctio
-                          reiciendis eos. Animi harum nam explicabo cum soluta
-                          laudantium perferendis incidunt illum fuga, at, ad
-                          voluptas cupiditate inventore laboriosam consequuntur
-                          sapiente nisi placeat eveniet quod. Porro ad
-                          laboriosam adipisci?
+                        Single & Multi-Vendor E-commerce Website and Application provide a seamless platform for online buying and selling. Single-vendor platforms connect one seller to multiple customers, ensuring simplified management, secure transactions, and brand control. Multi-vendor platforms allow multiple sellers to list products, offering diverse product choices, automated commission handling, and scalable business growth. Features like secure payment gateways, real-time order tracking, and personalized user experience enhance engagement. Integration with inventory, shipping, and analytics tools ensures smooth operations. Implementing E-commerce solutions boosts sales, expands reach, and enhances customer satisfaction.
                         </div>
                       </div>
                     </div>
@@ -674,7 +594,7 @@ function CustomerSoftware() {
                       <div className="image">
                         <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
-                          alt="..."
+                          alt="Product Sales Software and Salesman Application"
                           className="w-100 h-100"
                            
                         />
@@ -682,17 +602,7 @@ function CustomerSoftware() {
                       <div className="details">
                         <div className="title">Product Sales Software and Salesman Application</div>
                         <div className="content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Excepturi doloribus alias ab. Quibusdam eos
-                          illo, quasi doloribus animi odio, ducimus harum cum
-                          modi perspiciatis cupiditate! Ipsam, odio? Repellat
-                          eligendi, animi nisi ipsa doloremque assumenda
-                          suscipit rem neque deserunt dolor nesciunt distinctio
-                          reiciendis eos. Animi harum nam explicabo cum soluta
-                          laudantium perferendis incidunt illum fuga, at, ad
-                          voluptas cupiditate inventore laboriosam consequuntur
-                          sapiente nisi placeat eveniet quod. Porro ad
-                          laboriosam adipisci?
+                        Product Sales Software and Salesman Application streamline sales operations by managing inventory, orders, and customer interactions. Product Sales Software automates invoicing, payment processing, and sales tracking, ensuring efficient order management and revenue growth. Salesman Applications empower field sales teams with real-time customer data, route optimization, and order placement on the go. Integration with CRM, analytics, and inventory systems enhances decision-making and performance tracking. Cloud-based access ensures seamless collaboration, scalability, and remote sales management. Implementing Sales Software improves efficiency, boosts sales, and enhances customer relationships.
                         </div>
                       </div>
                     </div>
@@ -702,7 +612,7 @@ function CustomerSoftware() {
                       <div className="image">
                         <img loading="eager" fetchpriority="high"
                           src="images/blog/blog-1.jpg"
-                          alt="..."
+                          alt="Oil Management & Maintainance Software"
                           className="w-100 h-100"
                            
                         />
@@ -710,17 +620,7 @@ function CustomerSoftware() {
                       <div className="details">
                         <div className="title">Oil Management & Maintainance Software 4.0</div>
                         <div className="content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Excepturi doloribus alias ab. Quibusdam eos
-                          illo, quasi doloribus animi odio, ducimus harum cum
-                          modi perspiciatis cupiditate! Ipsam, odio? Repellat
-                          eligendi, animi nisi ipsa doloremque assumenda
-                          suscipit rem neque deserunt dolor nesciunt distinctio
-                          reiciendis eos. Animi harum nam explicabo cum soluta
-                          laudantium perferendis incidunt illum fuga, at, ad
-                          voluptas cupiditate inventore laboriosam consequuntur
-                          sapiente nisi placeat eveniet quod. Porro ad
-                          laboriosam adipisci?
+                        Oil Management & Maintenance Software optimizes the tracking, storage, and distribution of oil while ensuring proper equipment maintenance. It enables real-time monitoring of oil levels, consumption, and quality to prevent wastage and enhance efficiency. With automated scheduling, maintenance alerts, and compliance tracking, businesses can reduce downtime and ensure equipment longevity. Integration with inventory, logistics, and financial systems streamlines operations and cost management. Cloud-based access allows remote monitoring, scalability, and data security. Implementing Oil Management Software enhances efficiency, reduces operational costs, and ensures regulatory compliance.
                         </div>
                       </div>
                     </div>

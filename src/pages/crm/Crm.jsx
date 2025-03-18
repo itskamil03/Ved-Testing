@@ -201,7 +201,7 @@ function Crm() {
     <>
       <ToastContainer/>
       <Hero
-        heading="CRM"
+        heading="Customer Relationship Management (CRM)"
         slogan="Streamline Your Customer Relationships"
         imgbtn="Crm"
         src="image/crm/crm.jpeg"
@@ -210,6 +210,37 @@ function Crm() {
       {/* {{-- ===========================================
                       CRM RESULTS
     =========================================== --}} */}
+
+      <section id="solution">
+        <div className="container-fluid">
+          <div className="container">
+            
+             <div className="head_title margin_bottom-20">Customer Relationship Management (CRM)</div>
+
+            <div className="section">
+              <div className="left">
+              <div className="image">
+                <img loading="eager" fetchpriority="high"
+                  src="/image/solution/CRM.png"
+                  alt=""
+                  className="w-100 h-100"
+                   
+                />
+              </div>
+              </div>
+              <div className="section">
+              <div className="right">
+              <div class="text-box">
+              CRM (Customer Relationship Management) Software helps businesses manage customer interactions, sales, and support efficiently. It ensures centralized customer data, automated follow-ups, and improved communication to enhance relationships. With sales pipeline tracking, marketing automation, and analytics, businesses can optimize conversions and customer retention. Integration with email, social media, and third-party tools streamlines workflows and improves engagement. Cloud-based CRM provides remote access, scalability, and data security for seamless operations. Implementing CRM Software boosts sales, enhances customer satisfaction, and drives business growth. It also improves team collaboration by providing real-time insights and automating routine tasks. A well-implemented CRM helps businesses deliver personalized experiences, increasing customer loyalty and long-term profitability.
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+
       <section id="crm-results">
         <div className="container-fluid">
           <div className="container">
