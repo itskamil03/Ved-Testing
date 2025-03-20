@@ -106,6 +106,39 @@
 
 /* <----------------------------------- Our Expertise -----------------------> */
 
+#latest_updates {
+  padding: 50px 0px;     
+
+}
+#latest_updates .updates {
+   display: grid;
+   grid-row-gap: 20px;
+}
+
+#latest_updates .marqueeUpdate{
+  line-height: 2.5em;
+  position: relative;
+  -webkit-animation: animate-vertical 20s linear infinite;
+  -moz-animation: animate-vertical 20s linear infinite;
+  animation: animate-vertical 20s linear infinite;
+  cursor: pointer;
+  background-color: #fafafa;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 20px;
+  height: 340px;
+}
+
+#latest_updates .latest {
+  padding-left: 20px !important;
+}
+
+
+#latest_updates .upcoming {
+   padding-left: 20px !important;
+}
+
 #who_we_are {
   padding: 50px 0px;
 }
@@ -396,6 +429,7 @@ padding: 12px;
   text-align: justify;
 }
 
+
 #whats-new .btn.active {
   background-color: #27286d;
   color: white;
@@ -525,6 +559,21 @@ padding: 12px;
 #whats-new .blog-content .name-block {
   font-size: 1.5rem;
   color: white;
+}
+
+
+#news-events .solutin_btn {
+  display: flex;
+  justify-content: center;
+}
+
+#news-events .more_btn_solution {
+  padding: 10px 10px;
+  color: white;
+  border: none;
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  border-radius: 5px;
+  font-size: 15px;
 }
 
 .innovates{
@@ -685,6 +734,9 @@ padding: 12px;
   .innovates {
     height: auto;
   }
+  #latest_updates .marqueeUpdate {
+     height: 240px;
+  }
 
 
 
@@ -697,6 +749,7 @@ padding: 12px;
     display: flex;
     width: 100%;
   }
+
 
 
 

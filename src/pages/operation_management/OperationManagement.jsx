@@ -194,7 +194,7 @@ function OperationManagement() {
               <div className="left">
               <div className="image">
                 <img loading="eager" fetchpriority="high"
-                  src="/image/gxp/QMS.png"
+                  src="/image/solution/Operational.png"
                   alt=""
                   className="w-100 h-100"
                    

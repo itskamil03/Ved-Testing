@@ -95,9 +95,55 @@ const eventsData = [
     category: "Seminar",
     title: "Web Development Awareness Program",
     image: "/events/events.jpeg",
-    date: "Deb 16 2024",
+    date: "Dec 16 2024",
     description:
       "This event provided in-depth knowledge about modern web technologies, best practices in the IT industry, practical insights into career growth opportunities, and hands-on experience with real-world applications.",
+  },
+  {
+    id: 8,
+    category: "Events",
+    title: "Certificate distribution at karim city college for seminar participants to BCA students",
+    image: "/events/karimCity_BCA.jpeg",
+    date: "Mar 19 2025",
+    description:
+      "Certificates were distributed to BCA students at Karim City College for their participation in the seminar, recognizing their dedication and involvement. The event highlighted their commitment to learning and professional growth."
+  },
+
+  {
+    id: 9,
+    category: "Events",
+    title: "Certificate distribution at karim city college for seminar participants to BSC IT Students",
+    image: "/events/karimCitybsc_it.jpeg",
+    date: "Mar 19 2025",
+    description:
+      "Certificates were awarded to BSC IT students at Karim City College for their participation in the seminar, recognizing their dedication and efforts. The event celebrated their commitment to learning and skill enhancement.",
+  },
+  {
+    id: 10,
+    category: "Interview",
+    title: "Interview sessions with Srinath University 2nd sem Students",
+    image: "/events/2nd_year_interview.jpeg",
+    date: "March 18 2025",
+    description:
+      "Srinath University conducted interview sessions for 2nd-semester students, providing them with valuable industry insights and career opportunities. The sessions aimed to enhance their confidence and professional skills.",
+  },
+  {
+    id: 11,
+    category: "Interview",
+    title: "Interview session with Srinath University BCA 4th sem students",
+    image: "/events/4th_year_interview.jpeg",
+    date: "March 18 2025",
+    description:
+      "Srinath University conducted interview sessions for 4th-semester students, providing them with valuable industry insights and career opportunities. The sessions aimed to enhance their confidence and professional skills.",
+  },
+  {
+    id: 12,
+    category: "Events",
+    title: "Doubt session with BCA students of Srinath College students",
+    image: "/events/doubt_session_srinath.jpeg",
+    date: "March 18 2025",
+    description:
+      "A doubt-clearing session was conducted with BCA students of Srinath College, providing them with insights and solutions to their academic queries. The session aimed to enhance their understanding and boost their confidence",
   },
 
 ];

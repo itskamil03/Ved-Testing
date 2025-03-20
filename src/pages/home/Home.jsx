@@ -221,6 +221,37 @@ function Home({ target, label }) {
     ],
   };
 
+  const eventsData = [
+    {
+      id: 1,
+      category: "Seminar",
+      title: "Seminar on Software Development Conducted at Srinath University",
+      image: "/events/srinathcollege_seminar.jpeg",
+      date: "Mar 11 2025",
+      description:
+        "We successfully conducted an insightful seminar on software development process with integration of power bi at Srinath University, Jamshedpur, aimed at educating students about building industry-level websites.",
+    },
+    {
+      id: 2,
+      category: "Press News",
+      title: "Coverage on Seminar in Newspapers",
+      image: "/events/karimcity_newsevent.jpeg",
+      date: "Mar 09 2025",
+      description:
+        "The successful seminar at Karim City College was covered in major newspapers, highlighting its impact on students and the local tech community. Industry experts shared insights on modern web technologies and career opportunities",
+    },
+    {
+      id: 3,
+      category: "Seminar",
+      title: "Seminar on Web Development at Karim City College",
+      image: "/events/karimcity_seminar.jpeg",
+      date: "Mar 08 2025",
+      description:
+        "This event provided in-depth knowledge about modern web technologies, best practices in the IT industry, and the latest trends in web development. Students gained hands-on experience with latest technologies"
+    },
+    
+  ];
+
   
   const [showAll, setShowAll] = useState(false);
   const displayedIndustries = showAll ? industries : industries.slice(0, 5);
@@ -265,6 +296,12 @@ function Home({ target, label }) {
   const handleBlog=(blogId)=>
   {
     localStorage.setItem("blogId",blogId)
+  }
+
+  const handleViewEvents = () => {
+    
+    navigate("/Events")
+
   }
 
   return (
@@ -1193,6 +1230,83 @@ function Home({ target, label }) {
         </div>
       </section>
 
+      <section id="latest_updates"  >  
+      {/* ref={sectionRef} */}
+        <div className="container-fluid">
+          <div className="container">
+            <div className="milestone-grid">
+            
+              <div className="row">
+
+                <div className="col-lg-6 my-auto">
+               
+                <span className="head_title latest">
+                  Latest Updates
+                 </span>
+                 <div className="columns posts">
+            
+                 <section>
+                <marquee
+                  direction="up"
+                  scrollAmount="4"
+                  onMouseOver={(e) => e.target.stop()}
+                  onMouseOut={(e) => e.target.start()}
+                  className="marqueeUpdate"
+                
+                  
+                >
+                  <div className="updates">
+                  <p className="page_title">
+                  Exciting Tech Advancements: Stay ahead in the digital world with the latest trends in Data Analytics, cloud computing, and web technology.
+                  </p>
+
+                  <p className="page_title"> Gain hands-on experience and enhance your skills with our latest internship opportunities, working on industry-level projects.</p>
+                  </div>
+                  
+                </marquee>
+              </section>
+            </div>
+
+                </div>
+
+
+                <div className="col-lg-6">
+                
+                <span className="head_title upcoming">
+                Upcoming Seminar
+                 </span>
+
+                 <div className="columns posts">
+            
+                <section>
+              <marquee
+                direction="up"
+                scrollAmount="4"
+                onMouseOver={(e) => e.target.stop()}
+                onMouseOut={(e) => e.target.start()}
+                className="marqueeUpdate"
+               
+                
+              >
+                <div className="updates">
+                <p className="page_title"> Don't miss our upcoming seminar! Gain valuable knowledge, network with professionals, and stay updated on emerging industry trends. </p>
+
+                <p className="page_title"> Join us for our upcoming seminar, where industry experts will share insights on the latest technological advancements and career opportunities. </p>
+                </div>
+                
+              </marquee>
+            </section>
+       </div>
+
+               </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="join">
         <div className="container-fluid">
           <div className="container">
@@ -1536,6 +1650,64 @@ function Home({ target, label }) {
       </section>
 
       <ContactForm />
+
+      <section id="news-events">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="section-head">
+              <div className="custom-head">
+                <div className="circle"></div>
+                <h2  className="head-title">News & Events</h2>
+              </div>
+              <div  className="head-slogan page_title"> 
+              Stay updated with our latest news and events! From insightful seminars and workshops to industry collaborations and technological advancements, we bring you the most recent happenings. Keep an eye on this section for exciting updates and opportunities.
+              </div>
+            </div>
+
+            <div className="section-content">
+              <div className="whats-tabs">
+        
+             
+                 
+            <div className="blogesc-main">
+                  
+                  {eventsData.map((event) => (
+                <Link className="bloges-card" key={event.id}>
+                  <div className="events-card-img">
+                    <img loading="eager" fetchpriority="high"
+                      src={event.image}
+                      alt={event.title}
+                      className="bloges-card-img-img w-100 h-100"
+                       
+                    />
+                    <div className="date">{event.date}</div>
+                  </div>
+      
+                  <div className="events-card-title">
+                    <div className="events-card-heading">{event.title}</div>
+                    <div className="event-description">{event.description}</div>
+                  </div>
+                </Link>
+              ))}
+                  
+                  </div>
+             
+                </div>
+                <div className="solutin_btn" style={{marginTop:"20px"}}>
+                  <button
+                    className="more_btn_solution"
+                    onClick={handleViewEvents}
+                  >
+                    View More
+                  </button>
+                </div>
+                
+        
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Testimonial />
       <div>
         <CookieManager />

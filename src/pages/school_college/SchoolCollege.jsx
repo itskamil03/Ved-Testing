@@ -129,7 +129,7 @@ function SchoolCollage() {
               <div className="left">
               <div className="image">
                 <img loading="eager" fetchpriority="high"
-                  src="/image/solution/HumanResource.png"
+                  src="/image/solution/learningManagement.jpeg"
                   alt=""
                   className="w-100 h-100"
                    

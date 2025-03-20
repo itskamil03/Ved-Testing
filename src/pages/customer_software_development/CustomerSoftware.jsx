@@ -423,7 +423,7 @@ function CustomerSoftware() {
           <div className="container">
             <div className="section-head">
               <div className="custom-head">
-                <div className="head-title">Our Success Stories</div>
+                <div className="head-title">Customize products & solutions</div>
               </div>
               <div className="head-slogan page_title">
                 Our Premium client to whom venturing digitally have successfully deliver project

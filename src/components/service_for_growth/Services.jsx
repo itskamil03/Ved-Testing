@@ -134,11 +134,9 @@ function Services() {
                 <div className="left-box"> 
                       <div  className="allservice">
                         <div className="text">
-                        <h2 className="heading" style={{fontSize:"3rem"}}>Custom Software Development</h2>
+                        <h2 className="heading" style={{fontSize:"3rem"}}>Cloud Services</h2>
                         <div className="slogan page_title" style={{paddingBlock:"10px"}}>
-                        Building a digital front door for your business with
-                      stunning Custom Software that attracts
-                      customers and drives growth.
+                        Building a powerful digital gateway for your business with cutting-edge Cloud Services that enhance scalability, security, and efficiency, driving innovation and growth.
                            </div>
                            </div>
   
@@ -150,14 +148,14 @@ function Services() {
                             className="w-100 h-100"
                             style={{borderRadius:"10px"}}
                           /> */}
-                          <img src="image/home/service/software-dev.jpg"
+                          <img src="image/home/service/Custom_software.jpg"
                       alt="..." className="w-100 h-100" style={{borderRadius:"10px"}}/>
                         
                       </div>
                       </div>
                    
                       <div className="bottom-btn">
-                       <Link to="/CustomSoftware">
+                       <Link to="/CloudServices">
                           Read More
                           {/* <i class="fa-solid fa-arrow-right fa-fade"></i> */}
                         </Link>
@@ -218,7 +216,7 @@ function Services() {
                           className="w-100 h-100"
                           style={{borderRadius:"10px"}}
                         /> */}
-                        <img src="image/home/service/Custom_software.jpg"
+                        <img src="image/home/service/Support_maintainence.jpg"
                       alt="..." className="w-100 h-100" style={{borderRadius:"10px"}}/>
                         
                       </div>
