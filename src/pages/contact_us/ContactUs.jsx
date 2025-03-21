@@ -21,7 +21,7 @@ const solutions = [
 ];
 
 const services = [
-  { name: "GxP/GmP Software Solutions", code: "GxP/GmP Software Solutions" },
+  { name: "Customize Pharma Software", code: "Customize Pharma Software" },
   { name: "Website Development", code: "Website Development" },
   { name: "Application Development", code: "Application Development" },
   { name: "UI/UX Design", code: "UI/UX Design" },

@@ -214,14 +214,14 @@ function Header() {
                         <div className="megadrop">
                           <div className="megadrop-item">
                             <NavLink
-                              to="/gxpsoftware"
+                              to="/CustomizePharmaSoftware"
                               onClick={() => setMenubtn(!menubtn)}
                               className="megadrop-item-link"
                             >
                               <div className="megadrop-item-about">
                                 <FaUncharted />
 
-                                <strong>GxP/GmP Software Solutions</strong>
+                                <strong>Customize Pharma Software</strong>
                               </div>
                             </NavLink>
 

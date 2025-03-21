@@ -108,7 +108,7 @@ function Footer() {
                 <h4 className="footercon-right-heading">Our Services</h4>
                 <ul className="footercon-right-list">
                 <li>
-                    <Link to="/gxpsoftware">Gxp/GmP Software Solutions</Link>
+                    <Link to="/CustomizePharmaSoftware">Customize Pharma Software</Link>
                   </li>
                   <li>
                     <Link to="/WebsiteDevelopment">Website Development</Link>

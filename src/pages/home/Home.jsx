@@ -1239,12 +1239,16 @@ function Home({ target, label }) {
               <div className="row">
 
                 <div className="col-lg-6 my-auto">
+              
                
-                <span className="head_title latest">
-                  Latest Updates
-                 </span>
                  <div className="columns posts">
-            
+                 <span className="title" style={{borderRadius:"4px"}}>
+                 Latest Updates{" "}
+                {/* <Link to="#" title="Explore More">
+                  <i className="fa fa-share"></i>
+                </Link> */}
+                </span>
+                
                  <section>
                 <marquee
                   direction="up"
@@ -1256,6 +1260,7 @@ function Home({ target, label }) {
                   
                 >
                   <div className="updates">
+                    
                   <p className="page_title">
                   Exciting Tech Advancements: Stay ahead in the digital world with the latest trends in Data Analytics, cloud computing, and web technology.
                   </p>
@@ -1272,12 +1277,13 @@ function Home({ target, label }) {
 
                 <div className="col-lg-6">
                 
-                <span className="head_title upcoming">
-                Upcoming Seminar
-                 </span>
-
                  <div className="columns posts">
-            
+                 <span className="title" style={{borderRadius:"4px"}}>
+                 Upcoming Seminar{" "}
+                {/* <Link to="#" title="Explore More">
+                  <i className="fa fa-share"></i>
+                </Link> */}
+                </span>
                 <section>
               <marquee
                 direction="up"

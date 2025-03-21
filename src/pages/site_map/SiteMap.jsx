@@ -56,8 +56,8 @@ function SiteMap() {
                   <a>Services</a>
                   <ul>
                     <li>
-                      <Link to="/gxpsoftware">
-                        Gxp/Gmp Software Solutions
+                      <Link to="/CustomizePharmaSoftware">
+                      Customize Pharma Software
                       </Link>
                     </li>
                     <li>
