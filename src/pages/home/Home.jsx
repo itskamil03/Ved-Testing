@@ -225,7 +225,7 @@ function Home({ target, label }) {
     {
       id: 1,
       category: "Seminar",
-      title: "Seminar on Software Development Conducted at Srinath University",
+      title: "Seminar on software development process with integration of Power BI",
       image: "/events/srinathcollege_seminar.jpeg",
       date: "Mar 11 2025",
       description:
@@ -234,7 +234,7 @@ function Home({ target, label }) {
     {
       id: 2,
       category: "Press News",
-      title: "Coverage on Seminar in Newspapers",
+      title: "Newspaper for hands-on workshop on Power BI",
       image: "/events/karimcity_newsevent.jpeg",
       date: "Mar 09 2025",
       description:
@@ -243,7 +243,7 @@ function Home({ target, label }) {
     {
       id: 3,
       category: "Seminar",
-      title: "Seminar on Web Development at Karim City College",
+      title: "Seminar on Cloud at  Venturing digitally with Karim City College",
       image: "/events/karimcity_seminar.jpeg",
       date: "Mar 08 2025",
       description:

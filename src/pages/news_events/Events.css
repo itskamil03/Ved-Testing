@@ -38,12 +38,12 @@
   
   .events-card-img {
     width: 100%;
-    aspect-ratio: 1/0.7;
+    height: 260px;
+    aspect-ratio: 1;
   }
   
   .events-card-img img {
     width: 100%;
-    height: 100%;
     position: relative;
   }
   
@@ -67,6 +67,29 @@
       grid-gap: 30px;
       flex-wrap: wrap;
  }
+
+ #events-container .link{
+    color: #1e1f5c;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration:underline;
+    text-underline-offset: 2px;
+ }
+
+ #events-container .link:hover{
+  color: #9797fa;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration:underline;
+}
+
+.event_data_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    grid-column-gap: 20px;
+
+}
 
  #events-container .activetab {
   background-color: #1e1f5c;
@@ -98,6 +121,14 @@
     font-size: 1.8rem;
     font-weight: bold;
   }
+
+  .squeeze {
+     height: 100%;
+     width: 100%;
+     object-fit: contain !important;
+     background-color: #f1eded;
+  }
+
   
   .bloges-card-footer {
     display: flex;
