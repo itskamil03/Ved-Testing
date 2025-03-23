@@ -42,7 +42,7 @@ function HomeHeroImg() {
         <div className="homeheroimg">
           <div className="homehero-container">
             {/* <div className="homeheroimg-main"> */}
-            <img loading="eager" fetchpriority="high"
+            <img
               src="image/home-slider/Slider_1.webp"
               alt="..."
               className="homeheroimg-img"

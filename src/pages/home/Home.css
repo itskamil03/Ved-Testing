@@ -913,3 +913,89 @@ main {
   font-size: 15px;
 }
 
+.tab-label {
+  min-width: 138px !important;
+}
+
+@media only screen and (max-width: 400px) {
+  #innovatedata .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 6px 0px !important;
+  }
+  #join {
+    padding: 3px 0px !important;
+  }
+  .section-head{
+    margin-bottom: 20px !important;
+  }
+  .bg-light {
+    padding: 20px 0px !important;
+  }
+  #who_we_are {
+    padding: 12px 0px !important;
+  }
+  #features{
+    padding: 0rem 0px !important;
+  }
+  #solutions {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+   main {
+    padding: 1.5rem 10px !important;
+   }
+   #internship-data, #lifeatvedthird, #latest_updates, #join, #industries, #why_choose_us, .milestone-box, #whats-new, #news-events {
+    padding: 8px 0px !important;
+   }
+   .solutin_btn {
+    margin-top: 1rem !important;
+   }
+   .row {
+    margin: 0px !important;
+    padding: 3px 0px !important;
+   }
+   .custom-head h2 {
+    padding: 1.2rem 0px !important;
+   }
+   .milestone-box {
+    margin-bottom: 1rem !important;
+   }
+   .form-container-form {
+    /* margin: 1.2rem 1rem !important; */
+    width: 90vw !important;
+   }
+   .footer {
+    padding: 1rem 2rem 2.5rem 2rem !important;
+   }
+   .footercon-left {
+    padding-bottom: 10px !important;
+   }
+   .footercon-rightsecond, .footercon-rightfirst {
+    padding-bottom: 0px !important;
+   }
+   .footercon-right {
+    gap: 5px !important;
+   }
+   .footercon-right-list {
+    margin-top: 0.8rem !important
+   }
+   .footer-bottom {
+    margin-top: 0px !important;
+   }
+   .milestone-box {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    margin-bottom: 0 !important;
+   }
+   .input-head {
+    margin-bottom: 0.6rem !important;
+   }
+   .contact-forms {
+    max-height: 55rem !important;
+   }
+}

@@ -149,8 +149,8 @@
 .section-content .value-block .value-data {
   color: #4e4e4e;
   font-size: 1.3rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
+  /* display: -webkit-box;
+  -webkit-line-clamp: 2; */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

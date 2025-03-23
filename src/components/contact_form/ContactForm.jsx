@@ -56,8 +56,7 @@ function ContactForm() {
       console.error("An error occurred while submitting the form:", error);
     }
   };
-
-
+ 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };

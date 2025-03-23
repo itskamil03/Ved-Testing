@@ -28,3 +28,9 @@ a {
 /* body {
   overflow-x: hidden;
 } */
+
+@media only screen and (max-width: 400px) {
+  .head-title {
+    font-size: 3rem !important;
+  }
+}
