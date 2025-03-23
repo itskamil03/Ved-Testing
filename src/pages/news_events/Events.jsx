@@ -38,16 +38,16 @@ const eventsData = [
   {
     id: 1,
     category: "Seminar",
-    title: "Seminar on software development process with integration of Power BI",
+    title: "Seminar on software development process with integration of Power BI & Tableue",
     image: "/events/srinathcollege_seminar.jpeg",
     date: "Mar 11 2025",
     description:
-      "We successfully conducted an insightful seminar on software development process with integration of power bi at Srinath University, Jamshedpur, aimed at educating students about building industry-level websites.",
+      "We have successfully conducted an insightful seminar on software development process with integration of power BI and Tableau at Srinath University, Jamshedpur, aimed at educating students about building industry-level websitesand Data Analytics roles and responsiblity.",
   },
   {
     id: 2,
     category: "Press News",
-    title: "Newspaper for hands-on workshop on Power BI",
+    title: "Newspaper for hands-on workshop on Next Js & Power BI",
     image: "/events/karimcity_newsevent.jpeg",
     date: "Mar 09 2025",
     description:
@@ -56,17 +56,17 @@ const eventsData = [
   {
     id: 3,
     category: "Seminar",
-    title: "Seminar on Cloud at  Venturing digitally with Karim City College",
+    title: "Seminar on Cloud (AWS) Deployment at  Venturing digitally for Karim City College students",
     image: "/events/karimcity_seminar.jpeg",
     date: "Mar 08 2025",
     description:
-      "This event provided in-depth knowledge about modern web technologies, best practices in the IT industry, and the latest trends in web development. Students gained hands-on experience with latest technologies"
+      "This event provided in-depth knowledge about modern web technologies with AWS and VPS server, best practices in the IT industry, and the latest trends in web development. Students gained hands-on experience with latest technologies"
   },
 
   {
     id: 4,
     category: "Seminar",
-    title: "Importance of Training & Internship awarness seminar for Jamshedpur Women's College students",
+    title: "Importance of Training & Internship awareness seminar for Jamshedpur Women's College students",
     image: "/events/jamshedpur_womencollege_seminar.jpeg",
     date: "Feb 25 2025",
     description:
@@ -93,7 +93,7 @@ const eventsData = [
   {
     id: 7,
     category: "Seminar",
-    title: "Web Development Awareness Program",
+    title: "Web & Software Development Awareness Program",
     image: "/events/events.jpeg",
     date: "Dec 16 2024",
     description:
@@ -112,7 +112,7 @@ const eventsData = [
   {
     id: 9,
     category: "Events",
-    title: "Certificate distribution at karim city college for seminar participants to BSC IT Students",
+    title: "With Dr. Mohammad. Reyaz,Principal and HOD Computer Science at karim city college with workshop participants of BSC IT Students",
     image: "/events/karimCitybsc_it.jpeg",
     date: "Mar 19 2025",
     description:
@@ -121,7 +121,7 @@ const eventsData = [
   {
     id: 10,
     category: "Interview",
-    title: "Interview sessions with Srinath University 2nd sem Students",
+    title: "Interview sessions with Srinath University 2nd semester Students",
     image: "/events/2nd_year_interview.jpeg",
     date: "March 18 2025",
     description:
@@ -130,7 +130,7 @@ const eventsData = [
   {
     id: 11,
     category: "Interview",
-    title: "Interview session with Srinath University BCA 4th sem students",
+    title: "Interview session with Srinath University BCA 4th semester students",
     image: "/events/4th_year_interview.jpeg",
     date: "March 18 2025",
     description:
@@ -139,7 +139,7 @@ const eventsData = [
   {
     id: 12,
     category: "Events",
-    title: "Doubt session with BCA students of Srinath College students",
+    title: "Doubt session with BCA students of Srinath University students",
     image: "/events/doubt_session_srinath.jpeg",
     date: "March 18 2025",
     description:
@@ -158,7 +158,7 @@ const eventsData = [
   {
     id: 14,
     category: "Events",
-    title: "Attended industrial expo at Adityapur Auto Cluster",
+    title: "Venturing Digitally at Adityapur Auto Cluster industrial expo",
     image: "/events/industryVisit.jpeg",
     date: "Jan 08 2025",
     description:
@@ -167,7 +167,7 @@ const eventsData = [
   {
     id: 15,
     category: "Events",
-    title: "Practice Session of Next Js & Node Js",
+    title: "Practice Session on Next Js & Node Js with AI/ML integration",
     image: "/events/practiceSession.jpeg",
     date: "Feb 18 2025",
     description:
@@ -176,7 +176,7 @@ const eventsData = [
   {
     id: 16,
     category: "Seminar",
-    title: "Practice Session of DevOps",
+    title: "Practice Session on DevOps (AWS) by Venturing digitally team",
     image: "/events/practiceDevOps.jpeg",
     date: "Feb 27 2025",
     description:
@@ -194,7 +194,7 @@ const eventsData = [
   {
     id: 18,
     category: "Seminar",
-    title: "Session on nodejs and learn how to integrate API in frontend",
+    title: "Session on Node js and learn how to integrate API in frontend",
     image: "/events/seminarNodejs.jpeg",
     date: "Mar 05 2025",
     description:
@@ -204,7 +204,7 @@ const eventsData = [
   {
     id:19,
     category: "Seminar",
-    title: "English Session on Aptitude & GD for placements",
+    title: "Workshop on Aptitude & GD for placements",
     image: "/events/englishSession.jpeg",
     date: "Mar 04 2025",
     description:
@@ -213,7 +213,7 @@ const eventsData = [
   {
     id: 20,
     category: "Press News",
-    title: "Practical Learning in an IT Software Workshop",
+    title: "Practical Learning in an IT Software Industry",
     image: "/events/newsPaperLinkEnglish.jpeg",
     link:"https://avenuemail.in/workshop-on-internship-opportunities-at-karim-city-college-jamshedpur/",
     date: "March 06 2025",
@@ -258,7 +258,7 @@ const handletab=(tab)=>
               </div>
 
               <div className="lifeatvedfirst-head-slogan">
-             Venturing Digitally Pvt Ltd – Stay updated with the latest news and events from Venturing Digitally.
+             Venturing Digitally Pvt Ltd – Stay update with the latest seminar, news, press news, and events from Venturing Digitally.
               </div>
             </div>
           

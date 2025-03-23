@@ -9,7 +9,7 @@ function OurDevelopmentProcess() {
           <div className="container">
             <div className="section-head">
               <div className="custom-head">
-                <div className="head-title">Development Process</div>
+                <div className="head-title">Development Process at Venturing Digitally</div>
               </div>
               <div className="head-slogan page_title">
                 Our development process follows a systematic approach, starting
