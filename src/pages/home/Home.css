@@ -949,11 +949,14 @@ main {
    main {
     padding: 1.5rem 10px !important;
    }
-   #internship-data, #lifeatvedthird, #latest_updates, #join, #industries, #why_choose_us, .milestone-box, #whats-new, #news-events {
+   #internship-data, #lifeatvedthird, #latest_updates, #join, #industries, #why_choose_us, #whats-new, #news-events {
     padding: 8px 0px !important;
    }
    .solutin_btn {
     margin-top: 1rem !important;
+   }
+   .milestone-box {
+    margin: 1rem 0px !important;
    }
    .row {
     margin: 0px !important;
