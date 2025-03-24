@@ -428,3 +428,38 @@
     grid-template-columns: 1fr 4fr;
   }
 }
+
+@media only screen and (max-width : 400px) {
+  .accordion-item-header::after {
+    top: calc(50% - 5px);
+  }
+  /* .accordion-item-header {
+    padding: 10px 20px !important;
+    padding: 10px 12px 10px 12px !important;
+  } */
+
+  /* .accordion-item-header::after {
+    content: "\002B";
+    font-size: 1.6rem;
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    background: #27286d;
+    border-radius: 50%;
+    color: white;
+    display: grid;
+    place-items: center;
+  }
+  
+  .accordion-item-header.active::after {
+    content: "\2212";
+  } */
+
+  .accordion-item-header::after {
+    /* font-size: 1.2rem !important; */
+    bottom: 0px !important;
+    margin-top: 16px !important;
+  }
+}

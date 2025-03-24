@@ -197,3 +197,18 @@
   .read-more-button:hover {
     background-color: #1e1f5c;
   }
+
+  @media screen and (max-width: 400px) {
+    .tabs{
+      /* margin: auto !important; */
+      padding: 0px 0px 25px !important;
+      justify-content: center !important;
+    }
+    #events-container {
+      padding: 25px 0px !important;
+    }
+    .date {
+      font-size: 10px !important;
+      padding: 1px 5px !important;
+    }
+  }

@@ -83,3 +83,65 @@
     font-weight: 600;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .heroimg-heading {
+    /* margin: auto !important; */
+    text-align: center !important;
+  }
+  .heroimg-slogan{
+    text-align: center !important;
+  }
+  #why-website{
+    padding: 18px 0px !important;
+  }
+  .why-box{
+    padding: 16px 12px !important;
+  }
+  #website-tech {
+    padding: 15px 0px !important;
+  }
+  .tech-grid div {
+    padding: 10px !important;
+  }
+  #website-contact {
+    padding: 14px 0px !important;
+  }
+  .section-head {
+    padding-bottom: 14px !important;
+    margin-bottom: 0 !important;
+  }
+  .tab-buttons {
+    /* padding: 10px 0px !important; */
+    max-width: 80vw !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    margin: auto !important;
+  }
+  #website-tech {
+    padding: 0px 0px !important;
+  }
+  #website-contact {
+    padding: 0px 0px !important;
+  }
+  #development-process {
+    padding: 12px 0px !important;
+  }
+  .head-title {
+    margin-bottom: 0 !important;
+  }
+  .section-head {
+    padding-bottom: 7px !important;
+  }
+  .head-bar {
+    margin-bottom: 15px !important;
+  }
+  .process-step {
+    padding: 30px 10px 30px 10px !important;
+  }
+  #enterprise-faq {
+    padding: 15px 0px !important;
+  }
+}

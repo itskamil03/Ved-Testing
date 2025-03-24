@@ -309,10 +309,8 @@ function ContactUs() {
                 <div className="col-lg-4 my-auto">
                   <h1 className="title-1" style={{color:"#000000"}}>Our Location</h1>
                   <p className="title-2" style={{color:"#000000"}}>
-                    
                    We operate across multiple locations throughout India, 
                    ensuring seamless services and support across the nation.
-
                   </p>
                 </div>
                 <div className="col-lg-8">
