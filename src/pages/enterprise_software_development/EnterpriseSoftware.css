@@ -447,3 +447,12 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width:450px) {
+  #enterprise-tabs .box {
+    width: 100% !important;
+    height: 50px !important;
+    font-size: 12px !important;
+    padding: 6px 0px !important;
+  }
+}

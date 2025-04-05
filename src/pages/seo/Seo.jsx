@@ -28,7 +28,7 @@ function Seo() {
               <div className="head-slogan">
                 SEO boosts your website’s visibility on search engines, driving
                 organic traffic and improving rankings. It involves optimizing
-                content, keywords, and site structure for better performanc,connect with our best Search engine optimization team for ranking your website 
+                content, keywords, and site structure for better performance, connect with our best Search engine optimization team for ranking your website 
               </div>
             </div>
           </div>

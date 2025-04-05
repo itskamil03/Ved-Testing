@@ -58,7 +58,7 @@ function MVPConsulting() {
 
               <div className="row">
 
-              <div className="col-md-6 col-lg-6 col-sm-12 mb-5">
+              <div className="col-md-6 col-lg-6 col-sm-12 ">
                  <div className="consulting-item">
                  <div className="consulting-head">
                   <div className="consulting-heading">Expert Guidance</div>
@@ -76,7 +76,7 @@ function MVPConsulting() {
               </div>
 
             
-              <div className="col-md-6 col-lg-6 col-sm-12 mb-5">
+              <div className="col-md-6 col-lg-6 col-sm-12 ">
               <div className="consulting-item">
               <div className="consulting-head">
               <div className="consulting-heading">Strategic Insights</div>
@@ -93,7 +93,7 @@ function MVPConsulting() {
                </div>
               </div>
 
-              <div className="col-md-6 col-lg-6 col-sm-12 mb-5">
+              <div className="col-md-6 col-lg-6 col-sm-12">
               <div className="consulting-item">
               <div className="consulting-head">
             <div className="consulting-heading">Agile Development</div>

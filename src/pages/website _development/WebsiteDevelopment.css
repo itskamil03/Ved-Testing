@@ -378,7 +378,15 @@
   #website-contact .calc-side .content {
     padding: 0px;
   }
-
+  #development-process .process-step .step-box .step-num {
+    position: absolute;
+    right: 40px;
+    top: -38px;
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00000096;
+  }
   #website-contact .calc-side .head {
     font-size: 2rem;
     margin-bottom: 5px;
@@ -403,6 +411,11 @@
     left: -20px;
   }
 
+#why-website .why-grid .why-box .title {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
   #development-process .process-step .step-box .bottom-bar {
     flex-direction: column;
     justify-content: center;
@@ -415,7 +428,7 @@
   }
 
   #development-process .process-step .step-box .title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: 15px 0;
     text-align: center;

@@ -238,7 +238,7 @@ function GxPSoftware() {
               </div>
               <div className="media">
                 <video autoPlay muted loop className="w-100 h-100">
-                  <source src="/image/gxp/qms.mp4" />
+                  <source src="/image/gxp/Qms.mp4" />
                 </video>
               </div>
             </div>

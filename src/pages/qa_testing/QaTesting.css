@@ -76,7 +76,7 @@
 
   #qa-second .cloud-automation {
     display: grid;
-    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 20px;
     width: 100%
   }
@@ -345,6 +345,7 @@
     display: block;
     margin-right: 10px;
   }
+
   
   @media screen and (max-width: 768px) {
     #qa-first {
@@ -364,12 +365,28 @@
     #qa-second .section-box {
         padding-bottom: 20px;
       }
+
+      #qa-second .cloud-automation {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+        width: 100%
+      }
+
+      #qa-third .section-box3 .left .icon {
+        color: #9c0;
+        font-size: 50px;
+      }
+       
       #qa-second .section-box .left {
         display: flex;
         align-items: center;
         gap: 20px;
       }
-
+      #qa-third .section-box .left .icon {
+        color: #809ccf;
+        font-size: 50px;
+      }
     #qa-third {
       padding: 20px 0 30px 0;
     }

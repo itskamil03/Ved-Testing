@@ -14,7 +14,6 @@
 }
 
 #support-second .right .top-heading {
-  width: 80%;
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.214em;
@@ -88,6 +87,7 @@
   align-items: center;
   width: 100%;
   grid-column-gap: 56px;
+  grid-row-gap: 20px;
 }
 
 #support-fives .section-box .bestSeo .image img {
@@ -111,6 +111,55 @@
 
 #support-six .section-box3 .right .top {
     padding-right: 2rem;
+}
+
+@media  screen and (max-width:768px) {
+  #support-second .text-box {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "sans-serif", sans-serif;
+  }
+  
+  #support-second .text-bottom {
+    padding-top: 2.6rem;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "sans-serif", sans-serif;
+  }
+
+  #support-fives .section-box .bestSeo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    grid-column-gap: 56px;
+    grid-row-gap: 20px;
+  }
+  
+  #support-second .right .top-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.214em;
+    margin-bottom: 20px;
+  }
+  
+  #support-second .right .list ul {
+    list-style: none;
+  }
+  
+  #support-second .right .list ul > li {
+    position: relative;
+    padding-left: 24px;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    font-family: "sans-serif", sans-serif;
+  }
+  #support-fives .section-box .top{
+    margin-block: 30px;
+  }
 }
 
 
