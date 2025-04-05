@@ -35,7 +35,7 @@ section {
 
 #contact-cards .contact-card .content {
   font-size: 1.5rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #contact-ads {
@@ -65,7 +65,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   color: #00000099;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #contact-ads .section-content .left-ads .ads-btn button:hover {
@@ -102,13 +102,13 @@ section {
 
 #contact-ads .section-content .right-ads .ads1 .text {
   font-size: 20px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #contact-ads .section-content .right-ads .ads1 .text div {
   font-size: 22px;
   font-weight: 600;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .expert-select-box {

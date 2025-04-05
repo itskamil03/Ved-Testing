@@ -67,7 +67,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #enterprise-process .timeline {
   position: relative;
@@ -174,7 +174,7 @@
   margin: 0 0 10px 0;
   font-size: 2rem;
   color: white;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
@@ -196,7 +196,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #enterprise-services .service-card {
   position: relative;
@@ -267,7 +267,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #enterprise-tabs .tabs {
   display: flex;
@@ -326,7 +326,7 @@
 
 #enterprise-tabs .box span {
   writing-mode: vertical-rl;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   height: 100%;
   display: flex;
   align-items: center;

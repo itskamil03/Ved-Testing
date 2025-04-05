@@ -9,7 +9,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .lifeatvedfirst-section-head .lifeatvedfirst-head-slogan {
   padding-left: 20px;
@@ -99,7 +99,7 @@
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .lifeatvedsecond-section-head .lifeatvedsecond-head-title {
@@ -109,7 +109,7 @@
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .lifeatvedsecond-section-head .lifeatvedsecond-head-title::after {
   background-color: #ed8b00;
@@ -132,25 +132,25 @@
   padding-bottom: 1rem;
   font-size: 2.3rem;
   margin-top: 5px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .lifeatvedsecond-left-box-heading {
   padding-bottom: 1rem;
   font-size: 3.5rem;
   line-height: 1em;
   color: #27286d;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .lifeatvedsecond-left-box-slogan {
   font-size: 1.8rem;
   padding-bottom: 1rem;
   margin-top: 5px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .lifeatvedsecond-left-box-btn {
   font-size: 1.5rem;
   margin-top: 15px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .lifeatvedsecond-right-imgbox {
@@ -192,7 +192,7 @@
   font-weight: bold;
   text-align: start;
   text-transform: uppercase;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .lifeatvedthird-section-head .lifeatvedthird-head-title::after {
   background-color: #ed8b00;
@@ -226,16 +226,16 @@
   font-size: 4rem;
   line-height: 1em;
   color: #27286d;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .lifeatvedfourth-box-text {
   font-size: 22px;
   margin-top: 20px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .lifeatvedfourth-box-btn {
   margin: 20px 0;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .lifeatvedfourth-box-btn1 {
   font-size: 2rem;
@@ -247,14 +247,14 @@
 }
 .lifeatvedfourth-box-btn2 {
   font-size: 2rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   padding: 0.5rem;
   color: #27286d;
 }
 .lifeatvedfourth-box-slogan {
   font-size: 22px;
   margin-top: 5px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 @media screen and (max-width: 994px) {
   #lifeatvedfirst {

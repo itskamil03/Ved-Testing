@@ -320,12 +320,20 @@ function MVPConsulting() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is included in software support and maintenance services?
+                   What is an MVP, and why is it important for startups?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Support and maintenance services typically include regular updates, bug fixes, performance monitoring, and technical support. This may involve addressing any issues or errors that arise, ensuring compatibility with new systems or technologies, and implementing security patches. Maintenance also often includes periodic reviews to enhance software performance and add new features based on user feedback.
+                      A <b>Minimum Viable Product (MVP)</b> is a simplified version of a product with only the <b>core features</b> needed to test market demand. It allows startups to:
+
+                      <ul>
+                        <li><b>Validate their idea</b> before full-scale development</li>
+                        <li><b>Save costs and time</b> by avoiding unnecessary features</li>
+                        <li><b>Gather real user feedback</b> for improvement</li>
+                        <li><b>Attract investors</b> with a working prototype</li>
+                        <li><b>Reduce the risk of failure</b> by launching early</li>
+                      </ul>
                       </div>
                     </div>
                   ) : null}
@@ -342,12 +350,19 @@ function MVPConsulting() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    Why is ongoing software maintenance important?
+                   What are the key steps in MVP development?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Ongoing software maintenance is crucial for ensuring that the software remains functional, secure, and up-to-date. It helps address vulnerabilities, adapt to changing technology environments, and fix bugs that may arise over time. Regular maintenance ensures optimal performance, extends the lifespan of the software, and provides users with a reliable and effective tool.
+                      MVP development follows a structured process:
+                      <ul>
+                        <li><b>Define the Problem & Target Audience – </b>Identify customer pain points</li>
+                        <li><b>Prioritize Core Features –</b> Focus on the most essential functionalities</li>
+                        <li><b>Develop a Prototype – </b>Create a basic version for testing</li>
+                        <li><b>Launch & Collect Feedback –</b> Get user insights and measure performance</li>
+                        <li><b>Iterate & Improve – </b>Enhance the product based on real data</li>
+                      </ul>
                       </div>
                     </div>
                   ) : null}
@@ -364,12 +379,17 @@ function MVPConsulting() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    How do I know if my software needs maintenance or support?
+                   How long does it take to build an MVP?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Signs that your software needs maintenance or support include frequent crashes or errors, slow performance, compatibility issues with new systems or updates, and user complaints about functionality or usability. Additionally, if your software has not been updated in a while or if there are new security threats, it's a good idea to schedule a maintenance review to ensure continued reliability and security.
+                       The <b>MVP timeline</b> depends on the complexity and scope:
+                       <ul>
+                        <li><b>Simple MVP (Landing Page, No-Code Solutions) – </b>2-4 weeks</li>
+                        <li><b>Basic Web/App MVP (Essential Features, UI/UX Design) –</b> 1-3 months</li>
+                        <li><b>Complex MVP (AI Integration, Custom Features, Backend Development) –</b> 4-6 months</li>
+                       </ul>
                       </div>
                     </div>
                   ) : null}
@@ -386,12 +406,19 @@ function MVPConsulting() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    What should I consider when choosing a support and maintenance provider?
+                    How do I choose the right MVP consulting firm?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When choosing a support and maintenance provider, consider their experience with your specific type of software, their response times for support requests, and their ability to provide regular updates and proactive maintenance. Look for providers with a strong track record of reliability, transparent pricing, and good communication practices. It’s also beneficial if the provider offers flexible service levels to match your needs and budget.
+                      To select the best MVP consulting partner, look for:
+                      <ul>
+                        <li><b>Experience in MVP Development –</b> Proven track record with startups</li>
+                        <li><b>Agile Development Approach –</b> Quick iterations and fast deployment</li>
+                        <li><b>Technical Expertise – </b>Ability to build scalable and flexible solutions</li>
+                        <li><b>Post-MVP Support –</b> Assistance with scaling and feature enhancements</li>
+                        <li><b>Transparent Pricing & Communication –</b> Clear project timelines and cost estimates</li>
+                      </ul>
                       </div>
                     </div>
                   ) : null}

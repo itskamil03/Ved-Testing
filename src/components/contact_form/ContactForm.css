@@ -49,7 +49,7 @@ select:focus {
   margin-bottom: 20px;
   background: transparent;
   font-size: 1.5rem;
-  font-family: "Exo",sans-serif;
+  font-family: "sans-serif",sans-serif;
 }
 
 .contact-forms .input-block .input-head {

@@ -15,7 +15,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #app-cards .app-card {
@@ -40,7 +40,7 @@
 }
 
 #app-cards .app-card .title {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2.3rem;
@@ -163,7 +163,7 @@
 }
 
 #app-advantages .tabs .tab-content .head {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2.3rem;
@@ -216,7 +216,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #app-steps .card {
@@ -243,7 +243,7 @@
   font-size: 1.6rem;
   margin-bottom: 15px;
   display: inline-flex;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #app-steps .timeline__card {
@@ -313,7 +313,7 @@
 }
 
 #app-portfolio .client-item .title {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: white;
   font-size: 2.3rem;
   margin-bottom: 0px;

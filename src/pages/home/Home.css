@@ -30,7 +30,7 @@
   font-size: 4rem;
   font-weight: 600;
   color: white;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #what-do .title-2 {
@@ -38,7 +38,7 @@
   font-size: 2rem;
   font-weight: 500;
   color: white;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #what-do .whatwedo-link {
@@ -90,7 +90,7 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .section-head .head-slogan {
@@ -307,7 +307,7 @@ padding: 12px;
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .section-head .head-slogan {
@@ -420,7 +420,7 @@ padding: 12px;
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .section-head .head-slogan {
@@ -533,7 +533,7 @@ padding: 12px;
   line-height: 2rem;
   /* Adjusted line height */
   color: rgb(46, 43, 43);
-  font-family: "Exo", sans-serif !important;
+  font-family: "sans-serif", sans-serif !important;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;

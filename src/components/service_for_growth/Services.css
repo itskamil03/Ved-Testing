@@ -10,7 +10,7 @@
   text-align: start; 
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #milestones .cservice-head-title {
@@ -18,7 +18,7 @@
   text-align: start; 
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .allservice{
@@ -84,7 +84,7 @@
 #features .section-content .left-box .bottom-btn a {
   font-size: 20px;
   color: #081033;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -117,7 +117,7 @@
 #features .section-content .right-box .card .footer-btn a {
   font-size: 20px;
   color: #081033;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   display: flex;
   align-items: center;
   gap: 10px;

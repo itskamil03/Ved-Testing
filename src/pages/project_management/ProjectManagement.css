@@ -13,7 +13,7 @@
   text-align: center;
   font-weight: bold;
   margin: 0px auto 30px auto;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .profirst-head-slogan {
@@ -47,7 +47,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .prosecond-section-head .prosecond-head-slogan {
@@ -64,7 +64,7 @@
   color: #27286d;
   position: relative;
   display: inline-block;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   text-transform: uppercase;
   padding-left: 60px;
 }
@@ -109,7 +109,7 @@
   font-weight: bold;
   color: #3b3c3d;
   padding-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   text-align: center;
 }
 
@@ -147,7 +147,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #prothird .prothird-section-head .prothird-head-slogan {
@@ -177,7 +177,7 @@
 
 #prothird .why-card .title {
   font-size: 2rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 15px;

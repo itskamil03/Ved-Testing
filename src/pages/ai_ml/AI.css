@@ -9,7 +9,7 @@
     line-height: 1.225em;
     margin: 0 auto;
     letter-spacing: -0.008em;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -18,7 +18,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0 auto;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     color: rgb(70, 63, 63);
   }
   #ai-second {
@@ -60,7 +60,7 @@
     line-height: 1.225em;
     margin: 0 auto;
     letter-spacing: -0.008em;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -88,7 +88,7 @@
     line-height: 1.225em;
     margin: 0 auto;
     letter-spacing: -0.008em;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     width: 100%;
     margin-bottom: 30px;
   }
@@ -97,7 +97,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0 auto;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     color: rgb(70, 63, 63);
   }
 
@@ -159,7 +159,7 @@
     align-items: center;
   }
   #ai-four .section-top .head-slogan p {
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     width: 80%;
     font-size: 28px;
     font-weight: 600;
@@ -173,7 +173,7 @@
     padding-left: 150px;
   }
   #ai-four .section-top .head-btn a {
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;

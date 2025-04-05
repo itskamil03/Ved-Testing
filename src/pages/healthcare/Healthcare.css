@@ -43,7 +43,7 @@ body {
   font-size: 2rem;
   font-weight: 400;
   position: relative;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -77,7 +77,7 @@ body {
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .IndustriesMain-section-head .IndustriesMain-head-slogan {
@@ -126,7 +126,7 @@ body {
   font-size: 2rem;
   line-height: 54px;
   color: #323232;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 /* <----------------------------------------------- Industries second section ---------------------------------------> */
@@ -143,7 +143,7 @@ body {
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .section-head .head-slogan {
   padding-left: 20px;
@@ -170,7 +170,7 @@ body {
   color: #27286d;
   position: relative;
   display: inline-block;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   padding-left: 55px;
   text-transform: uppercase;
 }
@@ -207,13 +207,13 @@ body {
 #industry_component .section-head .title {
   font-size: 3.5rem;
   font-weight: bold;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #industry_component .section-head .slogan {
   padding-left: 20px;
   font-size: 1.8rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #industry_component .component-grid {
@@ -234,7 +234,7 @@ body {
 
 #industry_component .component-box div {
   padding: 15px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -254,13 +254,13 @@ body {
 .softsolutions-section-head .head-title {
   font-size: 3.5rem;
   font-weight: bold;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .softsolutions-section-head .softsolutions-head-slogan {
   padding-left: 20px;
   font-size: 1.8rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .softsolutions-left {
@@ -348,7 +348,7 @@ body {
 }
 
 .softsolutions-right-list li div:nth-child(2) {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #health .health-video {
@@ -443,7 +443,7 @@ body {
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 5px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .Clients-section-head .Clients-head-slogan {

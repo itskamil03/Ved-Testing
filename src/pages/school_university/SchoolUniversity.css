@@ -15,7 +15,7 @@
     font-size: 3.2rem;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
 }
 
 .section-head .head-slogan {
@@ -43,7 +43,7 @@
     color: #27286d;
     position: relative;
     display: inline-block;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     padding-left: 55px;
     text-transform: uppercase;
 }
@@ -100,7 +100,7 @@
     font-size: 3.2rem;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     margin-top: 3rem;
 }
 
@@ -260,7 +260,7 @@ h2 span {
     font-weight: 600;
     line-height: 1.4;
     margin-bottom: 10px;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients2 .ph-heading-title p {
@@ -269,7 +269,7 @@ h2 span {
     color: #505050;
     line-height: 26px;
     font-size: 1.5rem;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients2 .ph-uiux-box {
@@ -312,7 +312,7 @@ h2 span {
     line-height: 1.4;
     margin-bottom: 10px;
     font-size: calc(0.6rem + 1vw);
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients2 .ph-uiux-box p {
@@ -337,7 +337,7 @@ h2 span {
     font-size: 3.2rem;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     margin-top: 3rem;
 }
 
@@ -414,7 +414,7 @@ h2 span {
 .benifites-points p {
     font-size: 1.5rem !important;
     color: none !important;
-    font-family: "Exo", sans-serif !important;
+    font-family: "sans-serif", sans-serif !important;
     padding-left: 0px !important;
     border-left: none !important;
     text-align: none !important;

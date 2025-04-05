@@ -11,7 +11,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .webportal-section-head .webportal-head-slogan {
@@ -28,7 +28,7 @@
   color: #27286d;
   position: relative;
   display: inline-block;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   text-transform: uppercase;
   padding-left: 60px;
   letter-spacing: 1px;
@@ -93,7 +93,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #webporsecond .type-grid {
@@ -121,7 +121,7 @@
   font-size: 1.9rem;
   font-weight: bold;
   color: #27286d;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   text-transform: uppercase;
 }
 
@@ -153,7 +153,7 @@
   color: white;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .webporthird-section-left-text {
@@ -170,7 +170,7 @@
   color: #222;
   display: inline-block;
   padding: 1rem 2rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .webporthird-section-left-btn:hover .webporthird-icon {
@@ -194,7 +194,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .webporfourth-body-container {
@@ -264,7 +264,7 @@
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
   }
   .webportal-section-content .webportal-feature-data {
     grid-template-columns: 1fr;

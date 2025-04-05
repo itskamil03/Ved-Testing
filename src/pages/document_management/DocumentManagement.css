@@ -9,7 +9,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #docfirst .docfirst-section-head .docfirst-head-slogan {
   font-size: 1.6rem;
@@ -40,7 +40,7 @@
   font-weight: bold;
   color: #3b3c3d;
   padding-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #docfirst .docfirst-why-card .docfirst-data-list {
   list-style: none;
@@ -64,7 +64,7 @@
   text-align: center;
   font-weight: bold;
   margin: 0px auto 30px auto;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .docsecond-section-head .docsecond-head-slogan {
   text-align: center;
@@ -91,7 +91,7 @@
   text-align: center;
   font-weight: bold;
   margin-bottom: 20px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #docthird .docthird-section-head .docthird-head-slogan {
   font-size: 1.7rem;
@@ -139,7 +139,7 @@
   text-align: center;
   font-weight: bold;
   margin-bottom: 20px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #doc-support .support-grid {
   display: grid;

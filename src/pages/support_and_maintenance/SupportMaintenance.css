@@ -10,7 +10,7 @@
   margin: 0 auto;
   text-align: center;
   letter-spacing: -0.008em;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -19,7 +19,7 @@
   font-size: 1.5rem;
   font-weight: 400;
   margin: 0 auto;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: rgb(70, 63, 63);
 }
 #support-second {
@@ -76,7 +76,7 @@
   margin: 0 auto;
   text-align: center;
   letter-spacing: -0.008em;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   width: 100%;
   margin-bottom: 30px;
 }
@@ -86,7 +86,7 @@
   font-weight: 400;
   text-align: center;
   margin: 0 auto;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: rgb(70, 63, 63);
 }
 #support-third .section-content .top-grid {
@@ -187,7 +187,7 @@
   align-items: center;
 }
 #support-four .section-top .head-slogan p {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   width: 80%;
   font-size: 28px;
   font-weight: 600;
@@ -201,7 +201,7 @@
   padding-left: 150px;
 }
 #support-four .section-top .head-btn a {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -227,7 +227,7 @@
   margin-bottom: 80px;
 }
 #support-five .section-top .head-title {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-size: 3.2rem;
   text-align: center;
   margin: 0 auto;
@@ -236,7 +236,7 @@
   margin-bottom: 30px;
 }
 #support-five .section-top .head-slogan {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   text-align: center;
   margin: 0 auto;
   font-size: 1.5rem;
@@ -268,13 +268,13 @@
   font-weight: 600;
   line-height: 1.214em;
   margin-bottom: 30px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #support-five .section-box .top .right .text .bottom {
   width: 80%;
   font-size: 1.5rem;
   font-weight: 400;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #support-five .section-box .bottom {
@@ -299,13 +299,13 @@
   font-weight: 600;
   line-height: 1.214em;
   margin-bottom: 30px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #support-five .section-box .bottom .left .text .bottom {
   width: 80%;
   font-size: 1.5rem;
   font-weight: 400;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #support-five .section-box .bottom .right {
   width: 50%;
@@ -327,7 +327,7 @@
   margin: 0 auto;
   text-align: center;
   letter-spacing: -0.008em;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   width: 100%;
   margin-bottom: 30px;
 }
@@ -337,7 +337,7 @@
   font-weight: 400;
   text-align: center;
   margin: 0 auto;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: rgb(70, 63, 63);
   margin-bottom: 50px;
 }
@@ -360,13 +360,13 @@
   font-weight: 600;
   line-height: 1.225em;
   letter-spacing: -0.008em;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #support-six .section-box .right .top {
   line-height: 1.56em;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: rgb(70, 63, 63);
   margin-bottom: 10px;
 }
@@ -374,7 +374,7 @@
   line-height: 1.56em;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: rgb(70, 63, 63);
   margin-bottom: 10px;
 }
@@ -386,7 +386,7 @@
   padding-left: 24px;
   font-size: 16px;
   padding-top: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #support-six .section-box .right .list ul > li::before {
   content: "";
@@ -420,13 +420,13 @@
   font-weight: 600;
   line-height: 1.225em;
   letter-spacing: -0.008em;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #support-six .section-box2 .right .top {
   line-height: 1.56em;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: rgb(70, 63, 63);
   margin-bottom: 10px;
 }
@@ -434,7 +434,7 @@
   line-height: 1.56em;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: rgb(70, 63, 63);
   margin-bottom: 10px;
 }
@@ -446,7 +446,7 @@
   padding-left: 24px;
   font-size: 16px;
   padding-top: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #support-six .section-box2 .right .list ul > li::before {
   content: "";
@@ -480,13 +480,13 @@
   font-weight: 600;
   line-height: 1.225em;
   letter-spacing: -0.008em;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #support-six .section-box3 .right .top {
   line-height: 1.56em;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: rgb(70, 63, 63);
   margin-bottom: 10px;
 }
@@ -494,7 +494,7 @@
   line-height: 1.56em;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: rgb(70, 63, 63);
   margin-bottom: 10px;
 }
@@ -506,7 +506,7 @@
   padding-left: 24px;
   font-size: 16px;
   padding-top: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #support-six .section-box3 .right .list ul > li::before {
   content: "";
@@ -540,13 +540,13 @@
   font-weight: 600;
   line-height: 1.225em;
   letter-spacing: -0.008em;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #support-six .section-box4 .right .top {
   line-height: 1.56em;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: rgb(70, 63, 63);
   margin-bottom: 10px;
 }
@@ -554,7 +554,7 @@
   line-height: 1.56em;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: rgb(70, 63, 63);
   margin-bottom: 10px;
 }
@@ -566,7 +566,7 @@
   padding-left: 24px;
   font-size: 16px;
   padding-top: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #support-six .section-box4 .right .list ul > li::before {
   content: "";

@@ -9,7 +9,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .supplychain-section-head .supplychain-head-slogan {
   font-size: 1.7rem;
@@ -63,7 +63,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 20px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: white;
 }
 .supplychains2-media-card {
@@ -492,7 +492,7 @@
   color: white;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .supsecond-section-left-text {
   margin-top: 20px;
@@ -507,7 +507,7 @@
   color: #222;
   display: inline-block;
   padding: 0.8rem 2rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .supsecond-section-left-btn:hover .supsecond-icon {
   animation: slide-left 1s ease-in-out infinite;

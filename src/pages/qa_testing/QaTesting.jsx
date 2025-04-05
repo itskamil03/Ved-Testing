@@ -444,12 +444,20 @@ function QaTesting() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is included in software support and maintenance services?
+                  What is QA testing, and why is it important?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Support and maintenance services typically include regular updates, bug fixes, performance monitoring, and technical support. This may involve addressing any issues or errors that arise, ensuring compatibility with new systems or technologies, and implementing security patches. Maintenance also often includes periodic reviews to enhance software performance and add new features based on user feedback.
+                      <b>Quality Assurance (QA) testing</b> is the process of identifying and fixing software defects to ensure a <b>high-quality, bug-free, and user-friendly product</b>. It is important because it helps:
+                      <ul>
+                        <li><b>Prevent costly errors</b> before software deployment</li>
+                        <li><b>Improve user experience</b> by ensuring smooth functionality</li>
+                        <li><b>Enhance security</b> by identifying vulnerabilities</li>
+                        <li><b>Ensure compliance</b> with industry standards and regulations</li>
+                        <li><b>Boost performance & reliability</b> for better scalability</li>
+                      </ul>
+                      <div>A well-executed <b>QA strategy</b> ensures a <b>stable, secure, and market-ready</b>  product.</div>
                       </div>
                     </div>
                   ) : null}
@@ -466,12 +474,21 @@ function QaTesting() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    Why is ongoing software maintenance important?
+                   What are the different types of QA testing?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Ongoing software maintenance is crucial for ensuring that the software remains functional, secure, and up-to-date. It helps address vulnerabilities, adapt to changing technology environments, and fix bugs that may arise over time. Regular maintenance ensures optimal performance, extends the lifespan of the software, and provides users with a reliable and effective tool.
+                       QA testing includes various types to ensure software quality and performance:
+                       <ul>
+                        <li><b>Manual Testing –</b> Testers execute test cases manually to identify issues</li>
+                        <li> <b>Automated Testing – </b>Uses tools like Selenium, Cypress, or JUnit to automate repetitive tests</li>
+                        <li><b>Functional Testing –</b> Ensures the software meets business and technical requirem</li>
+                        <li><b>Performance Testing –</b> Evaluates speed, scalability, and response time</li>
+                        <li><b>Security Testing –</b> Identifies vulnerabilities and prevents cyber threats</li>
+                        <li><b>Regression Testing –</b> Ensures new updates don’t break existing features</li>
+                       </ul>
+                       <div>A combination of <b>manual and automated testing</b>  ensures comprehensive software validation.</div>
                       </div>
                     </div>
                   ) : null}
@@ -488,12 +505,19 @@ function QaTesting() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    How do I know if my software needs maintenance or support?
+                   What is security testing, and how does it protect applications?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Signs that your software needs maintenance or support include frequent crashes or errors, slow performance, compatibility issues with new systems or updates, and user complaints about functionality or usability. Additionally, if your software has not been updated in a while or if there are new security threats, it's a good idea to schedule a maintenance review to ensure continued reliability and security.
+                      <b>Security testing</b> is a crucial process that identifies and mitigates security risks in an application. It helps protect against:
+                      <ul>
+                        <li><b>SQL injection & Cross-Site Scripting (XSS) –</b> Prevents unauthorized database access</li>
+                        <li><b>DDoS (Distributed Denial-of-Service) attacks – </b>Ensures system availability</li>
+                        <li><b>Authentication & Authorization flaws –</b> Strengthens user access controls</li>
+                        <li><b>Malware & ransomware threats – </b>Detects potential security breaches</li>
+                        <li><b>Data leaks & compliance issues –</b> Ensures regulatory adherence (GDPR, HIPAA)</li>
+                      </ul>
                       </div>
                     </div>
                   ) : null}
@@ -510,17 +534,61 @@ function QaTesting() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    What should I consider when choosing a support and maintenance provider?
+                    What tools are used for QA and security testing?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When choosing a support and maintenance provider, consider their experience with your specific type of software, their response times for support requests, and their ability to provide regular updates and proactive maintenance. Look for providers with a strong track record of reliability, transparent pricing, and good communication practices. It’s also beneficial if the provider offers flexible service levels to match your needs and budget.
+                      QA and security testing rely on various tools for automation, performance, and vulnerability assessment:
+                      <div><b>QA Testing Tools:</b></div>
+                      <ul>
+                        <li><b>Selenium, Cypress, Playwright –</b> Automated UI testing</li>
+                        <li><b>JMeter, LoadRunner –</b> Performance & load testing</li>
+                        <li><b>JUnit, TestNG –</b> Unit testing frameworks</li>
+                        <li><b>Postman, SoapUI – </b>API testing</li>
+                      </ul>
+                      <div><b>Security Testing Tools:</b></div>
+                      <ul>
+                        <li><b>Burp Suite, OWASP ZAP –</b> Web application security testing</li>
+                        <li><b>Nmap, Nessus –</b> Network vulnerability scanning</li>
+                        <li><b>Metasploit – </b>Penetration testing</li>
+                        <li><b>SonarQube – </b>Code security analysis.</li>
+                      </ul>
                       </div>
                     </div>
                   ) : null}
                 </div>
               </div>
+
+              <div className="accordion">
+                <div className="accordion-item">
+                  <div
+                    className={
+                      activeIndex === 5
+                        ? "accordion-item-header active"
+                        : "accordion-item-header"
+                    }
+                    onClick={() => toggleTab(5)}
+                  >
+                   How often should software be tested for quality and security?
+                  </div>
+                  {activeIndex === 5 ? (
+                    <div className="accordion-item-body">
+                      <div className="accordion-item-body-content">
+                      Software should be tested <b>continuously</b> to ensure <b>ongoing security, performance, and functionality:</b>
+                      <ul>
+                        <li><b>During development –</b> Regular unit and integration testing</li>
+                        <li><b> Before deployment – </b>Thorough functional, security, and performance testing</li>
+                        <li><b>After updates & patches – </b> Regression testing to ensure no new issues arise</li>
+                        <li><b>Periodic security audits – </b> Vulnerability scans and penetration testing at least every quarter</li>
+                        <li><b>Compliance checks – </b>Ensuring adherence to <b>GDPR, HIPAA, ISO 27001,</b> etc.</li>
+                      </ul>
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

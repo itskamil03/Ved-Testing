@@ -17,7 +17,7 @@
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .E-comfirst-section-head .E-comfirst-head-title::after {
@@ -47,7 +47,7 @@
 }
 
 #E-comfirst .ecommerce-box .head {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-weight: bold;
   font-size: 2rem;
   display: flex;
@@ -113,7 +113,7 @@
   color: #ffffff;
   position: relative;
   display: inline-block;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   padding-left: 55px;
 }
 
@@ -132,7 +132,7 @@
   text-align: justify;
   margin-bottom: 20px;
   font-size: 1.6rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .E-comsecond-left-second-box {
@@ -157,7 +157,7 @@ padding: 50px 0;
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .E-comthird-section-head .E-comthird-head-slogan {
@@ -199,7 +199,7 @@ padding: 50px 0;
   font-size: 2.3rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #E-comthird .E-comthird-value-card .E-comthird-data .content {

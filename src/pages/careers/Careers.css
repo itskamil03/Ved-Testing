@@ -232,7 +232,7 @@
   margin-top: 10px;
   width: 100%;
   background: #292c6c;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   border-radius: 5px;
   padding: 7px 10px;
   color: white;
@@ -365,7 +365,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .success-message p {

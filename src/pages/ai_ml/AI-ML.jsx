@@ -234,12 +234,15 @@ function AIML() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is included in software support and maintenance services?
+                    What is the difference between AI and Machine Learning?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Support and maintenance services typically include regular updates, bug fixes, performance monitoring, and technical support. This may involve addressing any issues or errors that arise, ensuring compatibility with new systems or technologies, and implementing security patches. Maintenance also often includes periodic reviews to enhance software performance and add new features based on user feedback.
+                      <b>Artificial Intelligence (AI)</b> is a broad field that enables machines to mimic human intelligence, such as problem-solving, decision-making, and automation. <b>Machine Learning (ML)</b> is a subset of AI that allows computers to learn from data and improve over time without explicit programming. 
+                      <div style={{paddingTop:"8px"}}>
+                      Example: AI powers <b>chatbots and virtual assistants</b>, while ML enables <b>predictive analytics and recommendation systems.</b>
+                      </div>
                       </div>
                     </div>
                   ) : null}
@@ -256,17 +259,26 @@ function AIML() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    Why is ongoing software maintenance important?
+                  What are some real-world applications of AI/ML?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Ongoing software maintenance is crucial for ensuring that the software remains functional, secure, and up-to-date. It helps address vulnerabilities, adapt to changing technology environments, and fix bugs that may arise over time. Regular maintenance ensures optimal performance, extends the lifespan of the software, and provides users with a reliable and effective tool.
+                      AI/ML is used in various industries, such as:
+                      <ul>
+                        <li><b>Healthcare –</b> AI-driven diagnostics and drug discovery</li>
+                        <li><b>Retail & E-commerce – </b>Personalized recommendations and customer sentiment analysis</li>
+                        <li><b>Finance & Banking –</b> Fraud detection and credit risk assessment</li>
+                        <li><b>Manufacturing – </b>Predictive maintenance and defect detection</li>
+                        <li><b>Marketing & Advertising – </b>AI-powered chatbots, automation, and targeted advertising</li>
+                      </ul>
+                       <div>AI/ML helps businesses <b> enhance efficiency, reduce costs, and improve customer engagement.</b> </div>
                       </div>
                     </div>
                   ) : null}
                 </div>
               </div>
+
 
               <div className="accordion">
                 <div className="accordion-item">
@@ -278,12 +290,12 @@ function AIML() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    How do I know if my software needs maintenance or support?
+                   Is AI/ML expensive to implement?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Signs that your software needs maintenance or support include frequent crashes or errors, slow performance, compatibility issues with new systems or updates, and user complaints about functionality or usability. Additionally, if your software has not been updated in a while or if there are new security threats, it's a good idea to schedule a maintenance review to ensure continued reliability and security.
+                      AI/ML implementation costs vary based on project complexity, data requirements, and business goals. Small-scale solutions like <b>chatbots or data analytics</b> can be developed for a <b>few thousand dollars, </b> while enterprise AI solutions like <b>computer vision or deep learning.</b>
                       </div>
                     </div>
                   ) : null}
@@ -300,17 +312,55 @@ function AIML() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    What should I consider when choosing a support and maintenance provider?
+                   Do I need a large dataset to implement AI/ML in my business?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When choosing a support and maintenance provider, consider their experience with your specific type of software, their response times for support requests, and their ability to provide regular updates and proactive maintenance. Look for providers with a strong track record of reliability, transparent pricing, and good communication practices. It’s also beneficial if the provider offers flexible service levels to match your needs and budget.
+                        Not always. While ML models improve with <b>more data,</b>  some AI applications can work with smaller datasets using <b>pre-trained models or synthetic data.</b> 
+                       
+                       <ul>
+                        <li> <b>Chatbots & Virtual Assistants – </b>Can use pre-built NLP models</li>
+                        <li> <b>Predictive Analytics – </b>Works best with historical data</li>
+                        <li> <b>Computer Vision & Deep Learning – </b> Requires large datasets for accuracy</li>
+                       </ul>
+                          
+                          <div>Consulting an <b>AI/ML expert </b> can help determine the best approach for your data needs. </div>
                       </div>
                     </div>
                   ) : null}
                 </div>
               </div>
+
+              <div className="accordion">
+                <div className="accordion-item">
+                  <div
+                    className={
+                      activeIndex === 5
+                        ? "accordion-item-header active"
+                        : "accordion-item-header"
+                    }
+                    onClick={() => toggleTab(5)}
+                  >
+                  How can AI/ML improve business decision-making? 
+                  </div>
+                  {activeIndex === 5 ? (
+                    <div className="accordion-item-body">
+                      <div className="accordion-item-body-content">
+                        AI/ML can help businesses make data-driven decisions by:
+                      <ul>
+                        <li><b>Analyzing customer behavior </b> for targeted marketing strategies</li>
+                        <li><b>Predicting demand and trends</b> to optimize inventory and resources</li>
+                        <li><b>Automating repetitive tasks</b> to improve efficiency and reduce costs</li>
+                        <li> <b>Identifying patterns in large datasets</b> to detect fraud or anomalies</li>
+                        <li><b> Providing real-time insights </b> to enhance business operations</li>
+                      </ul>
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #customer-solution .top-block {
@@ -117,7 +117,7 @@
 #customer-results .solution-head .details div {
   font-size: 5.6rem;
   color: white;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #customer-results .solution {
@@ -154,7 +154,7 @@
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 5px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #customer-results .solution.second .details .content {
@@ -182,7 +182,7 @@
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 5px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #customer-results .solution.third .details .content,
@@ -279,7 +279,7 @@
   background: #27286d;
   position: absolute;
   top: calc(50% - 20px);
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #customer-process .process-box:nth-child(2n-1) .number {
@@ -325,7 +325,7 @@
 }
 
 #customer-contact .content-block .slogan {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-size: 3.2rem;
   color: white;
   letter-spacing: 1px;
@@ -339,7 +339,7 @@
 }
 
 #customer-contact .content-block .check-btn {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: white;
   letter-spacing: 1px;
   border: 2px solid white;
@@ -393,7 +393,7 @@
 }
 
 #customer-boost .boost-card .title {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-size: 2.2rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -437,7 +437,7 @@
 }
 
 #customer-stories .story-card .title {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-size: 3.2rem;
   font-weight: bold;
   letter-spacing: 1px;

@@ -11,7 +11,7 @@
   text-align: center;
   font-weight: bold;
   margin: 0px auto 10px auto;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .opermfirst-section-head .operm-first-slogan {
   text-align: center;
@@ -46,7 +46,7 @@
   color: #27286d;
   position: relative;
   display: inline-block;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   text-transform: uppercase;
   padding-left: 60px;
 }
@@ -88,7 +88,7 @@
   font-weight: bold;
   color: #3b3c3d;
   padding-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   text-align: center;
 }
 .opermsecond-why-card .opermsecond-data-list {
@@ -120,7 +120,7 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .opermthird-section-head .opermthird-head-slogan {
   font-size: 1.7rem;
@@ -155,7 +155,7 @@
   font-weight: bold;
   padding-left: 20px;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   text-transform: uppercase;
 }
 .opermthird-body-box1-text-slogan {
@@ -185,7 +185,7 @@
 }
 
 #why-venturing-digitally .outsource-content .title {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
   margin-bottom: 10px;

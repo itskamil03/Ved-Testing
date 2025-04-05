@@ -85,7 +85,7 @@ function App() {
           <Route path="/WebsiteDevelopment" element={<WebsiteDevelopment />} />
           <Route path="/UIUXDesign" element={<UIUXDesign />} />
           <Route path="/BrandReputation" element={<BrandReputation />} />
-          <Route path="/gxpsoftware" element={<GxPSoftware />} />
+          <Route path="/CustomizePharmaSoftware" element={<GxPSoftware />} />
           <Route
             path="/SoftwareDevelopment"
             element={<SoftwareDevelopment />}

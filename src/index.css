@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   /* font-family: 'Nunito', sans-serif; */
 }
 
@@ -29,8 +29,3 @@ a {
   overflow-x: hidden;
 } */
 
-@media only screen and (max-width: 400px) {
-  .head-title {
-    font-size: 3rem !important;
-  }
-}

@@ -9,7 +9,7 @@
     line-height: 1.225em;
     margin: 0 auto;
     letter-spacing: -0.008em;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -18,7 +18,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0 auto;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     color: rgb(70, 63, 63);
   }
   #cloud-second {
@@ -70,7 +70,7 @@
     line-height: 1.225em;
     margin: 0 auto;
     letter-spacing: -0.008em;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     width: 100%;
     margin-bottom: 30px;
   }
@@ -148,7 +148,7 @@
     line-height: 1.225em;
     margin: 0 auto;
     letter-spacing: -0.008em;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -157,7 +157,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0 auto 60px;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     color: rgb(70, 63, 63);
   }
   
@@ -282,7 +282,7 @@
     line-height: 1.225em;
     margin: 0 auto;
     letter-spacing: -0.008em;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     width: 100%;
     margin-bottom: 30px;
   }
@@ -291,7 +291,7 @@
     font-size: 18px;
     font-weight: 400;
     margin: 0 auto;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     color: rgb(70, 63, 63);
     margin-bottom: 50px;
   }
@@ -314,7 +314,7 @@
     font-weight: 600;
     line-height: 1.225em;
     letter-spacing: -0.008em;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
   }
 
   #cloud-six .cloud-services

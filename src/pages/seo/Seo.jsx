@@ -378,20 +378,12 @@ function Seo() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is included in software support and maintenance
-                    services?
+                     What is SEO, and why is it important for my business?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Support and maintenance services typically include
-                        regular updates, bug fixes, performance monitoring, and
-                        technical support. This may involve addressing any
-                        issues or errors that arise, ensuring compatibility with
-                        new systems or technologies, and implementing security
-                        patches. Maintenance also often includes periodic
-                        reviews to enhance software performance and add new
-                        features based on user feedback.
+                      SEO (Search Engine Optimization) is the process of optimizing your website to rank higher on search engines like Google. It helps improve visibility, attract organic traffic, and boost conversions. A well-optimized website increases brand credibility and ensures long-term online success.
                       </div>
                     </div>
                   ) : null}
@@ -408,18 +400,12 @@ function Seo() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    Why is ongoing software maintenance important?
+                    How long does it take to see results from SEO?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Ongoing software maintenance is crucial for ensuring
-                        that the software remains functional, secure, and
-                        up-to-date. It helps address vulnerabilities, adapt to
-                        changing technology environments, and fix bugs that may
-                        arise over time. Regular maintenance ensures optimal
-                        performance, extends the lifespan of the software, and
-                        provides users with a reliable and effective tool.
+                        SEO is a long-term strategy, and results typically take 3 to 6 months to become noticeable. Factors like competition, keyword difficulty, website age, and content quality influence the timeframe. Consistent optimization and high-quality content can accelerate rankings and traffic growth.
                       </div>
                     </div>
                   ) : null}
@@ -436,19 +422,20 @@ function Seo() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    How do I know if my software needs maintenance or support?
+                    What are the key components of a successful SEO strategy?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Signs that your software needs maintenance or support
-                        include frequent crashes or errors, slow performance,
-                        compatibility issues with new systems or updates, and
-                        user complaints about functionality or usability.
-                        Additionally, if your software has not been updated in a
-                        while or if there are new security threats, it's a good
-                        idea to schedule a maintenance review to ensure
-                        continued reliability and security.
+                      A strong SEO strategy includes:
+                      <ul>
+                        <li><b>Keyword Research:</b> Identifying high-traffic, relevant keywords</li>
+                        <li><b>On-Page SEO:</b> Optimizing titles, meta descriptions, headers, and internal links</li>
+                        <li><b>Technical SEO:</b> Improving site speed, mobile-friendliness, and security</li>
+                        <li><b>Off-Page SEO:</b> Building quality backlinks and social signals</li>
+                        <li><b>Content Marketing:</b> Publishing valuable, SEO-optimized content</li>
+                        <li><b>Local SEO:</b> Optimizing Google My Business for local search visibility.</li>
+                      </ul>
                       </div>
                     </div>
                   ) : null}
@@ -465,26 +452,51 @@ function Seo() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    What should I consider when choosing a support and
-                    maintenance provider?
+                    What is the difference between Organic SEO and Local SEO?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When choosing a support and maintenance provider,
-                        consider their experience with your specific type of
-                        software, their response times for support requests, and
-                        their ability to provide regular updates and proactive
-                        maintenance. Look for providers with a strong track
-                        record of reliability, transparent pricing, and good
-                        communication practices. It’s also beneficial if the
-                        provider offers flexible service levels to match your
-                        needs and budget.
+                        <ul>
+                          <li><b>Organic SEO</b> focuses on ranking your website for broad industry-related keywords, attracting visitors worldwide.</li>
+                          <li><b>Local SEO</b> targets location-based searches, helping businesses appear in Google’s local pack and maps (e.g., “Best restaurant in Jamshedpur”).</li>
+                        </ul>
+                        If you have a local business, Local SEO is essential for reaching nearby customers and driving foot traffic.
                       </div>
                     </div>
                   ) : null}
                 </div>
               </div>
+
+              <div className="accordion">
+                <div className="accordion-item">
+                  <div
+                    className={
+                      activeIndex === 5
+                        ? "accordion-item-header active"
+                        : "accordion-item-header"
+                    }
+                    onClick={() => toggleTab(5)}
+                  >
+                    How do I choose the right SEO service provider?
+                  </div>
+                  {activeIndex === 5 ? (
+                    <div className="accordion-item-body">
+                      <div className="accordion-item-body-content">
+                      Look for an SEO agency with:
+                      <ul>
+                        <li>Proven track record and case studies</li>
+                        <li>Transparent pricing and clear SEO strategies</li>
+                        <li>Up-to-date knowledge of Google algorithms</li>
+                        <li>Ethical (White-hat) SEO practices</li>
+                        <li>Strong client reviews and testimonials</li>
+                      </ul>
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .crmfirst-section-head .crmfirst-head-slogan {
@@ -75,7 +75,7 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .crm-goals-section-head .crm-goals-head-slogan {
@@ -199,7 +199,7 @@
 .crm-third-left-heading {
   font-size: 2.5rem;
   font-weight: 500;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .crm-third-left-heading::after {
@@ -214,7 +214,7 @@
 .crm-third-left-slogn {
   font-size: 1.8rem;
   padding-top: 1.5rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .crm-third-left-btn {

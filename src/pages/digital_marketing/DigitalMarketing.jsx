@@ -649,20 +649,12 @@ function DigitalMarketing() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is included in software support and maintenance
-                    services?
+                   What is digital marketing, and why is it important for my business?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Support and maintenance services typically include
-                        regular updates, bug fixes, performance monitoring, and
-                        technical support. This may involve addressing any
-                        issues or errors that arise, ensuring compatibility with
-                        new systems or technologies, and implementing security
-                        patches. Maintenance also often includes periodic
-                        reviews to enhance software performance and add new
-                        features based on user feedback.
+                      Digital marketing is the promotion of businesses through online channels such as <b>SEO, social media, PPC (Pay-Per-Click) advertising, email marketing, and content marketing.</b> It helps businesses reach a wider audience, generate leads, improve brand awareness, and drive sales more effectively than traditional marketing methods.
                       </div>
                     </div>
                   ) : null}
@@ -679,18 +671,20 @@ function DigitalMarketing() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    Why is ongoing software maintenance important?
+                     What are the key components of a successful digital marketing strategy?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Ongoing software maintenance is crucial for ensuring
-                        that the software remains functional, secure, and
-                        up-to-date. It helps address vulnerabilities, adapt to
-                        changing technology environments, and fix bugs that may
-                        arise over time. Regular maintenance ensures optimal
-                        performance, extends the lifespan of the software, and
-                        provides users with a reliable and effective tool.
+                      A well-rounded digital marketing strategy includes:
+                      <ul>
+                        <li><b>Search Engine Optimization (SEO):</b> Improving website ranking on Google</li>
+                   <li>Social Media Marketing (SMM): Engaging customers on platforms like Facebook, Instagram, and LinkedIn </ li>
+                   <li><b>Pay-Per-Click (PPC) Advertising:</b> Running targeted ads on Google Ads, Facebook Ads, etc.</li>
+                   <li><b>Content Marketing:</b> Creating high-quality blogs, videos, and infographics</li>
+                   <li><b>Email Marketing:</b> Sending personalized messages to nurture leads and customers</li>
+                   <li><b>Conversion Rate Optimization (CRO):</b> Enhancing website design to increase conversions</li>
+                      </ul>
                       </div>
                     </div>
                   ) : null}
@@ -707,19 +701,19 @@ function DigitalMarketing() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    How do I know if my software needs maintenance or support?
+                    How long does it take to see results from digital marketing?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Signs that your software needs maintenance or support
-                        include frequent crashes or errors, slow performance,
-                        compatibility issues with new systems or updates, and
-                        user complaints about functionality or usability.
-                        Additionally, if your software has not been updated in a
-                        while or if there are new security threats, it's a good
-                        idea to schedule a maintenance review to ensure
-                        continued reliability and security.
+                      The timeframe depends on the strategy used:
+                      <ul>
+                        <li><b>SEO:</b> Takes around <b>3-6 months</b> to show significant improvements.</li>
+                   <li><b>PPC Advertising:</b> Can generate immediate results, but requires budget optimization. </ li>
+                   <li><b>Social Media Marketing:</b> Engagement and brand awareness improve within <b>a few weeks to months.</b></li>
+                   <li><b>Content Marketing:</b> Can take a few months to build authority and attract organic traffic.</li>
+      
+                      </ul>
                       </div>
                     </div>
                   ) : null}
@@ -736,21 +730,19 @@ function DigitalMarketing() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    What should I consider when choosing a support and
-                    maintenance provider?
+                    How do I measure the success of my digital marketing campaigns?
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When choosing a support and maintenance provider,
-                        consider their experience with your specific type of
-                        software, their response times for support requests, and
-                        their ability to provide regular updates and proactive
-                        maintenance. Look for providers with a strong track
-                        record of reliability, transparent pricing, and good
-                        communication practices. It’s also beneficial if the
-                        provider offers flexible service levels to match your
-                        needs and budget.
+                      Key performance indicators (KPIs) to track include:
+                      <ul>
+                        <li><b>Website Traffic – </b> Number of visitors from search engines and social media</li>
+                   <li><b>Conversion Rate – </b>Percentage of visitors who take desired actions (buying, signing up, etc.) </ li>
+                   <li><b>Engagement Rate – </b> Likes, shares, and comments on social media posts</li>
+                   <li><b>ROI (Return on Investment) – </b> Revenue generated from marketing efforts.</li>
+                   <li><b>Customer Acquisition Cost (CAC) – </b> Cost of acquiring a new customer.</li>
+                      </ul>
                       </div>
                     </div>
                   ) : null}

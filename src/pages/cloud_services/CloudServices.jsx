@@ -757,12 +757,20 @@ function CloudServices() {
                     }
                     onClick={() => toggleTab(1)}
                   >
-                    What is included in software support and maintenance services?
+                    What are cloud services, and how do they benefit businesses?
                   </div>
                   {activeIndex === 1 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Support and maintenance services typically include regular updates, bug fixes, performance monitoring, and technical support. This may involve addressing any issues or errors that arise, ensuring compatibility with new systems or technologies, and implementing security patches. Maintenance also often includes periodic reviews to enhance software performance and add new features based on user feedback.
+                      Cloud services refer to computing resources like servers, storage, databases, and software delivered over the internet. Instead of maintaining physical infrastructure, businesses can use cloud solutions to:
+                      <ul>
+                        <li><b>Reduce IT costs </b>(no need for expensive hardware)</li>
+                        <li><b>Scale easily </b>(increase or decrease resources as needed)</li>
+                        <li><b>Improve security & reliability </b>(data is backed up and protected)</li>
+                        <li><b>Enhance remote access </b>(work from anywhere with internet access)</li>
+                        <li><b>Automate updates & maintenance </b> (handled by cloud providers)</li>
+                      </ul>
+                      <div>Popular cloud providers include <b> AWS, Microsoft Azure, and Google Cloud.</b> </div>
                       </div>
                     </div>
                   ) : null}
@@ -779,12 +787,18 @@ function CloudServices() {
                     }
                     onClick={() => toggleTab(2)}
                   >
-                    Why is ongoing software maintenance important?
+                   What are the different types of cloud services?
                   </div>
                   {activeIndex === 2 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Ongoing software maintenance is crucial for ensuring that the software remains functional, secure, and up-to-date. It helps address vulnerabilities, adapt to changing technology environments, and fix bugs that may arise over time. Regular maintenance ensures optimal performance, extends the lifespan of the software, and provides users with a reliable and effective tool.
+                        <ul>
+                          <li><b>Infrastructure as a Service (IaaS) –</b>  Provides virtualized computing resources like servers and storage. (e.g., AWS EC2, Google Compute Engine)</li>
+                          <li> <b>Platform as a Service (PaaS) – </b>Provides a development platform with tools for building applications. (e.g., Google App Engine, AWS Elastic Beanstalk)</li>
+                          <li><b>Platform as a Service (PaaS) – </b>Provides a development platform with tools for building applications. (e.g., Google App Engine, AWS Elastic Beanstalk)</li>
+                          <li><b>Software as a Service (SaaS) – </b>Provides ready-to-use software over the internet. (e.g., Google Workspace, Microsoft 365, Salesforce)</li>
+                        </ul>
+                         <div style={{paddingTop:"6px"}}>Each type caters to different business needs, from hosting applications to managing workflows.</div>
                       </div>
                     </div>
                   ) : null}
@@ -801,12 +815,20 @@ function CloudServices() {
                     }
                     onClick={() => toggleTab(3)}
                   >
-                    How do I know if my software needs maintenance or support?
+                    Is cloud computing secure for businesses?
                   </div>
                   {activeIndex === 3 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        Signs that your software needs maintenance or support include frequent crashes or errors, slow performance, compatibility issues with new systems or updates, and user complaints about functionality or usability. Additionally, if your software has not been updated in a while or if there are new security threats, it's a good idea to schedule a maintenance review to ensure continued reliability and security.
+                      Yes, cloud computing is highly secure when best practices are followed. Leading cloud providers implement:
+                      <ul>
+                        <li><b>Data encryption –</b> Protects sensitive information from cyber threats</li>
+                        <li><b>Multi-factor authentication (MFA) –</b> Ensures secure logins</li>
+                        <li><b>Regular security updates & compliance –</b> Meets industry standards (ISO, GDPR, HIPAA)</li>
+                        <li> <b>Backup & disaster recovery – </b>Ensures data safety in case of failures</li>
+                      </ul>
+                      <div>However, businesses should follow <b>best security practices,</b>  such as <b>strong access control, regular audits, and secure API integrations.</b>
+                        </div>
                       </div>
                     </div>
                   ) : null}
@@ -823,17 +845,57 @@ function CloudServices() {
                     }
                     onClick={() => toggleTab(4)}
                   >
-                    What should I consider when choosing a support and maintenance provider?
+                   What is the difference between public, private, and hybrid cloud?
+
                   </div>
                   {activeIndex === 4 ? (
                     <div className="accordion-item-body">
                       <div className="accordion-item-body-content">
-                        When choosing a support and maintenance provider, consider their experience with your specific type of software, their response times for support requests, and their ability to provide regular updates and proactive maintenance. Look for providers with a strong track record of reliability, transparent pricing, and good communication practices. It’s also beneficial if the provider offers flexible service levels to match your needs and budget.
+                       <ul>
+                        <li>
+                       <b>Public Cloud – </b> Services are hosted and managed by third-party providers (e.g., AWS, Azure, Google Cloud). Cost-effective and scalable.
+                        </li>
+                        <li>
+                          <b>Private Cloud –</b> Dedicated infrastructure for a single business. More control and security, but higher costs.
+                        </li>
+                        <li><b>Hybrid Cloud –</b> A mix of both public and private clouds, allowing businesses to keep sensitive data on a private cloud while using public cloud services for scalability.</li>
+                       </ul>
+                       <div>The choice depends on <b>business needs, security requirements, and budget.</b> </div>
                       </div>
                     </div>
                   ) : null}
                 </div>
               </div>
+
+              <div className="accordion">
+                <div className="accordion-item">
+                  <div
+                    className={
+                      activeIndex === 5
+                        ? "accordion-item-header active"
+                        : "accordion-item-header"
+                    }
+                    onClick={() => toggleTab(5)}
+                  >
+                   How can a business migrate to the cloud?
+                  </div>
+                  {activeIndex === 5 ? (
+                    <div className="accordion-item-body">
+                      <div className="accordion-item-body-content">
+                       Migrating to the cloud involves several steps:
+                      <ul>
+                        <li><b> Assess Business Needs – </b> Identify workloads and applications to migrate</li>
+                        <li><b>Choose a Cloud Provider – </b> Compare AWS, Azure, Google Cloud, or other providers</li>
+                        <li><b>Plan the Migration Strategy – </b> Decide between full migration, hybrid, or phased transition</li>
+                        <li> <b>Ensure Security & Compliance – </b> Protect sensitive data and meet regulatory requirements</li>
+                        <li><b>Optimize & Monitor – </b> Continuously improve performance and cost efficiency</li>
+                      </ul>
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

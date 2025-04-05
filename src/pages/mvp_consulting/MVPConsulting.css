@@ -9,7 +9,7 @@
     line-height: 1.225em;
     margin: 0 auto;
     letter-spacing: -0.008em;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -18,7 +18,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0 auto;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     color: rgb(70, 63, 63);
   }
   #consulting-second {
@@ -36,7 +36,7 @@
     line-height: 1.225em;
     margin: 0 auto;
     letter-spacing: -0.008em;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -85,7 +85,7 @@
     line-height: 1.225em;
     margin: 0 auto;
     letter-spacing: -0.008em;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     width: 100%;
     margin-bottom: 30px;
   }
@@ -94,7 +94,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0 auto;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     color: rgb(70, 63, 63);
   }
  
@@ -128,7 +128,7 @@
     font-size: 3.2rem;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
   }
   
   #consulting-four .card {
@@ -155,7 +155,7 @@
     font-size: 1.6rem;
     margin-bottom: 15px;
     display: inline-flex;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
   }
   
   #consulting-four .timeline__card {

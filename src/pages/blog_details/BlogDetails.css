@@ -181,7 +181,7 @@ fieldset {
     font-weight: 600;
     font-size: 3.2rem;
     color: var(--dark);
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     text-decoration: none;
 }
 

@@ -44,7 +44,7 @@
   font-weight: 600;
   line-height: 1.4;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 .Research
 {
@@ -57,7 +57,7 @@
   color: #505050;
   line-height: 26px;
   font-size: 1.5rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients2 .ph-uiux-box {
@@ -100,7 +100,7 @@
   line-height: 1.4;
   margin-bottom: 10px;
   font-size: calc(0.6rem + 1vw);
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients2 .ph-uiux-box p {
@@ -114,7 +114,7 @@
 #ui-clients3 {
   background: #282c6c;
   padding: 60px 0;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: #ffffff;
 }
 
@@ -129,7 +129,7 @@
   font-weight: 600;
   line-height: 1.4;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients3 .ph-heading-title p {
@@ -138,7 +138,7 @@
   font-weight: 500;
   line-height: 26px;
   font-size: 1.5rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients3 .ph-wirframe-box .ph-wireframe-inner {
@@ -151,7 +151,7 @@
   margin-bottom: 5px;
   color: #f8a928;
   line-height: 1.4;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients3 .ph-wirframe-box .ph-wireframe-inner p {
@@ -159,7 +159,7 @@
   color: #ffffff;
   line-height: 26px;
   margin-bottom: 15px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients3 .ph-wireframe-img img {
@@ -191,7 +191,7 @@
   background-size: cover;
   position: relative;
   padding: 60px 0;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients4 .ph-heading-title {
@@ -205,7 +205,7 @@
   line-height: 1.4;
   margin-bottom: 10px;
   font-size: 3.2rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients4 .ph-heading-title p {
@@ -213,7 +213,7 @@
   margin-bottom: 15px;
   line-height: 1.4;
   font-size: 1.5rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients4 .ph-heading-title .ph-btn,
@@ -227,7 +227,7 @@
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-weight: 400;
   text-align: center;
   vertical-align: middle;
@@ -251,7 +251,7 @@
 #ui-clients5 {
   background: #f3f5f9;
   padding: 80px 0;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients5 .ph-heading-title {
@@ -264,7 +264,7 @@
   font-weight: 600;
   line-height: 1.4;
   font-size: 3.2rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients5 .ph-heading-title p {
@@ -273,7 +273,7 @@
   color: #505050;
   /* line-height: 30px; */
   font-size: 1.5rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients5 .ph-plan-box {
@@ -298,7 +298,7 @@
   z-index: 2;
   text-align: center;
   font-size: calc(0.5rem + 1vw);
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients5 .ph-plan-box p {
@@ -307,7 +307,7 @@
   margin-bottom: 15px;
   font-weight: 500;
   font-size: 1.5rem;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients5 .ph-plan-btn {
@@ -336,7 +336,7 @@
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-weight: 400;
   text-align: center;
   vertical-align: middle;
@@ -475,7 +475,7 @@
   #ui-clients2 .ph-uiux-box p {
     text-align: justify;
     font-size: 15px;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
   }
 
   /* <--------> */

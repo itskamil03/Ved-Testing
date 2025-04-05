@@ -163,7 +163,7 @@
     font-size: 1.5rem;
     line-height: 2rem;
     color: rgb(46, 43, 43);
-    font-family: "Exo", sans-serif !important;
+    font-family: "sans-serif", sans-serif !important;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -177,7 +177,7 @@
     font-size: 1.5rem;
     line-height: 2rem;
     color: rgb(46, 43, 43);
-    font-family: "Exo", sans-serif !important;
+    font-family: "sans-serif", sans-serif !important;
   }
   
   .read-more-button {

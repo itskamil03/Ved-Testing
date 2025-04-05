@@ -12,7 +12,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #outsourcing-why .main-content {
   text-align: justify;
@@ -44,7 +44,7 @@
 }
 
 #outsourcing-why .why-card .title {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-weight: bold;
   font-size: 2.4rem;
   margin-bottom: 10px;
@@ -97,7 +97,7 @@
 }
 
 #why-software-outsourcing .outsource-content .title {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -140,7 +140,7 @@
   color: black;
   font-weight: bold;
   letter-spacing: 1px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   border-radius: 20px;
 }
 
@@ -170,7 +170,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #outsourcing-advantages .inner-content .content-block .content {
@@ -184,7 +184,7 @@
   border: 2px solid #27286d;
   color: #27286d;
   font-weight: bold;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.3s linear;
@@ -204,7 +204,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 #outsourcing-development .process-block {
   position: relative;
@@ -246,7 +246,7 @@
 }
 
 #outsourcing-development .process-block .head {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-weight: bold;
   font-size: 2.2rem;
 }
@@ -344,7 +344,7 @@
 }
 
 #outsourcing-expertise .expertise-card .head {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-size: 1.9rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -403,7 +403,7 @@
 }
 
 #outsourcing-portfolio .client-item .title {
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: white;
   font-size: 2.4rem;
   margin-bottom: 0px;

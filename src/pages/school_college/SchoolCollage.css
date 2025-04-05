@@ -18,7 +18,7 @@
     font-weight: 600;
     line-height: 1.4;
     margin-bottom: 10px;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients2 .ph-heading-title p {
@@ -27,7 +27,7 @@
     color: #505050;
     line-height: 26px;
     font-size: 1.5rem;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients2 .ph-uiux-box {
@@ -70,7 +70,7 @@
     line-height: 1.4;
     margin-bottom: 10px;
     font-size: calc(0.6rem + 1vw);
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients2 .ph-uiux-box p {
@@ -93,7 +93,7 @@
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
 }
 
 .section-head .head-slogan {
@@ -242,7 +242,7 @@ textarea {
 #ui-clients3 {
     background: white !important;
     padding: 60px 0;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
     color: #000000 !important;
 }
 
@@ -257,7 +257,7 @@ textarea {
     font-weight: 600;
     line-height: 1.4;
     margin-bottom: 10px;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients3 .ph-heading-title p {
@@ -266,7 +266,7 @@ textarea {
     font-weight: 500;
     line-height: 26px;
     font-size: 1.5rem;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients3 .ph-wirframe-box .ph-wireframe-inner {
@@ -279,7 +279,7 @@ textarea {
     margin-bottom: 5px;
     color: #f8a928;
     line-height: 1.4;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients3 .ph-wirframe-box .ph-wireframe-inner p {
@@ -287,7 +287,7 @@ textarea {
     color: #000000;
     line-height: 26px;
     margin-bottom: 15px;
-    font-family: "Exo", sans-serif;
+    font-family: "sans-serif", sans-serif;
 }
 
 #ui-clients3 .ph-wireframe-img img {

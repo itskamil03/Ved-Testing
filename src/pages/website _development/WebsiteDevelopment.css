@@ -12,7 +12,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .section-head .head-slogan {
@@ -85,7 +85,7 @@
   font-size: 4rem;
   font-weight: 600;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
   position: relative;
 }
 
@@ -99,7 +99,7 @@
   -webkit-text-stroke: 2px #1f1f1f;
   -webkit-text-fill-color: transparent;
   opacity: 0.1;
-  font-family: "Exo", sans-serif; */
+  font-family: "sans-serif", sans-serif; */
 }
 
 .section-head .head-slogan {
@@ -107,7 +107,7 @@
   padding-left: 20px;
   border-left: 2px solid #27286d;
   text-align: justify;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #website-tech .section-content .tab-buttons {
@@ -125,7 +125,7 @@
   font-size: 15px;
   font-weight: 600;
   color: #746f6f;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #website-tech .section-content .tab-buttons button:hover {
@@ -141,7 +141,7 @@
 #website-tech .tab-content .tech-grid a {
   color: rgb(67, 63, 63);
   font-size: 15px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 #website-tech .tab-content .inner-box {
@@ -289,7 +289,7 @@
   font-size: 3.4rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 .section-head .head-slogan {
