@@ -221,7 +221,7 @@ function Header() {
                               <div className="megadrop-item-about">
                                 <FaUncharted />
 
-                                <strong>Customize Pharma Software</strong>
+                                <strong>Customized Pharma Software</strong>
                               </div>
                             </NavLink>
 

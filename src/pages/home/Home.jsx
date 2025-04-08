@@ -1479,10 +1479,10 @@ function Home({ target, label }) {
 
                     <div className="milestone_heading">
                       <div className="milestone-name">
-                        Customized ERP Software Solution
+                        Customized ERP Software Solution with Data Analysics Integrated
                       </div>
                       <div className="milestone-description">
-                        We make software that fits exactly what your business needs
+                        We make software that fits exactly what your business needs with integrated dashboard for data analysics with Power BI and Tableau etc.
 
                       </div>
                     </div>
@@ -1501,7 +1501,7 @@ function Home({ target, label }) {
 
                     <div className="milestone_heading">
                       <div className="milestone-name">
-                        Using the Latest Tech Language
+                        Using the Latest Tech Language with AI/ML
                       </div>
                       <div className="milestone-description">
                         We always use new and advanced technology so your software is modern and ready for the future

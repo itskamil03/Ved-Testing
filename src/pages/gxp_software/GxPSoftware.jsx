@@ -19,7 +19,7 @@ function GxPSoftware() {
   return (
     <>
       <Hero
-        heading="Customize Pharma Software"
+        heading="Customized Pharma Software"
         imgbtn="Software Solutions"
         src="image/custom-software/custom-software.jpeg"
       />

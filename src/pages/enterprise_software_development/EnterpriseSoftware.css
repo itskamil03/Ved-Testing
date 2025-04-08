@@ -21,17 +21,16 @@
   align-items: center;
   position: relative;
   cursor: pointer;
+  justify-content: space-between;
+  grid-column-gap: 8px;
 }
 
 #enterprise-faq .accordion-item-header::after {
   content: "\002B";
   font-size: 1.6rem;
-  position: absolute;
-  right: 20px;
-  top: calc(50% - 15px);
-  width: 30px;
-  height: 30px;
+  position: relative;
   background: #27286d;
+  padding: 4px 11px;
   border-radius: 50%;
   color: white;
   display: grid;

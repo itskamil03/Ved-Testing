@@ -1,6 +1,6 @@
 /* <------------------------------------------------- Development Process --------------------------------------------> */
 #build-step {
-  padding: 25px 0;
+  padding: 50px 0;
 }
 #build-step .process-grid {
   display: grid;
@@ -170,6 +170,10 @@
   }
 }
 @media screen and (max-width: 768px) {
+
+  #build-step {
+    padding: 30px 0;
+  }
   #build-step .process-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0px;

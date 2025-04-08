@@ -250,7 +250,7 @@
 /* <-----------------Mobile and Web Platforms---------------------> */
 #ui-clients5 {
   background: #f3f5f9;
-  padding: 80px 0;
+  padding: 50px 0;
   font-family: "sans-serif", sans-serif;
 }
 
@@ -483,6 +483,11 @@
     padding: 30px 0;
   }
 
+  #ui-clients5 {
+    background: #f3f5f9;
+    padding: 30px 0;
+    font-family: "sans-serif", sans-serif;
+  }
   #ui-clients3 .ph-heading-title h2 {
     font-size: calc(1.8rem + 1vw);
   }
@@ -521,7 +526,7 @@
 
   /* <-----------> */
   #ui-clients5 {
-    padding: 40px 0;
+    padding: 30px 0 20px;
   }
 
   #ui-clients5 .ph-heading-title h2 {
@@ -544,4 +549,6 @@
     font-size: calc(1.1rem + 1vw);
     text-align: justify;
   }
+
+
 }

@@ -779,7 +779,7 @@ function SchoolCollage() {
       </section>
 
       {/* <---------------------------------- UI Wireframe Design Services -----------------------------> */}
-      <section id="ui-clients3" className="uiux-wireframe-sec">
+      <section id="school-software" className="uiux-wireframe-sec">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xxl-6 col-xl-8 col-lg-10 col-md-12 mx-auto">

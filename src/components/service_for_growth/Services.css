@@ -41,16 +41,18 @@
 }
 
 #features .section-content .left-box {
-  border: 1px solid #dcdcdc;
+  border: 2px solid #dcdcdc;
   background-image: url("image/home/service/cards-bg-1.svg");
   background-color:#ffffff;
   border-radius: 10px;
   background-position: right;
   background-size: cover;
   padding: 40px 20px;
+
 }
 #features .section-content .left-box:hover {
   border: 2px solid #282c6c;
+
 }
 #features .section-content .left-box .top {
   display: flex;

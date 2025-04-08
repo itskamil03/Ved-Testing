@@ -239,19 +239,19 @@ textarea {
 }
 
 /* <---------------------------------UI Wireframe Design Services ------------------------> */
-#ui-clients3 {
+#school-software {
     background: white !important;
     padding: 60px 0;
     font-family: "sans-serif", sans-serif;
     color: #000000 !important;
 }
 
-#ui-clients3 .ph-heading-title {
+#school-software .ph-heading-title {
     margin-bottom: 40px;
     text-align: center;
 }
 
-#ui-clients3 .ph-heading-title h2 {
+#school-software .ph-heading-title h2 {
     color: #000000;
     font-size: calc(1.6rem + 1vw);
     font-weight: 600;
@@ -260,7 +260,7 @@ textarea {
     font-family: "sans-serif", sans-serif;
 }
 
-#ui-clients3 .ph-heading-title p {
+#school-software .ph-heading-title p {
     color: rgb(0, 0, 0);
     margin-bottom: 19px;
     font-weight: 500;
@@ -269,11 +269,11 @@ textarea {
     font-family: "sans-serif", sans-serif;
 }
 
-#ui-clients3 .ph-wirframe-box .ph-wireframe-inner {
+#school-software .ph-wirframe-box .ph-wireframe-inner {
     padding-bottom: 15px;
 }
 
-#ui-clients3 .ph-wirframe-box .ph-wireframe-inner h6 {
+#school-software .ph-wirframe-box .ph-wireframe-inner h6 {
     font-weight: 400;
     font-size: calc(0.3rem + 1vw);
     margin-bottom: 5px;
@@ -282,7 +282,7 @@ textarea {
     font-family: "sans-serif", sans-serif;
 }
 
-#ui-clients3 .ph-wirframe-box .ph-wireframe-inner p {
+#school-software .ph-wirframe-box .ph-wireframe-inner p {
     font-size: 1.3rem;
     color: #000000;
     line-height: 26px;
@@ -290,7 +290,7 @@ textarea {
     font-family: "sans-serif", sans-serif;
 }
 
-#ui-clients3 .ph-wireframe-img img {
+#school-software .ph-wireframe-img img {
     animation: zoominout 5s infinite;
     -webkit-animation: zoominout 5s infinite;
     padding: 10px 0 50px 0;
@@ -394,7 +394,7 @@ textarea {
 }
 
 @media screen and (max-width: 576px) {
-    #ui-clients3 {
+    #school-software {
         margin-top: 10rem;
     }
 }

@@ -619,7 +619,7 @@
     margin-bottom: 30px;
   }
   #support-third .section-top .head-title {
-    font-size: 24px;
+    font-size: 22px;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -709,6 +709,7 @@
     flex-direction: column;
     width: 100%;
     margin-bottom: 30px;
+    padding-inline: 10px;
   }
   #support-five .section-box .top .left {
     width: 100%;
@@ -730,6 +731,7 @@
   }
   #support-five .section-box .bottom {
     flex-direction: column-reverse;
+    padding-inline: 10px;
   }
   #support-five .section-box .bottom .left {
     width: 100%;

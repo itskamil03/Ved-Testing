@@ -57,7 +57,7 @@ function SiteMap() {
                   <ul>
                     <li>
                       <Link to="/CustomizePharmaSoftware">
-                      Customize Pharma Software
+                      Customized Pharma Software
                       </Link>
                     </li>
                     <li>

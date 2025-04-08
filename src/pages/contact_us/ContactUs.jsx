@@ -21,7 +21,7 @@ const solutions = [
 ];
 
 const services = [
-  { name: "Customize Pharma Software", code: "Customize Pharma Software" },
+  { name: "Customized Pharma Software", code: "Customized Pharma Software" },
   { name: "Website Development", code: "Website Development" },
   { name: "Application Development", code: "Application Development" },
   { name: "UI/UX Design", code: "UI/UX Design" },

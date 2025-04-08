@@ -34,7 +34,7 @@ function ApplicationDevelopment() {
             <div className="section-head">
               <div className="custom-head">
                 <div className="head-title">
-                  Our Expertise With Major Mobile Application Developmentat venturing digitally 
+                  Our Expertise with major Mobile Application Development at Venturing digitally 
                 </div>
               </div>
               <div className="head-slogan page_title">

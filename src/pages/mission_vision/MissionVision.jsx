@@ -74,7 +74,7 @@ function MissionVision() {
                     </div>
                     <div className="title">Comprehensive IT Solutions</div>
                     <div className="data">
-                      Content: Unlock your business`s true potential with our
+                     Unlock your business`s true potential with our
                       comprehensive range of innovative and tailored IT
                       solutions. We provide a holistic approach to address your
                       specific needs and empower your business for success.
@@ -94,7 +94,7 @@ function MissionVision() {
                     </div>
                     <div className="title">Driving Growth and Efficiency</div>
                     <div className="data">
-                      Content: Experience a significant uplift in your business
+                     Experience a significant uplift in your business
                       performance as we harness the power of technology to drive
                       growth and enhance efficiency. Our solutions are designed
                       to optimize your operations and streamline processes.
@@ -114,7 +114,7 @@ function MissionVision() {
                     </div>
                     <div className="title">Stay Ahead of the Competition</div>
                     <div className="data">
-                      Content: Partner with us to stay ahead of the competition,
+                     Partner with us to stay ahead of the competition,
                       seize new opportunities, and gain a competitive edge. We
                       keep a close eye on industry trends and emerging
                       technologies to ensure your business remains at the
@@ -137,7 +137,7 @@ function MissionVision() {
                       Proven Results, Business Success
                     </div>
                     <div className="data">
-                      Content: Trust in our expertise and proven track record to
+                      Trust in our expertise and proven track record to
                       deliver measurable results and take your business to new
                       heights of success. We have a strong history of helping
                       businesses achieve their goals and drive sustainable

@@ -49,9 +49,9 @@ function AIML() {
               AI Development Services We Provide at venturing digitally
               </div>
 
-            <div className="row">
+            <div className="row g-5">
 
-              <div className="col-md-4 col-lg-4 col-sm-6 mb-5">
+              <div className="col-md-4 col-lg-4 col-sm-6">
                 
                 <div className="development">
            
@@ -74,7 +74,7 @@ function AIML() {
               </div>
 
 
-              <div className="col-md-4 col-lg-4 col-sm-6 mb-5">
+              <div className="col-md-4 col-lg-4 col-sm-6">
               <div className="development">
               <div className="solution-item">
                  <img loading="eager" fetchpriority="high"
@@ -94,7 +94,7 @@ function AIML() {
              </div>
 
 
-             <div className="col-md-4 col-lg-4 col-sm-6 mb-5">
+             <div className="col-md-4 col-lg-4 col-sm-6">
              <div className="development">
              <div className="solution-item">
                  <img loading="eager" fetchpriority="high"
@@ -132,8 +132,8 @@ function AIML() {
                on building intelligent, scalable, and high-performing AI solutions tailored to your business needs.
               </div>
                    
-                   <div className="row" style={{marginTop:"30px"}}>
-               <div className="col-md-3 col-lg-3 col-sm-6 mb-5">
+                   <div className="row g-5" style={{marginTop:"30px"}}>
+               <div className="col-md-3 col-lg-3 col-sm-6">
                   <div className="development_head">
                   <div className="icon-container">
                <div className="icon">
@@ -148,7 +148,7 @@ function AIML() {
                     </div>
                     </div>
 
-                    <div className="col-md-3 col-lg-3 col-sm-6 mb-5">
+                    <div className="col-md-3 col-lg-3 col-sm-6 ">
                     <div className="development_head">
                       <div className="icon-container">
                     <div className="icon">
@@ -162,7 +162,7 @@ function AIML() {
                  </div>
                  </div>
 
-                 <div className="col-md-3 col-lg-3 col-sm-6 mb-5">
+                 <div className="col-md-3 col-lg-3 col-sm-6">
                  <div className="development_head">
                  <div className="icon-container">
                   <div className="icon">
@@ -177,7 +177,7 @@ function AIML() {
                     </div>
                     </div>
 
-                    <div className="col-md-3 col-lg-3 col-sm-6 mb-5">
+                    <div className="col-md-3 col-lg-3 col-sm-6 ">
                     <div className="development_head">
                     <div className="icon-container">
                     <div className="icon">

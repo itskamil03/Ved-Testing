@@ -43,7 +43,7 @@ function Testimonials() {
                       align our solutions with your existing infrastructure,
                       minimizing disruption and maximizing efficiency.
                     </div>
-                    <Link href="/about">
+                    <Link href="/ContactUs">
                       Learn More&nbsp;
                       <FaArrowRight />
                     </Link>
@@ -60,7 +60,7 @@ function Testimonials() {
                           </div>
                           <div className="title">Technology Leadership</div>
                           <div className="content">
-                            Description: We stay at the forefront of technology
+                            We stay at the forefront of technology
                             trends, providing you with strategic guidance and
                             leveraging the latest advancements to help you gain
                             a competitive edge.
@@ -75,7 +75,7 @@ function Testimonials() {
                           </div>
                           <div className="title">Client-Centric Approach</div>
                           <div className="content">
-                            Description: Our unwavering focus on your success
+                            Our unwavering focus on your success
                             drives us to truly understand your unique
                             requirements and deliver tailored solutions that
                             align with your business objectives.
@@ -90,7 +90,7 @@ function Testimonials() {
                           </div>
                           <div className="title">Exceptional Service</div>
                           <div className="content">
-                            Description: We pride ourselves on delivering
+                             We pride ourselves on delivering
                             exceptional service, going above and beyond to
                             exceed your expectations and provide you with a
                             seamless and delightful experience.
@@ -105,7 +105,7 @@ function Testimonials() {
                           </div>
                           <div className="title">Scalable Solutions</div>
                           <div className="content">
-                            Description: Our solutions are designed to grow with
+                             Our solutions are designed to grow with
                             your business. We provide scalable and flexible
                             options that can adapt to your evolving needs,
                             ensuring long-term sustainability.

@@ -163,6 +163,7 @@ function BrandReputation() {
                       }
                       onClick={() => setShowitm(!showitm)}
                     >
+                      
                       <FaServer /> How long does it take to repair a damaged
                       brand reputation?
                     </div>
