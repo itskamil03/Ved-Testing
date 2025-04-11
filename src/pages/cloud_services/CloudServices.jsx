@@ -174,7 +174,7 @@ function CloudServices() {
                Tools and Technology
               </div>
               <div className="row">
-              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
                     <div className="solution-item">
                     <div className="tab-icon">
                     <img loading="eager" fetchpriority="high"
@@ -188,7 +188,7 @@ function CloudServices() {
                     </div>
                   </div>
 
-                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
                     <div className="solution-item">
                     <div className="tab-icon">
                     <img loading="eager" fetchpriority="high"
@@ -201,7 +201,7 @@ function CloudServices() {
                       <div className="item-title">Microsoft Azure</div>
                     </div>
                   </div>
-                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
                     <div className="solution-item">
                     <div className="tab-icon">
                     <img loading="eager" fetchpriority="high"
@@ -214,7 +214,7 @@ function CloudServices() {
                       <div className="item-title">Google Cloud Platform</div>
                     </div>
                   </div>
-                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
                     <div className="solution-item">
                     <div className="tab-icon">
                     <img loading="eager" fetchpriority="high"
@@ -227,7 +227,7 @@ function CloudServices() {
                       <div className="item-title">Docker</div>
                     </div>
                   </div>
-                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
                     <div className="solution-item">
                     <div className="tab-icon">
                     <img loading="eager" fetchpriority="high"
@@ -240,7 +240,7 @@ function CloudServices() {
                       <div className="item-title">Kubernetes</div>
                     </div>
                   </div>
-                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
                     <div className="solution-item">
                     <div className="tab-icon">
                     <img loading="eager" fetchpriority="high"
@@ -253,7 +253,7 @@ function CloudServices() {
                       <div className="item-title">Terraform</div>
                     </div>
                   </div>
-                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
                     <div className="solution-item">
                     <div className="tab-icon">
                     <img loading="eager" fetchpriority="high"
@@ -266,7 +266,7 @@ function CloudServices() {
                       <div className="item-title">Github</div>
                     </div>
                   </div>
-                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
                     <div className="solution-item">
                     <div className="tab-icon">
                     <img loading="eager" fetchpriority="high"
@@ -279,7 +279,7 @@ function CloudServices() {
                       <div className="item-title">Tensorflow</div>
                     </div>
                   </div>
-                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
                     <div className="solution-item">
                     <div className="tab-icon">
                     <img loading="eager" fetchpriority="high"
@@ -292,7 +292,7 @@ function CloudServices() {
                       <div className="item-title">Prometheus</div>
                     </div>
                   </div>
-                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
                     <div className="solution-item">
                     <div className="tab-icon">
                     <img loading="eager" fetchpriority="high"
@@ -305,7 +305,7 @@ function CloudServices() {
                       <div className="item-title">Ansible</div>
                     </div>
                   </div>
-                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
                     <div className="solution-item">
                     <div className="tab-icon">
                     <img loading="eager" fetchpriority="high"
@@ -318,7 +318,7 @@ function CloudServices() {
                       <div className="item-title">Jenkins</div>
                     </div>
                   </div>
-                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6">
                     <div className="solution-item">
                     <div className="tab-icon">
                     <img loading="eager" fetchpriority="high"

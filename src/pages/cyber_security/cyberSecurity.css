@@ -1,0 +1,248 @@
+#cyber-security-introduction {
+    padding: 50px 0 10px 0;
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+  }
+  #cyber-security-introduction .section-top .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #cyber-security-introduction .section-top .head-slogan {
+    line-height: 1.56em;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 auto;
+    font-family: "sans-serif", sans-serif;
+    color: rgb(70, 63, 63);
+  }
+
+  #cyber-security-services {
+    padding: 50px 0 50px 0;
+    background-color: rgb(253, 252, 252);
+  }
+  #cyber-security-services .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  #cyber-security-services .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+
+  #cyber-security-services .cloud-automation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+    width: 100%;
+    align-items: center;
+  }
+
+  #cyber-security-services .cyber-security-important {
+    border-radius: 20px;
+  }
+  #cyber-security-services .cybersecurity-img {
+   
+        width: 100%;
+        object-fit: cover;
+  }
+
+  #cyber-security-services {
+    padding: 50px 0 50px 0;
+    background-color: rgb(253, 252, 252);
+  }
+  #cyber-security-services .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  #cyber-security-services .section .tab-icon {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1;
+  }
+  #cyber-security-services .cloud-heading {
+    font-size: 2.2rem;
+    color: #000000;
+  }
+
+  #cyber-security-services .cloud-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  
+  #cyber-security-tools {
+    padding: 50px 0 30px 0;
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+  }
+  #cyber-security-tools .section-top {
+    margin-bottom: 50px;
+  }
+  #cyber-security-tools .section-top .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #cyber-security-tools .solution-item{
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 8px 24px #b3b1b196;
+    border-radius: 20px;
+    display: flex;
+    justify-content: cente;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    display: flex;
+    grid-column-gap: 10px;
+  }
+
+  #cyber-security-tools .item-title{
+    font-size: 1.4rem;
+  }
+
+  #cyber-security-tools .solution-item:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0 8px 24px #27286d8a;
+  }
+  
+  
+ 
+  
+  @media screen and (max-width: 768px) {
+    #cyber-security-introduction {
+      padding: 30px 0 30px 0;
+    }
+    #cyber-security-introduction .section-top .head-title {
+      font-size: 22px;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    #cyber-security-introduction .section-top .head-slogan {
+      text-align: justify;
+    }
+    #cyber-security-services {
+        padding: 30px 0px !important;
+    }
+    #cyber-security-services .section {
+      flex-direction: column-reverse;
+    }
+    #cyber-security-services .section-box {
+        padding-bottom: 20px;
+      }
+
+      #cyber-security-services .cloud-automation {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        width: 100%
+      }
+
+    
+       
+      #cyber-security-services .section-box .left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+   
+      #cyber-security-services .section {
+        flex-direction: column-reverse;
+      }
+      #cyber-security-services .section .left {
+        width: 100%;
+      }
+      #cyber-security-services .section .right {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      #cyber-security-services {
+        padding: 30px 0 30px 0;
+        background-color: rgb(253, 252, 252);
+      }
+   
+      #cyber-security-services .head_title {
+        font-size: 2.5rem !important;
+     }
+     
+      #cyber-security-tools {
+        padding: 0px 0 0px 0;
+      }
+      #cyber-security-tools .section-top {
+        margin-bottom: 30px;
+      }
+      #cyber-security-tools .section-top .head-title {
+        font-size: 24px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      #cyber-security-tools .section-top .head-slogan {
+        font-size: 18px;
+        text-align: justify;
+      }
+      #cyber-security-tools .section-content .top-grid {
+        flex-direction: column;
+        gap: 10px;
+      }
+      #cyber-security-tools .section-content .top-grid .left {
+        width: 50%;
+      }
+      #cyber-security-tools .section-content .top-grid .left .image {
+        width: 250px;
+      }
+      #cyber-security-tools .section-content .top-grid .right {
+        width: 100%;
+      }
+      #cyber-security-tools .section-content .top-grid .right .text {
+        font-size: 18px;
+        padding: 10px 0 15px 0;
+      }
+    
+      #cyber-security-tools .section-content .center-grid {
+        flex-direction: column-reverse;
+      }
+      #cyber-security-tools .section-content .center-grid .left {
+        width: 100%;
+      }
+      #cyber-security-tools .section-content .center-grid .left .text {
+        font-size: 18px;
+        text-align: justify;
+      }
+      #cyber-security-tools .section-content .center-grid .right {
+        margin-right: 0px;
+      }
+      #cyber-security-tools .section-content .bottom-grid {
+        flex-direction: column;
+        padding-top: 20px;
+      }
+      #cyber-security-tools .section-content .bottom-grid .right {
+        width: 100%;
+      }
+      #cyber-security-tools .section-content .bottom-grid .right .text {
+        font-size: 18px;
+        text-align: justify;
+      }
+
+      
+  }

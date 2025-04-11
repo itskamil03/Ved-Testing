@@ -57,6 +57,7 @@ import { React, useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Events from "./pages/news_events/Events";
+import CyberSecurity from "./pages/cyber_security/cyberSecurity";
 
 
 function App() {
@@ -113,7 +114,7 @@ function App() {
           <Route path="/AI-ML" element={<AIML />} />
           <Route path="/MVPConsulting" element={<MVPConsulting />} />
           <Route path="/QaTesting" element={<QaTesting />} />
-
+          <Route path="/CyberSecurity" element={<CyberSecurity />} />
           <Route path="/Crm" element={<Crm />} />
           <Route path="/Qms" element={<Qms />} />
           <Route path="/Hrms" element={<Hrms />} />

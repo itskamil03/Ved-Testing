@@ -346,13 +346,13 @@ function ApplicationDevelopment() {
                   ))}
                 </div>
 
-                <div className="tab-indicator"></div>
+                {/* <div className="tab-indicator"></div> */}
 
                 <div className="tab-content">
                   {tabs.map((tab, index) => (
                     <div
                       key={index}
-                      className={activeTab === index ? "active" : ""}
+                     className={activeTab === index ? "active" : ""}
                     >
                       <div className="head">{tab.title}</div>
                       <div className="content">{tab.content}</div>

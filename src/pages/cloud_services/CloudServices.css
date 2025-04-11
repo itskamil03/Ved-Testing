@@ -111,12 +111,11 @@
     grid-column-gap: 20px;
     width: 100%;
     background-color: #ffffff;
-    height:160px;
   }
 
   #cloud-four .solution-item {
     width: 40%;
-    aspect-ratio: 1;
+    aspect-ratio: 1.6;
   }
 
   #cloud-four .solution-title {
@@ -241,9 +240,21 @@
     #cloud-five {
       padding: 10px 0px;
     }
+    .mb-sm-3{
+      margin-bottom: 1.6rem !important;
+    }
     #cloud-second {
       padding: 30px 0 30px 0;
       background-color: rgb(253, 252, 252);
+    }
+    #cloud-five .process-step .step-box .step-num {
+      position: absolute;
+      right: 40px;
+      top: -38px;
+      font-size: 2.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #00000096;
     }
   
     #cloud-five .process-step {
@@ -269,10 +280,29 @@
     }
   
     #cloud-five .process-step .step-box .title {
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: bold;
       margin: 15px 0;
       text-align: center;
+    }
+    #cloud-four .benefits {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: #ffffff;
+    }
+
+    #cloud-four .solution-item {
+      width: 100%;
+     height: 160px;
+    }
+  
+    #cloud-four .solution-title {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 12px 20px;
+  
     }
   }
 
@@ -365,7 +395,7 @@
       margin-bottom: 20px;
     }
     #cloud-third {
-      padding: 00px 0 30px 0;
+      padding: 0px 0 0px 0;
     }
     #cloud-third .section-top {
       margin-bottom: 30px;

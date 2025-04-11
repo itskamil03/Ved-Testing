@@ -370,6 +370,17 @@ function Header() {
                                 <strong>QA testing & Security</strong>
                               </div>
                             </NavLink>
+                            <NavLink
+                              to="/CyberSecurity"
+                              onClick={() => setMenubtn(!menubtn)}
+                              className="megadrop-item-link"
+                            >
+                              <div className="megadrop-item-about">
+                                <FaCentos />
+
+                                <strong>Cyber Security</strong>
+                              </div>
+                            </NavLink>
                           </div>
                         </div>
                       </div>
