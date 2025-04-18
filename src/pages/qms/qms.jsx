@@ -144,7 +144,7 @@ const Qms = () => {
         <div className="container-fluid">
           <div className="container">
             
-             <div className="head_title margin_bottom-20">Quality Management System (DMS)</div>
+             <div className="head_title margin_bottom-20">Quality Management System (QMS)</div>
 
             <div className="section">
               <div className="left">
@@ -157,17 +157,18 @@ const Qms = () => {
                 />
               </div>
               </div>
-              <div className="section">
+            
               <div className="right">
               <div class="text-box">
               QMS (Quality Management System) Software ensures compliance, process efficiency, and continuous improvement in businesses. It enables automated quality control, audit management, and regulatory compliance tracking to maintain high standards. With real-time monitoring, corrective action workflows, and performance analytics, organizations can enhance product and service quality. Integration with document control, training management, and risk assessment tools streamlines operations and ensures consistency. Cloud-based QMS provides scalability, remote access, and secure data management for seamless quality oversight. Implementing QMS Software reduces errors, improves efficiency, and enhances customer satisfaction. It also helps businesses identify risks early and implement corrective actions effectively. A well-structured QMS fosters continuous improvement, regulatory adherence, and overall operational excellence
                 </div>
             </div>
-            </div>
+            
             </div>
           </div>
         </div>
       </section>
+
 
       <div className="main-qms">
         <div id="container-fluid">
@@ -286,6 +287,9 @@ const Qms = () => {
                 </div>
               </div>
             </div>
+
+
+            
             <div className="main-text-image ">
               <div className="main-containt">
                 <img loading="eager" fetchpriority="high"
@@ -316,6 +320,8 @@ const Qms = () => {
 
               {/* </div> */}
             </div>
+          
+            
             <section id="enterprise-services">
               <div className="container-fluid">
                 <div className="container">

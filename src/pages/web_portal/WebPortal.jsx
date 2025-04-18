@@ -191,12 +191,12 @@ function WebPortal() {
                 />
               </div>
               </div>
-              <div className="section">
+             
               <div className="right">
               <div class="text-box">
               Web Portal Software serves as a centralized platform for businesses, enabling seamless access to information, services, and collaboration tools. It ensures secure user authentication, personalized dashboards, and efficient data management for enhanced user experience. With content management, self-service functionalities, and real-time updates, organizations can improve engagement and workflow automation. Integration with third-party applications, databases, and cloud services ensures scalability and streamlined operations. Cloud-based web portals provide remote accessibility, robust security, and multi-device compatibility for seamless interactions. Implementing Web Portal Software enhances communication, boosts efficiency, and improves service delivery. It also optimizes business processes by automating routine tasks and providing real-time analytics. A well-structured web portal fosters better collaboration, data-driven decision-making, and improved customer engagement.
 
-                </div>
+    
             </div>
             </div>
             </div>
@@ -428,7 +428,9 @@ function WebPortal() {
           </div>
         </div>
       </section>
-      <section id="health">
+
+
+       <section id="health">
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
@@ -439,7 +441,9 @@ function WebPortal() {
                       <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
-                        className="w-75 h-auto"
+                        className="w-100 h-100"
+                        style={{aspectRatio:1.25}}
+                         
                       />
                     </div>
                   </div>
@@ -454,10 +458,10 @@ function WebPortal() {
 
                       <form onSubmit={handleSubmit}>
                         <div
-                          className="form-input-new"
+                          className="row form-input-mobile-view"
                           style={{ paddingBottom: "0px" }}
                         >
-                          <div className="col-lg-6">
+                          <div className="col-lg-6 padding-0">
                             <div className="left-placeholder">
                               <input
                                 type="text"
@@ -517,12 +521,12 @@ function WebPortal() {
                               />
                             </div>
                           </div>
-                          <div className="col-lg-6">
-                            <div className="left-placholder">
+                          <div className="col-lg-6 padding-0">
+                            <div className="right-placholder">
                               <input
                                 type="text"
                                 name="last_name"
-                                className="form-control fs-3 first-input"
+                                className="form-control fs-3 second-input"
                                 placeholder="Last Name*"
                                 value={formData.last_name}
                                 onChange={handleInputChange}
@@ -580,7 +584,7 @@ function WebPortal() {
                         </div>
                         <div
                           className="form-input-new"
-                          style={{ padding: "0px 4px 0px 15px" }}
+                          style={{ padding: "0px" }}
                         >
                           <div className="col-lg-12">
                             <div className="email-placholder">
@@ -602,6 +606,7 @@ function WebPortal() {
                                   gridColumnGap: "8px",
                                   alignItems: "start",
                                   fontSize: "12px",
+                                   paddingTop:"10px"
                                 }}
                               >
                                   <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />
@@ -618,6 +623,7 @@ function WebPortal() {
                           Request Free Demo
                         </button>
                       </form>
+
                     </div>
                   </div>
                 </div>

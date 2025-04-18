@@ -193,6 +193,16 @@
   }
 }
 @media screen and (max-width: 768px) {
+
+  #solution {
+    padding: 30px 0px;
+  }
+  #section {
+    padding: 30px 0px;
+  }
+  #health {
+    padding: 30px 0px;
+  }
   #docfirst {
     padding: 30px 0px;
   }

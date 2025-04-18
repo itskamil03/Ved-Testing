@@ -1123,11 +1123,11 @@ function Home({ target, label }) {
 
             <Slider {...settingsdata} className="owl-theme" margin={20}>
 
-              <div className="lifeatvedthird-section-body">
+              <div className="lifeatvedthird-section-body-home">
                 <div className="lifeatvedthird-section-bodybox">
-                  <div className="lifeatvedthird-section-body-img">
+                  <div className="lifeatvedthird-section-body-home-img">
                     <img
-                      src="icons/frontend.png"
+                      src="icons/frontend.jpg"
                       alt="frontend-training"
                       className="w-100 h-100"
                       loading="eager" fetchpriority="high"
@@ -1140,11 +1140,11 @@ function Home({ target, label }) {
               </div>
 
 
-              <div className="lifeatvedthird-section-body">
+              <div className="lifeatvedthird-section-body-home">
                 <div className="lifeatvedthird-section-bodybox">
-                  <div className="lifeatvedthird-section-body-img">
+                  <div className="lifeatvedthird-section-body-home-img">
                     <img
-                      src="icons/backend.png"
+                      src="icons/backend.avif"
                       alt="backend-training"
                       className="w-100 h-100"
                       loading="eager" fetchpriority="high"
@@ -1157,11 +1157,11 @@ function Home({ target, label }) {
               </div>
 
 
-              <div className="lifeatvedthird-section-body">
+              <div className="lifeatvedthird-section-body-home">
                 <div className="lifeatvedthird-section-bodybox">
-                  <div className="lifeatvedthird-section-body-img">
+                  <div className="lifeatvedthird-section-body-home-img">
                     <img
-                      src="icons/fullstack.png"
+                      src="icons/fullstackdevelopment.webp"
                       alt="fullstack-training"
                       className="w-100 h-100"
                       loading="eager" fetchpriority="high"
@@ -1174,44 +1174,60 @@ function Home({ target, label }) {
               </div>
 
 
-              <div className="lifeatvedthird-section-body">
+              <div className="lifeatvedthird-section-body-home">
                 <div className="lifeatvedthird-section-bodybox">
-                  <div className="lifeatvedthird-section-body-img">
+                  <div className="lifeatvedthird-section-body-home-img">
                     <img
-                      src="icons/java.png"
-                      alt="java-training"
+                      src="icons/data-analytics.webp"
+                      alt="data-analytics-training"
                       className="w-100 h-100"
                       loading="eager" fetchpriority="high"
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
-                    <p>Java Training Courses Consist Of languages like Basis & Advance Java, Spring Boot with database training.</p>
+                    <p>Data Analytics Training includes data cleaning, statistical analysis, data visualization, SQL, Python, R, machine learning, and tools like Tableau, Power BI, and Excel for data-driven decision making.</p>
                   </div>
                 </div>
               </div>
 
 
-              <div className="lifeatvedthird-section-body">
+              <div className="lifeatvedthird-section-body-home">
                 <div className="lifeatvedthird-section-bodybox">
-                  <div className="lifeatvedthird-section-body-img">
+                  <div className="lifeatvedthird-section-body-home-img">
                     <img
-                      src="icons/ai.png"
+                      src="icons/ai-ml.jpg"
                       alt="ai-ml-training"
                       className="w-100 h-100"
                       loading="eager" fetchpriority="high"
                     />
                   </div>
                   <div className="lifeatvedthird-section-body-content mt-3">
-                    <p>AI & ML Training Courses Consist Of languages like Python etc.</p>
+                    <p>AI-ML Training includes machine learning, deep learning, NLP, computer vision, Python, TensorFlow, PyTorch, and tools to develop intelligent systems and real-world AI applications.</p>
                   </div>
                 </div>
               </div>
 
-              <div className="lifeatvedthird-section-body">
+              <div className="lifeatvedthird-section-body-home">
                 <div className="lifeatvedthird-section-bodybox">
-                  <div className="lifeatvedthird-section-body-img">
+                  <div className="lifeatvedthird-section-body-home-img">
                     <img
-                      src="icons/bde.png"
+                      src="icons/devops.jpg"
+                      alt="devops-training"
+                      className="w-100 h-100"
+                      loading="eager" fetchpriority="high"
+                    />
+                  </div>
+                  <div className="lifeatvedthird-section-body-content mt-3">
+                    <p>DevOps Training covers CI/CD, automation, Docker, Kubernetes, cloud services (AWS, Azure), Jenkins, Git, Terraform, and monitoring for efficient software development and delivery pipelines.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="lifeatvedthird-section-body-home">
+                <div className="lifeatvedthird-section-bodybox">
+                  <div className="lifeatvedthird-section-body-home-img">
+                    <img
+                      src="icons/java.jpg"
                       alt="java-training"
                       className="w-100 h-100"
                       loading="eager" fetchpriority="high"

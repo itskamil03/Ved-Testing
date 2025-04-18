@@ -228,13 +228,15 @@ function Crm() {
                 />
               </div>
               </div>
-              <div className="section">
+
+             
               <div className="right">
               <div class="text-box">
               CRM (Customer Relationship Management) Software helps businesses manage customer interactions, sales, and support efficiently. It ensures centralized customer data, automated follow-ups, and improved communication to enhance relationships. With sales pipeline tracking, marketing automation, and analytics, businesses can optimize conversions and customer retention. Integration with email, social media, and third-party tools streamlines workflows and improves engagement. Cloud-based CRM provides remote access, scalability, and data security for seamless operations. Implementing CRM Software boosts sales, enhances customer satisfaction, and drives business growth. It also improves team collaboration by providing real-time insights and automating routine tasks. A well-implemented CRM helps businesses deliver personalized experiences, increasing customer loyalty and long-term profitability.
                 </div>
             </div>
-            </div>
+           
+            
             </div>
           </div>
         </div>
@@ -612,7 +614,8 @@ function Crm() {
                       <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
-                        className="w-75 h-auto"
+                        className="w-100 h-100"
+                        style={{aspectRatio:1.25}}
                          
                       />
                     </div>
@@ -628,10 +631,10 @@ function Crm() {
 
                       <form onSubmit={handleSubmit}>
                         <div
-                          className="form-input-new"
+                          className="row form-input-mobile-view"
                           style={{ paddingBottom: "0px" }}
                         >
-                          <div className="col-lg-6">
+                          <div className="col-lg-6 padding-0">
                             <div className="left-placeholder">
                               <input
                                 type="text"
@@ -691,12 +694,12 @@ function Crm() {
                               />
                             </div>
                           </div>
-                          <div className="col-lg-6">
-                            <div className="left-placholder">
+                          <div className="col-lg-6 padding-0">
+                            <div className="right-placholder">
                               <input
                                 type="text"
                                 name="last_name"
-                                className="form-control fs-3 first-input"
+                                className="form-control fs-3 second-input"
                                 placeholder="Last Name*"
                                 value={formData.last_name}
                                 onChange={handleInputChange}
@@ -754,7 +757,7 @@ function Crm() {
                         </div>
                         <div
                           className="form-input-new"
-                          style={{ padding: "0px 4px 0px 15px" }}
+                          style={{ padding: "0px" }}
                         >
                           <div className="col-lg-12">
                             <div className="email-placholder">
@@ -776,6 +779,7 @@ function Crm() {
                                   gridColumnGap: "8px",
                                   alignItems: "start",
                                   fontSize: "12px",
+                                   paddingTop:"10px"
                                 }}
                               >
                                   <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />

@@ -238,14 +238,14 @@ function DocumentManagement() {
                 />
               </div>
               </div>
-              <div className="section">
+              
               <div className="right">
               <div class="text-box">
               DMS (Document Management System) Software streamlines document storage, organization, and retrieval for businesses. It ensures secure access, version control, and compliance with industry regulations to enhance efficiency. With automated workflows, indexing, and OCR (Optical Character Recognition), users can quickly search and manage documents. Integration with cloud storage, collaboration tools, and access control systems improves security and teamwork. Cloud-based DMS enables remote access, scalability, and real-time document tracking for seamless operations. Implementing DMS Software reduces paperwork, enhances productivity, and improves document security. It also prevents data loss through automated backups and ensures seamless sharing across teams. A well-structured DMS enhances workflow automation, boosting overall business efficiency and decision-making.
                 </div>
             </div>
             </div>
-            </div>
+    
           </div>
         </div>
       </section>
@@ -378,7 +378,8 @@ function DocumentManagement() {
                       <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
-                        className="w-75 h-auto"
+                        className="w-100 h-100"
+                        style={{aspectRatio:1.25}}
                          
                       />
                     </div>
@@ -394,10 +395,10 @@ function DocumentManagement() {
 
                       <form onSubmit={handleSubmit}>
                         <div
-                          className="form-input-new"
+                          className="row form-input-mobile-view"
                           style={{ paddingBottom: "0px" }}
                         >
-                          <div className="col-lg-6">
+                          <div className="col-lg-6 padding-0">
                             <div className="left-placeholder">
                               <input
                                 type="text"
@@ -457,12 +458,12 @@ function DocumentManagement() {
                               />
                             </div>
                           </div>
-                          <div className="col-lg-6">
-                            <div className="left-placholder">
+                          <div className="col-lg-6 padding-0">
+                            <div className="right-placholder">
                               <input
                                 type="text"
                                 name="last_name"
-                                className="form-control fs-3 first-input"
+                                className="form-control fs-3 second-input"
                                 placeholder="Last Name*"
                                 value={formData.last_name}
                                 onChange={handleInputChange}
@@ -520,7 +521,7 @@ function DocumentManagement() {
                         </div>
                         <div
                           className="form-input-new"
-                          style={{ padding: "0px 4px 0px 15px" }}
+                          style={{ padding: "0px" }}
                         >
                           <div className="col-lg-12">
                             <div className="email-placholder">
@@ -542,6 +543,7 @@ function DocumentManagement() {
                                   gridColumnGap: "8px",
                                   alignItems: "start",
                                   fontSize: "12px",
+                                   paddingTop:"10px"
                                 }}
                               >
                                   <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />
@@ -558,6 +560,7 @@ function DocumentManagement() {
                           Request Free Demo
                         </button>
                       </form>
+
                     </div>
                   </div>
                 </div>
@@ -566,6 +569,7 @@ function DocumentManagement() {
           </div>
         </div>
       </section>
+
 
       <section id="doc-support">
         <div className="container-fluid">

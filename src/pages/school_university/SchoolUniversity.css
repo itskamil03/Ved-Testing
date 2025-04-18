@@ -430,8 +430,14 @@ h2 span {
     margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+
+    #health {
+      padding: 30px 0px;
+    }
+}
 @media only screen and (max-width : 576px) {
     .university_module_sec.module-cms .mod-box-content {
-        height: 60rem;
+        /* height: 60rem; */
     }
   }

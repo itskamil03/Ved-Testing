@@ -519,6 +519,11 @@ padding: 12px;
 
 }
 
+.lifeatvedthird-section-body-home-img{
+  object-fit: contain;
+    height: 20rem;
+}
+
 #whats-new .bottom-block .head {
   font-size: 2rem;
   /* Increased font size */

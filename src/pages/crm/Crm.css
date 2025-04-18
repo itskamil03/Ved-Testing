@@ -11,8 +11,8 @@
   background-color: rgb(253, 252, 252);
 }
 #solution .section {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   grid-gap: 20px;
   width: 100%;
@@ -256,12 +256,12 @@
 }
 
 #crm-why .why-card {
-  width: 400px;
-  min-width: 400px;
+  width: auto;
   max-width: 400px;
   background-image: linear-gradient(to top, #d0d6da 0%, #eff3f6 100%);
   padding: 20px;
   box-shadow: 0 8px 24px #b4b3b36e;
+  height: 280px;
 }
 
 #crm-why .why-card .icon {
@@ -387,6 +387,23 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  #solution .section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    grid-gap: 20px;
+    width: 100%;
+  }
+
+  #solution .section .right .text-box {
+    position: relative;
+    padding-left: 0px;
+    font-size: 1.5rem;
+    padding-top: 10px;
+  }
+
   #crm-results {
     padding: 20px 0;
   }
@@ -400,6 +417,18 @@
     grid-template-columns: 1fr;
     gap: 15px;
   }
+  #crm-results .result-grid .result-card .number {
+    font-size: 3rem;
+    font-family: "sans-serif", sans-serif;
+    color: #27286d;
+  } 
+
+  #crm-results .result-grid .result-card .title {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+
   #crm-assistance {
     padding: 20px 0;
   }
@@ -412,6 +441,39 @@
   #crm-assistance .assistance-card {
     margin-bottom: 10px;
   }
+
+  #crm-assistance .assistance-card .icon {
+    font-size: 2rem;
+    background: #27286d;
+    display: inline-grid;
+    width: 40px;
+  }
+  
+  #crm-assistance .assistance-card .title {
+    font-family: "sans-serif", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  #crm-why .why-card {
+    width: auto;
+    min-width: auto;
+    max-width: auto;
+    background-image: linear-gradient(to top, #d0d6da 0%, #eff3f6 100%);
+    padding: 20px;
+    box-shadow: 0 8px 24px #b4b3b36e;
+  }
+
+  #crm-why .why-card .title {
+    font-family: "sans-serif", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  #crm-why .why-card .content {
+    font-size: 1.4rem;
+  }
+
   #crm-contact-bar {
     padding: 20px 0;
   }

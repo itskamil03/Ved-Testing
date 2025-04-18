@@ -275,7 +275,7 @@ function HomeHeroImg() {
                 Training & Internship At Venturing Digitally
               </div>
               <div className="homeheroimg-heading">
-                AI/ML,Java,Next JS, Node JS and more!
+                AI/ML, Java, Next JS, Node JS and more!
               </div>
               <div className="homeheroimg-imgbtn">Contact Us</div>
             </div>

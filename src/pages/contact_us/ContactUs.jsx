@@ -144,6 +144,7 @@ function ContactUs() {
                 <div className="container">
                   <div className="form-new inner-box-ved">
                     <div className="main-form">
+
                       <div className="col-lg-4">
                         <div className="image-box">
                           <img loading="eager" fetchpriority="high"
@@ -152,6 +153,7 @@ function ContactUs() {
                           />
                         </div>
                       </div>
+
                       <div className="col-lg-8">
                         <div className="heading-new-form">
                           Send Your Enquiry Here
@@ -285,6 +287,7 @@ function ContactUs() {
                           </div>
                         </form>
                       </div>
+
                     </div>
                   </div>
                 </div>

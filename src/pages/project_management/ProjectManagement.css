@@ -100,7 +100,7 @@
   cursor: pointer;
   border-top: 4px solid #3692f2;
   border-radius: 10px;
-  min-height: 250px;
+  min-height: auto;
   background: white;
 }
 
@@ -213,6 +213,9 @@
   #profirst {
     padding: 30px 0;
   }
+  .profirst-section-head {
+     margin-bottom: 30px
+  }
   .profirst-section-head .profirst-head-title {
     font-size: 3rem;
     width: 100%;
@@ -238,5 +241,12 @@
   }
   #prothird .why-grid {
     grid-template-columns: 1fr;
+  }
+ 
+}
+
+@media screen and (max-width: 400px) {
+  .padding-0{
+    padding: 0px !important;
   }
 }
