@@ -211,6 +211,214 @@ function AIML() {
         </div>
       </section>
 
+
+      <section id="ai-five">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="section-top">
+            <div className="head_title">
+              Why Our AI/ML Services Make the Difference?
+          </div>
+
+          <div className="choose-ai-ml">
+
+            <div className="ai-ml-solution">
+              <div className="ai-ml-solution-title">Tailored Intelligence for Real Business Impact</div>
+              <div className="ai-ml-solution-description">We don’t believe in one-size-fits-all. Every business has its own goals, data patterns, and operational challenges—and our AI/ML solutions are built to respect that. Whether you're looking to streamline operations through automation, extract deep insights from massive data sets, or elevate your customer experience with intelligent personalization, we craft strategies that align perfectly with your objectives.</div>
+            </div>
+
+            <div className="ai-ml-solution even">
+              <div className="ai-ml-solution-title">End-to-End Expertise, From Strategy to Deployment</div>
+              <div className="ai-ml-solution-description">From ideation to implementation, we walk with you through every phase of your digital journey. Our team combines technical excellence with deep business understanding to ensure smooth, scalable AI integration. We don’t just deliver solutions—we partner with you to align AI strategies with your goals, enabling smarter decisions and long-term value.</div>
+            </div>
+
+            <div className="ai-ml-solution">
+              <div className="ai-ml-solution-title">Scalable Solutions Built for the Future</div>
+              <div className="ai-ml-solution-description">Our systems are designed to grow with your business. Whether you're a startup or an enterprise, our AI/ML models adapt, learn, and evolve—ensuring you're always a step ahead in the digital game. Built with flexibility and scalability in mind, our solutions easily integrate with your existing infrastructure, handle increasing data volumes, and continuously improve performance.</div>
+            </div>
+
+            <div className="ai-ml-solution even">
+              <div className="ai-ml-solution-title">Ethical, Transparent, and Responsible AI</div>
+              <div className="ai-ml-solution-description">We believe in building trust, not just technology. Our AI/ML services follow ethical principles, ensure data privacy, and provide transparent results, making your transformation safe and sustainable. Every model we develop is designed with responsible AI practices in mind—minimizing bias, protecting sensitive data, and promoting explainable outcomes.</div>
+            </div>
+          </div>
+            
+           </div>
+           </div>
+           </div>
+          </section>  
+
+           <section id="cloud-third">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="section-top">
+              <div className="head-title">
+               Tools and Technology
+              </div>
+              <div className="row">
+              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
+                    <div className="solution-item">
+                    <div className="tab-icon">
+                    <img loading="eager" fetchpriority="high"
+                      src="icons/tensorflow.svg"
+                      alt="Cloud solution"
+                      className="w-100 h-100"
+                           
+                    />
+                  </div>
+                      <div className="item-title">TensorFlow</div>
+                    </div>
+                  </div>
+
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
+                    <div className="solution-item">
+                    <div className="tab-icon">
+                    <img loading="eager" fetchpriority="high"
+                      src="icons/py.svg"
+                      alt="Cloud solution"
+                      className="w-100 h-100"
+                           
+                    />
+                  </div>
+                      <div className="item-title">PyTorch</div>
+                    </div>
+                  </div>
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
+                    <div className="solution-item">
+                    <div className="tab-icon">
+                    <img loading="eager" fetchpriority="high"
+                      src="icons/sck.svg"
+                      alt="Cloud solution"
+                      className="w-100 h-100"
+                           
+                    />
+                  </div>
+                      <div className="item-title">Scikit-Learn</div>
+                    </div>
+                  </div>
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
+                    <div className="solution-item">
+                    <div className="tab-icon">
+                    <img loading="eager" fetchpriority="high"
+                      src="icons/keras.svg"
+                      alt="Cloud solution"
+                      className="w-100 h-100"
+                           
+                    />
+                  </div>
+                      <div className="item-title">Keras</div>
+                    </div>
+                  </div>
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
+                    <div className="solution-item">
+                    <div className="tab-icon">
+                    <img loading="eager" fetchpriority="high"
+                      src="icons/jypter.svg"
+                      alt="Cloud solution"
+                      className="w-100 h-100"
+                           
+                    />
+                  </div>
+                      <div className="item-title">Jupyter Notebook</div>
+                    </div>
+                  </div>
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
+                    <div className="solution-item">
+                    <div className="tab-icon">
+                    <img loading="eager" fetchpriority="high"
+                      src="icons/pandas.svg"
+                      alt="Cloud solution"
+                      className="w-100 h-100"
+                           
+                    />
+                  </div>
+                      <div className="item-title">Pandas</div>
+                    </div>
+                  </div>
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
+                    <div className="solution-item">
+                    <div className="tab-icon">
+                    <img loading="eager" fetchpriority="high"
+                      src="icons/numpy.svg"
+                      alt="Cloud solution"
+                      className="w-100 h-100"
+                           
+                    />
+                  </div>
+                      <div className="item-title">NumPy</div>
+                    </div>
+                  </div>
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
+                    <div className="solution-item">
+                    <div className="tab-icon">
+                    <img loading="eager" fetchpriority="high"
+                      src="icons/sea.svg"
+                      alt="Cloud solution"
+                      className="w-100 h-100"
+                           
+                    />
+                  </div>
+                      <div className="item-title">Seaborn</div>
+                    </div>
+                  </div>
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
+                    <div className="solution-item">
+                    <div className="tab-icon">
+                    <img loading="eager" fetchpriority="high"
+                      src="icons/open.svg"
+                      alt="Cloud solution"
+                      className="w-100 h-100"
+                           
+                    />
+                  </div>
+                      <div className="item-title">OpenCV</div>
+                    </div>
+                  </div>
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
+                    <div className="solution-item">
+                    <div className="tab-icon">
+                    <img loading="eager" fetchpriority="high"
+                      src="icons/fast.svg"
+                      alt="Cloud solution"
+                      className="w-100 h-100"
+                           
+                    />
+                  </div>
+                      <div className="item-title">Fastai</div>
+                    </div>
+                  </div>
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5 mb-sm-3">
+                    <div className="solution-item">
+                    <div className="tab-icon">
+                    <img loading="eager" fetchpriority="high"
+                      src="icons/mat.svg"
+                      alt="Cloud solution"
+                      className="w-100 h-100"
+                           
+                    />
+                  </div>
+                      <div className="item-title">Matplotlib</div>
+                    </div>
+                  </div>
+                  <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div className="solution-item">
+                    <div className="tab-icon">
+                    <img loading="eager" fetchpriority="high"
+                      src="icons/h2o.svg"
+                      alt="Cloud solution"
+                      className="w-100 h-100"
+                           
+                    />
+                  </div>
+                      <div className="item-title">H2O.ai</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+
   
       <section id="enterprise-faq">
         <div className="container-fluid">

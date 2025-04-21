@@ -196,7 +196,42 @@
     background-color: #b5b5b5;
   }
   
+  #ai-five {
+    padding: 50px 0;
+    background-color: #fff;
+  }
+
+  #ai-five .choose-ai-ml {
+      margin-top: 20px;
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap:40px;
+  }
+
+  #ai-five  .ai-ml-solution {
+    border-radius: 0px 20px 20px 0px;
+    background-color:#c2c2c2 ;
+  }
+
+  #ai-five .even {
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  #ai-five .ai-ml-solution-title {
+     margin: 20px 20px 20px 0px;
+    font-size: 18px;
+    background-color: #fff;
+    width: fit-content;
+    padding: 4px 16px;
+    border-radius: 0px 20px 20px 0px;
+    font-weight: 550;
+  }
   
+  #ai-five .ai-ml-solution-description {
+    font-size: 16px;
+    padding: 0px 20px 20px;
+
+  }
   
   @media screen and (max-width: 768px) {
     #ai-first {
@@ -320,7 +355,33 @@
       width: 100%;
       justify-content: center;
       padding-left: 0px;
+    } 
+    
+    #ai-five .choose-ai-ml {
+      margin-top: 20px;
+      display:grid;
+      grid-template-columns:1fr;
+      grid-gap:40px;
+  }
+
+    #ai-five  .ai-ml-solution {
+      border-radius:16px;
+      background-color:#c2c2c2 ;
     }
+  
+    #ai-five .even {
+      border-radius: 16px;
+    }
+
+    #ai-five .ai-ml-solution-title {
+     font-size: 16px;
+   }
+   
+   #ai-five .ai-ml-solution-description {
+     font-size: 14px;
+
+   }
+  
    
   }
   
