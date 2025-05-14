@@ -78,7 +78,7 @@ function CyberSecurity() {
             <div className="section">
              
              <div>
-              <h2 className="head_title pb-4">We Offer Trusted Cybersecurity Services by Venturing Digitally</h2>
+              <h2 className="head_title pb-4">We Offer Trusted Cyber security Services by Venturing Digitally</h2>
                
               <div className="row">
                <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -184,6 +184,104 @@ function CyberSecurity() {
               
             </div>
             </div>
+
+             </div>
+             </div>
+             
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="expert-cyber-security-services">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="section">
+             
+             <div>    
+              <div className="section-box">
+           
+               <div>
+                 <h2 className="header_title pb-4">Our professional Cyber Security Services are tailored to fortify your digital security.</h2>
+                 <div className="cloud-title">At <span style={{fontWeight:600}}>Venturing Digitally Pvt Ltd</span>, we are dedicated to helping you navigate the ever-evolving world of cyber threats. As cyber risks continue to grow and become more sophisticated, safeguarding your organization's sensitive data and digital assets is more critical than ever. Our expert Cyber Security Services are crafted to minimize risk exposure and bolster your organization’s overall cyber resilience.
+                     <br></br><br></br>
+                  Ranked among India’s leading cybersecurity companies,<span style={{fontWeight:600}}>Venturing Digitally Pvt Ltd </span> offers a comprehensive range of services designed to protect your digital infrastructure. Whether it's securing cloud environments or reinforcing internal networks, we specialize in creating tailored solutions that address your specific security challenges. Our team of highly trained professionals leverages the latest technologies to deliver top-notch protection, ensuring your organization remains secure in today’s digital age.</div>
+               </div>
+
+               <div className="cloudservice_data">
+               
+               <div className="cloudservice_details">
+
+                <div className="cloudservice_title">
+                  <div className="counting">01</div>
+                  <div className="heading_title">Vulnerability Assessment & Penetration Testing (VAPT)</div>
+                </div>
+
+                <div className="cloud-title">
+                 Identify and mitigate vulnerabilities before they become threats with our expert VAPT services.
+                </div>
+
+               </div>
+
+               <div className="cloudservice_details">
+
+                <div className="cloudservice_title">
+                  <div className="counting">02</div>
+                  <div className="heading_title">Red Teaming</div>
+                </div>
+
+                 <div className="cloud-title">
+                 Simulate real-world attacks to test your defenses with our advanced Red Teaming strategies.
+                </div>
+
+                </div>
+
+                <div className="cloudservice_details">
+
+                <div className="cloudservice_title">
+                  <div className="counting">03</div>
+                  <div className="heading_title">Security Operations Center (SOC)</div>
+                </div>
+
+                <div  className="cloud-title">
+                  Monitor, detect, and respond to threats in real time with our 24/7 SOC services.
+                </div>
+
+                </div>
+
+                <div className="cloudservice_details">
+
+                <div className="cloudservice_title">
+                  <div className="counting">04</div>
+                  <div className="heading_title">Managed Compliance</div>
+                </div>
+
+                <div  className="cloud-title">
+                   Ensure adherence to global security standards with our Managed Compliance solutions
+                </div>
+
+                </div>
+
+                <div className="cloudservice_details">
+
+                <div className="cloudservice_title">
+                  <div className="counting">05</div>
+                  <div className="heading_title">Consulting & Advisory</div>
+                </div>
+
+                <div  className="cloud-title">
+                Receive expert guidance to strengthen your cybersecurity posture and align with industry best practices.
+                </div>
+
+                
+
+                </div>
+            
+
+
+              </div>
+
+          
 
              </div>
              </div>

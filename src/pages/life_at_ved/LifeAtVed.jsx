@@ -35,8 +35,6 @@ const services = [
   { name: "Classroom Training", code: "Classroom Training" },
   { name: "Weekend Training", code: "Weekend Training" },
   { name: "Internship", code: "Internship" },
-  { name: "Summer Training", code: "Summer Training" },
-  { name: "Winter Training", code: "Winter Training" },
   { name: "Project Training", code: "Project Training" },
 
 ];
@@ -164,6 +162,46 @@ function LifeAtVed() {
     },
 
     {
+      heading: "Benefits of training in Finance -:",
+      imgSrc: "icons/finance.jpg",
+      bullets: [
+        "Gain the skills to analyze financial data and make informed business or personal finance decisions, driving growth and stability.",
+        "Learn to plan budgets effectively and forecast financial outcomes with accuracy, ensuring sustainable financial health for businesses or individuals. ",
+        "Build confidence in evaluating investment opportunities and managing portfolios, maximizing returns while mitigating financial risks.",
+        "Stay updated with financial laws, tax regulations, and compliance requirements, ensuring full adherence to legal and industry standards.",
+      ],
+    },
+    {
+      heading: "Benefits of Human Resource Training in Embracing Digital Transformation -:",
+      imgSrc: "icons/hr.jpeg",
+      bullets: [
+        "HR professionals learn strategies to boost morale, motivation, and retention, fostering a positive workplace culture and engagement.",
+        "Training helps streamline hiring processes and ensures smoother integration of new employees, improving onboarding experiences and retention. ",
+        "Equip HR teams with tools to mediate disputes and maintain a healthy work environment, fostering collaboration and productivity.",
+        "Trained HR professionals can align talent strategies with business goals for greater impact, driving organizational growth and success.",
+      ],
+    },
+    {
+      heading: "Benefits of training in Marketing & Sales -:",
+      imgSrc: "icons/marketing.jpg",
+      bullets: [
+        "Learn how to communicate brand value effectively across multiple channels, ensuring consistency and engagement with diverse audiences.",
+        "Boost confidence and clarity in client interactions, pitches, and presentations, fostering stronger connections and long-lasting partnerships. ",
+        "Streamline sales funnels and marketing campaigns to drive higher ROI, leveraging data-driven strategies for better targeting. ",
+        "Develop strategies to build loyalty and long-term customer relationships, ensuring satisfaction and fostering brand advocacy over time. ",
+      ],
+    },
+    {
+      heading: "Benefits of training in Cloud Services -:",
+      imgSrc: "icons/cloud.jpg",
+      bullets: [
+        "Learn how to reduce infrastructure costs by leveraging pay-as-you-go cloud models, optimizing resource allocation and minimizing waste.",
+        "Accelerate service deployment and adapt quickly to changing business needs, improving agility and responsiveness across teams. ",
+        "Automate manual tasks and streamline workflows using cloud-based tools, enhancing efficiency and enabling faster decision-making processes. ",
+        "Align cloud capabilities with business innovation and modernization efforts, ensuring seamless integration with evolving industry trends. ",
+      ],
+    },
+    {
       heading: "Benefits of training at Venturing Digitally across all our courses -:",
       imgSrc: "icons/trainig.webp",
       bullets: [
@@ -223,6 +261,9 @@ function LifeAtVed() {
       { name: "Python", code: "Python" },
       { name: "AI-ML", code: "AI-ML" },
       { name: "DevOps", code: "DevOps" },
+      { name: "Power BI", code: "Power BI" },
+      { name: "Finance", code: "Finance" },
+      { name: "Marketing & Sales", code: "Marketing & Sales" },
       { name: "PHP", code: "PHP" },
       { name: "Laravel", code: "Laravel" },])
    }

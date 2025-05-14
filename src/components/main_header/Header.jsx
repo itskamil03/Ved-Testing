@@ -33,6 +33,7 @@ import {
   FaUbuntu,
   FaUncharted,
   FaUsersCog,
+  FaVrCardboard,
   FaWalking,
   FaWarehouse,
 } from "react-icons/fa";
@@ -367,9 +368,10 @@ function Header() {
                               <div className="megadrop-item-about">
                                 <FaGem />
 
-                                <strong>QA testing & Security</strong>
+                                <strong>QA testing</strong>
                               </div>
                             </NavLink>
+
                             <NavLink
                               to="/CyberSecurity"
                               onClick={() => setMenubtn(!menubtn)}
@@ -381,6 +383,19 @@ function Header() {
                                 <strong>Cyber Security</strong>
                               </div>
                             </NavLink>
+
+                            <NavLink
+                              to="/DataAnalytics"
+                              onClick={() => setMenubtn(!menubtn)}
+                              className="megadrop-item-link"
+                            >
+                              <div className="megadrop-item-about">
+                                <FaVrCardboard />
+
+                                <strong>Data Analytics</strong>
+                              </div>
+                            </NavLink>
+
                           </div>
                         </div>
                       </div>

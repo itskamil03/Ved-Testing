@@ -58,6 +58,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Events from "./pages/news_events/Events";
 import CyberSecurity from "./pages/cyber_security/cyberSecurity";
+import DataScience from "./pages/data_science/data_science";
 
 
 function App() {
@@ -115,6 +116,8 @@ function App() {
           <Route path="/MVPConsulting" element={<MVPConsulting />} />
           <Route path="/QaTesting" element={<QaTesting />} />
           <Route path="/CyberSecurity" element={<CyberSecurity />} />
+          <Route path="/DataAnalytics" element={<DataScience />} />
+
           <Route path="/Crm" element={<Crm />} />
           <Route path="/Qms" element={<Qms />} />
           <Route path="/Hrms" element={<Hrms />} />

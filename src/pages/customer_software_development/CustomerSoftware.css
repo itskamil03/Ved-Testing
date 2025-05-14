@@ -81,6 +81,17 @@
   margin: 0 auto;
 }
 
+#customer-stories .image {
+  background-color: #d2d2d2;
+  aspect-ratio: 1;
+}
+
+#customer-stories .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain !important;
+}
+
 #customer-solution .solution-grid .solution-item {
   text-align: center;
   padding: 20px;

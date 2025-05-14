@@ -157,11 +157,11 @@ function Insights() {
                   <div className="icon-grid">
                     <div className="item">
                       <div className="number">40+</div>
-                      <div className="title">Website & Mobile App Deliverd</div>
+                      <div className="title">Website & Mobile App Delivered</div>
                     </div>
                     <div className="item">
                       <div className="number">50+</div>
-                      <div className="title">Industrial Projects Deliverd</div>
+                      <div className="title">Industrial Projects Delivered</div>
                     </div>
                     <div className="item">
                       <div className="number">25+</div>

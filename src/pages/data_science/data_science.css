@@ -1,9 +1,9 @@
-#cyber-security-introduction {
+#data-analytics-introduction {
     padding: 50px 0 10px 0;
     width: 100%;
     background-color: rgb(253, 252, 252);
   }
-  #cyber-security-introduction .section-top .head-title {
+  #data-analytics-introduction .section-top .head-title {
     font-size: 3.2rem;
     font-weight: 600;
     line-height: 1.225em;
@@ -13,7 +13,7 @@
     width: 100%;
     margin-bottom: 20px;
   }
-  #cyber-security-introduction .section-top .head-slogan {
+  #data-analytics-introduction .section-top .head-slogan {
     line-height: 1.56em;
     font-size: 1.5rem;
     font-weight: 400;
@@ -22,17 +22,17 @@
     color: rgb(70, 63, 63);
   }
 
-  #cyber-security-services {
+  #data-analytics-services {
     padding: 50px 0 50px 0;
     background-color: rgb(253, 252, 252);
   }
-  #cyber-security-services .section {
+  #data-analytics-services .section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
-  #cyber-security-services .head-title {
+  #data-analytics-services .head-title {
     font-size: 3.2rem;
     font-weight: 600;
     line-height: 1.225em;
@@ -43,8 +43,15 @@
     margin-bottom: 30px;
   }
 
+  .data_analytics-service-data {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    align-items: stretch !important;
 
-  #cyber-security-services .cloud-automation {
+  }
+
+  #data-analytics-services .cloud-automation {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 60px;
@@ -52,45 +59,78 @@
     align-items: center;
   }
 
-  #cyber-security-services .cyber-security-important {
+  #data-analytics-services .data-gap {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    grid-gap: 8px;
+
+  }
+
+
+ 
+
+  #data-analytics-services .cyber-security-important {
     border-radius: 20px;
   }
-  #cyber-security-services .cybersecurity-img {
+  #data-analytics-services .cybersecurity-img {
    
         width: 100%;
         object-fit: cover;
   }
 
-  #cyber-security-services {
+  #data-analytics-services {
     padding: 50px 0 50px 0;
     background-color: rgb(253, 252, 252);
   }
-  #cyber-security-services .section {
+  #data-analytics-services .section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
-  #cyber-security-services .section .tab-icon {
+  #data-analytics-services .section .tab-icon {
     width: 50px;
     height: 50px;
     aspect-ratio: 1;
   }
-  #cyber-security-services .cloud-heading {
+  #data-analytics-services .cloud-heading {
     font-size: 2.2rem;
     color: #000000;
   }
 
-  #cyber-security-services .cloud-title {
+  #data-analytics-services .cloud-title {
     font-size: 1.6rem;
     font-weight: 400;
   }
 
-  #expert-cyber-security-services{
+  #expert-data-analytics-services{
     padding: 50px 0 50px 0;
   }
 
-  #expert-cyber-security-services .header_title{
+  #expert-data-analytics-services .data-analytics-powerbi{
+     aspect-ratio: 0.8;
+  }
+
+  #expert-data-analytics-services .gallery-image-text {
+     display: flex;
+     flex-direction: column;
+     grid-row-gap: 20px;
+  }
+
+  #expert-data-analytics-services .data-analytics-powerbi img{
+
+    max-width: 100%;
+    object-fit: contain;
+    height: 100%;
+ }
+
+  #expert-data-analytics-services .header_title{
     font-size: 3.2rem;
     font-weight: 600;
     line-height: 1.225em;
@@ -101,24 +141,25 @@
     margin-bottom: 20px;
   }
 
-  #expert-cyber-security-services .cloud-title {
+  #expert-data-analytics-services .cloud-title {
     font-size: 1.6rem;
     font-weight: 400;
   }
 
-  #expert-cyber-security-services .section-box {
+  #expert-data-analytics-services .section-box {
     
-    display: grid;
-    grid-template-columns: 0.7fr 1fr;
-    grid-gap: 40px;
+    padding-top: 50px;
+    display:grid;
+    grid-template-columns:1fr 0.8fr 1fr;
+    grid-gap:40px;
   }
 
-  #expert-cyber-security-services .heading_title {
+  #expert-data-analytics-services .heading_title {
     font-size: 2rem;
     font-weight: 500;
   }
 
-  #expert-cyber-security-services .counting {
+  #expert-data-analytics-services .counting {
     padding: 8px 26px;
     background-color: #27286d;
     width: fit-content;
@@ -127,13 +168,13 @@
     color: #fff;
   }
 
-  #expert-cyber-security-services .cloudservice_title {
+  #expert-data-analytics-services .cloudservice_title {
     display: flex;
     align-items: start;
     gap:14px
   }
 
-  #expert-cyber-security-services .cloudservice_details {
+  #expert-data-analytics-services .cloudservice_details {
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-gap: 20px;
@@ -141,12 +182,34 @@
    padding-bottom: 24px;
   }
 
-  #expert-cyber-security-services .cloudservice_data {
+  #expert-data-analytics-services .cloudservice_data {
     display: grid;
     grid-gap: 20px;
 
   }
+
+  #enterprise-data-analytics .data-driven {
+
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-gap: 20px;
+
+  }
+
+  #enterprise-data-analytics .enterprise-data {
+
+    background: linear-gradient(to right, #27286d, #090924);
+    border-radius: 8px;
+    padding:40px;
+    color: #fff;
+  }
   
+  #enterprise-data-analytics .list-data {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
   #cyber-security-tools {
     padding: 50px 0 30px 0;
     width: 100%;
@@ -192,45 +255,61 @@
  
   
   @media screen and (max-width: 768px) {
-    #cyber-security-introduction {
+
+  
+    #data-analytics-services .data_analytics-service-data {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      align-items: stretch !important;
+  
+    }
+
+    #enterprise-data-analytics .data-driven-enterprise {
+     padding-block: 16px;
+    }
+
+    #data-analytics-introduction {
       padding: 30px 0 30px 0;
     }
-    #cyber-security-introduction .section-top .head-title {
+    #data-analytics-introduction .section-top .head-title {
       font-size: 22px;
       width: 100%;
       margin-bottom: 25px;
     }
-    #cyber-security-introduction .section-top .head-slogan {
+    #data-analytics-introduction .section-top .head-slogan {
       text-align: justify;
     }
 
-    #expert-cyber-security-services .section-box {
-    
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 30px;
-    }
 
-    #expert-cyber-security-services .cloudservice_details {
+    #expert-data-analytics-services .cloudservice_details {
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 20px;
 
      }
 
-    #cyber-security-services {
+     #expert-data-analytics-services .section-box {
+       
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-top: 30px;
+
+     }
+
+
+    #data-analytics-services {
         padding: 30px 0px !important;
     }
-    #cyber-security-services .section {
+    #data-analytics-services .section {
       flex-direction: column-reverse;
     }
-    #cyber-security-services .section-box {
+    #data-analytics-services .section-box {
         padding-bottom: 20px;
       }
 
-      
 
-      #cyber-security-services .cloud-automation {
+      #data-analytics-services .cloud-automation {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 20px;
@@ -239,28 +318,28 @@
 
     
        
-      #cyber-security-services .section-box .left {
+      #data-analytics-services .section-box .left {
         display: flex;
         align-items: center;
         gap: 20px;
       }
    
-      #cyber-security-services .section {
+      #data-analytics-services .section {
         flex-direction: column-reverse;
       }
-      #cyber-security-services .section .left {
+      #data-analytics-services .section .left {
         width: 100%;
       }
-      #cyber-security-services .section .right {
+      #data-analytics-services .section .right {
         width: 100%;
         margin-bottom: 20px;
       }
-      #cyber-security-services {
+      #data-analytics-services {
         padding: 30px 0 30px 0;
         background-color: rgb(253, 252, 252);
       }
    
-      #cyber-security-services .head_title {
+      #data-analytics-services .head_title {
         font-size: 2.5rem !important;
      }
      

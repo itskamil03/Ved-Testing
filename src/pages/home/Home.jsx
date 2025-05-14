@@ -1239,6 +1239,55 @@ function Home({ target, label }) {
                 </div>
               </div>
 
+              <div className="lifeatvedthird-section-body-home">
+                <div className="lifeatvedthird-section-bodybox">
+                  <div className="lifeatvedthird-section-body-home-img">
+                    <img
+                      src="icons/finance-data.jpg"
+                      alt="finance-training"
+                      className="w-100 h-100"
+                      loading="eager" fetchpriority="high"
+                    />
+                  </div>
+                  <div className="lifeatvedthird-section-body-content mt-3">
+                    <p>Finance Training Courses Consist of key areas like Financial Analysis, Investment Strategies, Accounting Principles, Risk Management, and Portfolio Optimization.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="lifeatvedthird-section-body-home">
+                <div className="lifeatvedthird-section-bodybox">
+                  <div className="lifeatvedthird-section-body-home-img">
+                    <img
+                      src="icons/hr-data.jpg"
+                      alt="hr-training"
+                      className="w-100 h-100"
+                      loading="eager" fetchpriority="high"
+                    />
+                  </div>
+                  <div className="lifeatvedthird-section-body-content mt-3">
+                    <p>HR Training Courses consist of key areas like Talent Acquisition, Employee Engagement, Performance Management, HR Analytics.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="lifeatvedthird-section-body-home">
+                <div className="lifeatvedthird-section-bodybox">
+                  <div className="lifeatvedthird-section-body-home-img">
+                    <img
+                      src="icons/marketing-data.jpg"
+                      alt="marketing & sales-training"
+                      className="w-100 h-100"
+                      loading="eager" fetchpriority="high"
+                    />
+                  </div>
+                  <div className="lifeatvedthird-section-body-content mt-3">
+                    <p>Marketing & Sales Training Courses consist of key areas like Digital Marketing, SEO, Social Media Strategies, Content Creation, and Sales Funnel Optimization.</p>
+                  </div>
+                </div>
+              </div>
+
+
             </Slider>
           </div>
         </div>

@@ -46,7 +46,7 @@ function AIML() {
             <div className="section">
               
               <div className="head-title">
-              AI Development Services We Provide at venturing digitally
+              AI/ML Development Services We Provide at venturing digitally
               </div>
 
             <div className="row g-5">
@@ -112,6 +112,56 @@ function AIML() {
                 </div>
               </div>
              </div>
+
+             <div className="col-md-4 col-lg-4 col-sm-6">
+              <div className="development">
+                <div className="solution-item">
+                  <img loading="eager" fetchpriority="high"
+                    src="image/ai/ml_model_dev.jpeg"
+                    alt="ML Model Development"
+                    className="w-100 h-100"
+                  />
+                </div>
+                <div className="ai-head">
+                  <div className="ai-heading">ML Model Development</div>
+                  <div className="ai-title">Design, train, and deploy machine learning models tailored to your business use cases using supervised and unsupervised learning techniques.</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4 col-lg-4 col-sm-6">
+              <div className="development">
+                <div className="solution-item">
+                  <img loading="eager" fetchpriority="high"
+                    src="image/ai/nlp.webp"
+                    alt="Natural Language Processing"
+                    className="w-100 h-100"
+                  />
+                </div>
+                <div className="ai-head">
+                  <div className="ai-heading">Natural Language Processing</div>
+                  <div className="ai-title">Leverage NLP to extract insights, analyze sentiment, and build intelligent chatbots that improve user experience and operational efficiency.</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4 col-lg-4 col-sm-6">
+              <div className="development">
+                <div className="solution-item">
+                  <img loading="eager" fetchpriority="high"
+                    src="image/ai/data_engineering.avif"
+                    alt="Data Engineering & Model Training"
+                    className="w-100 h-100"
+                  />
+                </div>
+                <div className="ai-head">
+                  <div className="ai-heading">Data Engineering & Model Training</div>
+                  <div className="ai-title">Build strong ML foundations by collecting, preparing, and optimizing data pipelines to train high-performance models with precision and scalability.</div>
+                </div>
+              </div>
+            </div>
+
+
              </div>
 
             </div>
@@ -124,7 +174,7 @@ function AIML() {
           <div className="container">
             <div className="section-top">
               <div className="head-title">
-              Our AI Development Process
+              Our AI/ML Development Process
               </div>
               <div className="head-slogan page_title">
               We ensure cost-effective AI development by leveraging a team of professionals
@@ -202,7 +252,7 @@ function AIML() {
         <div className="section-top">
           <div className="head-slogan page_title">
             <p>
-             Why AI is Essential for Your Software Development?
+             Why AI/ML is Essential for Your Software Development?
             </p>
           </div>
           <div className="head-btn">
