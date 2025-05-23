@@ -22,6 +22,8 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 function Home({ target, label }) {
+
+
   const [selectedTab, setSelectedTab] = useState("tab1");
   const [blogs, setBlogs] = useState();
   // <---tab--->
@@ -32,6 +34,8 @@ function Home({ target, label }) {
   const navigate = useNavigate();
 
   const [loading, setLoading] = useState(true)
+
+  const [loadingData, setLoadingData] = useState(false)
 
   useEffect(() => {
     if (loading) {
@@ -47,6 +51,7 @@ function Home({ target, label }) {
           setBlogs(resp.data);
         });
       });
+      setLoadingData(true)
       setLoading(false)
     }
   }, [loading]);
@@ -56,6 +61,23 @@ function Home({ target, label }) {
 
 
   const targets = [80, 11, 10, 110];
+
+  const [events, setEvents] = useState([]);
+
+
+
+  useEffect(() => {
+    if (loading) {
+      fetch("https://ved.venturingdigitally.com/api/events", {
+        method: "GET",
+      }).then((result) => {
+        result.json().then((resp) => {
+          setEvents(resp.data);
+        });
+      });
+      setLoading(false)
+    }
+  }, [loading]);
 
 
 
@@ -220,36 +242,7 @@ function Home({ target, label }) {
     ],
   };
 
-  const eventsData = [
-    {
-      id: 1,
-      category: "Seminar",
-      title: "Seminar on software development process with integration of Power BI",
-      image: "/events/srinathcollege_seminar.jpeg",
-      date: "Mar 11 2025",
-      description:
-        "We successfully conducted an insightful seminar on software development process with integration of power bi at Srinath University, Jamshedpur, aimed at educating students about building industry-level websites.",
-    },
-    {
-      id: 2,
-      category: "Press News",
-      title: "Newspaper for hands-on workshop on Power BI",
-      image: "/events/karimcity_newsevent.jpeg",
-      date: "Mar 09 2025",
-      description:
-        "The successful seminar at Karim City College was covered in major newspapers, highlighting its impact on students and the local tech community. Industry experts shared insights on modern web technologies and career opportunities",
-    },
-    {
-      id: 3,
-      category: "Seminar",
-      title: "Seminar on Cloud at  Venturing digitally with Karim City College",
-      image: "/events/karimcity_seminar.jpeg",
-      date: "Mar 08 2025",
-      description:
-        "This event provided in-depth knowledge about modern web technologies, best practices in the IT industry, and the latest trends in web development. Students gained hands-on experience with latest technologies"
-    },
-
-  ];
+ 
 
 
   const [showAll, setShowAll] = useState(false);
@@ -572,6 +565,46 @@ function Home({ target, label }) {
                     </label>
                   </div>
 
+                  <div className={`tab ${selectedTab === "tab7" ? "active" : ""}`}>
+                    <input
+                      type="radio"
+                      name="css-tabs"
+                      id="tab-7"
+                      className="tab-switch"
+                      value="tab7"
+                      checked={selectedTab === "tab7"}
+                      onChange={handleTabChange}
+                    />
+                    <label htmlFor="tab-7" className="tab-label">
+                      <img style={{margin: "auto"}}
+                        src="images/icon/cyber-security.png"
+                        alt="Cyber security"
+                        loading="eager" fetchpriority="high"
+                      />
+                      <h6 style={{margin: "auto"}}>Cyber Securtiy</h6>
+                    </label>
+                  </div>
+
+                  <div className={`tab ${selectedTab === "tab8" ? "active" : ""}`}>
+                    <input
+                      type="radio"
+                      name="css-tabs"
+                      id="tab-8"
+                      className="tab-switch"
+                      value="tab8"
+                      checked={selectedTab === "tab8"}
+                      onChange={handleTabChange}
+                    />
+                    <label htmlFor="tab-8" className="tab-label">
+                      <img style={{margin: "auto"}}
+                        src="images/icon/analytics.png"
+                        alt="Cyber security"
+                        loading="eager" fetchpriority="high"
+                      />
+                      <h6 style={{margin: "auto"}}>Data Analytics</h6>
+                    </label>
+                  </div>
+
 
                 </div>
 
@@ -806,6 +839,84 @@ function Home({ target, label }) {
                             "Security & Compliance",
                             "Automated Testing",
                             "Site Reliability Engineering"
+                          ].map((service, index) => (
+                            <div key={index} className="col-lg-6 col-md-6">
+                              <div className="tab-box">
+                                <div className="tab-icon">
+                                  <img
+                                    src="images/icon/check.png"
+                                    alt={service}
+                                    className="w-100 h-100"
+                                    loading="eager" fetchpriority="high"
+                                  />
+                                </div>
+                                <h5 className="tab-name">{service}</h5>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+               {selectedTab === "tab7" && (
+                    <div className="tab-content">
+                      <div className="info">
+                      Building a secure and scalable digital infrastructure with advanced cybersecurity practices. From threat detection to secure cloud deployment, we protect your business while enabling growth.
+                      </div>
+                      <div className="tab-grid">
+                        <div className="tab-grid-head">
+                          <div>Service Included</div>
+                        </div>
+                        <div className="row">
+                          {[
+                            "Threat Detection & Prevention",
+                            "Vulnerability Management",
+                            "Identity & Access Management (IAM)",
+                            "Security Information and Event Management (SIEM)",
+                            "Data Encryption & Privacy",
+                            "Incident Response & Forensics",
+                            "Regulatory Compliance & Auditing",
+                            "Security Automation & Orchestration"
+                          ].map((service, index) => (
+                            <div key={index} className="col-lg-6 col-md-6">
+                              <div className="tab-box">
+                                <div className="tab-icon">
+                                  <img
+                                    src="images/icon/check.png"
+                                    alt={service}
+                                    className="w-100 h-100"
+                                    loading="eager" fetchpriority="high"
+                                  />
+                                </div>
+                                <h5 className="tab-name">{service}</h5>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                     
+                     {selectedTab === "tab8" && (
+                    <div className="tab-content">
+                      <div className="info">
+                      Building a scalable and insightful digital infrastructure with advanced data analytics practices. From data collection to predictive modeling, we empower your business with actionable insights that drive growth.
+                      </div>
+                      <div className="tab-grid">
+                        <div className="tab-grid-head">
+                          <div>Service Included</div>
+                        </div>
+                        <div className="row">
+                          {[
+                            "Data Collection & Integration",
+                            "Data Cleaning & Preparation",
+                            "Exploratory Data Analysis",
+                            "Statistical Modeling & Inference",
+                            "Data Visualization",
+                            "Predictive Analytics & Machine Learning",
+                            "Big Data Technologies",
+                            "Reporting & Dashboarding"
                           ].map((service, index) => (
                             <div key={index} className="col-lg-6 col-md-6">
                               <div className="tab-box">
@@ -1740,7 +1851,7 @@ function Home({ target, label }) {
 
                 <div className="blogesc-main">
 
-                  {eventsData.map((event) => (
+                  {loadingData && events.slice(0,4).map((event) => (
                     <Link className="bloges-card" key={event.id}>
                       <div className="events-card-img">
                         <img loading="eager" fetchpriority="high"

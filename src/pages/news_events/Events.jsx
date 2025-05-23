@@ -3,240 +3,38 @@ import ContactForm from "../../components/contact_form/ContactForm";
 import { Link, NavLink } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import NewsEventsHero from "../../components/events/NewsEvents";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Events() {
 
-//   const [blogs, setBlogs] = useState([]);
+  const [events, setEvents] = useState([]);
 
-//   useEffect(() => {
-//     fetch("https://ved.venturingdigitally.com/api/show_blog", {
-//       method: "POST",
-//       headers: {
-//         Accept: "application/json",
-//         "Content-Type": "application/json",
-//       },
-//     })
-//       .then((result) => result.json())
-//       .then((resp) => {
-//         setBlogs(resp.data);
+  const [loading, setLoading] =useState(false)
 
-//       });
-//   }, []);
+  useEffect(() => {
+    fetch("https://ved.venturingdigitally.com/api/events", {
+      method: "GET",
+    })
+      .then((result) => result.json())
+      .then((resp) => {
 
-//   const handleBlog=(blogId)=>
-//   {
-//      localStorage.setItem("blogId",blogId)
-//   }
+        setLoading(true)
+        setEvents(resp.data);
+
+      });
+  }, []);
+
 
   
 const [activeTab, setActiveTab] = useState("All");
 
 const tabs = ["All", "Seminar", "Interview", "Press News", "Events"];
 
-const eventsData = [
-  {
-    id: 1,
-    category: "Seminar",
-    title: "Seminar on software development process with integration of Power BI & Tableue",
-    image: "/events/srinathcollege_seminar.jpeg",
-    date: "Mar 11 2025",
-    description:
-      "We have successfully conducted an insightful seminar on software development process with integration of power BI and Tableau at Srinath University, Jamshedpur, aimed at educating students about building industry-level websitesand Data Analytics roles and responsiblity.",
-  },
-  {
-    id: 2,
-    category: "Press News",
-    title: "Newspaper for hands-on workshop on Next Js & Power BI",
-    image: "/events/karimcity_newsevent.jpeg",
-    date: "Mar 09 2025",
-    description:
-      "The successful seminar at Karim City College was covered in major newspapers, highlighting its impact on students and the local tech community. Industry experts shared insights on modern web technologies and career opportunities",
-  },
-  {
-    id: 3,
-    category: "Seminar",
-    title: "Seminar on Cloud (AWS) Deployment at  Venturing digitally for Karim City College students",
-    image: "/events/karimcity_seminar.jpeg",
-    date: "Mar 08 2025",
-    description:
-      "This event provided in-depth knowledge about modern web technologies with AWS and VPS server, best practices in the IT industry, and the latest trends in web development. Students gained hands-on experience with latest technologies"
-  },
-
-  {
-    id: 4,
-    category: "Seminar",
-    title: "Importance of Training & Internship awareness seminar for Jamshedpur Women's College students",
-    image: "/events/jamshedpur_womencollege_seminar.jpeg",
-    date: "Feb 25 2025",
-    description:
-      "Our institute hosted students from Jamshedpur Women’s University for an engaging seminar on Web Development, covering industry-level website development, modern web technologies, and career opportunities in the IT sector.",
-  },
-  {
-    id: 5,
-    category: "Press News",
-    title: "Coverage of Newspapaer for design thinking and AI/ML importance in software industry at co-operative college.",
-    image: "/events/co-operative_newspaper.jpeg",
-    date: "Feb 22 2025",
-    description:
-      "The successful seminar at Co-operative College was covered in major newspapers, highlighting its impact and the importance of web development skills in today's digital world.",
-  },
-  {
-    id: 6,
-    category: "Seminar",
-    title: "Seminar on Web Development at Cooperative College",
-    image: "/events/co-operativecollege_seminar.jpeg",
-    date: "Feb 21 2025",
-    description:
-      "This event provided in-depth knowledge about modern web technologies and best practices in the IT industry, helping students understand real-world applications and career opportunities.",
-  },
-  {
-    id: 7,
-    category: "Seminar",
-    title: "Web & Software Development Awareness Program",
-    image: "/events/events.jpeg",
-    date: "Dec 16 2024",
-    description:
-      "This event provided in-depth knowledge about modern web technologies, best practices in the IT industry, practical insights into career growth opportunities, and hands-on experience with real-world applications.",
-  },
-  {
-    id: 8,
-    category: "Events",
-    title: "Certificate distribution at karim city college for seminar participants to BCA students",
-    image: "/events/karimCity_BCA.jpeg",
-    date: "Mar 19 2025",
-    description:
-      "Certificates were distributed to BCA students at Karim City College for their participation in the seminar, recognizing their dedication and involvement. The event highlighted their commitment to learning and professional growth."
-  },
-
-  {
-    id: 9,
-    category: "Events",
-    title: "With Dr. Mohammad. Reyaz,Principal and HOD Computer Science at karim city college with workshop participants of BSC IT Students",
-    image: "/events/karimCitybsc_it.jpeg",
-    date: "Mar 19 2025",
-    description:
-      "Certificates were awarded to BSC IT students at Karim City College for their participation in the seminar, recognizing their dedication and efforts. The event celebrated their commitment to learning and skill enhancement.",
-  },
-  {
-    id: 10,
-    category: "Interview",
-    title: "Interview sessions with Srinath University 2nd semester Students",
-    image: "/events/2nd_year_interview.jpeg",
-    date: "March 18 2025",
-    description:
-      "Srinath University conducted interview sessions for 2nd-semester students, providing them with valuable industry insights and career opportunities. The sessions aimed to enhance their confidence and professional skills.",
-  },
-  {
-    id: 11,
-    category: "Interview",
-    title: "Interview session with Srinath University BCA 4th semester students",
-    image: "/events/4th_year_interview.jpeg",
-    date: "March 18 2025",
-    description:
-      "Srinath University conducted interview sessions for 4th-semester students, providing them with valuable industry insights and career opportunities. The sessions aimed to enhance their confidence and professional skills.",
-  },
-  {
-    id: 12,
-    category: "Events",
-    title: "Doubt session with BCA students of Srinath University students",
-    image: "/events/doubt_session_srinath.jpeg",
-    date: "March 18 2025",
-    description:
-      "A doubt-clearing session was conducted with BCA students of Srinath College, providing them with insights and solutions to their academic queries. The session aimed to enhance their understanding and boost their confidence",
-  },
-  {
-    id: 13,
-    category: "Seminar",
-    title: "Awarness Session on importance of Excel & Google sheet at institute for education",
-    image: "/events/awarnessSession.jpeg",
-    date: "Jan 12 2025",
-    description:
-      "This event provided in-depth knowledge about modern web technologies, best practices in the IT industry, and the latest trends in web development. Students gained hands-on experience with latest technologies"
-  },
-
-  {
-    id: 14,
-    category: "Events",
-    title: "Venturing Digitally at Adityapur Auto Cluster industrial expo",
-    image: "/events/industryVisit.jpeg",
-    date: "Jan 08 2025",
-    description:
-      "Our institute hosted students from Jamshedpur Women’s University for an engaging seminar on Web Development, covering industry-level website development, modern web technologies, and career opportunities in the IT sector.",
-  },
-  {
-    id: 15,
-    category: "Events",
-    title: "Practice Session on Next Js & Node Js with AI/ML integration",
-    image: "/events/practiceSession.jpeg",
-    date: "Feb 18 2025",
-    description:
-      "The successful seminar at Co-operative College was covered in major newspapers, highlighting its impact and the importance of web development skills in today's digital world.",
-  },
-  {
-    id: 16,
-    category: "Seminar",
-    title: "Practice Session on DevOps (AWS) by Venturing digitally team",
-    image: "/events/practiceDevOps.jpeg",
-    date: "Feb 27 2025",
-    description:
-      "This event provided in-depth knowledge about modern web technologies and best practices in the IT industry, helping students understand real-world applications and career opportunities.",
-  },
-  {
-    id: 17,
-    category: "Seminar",
-    title: "Session on Figma for students of Jamshedpur Women's University",
-    image: "/events/seminarFigma.jpeg",
-    date: "Feb 28 2025",
-    description:
-      "This event provided in-depth knowledge about modern web technologies, best practices in the IT industry, practical insights into career growth opportunities, and hands-on experience with real-world applications.",
-  },
-  {
-    id: 18,
-    category: "Seminar",
-    title: "Session on Node js and learn how to integrate API in frontend",
-    image: "/events/seminarNodejs.jpeg",
-    date: "Mar 05 2025",
-    description:
-      "Certificates were distributed to BCA students at Karim City College for their participation in the seminar, recognizing their dedication and involvement. The event highlighted their commitment to learning and professional growth."
-  },
-
-  {
-    id:19,
-    category: "Seminar",
-    title: "Workshop on Aptitude & GD for placements",
-    image: "/events/englishSession.jpeg",
-    date: "Mar 04 2025",
-    description:
-      "Certificates were awarded to BSC IT students at Karim City College for their participation in the seminar, recognizing their dedication and efforts. The event celebrated their commitment to learning and skill enhancement.",
-  },
-  {
-    id: 20,
-    category: "Press News",
-    title: "Practical Learning in an IT Software Industry",
-    image: "/events/newsPaperLinkEnglish.jpeg",
-    link:"https://avenuemail.in/workshop-on-internship-opportunities-at-karim-city-college-jamshedpur/",
-    date: "March 06 2025",
-    description:
-      "Srinath University conducted interview sessions for 2nd-semester students, providing them with valuable industry insights and career opportunities. The sessions aimed to enhance their confidence and professional skills.",
-  },
-  {
-    id: 21,
-    category: "Press News",
-    title: "Hands-on IT Software Training Empowers Participants",
-    image: "/events/newsPaperLinkHindi.jpeg",
-    link:"https://www.livehindustan.com/jharkhand/jamshedpur/story-kareem-city-college-hosts-workshop-on-internship-selection-with-industry-experts-201741252658972.amp.html",
-    date: "March 06 2025",
-    description:
-      "Srinath University conducted interview sessions for 4th-semester students, providing them with valuable industry insights and career opportunities. The sessions aimed to enhance their confidence and professional skills.",
-  },
-
-];
 
 const filteredEvents =
 activeTab === "All"
-  ? eventsData
-  : eventsData.filter((events) => events.category === activeTab);
+  ? events
+  : events.filter((events) => events.category === activeTab);
 
 const handletab=(tab)=>
 {
@@ -288,7 +86,7 @@ const handletab=(tab)=>
 
             <div className="blogesc-main">
                   
-            {filteredEvents.map((event) => (
+            {loading && (filteredEvents.length!==0? (filteredEvents.map((event) => (
           <div className="bloges-card" key={event.id}>
             <div className="events-card-img">
               <img loading="eager" fetchpriority="high"
@@ -315,7 +113,13 @@ const handletab=(tab)=>
               <div className="event-description">{event.description}</div>
             </div>
           </div>
-        ))}
+        )))
+        :
+         <>
+            <div className="head_title">No data found</div>
+         </>
+      )
+      }
             
             </div>
           </div>

@@ -47,6 +47,24 @@ function LifeAtVed() {
 
   const [solutions, setSolutions] = useState([])
 
+
+  const [events, setEvents] = useState([]);
+
+  const [loading, setLoading] =useState(false)
+
+  useEffect(() => {
+    fetch("https://ved.venturingdigitally.com/api/events", {
+      method: "GET",
+    })
+      .then((result) => result.json())
+      .then((resp) => {
+
+        setLoading(true)
+        setEvents(resp.data);
+
+      });
+  }, []);
+
   const formemories = {
     responsiveClass: true,
     nav: true,
@@ -87,7 +105,7 @@ function LifeAtVed() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -97,7 +115,7 @@ function LifeAtVed() {
       {
         breakpoint: 1024, 
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -459,123 +477,27 @@ function LifeAtVed() {
             </div>
         
               <Slider {...settingsdata} className="owl-theme"   margin={20}>
-           
-              <div className="lifeatvedthird-section-body">
-                <div className="lifeatvedthird-section-bodybox">
-                  <div className="lifeatvedthird-section-body-img">
-                    <img
-                      src="/events/srinathcollege_seminar.jpeg"
-                      alt="srinathcollege_seminar"
-                      className="w-100 h-100"
-                  loading="eager" fetchpriority="high"
-                    />
-                  </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <div className="image_title">Seminar on Software Development Conducted at Srinath University.</div>
-                  </div>
-                </div>
-              </div>
-
- 
-              <div className="lifeatvedthird-section-body">
-                <div className="lifeatvedthird-section-bodybox">
-                  <div className="lifeatvedthird-section-body-img">
-                    <img
-                      src="/events/karimcity_newsevent.jpeg"
-                      alt="karimcity_newsevent"
-                      className="w-100 h-100"
-                      loading="eager" fetchpriority="high"
-                
-                    />
-                  </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <div className="image_title">Coverage on Seminar in Newspapers.</div>
-                  </div>
-                </div>
-              </div>
 
       
+              {loading && (events.slice(0,7).map((event) => (
+
               <div className="lifeatvedthird-section-body">
-                <div className="lifeatvedthird-section-bodybox">
-                  <div className="lifeatvedthird-section-body-img">
-                    <img
-                      src="/events/karimcity_seminar.jpeg"
-                      alt="karimcity_seminar"
-                      className="w-100 h-100"
-                loading="eager" fetchpriority="high"
-                    />
-                  </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <div className="image_title">Seminar on Web Development at Karim City College.</div>
-                  </div>
+              <div className="lifeatvedthird-section-bodybox">
+                <div className="lifeatvedthird-section-body-img">
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                  className="w-100 h-100"
+                  loading="eager" fetchpriority="high"
+                  />
+                </div>
+                <div className="lifeatvedthird-section-body-content mt-3">
+                  <div className="image_title">{event.title}</div>
                 </div>
               </div>
-
+              </div>
         
-              <div className="lifeatvedthird-section-body">
-                <div className="lifeatvedthird-section-bodybox">
-                  <div className="lifeatvedthird-section-body-img">
-                    <img
-                      src="/events/jamshedpur_womencollege_seminar.jpeg"
-                      alt="jamshedpur_womencollege_seminar"
-                      className="w-100 h-100"
-                   loading="eager" fetchpriority="high"
-                    />
-                  </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <div className="image_title">Web Development Awareness Seminar for Jamshedpur Women’s University Students.</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="lifeatvedthird-section-body">
-                <div className="lifeatvedthird-section-bodybox">
-                  <div className="lifeatvedthird-section-body-img">
-                    <img
-                      src="/events/co-operative_newspaper.jpeg"
-                      alt="co-operative_newspaper"
-                      className="w-100 h-100"
-                    loading="eager" fetchpriority="high"
-                    />
-                  </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <div className="image_title">Coverage on Seminar in Newspapers.</div>
-                  </div>
-                </div>
-              </div>
-             
-              <div className="lifeatvedthird-section-body">
-                <div className="lifeatvedthird-section-bodybox">
-                  <div className="lifeatvedthird-section-body-img">
-                    <img
-                      src="/events/co-operativecollege_seminar.jpeg"
-                      alt="co-operativecollege_seminar"
-                      className="w-100 h-100"
-               loading="eager" fetchpriority="high"
-                    />
-                  </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <div className="image_title">Seminar on Web Development at Cooperative College.</div>
-                  </div>
-                </div>
-              </div>
-
-               
-              <div className="lifeatvedthird-section-body">
-                <div className="lifeatvedthird-section-bodybox">
-                  <div className="lifeatvedthird-section-body-img">
-                    <img
-                      src="/events/events.jpeg"
-                      alt="events"
-                      className="w-100 h-100"
-               loading="eager" fetchpriority="high"
-                    />
-                  </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <div className="image_title">Web Development Awareness Program.</div>
-                  </div>
-                </div>
-              </div>
+        )))}
         
             </Slider>
           </div>
