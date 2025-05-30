@@ -136,13 +136,13 @@ function SchoolCollage() {
                 />
               </div>
               </div>
-              <div className="section">
+       
               <div className="right">
               <div class="text-box">
               School & College Management System simplifies academic and administrative operations by automating student enrollment, attendance, and performance tracking. It ensures efficient timetable scheduling, fee management, and exam monitoring to enhance institutional productivity. With parent-teacher communication, library management, and e-learning integration, educational institutions can improve engagement and learning outcomes. Integration with LMS, accounting software, and student portals ensures seamless operations and data synchronization. Cloud-based systems provide remote access, data security, and real-time updates for effective management. Implementing School & College Management Software enhances efficiency, reduces paperwork, and improves student performance tracking. It also automates routine tasks, ensuring better compliance and institutional growth. A well-structured system fosters better collaboration, streamlined administration, and an improved learning experience.
                 </div>
             </div>
-            </div>
+          
             </div>
           </div>
         </div>
@@ -659,15 +659,15 @@ function SchoolCollage() {
             </div>
 
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
                       <img loading="eager" fetchpriority="high"
                         src="image/solution/request-demo.png"
                         alt="..."
-                        className="w-75 h-auto"
-                         
+                        className="w-100 h-auto"
+                        style={{aspectRatio:1.25}}
                       />
                     </div>
                   </div>

@@ -215,3 +215,13 @@
     background: var(--aux-color);
     border-color: darken(var(--aux-color), 10%);
 }
+
+@media screen and (max-width: 768px) {
+    .project-title {
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: "sans-serif", sans-serif;
+    text-align: center;
+}
+}

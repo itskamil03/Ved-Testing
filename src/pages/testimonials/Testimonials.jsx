@@ -24,7 +24,7 @@ function Testimonials() {
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6">
                   <div className="left-box">
                     <div className="title">Why we are different?</div>

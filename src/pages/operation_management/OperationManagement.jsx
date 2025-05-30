@@ -184,6 +184,8 @@ function OperationManagement() {
         src="image/operation-management/operation.jpeg"
       />
 
+        
+
       <section id="solution">
           <div className="container-fluid">
             <div className="container">
@@ -200,14 +202,15 @@ function OperationManagement() {
                    
                 />
               </div>
+            
               </div>
-              <div className="section">
+            
               <div className="right">
               <div class="text-box">
               Operation Management Software optimizes business processes by streamlining workflows, resource allocation, and performance tracking. It ensures efficient task management, real-time monitoring, and automated reporting to enhance productivity. With inventory control, workforce scheduling, and compliance tracking, businesses can minimize errors and improve efficiency. Integration with ERP, CRM, and financial systems ensures seamless operations and data synchronization. Cloud-based solutions provide remote access, scalability, and secure data management for operational excellence. Implementing Operation Management Software enhances efficiency, reduces costs, and improves decision-making. It also automates routine processes, ensuring consistency and faster execution of tasks. A well-structured system fosters better collaboration, optimized resource utilization, and overall business growth.
                 </div>
             </div>
-            </div>
+   
             </div>
           </div>
         </div>
@@ -459,7 +462,7 @@ function OperationManagement() {
                         src="crm.jpeg"
                         alt="..."
                         className="w-75 h-auto"
-                         
+                          style={{aspectRatio:1.25}}
                       />
                     </div>
                   </div>

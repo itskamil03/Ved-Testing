@@ -430,26 +430,26 @@ function WebPortal() {
       </section>
 
 
-       <section id="health">
+      <section id="health">
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
                       <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
-                        className="w-100 h-100"
+                        className="w-100 h-auto"
                         style={{aspectRatio:1.25}}
-                         
                       />
                     </div>
                   </div>
                 </div>
 
-                <div className="col-lg-6">
+            
+                <div className="col-lg-6 ">
                   <div className="health-content">
                     <div className="form-container">
                       <div className="form-header">

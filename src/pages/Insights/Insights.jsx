@@ -83,21 +83,21 @@ function Insights() {
               </div>
               <div className="content-block">
                 <div className="item">
-                  <div className="number"></div>
+                  <div className="number">1</div>
                   <div className="data">
                     Our portfolio boasts an impressive track record of over 80+
                     developed websites.
                   </div>
                 </div>
                 <div className="item">
-                  <div className="number"></div>
+                  <div className="number">2</div>
                   <div className="data">
                     With expertise in app development, we have successfully
                     delivered more than 11+ innovative mobile applications.
                   </div>
                 </div>
                 <div className="item">
-                  <div className="number"></div>
+                  <div className="number">3</div>
                   <div className="data">
                     Our team has contributed to the development of 10+
                     cutting-edge software solutions.
@@ -140,7 +140,7 @@ function Insights() {
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6">
                   <div className="content-block">
                     <div className="head">Our Success Story</div>

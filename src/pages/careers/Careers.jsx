@@ -217,7 +217,7 @@ export default function Careers() {
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6">
                   <div className="career-img"> 
                     <img loading="eager" fetchpriority="high"
@@ -330,7 +330,7 @@ export default function Careers() {
               </div>
             </div>
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6">
                   <div className="job-steps">
                     <div className="step">

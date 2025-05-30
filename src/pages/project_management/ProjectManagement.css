@@ -96,12 +96,13 @@
 .prosecond-why-card {
   box-shadow: 0 20px 15px #afafaf4d;
   padding: 20px;
-  margin-bottom: 20px;
   cursor: pointer;
   border-top: 4px solid #3692f2;
   border-radius: 10px;
   min-height: auto;
   background: white;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .prosecond-why-card .prosecond-title {

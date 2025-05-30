@@ -215,12 +215,11 @@ function Cms() {
                 />
               </div>
               </div>
-              <div className="section">
+             
               <div className="right">
               <div class="text-box">
               CMS (Content Management System) Software enables businesses to create, manage, and publish digital content efficiently. It ensures user-friendly content editing, media management, and workflow automation for seamless website updates. With SEO optimization, role-based access control, and version management, organizations can maintain content quality and security. Integration with e-commerce, analytics, and third-party plugins enhances functionality and scalability. Cloud-based CMS provides remote accessibility, real-time collaboration, and secure data storage for efficient content management. Implementing CMS Software improves productivity, enhances user engagement, and streamlines website operations. It also supports multi-language content, customizable templates, and AI-driven recommendations. A well-structured CMS fosters brand consistency, digital growth, and seamless user experience.
                 </div>
-            </div>
             </div>
             </div>
           </div>
@@ -360,25 +359,26 @@ function Cms() {
       </section>
 
       {/* <------------- contact form -----------> */}
-      <section id="health">
+       <section id="health">
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
                       <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
-                        className="w-75 h-auto"
-                         
+                        className="w-100 h-auto"
+                        style={{aspectRatio:1.25}}
                       />
                     </div>
                   </div>
                 </div>
 
-                <div className="col-lg-6">
+            
+                <div className="col-lg-6 ">
                   <div className="health-content">
                     <div className="form-container">
                       <div className="form-header">
@@ -387,10 +387,10 @@ function Cms() {
 
                       <form onSubmit={handleSubmit}>
                         <div
-                          className="form-input-new"
+                          className="row form-input-mobile-view"
                           style={{ paddingBottom: "0px" }}
                         >
-                          <div className="col-lg-6">
+                          <div className="col-lg-6 padding-0">
                             <div className="left-placeholder">
                               <input
                                 type="text"
@@ -411,7 +411,7 @@ function Cms() {
                                 placeholder="Title/Position*"
                                 value={formData.title}
                                 onChange={handleInputChange}
-                               required
+                                required
                               />
                             </div>
 
@@ -450,12 +450,12 @@ function Cms() {
                               />
                             </div>
                           </div>
-                          <div className="col-lg-6">
-                            <div className="left-placholder">
+                          <div className="col-lg-6 padding-0">
+                            <div className="right-placholder">
                               <input
                                 type="text"
                                 name="last_name"
-                                className="form-control fs-3 first-input"
+                                className="form-control fs-3 second-input"
                                 placeholder="Last Name*"
                                 value={formData.last_name}
                                 onChange={handleInputChange}
@@ -513,7 +513,7 @@ function Cms() {
                         </div>
                         <div
                           className="form-input-new"
-                          style={{ padding: "0px 4px 0px 15px" }}
+                          style={{ padding: "0px" }}
                         >
                           <div className="col-lg-12">
                             <div className="email-placholder">
@@ -529,12 +529,13 @@ function Cms() {
                             </div>
 
                             <div>
-                              <label
+                            <label
                                 style={{
                                   display: "flex",
                                   gridColumnGap: "8px",
                                   alignItems: "start",
                                   fontSize: "12px",
+                                   paddingTop:"10px"
                                 }}
                               >
                                   <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />

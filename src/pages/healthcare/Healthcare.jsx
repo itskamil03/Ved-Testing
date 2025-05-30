@@ -144,7 +144,7 @@ function Healthcare() {
             </div>
 
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6 health-data">
                   <div className="health-content">
                     <div className="content-data">
@@ -182,7 +182,7 @@ function Healthcare() {
 
             {/* <------------------------------------------------> */}
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6 health-img-second">
                   <div className="health-media2">
                     <div className="health-video-second">

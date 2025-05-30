@@ -283,6 +283,11 @@
   }
 }
 @media screen and (max-width: 576px) {
+
+  #lifeatvedfirst .lifeatvedfirst-section-head .lifeatvedfirst-head-title {
+    font-size: 2.5rem;
+  }
+
   #lifeatvedfirst {
     padding: 2.5px 0px;
   }

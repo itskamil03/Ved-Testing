@@ -371,7 +371,7 @@ function DocumentManagement() {
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">

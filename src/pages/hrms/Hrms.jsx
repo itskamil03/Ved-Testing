@@ -228,12 +228,11 @@ function Hrms() {
                 />
               </div>
               </div>
-              <div className="section">
+          
               <div className="right">
               <div class="text-box">
               HRMS (Human Resource Management System) Software streamlines HR processes by automating employee management, payroll, and performance tracking. It ensures efficient recruitment, attendance monitoring, and compliance management to enhance workforce productivity. With self-service portals, benefits administration, and real-time analytics, businesses can optimize HR operations and employee engagement. Integration with payroll systems, time tracking, and learning management tools enhances efficiency and accuracy. Cloud-based HRMS provides remote access, data security, and scalability for seamless HR management. Implementing HRMS Software improves efficiency, reduces administrative workload, and enhances employee satisfaction. It also automates routine HR tasks, ensuring better compliance and decision-making. A well-structured HRMS fosters organizational growth, talent retention, and workforce optimization
                 </div>
-            </div>
             </div>
             </div>
           </div>
@@ -397,7 +396,7 @@ function Hrms() {
                     src={ctacrmservices}
                     alt="..."
                     className="w-100 h-100"
-                     
+                      style={{aspectRatio:1.25}}
                   />
                 </div>
               </div>
@@ -406,11 +405,11 @@ function Hrms() {
         </div>
       </section>
 
-      <section id="health">
+       <section id="health">
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
@@ -424,7 +423,8 @@ function Hrms() {
                   </div>
                 </div>
 
-                <div className="col-lg-6">
+            
+                <div className="col-lg-6 ">
                   <div className="health-content">
                     <div className="form-container">
                       <div className="form-header">
@@ -433,10 +433,10 @@ function Hrms() {
 
                       <form onSubmit={handleSubmit}>
                         <div
-                          className="form-input-new"
+                          className="row form-input-mobile-view"
                           style={{ paddingBottom: "0px" }}
                         >
-                          <div className="col-lg-6">
+                          <div className="col-lg-6 padding-0">
                             <div className="left-placeholder">
                               <input
                                 type="text"
@@ -496,12 +496,12 @@ function Hrms() {
                               />
                             </div>
                           </div>
-                          <div className="col-lg-6">
-                            <div className="left-placholder">
+                          <div className="col-lg-6 padding-0">
+                            <div className="right-placholder">
                               <input
                                 type="text"
                                 name="last_name"
-                                className="form-control fs-3 first-input"
+                                className="form-control fs-3 second-input"
                                 placeholder="Last Name*"
                                 value={formData.last_name}
                                 onChange={handleInputChange}
@@ -559,7 +559,7 @@ function Hrms() {
                         </div>
                         <div
                           className="form-input-new"
-                          style={{ padding: "0px 4px 0px 15px" }}
+                          style={{ padding: "0px" }}
                         >
                           <div className="col-lg-12">
                             <div className="email-placholder">
@@ -581,6 +581,7 @@ function Hrms() {
                                   gridColumnGap: "8px",
                                   alignItems: "start",
                                   fontSize: "12px",
+                                   paddingTop:"10px"
                                 }}
                               >
                                   <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />
@@ -589,7 +590,6 @@ function Hrms() {
                                 demo purpose and other IT related support from
                                 your company.
                               </label>
-
                             </div>
                           </div>
                         </div>
@@ -598,6 +598,7 @@ function Hrms() {
                           Request Free Demo
                         </button>
                       </form>
+
                     </div>
                   </div>
                 </div>

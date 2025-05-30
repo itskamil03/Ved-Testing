@@ -37,6 +37,8 @@ function Home({ target, label }) {
 
   const [loadingData, setLoadingData] = useState(false)
 
+  const [latestNews, setLatestNews] = useState([])
+
   useEffect(() => {
     if (loading) {
       fetch("https://ved.venturingdigitally.com/api/show_blog", {
@@ -75,6 +77,16 @@ function Home({ target, label }) {
           setEvents(resp.data);
         });
       });
+
+        fetch("https://ved.venturingdigitally.com/api/news", {
+        method: "GET",
+      }).then((result) => {
+        result.json().then((resp) => {
+          setLatestNews(resp.data.data)
+         
+        });
+      });
+
       setLoading(false)
     }
   }, [loading]);
@@ -1417,32 +1429,39 @@ function Home({ target, label }) {
 
                   <div className="columns posts">
                     <span className="title" style={{ borderRadius: "4px" }}>
-                      Latest Updates{" "}
+                      Latest Update{" "}
                       {/* <Link to="#" title="Explore More">
                   <i className="fa fa-share"></i>
                 </Link> */}
                     </span>
 
                     <section>
-                      <marquee
-                        direction="up"
-                        scrollAmount="4"
-                        onMouseOver={(e) => e.target.stop()}
-                        onMouseOut={(e) => e.target.start()}
-                        className="marqueeUpdate"
+                    <marquee
+                      direction="up"
+                      scrollAmount="4"
+                      onMouseEnter={(e) => e.currentTarget.stop()}
+                      onMouseLeave={(e) => e.currentTarget.start()}
+                      className="marqueeUpdate"
+                    >
+                      <div className="updates">
+                        {latestNews
+                          .filter((news) => news.category === "latest Updates")
+                          .map((news, index) => (
+                            <div key={index} className="news_item">
+                              <p className="page_title">{news.title}</p>
+                            {news.resource_link &&   <a
+                                href={news.resource_link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="news_link"
+                              >
+                                Link
+                              </a>}
+                            </div>
+                          ))}
+                      </div>
+                    </marquee>
 
-
-                      >
-                        <div className="updates">
-
-                          <p className="page_title">
-                            Exciting Tech Advancements: Stay ahead in the digital world with the latest trends in Data Analytics, cloud computing, and web technology.
-                          </p>
-
-                          <p className="page_title"> Gain hands-on experience and enhance your skills with our latest internship opportunities, working on industry-level projects.</p>
-                        </div>
-
-                      </marquee>
                     </section>
                   </div>
 
@@ -1460,21 +1479,30 @@ function Home({ target, label }) {
                     </span>
                     <section>
                       <marquee
-                        direction="up"
-                        scrollAmount="4"
-                        onMouseOver={(e) => e.target.stop()}
-                        onMouseOut={(e) => e.target.start()}
-                        className="marqueeUpdate"
-
-
-                      >
-                        <div className="updates">
-                          <p className="page_title"> Don't miss our upcoming seminar! Gain valuable knowledge, network with professionals, and stay updated on emerging industry trends. </p>
-
-                          <p className="page_title"> Join us for our upcoming seminar, where industry experts will share insights on the latest technological advancements and career opportunities. </p>
-                        </div>
-
-                      </marquee>
+                      direction="up"
+                      scrollAmount="4"
+                      onMouseEnter={(e) => e.currentTarget.stop()}
+                      onMouseLeave={(e) => e.currentTarget.start()}
+                      className="marqueeUpdate"
+                    >
+                      <div className="updates">
+                        {latestNews
+                          .filter((news) => news.category === "upcoming Seminar")
+                          .map((news, index) => (
+                            <div key={index} className="news_item">
+                              <p className="page_title">{news.title}</p>
+                            {news.resource_link &&   <a
+                                href={news.resource_link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="news_link"
+                              >
+                                Link
+                              </a>}
+                            </div>
+                          ))}
+                      </div>
+                    </marquee>
                     </section>
                   </div>
 

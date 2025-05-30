@@ -219,13 +219,13 @@ function EcommerceSolutions() {
                 />
               </div>
               </div>
-              <div className="section">
+      
               <div className="right">
               <div class="text-box">
               E-commerce Solutions empower businesses to sell products and services online with seamless functionality and security. They ensure user-friendly navigation, secure payment processing, and inventory management for a smooth shopping experience. With order tracking, marketing automation, and customer analytics, businesses can optimize sales and engagement. Integration with CRM, ERP, and third-party logistics enhances efficiency and scalability. Cloud-based platforms provide remote accessibility, real-time updates, and multi-device compatibility for seamless operations. Implementing E-commerce Solutions boosts sales, enhances customer satisfaction, and streamlines business processes. They also support multi-vendor capabilities, personalized recommendations, and AI-driven insights. A well-structured e-commerce system fosters brand growth, market expansion, and increased profitability.
                 </div>
             </div>
-            </div>
+    
             </div>
           </div>
         </div>
@@ -278,7 +278,7 @@ function EcommerceSolutions() {
         <div className="container-fluid">
           <div className="container">
             <div className="E-comsecond-section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-xl-7 col-lg-6">
                   <div className="E-comsecond-left-box">
                     <div className="E-comsecond-left-about-content">
@@ -370,11 +370,11 @@ function EcommerceSolutions() {
         </div>
       </section>
       {/* <------------------------------------------- E-commerce Solutions fourth --------------------------------------------> */}
-      <section id="health">
+        <section id="health">
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
@@ -382,13 +382,14 @@ function EcommerceSolutions() {
                         src="crm.jpeg"
                         alt="..."
                         className="w-75 h-auto"
-                         
+                          style={{aspectRatio:1.25}}
                       />
                     </div>
                   </div>
                 </div>
 
-                <div className="col-lg-6">
+            
+                <div className="col-lg-6 ">
                   <div className="health-content">
                     <div className="form-container">
                       <div className="form-header">
@@ -397,10 +398,10 @@ function EcommerceSolutions() {
 
                       <form onSubmit={handleSubmit}>
                         <div
-                          className="form-input-new"
+                          className="row form-input-mobile-view"
                           style={{ paddingBottom: "0px" }}
                         >
-                          <div className="col-lg-6">
+                          <div className="col-lg-6 padding-0">
                             <div className="left-placeholder">
                               <input
                                 type="text"
@@ -460,12 +461,12 @@ function EcommerceSolutions() {
                               />
                             </div>
                           </div>
-                          <div className="col-lg-6">
-                            <div className="left-placholder">
+                          <div className="col-lg-6 padding-0">
+                            <div className="right-placholder">
                               <input
                                 type="text"
                                 name="last_name"
-                                className="form-control fs-3 first-input"
+                                className="form-control fs-3 second-input"
                                 placeholder="Last Name*"
                                 value={formData.last_name}
                                 onChange={handleInputChange}
@@ -523,7 +524,7 @@ function EcommerceSolutions() {
                         </div>
                         <div
                           className="form-input-new"
-                          style={{ padding: "0px 4px 0px 15px" }}
+                          style={{ padding: "0px" }}
                         >
                           <div className="col-lg-12">
                             <div className="email-placholder">
@@ -545,6 +546,7 @@ function EcommerceSolutions() {
                                   gridColumnGap: "8px",
                                   alignItems: "start",
                                   fontSize: "12px",
+                                   paddingTop:"10px"
                                 }}
                               >
                                   <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />
@@ -561,6 +563,7 @@ function EcommerceSolutions() {
                           Request Free Demo
                         </button>
                       </form>
+
                     </div>
                   </div>
                 </div>

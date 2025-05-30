@@ -608,15 +608,15 @@ const Qms = () => {
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
                       <img loading="eager" fetchpriority="high"
                         src="crm.jpeg"
                         alt="..."
-                        className="w-75 h-auto"
-                         
+                        className="w-100 h-auto"
+                        style={{aspectRatio:1.25}}
                       />
                     </div>
                   </div>

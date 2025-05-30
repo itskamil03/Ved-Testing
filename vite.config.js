@@ -13,6 +13,7 @@ export default defineConfig({
       },
     },
   },
+  server: { port: 5173 },
   base: './', // Change from '/' to './' for correct asset loading
   resolve: {
     alias: {

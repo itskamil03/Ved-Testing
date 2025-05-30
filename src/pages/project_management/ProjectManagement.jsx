@@ -41,6 +41,7 @@ const profirst = [
     id: "6",
     title: "Integration with Third-Party Tools",
     p1: "Seamlessly integrate our project management solutions with popular tools such as Slack, Jira, and Microsoft Teams for streamlined workflows and enhanced productivity.",
+    p2: "Easily customize integrations to suit your team’s unique needs and improve cross-platform collaboration."
   },
 ];
 const pro_why = [
@@ -280,7 +281,7 @@ function ProjectManagement() {
                 <div className="prosecond-head-title">Project Management</div>
               </div>
               <div className="prosecond-head-slogan">
-                Best Project Management Software with venturing Digitally
+                Best Project Management Software with Venturing Digitally
               </div>
             </div>
 
@@ -301,10 +302,10 @@ function ProjectManagement() {
 
             <div className="prosecond-section-card">
               <div className="why-grid">
-                <div className="row justify-content-center">
+                <div className="row justify-content-center g-4">
                   {profirst.map((peof) => {
                     return (
-                      <div className="col-lg-4 col-md-6" key={peof.id}>
+                      <div className="col-lg-4 col-md-6"  key={peof.id}>
                         <div className="prosecond-why-card">
                           <div className="prosecond-title">{peof.title}</div>
                           <div className="prosecond-data">
@@ -369,7 +370,7 @@ function ProjectManagement() {
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">

@@ -139,7 +139,7 @@ function OilGas() {
             </div>
 
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6">
                   <div className="health-content">
                     <div className="content-data">
@@ -176,7 +176,7 @@ function OilGas() {
 
             {/* <------------------------------------------------> */}
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                 <div className="col-lg-6">
                   <div className="health-media" style={{ marginRight: "2rem" }}>
                     <div className="health-video-second">

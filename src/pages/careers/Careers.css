@@ -373,3 +373,12 @@
   padding: 5px 0;
   font-size: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+    #career-cards .career-img {
+    max-width: fit-content;
+    width: 100%;
+    aspect-ratio: 1/0.7;
+    margin-bottom: 10px;
+  }
+}

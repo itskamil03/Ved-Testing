@@ -577,7 +577,7 @@ function LifeAtVed() {
           <div className="container">
           
             <div className="section-content">
-              <div className="row align-items-center">
+              <div className="row align-items-center g-4">
                
               <div className="col-lg-6">
               <div className="lifeatvedfourth-main-box">
