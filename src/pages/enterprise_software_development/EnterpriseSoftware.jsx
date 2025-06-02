@@ -15,9 +15,9 @@ function EnterpriseSoftware() {
   useEffect(() => {
     var getslide = $("#enterprise-tabs .main-box li").length - 1;
 
-    var slidecal = 20 / getslide + "%";
+    var slidecal = 200 / getslide + "%";
 
-    $("#enterprise-tabs .box").css({ width: slidecal });
+   // $("#enterprise-tabs .box").css({ width: slidecal });
 
     $("#enterprise-tabs .box").click(function () {
       $("#enterprise-tabs .box").removeClass("active");
@@ -54,7 +54,7 @@ function EnterpriseSoftware() {
             </div>
             <div className="section-content">
               <div className="service-grid">
-                <div className="row">
+                <div className="row g-4">
                   <div className="col-lg-4 col-md-6">
                     <div className="service-card">
                       <div className="hang">

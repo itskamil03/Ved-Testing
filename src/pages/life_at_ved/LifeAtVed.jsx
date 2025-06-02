@@ -608,7 +608,7 @@ function LifeAtVed() {
 
                       <form onSubmit={handleSubmit}>
                           <div className="form-input-new">
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 col-md-6">
                               <div className="left-placeholder">
                                 <input
                                   type="text"
@@ -670,7 +670,7 @@ function LifeAtVed() {
                                 />
                               </div>
 
-                              <div className="location-placholder">
+                              <div className="left-placeholder" style={{marginTop:"12px"}}>
                                 {/* <MultiSelect
                                   options={services}
                                   value={selectedService}
@@ -697,8 +697,8 @@ function LifeAtVed() {
                         />
                               </div>
                             </div>
-                            <div className="col-lg-6">
-                              <div className="right-placholder">
+                            <div className="col-lg-6 col-md-6 ">
+                              <div className="left-placeholder">
                                 <input
                                   type="text"
                                   name="last_name"
@@ -709,7 +709,7 @@ function LifeAtVed() {
                                   required
                                 />
                               </div>
-                              <div className="right-placholder">
+                              <div className="left-placeholder">
                                 <input
                                   type="number"
                                   name="mobile"
@@ -720,7 +720,7 @@ function LifeAtVed() {
                                   required
                                 />
                               </div>
-                              <div className="right-placholder" style={{marginTop:"12px"}}>
+                              <div className="left-placeholder" style={{marginTop:"12px"}}>
                                 <input
                                   type="text"
                                   name="courses"
@@ -731,7 +731,7 @@ function LifeAtVed() {
                                 />
                               </div>
 
-                              <div className="right-placholder" style={{marginTop:"12px"}}>
+                              <div className="left-placeholder" style={{marginTop:"12px"}}>
                                 <input
                                   type="text"
                                   name="semester"
@@ -742,7 +742,7 @@ function LifeAtVed() {
                                   required
                                 />
                               </div>
-                              <div className="location-placholder" style={{marginTop:"12px"}}>
+                              <div className="left-placeholder" style={{marginTop:"12px"}}>
                                 <input
                                   type="text"
                                   name="location"
@@ -753,7 +753,7 @@ function LifeAtVed() {
                                   required
                                 />
                               </div>
-                              <div className="location-placholder" >
+                              <div className="left-placeholder" style={{marginTop:"12px"}} >
                                 {/* <MultiSelect
                                   options={solutions}
                                   value={selectedSolutions}
@@ -788,10 +788,11 @@ function LifeAtVed() {
                             </div>
                           </div>
 
-                          
+                         <div className="registration-form-fill">
                         <button type="submit" className="request-btn">
                           Registration Form
                         </button>
+                        </div>
 
                         </form>
                     </div>

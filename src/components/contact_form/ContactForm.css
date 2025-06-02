@@ -10,12 +10,13 @@ select:focus {
 
 .contact-forms {
   position: relative;
-  height: 50rem;
+  height: 53rem;
   /* background: linear-gradient(270deg, #27286d, #1a1b5a, #4b4c9a, #27286d); */
   background: linear-gradient(270deg, #1a1b5a, #131343, #27286d, #0e0f2f);
 
   /* background: linear-gradient(270deg, #1d237a, #000046, #134a7f, #1d237a); */
   background-size: 1000% 1000%;
+  padding-bottom: 30px !important;
 }
 .form-container-main {
   width: 100%;

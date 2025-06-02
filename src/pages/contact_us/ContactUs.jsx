@@ -195,7 +195,7 @@ function ContactUs() {
                                   required
                                 />
                               </div>
-                              <div className="multi">
+                              <div className="left-placeholder">
                                 <MultiSelect
                                   options={services}
                                   value={selectedService}
@@ -206,6 +206,7 @@ function ContactUs() {
                                   style={{
                                     backgroundColor: "white",
                                     color: "black",
+                                    width:"100%",
                                   }}
                                   className="multiselector-new fs-2 p-1 second-input"
                                 />
@@ -234,7 +235,7 @@ function ContactUs() {
                                   required
                                 />
                               </div>
-                              <div className="location-placholder">
+                              <div className="email-placholder">
                                 <input
                                   type="text"
                                   name="location"
@@ -245,7 +246,7 @@ function ContactUs() {
                                   required
                                 />
                               </div>
-                              <div className="miltiselecotr-second">
+                              <div className="left-placholder">
                                 <MultiSelect
                                   options={solutions}
                                   value={selectedSolutions}
@@ -258,8 +259,9 @@ function ContactUs() {
                                   style={{
                                     backgroundColor: "white",
                                     color: "black",
+                                      width:"100%",
                                   }}
-                                  className="multiselector-first fs-2 p-1 second-input"
+                                className="multiselector-new fs-2 p-1 second-input"
                                 />
                               </div>
                             </div>

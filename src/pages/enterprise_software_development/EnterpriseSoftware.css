@@ -206,6 +206,7 @@
   box-shadow: 0 8px 24px #a7a4a49e;
   transform: rotate(-5deg);
   padding: 50px 20px 20px;
+  height: 100%;
 }
 
 #enterprise-services .service-card .top {
@@ -383,6 +384,12 @@
     width: 100%;
   }
 
+    #enterprise-tabs .box {
+    width: 100% !important;
+    height: 50px !important;
+    font-size: 12px !important;
+    padding: 6px 0px !important;
+  }
   #enterprise-tabs .box.active {
     width: 100% !important;
     height: 100% !important;
@@ -447,11 +454,12 @@
   }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:768px) {
   #enterprise-tabs .box {
     width: 100% !important;
     height: 50px !important;
     font-size: 12px !important;
     padding: 6px 0px !important;
   }
+
 }

@@ -4,6 +4,7 @@ import { useState } from "react";
 import ContactForm from "../../components/contact_form/ContactForm";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { toast,ToastContainer } from "react-toastify";
+import { useMediaQuery } from '@mui/material';
 
 function SchoolCollage() {
   const [selectedTab, setSelectedTab] = useState("tab1");
@@ -16,6 +17,9 @@ function SchoolCollage() {
   const toggleTab = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
+
+
+   const isSmScreen = useMediaQuery('(max-width:768px)');
 
   const [formData, setFormData] = useState({
     first_name: "",
@@ -213,10 +217,10 @@ function SchoolCollage() {
       </section>
 
       {/* School collage management software  */}
-      <section id="innovate" className="bg-light innovates">
+       <section id="innovatedata" className="bg-light">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head">
+              <div className="section-head">
               <div className="custom-head">
                 <div className="circle"></div>
                 <div className="head-title bg-light">
@@ -225,11 +229,14 @@ function SchoolCollage() {
               </div>
               <div className="head-slogan">Role-Based Portal Benefits</div>
             </div>
+
             <div className="section-content">
-              <div className="wrapper">
+              <div className="wrappers">
+
                 <div className="tabs">
-                  <div className="tab">
-                    <input
+
+                  <div className={`tab ${selectedTab === "tab4" ? "active" : ""}`}>
+                                       <input
                       type="radio"
                       name="css-tabs"
                       id="tab-4"
@@ -246,8 +253,97 @@ function SchoolCollage() {
                       />
                       <div>For Management </div>
                     </label>
-                    {selectedTab === "tab4" && (
-                      <div className="tab-content">
+                  </div>
+
+
+                  <div className={`tab ${selectedTab === "tab3" ? "active" : ""}`}>
+                    <input
+                      type="radio"
+                      name="css-tabs"
+                      id="tab-3"
+                      className="tab-switch"
+                      value="tab3"
+                      checked={selectedTab === "tab3"}
+                      onChange={handleTabChange}
+                    />
+                    <label htmlFor="tab-3" className="tab-label">
+                      <img loading="eager" fetchpriority="high"
+                        src="images/icon/teacher.png"
+                        alt="..."
+                         
+                      />
+                      <div>For Teachers</div>
+                    </label>
+                  </div>
+
+                  <div className={`tab ${selectedTab === "tab2" ? "active" : ""}`}>
+                      <input
+                      type="radio"
+                      name="css-tabs"
+                      id="tab-2"
+                      className="tab-switch"
+                      value="tab2"
+                      checked={selectedTab === "tab2"}
+                      onChange={handleTabChange}
+                    />
+                    <label htmlFor="tab-2" className="tab-label">
+                      <img loading="eager" fetchpriority="high"
+                        src="images/icon/hotel.png"
+                        alt="..."
+                         
+                      />
+                      <div>For Hostel</div>
+                    </label>
+                  </div>
+
+                  <div className={`tab ${selectedTab === "tab1" ? "active" : ""}`}>
+                   <input
+                      type="radio"
+                      name="css-tabs"
+                      id="tab-1"
+                      className="tab-switch"
+                      value="tab1"
+                      checked={selectedTab === "tab1"}
+                      onChange={handleTabChange}
+                    />
+                    <label htmlFor="tab-1" className="tab-label">
+                      <img loading="eager" fetchpriority="high"
+                        src="images/icon/group.png"
+                        alt="..."
+                         
+                      />
+                      <div>For Students</div>
+                    </label>
+                
+                  </div>
+
+
+                  <div className={`tab ${selectedTab === "tab0" ? "active" : ""}`}>
+                   <input
+                      type="radio"
+                      name="css-tabs"
+                      id="tab-0"
+                      className="tab-switch"
+                      value="tab0"
+                      checked={selectedTab === "tab0"}
+                      onChange={handleTabChange}
+                    />
+                    <label htmlFor="tab-0" className="tab-label">
+                      <img loading="eager" fetchpriority="high"
+                        src="images/icon/family.png"
+                        alt="..."
+                         
+                      />
+                      <div>For Parents</div>
+                    </label>
+                  </div>
+                </div>
+
+
+                <div className="tab-contents">
+
+                  {selectedTab === "tab4" && (
+                   <div className="tab-content">
                         <div className="tab-grid">
                           <div className="tab-grid-head">
                             <div>For Management</div>
@@ -279,16 +375,7 @@ function SchoolCollage() {
                                   announcements, policies, and event details
                                   with the entire school community, ensuring
                                   timely communication and high engagement.
-                                  Secure role-based access ensures that each
-                                  user, from staff to parents, can only view
-                                  information relevant to their role, protecting
-                                  privacy while enhancing accountability. By
-                                  centralizing administrative tasks and
-                                  improving access to critical insights, the
-                                  portal enables management to drive
-                                  organizational efficiency and support a
-                                  positive, productive educational experience
-                                  for all stakeholders.
+                                  
                                 </div>
                               </div>
                             </div>
@@ -305,27 +392,9 @@ function SchoolCollage() {
                           </div>
                         </div>
                       </div>
-                    )}
-                  </div>
-                  <div className="tab">
-                    <input
-                      type="radio"
-                      name="css-tabs"
-                      id="tab-3"
-                      className="tab-switch"
-                      value="tab3"
-                      checked={selectedTab === "tab3"}
-                      onChange={handleTabChange}
-                    />
-                    <label htmlFor="tab-3" className="tab-label">
-                      <img loading="eager" fetchpriority="high"
-                        src="images/icon/teacher.png"
-                        alt="..."
-                         
-                      />
-                      <div>For Teachers</div>
-                    </label>
-                    {selectedTab === "tab3" && (
+                  )}
+
+                  {selectedTab === "tab3" && (
                       <div className="tab-content">
                         <div className="tab-grid">
                           <div className="tab-grid-head">
@@ -362,17 +431,7 @@ function SchoolCollage() {
                                   a digital resource library, where they can
                                   upload and share lesson materials, study
                                   guides, and reference materials, supporting
-                                  self-directed learning for students. Beyond
-                                  classroom duties, the portal includes
-                                  performance and professional development
-                                  tracking, allowing teachers to manage
-                                  attendance, engage in training sessions, and
-                                  monitor their own growth. Secure, role-based
-                                  access ensures that teachers can manage class
-                                  information and personal data with confidence,
-                                  ultimately enhancing their capacity to foster
-                                  a structured and supportive learning
-                                  environment.
+                                  self-directed learning for students.
                                 </div>
                               </div>
                             </div>
@@ -389,28 +448,10 @@ function SchoolCollage() {
                           </div>
                         </div>
                       </div>
-                    )}
-                  </div>
-                  <div className="tab">
-                    <input
-                      type="radio"
-                      name="css-tabs"
-                      id="tab-2"
-                      className="tab-switch"
-                      value="tab2"
-                      checked={selectedTab === "tab2"}
-                      onChange={handleTabChange}
-                    />
-                    <label htmlFor="tab-2" className="tab-label">
-                      <img loading="eager" fetchpriority="high"
-                        src="images/icon/hotel.png"
-                        alt="..."
-                         
-                      />
-                      <div>For Hostel</div>
-                    </label>
-                    {selectedTab === "tab2" && (
-                      <div className="tab-content">
+                  )}
+
+                  {selectedTab === "tab2" && (
+                    <div className="tab-content">
                         <div className="tab-grid">
                           <div className="tab-grid-head">
                             <div>For Hostel</div>
@@ -441,19 +482,8 @@ function SchoolCollage() {
                                   efficiency. It allows for efficient room
                                   allocation and tracking of occupancy rates,
                                   helping management optimize space utilization.
-                                  The system can automate billing processes for
-                                  hostel fees, providing parents and students
-                                  with clear, transparent payment options. With
-                                  real-time analytics and reporting features,
-                                  management can monitor student engagement,
-                                  track maintenance requests, and gather
-                                  feedback on services, enabling data-driven
-                                  decisions to improve the hostel experience.
-                                  Overall, a role-based portal fosters better
-                                  communication, enhances operational
-                                  efficiency, and creates a supportive and
-                                  connected environment for students living in
-                                  hostels.
+                                 
+                                
                                 </div>
                               </div>
                             </div>
@@ -470,29 +500,10 @@ function SchoolCollage() {
                           </div>
                         </div>
                       </div>
-                    )}
-                  </div>
+                  )}
 
-                  <div className="tab">
-                    <input
-                      type="radio"
-                      name="css-tabs"
-                      id="tab-1"
-                      className="tab-switch"
-                      value="tab1"
-                      checked={selectedTab === "tab1"}
-                      onChange={handleTabChange}
-                    />
-                    <label htmlFor="tab-1" className="tab-label">
-                      <img loading="eager" fetchpriority="high"
-                        src="images/icon/group.png"
-                        alt="..."
-                         
-                      />
-                      <div>For Students</div>
-                    </label>
-                    {selectedTab === "tab1" && (
-                      <div className="tab-content">
+                  {selectedTab === "tab1" && (
+                     <div className="tab-content">
                         <div className="tab-grid">
                           <div className="tab-grid-head">
                             <div>For Students</div>
@@ -523,14 +534,7 @@ function SchoolCollage() {
                                   summaries of their participation in each
                                   class, and submit digital leave requests,
                                   streamlining the process and notifying
-                                  relevant teachers. The portal also provides
-                                  access to a vast array of educational
-                                  resources, including e-books, lecture notes,
-                                  and recorded classes, making learning
-                                  materials available anytime, anywhere.
-                                  Self-assessment tools and quizzes support exam
-                                  preparation and self-paced learning, further
-                                  enhancing their academic experience.
+                                  relevant teachers. 
                                 </div>
                               </div>
                             </div>
@@ -547,29 +551,10 @@ function SchoolCollage() {
                           </div>
                         </div>
                       </div>
-                    )}
-                  </div>
+                  )}
 
-                  <div className="tab">
-                    <input
-                      type="radio"
-                      name="css-tabs"
-                      id="tab-0"
-                      className="tab-switch"
-                      value="tab0"
-                      checked={selectedTab === "tab0"}
-                      onChange={handleTabChange}
-                    />
-                    <label htmlFor="tab-0" className="tab-label">
-                      <img loading="eager" fetchpriority="high"
-                        src="images/icon/family.png"
-                        alt="..."
-                         
-                      />
-                      <div>For Parents</div>
-                    </label>
-                    {selectedTab === "tab0" && (
-                      <div className="tab-content">
+                  {selectedTab === "tab0" && (
+                    <div className="tab-content">
                         <div className="tab-grid">
                           <div className="tab-grid-head">
                             <div>For Parents</div>
@@ -629,8 +614,9 @@ function SchoolCollage() {
                           </div>
                         </div>
                       </div>
-                    )}
-                  </div>
+                  )}
+
+            
                 </div>
               </div>
             </div>
@@ -798,7 +784,7 @@ function SchoolCollage() {
               <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                 <div className="ph-wirframe-box">
                   <div className="ph-wireframe-inner">
-                    <h6>Centralized Student Information System:</h6>
+                    <h6 style={{fontSize: isSmScreen?"1.6rem":"2rem"}}> Centralized Student Information System:</h6>
                     <p>
                       This feature consolidates student data, including academic
                       records, attendance, health details, and behavioral
@@ -810,7 +796,7 @@ function SchoolCollage() {
                     </p>
                   </div>
                   <div className="ph-wireframe-inner">
-                    <h6>Attendance and Timetable Management:</h6>
+                    <h6 style={{fontSize: isSmScreen?"1.6rem":"2rem"}}>Attendance and Timetable Management:</h6>
                     <p>
                       Automating attendance tracking and timetable creation
                       saves teachers and administrators significant time while
@@ -836,7 +822,7 @@ function SchoolCollage() {
               <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                 <div className="ph-wirframe-box">
                   <div className="ph-wireframe-inner">
-                    <h6>Examination and Grade Management:</h6>
+                    <h6 style={{fontSize: isSmScreen?"1.6rem":"2rem"}}>Examination and Grade Management:</h6>
                     <p>
                       Teachers can create exams, manage grades, and generate
                       report cards with ease, helping to streamline the
@@ -848,7 +834,7 @@ function SchoolCollage() {
                     </p>
                   </div>
                   <div className="ph-wireframe-inner">
-                    <h6>Finance and Fee Management:</h6>
+                    <h6 style={{fontSize: isSmScreen?"1.6rem":"2rem"}}>Finance and Fee Management:</h6>
                     <p>
                       This feature automates fee invoicing, payment tracking,
                       and receipt generation, simplifying financial operations.
@@ -999,3 +985,6 @@ function SchoolCollage() {
 }
 
 export default SchoolCollage;
+
+
+

@@ -203,8 +203,7 @@ section {
 }
 
 #text-area {
-  padding: 10px;
-  margin-right: 6px;
+  padding: 10px 6px 10px 12px;
 }
 
 .new-text-area {
@@ -321,6 +320,14 @@ section {
   width: 400px;
 }
 
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+  #text-area {
+    width: 100% !important;
+    padding: 10px 15px !important;
+  }
+}
+
 @media only screen and (max-width : 768px) {
   .form-input-new {
     display: grid;
@@ -357,8 +364,8 @@ section {
   }
 
   #text-area {
-    width: 107%;
-    margin-left: -6px;
+    width: 100% !important;
+    padding: 10px 15px !important;
   }
 
   .new-button-form {

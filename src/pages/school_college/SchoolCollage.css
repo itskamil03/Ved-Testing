@@ -104,7 +104,7 @@
 
 #innovate .tabs {
     position: relative;
-    height: 600px;
+    height: auto;
 }
 
 #innovate .tabs::before,
