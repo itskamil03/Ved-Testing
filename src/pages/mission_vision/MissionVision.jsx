@@ -49,7 +49,6 @@ function MissionVision() {
                   Experience the difference of partnering with us and propel
                   your business forward with confidence.
                 </div>
-                <a href="/about">Learn More</a>
               </div>
             </div>
           </div>

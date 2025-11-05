@@ -223,7 +223,7 @@ function Testimonials() {
                   <div className="test-card">
                     <div className="upper-block">
                       <div className="content">
-                      Venturing Digitally organized an insightful seminar at RVS College, enriching students with knowledge of emerging technologies and industry practices. The session provided a platform for students to engage in meaningful discussions, gain clarity on career paths, and explore the latest trends in the digital landscape. The interactive approach fostered curiosity and encouraged students to develop skills relevant to the evolving tech industry.
+                      Venturing Digitally organized an insightful seminar at NSU College, enriching students with knowledge of emerging technologies and industry practices. The session provided a platform for students to engage in meaningful discussions, gain clarity on career paths, and explore the latest trends in the digital landscape. The interactive approach fostered curiosity and encouraged students to develop skills relevant to the evolving tech industry.
                       </div>
                     </div>
                     <div className="bottom-block">

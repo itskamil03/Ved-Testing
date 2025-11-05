@@ -283,7 +283,7 @@ function EcommerceSolutions() {
                   <div className="E-comsecond-left-box">
                     <div className="E-comsecond-left-about-content">
                       <div className="E-comsecond-left-content-head">
-                        E Commerce Solutions with Venturing digitally
+                        E Commerce Solutions with Venturing Digitally
                       </div>
                       <div className="E-comsecond-left-content-data">
                         Partner with Venturing Digitally to unlock the full
@@ -300,12 +300,12 @@ function EcommerceSolutions() {
                     <div className="E-comsecond-media">
                       <div className="E-comsecond-video-box">
                         <div className="E-comsecond-video">
-                          <video
-                            src={Ecom1}
+                          <img loading="eager" fetchpriority="high"
+                            src="/image/Ecommerce/Ecommerce.jpeg"
                             className="w-100 h-100"
-                            autoPlay={true}
-                            loop={true}
-                          ></video>
+                            alt="E-commerce Solutions"
+                            style={{objectFit: 'cover', borderRadius: '12px'}}
+                          />
                         </div>
                       </div>
                     </div>
@@ -581,7 +581,7 @@ function EcommerceSolutions() {
                 <div className="head-title">Frequently Ask Question</div>
               </div>
               <div className="head-slogan">
-                Frequently Asked Question For GXP & GMP Software
+                Frequently Asked Question For E-commerce Solutions
               </div>
             </div>
             <div className="section-content">

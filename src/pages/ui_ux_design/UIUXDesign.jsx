@@ -5,10 +5,10 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import OurDevelopmentProcess from "../../components/development_process_components/OurDevelopmentProcess";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import OurDevelopmentUIUXProcess from "../../components/development_process_components/OurDevelopmentUI-UXProcess";
 
 function UIUXDesign() {
   const forclients = {
@@ -313,7 +313,7 @@ function UIUXDesign() {
         </div>
       </section>
       {/* <--------------------------------- our Development process ----------------------------> */}
-      <OurDevelopmentProcess />
+      <OurDevelopmentUIUXProcess/>
       {/* <---------------------------------------- ui talk ----------------------------> */}
       <section
         id="ui-clients4"

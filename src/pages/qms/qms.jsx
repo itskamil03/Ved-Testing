@@ -510,18 +510,15 @@ const Qms = () => {
                 </div>
               </div>
             </section>
+
+
             <section id="crm-why" className="bg-light">
               <div className="container-fluid">
                 <div className="container">
                   <div className="section-head">
                     <div className="custom-head">
                       <div className="head-title">
-                        <img loading="eager" fetchpriority="high"
-                          className="qms-icon-image1"
-                          src="/qms-letter.jpg"
-                           
-                        />
-                        &nbsp;Our QMS/EQMS overview
+                        Our QMS/EQMS overview
                       </div>
                     </div>
                     <div className="head-slogan">
@@ -537,7 +534,7 @@ const Qms = () => {
                     <div className="why-grid">
                       <div className="why-card">
                         <div className="icon">
-                          <i className="fa-brands fa-soundcloud"></i>
+                          <i className="fa-solid fa-folder-open"></i>
                         </div>
                         <div className="title"> Document Control</div>
                         <div className="content">
@@ -550,7 +547,7 @@ const Qms = () => {
                       </div>
                       <div className="why-card">
                         <div className="icon">
-                          <i className="fa-brands fa-soundcloud"></i>
+                          <i className="fa-solid fa-clipboard-check"></i>
                         </div>
                         <div className="title"> Quality Planning</div>
                         <div className="content">
@@ -562,7 +559,7 @@ const Qms = () => {
                       </div>
                       <div className="why-card">
                         <div className="icon">
-                          <i className="fa-brands fa-soundcloud"></i>
+                          <i className="fa-solid fa-clipboard-list"></i>
                         </div>
                         <div className="title"> Audit Management: </div>
                         <div className="content">
@@ -573,7 +570,7 @@ const Qms = () => {
                       </div>
                       <div className="why-card">
                         <div className="icon">
-                          <i className="fa-brands fa-soundcloud"></i>
+                          <i className="fa-solid fa-shield-halved"></i>
                         </div>
                         <div className="title"> C.A.P.A. </div>
                         <div className="content">
@@ -585,7 +582,7 @@ const Qms = () => {
                       </div>
                       <div className="why-card">
                         <div className="icon">
-                          <i className="fa-brands fa-soundcloud"></i>
+                          <i className="fa-solid fa-user-graduate"></i>
                         </div>
                         <div className="title"> Training Management</div>
                         <div className="content">
@@ -600,6 +597,8 @@ const Qms = () => {
                 </div>
               </div>
             </section>
+
+            
           </div>
         </div>
       </div>
@@ -812,7 +811,7 @@ const Qms = () => {
                 <div className="head-title">Frequently Ask Question</div>
               </div>
               <div className="head-slogan">
-                Frequently Asked Question For GXP & GMP Software
+                Frequently Asked Question For Quality Management Software (QMS)
               </div>
             </div>
             <div className="section-content">

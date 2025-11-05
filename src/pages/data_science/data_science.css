@@ -188,18 +188,285 @@
 
   }
 
-  #enterprise-data-analytics .data-driven {
+  #power-bi-visualization {
+    padding: 50px 0;
+    background-color: rgb(253, 252, 252);
+  }
 
-    padding-top: 40px;
+  #power-bi-visualization .head_title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #power-bi-visualization .cloud-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(70, 63, 63);
+    line-height: 1.6;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #power-bi-visualization .power-bi-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 40px;
+  }
+
+  #power-bi-visualization .power-bi-category {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #power-bi-visualization .power-bi-category-title {
+ 
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #000;
+    font-family: "sans-serif", sans-serif;
+    margin-bottom: 10px;
+  }
+
+  #power-bi-visualization .power-bi-gallery {
     display: grid;
-    grid-template-columns: 0.7fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    align-items: start;
+  }
 
+  #power-bi-visualization .power-bi-item {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+  }
+
+  #power-bi-visualization .power-bi-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  #power-bi-visualization .power-bi-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    #power-bi-visualization .power-bi-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    #power-bi-visualization .power-bi-category-title {
+      font-size: 2.4rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #power-bi-visualization {
+      padding: 30px 0;
+    }
+
+    #power-bi-visualization .head_title {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    #power-bi-visualization .cloud-title {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+      padding: 0 15px;
+    }
+
+    #power-bi-visualization .power-bi-categories {
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    #power-bi-visualization .power-bi-category {
+      gap: 20px;
+    }
+
+    #power-bi-visualization .power-bi-category-title {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    #power-bi-visualization .power-bi-gallery {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  #enterprise-data-analytics {
+    padding: 50px 0;
+    background: linear-gradient(to right, rgba(255, 192, 203, 0.15), rgba(147, 112, 219, 0.1), transparent);
+  }
+
+  #enterprise-data-analytics .case-study-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  #enterprise-data-analytics .case-study-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    color: #000;
+  }
+
+  #enterprise-data-analytics .case-study-view-all {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+    font-family: "sans-serif", sans-serif;
+  }
+
+  #enterprise-data-analytics .case-study-view-all:hover {
+    text-decoration: underline;
+  }
+
+  #enterprise-data-analytics .case-study-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    #enterprise-data-analytics .case-study-cards-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  #enterprise-data-analytics .case-study-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 350px;
+    height: auto;
+  }
+
+  #enterprise-data-analytics .case-study-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  }
+
+  #enterprise-data-analytics .case-study-card-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #enterprise-data-analytics .case-study-card-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    transform: scale(1.1);
+    z-index: 0;
+  }
+
+  #enterprise-data-analytics .case-study-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.85) 100%);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+    z-index: 1;
+  }
+
+  #enterprise-data-analytics .case-study-card-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.3;
+    font-family: "sans-serif", sans-serif;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  #enterprise-data-analytics .case-study-card-description {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 1.6;
+    font-family: "sans-serif", sans-serif;
+    text-align: left;
+    opacity: 1;
+  }
+
+  #enterprise-data-analytics .case-study-arrow-icon {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) padding-box,
+      linear-gradient(135deg, #ff8c00, #ff69b4) border-box;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  #enterprise-data-analytics .case-study-arrow-icon:hover {
+    transform: scale(1.1);
+  }
+
+  #enterprise-data-analytics .case-study-arrow-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  #enterprise-data-analytics .cloud_title {
+    line-height: 1.5 !important;
   }
 
   #enterprise-data-analytics .enterprise-data {
-
-    background: linear-gradient(to right, #27286d, #090924);
+    background: linear-gradient(to right, #484ba1, #222369);
     border-radius: 8px;
     padding:40px;
     color: #fff;
@@ -267,6 +534,45 @@
 
     #enterprise-data-analytics .data-driven-enterprise {
      padding-block: 16px;
+    }
+
+    #enterprise-data-analytics {
+      padding: 30px 0;
+    }
+
+    #enterprise-data-analytics .case-study-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    #enterprise-data-analytics .case-study-title {
+      font-size: 2.2rem;
+    }
+
+    #enterprise-data-analytics .case-study-view-all {
+      font-size: 1.4rem;
+    }
+
+    #enterprise-data-analytics .case-study-cards-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    #enterprise-data-analytics .case-study-card {
+      min-height: 400px;
+      height: auto;
+    }
+
+    #enterprise-data-analytics .case-study-card-title {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    #enterprise-data-analytics .case-study-card-description {
+      font-size: 1.4rem;
+      line-height: 1.5;
     }
 
     #data-analytics-introduction {

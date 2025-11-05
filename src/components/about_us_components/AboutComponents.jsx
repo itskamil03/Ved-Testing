@@ -98,7 +98,7 @@ function AboutComponents() {
                           Dedicated Development Team
                         </div>
                         <div className="value-data">
-                          Their expertise and commitment to excellence have
+                          Our expertise and commitment to excellence have
                           helped us build a reputation as a trusted provider of
                           innovative IT solutions.
                         </div>

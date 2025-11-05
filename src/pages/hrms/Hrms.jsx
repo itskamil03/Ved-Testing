@@ -616,7 +616,7 @@ function Hrms() {
                 <div className="head-title">Frequently Ask Question</div>
               </div>
               <div className="head-slogan">
-                Frequently Asked Question For GXP & GMP Software
+                Frequently Asked Question For HRMS Software
               </div>
             </div>
             <div className="section-content">

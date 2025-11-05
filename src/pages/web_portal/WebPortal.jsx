@@ -3,6 +3,7 @@ import Hero from "../../components/hero_section/Hero";
 import Ecom1 from "../../assets/video-icons/seo.gif";
 import { BiBroadcast } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
+import { FaUser, FaPlug, FaChartLine } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -233,6 +234,7 @@ function WebPortal() {
                   provide exceptional user experiences.
                 </div>
               </div>
+
               <div className="webportal-content">
                 <div className="webportal-content-head">
                   Key Benefits of Our Web Portals
@@ -240,7 +242,7 @@ function WebPortal() {
                 <div className="webportal-feature-data">
                   <div className="content">
                     <div className="icon">
-                      <BiBroadcast />
+                      <FaUser />
                     </div>
                     Enhanced User Experience: Our web portals prioritize
                     user-centric design, intuitive navigation, and personalized
@@ -249,7 +251,7 @@ function WebPortal() {
                   </div>
                   <div className="content">
                     <div className="icon">
-                      <BiBroadcast />
+                      <FaPlug />
                     </div>
                     Seamless Integration: We seamlessly integrate your web
                     portal with existing systems, such as CRM, ERP, or payment
@@ -257,7 +259,7 @@ function WebPortal() {
                   </div>
                   <div className="content">
                     <div className="icon">
-                      <BiBroadcast />
+                      <FaChartLine />
                     </div>
                     Scalability and Flexibility: Our web portals are built to
                     scale with your business, accommodating growth and evolving
@@ -266,6 +268,7 @@ function WebPortal() {
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
@@ -641,7 +644,7 @@ function WebPortal() {
                 <div className="head-title">Frequently Ask Question</div>
               </div>
               <div className="head-slogan">
-                Frequently Asked Question For GXP & GMP Software
+                Frequently Asked Question For Web Portal Software
               </div>
             </div>
             <div className="section-content">

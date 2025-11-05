@@ -41,7 +41,7 @@ function HomeHeroImg() {
       <OwlCarousel loop className="owl-theme" {...forservices} margin={0}>
         <div className="homeheroimg">
           <div className="homehero-container">
-            {/* <div className="homeheroimg-main"> */}
+          
             <img
               src="image/home-slider/Slider_1.webp"
               alt="..."
@@ -49,7 +49,7 @@ function HomeHeroImg() {
               loading="eager"
               fetchpriority="high"
             />
-            {/* </div> */}
+=
             <div className="homeheroimg-contant">
               <div className="homeheroimg-slogan">
                 Transform Your Business Online
@@ -66,14 +66,7 @@ function HomeHeroImg() {
 
         <div className="homeheroimg">
           <div className="homehero-container">
-            {/* <div className="homeheroimg-main"> */}
-            {/* <img loading="eager" fetchpriority="high"
-              src="image/home-slider/Slider_2.webp"
-              alt="..."
-              className="homeheroimg-img"
-              loading="eager"
-              fetchpriority="high"
-            /> */}
+       
             <img
               src="image/home-slider/Slider_2.webp"
               alt="GxP software"
@@ -81,7 +74,7 @@ function HomeHeroImg() {
               loading="eager"
               fetchpriority="high"
             />
-            {/* </div> */}
+      
             <div className="homeheroimg-contant">
               <div className="homeheroimg-slogan">
                 Transform Your Business Online
@@ -99,14 +92,7 @@ function HomeHeroImg() {
 
         <div className="homeheroimg">
           <div className="homehero-container">
-            {/* <div className="homeheroimg-main"> */}
-            {/* <img loading="eager" fetchpriority="high"
-              src="image/home-slider/Slider_3.webp"
-              alt="..."
-              className="homeheroimg-img"
-              loading="eager"
-              fetchpriority="high"
-            /> */}
+        
             <img
               src="image/home-slider/Slider_3.webp"
               alt="Transform Your Business Online"
@@ -114,7 +100,7 @@ function HomeHeroImg() {
               loading="eager"
               fetchpriority="high"
             />
-            {/* </div> */}
+    
             <div className="homeheroimg-contant">
               <div className="homeheroimg-slogan">
                 Transform Your Business Online
@@ -129,48 +115,34 @@ function HomeHeroImg() {
           </div>
         </div>
 
-        <div className="homeheroimg">
-          <div className="homehero-container">
-            {/* <div className="homeheroimg-main"> */}
-            {/* <img loading="eager" fetchpriority="high"
-              src="image/home-slider/slide_1.webp"
-              alt="..."
-              className="homeheroimg-img"
-              loading="eager"
-              fetchpriority="high"
-            /> */}
-            <img
-              src="image/home-slider/slide_1.webp"
-              alt="Web Development"
-              className="homeheroimg-img"
-              loading="eager"
-              fetchpriority="high"
-            />
-            {/* </div> */}
-            <div className="homeheroimg-contant">
-              <div className="homeheroimg-slogan">
-                Transform Your Business Online
+          <div className="homeheroimg">
+            <div className="homehero-container">
+          
+              <img
+                src="image/home-slider/slide_1.webp"
+                alt="Web Development"
+                className="homeheroimg-img"
+                loading="eager"
+                fetchpriority="high"
+              />
+      
+              <div className="homeheroimg-contant">
+                <div className="homeheroimg-slogan">
+                  Transform Your Business Online
+                </div>
+                <div className="homeheroimg-heading">
+                  Web Development, App Development, CRM <br /> Software, and More!
+                </div>
+                <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
+                  Contact Us
+                </NavLink>
               </div>
-              <div className="homeheroimg-heading">
-                Web Development, App Development, CRM <br /> Software, and More!
-              </div>
-              <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
-                Contact Us
-              </NavLink>
             </div>
           </div>
-        </div>
 
         <div className="homeheroimg">
           <div className="homehero-container">
-            {/* <div className="homeheroimg-main"> */}
-            {/* <img loading="eager" fetchpriority="high"
-              src="image/home-slider/slide_2.webp"
-              alt="home_slider"
-              className="homeheroimg-img"
-              loading="eager"
-              fetchpriority="high"
-            /> */}
+          
             <img
               src="image/home-slider/slide_2.webp"
               alt="Android & iOS App Development"
@@ -178,7 +150,7 @@ function HomeHeroImg() {
               loading="eager"
               fetchpriority="high"
             />
-            {/* </div> */}
+
             <div className="homeheroimg-contant">
               <div className="homeheroimg-slogan">
                 Connect with Your Customers Anywhere
@@ -193,14 +165,7 @@ function HomeHeroImg() {
 
         <div className="homeheroimg">
           <div className="homehero-container">
-            {/* <div className="homeheroimg-main"> */}
-            {/* <img loading="eager" fetchpriority="high"
-              src="image/home-slider/slide_3.webp"
-              alt=""
-              className="homeheroimg-img"
-              loading="eager"
-              fetchpriority="high"
-            /> */}
+         
             <img
               src="image/home-slider/slide_3.webp"
               alt="Streamline Your Business Processes"
@@ -208,7 +173,7 @@ function HomeHeroImg() {
               loading="eager"
               fetchpriority="high"
             />
-            {/* </div> */}
+     
             <div className="homeheroimg-contant">
               <div className="homeheroimg-slogan">
                 Streamline Your Business Processes
@@ -224,14 +189,7 @@ function HomeHeroImg() {
 
         <div className="homeheroimg">
           <div className="homehero-container">
-            {/* <div className="homeheroimg-main"> */}
-            {/* <img loading="eager" fetchpriority="high"
-              src="image/home-slider/slide_4.webp"
-              alt=""
-              className="homeheroimg-img"
-              loading="eager"
-              fetchpriority="high"
-            /> */}
+          
             <img
               src="image/home-slider/slide_4.webp"
               alt="Grow Your Business with Digital Marketing"
@@ -239,7 +197,7 @@ function HomeHeroImg() {
               loading="eager"
               fetchpriority="high"
             />
-            {/* </div> */}
+
             <div className="homeheroimg-contant">
               <div className="homeheroimg-slogan">
                 Grow Your Business with Digital Marketing
@@ -254,14 +212,7 @@ function HomeHeroImg() {
 
         <div className="homeheroimg">
           <div className="homehero-container">
-            {/* <div className="homeheroimg-main"> */}
-            {/* <img loading="eager" fetchpriority="high"
-              src="image/home-slider/training_slider.webp"
-              alt=""
-              className="homeheroimg-img"
-              loading="eager"
-              fetchpriority="high"
-            /> */}
+          
             <img
               src="image/home-slider/training_slider.webp"
               alt="Training & Internship At Venturing Digitally"
@@ -269,7 +220,7 @@ function HomeHeroImg() {
               loading="eager"
               fetchpriority="high"
             />
-            {/* </div> */}
+      
             <div className="homeheroimg-contant">
               <div className="homeheroimg-slogan">
                 Training & Internship At Venturing Digitally
@@ -281,6 +232,53 @@ function HomeHeroImg() {
             </div>
           </div>
         </div>
+
+        <div className="homeheroimg">
+          <div className="homehero-container">
+         
+            <img
+              src="image/home-slider/data_analtyics.jpg"
+              alt="Data Analysis"
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            />
+ 
+            <div className="homeheroimg-contant">
+              <div className="homeheroimg-slogan">
+                Data Analysis
+              </div>
+              <div className="homeheroimg-heading width-50%">
+               Turn Data into Insights – Make Smarter Decisions
+              </div>
+              <div className="homeheroimg-imgbtn">Contact Us</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="homeheroimg">
+          <div className="homehero-container">
+           
+            <img
+              src="image/home-slider/mvp_slider.webp"
+              alt="MVP IT Consulting"
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            />
+
+            <div className="homeheroimg-contant">
+              <div className="homeheroimg-slogan">
+                MVP IT Consulting
+              </div>
+              <div className="homeheroimg-heading">
+                Transform Ideas into Technology Solutions
+              </div>
+              <div className="homeheroimg-imgbtn">Contact Us</div>
+            </div>
+          </div>
+        </div>
+
       </OwlCarousel>
     </>
   );

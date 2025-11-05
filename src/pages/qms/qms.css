@@ -42,12 +42,6 @@
 
 }
 
-.qms-cards-heading {
-  margin-bottom: 25px;
-  font-weight: bold;
-  font-size: 30px;
-
-}
 
 /* @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700); */
 
@@ -70,49 +64,15 @@ h4 {
 }
 
 .seperator {
-  margin-bottom: 30px;
-  width: 181px;
-  height: 3px;
-  background: #777;
-  border: none;
-  cursor: pointer;
-}
-
-.seperator:hover {
-  background-color: rgba(30, 7, 236, 0.667);
-  /* color: rgba(30, 7, 236, 0.667); */
-  /* height: 5px; */
-  cursor: pointer;
-}
-
-.seperator1:hover {
-  background-color: rgba(30, 7, 236, 0.667);
-  /* color: rgba(30, 7, 236, 0.667); */
-  /* height: 5px; */
-  cursor: pointer;
-}
-
-.seperator2:hover {
-  background-color: rgba(30, 7, 236, 0.667);
-  /* color: rgba(30, 7, 236, 0.667); */
-  /* height: 5px; */
-  cursor: pointer;
+  display: none;
 }
 
 .seperator1 {
-  margin-bottom: 30px;
-  width: 115px;
-  height: 3px;
-  background: #777;
-  border: none;
+  display: none;
 }
 
 .seperator2 {
-  margin-bottom: 30px;
-  width: 131px;
-  height: 3px;
-  background: #777;
-  border: none;
+  display: none;
 }
 
 .title {
@@ -135,8 +95,10 @@ h4 {
   position: relative;
   margin-bottom: 30px;
   min-height: 1px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
-
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
   float: left;
   -webkit-backface-visibility: hidden;
   -webkit-tap-highlight-color: transparent;
@@ -145,41 +107,41 @@ h4 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
 
   .item-in {
     background: #fff;
-    padding: 40px;
+    padding: 30px;
     position: relative;
-
-    &:hover:before {
-      width: 100%;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0px;
-      height: 2px;
-      width: 0%;
-      background: #333333;
-      right: 0px;
-      -webkit-transition: width 0.4s;
-      transition: width 0.4s;
-    }
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .item {
 
   h4 {
-    font-size: 18px;
-    margin-top: 25px;
-    letter-spacing: 2px;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
     text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    font-family: "sans-serif", sans-serif;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 100%;
   }
 
   p {
-    font-size: 12px;
+    font-size: 1.4rem;
   }
 
   a {
@@ -212,38 +174,7 @@ h4 {
 }
 
 .item .icon {
-  position: absolute;
-  top: 27px;
-  left: -16px;
-  cursor: pointer;
-
-  a {
-    font-family: 'Exo', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #999;
-    text-transform: none;
-  }
-
-  svg {
-    width: 32px;
-    height: 32px;
-    float: left;
-  }
-
-  .icon-topic {
-    opacity: 0;
-    padding-left: 0px;
-    transition: 0.4s;
-    display: inline-block;
-    top: 0px;
-    position: relative;
-  }
-
-  &:hover .icon-topic {
-    opacity: 1;
-    padding-left: 10px;
-  }
+  display: none;
 }
 
 @media only screen and (max-width : 768px) {
@@ -256,24 +187,46 @@ h4 {
 
 .qms-top-block {
   display: flex;
-  gap: 20px;
+  gap: 25px;
+  width: 100%;
+}
+
+.qms-top-block .item {
+  flex: 1;
+  width: auto;
 }
 
 .qms-box-contants {
-  font-size: medium;
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 15px;
+  text-align: left;
 }
 
 #heading-qms-cards {
-  font-weight: bold;
+  font-weight: 700;
+  color: #000;
 }
 
 #heading-qms-cards:hover {
-  /* font-weight: bold; */
-  color: rgba(30, 7, 236, 0.667);
+  color: #000;
 }
 
 .qms-main-cards {
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.qms-cards-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 40px;
+  font-family: "sans-serif", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .second-qms-containt {
@@ -325,6 +278,211 @@ h4 {
   padding: 20px;
 }
 
+/* QMS Overview Section Styling */
+#crm-why {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+}
+
+#crm-why .section-head {
+  margin-bottom: 50px;
+}
+
+#crm-why .custom-head .head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "sans-serif", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #27286d;
+}
+
+#crm-why .head-slogan {
+  font-size: 1.7rem;
+  text-align: center;
+  color: #666;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.8;
+  border-left: none;
+  padding-left: 0;
+}
+
+#crm-why .why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  padding: 20px 0;
+  align-items: start;
+  height: 100%;
+}
+
+#crm-why .why-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border-left: none;
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+#crm-why .why-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(39, 40, 109, 0.05) 0%, rgba(74, 75, 161, 0.05) 100%);
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+#crm-why .why-card:hover::before {
+  opacity: 1;
+}
+
+#crm-why .why-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(39, 40, 109, 0.25);
+}
+
+#crm-why .why-card .icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #27286d 0%, #4a4ba1 100%);
+  border-radius: 16px;
+  color: white;
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 20px rgba(39, 40, 109, 0.35);
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+#crm-why .why-card:hover .icon {
+  transform: rotate(5deg) scale(1.15);
+  box-shadow: 0 8px 25px rgba(39, 40, 109, 0.5);
+  background: linear-gradient(135deg, #4a4ba1 0%, #27286d 100%);
+}
+
+#crm-why .why-card .title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #27286d;
+  margin-bottom: 18px;
+  font-family: "sans-serif", sans-serif;
+  position: relative;
+  z-index: 1;
+  line-height: 1.3;
+}
+
+#crm-why .why-card .content {
+  font-size: 1.6rem;
+  color: #555;
+  line-height: 1.8;
+  text-align: justify;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  display: block;
+  width: 100%;
+  flex: 1 1 auto;
+  height: 100% !important;
+ 
+}
+
+@media screen and (max-width: 768px) {
+  #crm-why {
+    padding: 40px 0;
+  }
+
+  #crm-why .custom-head .head-title {
+    font-size: 2.5rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #crm-why .head-slogan {
+    font-size: 1.5rem;
+    padding: 0 15px;
+  }
+
+  #crm-why .why-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  #crm-why .why-card {
+    padding: 30px;
+    min-height: auto;
+  }
+
+  #crm-why .why-card .icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2.5rem;
+  }
+
+  #crm-why .why-card .title {
+    font-size: 2rem;
+  }
+
+  #crm-why .why-card .content {
+    font-size: 1.5rem;
+    overflow: visible;
+    display: block;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .qms-cards-heading {
+    font-size: 2.2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .qms-top-block {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .qms-top-block .item {
+    width: 100%;
+  }
+
+  .item .item-in {
+    padding: 25px;
+  }
+
+  .item h4 {
+    font-size: 1.6rem;
+  }
+
+  .qms-box-contants {
+    font-size: 1.4rem;
+  }
+}
+
 @media only screen and (max-width : 576px) {
   .qms-top-block {
     display: grid;
@@ -334,6 +492,18 @@ h4 {
   .head-image-containt {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .qms-cards-heading {
+    font-size: 2rem;
+  }
+
+  .item h4 {
+    font-size: 1.5rem;
+  }
+
+  .qms-box-contants {
+    font-size: 1.3rem;
   }
 
   .main-text-image {

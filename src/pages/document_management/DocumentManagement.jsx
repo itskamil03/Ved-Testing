@@ -79,10 +79,10 @@ const docsecond = [
   },
   {
     id: "5",
-    title: "Document Sharing and Permissions",
-    image: "stamp.png",
+    title: "Document Version Control",
+    image: "implementation.svg",
     detail:
-      "Control access to documents and set user permissions based on roles and responsibilities.",
+      "Track document versions, maintain history, and restore previous versions when needed for better document management.",
   },
 ];
 
@@ -605,7 +605,7 @@ function DocumentManagement() {
                 <div className="head-title">Frequently Ask Question</div>
               </div>
               <div className="head-slogan">
-                Frequently Asked Question For GXP & GMP Software
+                Frequently Asked Question For Document Management Software (DMS)
               </div>
             </div>
             <div className="section-content">

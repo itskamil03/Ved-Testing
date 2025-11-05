@@ -44,6 +44,7 @@ const profirst = [
     p2: "Easily customize integrations to suit your team’s unique needs and improve cross-platform collaboration."
   },
 ];
+
 const pro_why = [
   {
     id: "1",
@@ -350,17 +351,20 @@ function ProjectManagement() {
                    
                 />
               </div>
+
               <div className="why-grid">
                 {pro_why.map((why) => {
                   return (
                     <div className="why-card" key={why.id}>
                       <div className="title">{why.head}</div>
-                      <div className="content">{why.p1}</div>
-                      <div className="content">{why.p2}</div>
+                      <div className="content">
+                        {why.p1} {why.p2}
+                      </div>
                     </div>
                   );
                 })}
               </div>
+
             </div>
           </div>
         </div>
@@ -577,7 +581,7 @@ function ProjectManagement() {
                 <div className="head-title">Frequently Ask Question</div>
               </div>
               <div className="head-slogan">
-                Frequently Asked Question For GXP & GMP Software
+                Frequently Asked Question For Project Management Software
               </div>
             </div>
             <div className="section-content">

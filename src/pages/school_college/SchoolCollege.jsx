@@ -861,7 +861,7 @@ function SchoolCollage() {
                 <div className="head-title">Frequently Ask Question</div>
               </div>
               <div className="head-slogan">
-                Frequently Asked Question For GXP & GMP Software
+                Frequently Asked Question For School & College Management Software
               </div>
             </div>
             <div className="section-content">

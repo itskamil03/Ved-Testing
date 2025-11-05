@@ -1115,7 +1115,7 @@ function Home({ target, label }) {
           <div className="container">
             <div className="milestone-grid">
               <h2 className="cservice-head-title head_title">
-                Internship & Training at VED
+                Internship & Training at Venturing Digitally
               </h2>
               <div className="row">
                 <div className="col-lg-6">
@@ -1152,15 +1152,13 @@ function Home({ target, label }) {
                       </div>
                       <br />
                       <ul>
-                        <li >
-                          <span style={{ fontWeight: 600 }}>
-                            {" "}
-                            Flexible Options:
-                          </span>{" "}
-                          Choose from paid or unpaid internships to match your
-                          commitment level and learning goals.
-                        </li>
-                        <br />
+                    
+                        <li>
+                           <span style={{ fontWeight: 600 }}>Internship & Training Exposure:</span>{" "}
+                          Gain comprehensive exposure through a blend of internship and structured training programs, preparing you for real-world industry challenges.
+                       </li>
+                       <br />
+                        
                         <li >
                           <span style={{ fontWeight: 600 }}>
                             Hands-On Experience:
@@ -1177,7 +1175,17 @@ function Home({ target, label }) {
                           Whether you’re available for a few weeks or several
                           months, we have options that fit your schedule and
                           academic needs.
+                        </li>  
+                        <br /> 
+                        <li >
+                          <span style={{ fontWeight: 600 }}>
+                            {" "}
+                            Flexible Options:
+                          </span>{" "}
+                          Choose from paid or unpaid internships to match your
+                          commitment level and learning goals.
                         </li>
+                        
                       </ul>
                     </div>
                   </div>
@@ -1240,7 +1248,7 @@ function Home({ target, label }) {
           <div className="container">
             <div className="lifeatvedthird-section-head">
               <div className="lifeatvedthird-custom-head">
-                <h2 className="head_title">Training Verticals At VED</h2>
+                <h2 className="head_title">Training Verticals At Venturing Digitally</h2>
               </div>
             </div>
 
@@ -1416,6 +1424,35 @@ function Home({ target, label }) {
         </div>
       </section>
 
+
+      <section id="join">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="section-head">
+              <div
+                style={{ display: "grid", gridRowGap: "20px" }}
+              >
+                <div className="head-slogan page_title">
+                  Join Venturing Digitally Pvt. Ltd. to kick start your
+                  journey into the world of digital excellence. Our
+                  internships are more than just learning
+                  opportunities—they’re a Launchpad for a successful career.
+                </div>
+
+                <div className="solutin_btn">
+                  <button
+                    onClick={handleTraining}
+                    className="more_btn_solution"
+                  >
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="latest_updates"  >
         {/* ref={sectionRef} */}
         <div className="container-fluid">
@@ -1515,33 +1552,6 @@ function Home({ target, label }) {
         </div>
       </section>
 
-      <section id="join">
-        <div className="container-fluid">
-          <div className="container">
-            <div className="section-head">
-              <div
-                style={{ display: "grid", gridRowGap: "20px" }}
-              >
-                <div className="head-slogan page_title">
-                  Join Venturing Digitally Pvt. Ltd. to kick start your
-                  journey into the world of digital excellence. Our
-                  internships are more than just learning
-                  opportunities—they’re a Launchpad for a successful career.
-                </div>
-
-                <div className="solutin_btn">
-                  <button
-                    onClick={handleTraining}
-                    className="more_btn_solution"
-                  >
-                    View More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
 
 
@@ -1842,14 +1852,14 @@ function Home({ target, label }) {
                     })}
 
                 </div>
-                <div className="solutin_btn" style={{ marginTop: "20px" }}>
+              {loadingData && blogs?.length > 3 && <div className="solutin_btn" style={{ marginTop: "20px" }}>
                   <button
                     className="more_btn_solution"
                     onClick={handleViewBlog}
                   >
                     View More
                   </button>
-                </div>
+                </div>}
 
               </div>
             </div>
@@ -1879,7 +1889,7 @@ function Home({ target, label }) {
 
                 <div className="blogesc-main">
 
-                  {loadingData && events.slice(0,4).map((event) => (
+                  {loadingData && events?.slice(0,4).map((event) => (
                     <Link className="bloges-card" key={event.id}>
                       <div className="events-card-img">
                         <img loading="eager" fetchpriority="high"
@@ -1901,7 +1911,8 @@ function Home({ target, label }) {
                 </div>
 
               </div>
-              <div className="solutin_btn" style={{ marginTop: "20px" }}>
+             
+                {loadingData && events?.length > 4 && <div className="solutin_btn" style={{ marginTop: "20px" }}>
                 <button
                   className="more_btn_solution"
                   onClick={handleViewEvents}
@@ -1909,7 +1920,7 @@ function Home({ target, label }) {
                   View More
                 </button>
               </div>
-
+              }
 
             </div>
           </div>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./Crm.css";
 import Hero from "../../components/hero_section/Hero";
 import OwlCarousel from "react-owl-carousel";
@@ -10,19 +10,6 @@ import {toast, ToastContainer } from "react-toastify";
 
 function Crm() {
   const [isAgreed, setIsAgreed] = useState(false);
-
-
-  useEffect(() => {
-    const mouseWheel = document.querySelector(".why-grid");
-
-    mouseWheel.addEventListener("wheel", function (e) {
-      const race = 30;
-
-      if (e.deltaY > 0) mouseWheel.scrollLeft += race;
-      else mouseWheel.scrollLeft -= race;
-      e.preventDefault();
-    });
-  });
 
   const [activeIndex, setActiveIndex] = useState(1);
 
@@ -52,37 +39,6 @@ function Crm() {
       },
       991: {
         items: 2,
-        nav: false,
-      },
-    },
-  };
-
-  const forcrm = {
-    margin: 30,
-    responsiveClass: true,
-    nav: true,
-    dots: false,
-    autoplay: true,
-    navText: [
-      '<i class="las la-angle-left"></i>',
-      '<i class="las la-angle-right"></i>',
-    ],
-    smartSpeed: 500,
-    responsive: {
-      0: {
-        items: 1,
-        nav: false,
-      },
-      768: {
-        items: 1,
-        nav: false,
-      },
-      769: {
-        items: 2,
-        nav: false,
-      },
-      1220: {
-        items: 3,
         nav: false,
       },
     },
@@ -442,78 +398,308 @@ function Crm() {
       {/* {{-- ===========================================
                         WHY VED
     =========================================== --}} */}
-      <section id="crm-why" className="bg-light">
+      {/* CRM Modules & Features by Venturing Digitally */}
+      <section id="crm-modules-features" className="bg-light">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">
               <div className="custom-head">
                 <div className="head-title">
-                  Why Venturing Digitally for CRM software
+                  CRM Modules & Features by Venturing Digitally
                 </div>
               </div>
               <div className="head-slogan page_title">
-                Trustworthy Customized CRM Experts in Market
+                Comprehensive CRM modules and advanced features designed to streamline your business operations and enhance customer relationships
               </div>
             </div>
-            <div className="section-content">
-              <div className="why-grid">
-                <OwlCarousel loop className="owl-theme" {...forcrm}>
-                  <div className="why-card">
-                    <div className="icon">
-                      <i class="fa-solid fa-industry"></i>
-                    </div>
-                    <div className="title">Extensive Industry Experience</div>
-                    <div className="content">
-                      Our team brings years of experience in CRM development,
-                      implementation, and support, ensuring we understand the
-                      unique challenges and requirements of your industry.
+
+            {/* CRM Modules Section */}
+            <div className="crm-modules-section">
+              <div className="modules-section-title">CRM Modules</div>
+              <div className="advanced-modules-grid">
+                <div className="module-card">
+                  <div className="module-icon">
+                    <i className="fa-solid fa-users"></i>
+                  </div>
+                  <div className="module-title">Contact Management</div>
+                  <div className="module-content">
+                    Centralized database for all customer contacts with detailed profiles, interaction history, and relationship mapping.
+                  </div>
+                  <ul className="module-features-list">
+                    <li><i className="fa-solid fa-check"></i> Contact Segmentation</li>
+                    <li><i className="fa-solid fa-check"></i> Communication History</li>
+                    <li><i className="fa-solid fa-check"></i> Relationship Tracking</li>
+                  </ul>
+                </div>
+
+                <div className="module-card">
+                  <div className="module-icon">
+                    <i className="fa-solid fa-chart-line"></i>
+                  </div>
+                  <div className="module-title">Sales Pipeline Management</div>
+                  <div className="module-content">
+                    Visualize and manage your entire sales process from lead generation to deal closure with real-time analytics.
+                  </div>
+                  <ul className="module-features-list">
+                    <li><i className="fa-solid fa-check"></i> Deal Tracking</li>
+                    <li><i className="fa-solid fa-check"></i> Forecast Analytics</li>
+                    <li><i className="fa-solid fa-check"></i> Performance Metrics</li>
+                  </ul>
+                </div>
+
+                <div className="module-card">
+                  <div className="module-icon">
+                    <i className="fa-solid fa-ticket"></i>
+                  </div>
+                  <div className="module-title">Customer Support & Ticketing</div>
+                  <div className="module-content">
+                    Efficient ticket management system with automated routing, SLA tracking, and multi-channel support.
+                  </div>
+                  <ul className="module-features-list">
+                    <li><i className="fa-solid fa-check"></i> Ticket Automation</li>
+                    <li><i className="fa-solid fa-check"></i> SLA Management</li>
+                    <li><i className="fa-solid fa-check"></i> Multi-channel Support</li>
+                  </ul>
+                </div>
+
+                <div className="module-card">
+                  <div className="module-icon">
+                    <i className="fa-solid fa-envelope"></i>
+                  </div>
+                  <div className="module-title">Email Marketing & Campaigns</div>
+                  <div className="module-content">
+                    Create, schedule, and track email campaigns with advanced segmentation and personalization features.
+                  </div>
+                  <ul className="module-features-list">
+                    <li><i className="fa-solid fa-check"></i> Email Templates</li>
+                    <li><i className="fa-solid fa-check"></i> A/B Testing</li>
+                    <li><i className="fa-solid fa-check"></i> Campaign Analytics</li>
+                  </ul>
+                </div>
+
+                <div className="module-card">
+                  <div className="module-icon">
+                    <i className="fa-solid fa-calendar-days"></i>
+                  </div>
+                  <div className="module-title">Activity & Task Management</div>
+                  <div className="module-content">
+                    Schedule meetings, set reminders, track tasks, and manage team activities with integrated calendar.
+                  </div>
+                  <ul className="module-features-list">
+                    <li><i className="fa-solid fa-check"></i> Calendar Integration</li>
+                    <li><i className="fa-solid fa-check"></i> Task Automation</li>
+                    <li><i className="fa-solid fa-check"></i> Team Collaboration</li>
+                  </ul>
+                </div>
+
+                <div className="module-card">
+                  <div className="module-icon">
+                    <i className="fa-solid fa-file-invoice"></i>
+                  </div>
+                  <div className="module-title">Invoice & Billing</div>
+                  <div className="module-content">
+                    Generate invoices, manage billing cycles, track payments, and handle recurring subscriptions seamlessly.
+                  </div>
+                  <ul className="module-features-list">
+                    <li><i className="fa-solid fa-check"></i> Invoice Generation</li>
+                    <li><i className="fa-solid fa-check"></i> Payment Tracking</li>
+                    <li><i className="fa-solid fa-check"></i> Recurring Billing</li>
+                  </ul>
+                </div>
+
+                <div className="module-card">
+                  <div className="module-icon">
+                    <i className="fa-solid fa-chart-pie"></i>
+                  </div>
+                  <div className="module-title">Analytics & Reporting</div>
+                  <div className="module-content">
+                    Comprehensive dashboards with real-time insights, custom reports, and data visualization tools.
+                  </div>
+                  <ul className="module-features-list">
+                    <li><i className="fa-solid fa-check"></i> Custom Dashboards</li>
+                    <li><i className="fa-solid fa-check"></i> Real-time Reports</li>
+                    <li><i className="fa-solid fa-check"></i> Data Export</li>
+                  </ul>
+                </div>
+
+                <div className="module-card">
+                  <div className="module-icon">
+                    <i className="fa-solid fa-mobile-screen-button"></i>
+                  </div>
+                  <div className="module-title">Mobile CRM</div>
+                  <div className="module-content">
+                    Access your CRM on-the-go with fully responsive mobile apps for iOS and Android platforms.
+                  </div>
+                  <ul className="module-features-list">
+                    <li><i className="fa-solid fa-check"></i> iOS & Android Apps</li>
+                    <li><i className="fa-solid fa-check"></i> Offline Mode</li>
+                    <li><i className="fa-solid fa-check"></i> Push Notifications</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* CRM Features Section */}
+            <div className="crm-features-section">
+              <div className="features-section-title">CRM Features</div>
+              <div className="features-container">
+                <div className="features-grid">
+                  <div className="feature-item" style={{'--bg-image': 'url("/image/crm-features/ai-powered.png")'}}>
+                    <div className="feature-overlay"></div>
+                    <div className="feature-content">
+                      <div className="feature-icon">
+                        <i className="fa-solid fa-brain"></i>
+                      </div>
+                      <div className="feature-title">AI-Powered Insights</div>
+                      <div className="feature-description">
+                        Leverage artificial intelligence to predict customer behavior, recommend next best actions, and automate decision-making processes.
+                      </div>
                     </div>
                   </div>
-                  <div className="why-card">
-                    <div className="icon">
-                      <i class="fa-brands fa-intercom"></i>
-                    </div>
-                    <div className="title">Customization and Scalability</div>
-                    <div className="content">
-                      We offer flexible CRM solutions that can be customized to
-                      match your business workflows and easily scaled as your
-                      company grows.
-                    </div>
-                  </div>
-                  <div className="why-card">
-                    <div className="icon">
-                      <i class="fa-solid fa-network-wired"></i>
-                    </div>
-                    <div className="title">Integration Capabilities</div>
-                    <div className="content">
-                      Our CRM systems seamlessly integrate with existing
-                      software applications, ensuring smooth data flow across
-                      your organization for improved efficiency.
+
+                  <div className="feature-item" style={{'--bg-image': 'url("/image/crm-features/chatbot.jpg")'}}>
+                    <div className="feature-overlay"></div>
+                    <div className="feature-content">
+                      <div className="feature-icon">
+                        <i className="fa-solid fa-robot"></i>
+                      </div>
+                      <div className="feature-title">Chatbot Integration</div>
+                      <div className="feature-description">
+                        Intelligent chatbots for 24/7 customer support, lead qualification, and instant query resolution.
+                      </div>
                     </div>
                   </div>
-                  <div className="why-card">
-                    <div className="icon">
-                      <i class="fa-solid fa-user-shield"></i>
-                    </div>
-                    <div className="title">Data Security and Privacy</div>
-                    <div className="content">
-                      We prioritize data security and adhere to industry best
-                      practices to protect your sensitive customer information,
-                      giving you peace of mind.
-                    </div>
-                  </div>
-                  <div className="why-card">
-                    <div className="icon">
-                      <i class="fa-solid fa-headset"></i>
-                    </div>
-                    <div className="title">Training and Support</div>
-                    <div className="content">
-                      We provide comprehensive training and ongoing support to
-                      help your team leverage the CRM effectively, ensuring a
-                      smooth adoption and maximizing its potential.
+
+                  <div className="feature-item" style={{'--bg-image': 'url("/image/crm-features/advace-security.avif")'}}>
+                    <div className="feature-overlay"></div>
+                    <div className="feature-content">
+                      <div className="feature-icon">
+                        <i className="fa-solid fa-shield-halved"></i>
+                      </div>
+                      <div className="feature-title">Advanced Security</div>
+                      <div className="feature-description">
+                        Enterprise-grade security with encryption, role-based access control, audit trails, and compliance management.
+                      </div>
                     </div>
                   </div>
-                </OwlCarousel>
+
+                  <div className="feature-item" style={{'--bg-image': 'url("/image/crm-features/api-integration.jpg")'}}>
+                    <div className="feature-overlay"></div>
+                    <div className="feature-content">
+                      <div className="feature-icon">
+                        <i className="fa-solid fa-plug"></i>
+                      </div>
+                      <div className="feature-title">API & Integrations</div>
+                      <div className="feature-description">
+                        Seamless integration with popular tools like ERP, accounting software, email platforms, and third-party applications.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="feature-item" style={{'--bg-image': 'url("/image/crm-features/automation.png")'}}>
+                    <div className="feature-overlay"></div>
+                    <div className="feature-content">
+                      <div className="feature-icon">
+                        <i className="fa-solid fa-automobile"></i>
+                      </div>
+                      <div className="feature-title">Workflow Automation</div>
+                      <div className="feature-description">
+                        Automate repetitive tasks, set up trigger-based actions, and streamline business processes with custom workflows.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="feature-item" style={{'--bg-image': 'url("/image/crm-features/social-media-integration.jpeg")'}}>
+                    <div className="feature-overlay"></div>
+                    <div className="feature-content">
+                      <div className="feature-icon">
+                        <i className="fa-solid fa-comments"></i>
+                      </div>
+                      <div className="feature-title">Social Media Integration</div>
+                      <div className="feature-description">
+                        Connect with customers across social media platforms, track mentions, and manage social conversations.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="feature-item" style={{'--bg-image': 'url("/image/crm-features/video-conferencing.webp")'}}>
+                    <div className="feature-overlay"></div>
+                    <div className="feature-content">
+                      <div className="feature-icon">
+                        <i className="fa-solid fa-video"></i>
+                      </div>
+                      <div className="feature-title">Video Conferencing</div>
+                      <div className="feature-description">
+                        Built-in video calling and screen sharing capabilities for virtual meetings and customer interactions.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="feature-item" style={{'--bg-image': 'url("/image/crm-features/custom-development.jpg")'}}>
+                    <div className="feature-overlay"></div>
+                    <div className="feature-content">
+                      <div className="feature-icon">
+                        <i className="fa-solid fa-code-branch"></i>
+                      </div>
+                      <div className="feature-title">Custom Development</div>
+                      <div className="feature-description">
+                        Tailor-made solutions and custom modules developed specifically for your unique business requirements.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="feature-item" style={{'--bg-image': 'url("/image/crm-features/cloud&on-premises.webp")'}}>
+                    <div className="feature-overlay"></div>
+                    <div className="feature-content">
+                      <div className="feature-icon">
+                        <i className="fa-solid fa-cloud"></i>
+                      </div>
+                      <div className="feature-title">Cloud & On-Premise</div>
+                      <div className="feature-description">
+                        Flexible deployment options with cloud-based SaaS or on-premise installation based on your security needs.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="feature-item" style={{'--bg-image': 'url("/image/crm-features/multi-level-languages.png")'}}>
+                    <div className="feature-overlay"></div>
+                    <div className="feature-content">
+                      <div className="feature-icon">
+                        <i className="fa-solid fa-language"></i>
+                      </div>
+                      <div className="feature-title">Multi-Language Support</div>
+                      <div className="feature-description">
+                        Support for multiple languages and currencies to serve global customers and international markets.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="feature-item" style={{'--bg-image': 'url("/image/crm-features/hierarchical-management.jpg")'}}>
+                    <div className="feature-overlay"></div>
+                    <div className="feature-content">
+                      <div className="feature-icon">
+                        <i className="fa-solid fa-sitemap"></i>
+                      </div>
+                      <div className="feature-title">Hierarchy Management</div>
+                      <div className="feature-description">
+                        Manage organizational structure, team hierarchies, and reporting relationships with flexible permission settings.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="feature-item" style={{'--bg-image': 'url("/image/crm-features/data-migration.webp")'}}>
+                    <div className="feature-overlay"></div>
+                    <div className="feature-content">
+                      <div className="feature-icon">
+                        <i className="fa-solid fa-database"></i>
+                      </div>
+                      <div className="feature-title">Data Migration</div>
+                      <div className="feature-description">
+                        Smooth data migration from legacy systems with minimal downtime and comprehensive data validation.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -814,7 +1000,7 @@ function Crm() {
                 <div className="head-title">Frequently Ask Question</div>
               </div>
               <div className="head-slogan">
-                Frequently Asked Question For GXP & GMP Software
+                Frequently Asked Question For CRM Software
               </div>
             </div>
             <div className="section-content">

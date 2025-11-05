@@ -460,57 +460,61 @@ export default function Careers() {
             <div className="section-content">
               <div className="row">
                 {careers.map((career) => {
+                  const postedDate = new Date(career.created_at).toLocaleString("en-IN", {
+                    day: "2-digit",
+                    month: "short",
+                    year: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: true,
+                    timeZone: "Asia/Kolkata",
+                  }).replace("am", "AM").replace("pm", "PM");
                   
-                   return (
-                    <>
-                     <div className="col-lg-4 col-md-6" key={career.id}>
-                    <div className="job-card">
-                      <div className="top">
-                        <div className="logo">
-                          <img loading="eager" fetchpriority="high"
-                            src={`https://ved.venturingdigitally.com/assets/img/blog/${career.image}`}
-                            alt={career.title}
-                            className="w-100 h-100"
-                             
+                  return (
+                    <div className="col-lg-4 col-md-6" key={career.id}>
+                      <div className="job-card">
+                        <div className="job-card-top">
+                          <div className="job-category">
+                            <div className="category-icon">
+                              <img 
+                                loading="eager" 
+                                fetchpriority="high"
+                                src={`https://ved.venturingdigitally.com/assets/img/blog/${career.image}`}
+                                alt={career.title}
+                                className="category-img"
+                              />
+                            </div>
+                            <span className="category-label">{career.title}</span>
+                          </div>
+                          <button
+                            className="apply-btn"
+                            onClick={() => handleShow(career)}
+                          >
+                            Apply
+                          </button>
+                        </div>
+                        <div className="job-card-body">
+                          <h3 className="job-title">{career.title}</h3>
+                          <div 
+                            className="job-description"
+                            dangerouslySetInnerHTML={{
+                              __html: decodeHtmlEntities(career.content)
+                                .split(" ")
+                                .slice(0, 50)
+                                .join(" ") + "..."
+                            }}
                           />
                         </div>
-                        <button
-                          className="apply-btn"
-                          onClick={() => handleShow(career)}
-                        >
-                          Apply
-                        </button>
+                        <div className="job-card-footer">
+                          <div className="posted-date">
+                            <i className="fa-regular fa-clock"></i>
+                            <span>{postedDate}</span>
+                          </div>
+                        </div>
                       </div>
-                      <div className="middle">
-                        <div className="head">{career.title}</div>
-                        {/* <div className="data">{cleanedDescription}</div> */}
-                        <div style={{fontSize:"12px"}}
-               dangerouslySetInnerHTML={{
-                 __html: decodeHtmlEntities(career.content)
-                   .split(" ")
-                   .slice(0, 40)
-                   .join(" ") + "..."
-               }}
-             />
-                      </div>
-                      <div className="bottom">
-                      {new Date(career.created_at).toLocaleString("en-IN", {
-                        day: "2-digit",
-                        month: "short",
-                        year: "numeric",
-                        hour: "2-digit",
-                        minute: "2-digit",
-                        hour12: true,
-                        timeZone: "Asia/Kolkata",
-                      }).replace("am", "AM").replace("pm", "PM")}
                     </div>
-
-                    </div>
-                  </div>
-                    </>
-                   )
-                 
-})}
+                  );
+                })}
               </div>
             </div>
           </div>
