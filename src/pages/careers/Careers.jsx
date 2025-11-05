@@ -67,121 +67,208 @@ export default function Careers() {
     }
 
 
-  const handleSubmit = async (e) => {
+// Updated state structure - separate file object from display value
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    e.preventDefault();
-    try {
-      const response = await fetch(
-        "https://ved.venturingdigitally.com/api/job_applicationstore",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+  try {
+    // Create FormData for sending files + text data
+    const formDataToSend = new FormData();
+    formDataToSend.append("name", formData.name);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("mobile", formData.mobile);
+    formDataToSend.append("gender", formData.gender);
+    formDataToSend.append("job_type", formData.job_type);
+    formDataToSend.append("apply_for", formData.apply_for);
 
-      if (response.status == 200) {
-       
-        setFormData({ name: "",
-          email: "",
-          mobile: "",
-          gender: "",
-          job_type: "",
-          apply_for:"",
-          file:""})
+    // Append file only if selected (use the actual file object)
+    if (formData.fileObject) {
+      formDataToSend.append("file", formData.fileObject);
+    }
 
-        setShowSuccessMessage(true);
-        setTimeout(() => {
+    // Send API request
+    const response = await fetch("https://ved.venturingdigitally.com/api/job_applicationstore", {
+      method: "POST",
+      body: formDataToSend,
+    });
+
+    // Check response status and parse response
+    if (response.ok) {
+      const result = await response.json(); // Parse response to see server feedback
+      console.log("Server response:", result);
+
+      // Reset form data properly
+      setFormData({
+        name: "",
+        email: "",
+        mobile: "",
+        gender: "",
+        job_type: "",
+        apply_for: "",
+        file: "", // Display value (filename)
+        fileObject: null, // Actual file object
+      });
+
+      // Reset file input
+      const fileInput = document.querySelector('input[type="file"]');
+      if (fileInput) fileInput.value = "";
+
+      setShowSuccessMessage(true);
+      setTimeout(() => {
         setShowSuccessMessage(false);
         closeForm();
-    }, 1500);
-         
+      }, 1500);
+
       toast.success("Job Application Submitted Successfully", {
         position: "top-right",
         autoClose: 2000,
       });
-
-      } 
+    } else {
+      // Log error response for debugging
+      const errorText = await response.text();
+      console.error("Server error:", response.status, errorText);
       
-      else {
-        toast.error("Submission failed. Please try again.", {
-          position: "top-right",
-          autoClose: 2000,
-        });
-      }
-
-    } catch (error) {
-      console.error("An error occurred while submitting the form:", error);
+      toast.error(`Submission failed: ${response.status}. Please try again.`, {
+        position: "top-right",
+        autoClose: 3000,
+      });
     }
-  };
+  } catch (error) {
+    console.error("Network error occurred while submitting the form:", error);
+    toast.error("Network error! Please check your connection.", {
+      position: "top-right",
+      autoClose: 3000,
+    });
+  }
+};
 
+const handleCareer = async (e) => {
+  e.preventDefault();
 
-  const handleCareer = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch(
-        "https://ved.venturingdigitally.com/api/job_applicationstore",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+  try {
+    const formDataToSend = new FormData();
 
-      if (response.status == 200) {
-     
-        setFormData({ name: "",
-          email: "",
-          mobile: "",
-          gender: "",
-          job_type: "",
-          apply_for:"",
-          file:""})
+    // Append text fields
+    formDataToSend.append("name", formData.name);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("mobile", formData.mobile);
+    formDataToSend.append("gender", formData.gender);
+    formDataToSend.append("job_type", formData.job_type);
+    formDataToSend.append("apply_for", formData.apply_for);
 
-          toast.success("Job Application Submitted Successfully", {
-            position: "top-right",
-            autoClose: 2000,
-          });
-       
-      }
-      else {
-
-        toast.error("Submission failed. Please try again.", {
-          position: "top-right",
-          autoClose: 2000,
-         });
-      } 
-      
-    } catch (error) {
-      console.error("An error occurred while submitting the form:", error);
+    // Append file if selected (use the actual file object)
+    if (formData.fileObject) {
+      formDataToSend.append("file", formData.fileObject);
     }
-  };
 
-  const handleChange = (e) => {
+    // Debug: Log FormData contents
+    console.log("Sending FormData:");
+    for (let [key, value] of formDataToSend.entries()) {
+      console.log(key, value);
+    }
 
-     const { name, files } = e.target;
+    // Send request
+    const response = await fetch("https://ved.venturingdigitally.com/api/job_applicationstore", {
+      method: "POST",
+      body: formDataToSend,
+    });
 
-      if (name === "file") {
+    if (response.ok) {
+      const result = await response.json();
+      console.log("Server response:", result);
+
+      // Reset form data properly
+      setFormData({
+        name: "",
+        email: "",
+        mobile: "",
+        gender: "",
+        job_type: "",
+        apply_for: "",
+        file: "", // Display value (filename)
+        fileObject: null, // Actual file object
+      });
+
+      // Reset file input
+      const fileInput = document.querySelector('input[type="file"]');
+      if (fileInput) fileInput.value = "";
+
+      toast.success("Job Application Submitted Successfully", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+    } else {
+      const errorText = await response.text();
+      console.error("Server error:", response.status, errorText);
       
-        const file = files[0];
-        if (file) {
-          setFormData({
-            ...formData,
-            file: file.name,
-          });
-        } 
-      } else {
-      
-        setFormData({
-          ...formData,
-          [name]: e.target.value,
-        });
-      }
-    };
+      toast.error(`Submission failed: ${response.status}. Please try again.`, {
+        position: "top-right",
+        autoClose: 3000,
+      });
+    }
+  } catch (error) {
+    console.error("Network error occurred while submitting the form:", error);
+    toast.error("Network error! Please check your connection.", {
+      position: "top-right",
+      autoClose: 3000,
+    });
+  }
+};
+
+// FIXED: Store both filename (for display) and file object (for upload)
+const handleChange = (e) => {
+  const { name, value, files } = e.target;
+  console.log("Field changed:", name, value || files);
+
+  if (name === "file") {
+    const file = files[0];
+    console.log("Selected file:", file);
+    
+    setFormData({
+      ...formData,
+      file: file ? file.name : "", // Store filename for display
+      fileObject: file || null, // Store actual file object for upload
+    });
+  } else {
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  }
+};
+
+// Additional debugging function - call this before submission to verify data
+const debugFormData = () => {
+  console.log("Current form data:", formData);
+  console.log("File object:", formData.fileObject);
+  console.log("File display name:", formData.file);
+  
+  // Validate required fields
+  const requiredFields = ['name', 'email', 'mobile', 'gender', 'job_type', 'apply_for'];
+  const missingFields = requiredFields.filter(field => !formData[field]);
+  
+  if (missingFields.length > 0) {
+    console.warn("Missing required fields:", missingFields);
+    return false;
+  }
+  
+  return true;
+};
+
+// Initial state should include both file and fileObject
+// Make sure your useState initialization looks like this:
+/*
+const [formData, setFormData] = useState({
+  name: "",
+  email: "",
+  mobile: "",
+  gender: "",
+  job_type: "",
+  apply_for: "",
+  file: "", // This is for display purposes (filename)
+  fileObject: null, // This is the actual file object for upload
+});
+*/
 
 
 
