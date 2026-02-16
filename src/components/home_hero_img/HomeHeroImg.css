@@ -108,3 +108,17 @@
     font-weight: 600;
   }
 }
+
+
+.hero-container {
+  position: relative;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  pointer-events: none;
+}

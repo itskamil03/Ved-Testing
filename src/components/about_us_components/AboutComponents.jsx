@@ -1,7 +1,7 @@
 import "./AboutComponents.css";
 import Team from "../../assets/icon/team.png";
 import Stats from "../../assets/icon/stats.png";
-import AboutVideo from "../../assets/about-video.mp4";
+
 import { FaPlayCircle } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -11,11 +11,10 @@ function AboutComponents() {
       <section id="about">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head">
+            <div className="section-head" data-aos="fade-down">
               <div className="custom-head">
                 <div className="circle"></div>
                 <h1
-                  // data-aos="zoom-in"
                   className="head-title"
                 >
                   Venturing Digitally : Best Software Company For Your One-Stop Software Solutions!
@@ -23,7 +22,7 @@ function AboutComponents() {
               </div>
 
               <h2
-                // data-aos="zoom-in"
+   
                 className="head-slogan page_title"
               >
                 Best website development, Mobile Application development and ERP software in Jamshedpur, Bhopal, Bangalore, Kolkata & Nagpur - Experts in IT Solutions and Services.
@@ -32,18 +31,18 @@ function AboutComponents() {
 
             <div className="section-content">
               <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-6" data-aos="fade-right">
                   <div className="about-media">
-                    <div  className="about-video"> {/*data-aos="fade-right" */}
+                    <div className="about-video"> 
                       <div className="about-photo">
-                        <video
+                        {/* <video
                           loop={true}
                           autoPlay={true}
                           preload="true"
-                        // poster={Aboutimg}
+                 
                         >
                           <source src={AboutVideo} type="video/mp4" />
-                        </video>
+                        </video> */}
                       </div>
                       <div className="about-video-btn">
                         <FaPlayCircle className="fa-solid fa-play" />
@@ -51,19 +50,15 @@ function AboutComponents() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6" data-aos="fade-left">
                   <div className="about-content">
                     <h3 
-                    // data-aos="fade-left"
-                    //   data-aos-offset="300"
-                    //   data-aos-easing="ease-in-sine" 
+                  
                       className="content-head">
                       Venturing Digitally Pvt. Ltd.
                     </h3>
                     <div 
-                    //  data-aos="fade-left"
-                    //   data-aos-offset="300"
-                    //   data-aos-easing="ease-in-sine"
+                  
                        className="content-data page_title">
                       Venturing Digitally is IT & software company based in Jamshedpur,
                       Bhopal, Bangalore, Kolkata & Nagpur who are passionate in
@@ -79,16 +74,12 @@ function AboutComponents() {
                       reliable and cost-effective IT services.
                     </div>
                     <div 
-                    // data-aos="fade-left"
-                    //   data-aos-offset="300"
-                    //   data-aos-easing="ease-in-sine" 
+               
                       className="about-content-data-btn">
                       <button className="aboutc-btn">Who We Are</button>
                     </div>
                     <div 
-                    // data-aos="fade-left"
-                    //   data-aos-offset="300"
-                    //   data-aos-easing="ease-in-sine"
+                   
                        className="value-block">
                       <div className="value-icon">
                         <img loading="eager" fetchpriority="high" src={Team} alt="" className="w-100 h-100"  />
@@ -105,9 +96,7 @@ function AboutComponents() {
                       </div>
                     </div>
                     <div 
-                    // data-aos="fade-left"
-                    //   data-aos-offset="300"
-                    //   data-aos-easing="ease-in-sine"
+                
                        className="value-block">
                       <div className="value-icon">
                         <img loading="eager" fetchpriority="high" src={Stats} alt="" className="w-100 h-100"  />

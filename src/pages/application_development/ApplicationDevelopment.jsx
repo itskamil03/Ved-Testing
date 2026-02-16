@@ -12,7 +12,6 @@ function ApplicationDevelopment() {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
-  const [activeTab, setActiveTab] = useState(0);
   return (
     <>
       <Hero
@@ -281,26 +280,26 @@ function ApplicationDevelopment() {
       {/* {{-- ===========================================
                     PROJECT COST
     =========================================== --}} */}
-      <section id="website-contact">
+      <section id="website-contact" >
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
               <div className="row">
                 <div className="col-lg-12">
                   <div className="calc-side">
-                    <div className="content">
-                      <div className="head">
+                    <div className="content" style={{background:"none"}}>
+                      {/* <div className="head">
                         Want to Know How Much Your Project Cost?
-                      </div>
-                      <div className="sub-head">
+                      </div> */}
+                      {/* <div className="sub-head">
                         Know the exact requirements? Use our calculator to
                         estimate the cost of your web development team.
-                      </div>
+                      </div> */}
                       <a href="/cost-calculator">Check Now !</a>
                     </div>
                     <div className="image">
                       <img loading="eager" fetchpriority="high"
-                        src="images/blog/blog-3.jpg"
+                        src="images/blog/blog-3.jpeg"
                         alt="..."
                         className="w-100 h-100"
                          
@@ -331,35 +330,16 @@ function ApplicationDevelopment() {
                 Venturing Digitally
               </div>
             </div>
-            <div className="section-content">
-              <div className="tabs">
-                <div className="tab-header">
-                  {tabs.map((tab, index) => (
-                    <div
-                      key={index}
-                      className={activeTab === index ? "active" : ""}
-                      onClick={() => setActiveTab(index)}
-                    >
-                      <i className={tab.icon}></i>
-                      {tab.title}
-                    </div>
-                  ))}
+            <div className="section-content app-advantages-cards">
+              {tabs.map((tab, index) => (
+                <div key={index} className="app-advantage-card">
+                  <div className="app-advantage-card-icon">
+                    <i className={tab.icon} aria-hidden="true"></i>
+                  </div>
+                  <h3 className="app-advantage-card-title">{tab.title}</h3>
+                  <p className="app-advantage-card-content">{tab.content}</p>
                 </div>
-
-                {/* <div className="tab-indicator"></div> */}
-
-                <div className="tab-content">
-                  {tabs.map((tab, index) => (
-                    <div
-                      key={index}
-                     className={activeTab === index ? "active" : ""}
-                    >
-                      <div className="head">{tab.title}</div>
-                      <div className="content">{tab.content}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

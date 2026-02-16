@@ -1,6 +1,18 @@
 import "./LifeAtVed.css";
 import Hero from "../../components/hero_section/Hero";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { 
+  FaLongArrowAltRight, 
+  FaBullhorn, 
+  FaChartBar, 
+  FaCode, 
+  FaServer, 
+  FaMobileAlt,
+  FaUsers,
+  FaProjectDiagram,
+  FaCertificate
+} from "react-icons/fa";
+import Modal from "react-bootstrap/Modal";
+import "bootstrap/dist/css/bootstrap.css";
 
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -51,6 +63,212 @@ function LifeAtVed() {
   const [events, setEvents] = useState([]);
 
   const [loading, setLoading] =useState(false)
+
+  const [showContactModal, setShowContactModal] = useState(false);
+
+  const [contactFormData, setContactFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    program_type: "",
+    message: ""
+  });
+
+  const [showProgramModal, setShowProgramModal] = useState(false);
+  const [selectedDomain, setSelectedDomain] = useState(null);
+
+  const domainDetails = {
+    "Digital Marketing": {
+      title: "Digital Marketing",
+      icon: FaBullhorn,
+      whyImportant: "Digital Marketing is essential in today's digital age as it helps businesses reach their target audience effectively through online channels. With the increasing shift to digital platforms, companies need skilled professionals who can create and execute marketing strategies.",
+      scope: "The scope of Digital Marketing is vast and growing rapidly. Career opportunities include Social Media Marketing, SEO Specialist, Content Marketing, Email Marketing, PPC Specialist, Digital Marketing Manager, and more. The field offers excellent growth prospects with competitive salaries.",
+      technologies: [
+        "Google Analytics & Ads",
+        "Social Media Marketing (Facebook, Instagram, LinkedIn, Twitter)",
+        "Search Engine Optimization (SEO)",
+        "Content Marketing & Blogging",
+        "Video Marketing & YouTube",
+        "WordPress & Website Management",
+        "Graphic Design Tools (Canva, Adobe)",
+        "Marketing Automation",
+        "Google Tag Manager",
+        "Data Analytics & Reporting"
+      ]
+    },
+    "Data Analytics": {
+      title: "Data Analytics",
+      icon: FaChartBar,
+      whyImportant: "Data Analytics is crucial for making informed business decisions. Companies rely on data analysts to interpret complex data sets, identify trends, and provide actionable insights that drive growth and efficiency.",
+      scope: "Data Analytics offers excellent career opportunities in various industries including Finance, Healthcare, E-commerce, Technology, and Consulting. Roles include Data Analyst, Business Analyst, Data Scientist, BI Analyst, and Analytics Consultant with strong demand and attractive salaries.",
+      technologies: [
+        "Python Programming",
+        "SQL Database Management",
+        "Excel Advanced Analytics",
+        "Power BI & Tableau",
+        "Machine Learning Basics",
+        "Statistical Analysis",
+        "Data Visualization"
+      ]
+    },
+    "Web Development": {
+      title: "Web Development",
+      icon: FaCode,
+      whyImportant: "Web Development is fundamental in today's digital world. Every business needs a website, and skilled web developers are in high demand to create responsive, user-friendly, and efficient websites and web applications.",
+      scope: "Web Development has exceptional scope with opportunities in startups, established companies, and as freelancers. Career paths include Frontend Developer, Backend Developer, Full Stack Developer, Web Designer, and Web Application Developer. The field offers high demand, competitive salaries, and the flexibility to work remotely.",
+      technologies: [
+        "HTML5 & CSS3",
+        "JavaScript (ES6+)",
+        "React.js",
+        "Node.js",
+        "MongoDB & MySQL",
+        "Express.js",
+        "Material UI",
+        "Java",
+        "Python",
+        "Git & GitHub",
+        "RESTful APIs",
+        "Responsive Design",
+        "Web Performance Optimization"
+      ]
+    },
+    "DevOps": {
+      title: "DevOps",
+      icon: FaServer,
+      whyImportant: "DevOps is critical as organizations increasingly rely on cloud infrastructure and automation. DevOps professionals bridge the gap between development and operations, enabling faster deployment, improved collaboration, and more reliable systems, making it one of the most sought-after skills in the technology industry.",
+      scope: "DevOps offers outstanding career prospects with roles such as DevOps Engineer, Cloud Engineer, Site Reliability Engineer, Infrastructure Engineer, and Automation Engineer. The field has a massive skill gap, resulting in high demand, excellent salaries, and strong job security across industries.",
+      technologies: [
+        "Docker & Containerization",
+        "Kubernetes",
+        "CI/CD Pipelines (Jenkins, GitLab CI)",
+        "Cloud Platforms (AWS, Azure, GCP)",
+        "Infrastructure as Code (Terraform)",
+        "Configuration Management (Ansible)",
+        "Linux Administration",
+        "Monitoring & Logging Tools",
+        "Version Control (Git)",
+        "Microservices Architecture"
+      ]
+    },
+    "App Development": {
+      title: "App Development",
+      icon: FaMobileAlt,
+      whyImportant: "Mobile App Development is essential as smartphones have become integral to daily life. With billions of mobile users worldwide, businesses need mobile apps to reach customers, making app developers highly sought after.",
+      scope: "App Development offers excellent opportunities in Android development. Career options include Mobile App Developer, Android Developer, Cross-platform Developer, and Mobile UI/UX Designer. The field provides high demand, good salaries, and the ability to create your own apps and potentially start a business.",
+      technologies: [
+        "Android Development (Java/Kotlin)",
+        "Flutter",
+        "Firebase Backend",
+        "RESTful APIs Integration",
+        "Mobile UI/UX Design",
+        "App Store Deployment",
+        "Mobile Testing",
+        "Push Notifications",
+        "Mobile Database Management"
+      ]
+    }
+  };
+
+  const handleShowProgramModal = (domainName) => {
+    setSelectedDomain(domainDetails[domainName]);
+    setShowProgramModal(true);
+  };
+
+  const handleCloseProgramModal = () => {
+    setShowProgramModal(false);
+    setSelectedDomain(null);
+  };
+
+  const handleCloseContactModal = () => {
+    setShowContactModal(false);
+    setContactFormData({
+      name: "",
+      email: "",
+      mobile: "",
+      program_type: "",
+      message: ""
+    });
+  };
+
+  const handleShowContactModal = () => {
+    setShowContactModal(true);
+  };
+
+  const handleContactInputChange = (e) => {
+    const { name, value } = e.target;
+    setContactFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleContactSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!contactFormData.name || !contactFormData.email || !contactFormData.mobile || !contactFormData.program_type) {
+      toast.error("Please fill all required fields", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(contactFormData.email)) {
+      toast.error("Please enter a valid email address", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    // Phone validation
+    if (contactFormData.mobile.length < 10) {
+      toast.error("Please enter a valid mobile number", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        "https://ved.venturingdigitally.com/api/contact_us",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: contactFormData.name,
+            email: contactFormData.email,
+            mobile: contactFormData.mobile,
+            message: `Program Type: ${contactFormData.program_type}\nMessage: ${contactFormData.message || "Interested in " + contactFormData.program_type}`
+          }),
+        }
+      );
+
+      if (response.ok) {
+        toast.success("Thank you! We'll contact you soon.", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+        handleCloseContactModal();
+      } else {
+        toast.error("Something went wrong. Please try again.", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+      }
+    } catch (error) {
+      console.error("Error submitting contact form:", error);
+      toast.error("Network error. Please try again.", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+    }
+  };
 
   useEffect(() => {
     fetch("https://ved.venturingdigitally.com/api/events", {
@@ -413,7 +631,7 @@ function LifeAtVed() {
             <div className="lifeatvedfirst-section-head">
               <div className="lifeatvedfirst-custom-head">
                 <div className="lifeatvedfirst-head-title">
-                  Training & Internship at venturing digitally
+                  Training & Internship at Venturing Digitally
                 </div>
               </div>
 
@@ -423,17 +641,16 @@ function LifeAtVed() {
             </div>
 
             <div className="lifeatvedfirst-section-content">
-              <div className="row">
+              <div className="row" style={{display:"flex", alignItems:"center"}}>
                 <div className="col-lg-6">
-                  <div className="lifeatvedfirst-content">
-                    <div className="lifeatvedfirst-content-head">
-                      Training & Internship
-                    </div>
-                    <div className="lifeatvedfirst-content-data">
+                  <div className="lifeatvedfirst-content-head">
+                    Training & Internship
+                  </div>
+                  <div className="lifeatvedfirst-content-data">
                     Venturing Digitally Pvt Ltd is dedicated to shaping the future of digital professionals through focused training and internships. Our programs are tailored for 
                     college students and professionals alike, offering both paid and unpaid options to match various career aspirations. <br></br>
 
-                    Our programs bridge the gap between academic learning and real-world application, providing you with the skills, knowledge, and network needed to excel in the fast-paced world of digital technology. Here’s what we offer: <br></br>
+                    Our programs bridge the gap between academic learning and real-world application, providing you with the skills, knowledge, and network needed to excel in the fast-paced world of digital technology. Here’s what we offer: <br></br><br></br>
                     <span style={{fontWeight:900, color:"#000000"}}>Customized Programs for All Levels</span><br></br>
                     Whether you’re just starting or looking to advance your career, our training and internship opportunities cater to various skill levels. We offer: <br></br>
                     <ul>
@@ -442,10 +659,7 @@ function LifeAtVed() {
                       <li><sapn style={{fontWeight:900, color:"#000000"}}>Real-World Projects:</sapn> Work on live projects with our experienced mentors and team, gaining hands-on experience with real clients and digital challenges.</li>
                     </ul>
            
-                    Join <span style={{fontWeight:900, color:"#000000"}}>Venturing Digitally Pvt Ltd</span> to kickstart your journey into the world of digital excellence. Our internships are more than just learning opportunities—they’re a launchpad for a successful career.<br></br>
-                    <span style={{fontWeight:900, color:"#000000"}}>Apply Now</span> and take your first step toward a brighter digital future!
-                    </div>
-                      
+         
                   </div>
                 </div>
 
@@ -467,108 +681,221 @@ function LifeAtVed() {
         </div>
       </section>
 
-      <section id="lifeatvedthird">
+      {/* <--------------------------------------- New CTA Section 1: Explore Career Domains -----------------------------------------> */}
+      <section id="career-domains">
         <div className="container-fluid">
           <div className="container">
-            <div className="lifeatvedthird-section-head">
-              <div className="lifeatvedthird-custom-head">
-                <h2  className="head_title">Our College & University Seminar</h2> 
+            <div className="career-domains-section-head">
+              <h2 className="career-domains-title">Explore Top Career Domains</h2>
+              <p className="career-domains-subtitle">
+                Discover career paths that truly resonate with your passion & explore mentorship programs that align perfectly with you.
+              </p>
+            </div>
+            <div className="career-domains-grid">
+              <div className="career-domain-card">
+                <div className="domain-icon">
+                  <FaBullhorn />
+                </div>
+                <h3 className="domain-title">Digital Marketing</h3>
+                <a href="#" className="domain-link" onClick={(e) => { e.preventDefault(); handleShowProgramModal("Digital Marketing"); }}>See Programs <FaLongArrowAltRight /></a>
+              </div>
+              <div className="career-domain-card">
+                <div className="domain-icon">
+                  <FaChartBar />
+                </div>
+                <h3 className="domain-title">Data Analytics</h3>
+                <a href="#" className="domain-link" onClick={(e) => { e.preventDefault(); handleShowProgramModal("Data Analytics"); }}>See Programs <FaLongArrowAltRight /></a>
+              </div>
+              <div className="career-domain-card">
+                <div className="domain-icon">
+                  <FaCode />
+                </div>
+                <h3 className="domain-title">Web Development</h3>
+                <a href="#" className="domain-link" onClick={(e) => { e.preventDefault(); handleShowProgramModal("Web Development"); }}>See Programs <FaLongArrowAltRight /></a>
+              </div>
+              <div className="career-domain-card">
+                <div className="domain-icon">
+                  <FaServer />
+                </div>
+                <h3 className="domain-title">DevOps</h3>
+                <a href="#" className="domain-link" onClick={(e) => { e.preventDefault(); handleShowProgramModal("DevOps"); }}>See Programs <FaLongArrowAltRight /></a>
+              </div>
+              <div className="career-domain-card">
+                <div className="domain-icon">
+                  <FaMobileAlt />
+                </div>
+                <h3 className="domain-title">App Development</h3>
+                <a href="#" className="domain-link" onClick={(e) => { e.preventDefault(); handleShowProgramModal("App Development"); }}>See Programs <FaLongArrowAltRight /></a>
               </div>
             </div>
-        
-              <Slider {...settingsdata} className="owl-theme"   margin={20}>
-
-      
-              {loading && (events.slice(0,7).map((event) => (
-
-              <div className="lifeatvedthird-section-body">
-              <div className="lifeatvedthird-section-bodybox">
-                <div className="lifeatvedthird-section-body-img">
-                  <img
-                    src={event.image}
-                    alt={event.title}
-                  className="w-100 h-100"
-                  loading="eager" fetchpriority="high"
-                  />
-                </div>
-                <div className="lifeatvedthird-section-body-content mt-3">
-                  <div className="image_title">{event.title}</div>
-                </div>
-              </div>
-              </div>
-        
-        )))}
-        
-            </Slider>
           </div>
         </div>
       </section>
 
-      {/* <--------------------------------------------------Life At Ved second ------------------------------------> */}
-      <section id="lifeatvedsecond">
+      {/* <--------------------------------------- New CTA Section 2: Why Choose Us -----------------------------------------> */}
+      <section id="why-choose-us">
         <div className="container-fluid">
           <div className="container">
-            <div className="lifeatvedsecond-section-head">
-              <div className="lifeatvedsecond-custom-head">
-                <div className="lifeatvedsecond-head-heading">
-                  <img loading="eager" fetchpriority="high" src="training_module.jpg"  />
+            <div className="why-choose-section-head">
+              <h2 className="why-choose-title">Why Choose Venturing Digitally</h2>
+              <p className="why-choose-subtitle">
+                Transform your career with comprehensive training programs designed for the digital world.
+              </p>
+            </div>
+            <div className="why-choose-grid">
+              <div className="why-choose-card">
+                <div className="why-choose-icon">
+                  <FaUsers style={{ fontSize: "4rem", color: "white" }} />
                 </div>
-                <div className="lifeatvedsecond-head-title">
-                  Training Modules At Venturing Digitally
-                </div>
+                <h3 className="why-choose-card-title">Industry Expert Mentors</h3>
+                <p className="why-choose-card-text">
+                  Learn from professionals with years of real-world experience and stay updated with the latest industry trends. Our expert mentors guide you through every step of your learning journey.
+                </p>
               </div>
-              <div className="lifeatvedsecond-head-slogan">
-                At Venturing Digitally Pvt Ltd, we believe in empowering the
-                next generation of digital leaders. Our comprehensive training
-                and internship programs are designed to give both college
-                students and working professionals hands-on experience in
-                today’s competitive digital landscape. Our programs bridge the
-                gap between academic learning and real-world application,
-                providing you with the skills, knowledge, and network needed to
-                excel in the fast-paced world of digital technology.
+              <div className="why-choose-card">
+                <div className="why-choose-icon">
+                  <FaProjectDiagram style={{ fontSize: "4rem", color: "white" }} />
+                </div>
+                <h3 className="why-choose-card-title">Hands-on Projects</h3>
+                <p className="why-choose-card-text">
+                  Work on real-world projects that build your portfolio and prepare you for industry challenges. Gain practical experience that sets you apart in the job market.
+                </p>
+              </div>
+              <div className="why-choose-card">
+                <div className="why-choose-icon">
+                  <FaCertificate style={{ fontSize: "4rem", color: "white" }} />
+                </div>
+                <h3 className="why-choose-card-title">Industry Recognized Certificates</h3>
+                <p className="why-choose-card-text">
+                  Receive certificates upon completion of training and internship programs, enhancing your professional profile and career prospects. Validate your skills with industry-recognized credentials.
+                </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="lifeatvedsecond-section-content">
-              <Slider {...settings}>
-                {slides.map((slide, index) => (
-                  <div key={index} className="lifeatvedsecond-main-box">
-                    <div className="row">
-                      <div className="col-lg-8">
-                        <div className="lifeatvedsecond-left-box">
-                          <div className="lifeatvedsecond-left-box-heading">
-                            {slide.heading}
-                          </div>
-                          <div className="lifeatvedsecond-left-box-slogan">
-                          <ul>
-                            {slide.bullets.map((bullet, index) => (
-                              <li key={index}>{bullet}</li>
-                            ))}
-                          </ul>
-                        </div>
-                        
-                        </div>
+      {/* <--------------------------------------- New CTA Section 3: Training & Internship Programs -----------------------------------------> */}
+      <section id="program-highlights">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="program-highlights-wrapper">
+              <div className="row align-items-center">
+                <div className="col-lg-6">
+                  <div className="program-highlights-content">
+                    <div className="highlight-badge">
+                      <i className="fa-solid fa-graduation-cap"></i> Professional Training
+                    </div>
+                    <h2 className="program-highlights-title">Training & Internship Programs</h2>
+                    <p className="program-highlights-description">
+                      Join our comprehensive offline training and internship programs designed to bridge the gap between academic learning and real-world application. Learn from industry experts through hands-on experience.
+                    </p>
+                    <div className="program-features">
+                      <div className="feature-item">
+                        <i className="fa-solid fa-chalkboard-user"></i>
+                        <span>Offline Classroom Training</span>
                       </div>
-                      <div className="col-lg-4">
-                        <div className="lifeatvedsecond-right-imgbox">
-                          <img loading="eager" fetchpriority="high"
-                            src={slide.imgSrc}
-                            alt="..."
-                            className="w-100 h-100"
-                             
-                          />
-                        </div>
+                      <div className="feature-item">
+                        <i className="fa-solid fa-briefcase"></i>
+                        <span>Real-World Internship Opportunities</span>
+                      </div>
+                      <div className="feature-item">
+                        <i className="fa-solid fa-users"></i>
+                        <span>Industry Expert Mentors</span>
+                      </div>
+                      <div className="feature-item">
+                        <i className="fa-solid fa-project-diagram"></i>
+                        <span>Live Project Experience</span>
+                      </div>
+                    </div>
+                    <div className="program-stats">
+                      <div className="stat-item">
+                        <i className="fa-solid fa-calendar"></i>
+                        <span>Flexible Duration Programs</span>
+                      </div>
+                      <div className="stat-item">
+                        <i className="fa-solid fa-certificate"></i>
+                        <span>Industry Recognized Certificates</span>
                       </div>
                     </div>
                   </div>
-                ))}
-              </Slider>
+                </div>
+                <div className="col-lg-6">
+                  <div className="program-highlights-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80" alt="Training & Internship Program" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      {/* <--------------------------------------------------Life At Ved third ------------------------------------> */}
-     
+
+      {/* <--------------------------------------- Our Impact Numbers Section -----------------------------------------> */}
+      <section id="impact-numbers">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="impact-numbers-section-head">
+              <h2 className="impact-numbers-title">Our Impact Numbers</h2>
+              <p className="impact-numbers-subtitle">
+                Join our rapidly growing learning community and acquire real-world skills through our comprehensive training and internship programs.
+              </p>
+            </div>
+            <div className="impact-numbers-content">
+              <div className="row">
+                <div className="col-lg-3 col-md-6 mb-4">
+                  <div className="impact-stat-card">
+                    <div className="stat-icon">
+                      <i className="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <div className="stat-number">200+</div>
+                    <div className="stat-label">Students Given Internship</div>
+                    <div className="stat-description">
+                      Students who have been placed in internship programs to gain real-world experience
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-6 mb-4">
+                  <div className="impact-stat-card">
+                    <div className="stat-icon">
+                      <i className="fa-solid fa-chalkboard-teacher"></i>
+                    </div>
+                    <div className="stat-number">10+</div>
+                    <div className="stat-label">Training Programs</div>
+                    <div className="stat-description">
+                      Comprehensive training programs designed to enhance skills and career prospects
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-6 mb-4">
+                  <div className="impact-stat-card">
+                    <div className="stat-icon">
+                      <i className="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div className="stat-number">10+</div>
+                    <div className="stat-label">OJT Provided</div>
+                    <div className="stat-description">
+                      Students who have received On-the-Job Training to develop practical skills
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-6 mb-4">
+                  <div className="impact-stat-card">
+                    <div className="stat-icon">
+                      <i className="fa-solid fa-users"></i>
+                    </div>
+                    <div className="stat-number">50+</div>
+                    <div className="stat-label">Active Students</div>
+                    <div className="stat-description">
+                      Currently active students enrolled in our training and internship programs
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* <--------------------------------------- Life At Ved Fourth -----------------------------------------> */}
      
@@ -803,6 +1130,316 @@ function LifeAtVed() {
           </div>
         </div>
       </section>
+
+      {/* Contact Modal */}
+      <Modal show={showContactModal} onHide={handleCloseContactModal} centered size="lg">
+        <Modal.Header closeButton style={{ borderBottom: "2px solid #27286d" }}>
+          <Modal.Title style={{ fontSize: "2.5rem", fontWeight: "700", color: "#27286d", fontFamily: "sans-serif" }}>
+            Contact Us - Training & Internship
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{ padding: "30px" }}>
+          <form onSubmit={handleContactSubmit}>
+            <div className="row">
+              <div className="col-md-6 mb-3">
+                <label htmlFor="contact-name" style={{ fontSize: "1.6rem", fontWeight: "600", marginBottom: "8px", display: "block" }}>
+                  Full Name <span style={{ color: "red" }}>*</span>
+                </label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  className="form-control"
+                  placeholder="Enter your full name"
+                  value={contactFormData.name}
+                  onChange={handleContactInputChange}
+                  required
+                  style={{ fontSize: "1.5rem", padding: "10px", border: "1px solid #ddd", borderRadius: "5px" }}
+                />
+              </div>
+              <div className="col-md-6 mb-3">
+                <label htmlFor="contact-email" style={{ fontSize: "1.6rem", fontWeight: "600", marginBottom: "8px", display: "block" }}>
+                  Email <span style={{ color: "red" }}>*</span>
+                </label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  className="form-control"
+                  placeholder="Enter your email"
+                  value={contactFormData.email}
+                  onChange={handleContactInputChange}
+                  required
+                  style={{ fontSize: "1.5rem", padding: "10px", border: "1px solid #ddd", borderRadius: "5px" }}
+                />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-6 mb-3">
+                <label htmlFor="contact-mobile" style={{ fontSize: "1.6rem", fontWeight: "600", marginBottom: "8px", display: "block" }}>
+                  Mobile Number <span style={{ color: "red" }}>*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="contact-mobile"
+                  name="mobile"
+                  className="form-control"
+                  placeholder="Enter your mobile number"
+                  value={contactFormData.mobile}
+                  onChange={handleContactInputChange}
+                  required
+                  style={{ fontSize: "1.5rem", padding: "10px", border: "1px solid #ddd", borderRadius: "5px" }}
+                />
+              </div>
+              <div className="col-md-6 mb-3">
+                <label htmlFor="contact-program-type" style={{ fontSize: "1.6rem", fontWeight: "600", marginBottom: "8px", display: "block" }}>
+                  I'm Interested In <span style={{ color: "red" }}>*</span>
+                </label>
+                <select
+                  id="contact-program-type"
+                  name="program_type"
+                  className="form-control"
+                  value={contactFormData.program_type}
+                  onChange={handleContactInputChange}
+                  required
+                  style={{ fontSize: "1.5rem", padding: "10px", border: "1px solid #ddd", borderRadius: "5px" }}
+                >
+                  <option value="">Select Program Type</option>
+                  <option value="Training">Training</option>
+                  <option value="Internship">Internship</option>
+                  <option value="Both">Both Training & Internship</option>
+                </select>
+              </div>
+            </div>
+            <div className="mb-3">
+              <label htmlFor="contact-message" style={{ fontSize: "1.6rem", fontWeight: "600", marginBottom: "8px", display: "block" }}>
+                Message (Optional)
+              </label>
+              <textarea
+                id="contact-message"
+                name="message"
+                className="form-control"
+                rows="4"
+                placeholder="Tell us more about your requirements..."
+                value={contactFormData.message}
+                onChange={handleContactInputChange}
+                style={{ fontSize: "1.5rem", padding: "10px", border: "1px solid #ddd", borderRadius: "5px", resize: "vertical" }}
+              />
+            </div>
+            <div style={{ marginTop: "30px", display: "flex", gap: "15px", justifyContent: "flex-end" }}>
+              <button
+                type="button"
+                onClick={handleCloseContactModal}
+                style={{
+                  padding: "12px 30px",
+                  fontSize: "1.5rem",
+                  fontWeight: "600",
+                  border: "2px solid #27286d",
+                  borderRadius: "8px",
+                  background: "white",
+                  color: "#27286d",
+                  cursor: "pointer",
+                  transition: "all 0.3s ease"
+                }}
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                style={{
+                  padding: "12px 30px",
+                  fontSize: "1.5rem",
+                  fontWeight: "600",
+                  border: "none",
+                  borderRadius: "8px",
+                  background: "linear-gradient(135deg, #27286d 0%, #4a4ba1 100%)",
+                  color: "white",
+                  cursor: "pointer",
+                  transition: "all 0.3s ease"
+                }}
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </Modal.Body>
+      </Modal>
+
+      {/* Program Details Modal */}
+      <Modal show={showProgramModal} onHide={handleCloseProgramModal} centered size="lg" className="program-details-modal">
+        <Modal.Header closeButton style={{ background: "#27286d", borderBottom: "none", padding: "25px 30px" }}>
+          <Modal.Title style={{ fontSize: "2.2rem", fontWeight: "700", color: "#ffffff", fontFamily: "sans-serif", display: "flex", alignItems: "center", gap: "15px" }}>
+            {selectedDomain && (
+              <>
+                <selectedDomain.icon style={{ fontSize: "2.2rem", color: "#ffffff" }} />
+                {selectedDomain.title} Program
+              </>
+            )}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{ padding: "40px 30px", maxHeight: "70vh", overflowY: "auto" }}>
+          {selectedDomain && (
+            <div>
+              <div style={{ marginBottom: "35px" }}>
+                <h3 style={{ 
+                  fontSize: "1.8rem", 
+                  fontWeight: "700", 
+                  color: "#27286d", 
+                  marginBottom: "18px", 
+                  fontFamily: "sans-serif"
+                }}>
+                  Why is it Important?
+                </h3>
+                <p style={{ 
+                  fontSize: "1.5rem", 
+                  color: "#555", 
+                  lineHeight: "1.8", 
+                  textAlign: "left",
+                  margin: 0,
+                  borderLeft: "none",
+                  paddingLeft: 0
+                }}>
+                  {selectedDomain.whyImportant}
+                </p>
+              </div>
+
+              <div style={{ marginBottom: "35px" }}>
+                <h3 style={{ 
+                  fontSize: "1.8rem", 
+                  fontWeight: "700", 
+                  color: "#27286d", 
+                  marginBottom: "18px", 
+                  fontFamily: "sans-serif"
+                }}>
+                  Career Scope
+                </h3>
+                <p style={{ 
+                  fontSize: "1.5rem", 
+                  color: "#555", 
+                  lineHeight: "1.8", 
+                  textAlign: "left",
+                  margin: 0,
+                  borderLeft: "none",
+                  paddingLeft: 0
+                }}>
+                  {selectedDomain.scope}
+                </p>
+              </div>
+
+              <div style={{ marginBottom: "10px" }}>
+                <h3 style={{ 
+                  fontSize: "1.8rem", 
+                  fontWeight: "700", 
+                  color: "#27286d", 
+                  marginBottom: "25px", 
+                  fontFamily: "sans-serif"
+                }}>
+                  Technologies You'll Learn
+                </h3>
+                <div style={{ 
+                  display: "grid", 
+                  gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", 
+                  gap: "12px"
+                }}>
+                  {selectedDomain.technologies.map((tech, index) => (
+                    <div 
+                      key={index}
+                      style={{
+                        padding: "14px 20px",
+                        background: "#f8f9fa",
+                        borderRadius: "10px",
+                        fontSize: "1.4rem",
+                        color: "#27286d",
+                        fontWeight: "500",
+                        border: "1px solid #e9ecef",
+                        display: "flex",
+                        alignItems: "center",
+                        transition: "all 0.3s ease"
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = "#e8f0fe";
+                        e.currentTarget.style.borderColor = "#27286d";
+                        e.currentTarget.style.transform = "translateY(-2px)";
+                        e.currentTarget.style.boxShadow = "0 4px 12px rgba(39, 40, 109, 0.15)";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = "#f8f9fa";
+                        e.currentTarget.style.borderColor = "#e9ecef";
+                        e.currentTarget.style.transform = "translateY(0)";
+                        e.currentTarget.style.boxShadow = "none";
+                      }}
+                    >
+                      <i className="fa-solid fa-check-circle" style={{ marginRight: "12px", color: "#27286d", fontSize: "1.6rem" }}></i>
+                      {tech}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </Modal.Body>
+        <Modal.Footer style={{ borderTop: "1px solid #e9ecef", padding: "25px 30px", background: "#f8f9fa" }}>
+          <button
+            type="button"
+            onClick={handleCloseProgramModal}
+            style={{
+              padding: "14px 35px",
+              fontSize: "1.5rem",
+              fontWeight: "600",
+              border: "2px solid #27286d",
+              borderRadius: "8px",
+              background: "white",
+              color: "#27286d",
+              cursor: "pointer",
+              transition: "all 0.3s ease",
+              marginRight: "15px"
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = "#27286d";
+              e.currentTarget.style.color = "white";
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow = "0 4px 12px rgba(39, 40, 109, 0.3)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = "white";
+              e.currentTarget.style.color = "#27286d";
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = "none";
+            }}
+          >
+            Close
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              handleCloseProgramModal();
+              handleShowContactModal();
+            }}
+            style={{
+              padding: "14px 35px",
+              fontSize: "1.5rem",
+              fontWeight: "600",
+              border: "none",
+              borderRadius: "8px",
+              background: "linear-gradient(135deg, #27286d 0%, #4a4ba1 100%)",
+              color: "white",
+              cursor: "pointer",
+              transition: "all 0.3s ease",
+              boxShadow: "0 4px 15px rgba(39, 40, 109, 0.2)"
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow = "0 6px 20px rgba(39, 40, 109, 0.4)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = "0 4px 15px rgba(39, 40, 109, 0.2)";
+            }}
+          >
+            Enroll Now
+          </button>
+        </Modal.Footer>
+      </Modal>
 
       {/* <------------------------. */}
     </>

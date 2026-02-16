@@ -18,7 +18,7 @@ function SupportMaintenance() {
       <Hero
         imgbtn="Contact Us"
         heading="Support and Maintenance"
-        src="image/support-maintenance/hero.webp"
+        src="image/support-maintenance/hero.jpeg"
       />
       <section id="support-first">
         <div className="container-fluid">

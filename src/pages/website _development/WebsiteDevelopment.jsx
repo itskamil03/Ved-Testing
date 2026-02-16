@@ -20,11 +20,13 @@ function WebsiteDevelopment() {
 
   return (
     <>
+
       <Hero
-        src="image/website-development/websitedev.jpeg"
+        src="image/website-development/website.jpeg"
         heading="Website Design and Development"
         imgbtn="Website"
       />
+
       {/* <------------------------------------------- Website Development ---------------------------------------------------> */}
 
       <section id="why-website">
@@ -712,7 +714,7 @@ function WebsiteDevelopment() {
                   <div className="bottom-bar">
                     <div className="image">
                       <img loading="eager" fetchpriority="high"
-                        src="image/website-development/develop/Artboard 1.png"
+                        src="image/website-development/develop/Artboard 1.jpeg"
                         alt="..."
                         className="w-100 h-100"
                          
@@ -739,7 +741,7 @@ function WebsiteDevelopment() {
                   <div className="bottom-bar">
                     <div className="image">
                       <img loading="eager" fetchpriority="high"
-                        src="image/website-development/develop/Artboard 2.png"
+                        src="image/website-development/develop/Artboard 2.jpeg"
                         alt="..."
                         className="w-100 h-100"
                          
@@ -766,7 +768,7 @@ function WebsiteDevelopment() {
                   <div className="bottom-bar">
                     <div className="image">
                       <img loading="eager" fetchpriority="high"
-                        src="image/website-development/develop/Artboard 3.png"
+                        src="image/website-development/develop/Artboard 3.jpeg"
                         alt="..."
                         className="w-100 h-100"
                          
@@ -820,7 +822,7 @@ function WebsiteDevelopment() {
                   <div className="bottom-bar">
                     <div className="image">
                       <img loading="eager" fetchpriority="high"
-                        src="image/website-development/develop/Artboard 5.png"
+                        src="image/website-development/develop/Artboard 5.jpeg"
                         alt="..."
                         className="w-100 h-100"
                          

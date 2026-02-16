@@ -18,7 +18,7 @@ function Seo() {
       <Hero
         imgbtn="Contact Us"
         heading="SEO"
-        src="image/seo/seo.webp"
+        src="image/seo/seo.jpeg"
       />
       <section id="support-first">
         <div className="container-fluid">

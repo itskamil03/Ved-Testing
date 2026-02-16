@@ -37,19 +37,57 @@
   }
   
   .events-card-img {
+    position: relative;
     width: 100%;
     height: 260px;
-    aspect-ratio: 1;
+    overflow: hidden;
+    background: #f0f0f0;
   }
   
-  .events-card-img img {
+  .events-card-img img,
+  .events-card-img .bloges-card-img-img {
     width: 100%;
-    position: relative;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .events-card-carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+  }
+  
+  .events-card-carousel .slick-slider,
+  .events-card-carousel .slick-list,
+  .events-card-carousel .slick-track {
+    height: 100%;
+  }
+  
+  .events-card-carousel .events-card-carousel-slide {
+    height: 260px;
+    outline: none;
+  }
+  
+  .events-card-carousel .events-card-carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .events-card-carousel .slick-prev,
+  .events-card-carousel .slick-next {
+    display: none !important;
+  }
+  
+  .events-card-carousel .slick-dots {
+    display: none !important;
   }
   
   .date {
-
     position: absolute;
+    z-index: 2;
     line-height: 26px;
     letter-spacing:0.2px;
     top:10px;

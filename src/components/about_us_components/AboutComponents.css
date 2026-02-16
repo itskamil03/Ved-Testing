@@ -168,7 +168,7 @@
 }
 @media screen and (max-width: 640px) {
   #about {
-    padding: 10px 0px 0 0;
+    padding: 20px 0px 0 0;
   }
   .section-content .content-head {
     font-size: 2rem;

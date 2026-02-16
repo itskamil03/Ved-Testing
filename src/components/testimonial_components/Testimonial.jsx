@@ -31,6 +31,7 @@ function Testimonials() {
       },
     },
   };
+  
   return (
     <>
       <section id="testimonials" className="bg-light">

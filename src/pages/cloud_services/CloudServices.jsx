@@ -361,7 +361,7 @@ function CloudServices() {
                   <div className="bottom-bar">
                     <div className="image">
                       <img loading="eager" fetchpriority="high"
-                        src="image/website-development/develop/Artboard 1.png"
+                        src="image/website-development/cloud/ArtBoard 1.jpeg"
                         alt="..."
                         className="w-100 h-100"
                          
@@ -386,7 +386,7 @@ function CloudServices() {
                   <div className="bottom-bar">
                     <div className="image">
                       <img loading="eager" fetchpriority="high"
-                        src="image/website-development/develop/Artboard 2.png"
+                        src="image/website-development/cloud/ArtBoard 2.jpeg"
                         alt="..."
                         className="w-100 h-100"
                          
@@ -411,7 +411,7 @@ function CloudServices() {
                   <div className="bottom-bar">
                     <div className="image">
                       <img loading="eager" fetchpriority="high"
-                        src="image/website-development/develop/Artboard 3.png"
+                        src="image/website-development/cloud/ArtBoard 3.jpeg"
                         alt="..."
                         className="w-100 h-100"
                          
@@ -436,7 +436,7 @@ function CloudServices() {
                   <div className="bottom-bar">
                     <div className="image">
                       <img loading="eager" fetchpriority="high"
-                        src="image/website-development/develop/Artboard 4.png"
+                        src="image/website-development/cloud/ArtBoard 4.jpeg"
                         alt="..."
                         className="w-100 h-100"
                          
@@ -461,7 +461,7 @@ function CloudServices() {
                   <div className="bottom-bar">
                     <div className="image">
                       <img loading="eager" fetchpriority="high"
-                        src="image/website-development/develop/Artboard 5.png"
+                        src="image/website-development/cloud/ArtBoard 5.jpeg"
                         alt="..."
                         className="w-100 h-100"
                          

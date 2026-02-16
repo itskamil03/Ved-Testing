@@ -21,15 +21,36 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function Home({ target, label }) {
 
 
   const [selectedTab, setSelectedTab] = useState("tab1");
   const [blogs, setBlogs] = useState();
+  const tabContentsRef = useRef(null);
   // <---tab--->
   const handleTabChange = (event) => {
-    setSelectedTab(event.target.value);
+    const value = event.target.value;
+    setSelectedTab(value);
   };
+
+  // Smooth scroll to tab content when user clicks a tab (skip initial "tab1" state)
+  useEffect(() => {
+    if (selectedTab === "tab1" || !tabContentsRef.current) return;
+    // Wait for React to render new tab content, then scroll smoothly
+    const frame = requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const el = tabContentsRef.current;
+        if (el) {
+          const y = el.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [selectedTab]);
 
   const navigate = useNavigate();
 
@@ -38,6 +59,16 @@ function Home({ target, label }) {
   const [loadingData, setLoadingData] = useState(false)
 
   const [latestNews, setLatestNews] = useState([])
+
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100,
+      easing: 'ease-in-out'
+    });
+  }, []);
 
   useEffect(() => {
     if (loading) {
@@ -296,6 +327,52 @@ function Home({ target, label }) {
     ],
   };
 
+  const eventImageCarouselSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    arrows: false,
+    adaptiveHeight: true,
+  };
+
+  const formatDateToIndian = (dateStr) => {
+    if (!dateStr) return "";
+    const d = new Date(dateStr);
+    if (Number.isNaN(d.getTime())) return dateStr;
+    const day = String(d.getDate()).padStart(2, "0");
+    const month = String(d.getMonth() + 1).padStart(2, "0");
+    const year = d.getFullYear();
+    return `${day}-${month}-${year}`;
+  };
+
+  const getBlogImages = (blog) => {
+    const rawImages = blog?.images ?? blog?.image;
+    let urls = [];
+    if (Array.isArray(rawImages) && rawImages.length > 0) {
+      urls = rawImages.map((u) => (typeof u === "string" ? u.trim() : String(u))).filter((u) => u && u.startsWith("http"));
+    } else if (typeof rawImages === "string" && rawImages.trim()) {
+      const s = rawImages.trim();
+      if (s.startsWith("[")) {
+        try {
+          const parsed = JSON.parse(s);
+          urls = Array.isArray(parsed) ? parsed.map((u) => String(u).trim()).filter((u) => u && u.startsWith("http")) : [];
+        } catch {
+          urls = s.split(/,\s*/).map((u) => u.trim()).filter((u) => u && u.startsWith("http"));
+        }
+      } else {
+        urls = s.split(/,\s*/).map((u) => u.trim()).filter((u) => u && u.startsWith("http"));
+        if (urls.length === 0 && s.startsWith("http")) urls = [s];
+      }
+    }
+    if (urls.length === 0 && blog?.image && typeof blog.image === "string" && blog.image.trim().startsWith("http")) {
+      urls = [blog.image.trim()];
+    }
+    return urls;
+  };
 
   const handleBlog = (blogId) => {
     localStorage.setItem("blogId", blogId)
@@ -325,7 +402,7 @@ function Home({ target, label }) {
           <div className="container">
             <div className="section-content">
               <div className="row">
-                <div className="col-lg-4 my-auto">
+                <div className="col-lg-4 my-auto" data-aos="fade-right">
                   <p className="title-2 page_title">
                     Venturing Digitally as a leading Software Design, Development and Service company
                     in India, we worked with 120+ businesses either it is a
@@ -338,7 +415,7 @@ function Home({ target, label }) {
                 <div className="col-lg-8">
                   <div className="what-do-grid">
                     <div className="row">
-                      <div className="col-lg-6 col-md-6">
+                      <div className="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <Link
                           className="whatwedo-link"
                           to="/WebsiteDevelopment"
@@ -359,7 +436,7 @@ function Home({ target, label }) {
                         </Link>
                       </div>
 
-                      <div className="col-lg-6 col-md-6">
+                      <div className="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <Link
                           className="whatwedo-link"
                           to="/ApplicationDevelopment"
@@ -379,7 +456,7 @@ function Home({ target, label }) {
                           </div>
                         </Link>
                       </div>
-                      <div className="col-lg-6 col-md-6">
+                      <div className="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <Link
                           className="whatwedo-link"
                           to="/SoftwareDevelopment"
@@ -397,7 +474,7 @@ function Home({ target, label }) {
                           </div>
                         </Link>
                       </div>
-                      <div className="col-lg-6 col-md-6">
+                      <div className="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
                         <Link className="whatwedo-link" to="/BrandReputation">
                           <div className="what-do-box">
                             <div className="what-do-icon">
@@ -429,7 +506,7 @@ function Home({ target, label }) {
       <section id="innovatedata" className="bg-light">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head">
+            <div className="section-head" data-aos="fade-down">
               <div className="custom-head">
                 <div className="circle"></div>
                 <h2 className="head-title bg-light">
@@ -451,14 +528,14 @@ function Home({ target, label }) {
 
                 <div className="tabs">
 
-                  <div className={`tab ${selectedTab === "tab1" ? "active" : ""}`}>
+                  <div className={`tab ${selectedTab === "tab-web-development" ? "active" : ""}`}>
                     <input
                       type="radio"
                       name="css-tabs"
                       id="tab-1"
                       className="tab-switch"
-                      value="tab1"
-                      checked={selectedTab === "tab1"}
+                      value="tab-web-development"
+                      checked={selectedTab === "tab-web-development"}
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-1" className="tab-label">
@@ -472,14 +549,14 @@ function Home({ target, label }) {
                   </div>
 
 
-                  <div className={`tab ${selectedTab === "tab2" ? "active" : ""}`}>
+                  <div className={`tab ${selectedTab === "tab-mobile-app-development" ? "active" : ""}`}>
                     <input
                       type="radio"
                       name="css-tabs"
                       id="tab-2"
                       className="tab-switch"
-                      value="tab2"
-                      checked={selectedTab === "tab2"}
+                      value="tab-mobile-app-development"
+                      checked={selectedTab === "tab-mobile-app-development"}
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-2" className="tab-label">
@@ -494,14 +571,14 @@ function Home({ target, label }) {
 
 
 
-                  <div className={`tab ${selectedTab === "tab3" ? "active" : ""}`}>
+                  <div className={`tab ${selectedTab === "tab-software-development" ? "active" : ""}`}>
                     <input
                       type="radio"
                       name="css-tabs"
                       id="tab-3"
                       className="tab-switch"
-                      value="tab3"
-                      checked={selectedTab === "tab3"}
+                      value="tab-software-development"
+                      checked={selectedTab === "tab-software-development"}
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-3" className="tab-label">
@@ -515,14 +592,14 @@ function Home({ target, label }) {
                   </div>
 
 
-                  <div className={`tab ${selectedTab === "tab4" ? "active" : ""}`}>
+                  <div className={`tab ${selectedTab === "tab-digital-marketing" ? "active" : ""}`}>
                     <input
                       type="radio"
                       name="css-tabs"
                       id="tab-4"
                       className="tab-switch"
-                      value="tab4"
-                      checked={selectedTab === "tab4"}
+                      value="tab-digital-marketing"
+                      checked={selectedTab === "tab-digital-marketing"}
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-4" className="tab-label">
@@ -536,14 +613,14 @@ function Home({ target, label }) {
                   </div>
 
 
-                  <div className={`tab ${selectedTab === "tab5" ? "active" : ""}`}>
+                  <div className={`tab ${selectedTab === "tab-ui-ux-design" ? "active" : ""}`}>
                     <input
                       type="radio"
                       name="css-tabs"
                       id="tab-5"
                       className="tab-switch"
-                      value="tab5"
-                      checked={selectedTab === "tab5"}
+                      value="tab-ui-ux-design"
+                      checked={selectedTab === "tab-ui-ux-design"}
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-5" className="tab-label">
@@ -557,14 +634,14 @@ function Home({ target, label }) {
                   </div>
 
 
-                  <div className={`tab ${selectedTab === "tab6" ? "active" : ""}`}>
+                  <div className={`tab ${selectedTab === "tab-devops" ? "active" : ""}`}>
                     <input
                       type="radio"
                       name="css-tabs"
                       id="tab-6"
                       className="tab-switch"
-                      value="tab6"
-                      checked={selectedTab === "tab6"}
+                        value="tab-devops"
+                      checked={selectedTab === "tab-devops"}
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-6" className="tab-label">
@@ -577,14 +654,14 @@ function Home({ target, label }) {
                     </label>
                   </div>
 
-                  <div className={`tab ${selectedTab === "tab7" ? "active" : ""}`}>
+                  <div className={`tab ${selectedTab === "tab-cyber-security" ? "active" : ""}`}>
                     <input
                       type="radio"
                       name="css-tabs"
                       id="tab-7"
                       className="tab-switch"
-                      value="tab7"
-                      checked={selectedTab === "tab7"}
+                      value="tab-cyber-security"
+                      checked={selectedTab === "tab-cyber-security"}
                       onChange={handleTabChange}
                     />
                     <label htmlFor="tab-7" className="tab-label">
@@ -597,15 +674,15 @@ function Home({ target, label }) {
                     </label>
                   </div>
 
-                  <div className={`tab ${selectedTab === "tab8" ? "active" : ""}`}>
+                  <div className={`tab ${selectedTab === "tab-data-analytics" ? "active" : ""}`}>
                     <input
                       type="radio"
                       name="css-tabs"
                       id="tab-8"
                       className="tab-switch"
-                      value="tab8"
-                      checked={selectedTab === "tab8"}
-                      onChange={handleTabChange}
+                      value="tab-data-analytics"
+                      checked={selectedTab === "tab-data-analytics"}
+                      onChange={handleTabChange}  
                     />
                     <label htmlFor="tab-8" className="tab-label">
                       <img style={{margin: "auto"}}
@@ -621,9 +698,9 @@ function Home({ target, label }) {
                 </div>
 
 
-                <div className="tab-contents">
+                <div className="tab-contents" ref={tabContentsRef}>
 
-                  {selectedTab === "tab1" && (
+                  {selectedTab === "tab-web-development" && (
                     <div className="tab-content">
                       <div className="info page_title">
                         Building a Digital front door for your business with stunning
@@ -666,7 +743,7 @@ function Home({ target, label }) {
 
 
 
-                  {selectedTab === "tab2" && (
+                  {selectedTab === "tab-mobile-app-development" && (
                     <div className="tab-content">
                       <div className="info">
                         Empowering your business with custom-built mobile applications
@@ -706,7 +783,7 @@ function Home({ target, label }) {
                     </div>
                   )}
 
-                  {selectedTab === "tab3" && (
+                  {selectedTab === "tab-software-development" && (
                     <div className="tab-content">
                       <div className="info">
                         Streamlining your business processes and maximizing
@@ -749,7 +826,7 @@ function Home({ target, label }) {
                     </div>
                   )}
 
-                  {selectedTab === "tab4" && (
+                  {selectedTab === "tab-digital-marketing" && (
                     <div className="tab-content">
                       <div className="info">
                         Harnessing the power of online marketing to drive
@@ -790,7 +867,7 @@ function Home({ target, label }) {
                     </div>
                   )}
 
-                  {selectedTab === "tab5" && (
+                  {selectedTab === "tab-ui-ux-design" && (
                     <div className="tab-content">
                       <div className="info">
                         Crafting immersive, user-centered design experiences
@@ -830,7 +907,7 @@ function Home({ target, label }) {
                     </div>
                   )}
 
-                  {selectedTab === "tab6" && (
+                  {selectedTab === "tab-devops" && (
                     <div className="tab-content">
                       <div className="info">
                         Building a robust and scalable digital infrastructure for your business with
@@ -871,7 +948,7 @@ function Home({ target, label }) {
                     </div>
                   )}
 
-               {selectedTab === "tab7" && (
+               {selectedTab === "tab-cyber-security" && (
                     <div className="tab-content">
                       <div className="info">
                       Building a secure and scalable digital infrastructure with advanced cybersecurity practices. From threat detection to secure cloud deployment, we protect your business while enabling growth.
@@ -910,7 +987,7 @@ function Home({ target, label }) {
                     </div>
                   )}
                      
-                     {selectedTab === "tab8" && (
+                     {selectedTab === "tab-data-analytics" && (
                     <div className="tab-content">
                       <div className="info">
                       Building a scalable and insightful digital infrastructure with advanced data analytics practices. From data collection to predictive modeling, we empower your business with actionable insights that drive growth.
@@ -964,7 +1041,7 @@ function Home({ target, label }) {
           <div className="container">
             <div className="milestone-grid">
               <div className="row">
-                <div className="col-lg-6 my-auto">
+                <div className="col-lg-6 my-auto" data-aos="fade-right">
                   <div className="milestone-info">
                     <div className="head">Who We Are</div>
                     <div className="content page_title">
@@ -986,7 +1063,7 @@ function Home({ target, label }) {
                   <div className="row">
                     <div className="col-lg-6 col-sm-12 col-md-6 who-we-are" >
 
-                      <div className="milestone-box">
+                      <div className="milestone-box" data-aos="zoom-in" data-aos-delay="100">
                         <div className="milestone-count">80+</div> {/*{counters[0].value} */}
                         <div className="milestone-name">
                           Successful Websites Delivered
@@ -995,7 +1072,7 @@ function Home({ target, label }) {
                           High-performance websites built with user-focused designs.
                         </div>
                       </div>
-                      <div className="milestone-box">
+                      <div className="milestone-box" data-aos="zoom-in" data-aos-delay="300">
                         <div className="milestone-count">10+</div> {/*{counters[1].value} */}
                         <div className="milestone-name">
                           Mobile Applications Developed
@@ -1009,7 +1086,7 @@ function Home({ target, label }) {
 
                     <div className="col-lg-6 col-sm-12 col-md-6">
 
-                      <div className="milestone-box">
+                      <div className="milestone-box" data-aos="zoom-in" data-aos-delay="200">
                         <div className="milestone-count">11+</div>{/*{counters[2].value} */}
                         <div className="milestone-name">
                           Software Solutions Deployed
@@ -1019,7 +1096,7 @@ function Home({ target, label }) {
                         </div>
                       </div>
 
-                      <div className="milestone-box">
+                      <div className="milestone-box" data-aos="zoom-in" data-aos-delay="400">
                         <div className="milestone-count">110+</div> {/*{counters[3].value} */}
                         <div className="milestone-name" >Successful Clients</div>
                         <div className="milestone-description">
@@ -1043,7 +1120,7 @@ function Home({ target, label }) {
       <section id="solutions" className="bg-light">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head">
+            <div className="section-head" data-aos="fade-up">
               <div className="custom-head">
                 <div className="circle"></div>
                 <h2 className="head-title bg-light">Our Solutions</h2>
@@ -1064,6 +1141,8 @@ function Home({ target, label }) {
                         className="solution_card"
                         to={card.link}
                         key={index}
+                        data-aos="flip-left"
+                        data-aos-delay={index * 100}
                       >
                         <div>
                           <img
@@ -1114,11 +1193,11 @@ function Home({ target, label }) {
         <div className="container-fluid">
           <div className="container">
             <div className="milestone-grid">
-              <h2 className="cservice-head-title head_title">
+              <h2 className="cservice-head-title head_title" data-aos="fade-down">
                 Internship & Training at Venturing Digitally
               </h2>
               <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-6" data-aos="fade-right">
                   <img
                     src="image/solution/training.jpg"
                     alt="training"
@@ -1126,7 +1205,7 @@ function Home({ target, label }) {
                     loading="eager" fetchpriority="high"
                   />
                 </div>
-                <div className="col-lg-6 my-auto">
+                <div className="col-lg-6 my-auto" data-aos="fade-left">
                   <div className="milestone-info">
                     <div className="head">Internship & Training</div>
                     <div
@@ -1246,7 +1325,7 @@ function Home({ target, label }) {
       <section id="lifeatvedthird">
         <div className="container-fluid">
           <div className="container">
-            <div className="lifeatvedthird-section-head">
+            <div className="lifeatvedthird-section-head" data-aos="fade-down">
               <div className="lifeatvedthird-custom-head">
                 <h2 className="head_title">Training Verticals At Venturing Digitally</h2>
               </div>
@@ -1431,6 +1510,7 @@ function Home({ target, label }) {
             <div className="section-head">
               <div
                 style={{ display: "grid", gridRowGap: "20px" }}
+                data-aos="fade-up"
               >
                 <div className="head-slogan page_title">
                   Join Venturing Digitally Pvt. Ltd. to kick start your
@@ -1453,8 +1533,8 @@ function Home({ target, label }) {
         </div>
       </section>
 
-      <section id="latest_updates"  >
-        {/* ref={sectionRef} */}
+      {/* <section id="latest_updates"  >
+
         <div className="container-fluid">
           <div className="container">
             <div className="milestone-grid">
@@ -1467,9 +1547,7 @@ function Home({ target, label }) {
                   <div className="columns posts">
                     <span className="title" style={{ borderRadius: "4px" }}>
                       Latest Update{" "}
-                      {/* <Link to="#" title="Explore More">
-                  <i className="fa fa-share"></i>
-                </Link> */}
+                   
                     </span>
 
                     <section>
@@ -1510,9 +1588,7 @@ function Home({ target, label }) {
                   <div className="columns posts">
                     <span className="title" style={{ borderRadius: "4px" }}>
                       Upcoming Seminar{" "}
-                      {/* <Link to="#" title="Explore More">
-                  <i className="fa fa-share"></i>
-                </Link> */}
+                    
                     </span>
                     <section>
                       <marquee
@@ -1550,7 +1626,7 @@ function Home({ target, label }) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 
@@ -1559,7 +1635,7 @@ function Home({ target, label }) {
       <section id="industries" className="bg-light">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head">
+            <div className="section-head" data-aos="fade-up">
               <div className="custom-head">
                 <div className="circle"></div>
                 <h2 className="head-title bg-light">Industries We Serve</h2>
@@ -1574,9 +1650,9 @@ function Home({ target, label }) {
             <div className="section-content">
               <div className="main">
 
-                {displayedIndustries.map((inds) => (
+                {displayedIndustries.map((inds, index) => (
 
-                  <div className="industry-box" key={inds.id}>
+                  <div className="industry-box" key={inds.id} data-aos="zoom-in" data-aos-delay={index * 100}>
                     <Link to={inds.link}>
                       <div className="industry-img">
                         <img
@@ -1634,7 +1710,7 @@ function Home({ target, label }) {
 
 
 
-              <div className="milestone-info">
+              <div className="milestone-info" data-aos="fade-down">
                 <div className="head_title">Why Choose Venturing Digitally?</div>
                 <div className="content page_title">
                   With over 3+ years of experience in the software industry, we empower
@@ -1653,7 +1729,7 @@ function Home({ target, label }) {
               <div className="row">
                 <div className="col-lg-6 col-sm-12 col-md-6" >
 
-                  <div className="milestone-box">
+                  <div className="milestone-box" data-aos="fade-right" data-aos-delay="100">
 
                     <div className="tab-icon ">
 
@@ -1680,7 +1756,7 @@ function Home({ target, label }) {
 
                   </div>
 
-                  <div className="milestone-box">
+                  <div className="milestone-box" data-aos="fade-right" data-aos-delay="200">
 
                     <div className="tab-icon">
                       <img
@@ -1702,7 +1778,7 @@ function Home({ target, label }) {
                     </div>
 
                   </div>
-                  <div className="milestone-box">
+                  <div className="milestone-box" data-aos="fade-right" data-aos-delay="300">
 
                     <div className="tab-icon">
                       <img
@@ -1728,7 +1804,7 @@ function Home({ target, label }) {
 
                 <div className="col-lg-6 col-sm-12 col-md-6">
 
-                  <div className="milestone-box">
+                  <div className="milestone-box" data-aos="fade-left" data-aos-delay="100">
                     <div className="tab-icon">
                       <img
                         src="icons/call.png"
@@ -1749,7 +1825,7 @@ function Home({ target, label }) {
 
                   </div>
 
-                  <div className="milestone-box">
+                  <div className="milestone-box" data-aos="fade-left" data-aos-delay="200">
                     <div className="tab-icon">
                       <img
                         src="icons/delivered.png"
@@ -1768,7 +1844,7 @@ function Home({ target, label }) {
 
                   </div>
 
-                  <div className="milestone-box">
+                  <div className="milestone-box" data-aos="fade-left" data-aos-delay="300">
 
                     <div className="tab-icon">
                       <img
@@ -1802,7 +1878,7 @@ function Home({ target, label }) {
       <section id="whats-new">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head">
+            <div className="section-head" data-aos="fade-up">
               <div className="custom-head">
                 <div className="circle"></div>
                 <h2 className="head-title">Our Latest Blogs</h2>
@@ -1821,18 +1897,39 @@ function Home({ target, label }) {
                 <div className="tab-container">
 
                   {
-                    blogs?.slice(0, 3).map((item) => {
+                    blogs?.slice(0, 3).map((item, index) => {
                       const cleanedDescription = item.content.replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '');
+                      const blogImages = getBlogImages(item);
+                      const singleSrc = blogImages.length > 0 ? blogImages[0] : "";
 
                       return (
-                        <NavLink to={`/BlogDetails/${item.blog_title}`} onClick={() => handleBlog(item.id)} className="blog-box" key={item.id}>
-                          <div className="blog-img">
-                            <img
-                              src={item.image}
-                              alt={item.category}
-                              className="w-100 h-100"
-                              loading="eager" fetchpriority="high"
-                            />
+                        <NavLink to={`/BlogDetails/${item.blog_title}`} onClick={() => handleBlog(item.id)} className="blog-box" key={item.id} data-aos="fade-up" data-aos-delay={index * 150}>
+                          <div className="blog-img events-card-img">
+                            {blogImages.length > 1 ? (
+                              <div className="events-card-carousel">
+                                <Slider {...eventImageCarouselSettings}>
+                                  {blogImages.map((imgUrl, i) => (
+                                    <div key={i} className="events-card-carousel-slide">
+                                      <img
+                                        loading="eager"
+                                        fetchPriority="high"
+                                        src={typeof imgUrl === "string" ? imgUrl : ""}
+                                        alt={`${item.blog_title} ${i + 1}`}
+                                        className="bloges-card-img-img w-100 h-100"
+                                      />
+                                    </div>
+                                  ))}
+                                </Slider>
+                              </div>
+                            ) : singleSrc ? (
+                              <img
+                                loading="eager"
+                                fetchPriority="high"
+                                src={singleSrc}
+                                alt={item.blog_title}
+                                className="bloges-card-img-img w-100 h-100"
+                              />
+                            ) : null}
                           </div>
                           <div className="blog-content">
                             <div className="top-block">
@@ -1872,7 +1969,7 @@ function Home({ target, label }) {
       <section id="news-events">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head">
+            <div className="section-head" data-aos="fade-up">
               <div className="custom-head">
                 <div className="circle"></div>
                 <h2 className="head-title">News & Events</h2>
@@ -1889,24 +1986,67 @@ function Home({ target, label }) {
 
                 <div className="blogesc-main">
 
-                  {loadingData && events?.slice(0,4).map((event) => (
-                    <Link className="bloges-card" key={event.id}>
-                      <div className="events-card-img">
-                        <img loading="eager" fetchpriority="high"
-                          src={event.image}
-                          alt={event.title}
-                          className="bloges-card-img-img w-100 h-100"
+                  {loadingData && events?.slice(0, 3).map((event, index) => {
+                    const rawImages = event.images ?? event.image;
+                    let eventImages = [];
+                    if (Array.isArray(rawImages) && rawImages.length > 0) {
+                      eventImages = rawImages.map((u) => (typeof u === "string" ? u.trim() : String(u))).filter((u) => u && u.startsWith("http"));
+                    } else if (typeof rawImages === "string" && rawImages.trim()) {
+                      const s = rawImages.trim();
+                      if (s.startsWith("[")) {
+                        try {
+                          const parsed = JSON.parse(s);
+                          eventImages = Array.isArray(parsed) ? parsed.map((u) => String(u).trim()).filter((u) => u && u.startsWith("http")) : [];
+                        } catch {
+                          eventImages = s.split(/,\s*/).map((u) => u.trim()).filter((u) => u && u.startsWith("http"));
+                        }
+                      } else {
+                        eventImages = s.split(/,\s*/).map((u) => u.trim()).filter((u) => u && u.startsWith("http"));
+                        if (eventImages.length === 0 && s.startsWith("http")) eventImages = [s];
+                      }
+                    }
+                    if (eventImages.length === 0 && event.image && typeof event.image === "string" && event.image.trim().startsWith("http")) {
+                      eventImages = [event.image.trim()];
+                    }
+                    const singleSrc = eventImages.length > 0 ? eventImages[0] : "";
+                    return (
+                      <Link className="bloges-card" key={event.id} data-aos="zoom-in" data-aos-delay={index * 100}>
+                        <div className="events-card-img">
+                          {eventImages.length > 1 ? (
+                            <div className="events-card-carousel">
+                              <Slider {...eventImageCarouselSettings}>
+                                {eventImages.map((imgUrl, i) => (
+                                  <div key={i} className="events-card-carousel-slide">
+                                    <img
+                                      loading="eager"
+                                      fetchPriority="high"
+                                      src={typeof imgUrl === "string" ? imgUrl : ""}
+                                      alt={`${event.title} ${i + 1}`}
+                                      className="bloges-card-img-img w-100 h-100"
+                                    />
+                                  </div>
+                                ))}
+                              </Slider>
+                            </div>
+                          ) : singleSrc ? (
+                            <img
+                              loading="eager"
+                              fetchPriority="high"
+                              src={singleSrc}
+                              alt={event.title}
+                              className="bloges-card-img-img w-100 h-100"
+                            />
+                          ) : null}
+                          <div className="date">{formatDateToIndian(event.date)}</div>
+                        </div>
 
-                        />
-                        <div className="date">{event.date}</div>
-                      </div>
-
-                      <div className="events-card-title">
-                        <div className="events-card-heading">{event.title}</div>
-                        <div className="event-description">{event.description}</div>
-                      </div>
-                    </Link>
-                  ))}
+                        <div className="events-card-title">
+                          <div className="events-card-heading">{event.title}</div>
+                          <div className="event-description">{event.description}</div>
+                        </div>
+                      </Link>
+                    );
+                  })}
 
                 </div>
 

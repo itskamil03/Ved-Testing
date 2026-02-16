@@ -89,7 +89,7 @@ a:focus-visible {
   background-color: #fff;
   transition: 0.5s;
   color: #212529;
-  box-shadow: -1px 6px 20px 4px #dcdcdc;
+  box-shadow: 10px -6px 20px 4px #dcdcdc;
 }
 
 .header-container {

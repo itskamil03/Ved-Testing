@@ -4,7 +4,6 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { NavLink } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useEffect } from "react";
 
 function HomeHeroImg() {
@@ -43,7 +42,7 @@ function HomeHeroImg() {
           <div className="homehero-container">
           
             <img
-              src="image/home-slider/Slider_1.webp"
+              src="image/home-slider/Slider_1.jpeg"
               alt="..."
               className="homeheroimg-img"
               loading="eager"
@@ -55,7 +54,7 @@ function HomeHeroImg() {
                 Transform Your Business Online
               </div>
               <div className="homeheroimg-heading">
-                GxP software solutions EQMS, DMS, TMS, <br /> HRMS, ERP...
+                GxP software solutions <br /> EQMS, DMS, TMS,  HRMS, ERP...
               </div>
               <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
                 Contact Us
@@ -68,7 +67,7 @@ function HomeHeroImg() {
           <div className="homehero-container">
        
             <img
-              src="image/home-slider/Slider_2.webp"
+              src="image/home-slider/Slider_2.jpeg"
               alt="GxP software"
               className="homeheroimg-img"
               loading="eager"
@@ -94,7 +93,7 @@ function HomeHeroImg() {
           <div className="homehero-container">
         
             <img
-              src="image/home-slider/Slider_3.webp"
+              src="image/home-slider/Slider_3.jpg"
               alt="Transform Your Business Online"
               className="homeheroimg-img"
               loading="eager"
@@ -144,7 +143,7 @@ function HomeHeroImg() {
           <div className="homehero-container">
           
             <img
-              src="image/home-slider/slide_2.webp"
+              src="image/home-slider/slide_2.jpeg"
               alt="Android & iOS App Development"
               className="homeheroimg-img"
               loading="eager"
@@ -167,7 +166,7 @@ function HomeHeroImg() {
           <div className="homehero-container">
          
             <img
-              src="image/home-slider/slide_3.webp"
+              src="image/home-slider/slide_3.jpeg"
               alt="Streamline Your Business Processes"
               className="homeheroimg-img"
               loading="eager"
@@ -214,7 +213,7 @@ function HomeHeroImg() {
           <div className="homehero-container">
           
             <img
-              src="image/home-slider/training_slider.webp"
+              src="image/home-slider/training_slider.jpeg"
               alt="Training & Internship At Venturing Digitally"
               className="homeheroimg-img"
               loading="eager"
@@ -226,7 +225,7 @@ function HomeHeroImg() {
                 Training & Internship At Venturing Digitally
               </div>
               <div className="homeheroimg-heading">
-                AI/ML, Java, Next JS, Node JS and more!
+                AI/ML, Java, Next JS, Node JS <br /> Python and more!
               </div>
               <div className="homeheroimg-imgbtn">Contact Us</div>
             </div>
@@ -237,7 +236,7 @@ function HomeHeroImg() {
           <div className="homehero-container">
          
             <img
-              src="image/home-slider/data_analtyics.jpg"
+              src="image/home-slider/data_analytics.png"
               alt="Data Analysis"
               className="homeheroimg-img"
               loading="eager"
@@ -249,7 +248,7 @@ function HomeHeroImg() {
                 Data Analysis
               </div>
               <div className="homeheroimg-heading width-50%">
-               Turn Data into Insights – Make Smarter Decisions
+               Turn Data into Insights - <br/>Make Smarter Decisions
               </div>
               <div className="homeheroimg-imgbtn">Contact Us</div>
             </div>
@@ -260,7 +259,7 @@ function HomeHeroImg() {
           <div className="homehero-container">
            
             <img
-              src="image/home-slider/mvp_slider.webp"
+              src="image/home-slider/mvp_slider.jpeg"
               alt="MVP IT Consulting"
               className="homeheroimg-img"
               loading="eager"
@@ -272,9 +271,154 @@ function HomeHeroImg() {
                 MVP IT Consulting
               </div>
               <div className="homeheroimg-heading">
-                Transform Ideas into Technology Solutions
+                Transform Ideas into Technology <br /> Solutions
               </div>
               <div className="homeheroimg-imgbtn">Contact Us</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="homeheroimg">
+          <div className="homehero-container">
+           
+            <img
+              src="image/home-slider/Slider_5_internship.png"
+              alt="Training & Internship Program"
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            />
+
+            <div className="homeheroimg-contant">
+              <div className="homeheroimg-slogan">
+                Build Your Career with Us
+              </div>
+              <div className="homeheroimg-heading">
+                Internship & Training Programs <br /> in Latest Technologies
+              </div>
+              <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
+                Contact Us
+              </NavLink>
+            </div>
+          </div>
+        </div>
+
+        <div className="homeheroimg">
+          <div className="homehero-container">
+           
+            <img
+              src="image/home-slider/slider_6_maintance.png"
+              alt="Software Maintenance & Support"
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            />
+
+            <div className="homeheroimg-contant">
+             
+              <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
+                Contact Us
+              </NavLink>
+            </div>
+          </div>
+        </div>
+
+        <div className="homeheroimg">
+          <div className="homehero-container">
+           
+            <img
+              src="image/home-slider/slider_7_cloud.png"
+              alt="Cloud Computing Solutions"
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            />
+
+            <div className="homeheroimg-contant">
+              <div className="homeheroimg-slogan">
+                Scale Your Business to the Cloud
+              </div>
+              <div className="homeheroimg-heading">
+                Cloud Migration & Infrastructure <br /> Management Services
+              </div>
+              <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
+                Contact Us
+              </NavLink>
+            </div>
+          </div>
+        </div>
+
+        <div className="homeheroimg">
+          <div className="homehero-container">
+           
+            <img
+              src="image/home-slider/slider_8_digital.png"
+              alt="Digital Transformation"
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            />
+
+            <div className="homeheroimg-contant">
+              <div className="homeheroimg-slogan">
+                Embrace Digital Innovation
+              </div>
+              <div className="homeheroimg-heading">
+                Digital Transformation <br /> for Modern Businesses
+              </div>
+              <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
+                Contact Us
+              </NavLink>
+            </div>
+          </div>
+        </div>
+
+        <div className="homeheroimg">
+          <div className="homehero-container">
+           
+            <img
+              src="image/home-slider/slider_9_ui-ux.png"
+              alt="UI/UX Design Services"
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            />
+
+            <div className="homeheroimg-contant">
+              <div className="homeheroimg-slogan">
+                Design Experiences That Matter
+              </div>
+              <div className="homeheroimg-heading">
+                Professional UI/UX Design <br /> Services for Apps & Websites
+              </div>
+              <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
+                Contact Us
+              </NavLink>
+            </div>
+          </div>
+        </div>
+
+        <div className="homeheroimg">
+          <div className="homehero-container">
+           
+            <img
+              src="image/home-slider/slider_10_qa.png"
+              alt="Quality Assurance & Testing"
+              className="homeheroimg-img"
+              loading="eager"
+              fetchpriority="high"
+            />
+
+            <div className="homeheroimg-contant">
+              <div className="homeheroimg-slogan">
+                Ensure Quality & Reliability
+              </div>
+              <div className="homeheroimg-heading">
+                Comprehensive QA & Testing <br /> Services for Your Software
+              </div>
+              <NavLink to="/ContactUs" className="homeheroimg-imgbtn">
+                Contact Us
+              </NavLink>
             </div>
           </div>
         </div>

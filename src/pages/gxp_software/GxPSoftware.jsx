@@ -32,9 +32,12 @@ function GxPSoftware() {
         <div className="section-content">
           <div className="head-block">
             <div className="media">
-              <video autoPlay muted loop className="w-100 h-100">
-                <source src="/image/gxp/dms.mp4" />
-              </video>
+           <img loading="eager" fetchpriority="high"
+                src="/image/gxp/dms.jpeg"
+                alt="..."
+                className="w-100 h-100"
+                 
+               />
             </div>
             <div className="title">
               <div>Document Management</div>
@@ -136,9 +139,12 @@ function GxPSoftware() {
                   </div>
                 </div>
                 <div className="media">
-                  <video autoPlay muted loop className="w-100 h-100">
-                    <source src="/image/gxp/lms.mp4" />
-                  </video>
+                    <img loading="eager" fetchpriority="high"
+                      src="/image/gxp/lms.jpeg"
+                      alt="..."
+                      className="w-100 h-100"
+                       
+                    />
                 </div>
               </div>
               <div className="benefit-grid">
@@ -237,9 +243,12 @@ function GxPSoftware() {
                 </div>
               </div>
               <div className="media">
-                <video autoPlay muted loop className="w-100 h-100">
-                  <source src="/image/gxp/Qms.mp4" />
-                </video>
+               <img loading="eager" fetchpriority="high"
+                src="/image/gxp/qms.jpeg"
+                alt="..."
+                className="w-100 h-100"
+                 
+               />
               </div>
             </div>
             <div className="bottom-grid">

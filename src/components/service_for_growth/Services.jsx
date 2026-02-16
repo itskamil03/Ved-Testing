@@ -9,7 +9,7 @@ function Services() {
       <section id="features" style={{backgroundColor:"#f8f9fa"}}>
         <div className="container-fluid" >
           <div className="container">
-            <div className="cservice-section-head">
+            <div className="cservice-section-head" data-aos="fade-down">
               <div className="cservice-custom-head">
                 <h2 className="cservice-head-title head_title">
                   Our Best Exceptional Service For You
@@ -25,7 +25,7 @@ function Services() {
 
             <div className="section-content">
               <div className="row mb-4" style={{flexGrow:1}}>
-                <div className="col-lg-6" style={{paddingBottom:"20px"}}>
+                <div className="col-lg-6" style={{paddingBottom:"20px"}} data-aos="fade-up" data-aos-delay="100">
                     
                   <div className="left-box"> 
                     <div  className="allservice">
@@ -61,9 +61,9 @@ function Services() {
                   </div>
                 </div>
 
-                <div className="col-lg-6" style={{paddingBottom:"20px"}}>
+                <div className="col-lg-6" style={{paddingBottom:"20px"}} data-aos="fade-up" data-aos-delay="200">
                 <div className="left-box"> 
-                      <div  className="allservice">
+                      <div className="allservice">
                         <div className="text">
                         <h2 className="heading" style={{fontSize:"3rem"}}>UI/UX Design</h2>
                         <div className="slogan page_title" style={{paddingBlock:"10px"}}>
@@ -95,10 +95,10 @@ function Services() {
                     </div>
                 </div>
 
-                <div className="col-lg-6" style={{paddingBottom:"20px"}}>
+                <div className="col-lg-6" style={{paddingBottom:"20px"}} data-aos="fade-up" data-aos-delay="300">
                     
                     <div className="left-box"> 
-                      <div  className="allservice">
+                      <div className="allservice">
                         <div className="text">
                         <h2 className="heading" style={{fontSize:"3rem"}}>Application Development</h2>
                         <div className="slogan page_title" style={{paddingBlock:"10px"}}>
@@ -130,9 +130,9 @@ function Services() {
                     </div>
                   </div>
 
-                  <div className="col-lg-6" style={{paddingBottom:"20px"}}>
+                  <div className="col-lg-6" style={{paddingBottom:"20px"}} data-aos="fade-up" data-aos-delay="400">
                 <div className="left-box"> 
-                      <div  className="allservice">
+                      <div className="allservice">
                         <div className="text">
                         <h2 className="heading" style={{fontSize:"3rem"}}>Cloud Services</h2>
                         <div className="slogan page_title" style={{paddingBlock:"10px"}}>
@@ -164,10 +164,9 @@ function Services() {
                 </div>
   
 
-                <div className="col-lg-6" style={{paddingBottom:"20px"}}>
-
+                <div className="col-lg-6" style={{paddingBottom:"20px"}} data-aos="fade-up" data-aos-delay="500">
                 <div className="left-box"> 
-                      <div  className="allservice">
+                      <div className="allservice">
                         <div className="text">
                         <h2 className="heading" style={{fontSize:"3rem"}}>Software Development</h2>
                         <div className="slogan page_title" style={{paddingBlock:"10px"}}>
@@ -199,9 +198,9 @@ function Services() {
                     </div>
                 </div>
                  
-                <div className="col-lg-6" style={{paddingBottom:"20px"}}>
+                <div className="col-lg-6" style={{paddingBottom:"20px"}} data-aos="fade-up" data-aos-delay="600">
                 <div className="left-box"> 
-                      <div  className="allservice">
+                      <div className="allservice">
                         <div className="text">
                         <h2 className="heading" style={{fontSize:"3rem"}}>Support & Maintenance</h2>
                         <div className="slogan page_title" style={{paddingBlock:"10px"}}>

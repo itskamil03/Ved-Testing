@@ -28,6 +28,15 @@
   aspect-ratio: 1/1;
 }
 
+#app-contact .calc-side .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
 #app-cards .app-card .details {
   background: white;
   width: calc(100% - 300px);
@@ -114,103 +123,71 @@
 }
 
 /* -- -------------------------------
-            ADVANTAGES
+            ADVANTAGES (Card layout)
 ------------------------------- -- */
-#app-advantages .tabs  {
-  padding: 30px 20px;
-  background: white;
-  box-shadow: 0 8px 24px #c1bfbf57;
+.app-advantages-cards {
   display: grid;
-  grid-template-columns: 0.25fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 20px 0;
 }
 
-#app-advantages .tabs .tab-header {
-  width: 340px;
-  height: 100%;
-  border-right: 1px solid #ccc;
-  padding: 20px 0px;
+.app-advantage-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px 24px;
+  box-shadow: 0 4px 20px rgba(39, 40, 109, 0.08);
+  border: 1px solid #e8e8f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-#app-advantages .tabs .tab-header>div {
-  height: 50px;
-  line-height: 50px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #888;
-  cursor: pointer;
-  padding-left: 10px;
+.app-advantage-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(39, 40, 109, 0.15);
+  border-color: #27286d;
 }
 
-#app-advantages .tabs .tab-header>div:hover,
-#app-advantages .tabs .tab-header>div.active {
-  color: #27286d;
-  border-left: 3px solid #27286d;
+.app-advantage-card-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #27286d;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  margin-bottom: 18px;
 }
 
-#app-advantages .tabs .tab-header div i {
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-
-#app-advantages .tabs .tab-content .active {
-  position: relative;
-  height: 100%;
-  font-size: 1.6rem;
-  line-height: 3rem;
-
-}
-
-#app-advantages .tabs .tab-content .head {
+.app-advantage-card-title {
   font-family: "sans-serif", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 2.3rem;
-  line-height: 5rem;
+  font-size: 1.75rem;
+  color: #1a1a2e;
+  margin: 0 0 12px 0;
+  line-height: 1.35;
 }
 
-#app-advantages .tabs .tab-content>div>i {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background: #555;
-  color: #f5f5f5;
-  font-size: 25px;
-  font-weight: 600;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
+.app-advantage-card-content {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+  text-align: justify;
 }
 
-#app-advantages .tabs .tab-content>div.active {
-  display: block;
-} 
+@media screen and (max-width: 768px) {
+  .app-advantages-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
-#app-advantages .tabs .tab-content>div {
-  display: none;
-} 
-/* #app-advantages .tabs .tab-content>div {
-  position: absolute;
-  text-align: center;
-  padding: 0px 20px;
-
-  transition: all 500ms ease-in-out;
+  .app-advantage-card {
+    padding: 22px 20px;
+  }
 }
-
-#app-advantages .tabs .tab-content>div.active {
-  top: 0px;
-} */
-/* 
-#app-advantages .tabs .tab-indicator {
-    position: absolute;
-    width: 4px;
-    height: 50px;
-    background: #00acee;
-    left: 198px;
-    top: 80px;
-    transition: all 500ms ease-in-out;
-} */
 
 /* -- -------------------------------
             PROCESS STEPS
@@ -368,31 +345,6 @@
   gap: 10px;
   margin-bottom: 20px;
 }
-#app-advantages .tabs .tab-content .head {
-  font-family: "sans-serif", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 4rem;
-}
-
-#app-advantages .tabs  {
-  padding: 20px 20px;
-  background: white;
-  box-shadow: 0 8px 24px #c1bfbf57;
-  display: grid;
-  grid-template-columns:1fr;
-  grid-template-rows:1fr 1fr;
-  grid-gap: 20px;
-  margin-top: 20px;
-}
-
-#app-advantages .tabs .tab-header {
-  border-right: 0px !important;
-  border-bottom: 1px solid #ccc;
-  width: 100%;
-}
-
 #app-cards .app-card:nth-child(2),
 #app-cards .app-card:nth-child(4) {
   display: flex;

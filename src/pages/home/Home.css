@@ -508,6 +508,45 @@ padding: 12px;
   object-fit: cover;
 }
 
+#whats-new .blog-img.events-card-img {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+#whats-new .blog-img.events-card-img .bloges-card-img-img,
+#whats-new .blog-img.events-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#whats-new .events-card-carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+#whats-new .events-card-carousel .slick-slider,
+#whats-new .events-card-carousel .slick-list,
+#whats-new .events-card-carousel .slick-track {
+  height: 100%;
+}
+
+#whats-new .events-card-carousel .events-card-carousel-slide {
+  height: 260px;
+  outline: none;
+}
+
+#whats-new .events-card-carousel .events-card-carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 #whats-new .blog-content {
   display: flex;
   flex-direction: column;
@@ -534,9 +573,28 @@ padding: 12px;
 
 }
 
+.lifeatvedthird-section-body-home {
+  height: 70vh;
+  display: flex;
+}
+
+.lifeatvedthird-section-bodybox {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .lifeatvedthird-section-body-home-img{
   object-fit: contain;
-    height: 20rem;
+  height: 20rem;
+  flex-shrink: 0;
+}
+
+.lifeatvedthird-section-body-content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
 }
 
 #whats-new .bottom-block .head {
@@ -581,6 +639,123 @@ padding: 12px;
   color: white;
 }
 
+
+#news-events .blogesc-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#news-events .bloges-card {
+  width: 100%;
+  padding-bottom: 30px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px #e4dfdf;
+}
+
+#news-events .events-card-img {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+#news-events .events-card-img .bloges-card-img-img,
+#news-events .events-card-img img.bloges-card-img-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#news-events .events-card-img .date {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 2;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  background-color: #c0bdbd;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+#news-events .events-card-carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+#news-events .events-card-carousel .slick-slider,
+#news-events .events-card-carousel .slick-list,
+#news-events .events-card-carousel .slick-track {
+  height: 100%;
+}
+
+#news-events .events-card-carousel .events-card-carousel-slide {
+  height: 260px;
+  outline: none;
+}
+
+#news-events .events-card-carousel .events-card-carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#news-events .events-card-carousel .slick-prev,
+#news-events .events-card-carousel .slick-next {
+  display: none !important;
+}
+
+#news-events .events-card-carousel .slick-dots {
+  display: none !important;
+}
+
+#news-events .events-card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 20px 0;
+}
+
+#news-events .events-card-heading {
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+}
+
+#news-events .event-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 992px) {
+  #news-events .blogesc-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #news-events .blogesc-main {
+    grid-template-columns: 1fr;
+  }
+
+  #news-events .events-card-img,
+  #news-events .events-card-carousel .events-card-carousel-slide {
+    height: 220px;
+  }
+}
 
 #news-events .solutin_btn {
   display: flex;
@@ -758,7 +933,10 @@ padding: 12px;
      height: 240px;
   }
 
-
+    .lifeatvedthird-section-body-home {
+      height: 60vh;
+      display: flex;
+    }
 
   #industries .industries_link {
     position: absolute;
@@ -937,6 +1115,15 @@ main {
   min-width: 138px !important;
 }
 
+/* 0–480px: word-break in all sections (incl. AboutComponents #about, Services #features) to avoid overflow */
+@media only screen and (max-width: 480px) {
+  section,
+  #about,
+  #features {
+    word-break: break-all;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   #innovatedata .tabs {
     display: flex;
@@ -945,10 +1132,11 @@ main {
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 10px;
-    padding: 6px 0px !important;
+    padding: 20px 0px !important;
   }
+
   #join {
-    padding: 3px 0px !important;
+    padding: 20px 0px !important;
   }
   .section-head{
     margin-bottom: 20px !important;
@@ -957,20 +1145,20 @@ main {
     padding: 20px 0px !important;
   }
   #who_we_are {
-    padding: 12px 0px !important;
+    padding: 20px 16px !important;
   }
   #features{
-    padding: 0rem 0px !important;
+    padding: 20px 0px !important;
   }
   #solutions {
-    padding: 0px !important;
+    padding: 20px 0px !important;
     margin: 0px !important;
   }
    main {
     padding: 1.5rem 10px !important;
    }
    #internship-data, #lifeatvedthird, #latest_updates, #join, #industries, #why_choose_us, #whats-new, #news-events {
-    padding: 8px 0px !important;
+    padding: 20px 0px !important;
    }
    .solutin_btn {
     margin-top: 1rem !important;
@@ -1014,6 +1202,11 @@ main {
     padding-top: 4px !important;
     padding-bottom: 4px !important;
     margin-bottom: 0 !important;
+   }
+   #who_we_are .milestone-box {
+    padding: 24px 20px !important;
+    margin-bottom: 1rem !important;
+    max-width: 100%;
    }
    .input-head {
     margin-bottom: 0.6rem !important;
