@@ -17,7 +17,6 @@ function EnterpriseSoftware() {
 
     var slidecal = 200 / getslide + "%";
 
-   // $("#enterprise-tabs .box").css({ width: slidecal });
 
     $("#enterprise-tabs .box").click(function () {
       $("#enterprise-tabs .box").removeClass("active");
@@ -33,7 +32,7 @@ function EnterpriseSoftware() {
       <Hero
         heading="Enterprise Software Development"
         imgbtn="Enterprise Software"
-        src="image/enterprise-software/enterprise.jpeg"
+        src="image/enterprise-software/enterprise.png"
       />
 
       {/* {{-- =============================================

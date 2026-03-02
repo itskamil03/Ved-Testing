@@ -22,7 +22,7 @@ function WebsiteDevelopment() {
     <>
 
       <Hero
-        src="image/website-development/website.jpeg"
+        src="image/website-development/website-development.png"
         heading="Website Design and Development"
         imgbtn="Website"
       />

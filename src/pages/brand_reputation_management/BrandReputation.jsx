@@ -14,7 +14,7 @@ function BrandReputation() {
       <Hero
         heading="Brand Reputation Management"
         imgbtn="Reputation"
-        src="image/brand-reputation/brand.jpeg"
+        src="image/brand-reputation/brand.png"
       />
       {/* <-------------------------------------------- Why Venturing Digitally ----------------------------------------------> */}
 

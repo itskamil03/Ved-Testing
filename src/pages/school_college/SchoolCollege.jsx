@@ -120,7 +120,7 @@ function SchoolCollage() {
       <Hero
         heading="School & College Management System"
         imgbtn="School & College"
-        src="image/solution/schoolCollage.jpg"
+        src="image/solution/SCMS.png"
         // slogan="Effective Project Management Solutions"
       />
         <section id="solution">

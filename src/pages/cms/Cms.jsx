@@ -195,7 +195,7 @@ function Cms() {
         heading="Content Management System (CMS)"
         imgbtn="Cms"
         // slogan="Simplify Content Management"
-        src="image/cms/cms.jpeg"
+        src="image/cms/CMS.png"
       />
 
       <section id="solution">

@@ -201,7 +201,7 @@ function ProjectManagement() {
       <Hero
         heading="Project Management System"
         imgbtn="Projects"
-        src="image/project-management/project-management.jpeg"
+        src="image/project-management/pms.png"
         // slogan="Effective Project Management Solutions"
       />
 

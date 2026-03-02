@@ -54,7 +54,7 @@ function CustomerSoftware() {
       <Hero
         heading="Customized Software Development"
         imgbtn="Software"
-        src="image/custom-software/custom-software.jpeg"
+        src="image/custom-software/Customized_Software_Development.png"
       />
 
       {/* {{-- ===========================================

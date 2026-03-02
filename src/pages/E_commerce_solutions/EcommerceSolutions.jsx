@@ -199,7 +199,7 @@ function EcommerceSolutions() {
         heading="E-Commerce Solutions"
         imgbtn="E-Commerce"
         // slogan="Empower Your Online Business"
-        src="image/Ecommerce-solutions/Ecommerce.jpeg"
+        src="image/Ecommerce-solutions/Ecommerce.png"
       />
 
     <section id="solution">

@@ -171,7 +171,7 @@ function WebPortal() {
       <Hero
         heading="Web Portal"
         imgbtn="Web Portal"
-        src="image/web-portal/web-portal.jpeg"
+        src="image/web-portal/web-portal.png"
         slogan="Empowering Your Digital Presence"
       />
 

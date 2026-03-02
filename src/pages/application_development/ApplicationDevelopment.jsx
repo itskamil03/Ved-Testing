@@ -17,7 +17,7 @@ function ApplicationDevelopment() {
       <Hero
         heading="Application Development"
         imgbtn="Application"
-        src="image/application-development/application-dev.jpeg"
+        src="image/application-development/application-dev.png"
       />
       {/* <-----------------------------------------------------------------> */}
 

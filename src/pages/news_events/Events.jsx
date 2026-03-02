@@ -140,7 +140,7 @@ const getEventImages = (event) => {
               const eventImages = getEventImages(event);
               const singleSrc = eventImages.length > 0 ? eventImages[0] : "";
               return (
-          <div className="bloges-card" key={event.id}>
+          <div className="events-card" key={event.id}>
             <div className="events-card-img">
               {eventImages.length > 1 ? (
                 <div className="events-card-carousel">

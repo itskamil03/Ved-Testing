@@ -181,7 +181,7 @@ function OperationManagement() {
         heading="Operation Management Software"
         imgbtn="Operation"
         // slogan="Streamline and Optimize Your Operations"
-        src="image/operation-management/operation.jpeg"
+        src="image/operation-management/OMS.png"
       />
 
         

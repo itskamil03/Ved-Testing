@@ -216,7 +216,7 @@ function DocumentManagement() {
       <Hero
         heading="Document Management System"
         imgbtn="Documents"
-        src="image/document-management/document-management.jpeg"
+        src="image/document-management/document-management.png"
         // slogan="Efficient Document Management Solutions"
       />
       {/* <-------------------------------------------- Document Management first ------------------------------------------> */}

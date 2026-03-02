@@ -136,8 +136,8 @@ const Qms = () => {
       <Hero
         heading="Quality Management System (QMS)"
         slogan="Streamline Your Customer Relationships"
-        imgbtn="qms"
-        src="/QMS.jpg"
+        imgbtn="QMS"
+        src="/image/qms/QMS.png"
       />
  
        <section id="solution">

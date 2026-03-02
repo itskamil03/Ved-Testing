@@ -56,7 +56,7 @@ function UIUXDesign() {
       <Hero
         heading="UI/UX Design"
         imgbtn="Graphic"
-        src="image/ui-ux-design/ui-ux-design.jpeg"
+        src="image/ui-ux-design/ui-ux-design.png"
       />
       {/* <---------------------------------------------- Our Clients ---------------------------------------------------> */}
 

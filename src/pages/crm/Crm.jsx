@@ -160,7 +160,7 @@ function Crm() {
         heading="Customer Relationship Management (CRM)"
         slogan="Streamline Your Customer Relationships"
         imgbtn="Crm"
-        src="image/crm/crm.jpeg"
+        src="image/crm/crm.png"
       />
 
       {/* {{-- ===========================================

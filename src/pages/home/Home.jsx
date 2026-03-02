@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef, useMemo } from "react";
+import { useLocation } from "react-router-dom";
 import "./Home.css";
 import HomeHeroImg from "../../components/home_hero_img/HomeHeroImg";
 import ContactForm from "../../components/contact_form/ContactForm";
@@ -8,10 +9,9 @@ import industries from "./HomeData";
 import { Link, NavLink } from "react-router-dom";
 
 import OurDevelopmentProcess from "../../components/development_process_components/OurDevelopmentProcess";
-import Services from "../../components/service_for_growth/Services";
 import CookieManager from "../../components/cookies/cookiesData";
 
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaLongArrowAltRight, FaUsers, FaDesktop, FaAward, FaHandshake } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,13 +21,14 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Home({ target, label }) {
 
 
-  const [selectedTab, setSelectedTab] = useState("tab1");
+  const [selectedTab, setSelectedTab] = useState("tab-web-development");
   const [blogs, setBlogs] = useState();
   const tabContentsRef = useRef(null);
   // <---tab--->
@@ -36,9 +37,14 @@ function Home({ target, label }) {
     setSelectedTab(value);
   };
 
-  // Smooth scroll to tab content when user clicks a tab (skip initial "tab1" state)
+  const tabInitialMount = useRef(true);
+  // Smooth scroll to tab content when user clicks a tab (skip initial load)
   useEffect(() => {
-    if (selectedTab === "tab1" || !tabContentsRef.current) return;
+    if (tabInitialMount.current) {
+      tabInitialMount.current = false;
+      return;
+    }
+    if (!tabContentsRef.current) return;
     // Wait for React to render new tab content, then scroll smoothly
     const frame = requestAnimationFrame(() => {
       requestAnimationFrame(() => {
@@ -59,6 +65,8 @@ function Home({ target, label }) {
   const [loadingData, setLoadingData] = useState(false)
 
   const [latestNews, setLatestNews] = useState([])
+  const [activeInternshipCard, setActiveInternshipCard] = useState(0)
+  const internshipHoverTimeout = useRef(null)
 
   useEffect(() => {
     // Initialize AOS
@@ -98,6 +106,70 @@ function Home({ target, label }) {
   const [events, setEvents] = useState([]);
 
 
+  const SERVICE_CARDS = [
+    {
+      id: 1,
+      number: "01",
+      tagline: "WEBSITE SOLUTIONS",
+      title: "Web Development",
+      description:
+        "Building a powerful digital front door for your business with modern, responsive websites that load fast, tell your brand story clearly, and turn visitors into qualified leads. From corporate sites to high-performing landing pages, we design and develop experiences that support your marketing and sales goals.",
+      image: "image/home/service/Web_development.jpg",
+      link: "/WebsiteDevelopment",
+    },
+    {
+      id: 2,
+      number: "02",
+      tagline: "USER EXPERIENCE",
+      title: "UI/UX Design",
+      description:
+        "Crafting seamless, intuitive digital experiences with user-centred UI/UX design that keeps customers engaged at every step. We combine research, journey mapping, wireframes, and high-fidelity interfaces to design products that are easy to use, visually striking, and optimised for higher conversions.",
+      image: "image/home/service/Ui_ux.jpg",
+      link: "/UIUXDesign",
+    },
+    {
+      id: 3,
+      number: "03",
+      tagline: "MOBILE SOLUTIONS",
+      title: "Application Development",
+      description:
+        "Developing secure, scalable mobile applications that keep your business always within reach of your customers. Whether it’s native, hybrid, or cross‑platform, we build apps with smooth performance, clean interfaces, and robust backends that integrate seamlessly with your existing systems.",
+      image: "image/home/service/App_development.jpg",
+      link: "/ApplicationDevelopment",
+    },
+    {
+      id: 4,
+      number: "04",
+      tagline: "CLOUD & SCALABILITY",
+      title: "Cloud Services",
+      description:
+        "Transforming your infrastructure with cloud-first solutions that improve scalability, security, and uptime. From migration and optimisation to managed cloud operations, we help you reduce costs, automate deployments, and keep your applications highly available across regions and devices.",
+      image: "image/home/service/Custom_software.jpg",
+      link: "/CloudServices",
+    },
+    {
+      id: 5,
+      number: "05",
+      tagline: "CUSTOM SOFTWARE",
+      title: "Software Development",
+      description:
+        "Designing and engineering custom software tailored to your workflows, departments, and long‑term business roadmap. We analyse your processes, remove manual bottlenecks, and build robust web or desktop solutions that streamline operations and give you real‑time visibility into performance.",
+      image: "image/home/service/software-dev.jpg",
+      link: "/SoftwareDevelopment",
+    },
+    {
+      id: 6,
+      number: "06",
+      tagline: "ONGOING SUPPORT",
+      title: "Support & Maintenance",
+      description:
+        "Providing proactive support and maintenance so your applications stay secure, updated, and bug‑free. From performance monitoring and backups to feature enhancements and emergency fixes, our team ensures your digital platforms continue to run smoothly as your business grows.",
+      image: "image/home/service/Support_maintainence.jpg",
+      link: "/SupportMaintenance",
+    },
+  ];
+
+
 
   useEffect(() => {
     if (loading) {
@@ -127,6 +199,15 @@ function Home({ target, label }) {
   const [counters, setCounters] = useState(targets.map(() => ({ value: 0 })));
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+
+  const location = useLocation();
+  // Enable fullpage vertical snap scroll only on Home
+  useEffect(() => {
+    if (location.pathname === "/") {
+      document.documentElement.classList.add("home-fullpage-snap");
+      return () => document.documentElement.classList.remove("home-fullpage-snap");
+    }
+  }, [location.pathname]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -327,6 +408,48 @@ function Home({ target, label }) {
     ],
   };
 
+  const serviceSliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    arrows: false,
+    touchMove: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
+  };
+
+  const newsEventsSliderSettings = {
+    ...settingsdata,
+    dots: true,
+    appendDots: (dots) => <ul className="news-events-dots">{dots}</ul>,
+  };
+
   const eventImageCarouselSettings = {
     dots: false,
     infinite: true,
@@ -336,8 +459,15 @@ function Home({ target, label }) {
     autoplay: true,
     autoplaySpeed: 3500,
     arrows: false,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
   };
+
+  const blogImageCarouselSettings = {
+    ...eventImageCarouselSettings,
+    dots: true,
+    appendDots: (dots) => <ul className="blog-image-dots">{dots}</ul>,
+  };
+
 
   const formatDateToIndian = (dateStr) => {
     if (!dateStr) return "";
@@ -386,111 +516,145 @@ function Home({ target, label }) {
 
   return (
     <>
-      <HomeHeroImg />
-      <AboutComponents />
-      <Services />
+      <div className="home-snap-section">
+        <HomeHeroImg />
+      </div>
+      <div className="home-snap-section">
+        <AboutComponents />
+      </div>
 
-      {/* <------------------------------------------- What We Do We Expertise In -------------------------------------------> */}
+    
+      <section id="features" className="cservice-features-section">
+        <div className="container">
+        <div className="cservice-wrap">
+          <div className="cservice-section-head cservice-section-head-ref" data-aos="fade-down">
+            <h2 className="cservice-head-title head_title">
+              Our Best Exceptional Service For You
+            </h2>
+            <p className="cservice-head-slogan page_title">
+              At Venturing Digitally we measure our success by the growth and
+              success of our clients. That's why we go above and beyond to
+              deliver exceptional service and customized solutions that help
+              them achieve their goals.
+            </p>
+          </div>
+          <div className="cservice-cards-slider">
+            <Slider {...serviceSliderSettings} className="cservice-slider">
+              {SERVICE_CARDS.map((card) => (
+                <div key={card.id} className="cservice-card-slide">
+                  <Link to={card.link} className="cservice-card-ref cservice-card-50">
+                    <div className="cservice-card-ref-image">
+                      <span className="cservice-card-ref-badge">{card.number}</span>
+                      <img src={card.image} alt={card.title} loading="lazy" />
+                      <span className="cservice-card-ref-image-overlay" aria-hidden="true" />
+                    </div>
+                    <div className="cservice-card-ref-content">
+                      <span className="cservice-card-ref-number" aria-hidden="true">{card.number}</span>
+                      <div className="cservice-card-ref-tagline">
+                        <span className="cservice-card-ref-line" />
+                        {card.tagline}
+                      </div>
+                      <h3 className="cservice-card-ref-title">{card.title}</h3>
+                      <p className="cservice-card-ref-desc">{card.description}</p>
+                      <span className="cservice-card-ref-btn">
+                        Read More <FaLongArrowAltRight className="cservice-card-ref-btn-arrow" />
+                      </span>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
+        </div>
+      </section>
+
+
       <section
         id="what-do"
-        style={{
-          backgroundImage: "url('image/home/work/who-we-work-width.jpeg')",
-        }}
+        className="home-snap-section "
       >
-        <div className="img-block"></div>
-        <div className="container-fluid">
+        <div className="container whatdo-section-dark">
           <div className="container">
-            <div className="section-content">
-              <div className="row">
-                <div className="col-lg-4 my-auto" data-aos="fade-right">
-                  <p className="title-2 page_title">
-                    Venturing Digitally as a leading Software Design, Development and Service company
-                    in India, we worked with 120+ businesses either it is a
-                    start-up or enterprise and delivers the best solution in the
-                    industry. we offer a broad range of Website,Mobile
-                    Application and Software development services based on
-                    business requirements.
-                  </p>
-                </div>
-                <div className="col-lg-8">
-                  <div className="what-do-grid">
-                    <div className="row">
-                      <div className="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <Link
-                          className="whatwedo-link"
-                          to="/WebsiteDevelopment"
-                        >
-                          <div className="what-do-box">
-                            <div className="what-do-icon">
-                              <img
-                                src="image/home/work/start-up.png"
-                                alt="website development"
-                                className="w-100 h-100"
-                                loading="eager" fetchpriority="high"
-                              />
-                            </div>
-                            <h3 className="what-do-name">
-                              Start Up Business
-                            </h3>
-                          </div>
-                        </Link>
-                      </div>
+            <div className="whatdo-layout">
+              <div className="whatdo-left" data-aos="fade-right">
+                <h2 className="whatdo-left-title">Thought Leadership</h2>
+                <p className="whatdo-left-text">
+                  Venturing Digitally is a strategy‑driven, technology‑focused partner helping
+                  businesses modernize, scale, and create meaningful digital experiences.
+                  From startup ideas to enterprise platforms, we bring product thinking and
+                  engineering together to unlock growth.
+                </p>
+                <button
+                  type="button"
+                  className="whatdo-left-cta"
+                  onClick={() => navigate('/WebsiteDevelopment')}
+                >
+                  See More
+                </button>
+              </div>
 
-                      <div className="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <Link
-                          className="whatwedo-link"
-                          to="/ApplicationDevelopment"
-                        >
-                          <div className="what-do-box">
-                            <div className="what-do-icon">
-                              <img
-                                src="image/home/work/Business.png"
-                                alt="application development"
-                                className="w-100 h-100"
-                                loading="eager" fetchpriority="high"
-                              />
-                            </div>
-                            <h3 className="what-do-name">
-                              Manufacturing & Production
-                            </h3>
-                          </div>
-                        </Link>
-                      </div>
-                      <div className="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <Link
-                          className="whatwedo-link"
-                          to="/SoftwareDevelopment"
-                        >
-                          <div className="what-do-box">
-                            <div className="what-do-icon">
-                              <img
-                                src="image/home/work/Enterprise.png"
-                                alt="software development"
-                                className="w-100 h-100"
-                                loading="eager" fetchpriority="high"
-                              />
-                            </div>
-                            <h3 className="what-do-name">Schools & Colleges</h3>
-                          </div>
-                        </Link>
-                      </div>
-                      <div className="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <Link className="whatwedo-link" to="/BrandReputation">
-                          <div className="what-do-box">
-                            <div className="what-do-icon">
-                              <img
-                                src="image/home/work/Agencies.png"
-                                alt="brand reputation"
-                                className="w-100 h-100"
-                                loading="eager" fetchpriority="high"
-                              />
-                            </div>
-                            <h3 className="what-do-name">OIL & GAS Industry</h3>
-                          </div>
-                        </Link>
-                      </div>
+              <div className="whatdo-right">
+                <div className="whatdo-grid">
+                  <Link
+                    className="whatdo-card"
+                    to="/WebsiteDevelopment"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                    style={{ backgroundImage: "url('images/career/ecommerce.png')" }}
+                  >
+                    <div className="whatdo-card-inner">
+                      <h3 className="whatdo-card-title">Start Up Business</h3>
+                      <p className="whatdo-card-desc">
+                        Professional website and landing page design to launch and scale your startup online.
+                      </p>
                     </div>
-                  </div>
+                  </Link>
+
+                  <Link
+                    className="whatdo-card"
+                    to="/ApplicationDevelopment"
+                    data-aos="zoom-in"
+                    data-aos-delay="150"
+                    style={{ backgroundImage: "url('images/career/manufacturing.png')" }}
+                  >
+                    <div className="whatdo-card-inner">
+                      <h3 className="whatdo-card-title">Manufacturing &amp; Production</h3>
+                      <p className="whatdo-card-desc">
+                        Custom applications to optimise operations, production planning, and inventory.
+                      </p>
+                    </div>
+                  </Link>
+
+                  <Link
+                    className="whatdo-card"
+                    to="/SoftwareDevelopment"
+                    data-aos="zoom-in"
+                    data-aos-delay="200"
+                    style={{ backgroundImage: "url('images/career/school.png')" }}
+                  >
+                    <div className="whatdo-card-inner">
+                      <h3 className="whatdo-card-title">Schools &amp; Colleges</h3>
+                      <p className="whatdo-card-desc">
+                        ERP and digital learning platforms for smarter campus and institute management.
+                      </p>
+                    </div>
+                  </Link>
+
+                  <Link
+                    className="whatdo-card"
+                    to="/BrandReputation"
+                    data-aos="zoom-in"
+                    data-aos-delay="250"
+                    style={{ backgroundImage: "url('images/career/transportation.png')" }}
+                  >
+                    <div className="whatdo-card-inner">
+                      <h3 className="whatdo-card-title">Oil &amp; Gas Industry</h3>
+                      <p className="whatdo-card-desc">
+                        Reliable digital solutions for monitoring assets, compliance, and field performance.
+                      </p>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -498,12 +662,9 @@ function Home({ target, label }) {
         </div>
       </section>
 
-      {/* <------------------------------------------------- Development Process --------------------------------------------> */}
 
 
-      {/* <----------------------Improve and Innovate with the Tech Trends----------------> */}
-
-      <section id="innovatedata" className="bg-light">
+      <section id="innovatedata" className="bg-light home-snap-section">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head" data-aos="fade-down">
@@ -1034,8 +1195,7 @@ function Home({ target, label }) {
       </section>
 
 
-      {/* <----------------------------------------- Our Expertise -------------------------------> */}
-      <section id="who_we_are"  >
+      <section id="who_we_are" className="home-snap-section">
         {/* ref={sectionRef} */}
         <div className="container-fluid">
           <div className="container">
@@ -1116,8 +1276,7 @@ function Home({ target, label }) {
 
 
 
-      {/* <------------------------------------------------------- Our Solutins -----------------------------------------------------------> */}
-      <section id="solutions" className="bg-light">
+      <section id="solutions" className="bg-light home-snap-section">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head" data-aos="fade-up">
@@ -1178,7 +1337,7 @@ function Home({ target, label }) {
                     className="more_btn_solution"
                     onClick={handleViewMore}
                   >
-                    {showMore ? "View Less" : "View More"}
+                    {showMore ? "See less details" : "See more details"}
                   </button>
                 </div>
               </div>
@@ -1188,29 +1347,16 @@ function Home({ target, label }) {
       </section>
 
 
-      {/* Internship & Training  */}
+
       <section id="internship-data">
         <div className="container-fluid">
           <div className="container">
             <div className="milestone-grid">
-              <h2 className="cservice-head-title head_title" data-aos="fade-down">
+              <h2 className="cinternship-head-title" data-aos="fade-down">
                 Internship & Training at Venturing Digitally
               </h2>
-              <div className="row">
-                <div className="col-lg-6" data-aos="fade-right">
-                  <img
-                    src="image/solution/training.jpg"
-                    alt="training"
-                    className="w-100 h-100"
-                    loading="eager" fetchpriority="high"
-                  />
-                </div>
-                <div className="col-lg-6 my-auto" data-aos="fade-left">
-                  <div className="milestone-info">
-                    <div className="head">Internship & Training</div>
-                    <div
-                      className="content page_title"
-                      style={{ display: "grid", gridRowGap: "6px" }}
+              <div
+                      className="content page_title internship-content-order"
                     >
                       <div >
                         Venturing Digitally Pvt. Ltd. is dedicated to shaping
@@ -1220,8 +1366,7 @@ function Home({ target, label }) {
                         paid and unpaid options to match various career
                         aspirations.
                       </div>
-                      <br />
-                      <div style={{ fontWeight: 600 }}>
+                      <div style={{ fontWeight: 600, color: '#27286d' }}>
                         Explore Endless Possibilities with Us
                       </div>
                       <div >
@@ -1229,45 +1374,57 @@ function Home({ target, label }) {
                         experiences that go beyond traditional classroom
                         learning. Here’s what makes our program unique:
                       </div>
-                      <br />
-                      <ul>
-                    
-                        <li>
-                           <span style={{ fontWeight: 600 }}>Internship & Training Exposure:</span>{" "}
-                          Gain comprehensive exposure through a blend of internship and structured training programs, preparing you for real-world industry challenges.
-                       </li>
-                       <br />
-                        
-                        <li >
-                          <span style={{ fontWeight: 600 }}>
-                            Hands-On Experience:
-                          </span>{" "}
-                          Get involved in actual projects, work with
-                          cutting-edge digital tools, and understand what it
-                          takes to thrive in the industry.
-                        </li>
-                        <br />
-                        <li >
-                          <span style={{ fontWeight: 600 }}>
-                            Short-Term and Long-Term Internships:
-                          </span>{" "}
-                          Whether you’re available for a few weeks or several
-                          months, we have options that fit your schedule and
-                          academic needs.
-                        </li>  
-                        <br /> 
-                        <li >
-                          <span style={{ fontWeight: 600 }}>
-                            {" "}
-                            Flexible Options:
-                          </span>{" "}
-                          Choose from paid or unpaid internships to match your
-                          commitment level and learning goals.
-                        </li>
-                        
-                      </ul>
                     </div>
-                  </div>
+               <div className="internship-cards-strip" data-aos="fade-up">
+                <div className="internship-cards-track">
+                  {[
+                    {
+                      title: "Internship & Training Exposure",
+                      description: "Gain comprehensive exposure through a blend of internship and structured training programs, preparing you for real-world industry challenges.",
+                      img: "image/solution/training.jpg",
+                    },
+                    {
+                      title: "Hands-On Experience",
+                      description: "Get involved in actual projects, work with cutting-edge digital tools, and understand what it takes to thrive in the industry.",
+                      img: "image/solution/project_img.jpg",
+                    },
+                    {
+                      title: "Short-Term and Long-Term Internships",
+                      description: "Whether you're available for a few weeks or several months, we have options that fit your schedule and academic needs.",
+                      img: "image/solution/document_img.webp",
+                    },
+                    {
+                      title: "Flexible Options",
+                      description: "Choose from paid or unpaid internships to match your commitment level and learning goals.",
+                      img: "image/solution/web_server.jpg",
+                    },
+                  ].map((card, idx) => (
+                    <div
+                      key={idx}
+                      className={`internship-value-card ${activeInternshipCard === idx ? "internship-value-card-expanded" : "internship-value-card-collapsed"}`}
+                      onMouseEnter={() => {
+                        if (activeInternshipCard === idx) return
+                        if (internshipHoverTimeout.current) clearTimeout(internshipHoverTimeout.current)
+                        internshipHoverTimeout.current = setTimeout(() => setActiveInternshipCard(idx), 200)
+                      }}
+                      onMouseLeave={() => {
+                        if (internshipHoverTimeout.current) {
+                          clearTimeout(internshipHoverTimeout.current)
+                          internshipHoverTimeout.current = null
+                        }
+                      }}
+                      onClick={() => setActiveInternshipCard(idx)}
+                    >
+                      <div className="internship-card-image">
+                        <img src={card.img} alt={card.title} loading="lazy" />
+                        <div className="internship-card-overlay" />
+                      </div>
+                      <div className="internship-card-content">
+                        <h3 className="internship-card-title">{card.title}</h3>
+                        <p className="internship-card-desc">{card.description}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -1343,8 +1500,9 @@ function Home({ target, label }) {
                       loading="eager" fetchpriority="high"
                     />
                   </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <p>Frontend Training Courses Consist Of languages like HTML, CSS, JavaScript, React JS, Next JS.</p>
+                  <div className="training-details-overlay">
+                    <h4 className="training-overlay-title">Frontend Training</h4>
+                    <p>Frontend Training Courses Consist Of languages like HTML, CSS, JavaScript, React JS, Next JS. Master modern frameworks and build responsive, interactive user interfaces that drive engagement.</p>
                   </div>
                 </div>
               </div>
@@ -1360,8 +1518,9 @@ function Home({ target, label }) {
                       loading="eager" fetchpriority="high"
                     />
                   </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <p>Backend Training Courses Consist Of  languages like - PHP, Laravel, Java and Node JS.</p>
+                  <div className="training-details-overlay">
+                    <h4 className="training-overlay-title">Backend Training</h4>
+                    <p>Backend Training Courses Consist Of languages like PHP, Laravel, Java and Node JS. Learn to build robust APIs, manage databases, and create scalable server-side solutions.</p>
                   </div>
                 </div>
               </div>
@@ -1377,8 +1536,9 @@ function Home({ target, label }) {
                       loading="eager" fetchpriority="high"
                     />
                   </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <p>Full Stack Training Courses Consist Of languages like - HTML, CSS, JavaScript, React JS, Next JS, Java, Node JS, Laravel & PHP.</p>
+                  <div className="training-details-overlay">
+                    <h4 className="training-overlay-title">Full Stack Training</h4>
+                    <p>Full Stack Training Courses Consist Of languages like HTML, CSS, JavaScript, React JS, Next JS, Java, Node JS, Laravel & PHP. End-to-end development skills for building complete web applications.</p>
                   </div>
                 </div>
               </div>
@@ -1394,8 +1554,9 @@ function Home({ target, label }) {
                       loading="eager" fetchpriority="high"
                     />
                   </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <p>Data Analytics Training includes data cleaning, statistical analysis, data visualization, SQL, Python, R, machine learning, and tools like Tableau, Power BI, and Excel for data-driven decision making.</p>
+                  <div className="training-details-overlay">
+                    <h4 className="training-overlay-title">Data Analytics Training</h4>
+                    <p>Data Analytics Training includes data cleaning, statistical analysis, data visualization, SQL, Python, R, machine learning, and tools like Tableau, Power BI, and Excel. Turn raw data into actionable insights for data-driven decision making.</p>
                   </div>
                 </div>
               </div>
@@ -1411,8 +1572,9 @@ function Home({ target, label }) {
                       loading="eager" fetchpriority="high"
                     />
                   </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <p>AI-ML Training includes machine learning, deep learning, NLP, computer vision, Python, TensorFlow, PyTorch, and tools to develop intelligent systems and real-world AI applications.</p>
+                  <div className="training-details-overlay">
+                    <h4 className="training-overlay-title">AI-ML Training</h4>
+                    <p>AI-ML Training includes machine learning, deep learning, NLP, computer vision, Python, TensorFlow, PyTorch, and industry tools. Develop intelligent systems and deploy real-world AI applications that transform businesses.</p>
                   </div>
                 </div>
               </div>
@@ -1427,8 +1589,9 @@ function Home({ target, label }) {
                       loading="eager" fetchpriority="high"
                     />
                   </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <p>DevOps Training covers CI/CD, automation, Docker, Kubernetes, cloud services (AWS, Azure), Jenkins, Git, Terraform, and monitoring for efficient software development and delivery pipelines.</p>
+                  <div className="training-details-overlay">
+                    <h4 className="training-overlay-title">DevOps Training</h4>
+                    <p>DevOps Training covers CI/CD, automation, Docker, Kubernetes, cloud services (AWS, Azure), Jenkins, Git, Terraform, and monitoring tools. Build efficient software development and delivery pipelines for faster, reliable releases.</p>
                   </div>
                 </div>
               </div>
@@ -1443,8 +1606,9 @@ function Home({ target, label }) {
                       loading="eager" fetchpriority="high"
                     />
                   </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <p>Java Training Courses Consist Of languages like Basis & Advance Java, Spring Boot with database training.</p>
+                  <div className="training-details-overlay">
+                    <h4 className="training-overlay-title">Java Training</h4>
+                    <p>Java Training Courses Consist Of Basis & Advanced Java, Spring Boot, and database integration. Build enterprise-grade applications with industry-standard frameworks and best practices.</p>
                   </div>
                 </div>
               </div>
@@ -1459,8 +1623,9 @@ function Home({ target, label }) {
                       loading="eager" fetchpriority="high"
                     />
                   </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <p>Finance Training Courses Consist of key areas like Financial Analysis, Investment Strategies, Accounting Principles, Risk Management, and Portfolio Optimization.</p>
+                  <div className="training-details-overlay">
+                    <h4 className="training-overlay-title">Finance Training</h4>
+                    <p>Finance Training Courses Consist of key areas like Financial Analysis, Investment Strategies, Accounting Principles, Risk Management, and Portfolio Optimization. Gain the skills to drive informed financial decisions and maximize returns.</p>
                   </div>
                 </div>
               </div>
@@ -1475,8 +1640,9 @@ function Home({ target, label }) {
                       loading="eager" fetchpriority="high"
                     />
                   </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <p>HR Training Courses consist of key areas like Talent Acquisition, Employee Engagement, Performance Management, HR Analytics.</p>
+                  <div className="training-details-overlay">
+                    <h4 className="training-overlay-title">HR Training</h4>
+                    <p>HR Training Courses consist of key areas like Talent Acquisition, Employee Engagement, Performance Management, and HR Analytics. Learn to build and lead high-performing teams in the modern workplace.</p>
                   </div>
                 </div>
               </div>
@@ -1491,47 +1657,29 @@ function Home({ target, label }) {
                       loading="eager" fetchpriority="high"
                     />
                   </div>
-                  <div className="lifeatvedthird-section-body-content mt-3">
-                    <p>Marketing & Sales Training Courses consist of key areas like Digital Marketing, SEO, Social Media Strategies, Content Creation, and Sales Funnel Optimization.</p>
+                  <div className="training-details-overlay">
+                    <h4 className="training-overlay-title">Marketing & Sales Training</h4>
+                    <p>Marketing & Sales Training Courses consist of key areas like Digital Marketing, SEO, Social Media Strategies, Content Creation, and Sales Funnel Optimization. Create campaigns that attract, convert, and retain customers.</p>
                   </div>
                 </div>
               </div>
 
 
             </Slider>
-          </div>
-        </div>
-      </section>
-
-
-      <section id="join">
-        <div className="container-fluid">
-          <div className="container">
-            <div className="section-head">
-              <div
-                style={{ display: "grid", gridRowGap: "20px" }}
-                data-aos="fade-up"
-              >
-                <div className="head-slogan page_title">
-                  Join Venturing Digitally Pvt. Ltd. to kick start your
-                  journey into the world of digital excellence. Our
-                  internships are more than just learning
-                  opportunities—they’re a Launchpad for a successful career.
-                </div>
-
-                <div className="solutin_btn">
+            <div className="solutin_btn">
                   <button
                     onClick={handleTraining}
                     className="more_btn_solution"
                   >
-                    View More
+                    See more details
                   </button>
                 </div>
-              </div>
-            </div>
           </div>
+         
         </div>
+       
       </section>
+
 
       {/* <section id="latest_updates"  >
 
@@ -1693,7 +1841,7 @@ function Home({ target, label }) {
                     className="more-btn-industrial"
                     onClick={() => setShowAll(!showAll)}
                   >
-                    {showAll ? "View Less" : "View More"}
+                    {showAll ? "See less details" : "See more details"}
                   </button>
                 </div>
               )}
@@ -1705,170 +1853,60 @@ function Home({ target, label }) {
       <section id="why_choose_us">
         <div className="container-fluid">
           <div className="container">
-            <div className="milestone-grid">
-
-
-
-
-              <div className="milestone-info" data-aos="fade-down">
-                <div className="head_title">Why Choose Venturing Digitally?</div>
-                <div className="content page_title">
-                  With over 3+ years of experience in the software industry, we empower
-                  businesses to thrive in the digital world with tailor-made, high-quality
-                  solutions. Our expert team harnesses cutting-edge technology and
-                  industry best practices to deliver innovative, scalable, and efficient
-                  software solutions. From strategic planning and development to seamless
-                  deployment and continuous support, we ensure timely delivery,
-                  reliability, and long-term success. Start venturing digitally with us
-                  to enhance productivity, streamline operations, and stay ahead in the competitive digital landscape.
+            <div className="why-choose-grid">
+              <div className="why-choose-left" data-aos="fade-right">
+                <div className="why-choose-images">
+                  <div className="why-choose-img why-choose-img-1" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="/image/home/work/who-we-work-width.jpeg" alt="Office building" loading="lazy" />
+                  </div>
+                  <div className="why-choose-img why-choose-img-2" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="/image/solution/project_img.jpg" alt="Team at work" loading="lazy" />
+                  </div>
+                  <div className="why-choose-img why-choose-img-3" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="/image/solution/crm_img.jpg" alt="Collaboration" loading="lazy" />
+                  </div>
+                </div>
+                <div className="why-choose-overlay-box" data-aos="fade-up" data-aos-delay="400">
+                  <p>Powering global businesses with intelligent, future-ready software solutions.</p>
                 </div>
               </div>
 
-
-
-              <div className="row">
-                <div className="col-lg-6 col-sm-12 col-md-6" >
-
-                  <div className="milestone-box" data-aos="fade-right" data-aos-delay="100">
-
-                    <div className="tab-icon ">
-
-                      <img
-                        src="icons/team.png"
-                        alt="expert team"
-                        className="w-100 h-100 team-icon"
-                        loading="eager" fetchpriority="high"
-                      />
-
+              <div className="why-choose-right" data-aos="fade-left">
+                <h2 className="why-choose-heading">Why Choose Venturing Digitally?</h2>
+                <p className="why-choose-intro">
+                  With over 3+ years of experience in the software industry, we empower businesses to thrive in the digital world with tailor-made, high-quality solutions. Our expert team harnesses cutting-edge technology and industry best practices to deliver innovative, scalable, and efficient software solutions.
+                </p>
+                <div className="why-choose-points">
+                  <div className="why-choose-point" data-aos="fade-up">
+                    <div className="why-choose-point-icon"><FaUsers /></div>
+                    <div className="why-choose-point-content">
+                      <h3>Expert Development Team</h3>
+                      <p>We've got really skilled people who are great at making top-notch software for different kinds of businesses.</p>
                     </div>
-
-                    <div className="milestone_heading">
-
-                      <div className="milestone-name">
-                        Expert Development Team
-                      </div>
-
-                      <div className="milestone-description">
-                        We've got really skilled people who are great at making top-notch software for different kinds of businesses.
-                      </div>
-
-                    </div>
-
                   </div>
-
-                  <div className="milestone-box" data-aos="fade-right" data-aos-delay="200">
-
-                    <div className="tab-icon">
-                      <img
-                        src="icons/computer.png"
-                        alt="customized software"
-                        className="w-100 h-100"
-                        loading="eager" fetchpriority="high"
-                      />
+                  <div className="why-choose-point" data-aos="fade-up" data-aos-delay="50">
+                    <div className="why-choose-point-icon"><FaDesktop /></div>
+                    <div className="why-choose-point-content">
+                      <h3>Customized ERP Software Solution with Data Analytics Integrated</h3>
+                      <p>We make software that fits exactly what your business needs with integrated dashboard for data analytics with Power BI and Tableau etc.</p>
                     </div>
-
-                    <div className="milestone_heading">
-                      <div className="milestone-name">
-                        Customized ERP Software Solution with Data Analysics Integrated
-                      </div>
-                      <div className="milestone-description">
-                        We make software that fits exactly what your business needs with integrated dashboard for data analysics with Power BI and Tableau etc.
-
-                      </div>
-                    </div>
-
                   </div>
-                  <div className="milestone-box" data-aos="fade-right" data-aos-delay="300">
-
-                    <div className="tab-icon">
-                      <img
-                        src="icons/achievement.png"
-                        alt="using the latest tech"
-                        className="w-100 h-100"
-                        loading="eager" fetchpriority="high"
-                      />
+                  <div className="why-choose-point" data-aos="fade-up" data-aos-delay="100">
+                    <div className="why-choose-point-icon"><FaAward /></div>
+                    <div className="why-choose-point-content">
+                      <h3>All About Quality of Product &amp; Solution</h3>
+                      <p>We focus on making sure everything is high-quality, from the start of the project to the end.</p>
                     </div>
-
-                    <div className="milestone_heading">
-                      <div className="milestone-name">
-                        Using the Latest Tech Language with AI/ML
-                      </div>
-                      <div className="milestone-description">
-                        We always use new and advanced technology so your software is modern and ready for the future
-                      </div>
-                    </div>
-
                   </div>
-
-                </div>
-
-                <div className="col-lg-6 col-sm-12 col-md-6">
-
-                  <div className="milestone-box" data-aos="fade-left" data-aos-delay="100">
-                    <div className="tab-icon">
-                      <img
-                        src="icons/call.png"
-                        alt="all about quality"
-                        className="w-100 h-100"
-                        loading="eager" fetchpriority="high"
-                      />
+                  <div className="why-choose-point" data-aos="fade-up" data-aos-delay="150">
+                    <div className="why-choose-point-icon"><FaHandshake /></div>
+                    <div className="why-choose-point-content">
+                      <h3>Best Support &amp; Maintenance</h3>
+                      <p>Even after your software is up and running, we're here to help and keep it working great.</p>
                     </div>
-
-                    <div className="milestone_heading">
-                      <div className="milestone-name">
-                        All About Quality of Product & Solution
-                      </div>
-                      <div className="milestone-description">
-                        We focus on making sure everything is high-quality, from the start of the project to the end.
-                      </div>
-                    </div>
-
                   </div>
-
-                  <div className="milestone-box" data-aos="fade-left" data-aos-delay="200">
-                    <div className="tab-icon">
-                      <img
-                        src="icons/delivered.png"
-                        alt="on-time delivery"
-                        className="w-100 h-100"
-                        loading="eager" fetchpriority="high"
-                      />
-                    </div>
-
-                    <div className="milestone_heading">
-                      <div className="milestone-name" >On-Time Delivery</div>
-                      <div className="milestone-description">
-                        We know time is important, so we make sure to finish your project on schedule without compromising quality.
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div className="milestone-box" data-aos="fade-left" data-aos-delay="300">
-
-                    <div className="tab-icon">
-                      <img
-                        src="icons/help.png"
-                        alt="help and upkeep"
-                        className="w-100 h-100"
-                        loading="eager" fetchpriority="high"
-                      />
-                    </div>
-
-                    <div className="milestone_heading">
-                      <div className="milestone-name" >Best Support & Maintenance</div>
-                      <div className="milestone-description">
-                        Even after your software is up and running, we're here to help and keep it working great.
-                      </div>
-                    </div>
-
-                  </div>
-
                 </div>
               </div>
-
-
-
             </div>
           </div>
         </div>
@@ -1895,54 +1933,65 @@ function Home({ target, label }) {
             <div className="section-content">
               <div className="whats-tabs">
                 <div className="tab-container">
-
-                  {
-                    blogs?.slice(0, 3).map((item, index) => {
-                      const cleanedDescription = item.content.replace(/<p><br\s?\/?><\/p>|<h[1-6]><br\s?\/?><\/h[1-6]>/g, '');
+                  {!loadingData && (
+                    [...Array(3)].map((_, i) => (
+                      <div key={`blog-skeleton-${i}`} className="blog-skeleton-card">
+                        <div className="skeleton blog-skeleton-img" />
+                        <div className="blog-skeleton-content">
+                          <div className="skeleton blog-skeleton-title-bar" />
+                          <div className="skeleton blog-skeleton-line" />
+                          <div className="skeleton blog-skeleton-line blog-skeleton-line--short" />
+                          <div className="skeleton blog-skeleton-line blog-skeleton-line--medium" />
+                          <div className="skeleton blog-skeleton-meta" />
+                        </div>
+                      </div>
+                    ))
+                  )}
+                  {loadingData && blogs?.slice(0, 3).map((item, index) => {
                       const blogImages = getBlogImages(item);
                       const singleSrc = blogImages.length > 0 ? blogImages[0] : "";
+                      const plainDesc = (item.content || "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim().slice(0, 140);
 
                       return (
-                        <NavLink to={`/BlogDetails/${item.blog_title}`} onClick={() => handleBlog(item.id)} className="blog-box" key={item.id} data-aos="fade-up" data-aos-delay={index * 150}>
-                          <div className="blog-img events-card-img">
-                            {blogImages.length > 1 ? (
-                              <div className="events-card-carousel">
-                                <Slider {...eventImageCarouselSettings}>
-                                  {blogImages.map((imgUrl, i) => (
-                                    <div key={i} className="events-card-carousel-slide">
-                                      <img
-                                        loading="eager"
-                                        fetchPriority="high"
-                                        src={typeof imgUrl === "string" ? imgUrl : ""}
-                                        alt={`${item.blog_title} ${i + 1}`}
-                                        className="bloges-card-img-img w-100 h-100"
-                                      />
-                                    </div>
-                                  ))}
-                                </Slider>
+                        <NavLink to={`/BlogDetails/${item.blog_title}`} onClick={() => handleBlog(item.id)} className="blog-card-link" key={item.id} data-aos="fade-up" data-aos-delay={index * 150}>
+                          <div className="blog-bodybox">
+                            <div className="blog-img-wrapper">
+                              <div className="blog-img-inner">
+                                {blogImages.length > 1 ? (
+                                  <div className="blog-img-carousel">
+                                    <Slider {...blogImageCarouselSettings}>
+                                      {blogImages.map((imgUrl, i) => (
+                                        <div key={i} className="blog-carousel-slide">
+                                          <img
+                                            loading="eager"
+                                            fetchPriority="high"
+                                            src={typeof imgUrl === "string" ? imgUrl : ""}
+                                            alt={`${item.blog_title} ${i + 1}`}
+                                            className="w-100 h-100"
+                                          />
+                                        </div>
+                                      ))}
+                                    </Slider>
+                                  </div>
+                                ) : singleSrc ? (
+                                  <img
+                                    loading="eager"
+                                    fetchPriority="high"
+                                    src={singleSrc}
+                                    alt={item.blog_title}
+                                    className="w-100 h-100"
+                                  />
+                                ) : (
+                                  <div className="blog-placeholder-img" />
+                                )}
                               </div>
-                            ) : singleSrc ? (
-                              <img
-                                loading="eager"
-                                fetchPriority="high"
-                                src={singleSrc}
-                                alt={item.blog_title}
-                                className="bloges-card-img-img w-100 h-100"
-                              />
-                            ) : null}
-                          </div>
-                          <div className="blog-content">
-                            <div className="top-block">
-                              <div>{item.category}</div>
+                              <span className="blog-category-tag">{item.category || "Blog"}</span>
                             </div>
-                          </div>
-                          <div className="bottom-block">
-                            <div className="head">{item.blog_title}</div>
-
-                            <div
-                              className="name-block"
-                              dangerouslySetInnerHTML={{ __html: cleanedDescription }}
-                            ></div>
+                            <div className="blog-bottom-block">
+                              <div className="blog-card-title">{item.blog_title}</div>
+                              <p className="blog-card-desc">{plainDesc}{plainDesc.length >= 140 ? "..." : ""}</p>
+                              <span className="blog-read-more-link">Read more →</span>
+                            </div>
                           </div>
                         </NavLink>
                       );
@@ -1954,7 +2003,7 @@ function Home({ target, label }) {
                     className="more_btn_solution"
                     onClick={handleViewBlog}
                   >
-                    View More
+                   See details more
                   </button>
                 </div>}
 
@@ -1964,105 +2013,123 @@ function Home({ target, label }) {
         </div>
       </section>
 
-      <ContactForm />
+      <div className="contact-form-section-wrapper">
+    
+        <ContactForm />
+      </div>
+
 
       <section id="news-events">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head" data-aos="fade-up">
-              <div className="custom-head">
-                <div className="circle"></div>
-                <h2 className="head-title">News & Events</h2>
+            <div className="tmc-section-head news-events-section-head" data-aos="fade-down">
+              <div className="tmc-custom-head">
+                <div className="tmc-circle"></div>
+                <h2 className="tmc-head-title head_title">News & Events</h2>
               </div>
-              <div className="head-slogan page_title">
-                Stay updated with our latest news and events! From insightful seminars and workshops to industry collaborations and technological advancements, we bring you the most recent happenings. Keep an eye on this section for exciting updates and opportunities.
+              <div className="tmc-head-slogan page_title">
+                Stay updated with our latest news and events! From insightful seminars and workshops to industry collaborations and technological advancements.
               </div>
             </div>
 
-            <div className="section-content">
-              <div className="whats-tabs">
-
-
-
-                <div className="blogesc-main">
-
-                  {loadingData && events?.slice(0, 3).map((event, index) => {
-                    const rawImages = event.images ?? event.image;
-                    let eventImages = [];
-                    if (Array.isArray(rawImages) && rawImages.length > 0) {
-                      eventImages = rawImages.map((u) => (typeof u === "string" ? u.trim() : String(u))).filter((u) => u && u.startsWith("http"));
-                    } else if (typeof rawImages === "string" && rawImages.trim()) {
-                      const s = rawImages.trim();
-                      if (s.startsWith("[")) {
-                        try {
-                          const parsed = JSON.parse(s);
-                          eventImages = Array.isArray(parsed) ? parsed.map((u) => String(u).trim()).filter((u) => u && u.startsWith("http")) : [];
-                        } catch {
-                          eventImages = s.split(/,\s*/).map((u) => u.trim()).filter((u) => u && u.startsWith("http"));
-                        }
-                      } else {
-                        eventImages = s.split(/,\s*/).map((u) => u.trim()).filter((u) => u && u.startsWith("http"));
-                        if (eventImages.length === 0 && s.startsWith("http")) eventImages = [s];
-                      }
-                    }
-                    if (eventImages.length === 0 && event.image && typeof event.image === "string" && event.image.trim().startsWith("http")) {
-                      eventImages = [event.image.trim()];
-                    }
-                    const singleSrc = eventImages.length > 0 ? eventImages[0] : "";
-                    return (
-                      <Link className="bloges-card" key={event.id} data-aos="zoom-in" data-aos-delay={index * 100}>
-                        <div className="events-card-img">
-                          {eventImages.length > 1 ? (
-                            <div className="events-card-carousel">
-                              <Slider {...eventImageCarouselSettings}>
-                                {eventImages.map((imgUrl, i) => (
-                                  <div key={i} className="events-card-carousel-slide">
-                                    <img
-                                      loading="eager"
-                                      fetchPriority="high"
-                                      src={typeof imgUrl === "string" ? imgUrl : ""}
-                                      alt={`${event.title} ${i + 1}`}
-                                      className="bloges-card-img-img w-100 h-100"
-                                    />
-                                  </div>
-                                ))}
-                              </Slider>
-                            </div>
-                          ) : singleSrc ? (
-                            <img
-                              loading="eager"
-                              fetchPriority="high"
-                              src={singleSrc}
-                              alt={event.title}
-                              className="bloges-card-img-img w-100 h-100"
-                            />
-                          ) : null}
-                          <div className="date">{formatDateToIndian(event.date)}</div>
-                        </div>
-
-                        <div className="events-card-title">
-                          <div className="events-card-heading">{event.title}</div>
-                          <div className="event-description">{event.description}</div>
-                        </div>
-                      </Link>
-                    );
-                  })}
-
-                </div>
-
+            {!loadingData && (
+              <div className="news-events-skeleton">
+                {[...Array(3)].map((_, i) => (
+                  <div key={`event-skeleton-${i}`} className="news-events-skeleton-card">
+                    <div className="skeleton news-events-skeleton-img" />
+                    <div className="news-events-skeleton-content">
+                      <div className="skeleton news-events-skeleton-title" />
+                      <div className="skeleton news-events-skeleton-line" />
+                      <div className="skeleton news-events-skeleton-line news-events-skeleton-line--short" />
+                      <div className="skeleton news-events-skeleton-line news-events-skeleton-line--medium" />
+                      <div className="skeleton news-events-skeleton-meta" />
+                    </div>
+                  </div>
+                ))}
               </div>
-             
-                {loadingData && events?.length > 4 && <div className="solutin_btn" style={{ marginTop: "20px" }}>
-                <button
-                  className="more_btn_solution"
-                  onClick={handleViewEvents}
-                >
-                  View More
+            )}
+            {loadingData && events?.length > 0 && (
+            <Slider {...newsEventsSliderSettings} className="owl-theme news-events-slider" style={{ margin: "0 10px" }}>
+              {events.slice(0, 6).map((event, index) => {
+                const rawImages = event.images ?? event.image;
+                let eventImages = [];
+                if (Array.isArray(rawImages) && rawImages.length > 0) {
+                  eventImages = rawImages.map((u) => (typeof u === "string" ? u.trim() : String(u))).filter((u) => u && u.startsWith("http"));
+                } else if (typeof rawImages === "string" && rawImages.trim()) {
+                  const s = rawImages.trim();
+                  if (s.startsWith("[")) {
+                    try {
+                      const parsed = JSON.parse(s);
+                      eventImages = Array.isArray(parsed) ? parsed.map((u) => String(u).trim()).filter((u) => u && u.startsWith("http")) : [];
+                    } catch {
+                      eventImages = s.split(/,\s*/).map((u) => u.trim()).filter((u) => u && u.startsWith("http"));
+                    }
+                  } else {
+                    eventImages = s.split(/,\s*/).map((u) => u.trim()).filter((u) => u && u.startsWith("http"));
+                    if (eventImages.length === 0 && s.startsWith("http")) eventImages = [s];
+                  }
+                }
+                if (eventImages.length === 0 && event.image && typeof event.image === "string" && event.image.trim().startsWith("http")) {
+                  eventImages = [event.image.trim()];
+                }
+                const singleSrc = eventImages.length > 0 ? eventImages[0] : "";
+                return (
+                  <div key={event.id} className="lifeatvedthird-section-body-home news-events-slide">
+                    <Link to="/Events" className="news-events-card-link">
+                      <div className="lifeatvedthird-section-bodybox news-events-bodybox">
+                        <div className="news-events-img-wrapper">
+                          <div className="lifeatvedthird-section-body-home-img">
+                            {eventImages.length > 1 ? (
+                              <div className="news-events-img-carousel">
+                                <Slider {...eventImageCarouselSettings}>
+                                  {eventImages.map((imgUrl, i) => (
+                                    <div key={i} className="news-events-carousel-slide">
+                                      <img
+                                        loading="eager"
+                                        fetchPriority="high"
+                                        src={typeof imgUrl === "string" ? imgUrl : ""}
+                                        alt={`${event.title} ${i + 1}`}
+                                        className="w-100 h-100"
+                                      />
+                                    </div>
+                                  ))}
+                                </Slider>
+                              </div>
+                            ) : singleSrc ? (
+                              <img
+                                loading="eager"
+                                fetchPriority="high"
+                                src={singleSrc}
+                                alt={event.title}
+                                className="w-100 h-100"
+                              />
+                            ) : (
+                              <div className="news-events-placeholder-img" />
+                            )}
+                          </div>
+                          <span className="news-events-category-tag">Event</span>
+                          <span className="news-events-date">{formatDateToIndian(event.date)}</span>
+                        </div>
+                        <div className="news-events-bottom-block">
+                          <div className="news-events-title">{event.title}</div>
+                          <p className="news-events-desc">{event.description || ""}</p>
+                          <span className="news-events-read-more-link">Read more →</span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                );
+              })}
+            </Slider>
+            )}
+
+            {loadingData && events?.length > 3 && (
+              <div className="news-events-cta" style={{ marginTop: "24px" }}>
+                <button type="button" className="news-events-read-more" onClick={handleViewEvents}>
+                  See details more
                 </button>
               </div>
-              }
-
-            </div>
+            )}
           </div>
         </div>
       </section>
@@ -2077,5 +2144,12 @@ function Home({ target, label }) {
 
 export default Home;
 
-/*  */
+/*   <div className="col-lg-6" data-aos="fade-right">
+                  <img
+                    src="image/solution/training.jpg"
+                    alt="training"
+                    className="w-100 h-100"
+                    loading="eager" fetchpriority="high"
+                  />
+                </div> */
 

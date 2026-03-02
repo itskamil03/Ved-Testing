@@ -207,7 +207,7 @@ function Hrms() {
         heading="Human Resource Management System (HRMS)"
         imgbtn="HRMS"
         // slogan="Streamline HR Operations"
-        src="image/hrms/hrms.jpeg"
+        src="image/hrms/HRMS.png"
       />
       {/* <----------------------------------------- hrms first -----------------------------------------> */}
 
