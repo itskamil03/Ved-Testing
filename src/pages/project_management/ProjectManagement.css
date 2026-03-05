@@ -1,0 +1,310 @@
+/* <----------------------------- Project Management first ----------------------------------------> */
+#profirst {
+  padding: 50px 0;
+}
+
+.profirst-section-head {
+  margin-bottom: 50px;
+}
+
+.profirst-section-head .profirst-head-title {
+  font-size: 4rem;
+  width: 80rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 0px auto 30px auto;
+  font-family: "sans-serif", sans-serif;
+}
+
+.profirst-head-slogan {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #27286d;
+  margin-top: 60px;
+  padding: 15px 0px;
+  border-top: 1px solid #27286d;
+  border-bottom: 1px solid #27286d;
+  font-style: italic;
+}
+
+.profirst-img-box {
+  margin-top: 20px;
+  width: 100%;
+  aspect-ratio: 1 / 0.23;
+  object-fit: cover;
+}
+
+/* <------------------------------------ project management second -----------------------------------> */
+#prosecond {
+  padding: 50px 0px;
+}
+#prosecond .prosecond-section-head {
+  margin-bottom: 50px;
+}
+
+.prosecond-section-head .prosecond-head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+
+.prosecond-section-head .prosecond-head-slogan {
+  padding-left: 20px;
+  border-left: 2px solid #27286d;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.prosecond-section-content .prosecond-content-head {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 7px;
+  color: #27286d;
+  position: relative;
+  display: inline-block;
+  font-family: "sans-serif", sans-serif;
+  text-transform: uppercase;
+  padding-left: 60px;
+}
+
+.prosecond-section-content .prosecond-content-head::after {
+  content: "";
+  background-color: rgb(144, 149, 8);
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+}
+
+.prosecond-section-content .prosecond-content-data {
+  color: #4e4e4e;
+  text-align: justify;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.prosecond-content-body {
+  display: flex;
+  width: 100%;
+}
+
+/* <<<<< card >>>>> */
+.prosecond-why-card {
+  box-shadow: 0 20px 15px #afafaf4d;
+  padding: 20px;
+  cursor: pointer;
+  border-top: 4px solid #3692f2;
+  border-radius: 10px;
+  min-height: auto;
+  background: white;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.prosecond-why-card .prosecond-title {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #3b3c3d;
+  padding-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+  text-align: center;
+}
+
+.prosecond-why-card .prosecond-data-list {
+  list-style: none;
+}
+
+.prosecond-why-card .prosecond-data-list li {
+  position: relative;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.prosecond-why-card .prosecond-data-list li::before {
+  background-color: #005eb8;
+  content: "";
+  display: block;
+  height: 8px;
+  left: -18px;
+  top: 3px;
+  position: absolute;
+  width: 8px;
+}
+
+/* <------------------------------------- Project Management third --------------------------------> */
+#prothird {
+  padding: 50px 0;
+}
+
+#prothird .prothird-section-head {
+  margin-bottom: 40px;
+}
+
+#prothird .prothird-section-head .prothird-head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+
+#prothird .prothird-section-head .prothird-head-slogan {
+  font-size: 1.6rem;
+  padding-left: 20px;
+  border-left: 2px solid #27286d;
+  text-align: justify;
+}
+
+#prothird .prothird-img-box {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+#prothird .why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+#prothird .why-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#prothird .why-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #27286d 0%, #4a4ba1 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+#prothird .why-card:hover::before {
+  transform: scaleX(1);
+}
+
+#prothird .why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(39, 40, 109, 0.2);
+  border-color: #27286d;
+}
+
+#prothird .why-card .title {
+  font-size: 1.8rem;
+  font-family: "sans-serif", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #27286d;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+}
+
+#prothird .why-card .content {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.7;
+  flex-grow: 1;
+}
+
+#prothird .why-card .content:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 994px) {
+  #profirst {
+    padding: 40px 0;
+  }
+  .profirst-section-head .profirst-head-title {
+    font-size: 3.5rem;
+    width: 100%;
+  }
+  .profirst-head-slogan {
+    font-size: 1.6rem;
+    padding: 15px 0px;
+  }
+  #prothird .why-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  #profirst {
+    padding: 30px 0;
+  }
+  .profirst-section-head {
+     margin-bottom: 30px
+  }
+  .profirst-section-head .profirst-head-title {
+    font-size: 3rem;
+    width: 100%;
+  }
+  .profirst-head-slogan {
+    font-size: 1.6rem;
+    padding: 10px 0px;
+  }
+  #prosecond {
+    padding: 15px 0px;
+  }
+  #prosecond .prosecond-section-head {
+    margin-bottom: 30px;
+  }
+  #prothird {
+    padding: 20px 0;
+  }
+  #prothird .prothird-section-head {
+    margin-bottom: 50px;
+  }
+  #prothird .prothird-section-head .prothird-head-title {
+    font-size: 3rem;
+  }
+  #prothird .why-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  #prothird .why-card {
+    padding: 25px;
+  }
+
+  #prothird .why-card .title {
+    font-size: 1.9rem;
+  }
+
+  #prothird .why-card .content {
+    font-size: 1.4rem;
+  }
+ 
+}
+
+@media screen and (max-width: 400px) {
+  .padding-0{
+    padding: 0px !important;
+  }
+}

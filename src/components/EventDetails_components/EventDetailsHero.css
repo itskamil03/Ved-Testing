@@ -1,0 +1,113 @@
+#events-details .blog-hero-contain {
+    position: relative;
+}
+
+#events-details .blog-hero-contain .image {
+    width: 100%;
+    aspect-ratio: 1/0.35;
+}
+
+#events-details .blog-hero-contain .content {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #00000057; */
+}
+
+.blogsheroimg-img {
+    filter: brightness(60%);
+}
+
+#events-details .blog-hero-contain .content>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    height: 100%;
+}
+
+#events-details .blog-hero-contain .title {
+    color: white;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: "sans-serif", serif;
+}
+
+.blogs-button {
+    text-align: center;
+}
+
+#events-details .blog-hero-contain .blogs-button a {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    margin: 1rem;
+    background-color: #27286d;
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 994px) {
+    #events-details .blog-hero-contain .content {
+        position: absolute;
+        top: 0px;
+        left: 0;
+    }
+
+    #events-details .blog-hero-contain .title {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #events-details .blog-hero-contain .content {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #events-details .blog-hero-contain .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #events-details .blog-hero-contain .content>div {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #events-details .blog-hero-contain .content {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #events-details .blog-hero-contain .title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #events-details .blog-hero-contain .content>div {
+        gap: 5px;
+    }
+
+    #events-details .blog-hero-contain .image {
+        width: 100%;
+        aspect-ratio: 1/0.6;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    #events-details .blog-hero-contain .image {
+        width: 100%;
+        aspect-ratio: 1/0.85;
+    }
+}

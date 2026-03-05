@@ -1,0 +1,711 @@
+#data-analytics-introduction {
+    padding: 50px 0 10px 0;
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+  }
+  #data-analytics-introduction .section-top .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #data-analytics-introduction .section-top .head-slogan {
+    line-height: 1.56em;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 auto;
+    font-family: "sans-serif", sans-serif;
+    color: rgb(70, 63, 63);
+  }
+
+  #data-analytics-services {
+    padding: 50px 0 50px 0;
+    background-color: rgb(253, 252, 252);
+  }
+  #data-analytics-services .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  #data-analytics-services .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .data_analytics-service-data {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    align-items: stretch !important;
+
+  }
+
+  #data-analytics-services .cloud-automation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+    width: 100%;
+    align-items: center;
+  }
+
+  #data-analytics-services .data-gap {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    grid-gap: 8px;
+
+  }
+
+
+ 
+
+  #data-analytics-services .cyber-security-important {
+    border-radius: 20px;
+  }
+  #data-analytics-services .cybersecurity-img {
+   
+        width: 100%;
+        object-fit: cover;
+  }
+
+  #data-analytics-services {
+    padding: 50px 0 50px 0;
+    background-color: rgb(253, 252, 252);
+  }
+  #data-analytics-services .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  #data-analytics-services .section .tab-icon {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1;
+  }
+  #data-analytics-services .cloud-heading {
+    font-size: 2.2rem;
+    color: #000000;
+  }
+
+  #data-analytics-services .cloud-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  #expert-data-analytics-services{
+    padding: 50px 0 50px 0;
+  }
+
+  #expert-data-analytics-services .data-analytics-powerbi{
+     aspect-ratio: 0.8;
+  }
+
+  #expert-data-analytics-services .gallery-image-text {
+     display: flex;
+     flex-direction: column;
+     grid-row-gap: 20px;
+  }
+
+  #expert-data-analytics-services .data-analytics-powerbi img{
+
+    max-width: 100%;
+    object-fit: contain;
+    height: 100%;
+ }
+
+  #expert-data-analytics-services .header_title{
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #expert-data-analytics-services .cloud-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  #expert-data-analytics-services .section-box {
+    
+    padding-top: 50px;
+    display:grid;
+    grid-template-columns:1fr 0.8fr 1fr;
+    grid-gap:40px;
+  }
+
+  #expert-data-analytics-services .heading_title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  #expert-data-analytics-services .counting {
+    padding: 8px 26px;
+    background-color: #27286d;
+    width: fit-content;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  #expert-data-analytics-services .cloudservice_title {
+    display: flex;
+    align-items: start;
+    gap:14px
+  }
+
+  #expert-data-analytics-services .cloudservice_details {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 20px;
+   border-bottom: 1.5px solid #d2d2d2;
+   padding-bottom: 24px;
+  }
+
+  #expert-data-analytics-services .cloudservice_data {
+    display: grid;
+    grid-gap: 20px;
+
+  }
+
+  #power-bi-visualization {
+    padding: 50px 0;
+    background-color: rgb(253, 252, 252);
+  }
+
+  #power-bi-visualization .head_title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #power-bi-visualization .cloud-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(70, 63, 63);
+    line-height: 1.6;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #power-bi-visualization .power-bi-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 40px;
+  }
+
+  #power-bi-visualization .power-bi-category {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #power-bi-visualization .power-bi-category-title {
+ 
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #000;
+    font-family: "sans-serif", sans-serif;
+    margin-bottom: 10px;
+  }
+
+  #power-bi-visualization .power-bi-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    align-items: start;
+  }
+
+  #power-bi-visualization .power-bi-item {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+  }
+
+  #power-bi-visualization .power-bi-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  #power-bi-visualization .power-bi-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    #power-bi-visualization .power-bi-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    #power-bi-visualization .power-bi-category-title {
+      font-size: 2.4rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #power-bi-visualization {
+      padding: 30px 0;
+    }
+
+    #power-bi-visualization .head_title {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    #power-bi-visualization .cloud-title {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+      padding: 0 15px;
+    }
+
+    #power-bi-visualization .power-bi-categories {
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    #power-bi-visualization .power-bi-category {
+      gap: 20px;
+    }
+
+    #power-bi-visualization .power-bi-category-title {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    #power-bi-visualization .power-bi-gallery {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  #enterprise-data-analytics {
+    padding: 50px 0;
+    background: linear-gradient(to right, rgba(255, 192, 203, 0.15), rgba(147, 112, 219, 0.1), transparent);
+  }
+
+  #enterprise-data-analytics .case-study-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  #enterprise-data-analytics .case-study-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    color: #000;
+  }
+
+  #enterprise-data-analytics .case-study-view-all {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+    font-family: "sans-serif", sans-serif;
+  }
+
+  #enterprise-data-analytics .case-study-view-all:hover {
+    text-decoration: underline;
+  }
+
+  #enterprise-data-analytics .case-study-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    #enterprise-data-analytics .case-study-cards-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  #enterprise-data-analytics .case-study-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 350px;
+    height: auto;
+  }
+
+  #enterprise-data-analytics .case-study-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  }
+
+  #enterprise-data-analytics .case-study-card-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #enterprise-data-analytics .case-study-card-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    transform: scale(1.1);
+    z-index: 0;
+  }
+
+  #enterprise-data-analytics .case-study-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.85) 100%);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+    z-index: 1;
+  }
+
+  #enterprise-data-analytics .case-study-card-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.3;
+    font-family: "sans-serif", sans-serif;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  #enterprise-data-analytics .case-study-card-description {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 1.6;
+    font-family: "sans-serif", sans-serif;
+    text-align: left;
+    opacity: 1;
+  }
+
+  #enterprise-data-analytics .case-study-arrow-icon {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) padding-box,
+      linear-gradient(135deg, #ff8c00, #ff69b4) border-box;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  #enterprise-data-analytics .case-study-arrow-icon:hover {
+    transform: scale(1.1);
+  }
+
+  #enterprise-data-analytics .case-study-arrow-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  #enterprise-data-analytics .cloud_title {
+    line-height: 1.5 !important;
+  }
+
+  #enterprise-data-analytics .enterprise-data {
+    background: linear-gradient(to right, #484ba1, #222369);
+    border-radius: 8px;
+    padding:40px;
+    color: #fff;
+  }
+  
+  #enterprise-data-analytics .list-data {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  #cyber-security-tools {
+    padding: 50px 0 30px 0;
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+  }
+  #cyber-security-tools .section-top {
+    margin-bottom: 50px;
+  }
+  #cyber-security-tools .section-top .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #cyber-security-tools .solution-item{
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 8px 24px #b3b1b196;
+    border-radius: 20px;
+    display: flex;
+    justify-content: cente;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    display: flex;
+    grid-column-gap: 10px;
+  }
+
+  #cyber-security-tools .item-title{
+    font-size: 1.4rem;
+  }
+
+  #cyber-security-tools .solution-item:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0 8px 24px #27286d8a;
+  }
+  
+  
+ 
+  
+  @media screen and (max-width: 768px) {
+
+  
+    #data-analytics-services .data_analytics-service-data {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      align-items: stretch !important;
+  
+    }
+
+    #enterprise-data-analytics .data-driven-enterprise {
+     padding-block: 16px;
+    }
+
+    #enterprise-data-analytics {
+      padding: 30px 0;
+    }
+
+    #enterprise-data-analytics .case-study-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    #enterprise-data-analytics .case-study-title {
+      font-size: 2.2rem;
+    }
+
+    #enterprise-data-analytics .case-study-view-all {
+      font-size: 1.4rem;
+    }
+
+    #enterprise-data-analytics .case-study-cards-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    #enterprise-data-analytics .case-study-card {
+      min-height: 400px;
+      height: auto;
+    }
+
+    #enterprise-data-analytics .case-study-card-title {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    #enterprise-data-analytics .case-study-card-description {
+      font-size: 1.4rem;
+      line-height: 1.5;
+    }
+
+    #data-analytics-introduction {
+      padding: 30px 0 30px 0;
+    }
+    #data-analytics-introduction .section-top .head-title {
+      font-size: 22px;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    #data-analytics-introduction .section-top .head-slogan {
+      text-align: justify;
+    }
+
+
+    #expert-data-analytics-services .cloudservice_details {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+
+     }
+
+     #expert-data-analytics-services .section-box {
+       
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-top: 30px;
+
+     }
+
+
+    #data-analytics-services {
+        padding: 30px 0px !important;
+    }
+    #data-analytics-services .section {
+      flex-direction: column-reverse;
+    }
+    #data-analytics-services .section-box {
+        padding-bottom: 20px;
+      }
+
+
+      #data-analytics-services .cloud-automation {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        width: 100%
+      }
+
+    
+       
+      #data-analytics-services .section-box .left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+   
+      #data-analytics-services .section {
+        flex-direction: column-reverse;
+      }
+      #data-analytics-services .section .left {
+        width: 100%;
+      }
+      #data-analytics-services .section .right {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      #data-analytics-services {
+        padding: 30px 0 30px 0;
+        background-color: rgb(253, 252, 252);
+      }
+   
+      #data-analytics-services .head_title {
+        font-size: 2.5rem !important;
+     }
+     
+      #cyber-security-tools {
+        padding: 0px 0 0px 0;
+      }
+      #cyber-security-tools .section-top {
+        margin-bottom: 30px;
+      }
+      #cyber-security-tools .section-top .head-title {
+        font-size: 24px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      #cyber-security-tools .section-top .head-slogan {
+        font-size: 18px;
+        text-align: justify;
+      }
+      #cyber-security-tools .section-content .top-grid {
+        flex-direction: column;
+        gap: 10px;
+      }
+      #cyber-security-tools .section-content .top-grid .left {
+        width: 50%;
+      }
+      #cyber-security-tools .section-content .top-grid .left .image {
+        width: 250px;
+      }
+      #cyber-security-tools .section-content .top-grid .right {
+        width: 100%;
+      }
+      #cyber-security-tools .section-content .top-grid .right .text {
+        font-size: 18px;
+        padding: 10px 0 15px 0;
+      }
+    
+      #cyber-security-tools .section-content .center-grid {
+        flex-direction: column-reverse;
+      }
+      #cyber-security-tools .section-content .center-grid .left {
+        width: 100%;
+      }
+      #cyber-security-tools .section-content .center-grid .left .text {
+        font-size: 18px;
+        text-align: justify;
+      }
+      #cyber-security-tools .section-content .center-grid .right {
+        margin-right: 0px;
+      }
+      #cyber-security-tools .section-content .bottom-grid {
+        flex-direction: column;
+        padding-top: 20px;
+      }
+      #cyber-security-tools .section-content .bottom-grid .right {
+        width: 100%;
+      }
+      #cyber-security-tools .section-content .bottom-grid .right .text {
+        font-size: 18px;
+        text-align: justify;
+      }
+
+      
+  }

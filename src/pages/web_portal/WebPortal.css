@@ -1,0 +1,320 @@
+/* <------------------------------ web portal first ---------------------------> */
+#webportal {
+  padding: 50px 0px;
+}
+
+.webportal-section-head {
+  margin-bottom: 40px;
+}
+
+.webportal-section-head .webportal-head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+
+.webportal-section-head .webportal-head-slogan {
+  padding-left: 20px;
+  border-left: 2px solid #27286d;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.webportal-section-content .webportal-content-head {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #27286d;
+  position: relative;
+  display: inline-block;
+  font-family: "sans-serif", sans-serif;
+  text-transform: uppercase;
+  padding-left: 60px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+.webportal-section-content .webportal-content-head::after {
+  content: "";
+  background-color: rgb(144, 149, 8);
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+}
+
+.webportal-section-content .webportal-content-data {
+  color: #4e4e4e;
+  text-align: justify;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+.webportal-section-content .webportal-feature-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.webportal-section-content .webportal-feature-data .content {
+  text-align: justify;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  position: relative;
+  box-shadow: 0 8px 24px #a7a7a791;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.webportal-section-content .webportal-feature-data .icon {
+  color: #27286d;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #27286d;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+/* <----------------------------------------- web portal second ---------------------------------> */
+#webporsecond {
+  padding: 40px 0px;
+}
+
+#webporsecond .section-head {
+  margin-bottom: 50px;
+}
+
+#webporsecond .section-head .title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+
+#webporsecond .type-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#webporsecond .type-box {
+  display: grid;
+  grid-template-columns: 200px auto;
+  background: white;
+  border: 1px solid #8080804f;
+}
+
+#webporsecond .type-box .details {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+#webporsecond .type-box .head {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #27286d;
+  font-family: "sans-serif", sans-serif;
+  text-transform: uppercase;
+}
+
+#webporsecond .type-box .content {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+/* <----------------------------------------- web portal third ---------------------------------> */
+#webporthird {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.webporthird-section-main {
+  display: flex;
+  gap: 2rem;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+}
+
+.webporthird-section-left {
+  width: 60%;
+}
+
+.webporthird-section-left-heading {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+
+.webporthird-section-left-text {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: white;
+  text-align: justify;
+  padding-bottom: 50px;
+}
+
+.webporthird-section-left-btn {
+  font-size: 2rem;
+  background-color: #ffd546;
+  color: #222;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-family: "sans-serif", sans-serif;
+}
+
+.webporthird-section-left-btn:hover .webporthird-icon {
+  animation: slide-left 1s ease-in-out infinite;
+}
+
+.webporthird-section-right {
+  width: 40%;
+}
+
+/* <--------------------------------------- web portal fourth --------------------> */
+#webporfourth {
+  padding: 50px 0px;
+}
+
+.webporfourth-section-head {
+  margin-bottom: 50px;
+}
+
+.webporfourth-section-head .webporfourth-head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+
+.webporfourth-body-container {
+  border-left: 1px solid grey;
+  padding: 0px 0 20px 40px;
+  position: relative;
+}
+
+.webporfourth-body-container-number {
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  background: #292c6c;
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+  border-radius: 50%;
+}
+
+.webporfourth-body-text-heading {
+  font-size: 2.5rem;
+}
+
+.webporfourth-body-text-slogan {
+  font-size: 1.5rem;
+  padding-top: 30px;
+}
+
+.webporfourth-body-container::after {
+  content: "";
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  background: #292c6c;
+  width: 2px;
+  transition: all 0.3s linear;
+}
+
+.webporfourth-body-container:hover::after {
+  height: calc(100% - 30px);
+}
+@media screen and (max-width: 994px) {
+  #webporsecond .type-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .webporthird-section-left {
+    width: 50%;
+  }
+  .webporthird-section-right {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #webportal {
+    padding: 20px 0px;
+  }
+  .webportal-section-head {
+    margin-bottom: 30px;
+  }
+  .webportal-section-head .webportal-head-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "sans-serif", sans-serif;
+  }
+  .webportal-section-content .webportal-feature-data {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  #webporsecond {
+    padding: 20px 0px;
+  }
+  #webporsecond .section-head {
+    margin-bottom: 30px;
+  }
+  #webporsecond .section-head .title {
+    font-size: 3rem;
+  }
+  #webporsecond .type-grid {
+    grid-template-columns: 1fr;
+  }
+  #webporsecond .type-box {
+    grid-template-columns: auto;
+  }
+  .webporthird-section-main {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    width: 100%;
+  }
+  .webporthird-section-left {
+    width: 100%;
+  }
+  .webporthird-section-right {
+    width: 100%;
+  }
+  .webporthird-section-left-heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .webporthird-section-left-text {
+    margin-top: 20px;
+    font-size: 1.7rem;
+  }
+  .webporthird-section-left-btn {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  #webporfourth {
+    padding: 20px 0px;
+  }
+  .webporfourth-section-head {
+    margin-bottom: 25px;
+  }
+  .webporfourth-section-head .webporfourth-head-title {
+    font-size: 3rem;
+  }
+}

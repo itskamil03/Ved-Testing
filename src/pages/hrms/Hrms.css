@@ -1,0 +1,359 @@
+#crm {
+  padding: 40px 0;
+}
+
+.crmfirst-section-head {
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+.crmfirst-section-head .crmfirst-head-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+
+.crmfirst-section-head .crmfirst-head-slogan {
+  font-size: 2rem;
+}
+
+.crmfirst-video {
+  margin-top: -1.5rem;
+  margin-left: 4rem;
+  position: relative;
+}
+
+.crmfirst-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.crmfirst-content {
+  display: flex;
+  justify-content: center;
+}
+
+.crmfirst-content-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.crmfirst-content-list li {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.crmfirst-content-listicon {
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
+.crmfirst-content-list li span {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 54px;
+  color: #323232;
+}
+
+/* <-----------------------------------------hrms Goals card-------------------------------> */
+
+#crm-goals {
+  padding: 50px 0;
+}
+.crm-goals-section-head {
+  margin-bottom: 50px;
+}
+
+.crm-goals-section-head .crm-goals-head-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+
+.crm-goals-section-head .crm-goals-head-slogan {
+  font-size: 1.7rem;
+  padding-left: 20px;
+  border-left: 2px solid #27286d;
+  text-align: justify;
+}
+
+#crm-goals .hrms-goals-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+#crm-goals .crm-goals-value-card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  box-shadow: 0 18px 24px rgba(0, 0, 0, 0.3);
+}
+
+#crm-goals .crm-goals-value-card:hover {
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+  background: white;
+}
+
+#crm-goals .crm-goals-value-card .crm-goals-icon {
+  width: 80px;
+  margin: 0 auto 20px;
+  /* text-align: center; */
+  color: #27286d;
+  /* margin: 10px 0 20px 0; */
+}
+
+#crm-goals .crm-goals-value-card .crm-goals-title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#crm-goals .crm-goals-value-card .details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#crm-goals .crm-goals-value-card .subhead {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  position: relative;
+}
+
+#crm-goals .crm-goals-value-card .subhead::after {
+  position: absolute;
+  content: "";
+  left: -4px;
+  width: 6px;
+  height: 6px;
+  background-color: #27286d;
+  border-radius: 50%;
+  top: 10px;
+}
+
+#crm-goals .crm-goals-value-card .data {
+  font-size: 1.4rem;
+  padding-left: 20px;
+}
+
+#crm-goals .crm-goals-value-card .crm-goals-data-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+#crm-goals .crm-goals-value-card .crm-goals-data {
+  font-size: 1.2rem;
+}
+
+.crm-goals-learnmore-btn {
+  text-align: end;
+  position: relative;
+  padding-right: 27px;
+  padding-top: 20px;
+  color: #005eb8;
+}
+
+.crm-goals-learnmore-btn a {
+  color: rgb(27, 27, 131);
+  font-size: 1.8rem;
+}
+
+.crm-goals-learnmore-btn a:hover {
+  background-color: whitesmoke;
+}
+
+/* <---------------------------------------- hrms third -----------------------------------------------> */
+#crm-third {
+  box-shadow: 0px 18px 25px rgba(0, 0, 0, 0.5);
+}
+
+#crm-third:hover {
+  box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.5);
+}
+
+.crm-third-main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.crm-third-left {
+  width: 60%;
+}
+
+.crm-third-left-heading {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "sans-serif", sans-serif;
+}
+
+.crm-third-left-heading::after {
+  content: "";
+  background-color: #ed8b00;
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 10px 0 0;
+}
+
+.crm-third-left-slogn {
+  font-size: 1.8rem;
+  padding-top: 1.5rem;
+  font-family: "sans-serif", sans-serif;
+}
+
+.crm-third-left-btn {
+  margin-top: 2rem;
+  background: #005eb8;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 10px;
+  max-width: 100%;
+  min-width: 200px;
+  outline: none;
+  padding: 18px 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out 0.1s,
+    border-color 0.2s ease-in-out;
+  white-space: normal;
+  width: auto;
+}
+
+.crm-third-left-btn a {
+  color: white;
+}
+
+.crm-third-left-btn:hover {
+  background-color: #004688;
+}
+
+.crm-third-right {
+  width: 40%;
+  height: 200px;
+}
+@media screen and (max-width: 994px) {
+  #crm-goals .hrms-goals-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  #crm {
+    padding: 20px 0;
+  }
+  .crmfirst-section-head {
+    margin: 0 auto 25px auto;
+  }
+  .crmfirst-section-head .crmfirst-head-title {
+    font-size: 3.5rem;
+  }
+  .crmfirst-section-head .crmfirst-head-slogan {
+    font-size: 1.9rem;
+  }
+  .crmfirst-video {
+    margin-top: 1rem;
+    margin-left: 0rem;
+    width: 100%;
+  }
+  .crmfirst-content-list li span {
+    font-size: 1.8rem;
+  }
+  #crm-goals {
+    padding: 20px 0;
+  }
+  .crm-goals-section-head {
+    margin-bottom: 40px;
+  }
+  .crm-goals-section-head .crm-goals-head-title {
+    font-size: 2.9rem;
+  }
+  .crm-goals-section-head .crm-goals-head-slogan {
+    font-size: 1.6rem;
+    padding-left: 10px;
+  }
+  #crm-goals .hrms-goals-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .crm-third-main-container {
+    align-items: center;
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+  .crm-third-left {
+    width: 100%;
+  }
+  .crm-third-right {
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+}
+@media screen and (max-width: 576px) {
+  #crm {
+    padding: 20px 0;
+  }
+  .crmfirst-section-head {
+    margin: 0 auto 25px auto;
+  }
+  .crmfirst-section-head .crmfirst-head-title {
+    font-size: 3.2rem;
+  }
+  .crmfirst-section-head .crmfirst-head-slogan {
+    font-size: 1.8rem;
+  }
+  .crmfirst-video {
+    margin-top: 1rem;
+    margin-left: 0rem;
+    width: 100%;
+  }
+  .crmfirst-content-list li span {
+    font-size: 1.6rem;
+  }
+  #crm-goals {
+    padding: 20px 0;
+  }
+  .crm-goals-section-head {
+    margin-bottom: 40px;
+  }
+  .crm-goals-section-head .crm-goals-head-title {
+    font-size: 2.9rem;
+  }
+  .crm-goals-section-head .crm-goals-head-slogan {
+    font-size: 1.6rem;
+    padding-left: 10px;
+  }
+  #crm-goals .hrms-goals-grid {
+    grid-template-columns: 1fr;
+  }
+  .crm-third-main-container {
+    align-items: center;
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+  .crm-third-left {
+    width: 100%;
+  }
+
+  .crm-third-right {
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: 1/1; */
+  }
+}

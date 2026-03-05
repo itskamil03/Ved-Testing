@@ -1,0 +1,81 @@
+#location-grid {
+  padding: 50px 0px;
+}
+#location-grid .location-card {
+  position: relative;
+  margin-bottom: 50px;
+}
+#location-grid .location-card .image {
+  max-width: 700px;
+  aspect-ratio: 1/0.7;
+}
+#location-grid .location-card .content {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  background: #27286dbd;
+  padding: 20px;
+  max-width: 550px;
+  width: 100%;
+}
+#location-grid .location-card .content .top-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#location-grid .location-card .top-content {
+  display: flex;
+}
+#location-grid .location-card .content .icon {
+  width: 100px;
+  height: 100px;
+}
+#location-grid .location-card .content .icon img {
+  filter: invert(1);
+}
+#location-grid .location-card .content .top-content .title {
+  padding: 0 20px;
+  width: calc(100% - 100px);
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: white;
+}
+#location-grid .location-card .content .component {
+  display: flex;
+  align-items: baseline;
+  color: white;
+  font-size: 1.2rem;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+#location-grid .location-card .content .component:nth-last-child(1) {
+  margin-bottom: 0;
+}
+#location-grid .location-card.invert .image {
+  margin-left: auto;
+}
+#location-grid .location-card.invert .content {
+  right: initial;
+  left: 0;
+}
+#location-grid .location-card .content .top-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#location-grid .location-card.invert .content .top-content .title {
+  text-align: right;
+}
+
+@media screen and (max-width: 994px) {
+  #location-grid .location-card .content {
+    position: static;
+    transform: translate(0, 0);
+    background: #27286dbd;
+    /* padding: 20px; */
+    max-width: 700px;
+    margin-top: 15px;
+    width: 100%;
+  }
+}

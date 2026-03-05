@@ -1,0 +1,104 @@
+/* <----------------------------------------- Our Values -------------------------------> */
+#values {
+  margin-bottom: 50px;
+}
+.section-head .head-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+.section-head .head-slogan {
+  font-size: 1.6rem;
+  padding-left: 20px;
+  border-left: 2px solid #27286d;
+  text-align: justify;
+}
+#values .value-card:hover {
+  box-shadow: 0 8px 24px rgba(128, 128, 128, 0.185);
+  background: white;
+}
+#values .value-card {
+  max-width: 500px;
+  margin: 0px auto 20px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+#values .value-card .icon {
+  font-size: 3.2rem;
+  text-align: center;
+  color: #27286d;
+  margin-bottom: 10px;
+}
+#values .value-card .title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#values .value-card .data {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* <----------------------------------- Our Expertise -----------------------> */
+
+#milestones {
+  padding: 50px 0px;
+}
+#milestones .milestone-info {
+  margin-bottom: 20px;
+}
+#milestones .milestone-info .head {
+  font-size: 2.7rem;
+  color: #27286d;
+  margin-bottom: 5px;
+}
+#milestones .milestone-info .content {
+  font-size: 1.5rem;
+  color: #4e4e4e;
+  text-align: justify;
+}
+#milestones .milestone-box {
+  padding: 40px 20px;
+  box-shadow: 0 8px 24px #e4dfdf;
+  border-radius: 10px;
+  max-width: 250px;
+  margin: 0px auto 30px;
+  background: white;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+#milestones .milestone-count {
+  font-size: 2.3rem;
+  line-height: 25px;
+  color: #27286d;
+  transition: all 0.3s linear;
+}
+#milestones .milestone-name {
+  color: #27286d;
+  transition: all 0.3s linear;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 640px) {
+  #values {
+    margin-bottom: 0px;
+    padding: 10px;
+  }
+  #values .value-card {
+    width: 100%;
+    margin: 0px auto 20px;
+    padding: 0px;
+  }
+  #milestones {
+    padding: 15px 0px;
+  }
+}

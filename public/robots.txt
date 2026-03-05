@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://venturingdigitally.com/sitemap.xml

@@ -1,0 +1,66 @@
+/* <-------------------------- Development Approaches We Follow --------------------------> */
+
+/* #development-approach {
+  padding: 50px 0px;
+} */
+.section-head {
+  margin-bottom: 50px;
+}
+.section-head .head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+.section-head .head-slogan {
+  font-size: 1.6rem;
+  padding-left: 20px;
+  border-left: 2px solid #27286d;
+  text-align: justify;
+}
+#development-approach .approach-card {
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 24px #c5c5c59e;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 14px;
+}
+#development-approach .approach-card .top-bar {
+  display: flex;
+  align-items: center;
+
+}
+#development-approach .approach-card .top-bar .icon {
+  width: 80px;
+  height: 80px;
+}
+#development-approach .approach-card .top-bar .title {
+  width: calc(100% - 80px);
+  padding-left: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #27286d;
+}
+#development-approach .approach-card .bottom-bar .data {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-bottom: 6px;
+}
+#development-approach .approach-card .bottom-bar
+{
+   display: grid;
+   grid-row-gap: 10px;
+}
+#development-approach .approach-card .bottom-bar .list {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+#development-approach .approach-card .bottom-bar .list-style {
+  font-size: 1.5rem;
+  color: #27286d;
+}
+

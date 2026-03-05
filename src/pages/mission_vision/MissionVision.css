@@ -1,0 +1,258 @@
+/* <--------------------------------------- Mission info --------------------------------------------------> */
+#mission-info {
+  padding: 50px 0px;
+}
+#mission-info .image-block {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap:3rem;
+  margin-bottom: 20px;
+}
+#mission-info .image-block .image {
+  aspect-ratio: 1/0.7;
+}
+#mission-info .image-block .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#mission-info .image-block .tag {
+  font-size: 2rem;
+  font-weight: bold;
+}
+#mission-info .image-block .title {
+  font-size: 3.8rem;
+  font-weight: 600;
+}
+
+#mission-info .main-content .data {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-bottom: 10px;
+  color: black;
+}
+#mission-info .main-content a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #27286d;
+  border: 2px solid #27286d;
+  padding: 5px 20px;
+  display: inline-block;
+  transition: all 0.3s linear;
+  margin-top: 10px;
+}
+#mission-info .main-content a:hover {
+  background: #27286d;
+  color: white;
+  font-weight: initial;
+  padding: 5px 30px;
+}
+/* <--------------------------------------- Mission and Vision Card --------------------------------------------------> */
+#strength-cards {
+  padding: 50px 0px;
+  background-color: #f8f9fa !important;
+}
+#strength-cards .strength-card {
+  box-shadow: 0 8px 24px #80808030;
+  padding: 20px 10px;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  background: white;
+  height: 310px;
+}
+#strength-cards .strength-card .icon {
+  width: 60px;
+  aspect-ratio: 1/1;
+  margin-bottom: 15px;
+  position: relative;
+}
+#strength-cards .strength-card .icon::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 10%;
+  left: 10%;
+  position: absolute;
+  background: #27286d38;
+  border-radius: 53% 47% 53% 47% / 41% 65% 35% 59%;
+}
+#strength-cards .strength-card .title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 2rem;
+}
+#strength-cards .strength-card .data {
+  font-size: 1.5rem;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  overflow: hidden;
+  height: 204px;
+}
+/* <------------------------------------ Mission------------------------------------> */
+#mission {
+  padding: 50px 0px;
+}
+#mission .image-block {
+
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap:3rem;
+  margin-bottom: 20px;
+  align-items: center
+}
+#mission .image-block .image {
+  aspect-ratio: 1/0.7;
+}
+#mission .image-block .content {
+  color: #000;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+#mission .image-block .content .title {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #000;
+}
+#mission .image-block .content .data {
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #000;
+}
+/* <------------------------------------ vision -------------------------> */
+
+#vision {
+  padding: 50px 0px;
+}
+#vision .image-block {
+
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap:3rem;
+  margin-bottom: 20px;
+  align-items: center;
+
+}
+#vision .image-block .image {
+
+  aspect-ratio: 1/0.7;
+}
+#vision .image-block .content {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#vision .image-block .content .title {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color:#000;
+  margin-bottom: 15px;
+}
+#vision .image-block .content .data {
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #000;
+}
+
+@media screen and (max-width: 768px)  {
+
+  #mission-info .image-block {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-row-gap:2rem;
+    margin-bottom: 20px;
+  }
+
+  #mission .image-block {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-row-gap:2rem;
+    margin-bottom: 20px;
+  }
+
+  #vision .image-block {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-row-gap:2rem;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (max-width: 994px) {
+  #mission-info {
+    padding: 15px 0px;
+  }
+  #mission-info .image-block {
+    margin-bottom: 0px;
+  }
+  #mission-info .image-block .content {
+    position: static;
+    margin: 15px 0;
+    text-align: center;
+    max-width: 710px;
+    width: 100%;
+    transform: translate(0, 0);
+  }
+  #mission-info .image-block .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  #strength-cards {
+    padding: 10px 0px;
+    width: 100%;
+  }
+  #strength-cards .strength-card .icon {
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  #strength-cards .strength-card .title {
+    text-align: center;
+  }
+  #strength-cards .strength-card {
+    height: 100%;
+  }
+  #strength-cards .strength-card .data {
+    height: 100%;
+  }
+
+  #mission {
+    padding: 10px 0px;
+  }
+  #mission .image-block .content {
+    position: static;
+    transform: translate(0, 0);
+    width: 100%;
+    padding: 20px;
+  }
+  /* #mission .image-block .image {
+    max-width: 700px;
+    aspect-ratio: 1/0.7;
+    margin-bottom: 10px;
+  } */
+  #vision {
+    padding: 10px 0px;
+  }
+  #vision .image-block .content {
+    position: static;
+    transform: translate(0, 0);
+    width: 100%;
+    padding: 20px;
+
+  }
+  #vision .image-block .image {
+    max-width: 700px;
+    aspect-ratio: 1/0.7;
+    margin-bottom: 10px;
+  }
+}
+
+

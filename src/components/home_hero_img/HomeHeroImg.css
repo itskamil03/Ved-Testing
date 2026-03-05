@@ -1,0 +1,123 @@
+.homeheroimg {
+  height: 100%;
+  width: 100%;
+}
+.homehero-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.homeheroimg-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.homeheroimg-contant {
+  position: absolute;
+  /* transform: translate(-50%, -50%); */
+  top: 0;
+  right: 0;
+  text-align: right;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 30px 50px;
+}
+
+.homeheroimg-slogan {
+  color: white;
+  margin-bottom: 15px;
+  padding-right: 105px;
+  font-size: 3rem;
+  font-weight: 400;
+  position: relative;
+}
+.homeheroimg-slogan::after {
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  height: 4px;
+  width: 100px;
+  background-color: white;
+  content: "";
+  border-radius: 2px;
+}
+.homeheroimg-heading {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.homeheroimg-imgbtn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem; 
+  /* border: 2px solid white; */
+  background: linear-gradient(45deg, transparent 5%, #27286d 5%);
+  box-shadow: 6px 0px 0px rgb(144, 149, 8);
+  outline: transparent;
+  color: white;
+  font-size: 1.5rem;
+}
+.homeheroimg-imgbtn:hover {
+  color: white;
+}
+@media screen and (max-width: 994px) {
+  .homehero-container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  .homehero-container {
+    width: 100%;
+    height: 52vh;
+    position: relative;
+  }
+  .homeheroimg-contant {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+  }
+
+  .homeheroimg-slogan {
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    padding-right: 0px;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .homeheroimg-slogan::after {
+    display: none;
+  }
+  .homeheroimg-heading {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+
+.hero-container {
+  position: relative;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}

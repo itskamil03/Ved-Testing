@@ -1,0 +1,386 @@
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+section {
+  padding: 50px 0px;
+}
+
+#contact-cards .contact-card {
+  max-width: 350px;
+  margin: 0px auto 20px;
+  padding: 15px 10px;
+  text-align: center;
+  box-shadow: 0 8px 24px #c5c5c599;
+  border-radius: 15px;
+  height: 162px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  background: white;
+}
+
+#contact-cards .contact-card:hover {
+  transform: translate(0, -20px);
+}
+
+#contact-cards .contact-card .icon {
+  font-size: 3.3rem;
+  width: 55px;
+  height: 55px;
+  margin: 0px auto 10px;
+  border-radius: 50%;
+  border: 2px dashed #27286d;
+  color: #27286d;
+}
+
+#contact-cards .contact-card .content {
+  font-size: 1.5rem;
+  font-family: "sans-serif", sans-serif;
+}
+
+#contact-ads {
+
+  padding: 15px 0 30px 0;
+}
+
+#contact-ads .section-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+
+}
+
+#contact-ads .section-content .left-ads {
+  border: 1px solid whitesmoke;
+}
+
+#contact-ads .section-content .left-ads .ads-btn {
+  background-color: white;
+}
+
+#contact-ads .section-content .left-ads .ads-btn button {
+  border: none;
+  background-color: transparent;
+  padding: 5px 10px;
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #00000099;
+  font-family: "sans-serif", sans-serif;
+}
+
+#contact-ads .section-content .left-ads .ads-btn button:hover {
+  background-color: #27286d;
+  color: white;
+  width: 100%;
+  text-align: left;
+}
+
+#contact-ads .section-content .left-ads .ads-btn button.active {
+  background-color: #27286d;
+  color: white;
+  width: 100%;
+  text-align: left;
+}
+
+#contact-ads .section-content .right-ads {
+  border: 1px solid whitesmoke;
+  background-color: white;
+  display: grid;
+  align-items: center;
+}
+
+#contact-ads .section-content .right-ads .ads1 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+
+#contact-ads .section-content .right-ads .ads1 .image {
+  width: 150px;
+}
+
+#contact-ads .section-content .right-ads .ads1 .text {
+  font-size: 20px;
+  font-family: "sans-serif", sans-serif;
+}
+
+#contact-ads .section-content .right-ads .ads1 .text div {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "sans-serif", sans-serif;
+}
+
+.expert-select-box {
+  border: 1px solid rgb(200, 198, 198);
+  border-radius: 10px;
+}
+
+.common-pointer {
+  background-color: transparent;
+  border: 3px solid #2b8e60;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: ffff;
+}
+
+.common-pointer:hover {
+  box-shadow: 0 0 10px 0 #2b8e60 inset, 0 0 20px 2px #2b8e60;
+
+}
+
+.input_form {
+  color: black;
+}
+
+.home {
+  margin-left: 580px;
+}
+
+@media (max-width:1300px) {
+
+  .home {
+    margin-left: 290px;
+  }
+}
+
+@media screen and (max-width:450px){
+  section {
+    padding: 30px 0px;
+  }
+}
+
+
+
+/* new form */
+
+/* new form */
+
+.form-new {
+  height: 560px;
+  padding: 20px;
+  background-color: #eceaea;
+  color: #fff;
+}
+
+.main-block-form {
+  display: flex;
+  padding: 15px;
+  gap: 15px;
+}
+
+.main-block-next {
+  display: flex;
+  padding: 5px;
+  margin-left: 10px;
+  gap: 10px;
+
+}
+
+
+.form-control {
+  font-size: 20px;
+}
+
+.email-placholder {
+  margin-top: 12px;
+}
+
+.multiselector-new {
+
+  width: 395px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-top: 7px;
+}
+
+.multiselector-first {
+
+  width: 385px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-top: 15px;
+
+}
+
+#text-area {
+  padding: 10px 6px 10px 12px;
+}
+
+.new-text-area {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+
+.inner-box-ved {
+  margin-top: 20px;
+  margin-bottom: 18px;
+  box-shadow: rgba(22, 22, 97, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+
+}
+
+.first-input {
+  /* padding: 20px; */
+
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+.left-placeholder {
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+.right-placholder {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+.email-placholder {
+  margin-bottom: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+.new {
+  color: #27286d;
+
+}
+
+.heading-new-form {
+  display: flex;
+  justify-content: center;
+  color: #27286d;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 30px;
+}
+
+.new-button-form {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+
+
+}
+
+.button-submit {
+  background-color: #12134d;
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+  border: 1px solid rgb(179, 175, 175);
+  border-radius: 5px;
+  padding: 10px;
+  width: 160px;
+  color: #fff;
+
+}
+
+.button-submitdata
+{
+  background-color: #12134d;
+  border: 1px solid rgb(179, 175, 175);
+  border-radius: 5px;
+  padding: 10px;
+  width: 160px;
+  color: #fff;
+}
+
+.location-placholder {
+  margin-top: 12px;
+  margin-right: 13px;
+}
+
+
+/* ------------------------------------ */
+.main-form {
+  display: flex;
+  gap: 10px;
+}
+
+.form-input-new {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+}
+
+.second-input {
+  height: 45px;
+}
+
+.image-box {
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.image-form {
+  border-radius: 15px;
+  height: 400px;
+  width: 400px;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+  #text-area {
+    width: 100% !important;
+    padding: 10px 15px !important;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .form-input-new {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .left-placeholder {
+    width: 100%;
+  }
+
+  .email-placholder {
+    width: 100%;
+  }
+
+  .fs-2 {
+    width: 107%;
+  }
+
+  .right-placholder {
+    width: 100%;
+  }
+
+  .main-form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .form-new {
+    height: 130rem;
+  }
+
+  .location-placholder {
+    width: 107%;
+  }
+
+  #text-area {
+    width: 100% !important;
+    padding: 10px 15px !important;
+  }
+
+  .new-button-form {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .title-1 {
+    font-size: 3rem !important;
+  }
+  .title-2 {
+    font-size: 1.85rem !important;
+  }
+  .what-do-name {
+    font-size: 1.8rem !important;
+  }
+}

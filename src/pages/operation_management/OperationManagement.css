@@ -1,0 +1,291 @@
+/* <----------------------------- Operation Management first ----------------------------------------> */
+#opermfirst {
+  padding: 50px 0px;
+}
+.opermfirst-section-head {
+  margin-bottom: 50px;
+}
+.opermfirst-section-head .opermfirst-head-title {
+  font-size: 4rem;
+  width: 800px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0px auto 10px auto;
+  font-family: "sans-serif", sans-serif;
+}
+.opermfirst-section-head .operm-first-slogan {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.opermfirst-head-slogan {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #27286d;
+  margin-top: 60px;
+  padding: 15px 0px;
+  border-top: 1px solid #27286d;
+  border-bottom: 1px solid #27286d;
+  font-style: italic;
+}
+.opermfirst-img-box {
+  margin-top: 20px;
+  width: 100%;
+  aspect-ratio: 1 / 0.23;
+  object-fit: cover;
+}
+/* <----------------------------- Operation Management second ----------------------------------------> */
+#opermsecond {
+  padding: 50px 0px;
+}
+.opermsecond-section-content .opermsecond-content-head {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 7px;
+  color: #27286d;
+  position: relative;
+  display: inline-block;
+  font-family: "sans-serif", sans-serif;
+  text-transform: uppercase;
+  padding-left: 60px;
+}
+.opermsecond-section-content .opermsecond-content-head::after {
+  content: "";
+  background-color: rgb(144, 149, 8);
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+}
+.opermsecond-section-content .opermsecond-content-data {
+  color: #4e4e4e;
+  text-align: justify;
+  margin-bottom: 5px;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+/* <<<<< card >>>>> */
+#opermsecond .why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.opermsecond-why-card {
+  box-shadow: 0 20px 25px rgb(131 131 131 / 39%);
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 3px solid #3692f2;
+  border-radius: 10px;
+}
+.opermsecond-card-imgbox {
+  width: 200px;
+  margin: 0 auto;
+}
+.opermsecond-why-card .prosecond-title {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #3b3c3d;
+  padding-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+  text-align: center;
+}
+.opermsecond-why-card .opermsecond-data-list {
+  list-style: none;
+}
+.opermsecond-why-card .opermsecond-data-list li {
+  position: relative;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.opermsecond-why-card .opermsecond-data-list li::before {
+  background-color: #005eb8;
+  content: "";
+  display: block;
+  height: 8px;
+  left: -18px;
+  top: 3px;
+  position: absolute;
+  width: 8px;
+}
+/* <----------------------------- Operation Management third ----------------------------------------> */
+#opermthird {
+  padding: 50px 0px;
+}
+.opermthird-section-head {
+  margin-bottom: 50px;
+}
+.opermthird-section-head .opermthird-head-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+.opermthird-section-head .opermthird-head-slogan {
+  font-size: 1.7rem;
+  padding-left: 20px;
+  border-left: 2px solid #27286d;
+  text-align: justify;
+}
+.opermthird-body-box1 {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-top: 2px solid #27286d;
+  border-right: 2px solid #27286d;
+  position: relative;
+}
+
+.opermthird-body-box1:nth-child(2n) {
+  border-right: 0;
+  border-left: 2px solid #27286d;
+}
+
+.opermthird-body-box1:nth-last-child(1) {
+  border-bottom: 2px solid #27286d;
+}
+.opermthird-body-box1-img {
+  max-width: 280px;
+}
+.opermthird-body-box1-text-title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+  text-transform: uppercase;
+}
+.opermthird-body-box1-text-slogan {
+  font-size: 1.5rem;
+  padding-left: 20px;
+  text-align: justify;
+  margin-bottom: 5px;
+}
+.opermthird-body-box1-text-slogan:nth-last-child(1) {
+  margin-bottom: 0;
+}
+/* ----------- */
+
+#why-venturing-digitally {
+  background: #27286d;
+  padding: 20px 0;
+}
+
+#why-venturing-digitally .outsource-content {
+  display: flex;
+  align-items: center;
+}
+
+#why-venturing-digitally .outsource-content .details {
+  width: calc(100% - 250px);
+  padding-right: 20px;
+}
+
+#why-venturing-digitally .outsource-content .title {
+  font-family: "sans-serif", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#why-venturing-digitally .outsource-content .data {
+  text-align: justify;
+  color: #e9e8e8;
+  font-size: 1.5rem;
+}
+
+#why-venturing-digitally .outsource-content .image {
+  width: 250px;
+  aspect-ratio: 1/0.85;
+}
+/* <----------------------------- Operation Management responsive  ----------------------------------------> */
+@media screen and (max-width: 994px) {
+  #opermfirst {
+    padding: 30px 0px;
+  }
+  .opermfirst-section-head .opermfirst-head-title {
+    font-size: 3.5rem;
+    width: 100%;
+  }
+  .opermfirst-section-head .operm-first-slogan {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
+  .opermfirst-img-box {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  #opermsecond {
+    padding: 40px 0px;
+  }
+  .opermsecond-section-content .opermsecond-content-data {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  #opermsecond .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  #opermfirst {
+    padding: 25px 0px;
+  }
+  .opermfirst-section-head .opermfirst-head-title {
+    font-size: 3rem;
+    width: 100%;
+  }
+  .opermfirst-section-head .operm-first-slogan {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
+  .opermfirst-img-box {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  #opermsecond {
+    padding: 40px 0px;
+  }
+  .opermsecond-section-content .opermsecond-content-data {
+    margin-bottom: 10px;
+  }
+  #opermsecond .why-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  #why-venturing-digitally .outsource-content {
+    flex-direction: column-reverse;
+  }
+  #why-venturing-digitally .outsource-content .details {
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 10px;
+  }
+  #why-venturing-digitally .outsource-content .image {
+    width: 300px;
+    aspect-ratio: 1/1;
+    margin-bottom: 20px;
+  }
+  #opermthird {
+    padding: 20px 0px;
+  }
+  .opermthird-section-head .opermthird-head-title {
+    font-size: 2.9rem;
+  }
+  .opermthird-body-box1 {
+    flex-direction: column;
+  }
+  .opermthird-body-box1-img {
+    order: 1;
+  }
+  .opermthird-body-box1-text {
+    order: 2;
+  }
+}

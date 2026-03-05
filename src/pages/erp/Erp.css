@@ -1,0 +1,294 @@
+/* <------------------------------------------- Erp first --------------------------------------------------> */
+#erpfirst {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.erpfirst-section-main {
+  display: flex;
+  gap: 2rem;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+}
+.erpfirst-section-left {
+  width: 50%;
+}
+.erpfirst-section-left-heading {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+.erpfirst-section-left-text {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: white;
+  text-align: justify;
+  padding-bottom: 50px;
+  font-style: italic;
+}
+.erpfirst-section-left-btn {
+  font-size: 2rem;
+  background-color: #ffd546;
+  color: #222;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-family: "Marcellus", serif;
+}
+.erpfirst-section-left-btn:hover .erpfirst-icon {
+  animation: slide-left 1s ease-in-out infinite;
+}
+.erpfirst-section-right {
+  width: 50%;
+}
+/* <------------> */
+.custom-shape-divider-top-1685357571 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1685357571 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1685357571 .shape-fill {
+  fill: whitesmoke;
+}
+/* <------------------------------------------- Erp second --------------------------------------------------> */
+#erpsecond {
+  padding: 50px 0px;
+}
+.erpsecond-section-head {
+  margin-bottom: 50px;
+}
+.erpsecond-section-head .erpsecond-head-title {
+  font-size: 4rem;
+  width: 800px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0px auto 30px auto;
+  font-family: "sans-serif", sans-serif;
+}
+.erpsecond-section-content .erpsecond-content-head {
+  font-size: 2.3rem;
+  font-weight: lighter;
+  margin-bottom: 7px;
+  color: #27286d;
+  position: relative;
+  display: inline-block;
+}
+.erpsecond-section-content .erpsecond-content-head::after {
+  content: "";
+  background-color: rgb(144, 149, 8);
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: -55px;
+}
+.erpsecond-section-content .erpsecond-content-data {
+  color: #4e4e4e;
+  text-align: justify;
+  margin-bottom: 5px;
+  font-size: 1.7rem;
+}
+.erpsecond-content-body {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+.erpsecond-body-left {
+  border: 1px solid whitesmoke;
+  width: 50%;
+}
+.erpsecond-body-right {
+  width: 50%;
+  border: 1px solid whitesmoke;
+}
+.erpsecond-body-left-points {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0rem;
+}
+.erpsecond-body-left-points-items {
+  /* font-size: 1.6rem;
+      color: rgb(109, 109, 222); */
+  width: 150px;
+}
+
+.erpsecond-body-left-points-text {
+  font-size: 1.5rem;
+  color: #4e4e4e;
+  text-align: justify;
+}
+
+/* <------------------------------------------- Erp third --------------------------------------------------> */
+#erpthird {
+  padding: 30px 0px;
+}
+#erpthird .erpthird-why-card {
+  box-shadow: 0 8px 24px #a9a9a985;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 65px;
+  cursor: pointer;
+  height: 35rem;
+  border-radius: 20px;
+  transition: all 0.3s linear;
+}
+#erpthird .erpthird-why-card:hover {
+  transform: translate(0px, -10px);
+}
+#erpthird .erpthird-why-card .erpthird-icon {
+  width: 130px;
+  height: 130px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  background: #ffffff0d;
+}
+
+#erpthird .erpthird-why-card .erpthird-title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 0.7rem;
+  text-align: left;
+}
+#erpthird .erpthird-why-card .erpthird-data {
+  font-size: 1.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 130px;
+  text-align: justify;
+}
+/* <------------------------------------------- Erp fourth --------------------------------------------------> */
+#erpforth {
+  /* padding: 30px 0px; */
+  clip-path: polygon(0 0, 100% 18%, 100% 80%, 0% 100%);
+  background-color: whitesmoke;
+}
+.erpforth-section-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.erpforth-left {
+  width: 30%;
+}
+.erpforth-left-imgbox {
+  height: 300px;
+}
+.erpforth-right {
+  width: 70%;
+}
+.erpforth-right-data {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+.erpforth-right-chbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.erpforth-right-title {
+  width: 70%;
+  padding-top: 15px;
+  font-size: 2.3rem;
+}
+.erpforth-right-chbox-btn {
+  width: 30%;
+  font-size: 1.8rem;
+  text-align: center;
+  position: relative;
+  border: 1px solid #005eb8 ;
+  background-color: #005eb8;
+  color: white;
+  margin-top: 2rem;
+  font-family: 'Exo', sans-serif;
+  
+}
+.erpforth-right-chbox-btn::after {
+        color: white;
+    content: "\2192";
+    display: inline-block;
+    /* font-family: s-icons; */
+    font-size: 21px;
+    font-weight: 600;
+    position: absolute;
+    top: -2px;
+    width: 30px;
+}
+/* <------------------------------------------------ erp fift -------------------------------------------> */
+#erpfift { 
+clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 80%);
+    background-color: whitesmoke;
+  }
+  .erpfift-section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .erpfift-left {
+    width: 70%;
+  }
+  .erpfift-left-imgbox {
+    height: 300px;
+  }
+  .erpfift-right {
+    width: 30%;
+  }
+  .erpfift-right-data {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  .erpfift-right-chbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .erpfift-right-title {
+    width: 70%;
+    padding-top: 15px;
+    font-size: 2.3rem;
+  }
+  .erpfift-right-chbox-btn {
+    width: 30%;
+    font-size: 1.8rem;
+    text-align: center;
+    position: relative;
+    border: 1px solid #005eb8 ;
+    background-color: #005eb8;
+    color: white;
+    margin-top: 2rem;
+    font-family: 'Exo', sans-serif;
+    
+  }
+  .erpfift-right-chbox-btn::after {
+          color: white;
+      content: "\2192";
+      display: inline-block;
+      /* font-family: s-icons; */
+      font-size: 21px;
+      font-weight: 600;
+      position: absolute;
+      top: -2px;
+      width: 30px;
+  }

@@ -1,0 +1,214 @@
+/* <------------------------------------------------- Development Process --------------------------------------------> */
+#build-step {
+    padding: 50px 0;
+  }
+  #build-step .process-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    gap: 50px;
+    margin: 120px 0;
+  } 
+  
+  #build-step .process-box {
+    position: relative;
+    width: 100%;
+  }
+  
+  #build-step .process-box .icon-box {
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid;
+    padding: 15px;
+    background: white;
+    max-width: 100px;
+    margin: 0 auto;
+  }
+  
+  #build-step .process-box .icon {
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 50%;
+    padding: 17px;
+  }
+  
+  #build-step .process-box .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  
+  #build-step .process-box .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 5rem;
+    transform: translate(-20%, -30%);
+    z-index: -1;
+    color: #00000057;
+    font-weight: 900;
+  }
+  
+  #build-step .process-box:nth-child(2n) {
+    transform: translate(0, -50%);
+  }
+  
+  #build-step .process-box:nth-child(2n + 1) {
+    transform: translate(0, 50%);
+  }
+  
+  #build-step .process-box:nth-child(2n + 1)::after,
+  #build-step .process-box:nth-child(2n)::after {
+    content: "";
+    width: 65px;
+    height: 75px;
+    position: absolute;
+    left: calc(100% - 28px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-8deg);
+  }
+  
+  #build-step .process-box:nth-child(2n + 1)::after {
+    background-image: url(/image/development-process/line.png);
+    bottom: calc(100% - 50px);
+    transform: rotate(-8deg);
+  }
+  
+  #build-step .process-box:nth-child(2n)::after {
+    background-image: url(/image/development-process/line2.png);
+    top: calc(100% - 70px);
+    transform: rotate(17deg);
+  }
+  
+  #build-step .process-box:nth-last-child(1)::after {
+    content: initial;
+  }
+  
+  #build-step .process-box:nth-child(1) .icon-box {
+    border-color: #efdcdc;
+  }
+  
+  #build-step .process-box:nth-child(2) .icon-box {
+    border-color: #ded4b2;
+  }
+  
+  #build-step .process-box:nth-child(3) .icon-box {
+    border-color: #ddefdc;
+  }
+  
+  #build-step .process-box:nth-child(4) .icon-box {
+    border-color: #b2ded3;
+  }
+  
+  #build-step .process-box:nth-child(5) .icon-box {
+    border-color: #b7bfe7;
+  }
+  
+  #build-step .process-box:nth-child(6) .icon-box {
+    border-color: #d0b2de;
+  }
+  
+  #build-step .process-box:nth-child(7) .icon-box {
+    border-color: #e9b7b7;
+  }
+  
+  #build-step .process-box:nth-child(1) .icon {
+    background: #efdcdc;
+  }
+  
+  #build-step .process-box:nth-child(2) .icon {
+    background: #ded4b2;
+  }
+  
+  #build-step .process-box:nth-child(3) .icon {
+    background: #ddefdc;
+  }
+  
+  #build-step .process-box:nth-child(4) .icon {
+    background: #b2ded3;
+  }
+  
+  #build-step .process-box:nth-child(5) .icon {
+    background: #b7bfe7;
+  }
+  
+  #build-step .process-box:nth-child(6) .icon {
+    background: #d0b2de;
+  }
+  
+  #build-step .process-box:nth-child(7) .icon {
+    background: #e9b7b7;
+  }
+  @media screen and (max-width: 994px) {
+    #build-step .process-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0px;
+      margin-bottom: -70px;
+    }
+    #build-step .process-box {
+      position: relative;
+      width: 100%;
+      margin-bottom: 80px;
+    }
+    #build-step .process-box:nth-child(2n) {
+      transform: translate(10%, -50%);
+    }
+    #build-step .process-box:nth-child(2n + 1) {
+      transform: translate(10%, 25%);
+    }
+    #build-step .process-box .number {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 5rem;
+      transform: translate(60%, -30%);
+      z-index: -1;
+      color: #00000057;
+      font-weight: 900;
+    }
+  }
+  @media screen and (max-width: 768px) {
+  
+    #build-step {
+      padding: 30px 0;
+    }
+    #build-step .process-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0px;
+      margin-bottom: -70px;
+    }
+    #build-step .process-box {
+      position: relative;
+      width: 100%;
+      margin-bottom: 53px;
+    }
+    #build-step .process-box:nth-child(2n) {
+      transform: translate(0, 10%);
+    }
+    #build-step .process-box:nth-child(2n + 1) {
+      transform: translate(0, -50%);
+    }
+    #build-step .process-box .number {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 5rem;
+      transform: translate(100%, -50%);
+      z-index: -1;
+      color: #00000057;
+      font-weight: 900;
+    }
+  
+    #build-step .process-box:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+    #build-step .process-box:nth-child(2n + 1)::after {
+      display: none;
+    }
+    #build-step .process-box:nth-child(2n)::after {
+      display: none;
+    }
+  }
+  

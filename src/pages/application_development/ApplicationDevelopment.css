@@ -1,0 +1,386 @@
+/* -- ===================================================================================
+                                APPLICATRION DEVELOPMENT
+=================================================================================== -- */
+
+/* -- -------------------------------
+            APP CARDS
+------------------------------- -- */
+#app-cards {
+  padding: 50px 0px;
+  background-position: center;
+  background-size: cover;
+}
+
+#app-cards .section-head .head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+
+#app-cards .app-card {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#app-cards .app-card .image {
+  width: 300px;
+  aspect-ratio: 1/1;
+}
+
+#app-contact .calc-side .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+#app-cards .app-card .details {
+  background: white;
+  width: calc(100% - 300px);
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  grid-row-gap: 20px;
+}
+
+#app-cards .app-card .title {
+  font-family: "sans-serif", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+#app-cards .app-card .content {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+#app-cards .app-card .tech-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#app-cards .app-card .tech-list div {
+  width: 40px;
+  aspect-ratio: 1/1;
+  /* filter: grayscale(1); */
+}
+
+/* -- -------------------------------
+                FAQ'S
+------------------------------- -- */
+
+#app-faq .accordion {
+  margin-bottom: 20px;
+}
+
+#app-faq .accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1.6rem 0;
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+#app-faq .accordion-item-header {
+  padding: 10px 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+#app-faq .accordion-item-header::after {
+  content: "\002B";
+  font-size: 3.2rem;
+  position: absolute;
+  right: 1.6rem;
+}
+
+#app-faq .accordion-item-header.active::after {
+  content: "\2212";
+}
+
+#app-faq .accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#app-faq .accordion-item-body-content {
+  padding: 1.6rem;
+  line-height: 2.4rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+/* -- -------------------------------
+            ADVANTAGES (Card layout)
+------------------------------- -- */
+.app-advantages-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 20px 0;
+}
+
+.app-advantage-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px 24px;
+  box-shadow: 0 4px 20px rgba(39, 40, 109, 0.08);
+  border: 1px solid #e8e8f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.app-advantage-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(39, 40, 109, 0.15);
+  border-color: #27286d;
+}
+
+.app-advantage-card-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #27286d;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+.app-advantage-card-title {
+  font-family: "sans-serif", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #1a1a2e;
+  margin: 0 0 12px 0;
+  line-height: 1.35;
+}
+
+.app-advantage-card-content {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .app-advantages-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .app-advantage-card {
+    padding: 22px 20px;
+  }
+}
+
+/* -- -------------------------------
+            PROCESS STEPS
+------------------------------- -- */
+#app-steps {
+  padding: 50px 0;
+}
+
+#app-steps .section-head .head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+
+#app-steps .card {
+  border-left: 3px solid #27286d;
+  box-shadow: 0 8px 24px #b1aeae87;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+#app-steps .timeline {
+  border-left: 3px solid #27286d;
+  padding-top: 1.6rem;
+  padding-bottom: 2.3rem;
+  display: grid;
+  grid-row-gap: 3.2rem;
+}
+
+#app-steps .timeline__year {
+  background: #27286d;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 5px 20px;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  display: inline-flex;
+  font-family: "sans-serif", sans-serif;
+}
+
+#app-steps .timeline__card {
+  position: relative;
+  margin-left: 1.3rem;
+}
+
+#app-steps .timeline__card .card__content {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+#app-steps .timeline__cards {
+  overflow: hidden;
+}
+
+#app-steps .timeline__card::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #27286d;
+  position: absolute;
+  top: 1.6rem;
+  left: -50%;
+  z-index: -1;
+}
+
+/* -- -------------------------------
+            PORTFOLIO
+------------------------------- -- */
+
+#app-portfolio .client-item {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#app-portfolio .client-item .client-img {
+  width: 100%;
+  height: 100%;
+}
+
+#app-portfolio .client-item .client-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background: #00000073;
+}
+
+#app-portfolio .client-item .logo {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+#app-portfolio .client-item .logo img {
+  object-fit: contain;
+  object-position: left;
+  filter: grayse(1) brightness(0.5) invert(1);
+}
+
+#app-portfolio .client-item .title {
+  font-family: "sans-serif", sans-serif;
+  color: white;
+  font-size: 2.3rem;
+  margin-bottom: 0px;
+}
+
+#app-portfolio .client-item .content {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  text-align: justify;
+}
+
+#app-portfolio .view-more-btn {
+  display: inline-block;
+  border: 2px solid black;
+  padding: 5px 15px;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s linear;
+}
+
+#app-portfolio .view-more-btn:hover {
+  letter-spacing: 3px;
+  word-spacing: 6px;
+  color: #27286d;
+  border-color: #27286d;
+}
+
+#app-faq {
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 768px) {
+  #app-cards {
+    padding: 20px 0px;
+  }
+
+  #app-cards .section-head .head-title {
+    font-size: 3rem;
+  }
+  #app-cards .app-card:nth-child(1),
+#app-cards .app-card:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#app-cards .app-card:nth-child(2),
+#app-cards .app-card:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+  #app-cards .app-card .image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    max-height: 300px;
+    order: 1;
+  }
+
+  #app-cards .app-card .image img {
+    object-fit: cover;
+  }
+
+  #app-cards .app-card .details {
+    width: 100%;
+    order: 2;
+  }
+  #app-cards .app-card .title {
+    font-size: 2rem !important;
+  }
+
+  #app-steps {
+    padding: 20px 0;
+  }
+
+  #app-steps .section-head .head-title {
+    font-size: 2.8rem;
+  }
+
+  #app-faq {
+    padding: 20px 0;
+  }
+}

@@ -1,0 +1,572 @@
+#cloud {
+    padding: 50px 0 10px 0;
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+  }
+  #cloud .section-top .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #cloud .section-top .head-slogan {
+    line-height: 1.56em;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 auto;
+    font-family: "sans-serif", sans-serif;
+    color: rgb(70, 63, 63);
+  }
+  #cloud-second {
+    padding: 50px 0 50px 0;
+    background-color: rgb(253, 252, 252);
+  }
+  #cloud-second .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  #cloud-second .section .tab-icon {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1;
+  }
+  #cloud-second .cloud-heading {
+    font-size: 2.2rem;
+    color: #000000;
+  }
+
+  #cloud-second .cloud-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .cloud-gap
+  {
+    display: grid;
+    grid-row-gap: 10px;
+    margin-bottom: 14px;
+    box-shadow: 0 8px 24px #a7a4a49e;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+ 
+  
+  #cloud-third {
+    padding: 50px 0 30px 0;
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+  }
+  #cloud-third .section-top {
+    margin-bottom: 50px;
+  }
+  #cloud-third .section-top .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #cloud-third .solution-item{
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 8px 24px #b3b1b196;
+    border-radius: 20px;
+    display: flex;
+    justify-content: cente;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    display: flex;
+    grid-column-gap: 10px;
+  }
+
+  #cloud-third .item-title{
+    font-size: 1.4rem;
+  }
+
+  #cloud-third .solution-item:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0 8px 24px #27286d8a;
+  }
+  
+  
+  #cloud-four {
+    padding: 50px 0;
+    background-color: #eaebec;
+  }
+  #cloud-four .section-top {
+    width: 100%;
+  }
+
+  #cloud-four .benefits {
+    display: flex;
+    grid-column-gap: 20px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  #cloud-four .solution-item {
+    width: 40%;
+    aspect-ratio: 1.6;
+  }
+
+  #cloud-four .solution-title {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 20px 12px 0px;
+    grid-row-gap: 10px;
+
+  }
+
+  #cloud-four .benefits-heading {
+     font-size: 1.9rem;
+     color: #000000;
+  }
+
+  #cloud-four .benefits-title {
+    font-size: 1.4rem;
+    color: #000000;
+ }
+  
+  #cloud-five {
+    padding: 50px 0;
+    background-color: rgb(253, 252, 252);
+  }
+  #cloud-five .section-top .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #cloud-five .section-top .head-slogan {
+    line-height: 1.56em;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 auto 60px;
+    font-family: "sans-serif", sans-serif;
+    color: rgb(70, 63, 63);
+  }
+  
+  #cloud-five .section-top {
+    margin-bottom: 50px;
+  }
+
+  #cloud-five .process-step {
+    padding: 30px 0 30px 50px;
+    border-left: 5px solid #27286d;
+  }
+  
+  #cloud-five .process-step .step-box {
+    margin-bottom: 50px;
+  }
+  
+  #cloud-five .process-step .step-box .head-bar {
+    position: relative;
+    max-width: 500px;
+    height: 5px;
+    background: #27286d;
+    margin-bottom: 30px;
+    left: -50px;
+  }
+  
+  #cloud-five .process-step .step-box .step-num {
+    position: absolute;
+    right: 40px;
+    top: -38px;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00000096;
+  }
+  
+  #cloud-five .process-step .step-box .head-bar::after {
+    content: "";
+    background: white;
+    height: 3px;
+    width: 10px;
+    background: white;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    animation-name: pillSlide;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  #cloud-five .process-step .step-box .bottom-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  #cloud-five .process-step .step-box .image {
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  #cloud-five .process-step .step-box .content-block {
+    width: calc(100% - 200px);
+    padding-left: 20px;
+  }
+  
+  #cloud-five .process-step .step-box .title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #cloud-five .process-step .step-box .content {
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+  
+  @media screen and (max-width: 640px) {
+    
+    #cloud-five {
+      padding: 10px 0px;
+    }
+    .mb-sm-3{
+      margin-bottom: 1.6rem !important;
+    }
+    #cloud-second {
+      padding: 30px 0 30px 0;
+      background-color: rgb(253, 252, 252);
+    }
+    #cloud-five .process-step .step-box .step-num {
+      position: absolute;
+      right: 40px;
+      top: -38px;
+      font-size: 2.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #00000096;
+    }
+  
+    #cloud-five .process-step {
+      padding: 30px 0 30px 20px;
+    }
+    #cloud-second .head_title {
+       font-size: 2.5rem !important;
+    }
+  
+    #cloud-five .process-step .step-box .head-bar {
+      left: -20px;
+    }
+  
+    #cloud-five .process-step .step-box .bottom-bar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #cloud-five .process-step .step-box .content-block {
+      width: 100%;
+      padding-left: 0px;
+    }
+  
+    #cloud-five .process-step .step-box .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 15px 0;
+      text-align: center;
+    }
+    #cloud-four .benefits {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: #ffffff;
+    }
+
+    #cloud-four .solution-item {
+      width: 100%;
+     height: 160px;
+    }
+  
+    #cloud-four .solution-title {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 12px 20px;
+  
+    }
+  }
+
+
+  
+  #cloud-six {
+    padding: 50px 0 30px 0;
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+  }
+  #cloud-six .section-top .head-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    margin: 0 auto;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #cloud-six .section-top .head-slogan {
+    line-height: 1.56em;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 auto;
+    font-family: "sans-serif", sans-serif;
+    color: rgb(70, 63, 63);
+    margin-bottom: 50px;
+  }
+  
+  #cloud-six .section-box {
+    padding-bottom: 50px;
+  }
+  #cloud-six .section-box .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #cloud-six .section-box .left .icon {
+    color: #011e52;
+    font-size: 30px;
+  }
+  #cloud-six .section-box .left .text {
+    width: auto;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.225em;
+    letter-spacing: -0.008em;
+    font-family: "sans-serif", sans-serif;
+  }
+
+  #cloud-six .cloud-services
+  {
+      background-color: #ffffff;
+      font-size: 14px;
+      box-shadow: 0 8px 24px #a9a9a985;
+      padding: 20px;
+      border-radius: 10px;
+     
+  }
+
+  #cloud-six .cloud-automation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    width: 100%
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    #cloud {
+      padding: 30px 0 30px 0;
+    }
+    #cloud .section-top .head-title {
+      font-size: 22px;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    #cloud .section-top .head-slogan {
+      text-align: justify;
+    }
+    #cloud-second .section {
+      flex-direction: column-reverse;
+    }
+    #cloud-second .section .left {
+      width: 100%;
+    }
+    #cloud-second .section .right {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #cloud-third {
+      padding: 0px 0 0px 0;
+    }
+    #cloud-third .section-top {
+      margin-bottom: 30px;
+    }
+    #cloud-third .section-top .head-title {
+      font-size: 24px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #cloud-third .section-top .head-slogan {
+      font-size: 18px;
+      text-align: justify;
+    }
+    #cloud-third .section-content .top-grid {
+      flex-direction: column;
+      gap: 10px;
+    }
+    #cloud-third .section-content .top-grid .left {
+      width: 50%;
+    }
+    #cloud-third .section-content .top-grid .left .image {
+      width: 250px;
+    }
+    #cloud-third .section-content .top-grid .right {
+      width: 100%;
+    }
+    #cloud-third .section-content .top-grid .right .text {
+      font-size: 18px;
+      padding: 10px 0 15px 0;
+    }
+  
+    #cloud-third .section-content .center-grid {
+      flex-direction: column-reverse;
+    }
+    #cloud-third .section-content .center-grid .left {
+      width: 100%;
+    }
+    #cloud-third .section-content .center-grid .left .text {
+      font-size: 18px;
+      text-align: justify;
+    }
+    #cloud-third .section-content .center-grid .right {
+      margin-right: 0px;
+    }
+    #cloud-third .section-content .bottom-grid {
+      flex-direction: column;
+      padding-top: 20px;
+    }
+    #cloud-third .section-content .bottom-grid .right {
+      width: 100%;
+    }
+    #cloud-third .section-content .bottom-grid .right .text {
+      font-size: 18px;
+      text-align: justify;
+    }
+
+
+    #cloud-five {
+      padding: 30px 0;
+    }
+    #cloud-five .section-top {
+      margin-bottom: 30px;
+    }
+    #cloud-five .section-top .head-title {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    #cloud-five .section-top .head-slogan {
+      text-align: justify;
+      font-size: 17px;
+      padding: 0 10px;
+    }
+    #cloud-five .section-box .top {
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    #cloud-five .section-box .top .left {
+      width: 100%;
+    }
+    #cloud-five .section-box .top .right {
+      width: 100%;
+    }
+    #cloud-five .section-box .top .right .text .top {
+      width: 100%;
+      font-size: 22px;
+      padding: 15px 0 0 0;
+      text-align: center;
+    }
+    #cloud-five .section-box .top .right .text .bottom {
+      width: 100%;
+      font-size: 17px;
+      text-align: justify;
+      padding: 0px 10px;
+    }
+    #cloud-five .section-box .bottom {
+      flex-direction: column-reverse;
+    }
+    #cloud-five .section-box .bottom .left {
+      width: 100%;
+    }
+    #cloud-five .section-box .bottom .left .text {
+      justify-content: center;
+      align-items: center;
+    }
+    #cloud-five .section-box .bottom .left .text .top {
+      width: 100%;
+      font-size: 22px;
+      text-align: center;
+      margin: 20px 0;
+    }
+    #cloud-five .section-box .bottom .left .text .bottom {
+      width: 100%;
+      font-size: 17px;
+      text-align: justify;
+      padding: 0 10px;
+    }
+    #cloud-five .section-box .bottom .right {
+      width: 100%;
+    }
+    #cloud-six {
+      padding: 20px 0 30px 0;
+    }
+    #cloud-six .section-top .head-title {
+      font-size: 22px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #cloud-six .section-top .head-slogan {
+      font-size: 17px;
+      text-align: justify;
+      padding: 0 10px;
+      margin-bottom: 30px;
+    }
+    #cloud-six .section-box {
+      padding-bottom: 20px;
+    }
+    #cloud-six .section-box .left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    #cloud-six .section-box2 {
+      padding-bottom: 30px;
+    }
+    #cloud-six .section-box2 .left {
+      gap: 20px;
+    }
+    #cloud-six .section-box2 .left .text {
+      width: 100%;
+    }
+    #cloud-six .section-box3 {
+      padding-bottom: 30px;
+    }
+    #cloud-six .section-box3 .left {
+      gap: 20px;
+    }
+    #cloud-six .section-box3 .left .text {
+      width: 100%;
+    }
+    #cloud-six .section-box4 {
+      padding-bottom: 30px;
+    }
+    #cloud-six .section-box4 .left {
+      gap: 20px;
+    }
+    #cloud-six .section-box4 .left .text {
+      width: 100%;
+    }
+    #cloud-six .section-box4 .right .top {
+      padding-top: 20px;
+    }
+  }
+  
