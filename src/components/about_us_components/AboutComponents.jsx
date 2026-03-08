@@ -48,14 +48,14 @@ function AboutComponents() {
                       Bhopal, Bangalore, Kolkata & Nagpur who are passionate in
                       providing innovative IT Services & solutions to businesses.
                       Our team brings together diverse skills and experience to
-                      deliver Custom website, Mobile Applications, Customized
-                      software, GXP & GMP Software, Pharma software, Industrial
-                      Software, Search Engine Optimization and digital
+                      deliver custom website development, mobile applications development, customized
+                      software development, GXP & GMP Software, Pharma software, Industrial
+                      software, search engine optimization, data analytics, AI/ML service, cloud computing and digital
                       marketing services. We are committed to staying ahead of the
                       latest trends and technology to provide cutting-edge solutions
                       that meet the specific needs of our clients. Let us help you
                       take your business to the next level with our reliable and
-                      cost-effective IT services.
+                      cost-effective IT services and solution.
                     </div>
                     <div className="value-block">
                       <div className="value-icon">
@@ -65,7 +65,7 @@ function AboutComponents() {
                         <div className="value-head">Dedicated Development Team</div>
                         <div className="value-data">
                           Our expertise and commitment to excellence have helped us build
-                          a reputation as a trusted provider of innovative IT solutions.
+                          a reputation as a trusted provider of innovative IT solutions and service across globe.
                         </div>
                       </div>
                     </div>
