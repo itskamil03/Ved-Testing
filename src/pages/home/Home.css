@@ -2988,4 +2988,135 @@ html.home-fullpage-snap {
     display: none !important;
 
   }
+<<<<<<< HEAD
+=======
+}
+
+.custom-head {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important; /* Forces container to grow with text */
+  overflow: visible !important; 
+}
+
+.custom-head > h2 {
+  /* 1. Reset Typography */
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.3 !important;
+  margin-bottom: 10px;
+  
+  /* 2. Force Wrap Mechanics */
+  display: block !important;
+  width: 100% !important;
+  white-space: normal !important;   /* Breaks the 'one-line' rule */
+  overflow-wrap: break-word !important; 
+  word-wrap: break-word !important;
+  
+  /* 3. Box Management */
+  box-sizing: border-box !important;
+  height: auto !important;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-head > h2 {
+    font-size: 2rem !important; /* Scale down significantly */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .custom-head > h2 {
+    /* At 576px, 'Improve and Innovate' needs space */
+    font-size: 2.8rem !important; 
+    padding: 10px !important;
+    text-align: left;
+  }
+}
+
+
+.lifeatvedthird-custom-head > h2 {
+  /* 1. Prevent fixed heights that cause clipping */
+  height: auto;
+  font-weight: bold;
+  
+  /* 2. Allow long words to break if they hit the edge */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  
+  /* 3. Scale the font down (3.6rem is too big for mobile) */
+  font-size: 3.2rem;
+  line-height: 1.3;
+}
+
+@media screen and (max-width: 576px) {
+  .lifeatvedthird-custom-head > h2 {
+    /* Reduce size significantly for mobile */
+    font-size: 2.8rem !important; 
+    padding: 0 10px; /* Give a little breathing room on the sides */
+    text-align: left;
+  }
+}
+
+
+
+
+
+
+.why-choose-right {
+    /* 1. Ensure the container can grow vertically as text wraps */
+    height: auto !important;
+    min-height: min-content;
+    
+    /* 2. Remove any restrictions that stop text from wrapping */
+    display: block !important; 
+    overflow: visible !important;
+    width: 100% !important;
+}
+
+.why-choose-right > h2 {
+    /* 3. Force font size to a safe mobile limit */
+    font-size: clamp(1.8rem, 6vw, 3.2rem) !important;
+    
+    /* 4. Force wrapping behavior */
+    white-space: normal !important; /* Overrides any 'nowrap' */
+    word-break: keep-all !important; /* Keeps words whole but moves them to next line */
+    overflow-wrap: break-word !important; 
+    
+    /* 5. Ensure line height gives space for the second line */
+    line-height: 1.4 !important;
+    display: block !important;
+    margin: 0 0 15px 0 !important;
+    font-weight: bold !important;
+}
+
+@media screen and (max-width: 576px) {
+    .why-choose-right > h2 {
+        /* If it's still cutting, the font is just too big for the screen width */
+        font-size: 2.8rem !important; 
+        font-weight: bold !important;
+    }
+}
+
+#innovatedata{
+  padding-top: 0px;
+}
+.tab-content{
+  margin-bottom: -60px;
+}
+#solutions{
+  padding-top:0px;
+  
+}
+#internship-data{
+  padding-top: 0px;
+}
+#lifeatvedthird{
+  padding-top: 0px;
+  margin-top: -80px;
+}
+#industries{
+  padding-top:0px;
+  margin-top:-80px
+>>>>>>> 594b902 (Added new images)
 }

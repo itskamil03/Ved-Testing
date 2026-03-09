@@ -114,7 +114,7 @@ function Home({ target, label }) {
       title: "Web Development",
       description:
         "Building a powerful digital front door for your business with modern, responsive websites that load fast, tell your brand story clearly, and turn visitors into qualified leads. From corporate sites to high-performing landing pages, we design and develop experiences that support your marketing and sales goals.",
-      image: "image/home/service/Web_development.jpg",
+      image: "/website.png",
       link: "/WebsiteDevelopment",
     },
     {
@@ -124,7 +124,7 @@ function Home({ target, label }) {
       title: "UI/UX Design",
       description:
         "Crafting seamless, intuitive digital experiences with user-centred UI/UX design that keeps customers engaged at every step. We combine research, journey mapping, wireframes, and high-fidelity interfaces to design products that are easy to use, visually striking, and optimised for higher conversions.",
-      image: "image/home/service/Ui_ux.jpg",
+      image: "/uiux2.png",
       link: "/UIUXDesign",
     },
     {
@@ -134,7 +134,7 @@ function Home({ target, label }) {
       title: "Application Development",
       description:
         "Developing secure, scalable mobile applications that keep your business always within reach of your customers. Whether it’s native, hybrid, or cross‑platform, we build apps with smooth performance, clean interfaces, and robust backends that integrate seamlessly with your existing systems.",
-      image: "image/home/service/App_development.jpg",
+      image: "application.jpg",
       link: "/ApplicationDevelopment",
     },
     {
@@ -144,7 +144,7 @@ function Home({ target, label }) {
       title: "Cloud Services",
       description:
         "Transforming your infrastructure with cloud-first solutions that improve scalability, security, and uptime. From migration and optimisation to managed cloud operations, we help you reduce costs, automate deployments, and keep your applications highly available across regions and devices.",
-      image: "image/home/service/Custom_software.jpg",
+      image: "cloud.webp",
       link: "/CloudServices",
     },
     {
@@ -164,7 +164,7 @@ function Home({ target, label }) {
       title: "Support & Maintenance",
       description:
         "Providing proactive support and maintenance so your applications stay secure, updated, and bug‑free. From performance monitoring and backups to feature enhancements and emergency fixes, our team ensures your digital platforms continue to run smoothly as your business grows.",
-      image: "image/home/service/Support_maintainence.jpg",
+      image: "/support.avif",
       link: "/SupportMaintenance",
     },
   ];
