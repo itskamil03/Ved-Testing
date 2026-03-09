@@ -473,9 +473,9 @@ function Header() {
                                   onClick={() => setMenubtn(!menubtn)}
                                   className="megadrop-item-link"
                                 >
-                                  <div className="megadrop-item-about">
-                                    <FaWarehouse />
-                                    &nbsp;&nbsp;
+                                  <div className="megadrop-item-about ">
+                                    <FaWarehouse  />
+                                    
                                     <strong>
                                       Customer Relationship Management (CRM)
                                     </strong>
@@ -1027,3 +1027,4 @@ function Header() {
 }
 
 export default Header;
+
