@@ -114,11 +114,9 @@ function Home({ target, label }) {
       title: "Web Development",
       description:
         "Building a powerful digital front door for your business with modern, responsive websites that load fast, tell your brand story clearly, and turn visitors into qualified leads. From corporate sites to high-performing landing pages, we design and develop experiences that support your marketing and sales goals.",
-<<<<<<< HEAD
+
       image: "/website.png",
-=======
-      image: "image/home/service/Web_development.jpg",
->>>>>>> master
+
       link: "/WebsiteDevelopment",
     },
     {
@@ -128,11 +126,9 @@ function Home({ target, label }) {
       title: "UI/UX Design",
       description:
         "Crafting seamless, intuitive digital experiences with user-centred UI/UX design that keeps customers engaged at every step. We combine research, journey mapping, wireframes, and high-fidelity interfaces to design products that are easy to use, visually striking, and optimised for higher conversions.",
-<<<<<<< HEAD
+
       image: "/uiux2.png",
-=======
-      image: "image/home/service/Ui_ux.jpg",
->>>>>>> master
+
       link: "/UIUXDesign",
     },
     {
@@ -142,11 +138,10 @@ function Home({ target, label }) {
       title: "Application Development",
       description:
         "Developing secure, scalable mobile applications that keep your business always within reach of your customers. Whether it’s native, hybrid, or cross‑platform, we build apps with smooth performance, clean interfaces, and robust backends that integrate seamlessly with your existing systems.",
-<<<<<<< HEAD
+
       image: "application.jpg",
-=======
-      image: "image/home/service/App_development.jpg",
->>>>>>> master
+
+      
       link: "/ApplicationDevelopment",
     },
     {
@@ -156,11 +151,9 @@ function Home({ target, label }) {
       title: "Cloud Services",
       description:
         "Transforming your infrastructure with cloud-first solutions that improve scalability, security, and uptime. From migration and optimisation to managed cloud operations, we help you reduce costs, automate deployments, and keep your applications highly available across regions and devices.",
-<<<<<<< HEAD
+
       image: "cloud.webp",
-=======
-      image: "image/home/service/Custom_software.jpg",
->>>>>>> master
+
       link: "/CloudServices",
     },
     {
@@ -180,11 +173,8 @@ function Home({ target, label }) {
       title: "Support & Maintenance",
       description:
         "Providing proactive support and maintenance so your applications stay secure, updated, and bug‑free. From performance monitoring and backups to feature enhancements and emergency fixes, our team ensures your digital platforms continue to run smoothly as your business grows.",
-<<<<<<< HEAD
       image: "/support.avif",
-=======
-      image: "image/home/service/Support_maintainence.jpg",
->>>>>>> master
+
       link: "/SupportMaintenance",
     },
   ];
@@ -690,12 +680,7 @@ function Home({ target, label }) {
             <div className="section-head" data-aos="fade-down">
               <div className="custom-head">
                 <div className="circle"></div>
-<<<<<<< HEAD
                 <h2 className="head-title bg-light">
-=======
-                <h2 className=" bg-light"
-                >
->>>>>>> master
                   Improve and Innovate with the Tech Trends
                 </h2>
               </div>
@@ -1509,11 +1494,7 @@ function Home({ target, label }) {
           <div className="container">
             <div className="lifeatvedthird-section-head" data-aos="fade-down">
               <div className="lifeatvedthird-custom-head">
-<<<<<<< HEAD
                 <h2 className="head_title">Training Verticals At Venturing Digitally</h2>
-=======
-                <h2 className="">Training Verticals At Venturing Digitally</h2>
->>>>>>> master
               </div>
             </div>
 
@@ -1559,15 +1540,9 @@ function Home({ target, label }) {
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-home-img">
                     <img
-<<<<<<< HEAD
                       src="icons/fullstackdevelopment.webp"
                       alt="fullstack-training"
                       className="w-100 h-100"
-=======
-                      src="/fullstack3.jpg"
-                      alt="fullstack-training"
-                      className="w-100 h-100 object-contain"
->>>>>>> master
                       loading="eager" fetchpriority="high"
                     />
                   </div>
@@ -1601,11 +1576,7 @@ function Home({ target, label }) {
                 <div className="lifeatvedthird-section-bodybox">
                   <div className="lifeatvedthird-section-body-home-img">
                     <img
-<<<<<<< HEAD
                       src="icons/ai-ml.jpg"
-=======
-                      src="/ai.webp"
->>>>>>> master
                       alt="ai-ml-training"
                       className="w-100 h-100"
                       loading="eager" fetchpriority="high"
@@ -1911,11 +1882,7 @@ function Home({ target, label }) {
               </div>
 
               <div className="why-choose-right" data-aos="fade-left">
-<<<<<<< HEAD
                 <h2 className="why-choose-heading">Why Choose Venturing Digitally?</h2>
-=======
-                <h2 className="">Why Choose Venturing Digitally?</h2>
->>>>>>> master
                 <p className="why-choose-intro">
                   With over 3+ years of experience in the software industry, we empower businesses to thrive in the digital world with tailor-made, high-quality solutions. Our expert team harnesses cutting-edge technology and industry best practices to deliver innovative, scalable, and efficient software solutions.
                 </p>

@@ -11,11 +11,7 @@ select:focus {
 
 .contact-forms {
   position: relative;
-<<<<<<< HEAD
-  height: 53rem;
-=======
   /* height: 53rem; */
->>>>>>> master
   background: linear-gradient(55deg, #1c1d5d 30%, #ffffff 50%);
   padding-bottom: 30px !important;
   border: 1px solid rgba(39, 40, 109, 0.3);
@@ -62,10 +58,7 @@ select:focus {
 .form-container-form {
   text-align: left;
   width: 45rem;
-<<<<<<< HEAD
-=======
   padding: 10px 0px 10px 0px;
->>>>>>> master
 }
 
 .contact-forms .input-block .input-head {
@@ -104,11 +97,7 @@ select:focus {
   font-size: 1.5rem;
   font-family: "sans-serif", sans-serif;
   resize: vertical;
-<<<<<<< HEAD
-  min-height: 100px;
-=======
   /* min-height: 100px; */
->>>>>>> master
   transition: border-color 0.2s;
 }
 
@@ -187,11 +176,7 @@ select:focus {
 }
 @media screen and (max-width: 992px) {
   .contact-forms {
-<<<<<<< HEAD
-    height: 50rem;
-=======
     /* height: 50rem; */
->>>>>>> master
     width: 100%;
   }
   .form-container-main {
@@ -217,11 +202,7 @@ select:focus {
 }
 @media screen and (max-width: 768px) {
   .contact-forms {
-<<<<<<< HEAD
-    height: 50rem;
-=======
     /* height: 50rem; */
->>>>>>> master
     width: 100%;
   }
   .form-container-main {
@@ -246,12 +227,8 @@ select:focus {
 }
 @media screen and (max-width: 576px) {
   .contact-forms {
-<<<<<<< HEAD
-    height: 63rem !important;
-=======
     /* height: 63rem !important; */
     padding: 4px;
->>>>>>> master
   }
   .form-container-main {
     width: 100%;
@@ -274,10 +251,7 @@ select:focus {
   .form-container-form {
     text-align: left;
     width: 100%;
-<<<<<<< HEAD
-=======
     padding: 10px;
->>>>>>> master
   }
 }
 

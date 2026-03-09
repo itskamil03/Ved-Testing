@@ -44,12 +44,7 @@ function HomeHeroImg() {
             <img
               src="image/home-slider/Slider_1.jpeg"
               alt="..."
-<<<<<<< HEAD
               className="homeheroimg-img"
-=======
-              fill
-              className="homeheroimg-img object-contain"
->>>>>>> master
               loading="eager"
               fetchpriority="high"
             />

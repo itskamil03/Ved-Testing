@@ -13,10 +13,7 @@
   min-height: 380px;
   overflow: visible;
   z-index: 1;
-<<<<<<< HEAD
-=======
   padding-left: 50px;
->>>>>>> master
 }
 
 /* Circle 1: Large gradient circle - outer */
@@ -255,21 +252,13 @@
   font-weight: 800;
   color: #27286d;
   margin: 0 0 24px 0;
-<<<<<<< HEAD
-  padding-left: 55px;
-=======
   /* padding-left: 55px; */
->>>>>>> master
   line-height: 1.2;
   letter-spacing: -0.5px;
   position: relative;
 }
 
-<<<<<<< HEAD
-.about-content-head:after {
-=======
 /* .about-content-head:after {
->>>>>>> master
   content: "";
   background-color: #27286d;
   width: 50px;
@@ -277,11 +266,7 @@
   position: absolute;
   top: calc(50% - 1px);
   left: 0;
-<<<<<<< HEAD
-}
-=======
 } */
->>>>>>> master
 .about-data {
   color: #4e4e4e;
   font-size: 1.55rem;
@@ -375,11 +360,8 @@
   .about-image-wrapper {
     min-height: 320px;
     margin-bottom: 30px;
-<<<<<<< HEAD
-=======
     padding: 50px;
     padding-right: 10px;
->>>>>>> master
   }
 
   .about-visual-circle {
@@ -403,10 +385,7 @@
 
   .about-content {
     padding-left: 0;
-<<<<<<< HEAD
-=======
     margin-top: 120px;
->>>>>>> master
   }
 
   .about-content-head {

@@ -6,11 +6,7 @@ import { Link } from "react-router-dom";
 function AboutComponents() {
   return (
     <>
-<<<<<<< HEAD
       <section id="about">
-=======
-      <section id="about ">
->>>>>>> master
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
@@ -21,11 +17,7 @@ function AboutComponents() {
                     <div className="about-visual-circle">
                       <div className="about-inner-circle" />
                       <div className="about-inner-text">
-<<<<<<< HEAD
                         <div className="about-inner-tagline">Trusted Digital Partner</div>
-=======
-                        <div className="about-inner-tagline ">Trusted Digital Partner</div>
->>>>>>> master
                         <div className="about-inner-main">VENTURING DIGITALLY</div>
                       </div>
                       <div className="about-years-center">
@@ -49,36 +41,21 @@ function AboutComponents() {
                 </div>
           
                 <div className="col-lg-6" data-aos="fade-left" data-aos-duration="600">
-<<<<<<< HEAD
                   <div className="about-content">
-=======
-                  <div className="about-content"
-                 >
->>>>>>> master
                     <h3 className="about-content-head">Venturing Digitally Pvt. Ltd.</h3>
                     <div className="about-data page_title">
                       Venturing Digitally is an IT & software company based in Jamshedpur,
                       Bhopal, Bangalore, Kolkata & Nagpur who are passionate in
                       providing innovative IT Services & solutions to businesses.
                       Our team brings together diverse skills and experience to
-<<<<<<< HEAD
                       deliver custom website development, mobile applications development, customized
                       software development, GXP & GMP Software, Pharma software, Industrial
                       software, search engine optimization, data analytics, AI/ML service, cloud computing and digital
-=======
-                      deliver Custom website, Mobile Applications, Customized
-                      software, GXP & GMP Software, Pharma software, Industrial
-                      Software, Search Engine Optimization and digital
->>>>>>> master
                       marketing services. We are committed to staying ahead of the
                       latest trends and technology to provide cutting-edge solutions
                       that meet the specific needs of our clients. Let us help you
                       take your business to the next level with our reliable and
-<<<<<<< HEAD
                       cost-effective IT services and solution.
-=======
-                      cost-effective IT services.
->>>>>>> master
                     </div>
                     <div className="value-block">
                       <div className="value-icon">
@@ -88,11 +65,7 @@ function AboutComponents() {
                         <div className="value-head">Dedicated Development Team</div>
                         <div className="value-data">
                           Our expertise and commitment to excellence have helped us build
-<<<<<<< HEAD
                           a reputation as a trusted provider of innovative IT solutions and service across globe.
-=======
-                          a reputation as a trusted provider of innovative IT solutions.
->>>>>>> master
                         </div>
                       </div>
                     </div>

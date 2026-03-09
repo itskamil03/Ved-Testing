@@ -175,11 +175,7 @@
 .whatdo-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-<<<<<<< HEAD
-  gap: 0;
-=======
   gap: 10px;
->>>>>>> master
 }
 
 .whatdo-card {
@@ -301,12 +297,9 @@
 
 
 
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> master
 /* <----------------------------------- Our Expertise -----------------------> */
 
 #latest_updates {
@@ -1272,10 +1265,7 @@ text-decoration: underline !important;
 .lifeatvedthird-section-body-home {
   height: 280px;
   display: flex;
-<<<<<<< HEAD
-=======
   padding: 10px;
->>>>>>> master
 }
 
 .lifeatvedthird-section-bodybox {
@@ -2244,10 +2234,7 @@ main {
   }
   .bg-light {
     padding: 20px 0px !important;
-<<<<<<< HEAD
-=======
     
->>>>>>> master
   }
   #who_we_are {
     padding: 20px 16px !important;
@@ -2277,10 +2264,7 @@ main {
    }
    .custom-head h2 {
     padding: 1.2rem 0px !important;
-<<<<<<< HEAD
-=======
     /* font-size: 10rem !important; */
->>>>>>> master
    }
    .milestone-box {
     margin-bottom: 1rem !important;
@@ -2422,11 +2406,7 @@ html.home-fullpage-snap {
 
 /* Slick slider spacing so right side cut na lage */
 .cservice-slider .slick-list {
-<<<<<<< HEAD
-  padding: 0 24px;
-=======
   /* padding: 0 24px; */
->>>>>>> master
   box-sizing: border-box;
 }
 
@@ -3014,11 +2994,7 @@ html.home-fullpage-snap {
     display: none !important;
 
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> master
+
 }
 
 .custom-head {
@@ -3125,7 +3101,6 @@ html.home-fullpage-snap {
         font-size: 2.8rem !important; 
         font-weight: bold !important;
     }
-<<<<<<< HEAD
 }
 
 #innovatedata{
@@ -3148,7 +3123,5 @@ html.home-fullpage-snap {
 #industries{
   padding-top:0px;
   margin-top:-80px
->>>>>>> 594b902 (Added new images)
-=======
->>>>>>> master
+
 }
