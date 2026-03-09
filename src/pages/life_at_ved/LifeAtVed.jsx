@@ -631,7 +631,11 @@ function LifeAtVed() {
             <div className="lifeatvedfirst-section-head">
               <div className="lifeatvedfirst-custom-head">
                 <div className="lifeatvedfirst-head-title">
+<<<<<<< HEAD
                  Your Journey Starts Here
+=======
+                  Training & Internship at Venturing Digitally
+>>>>>>> master
                 </div>
               </div>
 
@@ -644,7 +648,11 @@ function LifeAtVed() {
               <div className="row" style={{display:"flex", alignItems:"center"}}>
                 <div className="col-lg-6">
                   <div className="lifeatvedfirst-content-head">
+<<<<<<< HEAD
                      Learn, Grow, and Build Your Career with Us
+=======
+                    Training & Internship
+>>>>>>> master
                   </div>
                   <div className="lifeatvedfirst-content-data">
                     Venturing Digitally Pvt Ltd is dedicated to shaping the future of digital professionals through focused training and internships. Our programs are tailored for 

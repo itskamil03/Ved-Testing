@@ -73,18 +73,42 @@ function Header() {
               <div className="header-container">
                 {color ? (
                   <NavLink to="/">
+<<<<<<< HEAD
                     <img loading="eager" fetchpriority="high" src={Logo} alt="logo" className="header-logo"   />
                   </NavLink>
                 ) : (
                   <NavLink to="/">
                     <img loading="eager" fetchpriority="high" src={Logo1} alt="logo" className="header-logo"  />
+=======
+                    <img
+                      loading="eager"
+                      fetchpriority="high"
+                      src={Logo}
+                      alt="logo"
+                      className="header-logo"
+                    />
+                  </NavLink>
+                ) : (
+                  <NavLink to="/">
+                    <img
+                      loading="eager"
+                      fetchpriority="high"
+                      src={Logo1}
+                      alt="logo"
+                      className="header-logo"
+                    />
+>>>>>>> master
                   </NavLink>
                 )}
                 <nav className="header-navbar">
                   <ul
                     className={
                       menubtn
+<<<<<<< HEAD
                         ? "header-navbar-list active "
+=======
+                        ? "header-navbar-list active"
+>>>>>>> master
                         : "header-navbar-list"
                     }
                   >
@@ -97,8 +121,19 @@ function Header() {
                             : "header-navbar-link header-navbar-link-bg"
                         }
                       >
+<<<<<<< HEAD
                         Company&nbsp;
                         <FaChevronDown />
+=======
+                        <span className="flex items-center justify-center">
+                          {" "}
+                          {/* Add a wrapper with flex */}
+                          Company&nbsp;
+                          <span>
+                            <FaChevronDown />
+                          </span>
+                        </span>
+>>>>>>> master
                       </NavLink>
 
                       <div className="megadrop">
@@ -107,11 +142,20 @@ function Header() {
                             <div className="drop-img-grid">
                               <div className="img-item">
                                 <div className="image">
+<<<<<<< HEAD
                                   <img loading="eager" fetchpriority="high"
                                     src="/image/header/ch1.jpg"
                                     alt="..."
                                     className="w-100 h-100"
                                      
+=======
+                                  <img
+                                    loading="eager"
+                                    fetchpriority="high"
+                                    src="/image/header/ch1.jpg"
+                                    alt="..."
+                                    className="w-100 h-100"
+>>>>>>> master
                                   />
                                 </div>
                                 <div className="text">
@@ -121,11 +165,20 @@ function Header() {
                               </div>
                               <div className="img-item">
                                 <div className="image">
+<<<<<<< HEAD
                                   <img loading="eager" fetchpriority="high"
                                     src="/image/header/ch2.jpg"
                                     alt="..."
                                     className="w-100 h-100"
                                      
+=======
+                                  <img
+                                    loading="eager"
+                                    fetchpriority="high"
+                                    src="/image/header/ch2.jpg"
+                                    alt="..."
+                                    className="w-100 h-100"
+>>>>>>> master
                                   />
                                 </div>
                                 <div className="text">
@@ -199,7 +252,11 @@ function Header() {
                     </li>
                     {/* <---------------------------------------------------- Services ---------------------------------------------------------> */}
                     <li>
+<<<<<<< HEAD
                       <NavLink
+=======
+                        <NavLink
+>>>>>>> master
                         to=""
                         className={
                           color
@@ -207,8 +264,19 @@ function Header() {
                             : "header-navbar-link header-navbar-link-bg"
                         }
                       >
+<<<<<<< HEAD
                         Services&nbsp;
                         <FaChevronDown />
+=======
+                        <span className="flex items-center justify-center">
+                          {" "}
+                          {/* Add a wrapper with flex */}
+                          Services&nbsp;
+                          <span>
+                            <FaChevronDown />
+                          </span>
+                        </span>
+>>>>>>> master
                       </NavLink>
 
                       <div className="service-grid">
@@ -395,7 +463,10 @@ function Header() {
                                 <strong>Data Analytics</strong>
                               </div>
                             </NavLink>
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
                           </div>
                         </div>
                       </div>
@@ -410,8 +481,19 @@ function Header() {
                             : "header-navbar-link header-navbar-link-bg"
                         }
                       >
+<<<<<<< HEAD
                         Solutions&nbsp;
                         <FaChevronDown />
+=======
+                        <span className="flex items-center justify-center">
+                          {" "}
+                          {/* Add a wrapper with flex */}
+                          Solutions&nbsp;
+                          <span>
+                            <FaChevronDown />
+                          </span>
+                        </span>
+>>>>>>> master
                       </NavLink>
 
                       <div className="megadrop">
@@ -421,11 +503,20 @@ function Header() {
                               <div className="col-lg-6">
                                 <div className="img-item">
                                   <div className="image-solution-header">
+<<<<<<< HEAD
                                     <img loading="eager" fetchpriority="high"
                                       src="/image/header/sh.png"
                                       alt="..."
                                       className="w-100 h-100"
                                        
+=======
+                                    <img
+                                      loading="eager"
+                                      fetchpriority="high"
+                                      src="/image/header/sh.png"
+                                      alt="..."
+                                      className="w-100 h-100"
+>>>>>>> master
                                     />
                                   </div>
                                   <div className="text">
@@ -444,7 +535,13 @@ function Header() {
                                   <div className="megadrop-item-about">
                                     <FaWarehouse />
                                     &nbsp;&nbsp;
+<<<<<<< HEAD
                                     <strong>Customer Relationship Management (CRM)</strong>
+=======
+                                    <strong>
+                                      Customer Relationship Management (CRM)
+                                    </strong>
+>>>>>>> master
                                   </div>
                                 </NavLink>
 
@@ -456,7 +553,13 @@ function Header() {
                                   <div className="megadrop-item-about">
                                     <CgListTree />
                                     &nbsp;&nbsp;
+<<<<<<< HEAD
                                     <strong>Document Management System (DMS)</strong>
+=======
+                                    <strong>
+                                      Document Management System (DMS)
+                                    </strong>
+>>>>>>> master
                                   </div>
                                 </NavLink>
                                 <NavLink
@@ -467,7 +570,13 @@ function Header() {
                                   <div className="megadrop-item-about">
                                     <FaCentos />
                                     &nbsp;&nbsp;
+<<<<<<< HEAD
                                     <strong>Quality Management System (QMS)</strong>
+=======
+                                    <strong>
+                                      Quality Management System (QMS)
+                                    </strong>
+>>>>>>> master
                                   </div>
                                 </NavLink>
                                 <NavLink
@@ -515,7 +624,13 @@ function Header() {
                                   <div className="megadrop-item-about">
                                     <FaUbuntu />
                                     &nbsp;&nbsp;
+<<<<<<< HEAD
                                     <strong>Operation Management Software</strong>
+=======
+                                    <strong>
+                                      Operation Management Software
+                                    </strong>
+>>>>>>> master
                                   </div>
                                 </NavLink>
 
@@ -539,7 +654,13 @@ function Header() {
                                   <div className="megadrop-item-about">
                                     <FaAccusoft />
                                     &nbsp;&nbsp;
+<<<<<<< HEAD
                                     <strong>Content Management System (CMS)</strong>
+=======
+                                    <strong>
+                                      Content Management System (CMS)
+                                    </strong>
+>>>>>>> master
                                   </div>
                                 </NavLink>
 
@@ -551,7 +672,13 @@ function Header() {
                                   <div className="megadrop-item-about">
                                     <IoIosPeople />
                                     &nbsp;&nbsp;
+<<<<<<< HEAD
                                     <strong>Human Resource Management System (HRMS)</strong>
+=======
+                                    <strong>
+                                      Human Resource Management System (HRMS)
+                                    </strong>
+>>>>>>> master
                                   </div>
                                 </NavLink>
                                 <NavLink
@@ -583,8 +710,19 @@ function Header() {
                             : "header-navbar-link header-navbar-link-bg"
                         }
                       >
+<<<<<<< HEAD
                         Industries&nbsp;
                         <FaChevronDown />
+=======
+                        <span className="flex items-center justify-center">
+                          {" "}
+                          {/* Add a wrapper with flex */}
+                          Industries&nbsp;
+                          <span>
+                            <FaChevronDown />
+                          </span>
+                        </span>
+>>>>>>> master
                       </NavLink>
                       {/* <--------------------------------------- mega drop-down Industries ----------------------------------------------> */}
 
@@ -597,11 +735,20 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
+<<<<<<< HEAD
                                 <img loading="eager" fetchpriority="high"
                                   src="/images/career/construction.png"
                                   alt="..."
                                   className="w-100 h-100"
                                    
+=======
+                                <img
+                                  loading="eager"
+                                  fetchpriority="high"
+                                  src="/images/career/construction.png"
+                                  alt="..."
+                                  className="w-100 h-100"
+>>>>>>> master
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -616,11 +763,20 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
+<<<<<<< HEAD
                                 <img loading="eager" fetchpriority="high"
                                   src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                    
+=======
+                                <img
+                                  loading="eager"
+                                  fetchpriority="high"
+                                  src="/images/career/c1.jpg"
+                                  alt="..."
+                                  className="w-100 h-100"
+>>>>>>> master
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -635,11 +791,20 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
+<<<<<<< HEAD
                                 <img loading="eager" fetchpriority="high"
                                   src="/images/career/manufacturing.png"
                                   alt="..."
                                   className="w-100 h-100"
                                    
+=======
+                                <img
+                                  loading="eager"
+                                  fetchpriority="high"
+                                  src="/images/career/manufacturing.png"
+                                  alt="..."
+                                  className="w-100 h-100"
+>>>>>>> master
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -654,11 +819,20 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
+<<<<<<< HEAD
                                 <img loading="eager" fetchpriority="high"
                                   src="/images/career/healthcare.png"
                                   alt="..."
                                   className="w-100 h-100"
                                    
+=======
+                                <img
+                                  loading="eager"
+                                  fetchpriority="high"
+                                  src="/images/career/healthcare.png"
+                                  alt="..."
+                                  className="w-100 h-100"
+>>>>>>> master
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -673,11 +847,20 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
+<<<<<<< HEAD
                                 <img loading="eager" fetchpriority="high"
                                   src="/images/career/travel.png"
                                   alt="..."
                                   className="w-100 h-100"
                                    
+=======
+                                <img
+                                  loading="eager"
+                                  fetchpriority="high"
+                                  src="/images/career/travel.png"
+                                  alt="..."
+                                  className="w-100 h-100"
+>>>>>>> master
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -692,11 +875,20 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
+<<<<<<< HEAD
                                 <img loading="eager" fetchpriority="high"
                                   src="/images/career/c1.jpg"
                                   alt="..."
                                   className="w-100 h-100"
                                    
+=======
+                                <img
+                                  loading="eager"
+                                  fetchpriority="high"
+                                  src="/images/career/c1.jpg"
+                                  alt="..."
+                                  className="w-100 h-100"
+>>>>>>> master
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -711,11 +903,20 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
+<<<<<<< HEAD
                                 <img loading="eager" fetchpriority="high"
                                   src="/images/career/ecommerce.png"
                                   alt="..."
                                   className="w-100 h-100"
                                    
+=======
+                                <img
+                                  loading="eager"
+                                  fetchpriority="high"
+                                  src="/images/career/ecommerce.png"
+                                  alt="..."
+                                  className="w-100 h-100"
+>>>>>>> master
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -730,11 +931,20 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
+<<<<<<< HEAD
                                 <img loading="eager" fetchpriority="high"
                                   src="/images/career/transportation.png"
                                   alt="..."
                                   className="w-100 h-100"
                                    
+=======
+                                <img
+                                  loading="eager"
+                                  fetchpriority="high"
+                                  src="/images/career/transportation.png"
+                                  alt="..."
+                                  className="w-100 h-100"
+>>>>>>> master
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -749,11 +959,20 @@ function Header() {
                               className="megadrop-item-link"
                             >
                               <div className="image">
+<<<<<<< HEAD
                                 <img loading="eager" fetchpriority="high"
                                   src="/images/career/school.png"
                                   alt="..."
                                   className="w-100 h-100"
                                    
+=======
+                                <img
+                                  loading="eager"
+                                  fetchpriority="high"
+                                  src="/images/career/school.png"
+                                  alt="..."
+                                  className="w-100 h-100"
+>>>>>>> master
                                 />
                               </div>
                               <div className="megadrop-item-about">
@@ -767,7 +986,11 @@ function Header() {
                     </li>
                     {/* <------------------------------------------------ expolore & learn ----------------------> */}
                     <li>
+<<<<<<< HEAD
                       <NavLink
+=======
+                        <NavLink
+>>>>>>> master
                         to=""
                         className={
                           color
@@ -775,8 +998,19 @@ function Header() {
                             : "header-navbar-link header-navbar-link-bg"
                         }
                       >
+<<<<<<< HEAD
                         Explore & Learn&nbsp;
                         <FaChevronDown />
+=======
+                        <span className="flex items-center justify-center">
+                          {" "}
+                          {/* Add a wrapper with flex */}
+                          Explore & Learn&nbsp;
+                          <span>
+                            <FaChevronDown />
+                          </span>
+                        </span>
+>>>>>>> master
                       </NavLink>
                       {/* <--------------------------------------- Explore & Learn Megamenu ----------------------------------------------> */}
                       <div className="megadrop">
@@ -788,11 +1022,20 @@ function Header() {
                               className="megadrop-item-link megadrop-item-about"
                             >
                               <div className="image">
+<<<<<<< HEAD
                                 <img loading="eager" fetchpriority="high"
                                   src="/image/header/blog.png"
                                   alt="..."
                                   className="w-100 h-100"
                                    
+=======
+                                <img
+                                  loading="eager"
+                                  fetchpriority="high"
+                                  src="/image/header/blog.png"
+                                  alt="..."
+                                  className="w-100 h-100"
+>>>>>>> master
                                 />
                               </div>
                               <div className="content">
@@ -810,11 +1053,20 @@ function Header() {
                               className="megadrop-item-link megadrop-item-about"
                             >
                               <div className="image">
+<<<<<<< HEAD
                                 <img loading="eager" fetchpriority="high"
                                   src="/image/header/insight.png"
                                   alt="..."
                                   className="w-100 h-100"
                                    
+=======
+                                <img
+                                  loading="eager"
+                                  fetchpriority="high"
+                                  src="/image/header/insight.png"
+                                  alt="..."
+                                  className="w-100 h-100"
+>>>>>>> master
                                 />
                               </div>
                               <div className="content">
@@ -833,11 +1085,20 @@ function Header() {
                               className="megadrop-item-link megadrop-item-about"
                             >
                               <div className="image">
+<<<<<<< HEAD
                                 <img loading="eager" fetchpriority="high"
                                   src="/image/header/career.png"
                                   alt="..."
                                   className="w-100 h-100"
                                    
+=======
+                                <img
+                                  loading="eager"
+                                  fetchpriority="high"
+                                  src="/image/header/career.png"
+                                  alt="..."
+                                  className="w-100 h-100"
+>>>>>>> master
                                 />
                               </div>
                               <div className="content">
@@ -857,11 +1118,20 @@ function Header() {
                             >
                               <div className="megadrop-item-about">
                                 <div className="image">
+<<<<<<< HEAD
                                   <img loading="eager" fetchpriority="high"
                                     src="/images/career/c1.jpg"
                                     alt="..."
                                     className="w-100 h-100"
                                      
+=======
+                                  <img
+                                    loading="eager"
+                                    fetchpriority="high"
+                                    src="/images/career/c1.jpg"
+                                    alt="..."
+                                    className="w-100 h-100"
+>>>>>>> master
                                   />
                                 </div>
                                 <div className="content">

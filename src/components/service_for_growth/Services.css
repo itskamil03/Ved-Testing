@@ -56,6 +56,10 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+<<<<<<< HEAD
+=======
+  /* padding: 10px; */
+>>>>>>> master
 }
 
 .cservice-card-inner {
