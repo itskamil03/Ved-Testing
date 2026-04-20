@@ -458,6 +458,12 @@ function LifeAtVed() {
     location: ""
   });
 
+  const [certificateForm, setCertificateForm] = useState({
+    candidateName: "",
+    registrationNumber: "",
+  });
+  const [generatedCertificate, setGeneratedCertificate] = useState(null);
+
   const customOption = (option) => {
 
     return (
@@ -614,6 +620,137 @@ function LifeAtVed() {
   const validatePhone = (phone) => {
     const phoneRegex = /^[6-9]\d{9}$/;
     return phoneRegex.test(phone);
+  };
+
+  const handleCertificateInput = (e) => {
+    const { name, value } = e.target;
+    setCertificateForm((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleCertificateSearch = () => {
+    const candidateName = certificateForm.candidateName.trim();
+    const registrationNumber = certificateForm.registrationNumber.trim();
+
+    if (!candidateName || !registrationNumber) {
+      toast.error("Please enter name and registration number.", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    const issueDate = new Date().toLocaleDateString("en-IN", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+    });
+
+    setGeneratedCertificate({
+      candidateName,
+      registrationNumber: registrationNumber.toUpperCase(),
+      issueDate,
+      certificateId: `VED-${registrationNumber.replace(/\s+/g, "").toUpperCase()}`,
+    });
+
+    toast.success("Certificate generated successfully.", {
+      position: "top-right",
+      autoClose: 2000,
+    });
+  };
+
+  const handleDownloadCertificate = () => {
+    if (!generatedCertificate) {
+      toast.error("Generate your certificate first.", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    const canvas = document.createElement("canvas");
+    canvas.width = 1600;
+    canvas.height = 1100;
+    const ctx = canvas.getContext("2d");
+
+    if (!ctx) {
+      toast.error("Unable to generate certificate file.", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+    gradient.addColorStop(0, "#f2f8ff");
+    gradient.addColorStop(1, "#fff5e8");
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.strokeStyle = "#132f62";
+    ctx.lineWidth = 16;
+    ctx.strokeRect(40, 40, canvas.width - 80, canvas.height - 80);
+
+    ctx.strokeStyle = "#ed8b00";
+    ctx.lineWidth = 4;
+    ctx.strokeRect(70, 70, canvas.width - 140, canvas.height - 140);
+
+    ctx.fillStyle = "#132f62";
+    ctx.font = "700 58px Georgia";
+    ctx.textAlign = "center";
+    ctx.fillText("Venturing Digitally", canvas.width / 2, 190);
+
+    ctx.fillStyle = "#ed8b00";
+    ctx.font = "600 34px Arial";
+    ctx.fillText("CERTIFICATE OF ACHIEVEMENT", canvas.width / 2, 260);
+
+    ctx.fillStyle = "#3b3b3b";
+    ctx.font = "400 28px Arial";
+    ctx.fillText("This is proudly presented to", canvas.width / 2, 350);
+
+    ctx.fillStyle = "#0d1e45";
+    ctx.font = "700 72px Georgia";
+    ctx.fillText(generatedCertificate.candidateName, canvas.width / 2, 450);
+
+    ctx.fillStyle = "#2c2c2c";
+    ctx.font = "400 30px Arial";
+    ctx.fillText(
+      "for successfully completing the Training & Internship Program",
+      canvas.width / 2,
+      525
+    );
+
+    ctx.fillStyle = "#1f2a44";
+    ctx.font = "600 26px Arial";
+    ctx.fillText(`Registration No: ${generatedCertificate.registrationNumber}`, canvas.width / 2, 620);
+
+    ctx.fillStyle = "#1f2a44";
+    ctx.font = "600 22px Arial";
+    ctx.fillText(`Certificate ID: ${generatedCertificate.certificateId}`, canvas.width / 2, 680);
+    ctx.fillText(`Issue Date: ${generatedCertificate.issueDate}`, canvas.width / 2, 725);
+
+    ctx.textAlign = "left";
+    ctx.font = "500 24px Arial";
+    ctx.fillText("Authorized Signature", 230, 900);
+    ctx.fillRect(230, 860, 280, 2);
+
+    ctx.textAlign = "right";
+    ctx.fillText("Program Coordinator", 1370, 900);
+    ctx.fillRect(1090, 860, 280, 2);
+
+    const link = document.createElement("a");
+    link.href = canvas.toDataURL("image/png");
+    link.download = `${generatedCertificate.candidateName.replace(/\s+/g, "_")}_certificate.png`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    toast.success("Certificate downloaded.", {
+      position: "top-right",
+      autoClose: 1800,
+    });
   };
 
   return (
@@ -896,6 +1033,91 @@ function LifeAtVed() {
           </div>
         </div>
       </section>
+
+
+      {/* Certificate Section */}
+      {/* <section id="certificate-generator">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="certificate-generator-head">
+              <h2 className="certificate-generator-title">Get Your Certificate</h2>
+              <p className="certificate-generator-subtitle">
+                Enter your details to generate your certificate and download it instantly.
+              </p>
+            </div>
+
+            <div className="certificate-generator-grid">
+              <div className="certificate-form-card">
+                <div className="certificate-form-badge">Certificate Portal</div>
+                <h3>Verify Details</h3>
+                <p>Use your registered name and registration number to generate your certificate.</p>
+
+                <div className="certificate-input-wrap">
+                  <label htmlFor="candidateName">Full Name</label>
+                  <input
+                    id="candidateName"
+                    type="text"
+                    name="candidateName"
+                    placeholder="Enter your full name"
+                    value={certificateForm.candidateName}
+                    onChange={handleCertificateInput}
+                  />
+                </div>
+
+                <div className="certificate-input-wrap">
+                  <label htmlFor="registrationNumber">Registration Number</label>
+                  <input
+                    id="registrationNumber"
+                    type="text"
+                    name="registrationNumber"
+                    placeholder="Enter registration number"
+                    value={certificateForm.registrationNumber}
+                    onChange={handleCertificateInput}
+                  />
+                </div>
+
+                <div className="certificate-action-row">
+                  <button type="button" className="certificate-search-btn" onClick={handleCertificateSearch}>
+                    Search & Generate
+                  </button>
+                  <button
+                    type="button"
+                    className="certificate-download-btn"
+                    onClick={handleDownloadCertificate}
+                    disabled={!generatedCertificate}
+                  >
+                    Download Certificate
+                  </button>
+                </div>
+              </div>
+
+              <div className="certificate-preview-card">
+                {generatedCertificate ? (
+                  <div className="certificate-preview-inner">
+                    <div className="certificate-preview-brand">VENTURING DIGITALLY</div>
+                    <div className="certificate-preview-heading">CERTIFICATE OF ACHIEVEMENT</div>
+                    <div className="certificate-preview-text">This certificate is awarded to</div>
+                    <div className="certificate-preview-name">{generatedCertificate.candidateName}</div>
+                    <div className="certificate-preview-text">
+                      for successfully completing the Training & Internship Program.
+                    </div>
+                    <div className="certificate-preview-meta">
+                      <span>Registration No: {generatedCertificate.registrationNumber}</span>
+                      <span>Certificate ID: {generatedCertificate.certificateId}</span>
+                      <span>Issue Date: {generatedCertificate.issueDate}</span>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="certificate-preview-empty">
+                    <h4>Your certificate preview will appear here</h4>
+                    <p>Fill in your details and click Search & Generate.</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
 
       {/* <--------------------------------------- Life At Ved Fourth -----------------------------------------> */}
      
