@@ -1,4 +1,10 @@
 {
+  "functions": {
+    "api/proxy.js": {
+      "runtime": "nodejs20.x",
+      "maxDuration": 30
+    }
+  },
   "rewrites": [
     {
       "source": "/chat/:match*",
