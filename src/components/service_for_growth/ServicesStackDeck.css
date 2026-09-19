@@ -249,7 +249,7 @@
    ======================================================== */
 @media screen and (max-width: 991px) {
   .cservice-features-section {
-    padding: 8px 0 16px 0 !important;
+    padding: calc(8px + 0.3in) 0 16px 0 !important;
     background: #f8fafc !important;
     position: relative !important;
     margin: 0 !important;
@@ -267,11 +267,11 @@
     box-sizing: border-box !important;
   }
 
-  /* Sticky stage pinned directly below the 70px mobile top navbar */
+  /* Sticky stage pinned below the 70px mobile top navbar with 0.3 inches (29px) gap */
   .cservice-sticky-stage {
     position: -webkit-sticky !important;
     position: sticky !important;
-    top: 72px !important;
+    top: calc(70px + 0.3in) !important;
     height: auto !important;
     display: flex !important;
     flex-direction: column !important;
