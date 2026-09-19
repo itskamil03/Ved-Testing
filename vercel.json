@@ -1,0 +1,48 @@
+{
+  "rewrites": [
+    {
+      "source": "/chat/:match*",
+      "destination": "http://187.77.184.141:8019/chat/:match*"
+    },
+    {
+      "source": "/chat",
+      "destination": "http://187.77.184.141:8019/chat"
+    },
+    {
+      "source": "/faq-suggestions/:match*",
+      "destination": "http://187.77.184.141:8019/faq-suggestions/:match*"
+    },
+    {
+      "source": "/faq-suggestions",
+      "destination": "http://187.77.184.141:8019/faq-suggestions"
+    },
+    {
+      "source": "/tickets/:match*",
+      "destination": "http://187.77.184.141:8019/tickets/:match*"
+    },
+    {
+      "source": "/tickets",
+      "destination": "http://187.77.184.141:8019/tickets"
+    },
+    {
+      "source": "/auth/:match*",
+      "destination": "http://187.77.184.141:8019/auth/:match*"
+    },
+    {
+      "source": "/auth",
+      "destination": "http://187.77.184.141:8019/auth"
+    },
+    {
+      "source": "/user/:match*",
+      "destination": "http://187.77.184.141:8019/user/:match*"
+    },
+    {
+      "source": "/user",
+      "destination": "http://187.77.184.141:8019/user"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
