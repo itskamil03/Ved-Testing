@@ -2,45 +2,35 @@
 #what-do .container-fluid {
   padding: 50px 24px;
 }
-
 #who_we_are {
   padding: 50px 0;
 }
-
 #who_we_are .container {
   padding-left: 24px;
   padding-right: 24px;
 }
-
 #innovatedata .container-fluid {
   padding: 36px 24px 40px;
 }
-
 #solutions .container-fluid {
   padding: 50px 24px;
 }
-
 #industries .container-fluid {
   padding: 50px 24px;
 }
-
 #industries .main {
   padding-bottom: 24px;
 }
-
 #why_choose_us {
   padding: 50px 0;
 }
-
 #why_choose_us .container {
   padding-left: 24px;
   padding-right: 24px;
 }
-
 #lifeatvedthird .container-fluid {
   padding: 50px 24px;
 }
-
 #internship-data .container-fluid {
   padding: 50px 24px;
 }
@@ -50,7 +40,6 @@
   .whatdo-section-dark {
     padding: 30px 30px 30px;
   }
-
   #what-do .container-fluid,
   #innovatedata .container-fluid,
   #solutions .container-fluid,
@@ -60,25 +49,21 @@
     padding-left: 16px;
     padding-right: 16px;
   }
-
   #who_we_are .container,
   #why_choose_us .container {
     padding-left: 16px;
     padding-right: 16px;
   }
-
   #whats-new,
   #news-events {
     padding-left: 16px;
     padding-right: 16px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .whatdo-section-dark {
     padding: 20px 20px 20px;
   }
-
   #what-do .container-fluid,
   #innovatedata .container-fluid,
   #solutions .container-fluid,
@@ -88,13 +73,11 @@
     padding-left: 12px;
     padding-right: 12px;
   }
-
   #who_we_are .container,
   #why_choose_us .container {
     padding-left: 12px;
     padding-right: 12px;
   }
-
   #whats-new,
   #news-events {
     padding-left: 12px;
@@ -251,10 +234,12 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg,
-      rgba(0, 0, 0, 0.25) 0%,
-      rgba(0, 0, 0, 0.65) 60%,
-      rgba(0, 0, 0, 0.85) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.65) 60%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
   opacity: 0.6;
   pointer-events: none;
 }
@@ -318,16 +303,15 @@
 /* <----------------------------------- Our Expertise -----------------------> */
 
 #latest_updates {
-  padding: 50px 0px;
+  padding: 50px 0px;     
 
 }
-
 #latest_updates .updates {
-  display: grid;
-  grid-row-gap: 20px;
+   display: grid;
+   grid-row-gap: 20px;
 }
 
-#latest_updates .marqueeUpdate {
+#latest_updates .marqueeUpdate{
   line-height: 2.5em;
   position: relative;
   -webkit-animation: animate-vertical 20s linear infinite;
@@ -348,7 +332,7 @@
 
 
 #latest_updates .upcoming {
-  padding-left: 20px !important;
+   padding-left: 20px !important;
 }
 
 #latest_updates .news_item {
@@ -359,11 +343,11 @@
 }
 
 #latest_updates .news_link {
-
-  color: #27286d !important;
-  font-size: 16px !important;
-  text-decoration: underline !important;
-  cursor: pointer;
+  
+color: #27286d !important;
+font-size: 16px !important;
+text-decoration: underline !important;
+ cursor: pointer;
 }
 
 #who_we_are {
@@ -380,7 +364,8 @@
   margin-bottom: 5px;
 }
 
-#who_we_are .milestone-description {
+#who_we_are .milestone-description
+{
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
@@ -392,8 +377,9 @@
   margin-bottom: 5px;
 }
 
-.solution_title {
-  font-size: 2.2rem !important;
+.solution_title
+{
+   font-size: 2.2rem !important;
 }
 
 #who_we_are .milestone-info .content {
@@ -429,7 +415,7 @@
   color: #ffffff;
   transition: all 0.3s linear;
   font-size: 16px;
-
+ 
 }
 
 /* <------------------------------------------------------- Why choose us (1st image style) -----------------------------------------------------------> */
@@ -495,17 +481,8 @@
 }
 
 @keyframes why-choose-overlay-float {
-
-  0%,
-  100% {
-    transform: translateY(-50%) translateY(10px);
-    box-shadow: 0 12px 40px rgba(39, 40, 109, 0.15);
-  }
-
-  50% {
-    transform: translateY(-50%) translateY(-10px);
-    box-shadow: 0 20px 50px rgba(39, 40, 109, 0.2);
-  }
+  0%, 100% { transform: translateY(-50%) translateY(10px); box-shadow: 0 12px 40px rgba(39, 40, 109, 0.15); }
+  50% { transform: translateY(-50%) translateY(-10px); box-shadow: 0 20px 50px rgba(39, 40, 109, 0.2); }
 }
 
 .why-choose-overlay-box {
@@ -546,7 +523,6 @@
   font-size: 2rem;
   font-weight: bold;
 }
-
 .why-choose-overlay-box p {
   border-left: none !important;
   padding-left: 0 !important;
@@ -805,11 +781,10 @@
   height: 100%;
   top: 0;
   z-index: 2;
-  padding: 30px 20px;
+  padding:30px 20px;
   display: flex;
   flex-direction: column;
 }
-
 #industries .main {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -844,7 +819,7 @@
   bottom: 40px;
   letter-spacing: .5px;
   display: flex;
-  left: 30px;
+  left:30px;
   width: 100%;
 }
 
@@ -895,7 +870,6 @@
   display: flex;
   justify-content: flex-end;
 }
-
 #whats-new .more_btn_solution {
   padding: 10px 10px;
   color: white;
@@ -916,13 +890,8 @@
 
 /* Skeleton loader */
 @keyframes skeleton-shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-
-  100% {
-    background-position: 200% 0;
-  }
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
 .skeleton {
@@ -1100,7 +1069,7 @@
   height: 100% !important;
 }
 
-#whats-new .blog-img-carousel .slick-slide>div {
+#whats-new .blog-img-carousel .slick-slide > div {
   height: 100%;
 }
 
@@ -1568,7 +1537,7 @@
   display: flex;
 }
 
-#news-events .news-events-slider .slick-slide>div {
+#news-events .news-events-slider .slick-slide > div {
   height: 100%;
   width: 100%;
   display: flex;
@@ -1640,7 +1609,7 @@
   height: 100% !important;
 }
 
-#news-events .news-events-img-carousel .slick-slide>div {
+#news-events .news-events-img-carousel .slick-slide > div {
   height: 100%;
 }
 
@@ -1849,7 +1818,7 @@
   background-color: #27286d;
 }
 
-.innovates {
+.innovates{
   height: auto;
 }
 
@@ -1893,7 +1862,7 @@
   top: 0;
   transition: all 0.25s;
   height: 100px;
-
+  
 }
 
 #innovatedata .tab-label img {
@@ -1930,10 +1899,9 @@
   background-color: #ffffff;
   padding: 20px;
 }
-
-.slick-track {
+.slick-track{
   display: flex !important;
-  gap: 30px !important
+  gap:30px !important
 }
 
 
@@ -1993,30 +1961,29 @@
   .innovates {
     height: auto;
   }
-
-  .who-we-are {
+  .who-we-are
+  {
     padding-top: 0px;
   }
-
-  .milestone-description {
+  .milestone-description
+  {
     font-size: 12px;
   }
-
+ 
 }
 
 @media screen and (max-width: 768px) {
   .innovates {
     height: auto;
   }
-
   #latest_updates .marqueeUpdate {
-    height: 240px;
+     height: 240px;
   }
 
-  .lifeatvedthird-section-body-home {
-    height: 260px;
-    display: flex;
-  }
+    .lifeatvedthird-section-body-home {
+      height: 260px;
+      display: flex;
+    }
 
   #industries .industries_link {
     position: absolute;
@@ -2057,8 +2024,7 @@
   }
 }
 
-#solutions,
-.solution_img {
+#solutions, .solution_img {
   width: 100%;
   height: 100%;
 }
@@ -2153,8 +2119,7 @@ main {
     grid-template-columns: repeat(1, 1fr);
     padding: 32px 24px 40px;
   }
-
-  #industries .main {
+  #industries .main{
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -2163,7 +2128,7 @@ main {
   main {
     padding: 24px 16px 32px;
   }
-
+ 
   #solutions .solution_card {
     height: 400px;
     padding: 20px;
@@ -2243,7 +2208,6 @@ main {
 
 /* 0–480px: word-break in all sections (incl. AboutComponents #about, Services #features) to avoid overflow */
 @media only screen and (max-width: 480px) {
-
   section,
   #about,
   #features {
@@ -2265,118 +2229,88 @@ main {
   #join {
     padding: 20px 0px !important;
   }
-
-  .section-head {
+  .section-head{
     margin-bottom: 20px !important;
   }
-
   .bg-light {
     padding: 20px 0px !important;
-
+    
   }
-
   #who_we_are {
     padding: 20px 16px !important;
   }
-
-  #features {
+  #features{
     padding: 20px 0px !important;
   }
-
   #solutions {
     padding: 20px 0px !important;
     margin: 0px !important;
   }
-
-  main {
+   main {
     padding: 1.5rem 10px !important;
-  }
-
-  #internship-data,
-  #lifeatvedthird,
-  #latest_updates,
-  #join,
-  #industries,
-  #why_choose_us,
-  #whats-new,
-  #news-events {
+   }
+   #internship-data, #lifeatvedthird, #latest_updates, #join, #industries, #why_choose_us, #whats-new, #news-events {
     padding: 20px 0px !important;
-  }
-
-  .solutin_btn {
+   }
+   .solutin_btn {
     margin-top: 1rem !important;
-  }
-
-  .milestone-box {
+   }
+   .milestone-box {
     margin: 1rem 0px !important;
-  }
-
-  .row {
+   }
+   .row {
     margin: 0px !important;
     padding: 3px 0px !important;
-  }
-
-  .custom-head h2 {
+   }
+   .custom-head h2 {
     padding: 1.2rem 0px !important;
     /* font-size: 10rem !important; */
-  }
-
-  .milestone-box {
+   }
+   .milestone-box {
     margin-bottom: 1rem !important;
-  }
-
-  .form-container-form {
+   }
+   .form-container-form {
     /* margin: 1.2rem 1rem !important; */
     width: 90vw !important;
-  }
-
-  .footer {
+   }
+   .footer {
     padding: 1rem 2rem 2.5rem 2rem !important;
-  }
-
-  .footercon-left {
+   }
+   .footercon-left {
     padding-bottom: 10px !important;
-  }
-
-  .footercon-rightsecond,
-  .footercon-rightfirst {
+   }
+   .footercon-rightsecond, .footercon-rightfirst {
     padding-bottom: 0px !important;
-  }
-
-  .footercon-right {
+   }
+   .footercon-right {
     gap: 5px !important;
-  }
-
-  .footercon-right-list {
+   }
+   .footercon-right-list {
     margin-top: 0.8rem !important
-  }
-
-  .footer-bottom {
+   }
+   .footer-bottom {
     margin-top: 0px !important;
-  }
-
-  .milestone-box {
+   }
+   .milestone-box {
     padding-top: 4px !important;
     padding-bottom: 4px !important;
     margin-bottom: 0 !important;
-  }
-
-  #who_we_are .milestone-box {
+   }
+   #who_we_are .milestone-box {
     padding: 24px 20px !important;
     margin-bottom: 1rem !important;
     max-width: 100%;
-  }
-
-  .input-head {
+   }
+   .input-head {
     margin-bottom: 0.6rem !important;
-  }
-
+   }
+ 
 }
 
 .cinternship-head-title {
   margin-bottom: 30px !important;
   font-size: 3.2rem !important;
-  font-weight: bold !important;
+    font-weight: bold !important;
 }
 
 
@@ -2389,10 +2323,13 @@ main {
 
 
 html.home-fullpage-snap {
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
 .home-snap-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
   min-height: auto;
 }
 
@@ -2400,23 +2337,6 @@ html.home-fullpage-snap {
 .cservice-features-section {
   background: #f0f2f5;
   overflow: visible;
-}
-
-.cservice-desktop-wrapper {
-  display: block;
-}
-
-.cservice-mobile-wrapper {
-  display: none;
-}
-
-@media screen and (max-width: 991px) {
-  .cservice-desktop-wrapper {
-    display: none !important;
-  }
-  .cservice-mobile-wrapper {
-    display: block !important;
-  }
 }
 
 /* Inline padding same for head + cards (align left/right) */
@@ -2490,7 +2410,7 @@ html.home-fullpage-snap {
   box-sizing: border-box;
 }
 
-.cservice-slider .slick-slide>div {
+.cservice-slider .slick-slide > div {
   /* Slide inner wrapper ko full width do */
   width: 100%;
 }
@@ -2611,28 +2531,6 @@ html.home-fullpage-snap {
   line-height: 1.68;
   margin: 0 0 26px 0;
   max-width: 100%;
-}
-
-/* Icon row for service cards */
-.cservice-card-icons {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 18px;
-  flex-wrap: wrap;
-}
-
-.cservice-card-icons svg {
-  width: 24px;
-  height: 24px;
-  display: block;
-}
-
-@media screen and (max-width: 576px) {
-  .cservice-card-icons svg {
-    width: 20px;
-    height: 20px;
-  }
 }
 
 .cservice-card-ref-btn {
@@ -2823,412 +2721,344 @@ html.home-fullpage-snap {
   }
 }
 
-#internship-data {
-  position: relative;
-  overflow: visible !important;
-  background: #ffffff !important;
-  padding: 10px 0 0 0 !important;
-}
-
-#internship-data .internship-header-block {
-  position: relative !important;
-  z-index: 10 !important;
-  width: 100%;
-  text-align: left;
-  margin-bottom: 0;
-  background: transparent !important;
-  flex-shrink: 0;
-  opacity: 1 !important;
-  visibility: visible !important;
-  transform: none !important;
-  transition: none !important;
-}
-
-#internship-data .cinternship-head-title {
-  font-size: clamp(2rem, 2.4vw, 2.5rem);
-  font-weight: 800;
-  color: #1a1a1a;
-  margin-bottom: 4px;
-  line-height: 1.2;
-}
-
-#internship-data .internship-content-order {
-  display: grid !important;
-  grid-row-gap: 3px !important;
-  font-size: clamp(1.15rem, 1.25vw, 1.35rem);
-  color: #4b5563;
-  line-height: 1.45;
-}
-
-.internship-stack-section {
-  position: relative;
-  height: 350vh;
-  margin-top: 0;
-  background: #ffffff !important;
-}
-
-.internship-stack-sticky {
-  position: sticky;
-  top: 80px;
-  height: calc(100vh - 80px);
+#internship-data .internship-cards-strip {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
+  margin: 40px -15px 0;
+  padding: 40px 24px 50px;
+  border-radius: 12px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff !important;
-  margin: 0;
-  padding: 8px 0;
-  box-sizing: border-box;
 }
 
-.internship-stack-wrap {
-  width: min(94vw, 1160px);
-  margin: 0 auto;
+#internship-data .internship-cards-track {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
   gap: 14px;
-  box-sizing: border-box;
-  height: 100%;
-  max-height: calc(100vh - 85px);
+  align-items: stretch;
+  min-height: 420px;
 }
 
-.internship-cards-deck {
-  position: relative;
-  width: 100%;
-  height: min(58vh, 500px);
-  max-height: 520px;
-  min-height: 390px;
+/* Expanded card - full details visible */
+#internship-data .internship-value-card-expanded {
+  flex: 1;
+  min-width: 50%;
+  max-width: 62%;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  flex-shrink: 0;
+  flex-direction: column;
+  transition: flex 0.35s ease-out, min-width 0.35s ease-out;
+  cursor: default;
 }
 
-.internship-card {
-  position: absolute !important;
-  width: 100% !important;
-  height: 100% !important;
-  border-radius: 20px !important;
-  overflow: hidden !important;
-  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.25) !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  will-change: transform, opacity !important;
-  background: #0d1527 !important;
+
+#internship-data .internship-value-card-collapsed {
+  position: relative;
+  flex: 0 0 150px;
+  min-width: 150px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  transition: flex 0.35s ease-out, min-width 0.35s ease-out;
+  cursor: pointer;
 }
 
-.internship-card .internship-card-image {
-  position: absolute !important;
-  inset: 0 !important;
-  overflow: hidden !important;
+#internship-data .internship-value-card-collapsed:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
 }
 
-.internship-card .internship-card-image img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center right !important;
-  display: block !important;
-  filter: none !important;
+#internship-data .internship-value-card {
+  position: relative;
 }
 
-.internship-card .internship-card-overlay {
-  position: absolute !important;
-  inset: 0 !important;
-  background: linear-gradient(90deg, rgba(8, 14, 30, 0.85) 0%, rgba(8, 14, 30, 0.65) 42%, rgba(8, 14, 30, 0.2) 68%, transparent 100%) !important;
-  display: block !important;
-  pointer-events: none !important;
+/* Expanded: image fills card, title + description overlay on image */
+#internship-data .internship-value-card-expanded .internship-card-image {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
 }
 
-.internship-card .internship-card-content {
-  position: relative !important;
-  max-width: 620px !important;
-  padding: 38px 48px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  justify-content: center !important;
-  z-index: 2 !important;
-  text-align: left !important;
-  background: transparent !important;
+#internship-data .internship-value-card-expanded .internship-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.internship-card-step {
-  font-size: 1.15rem !important;
-  font-weight: 700 !important;
-  color: #60a5fa !important;
-  text-transform: uppercase !important;
-  letter-spacing: 1.2px !important;
-  margin-bottom: 8px !important;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7) !important;
+#internship-data .internship-value-card-expanded .internship-card-overlay {
+  background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.85) 100%);
 }
 
-.internship-card .internship-card-title {
-  font-size: clamp(2rem, 2.5vw, 2.55rem) !important;
-  font-weight: 800 !important;
-  color: #ffffff !important;
-  margin: 0 0 10px 0 !important;
-  line-height: 1.22 !important;
-  letter-spacing: -0.5px !important;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8) !important;
+#internship-data .internship-value-card-expanded .internship-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 28px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
 }
 
-.internship-card .internship-card-desc {
-  font-size: clamp(1.25rem, 1.4vw, 1.45rem) !important;
-  color: rgba(248, 250, 252, 0.96) !important;
-  line-height: 1.55 !important;
-  margin: 0 0 14px 0 !important;
+#internship-data .internship-value-card-expanded .internship-card-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 12px 0;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+#internship-data .internship-value-card-expanded .internship-card-desc {
+  font-size: 1.75rem;
+  color: rgba(255,255,255,0.95);
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  flex-grow: 0;
   padding-left: 0 !important;
   border-left: none !important;
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8) !important;
 }
 
-.internship-card-highlight {
-  font-size: 1.25rem !important;
-  font-weight: 600 !important;
-  color: #67e8f9 !important;
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8) !important;
+#internship-data .internship-value-card-expanded .internship-card-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  color: #1a1a2e;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  align-self: flex-end;
 }
 
-/* =========================================================================
-   INTERNSHIP & TRAINING SECTION - RESPONSIVE STYLES FOR ALL DEVICES
-   ========================================================================= */
+#internship-data .internship-value-card-expanded .internship-card-arrow:hover {
+  background: #27286d;
+  color: #fff;
+  transform: scale(1.08);
+}
 
-@media (max-width: 1024px) {
-  #internship-data .cinternship-head-title {
-    font-size: 2rem;
+/* Collapsed: vertical strip - image full height, title rotated 90deg overlay */
+#internship-data .internship-value-card-collapsed .internship-card-image {
+  position: absolute;
+  inset: 0;
+  min-height: 100%;
+}
+
+#internship-data .internship-value-card-collapsed .internship-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#internship-data .internship-value-card-collapsed .internship-card-content {
+  position: absolute;
+  inset: 0;
+  padding: 0;
+  background: linear-gradient(180deg, transparent 30%, rgba(0,0,0,0.6) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-grow: 0;
+}
+
+#internship-data .internship-value-card-collapsed .internship-card-title {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  padding: 20px 8px;
+  font-style: italic;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+#internship-data .internship-value-card-collapsed .internship-card-desc,
+#internship-data .internship-value-card-collapsed .internship-card-arrow {
+  display: none !important;
+}
+
+/* Shared image styles */
+#internship-data .internship-card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+#internship-data .internship-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+#internship-data .internship-value-card-expanded:hover .internship-card-image img {
+  transform: scale(1.04);
+}
+
+#internship-data .internship-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(26,26,46,0.4) 100%);
+  pointer-events: none;
+}
+
+/* Content order - title, description, explore, mission */
+#internship-data .internship-content-order {
+  display: grid !important;
+  grid-row-gap: 10px !important;
+}
+
+@media (max-width: 992px) {
+  #internship-data .internship-value-card-expanded {
+    min-width: 45%;
+    max-width: 50%;
   }
-  #internship-data .internship-content-order {
-    font-size: 1.15rem;
-    line-height: 1.4;
+
+  #internship-data .internship-value-card-collapsed {
+    flex: 0 0 70px;
+    min-width: 70px;
   }
-  .internship-cards-deck {
-    height: min(54vh, 440px);
-    max-height: 450px;
-    min-height: 340px;
-  }
-  .internship-card .internship-card-content {
-    max-width: 90% !important;
-    padding: 26px 32px !important;
-  }
-  .internship-card .internship-card-title {
-    font-size: 1.85rem !important;
-  }
-  .internship-card .internship-card-desc {
-    font-size: 1.2rem !important;
+
+  #internship-data .internship-cards-track {
+    min-height: 380px;
   }
 }
 
 @media (max-width: 768px) {
-  .internship-stack-section {
-    height: 350vh;
+  #internship-data .internship-cards-strip {
+    margin: 24px -12px 0;
+    padding: 24px 16px 36px;
   }
-  .internship-stack-sticky {
-    top: 65px;
-    height: calc(100vh - 65px);
-    padding: 8px 12px;
-    box-sizing: border-box;
+
+  #internship-data .internship-cards-track {
+    flex-direction: column;
+    min-height: auto;
+    gap: 6px;
   }
-  .internship-stack-wrap {
-    width: 100%;
-    max-width: 520px;
-    gap: 8px;
+
+  /* Mobile: 1 expanded + 3 collapsed (vertical accordion) */
+  #internship-data .internship-value-card-expanded {
+    flex: 1 1 auto;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 320px;
+  }
+
+  #internship-data .internship-value-card-collapsed {
+    flex: 0 0 72px;
+    min-height: 72px;
+    max-height: 72px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  /* Collapsed: horizontal strip - image + title side by side */
+  #internship-data .internship-value-card-collapsed .internship-card-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90px;
     height: 100%;
-    justify-content: space-evenly;
+    min-height: 72px;
   }
-  #internship-data .cinternship-head-title {
-    font-size: 1.45rem;
-    line-height: 1.2;
-    margin-bottom: 2px;
-  }
-  #internship-data .internship-content-order {
-    font-size: 0.88rem;
-    line-height: 1.35;
-    grid-row-gap: 3px !important;
-  }
-  .internship-cards-deck {
-    height: min(48vh, 330px);
-    max-height: 340px;
-    min-height: 230px;
-  }
-  .internship-card {
-    border-radius: 16px !important;
-  }
-  .internship-card .internship-card-overlay {
-    background: linear-gradient(90deg, rgba(8, 14, 30, 0.94) 0%, rgba(8, 14, 30, 0.82) 58%, rgba(8, 14, 30, 0.45) 100%) !important;
-  }
-  .internship-card .internship-card-content {
-    max-width: 100% !important;
-    padding: 16px 18px !important;
-  }
-  .internship-card-step {
-    font-size: 0.78rem !important;
-    letter-spacing: 0.8px !important;
-    margin-bottom: 3px !important;
-  }
-  .internship-card .internship-card-title {
-    font-size: 1.25rem !important;
-    margin-bottom: 4px !important;
-    line-height: 1.2 !important;
-  }
-  .internship-card .internship-card-desc {
-    font-size: 0.85rem !important;
-    line-height: 1.32 !important;
-    margin-bottom: 6px !important;
-  }
-  .internship-card-highlight {
-    font-size: 0.82rem !important;
-  }
-}
 
-@media (max-width: 480px), (max-height: 700px) and (max-width: 768px) {
-  .internship-stack-sticky {
-    top: 60px;
-    height: calc(100vh - 60px);
-    padding: 6px 8px;
+  #internship-data .internship-value-card-collapsed .internship-card-content {
+    position: static;
+    padding: 0 16px 0 106px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, transparent 100%);
+    min-height: 72px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
   }
-  .internship-stack-wrap {
-    gap: 5px;
-    max-width: 380px;
-  }
-  #internship-data .cinternship-head-title {
-    font-size: 1.22rem;
-    line-height: 1.18;
-    margin-bottom: 2px;
-  }
-  #internship-data .internship-content-order {
-    font-size: 0.78rem;
-    line-height: 1.25;
-    grid-row-gap: 2px !important;
-  }
-  .internship-cards-deck {
-    height: min(44vh, 260px);
-    max-height: 270px;
-    min-height: 190px;
-  }
-  .internship-card {
-    border-radius: 14px !important;
-  }
-  .internship-card .internship-card-content {
-    padding: 12px 14px !important;
-  }
-  .internship-card-step {
-    font-size: 0.7rem !important;
-    letter-spacing: 0.6px !important;
-    margin-bottom: 2px !important;
-  }
-  .internship-card .internship-card-title {
-    font-size: 1.08rem !important;
-    margin-bottom: 3px !important;
-  }
-  .internship-card .internship-card-desc {
-    font-size: 0.74rem !important;
-    line-height: 1.24 !important;
-    margin-bottom: 4px !important;
-  }
-  .internship-card-highlight {
-    font-size: 0.72rem !important;
-  }
-}
 
-@media (max-width: 360px), (max-height: 600px) and (max-width: 768px) {
-  #internship-data .cinternship-head-title {
-    font-size: 1.1rem;
+  #internship-data .internship-value-card-collapsed .internship-card-title {
+    writing-mode: horizontal-tb;
+    transform: none;
+    padding: 0;
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 600;
   }
-  #internship-data .internship-content-order {
-    font-size: 0.72rem;
-    line-height: 1.2;
+
+  #internship-data .internship-value-card-collapsed .internship-card-desc,
+  #internship-data .internship-value-card-collapsed .internship-card-arrow {
+    display: none !important;
+
   }
-  .internship-cards-deck {
-    height: 180px;
-    min-height: 170px;
-  }
-  .internship-card .internship-card-content {
-    padding: 8px 10px !important;
-  }
-  .internship-card .internship-card-title {
-    font-size: 0.95rem !important;
-  }
-  .internship-card .internship-card-desc {
-    font-size: 0.68rem !important;
-    margin-bottom: 2px !important;
-  }
-  .internship-card-highlight {
-    font-size: 0.66rem !important;
-  }
+
 }
 
 .custom-head {
   display: block !important;
   width: 100% !important;
-  height: auto !important;
-  /* Forces container to grow with text */
-  overflow: visible !important;
+  height: auto !important; /* Forces container to grow with text */
+  overflow: visible !important; 
 }
 
-.custom-head>h2 {
+.custom-head > h2 {
   /* 1. Reset Typography */
   font-size: 3.2rem;
   font-weight: bold;
   line-height: 1.3 !important;
   margin-bottom: 10px;
-
+  
   /* 2. Force Wrap Mechanics */
   display: block !important;
   width: 100% !important;
-  white-space: normal !important;
-  /* Breaks the 'one-line' rule */
-  overflow-wrap: break-word !important;
+  white-space: normal !important;   /* Breaks the 'one-line' rule */
+  overflow-wrap: break-word !important; 
   word-wrap: break-word !important;
-
+  
   /* 3. Box Management */
   box-sizing: border-box !important;
   height: auto !important;
 }
 
 @media screen and (max-width: 768px) {
-  .custom-head>h2 {
-    font-size: 2rem !important;
-    /* Scale down significantly */
+  .custom-head > h2 {
+    font-size: 2rem !important; /* Scale down significantly */
   }
 }
 
 @media screen and (max-width: 576px) {
-  .custom-head>h2 {
+  .custom-head > h2 {
     /* At 576px, 'Improve and Innovate' needs space */
-    font-size: 2.8rem !important;
+    font-size: 2.8rem !important; 
     padding: 10px !important;
     text-align: left;
   }
 }
 
 
-.lifeatvedthird-custom-head>h2 {
+.lifeatvedthird-custom-head > h2 {
   /* 1. Prevent fixed heights that cause clipping */
   height: auto;
   font-weight: bold;
-
+  
   /* 2. Allow long words to break if they hit the edge */
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
-
+  
   /* 3. Scale the font down (3.6rem is too big for mobile) */
   font-size: 3.2rem;
   line-height: 1.3;
 }
 
 @media screen and (max-width: 576px) {
-  .lifeatvedthird-custom-head>h2 {
+  .lifeatvedthird-custom-head > h2 {
     /* Reduce size significantly for mobile */
-    font-size: 2.8rem !important;
-    padding: 0 10px;
-    /* Give a little breathing room on the sides */
+    font-size: 2.8rem !important; 
+    padding: 0 10px; /* Give a little breathing room on the sides */
     text-align: left;
   }
 }
@@ -3239,401 +3069,59 @@ html.home-fullpage-snap {
 
 
 .why-choose-right {
-  /* 1. Ensure the container can grow vertically as text wraps */
-  height: auto !important;
-  min-height: min-content;
-
-  /* 2. Remove any restrictions that stop text from wrapping */
-  display: block !important;
-  overflow: visible !important;
-  width: 100% !important;
+    /* 1. Ensure the container can grow vertically as text wraps */
+    height: auto !important;
+    min-height: min-content;
+    
+    /* 2. Remove any restrictions that stop text from wrapping */
+    display: block !important; 
+    overflow: visible !important;
+    width: 100% !important;
 }
 
-.why-choose-right>h2 {
-  /* 3. Force font size to a safe mobile limit */
-  font-size: clamp(1.8rem, 6vw, 3.2rem) !important;
-
-  /* 4. Force wrapping behavior */
-  white-space: normal !important;
-  /* Overrides any 'nowrap' */
-  word-break: keep-all !important;
-  /* Keeps words whole but moves them to next line */
-  overflow-wrap: break-word !important;
-
-  /* 5. Ensure line height gives space for the second line */
-  line-height: 1.4 !important;
-  display: block !important;
-  margin: 0 0 15px 0 !important;
-  font-weight: bold !important;
+.why-choose-right > h2 {
+    /* 3. Force font size to a safe mobile limit */
+    font-size: clamp(1.8rem, 6vw, 3.2rem) !important;
+    
+    /* 4. Force wrapping behavior */
+    white-space: normal !important; /* Overrides any 'nowrap' */
+    word-break: keep-all !important; /* Keeps words whole but moves them to next line */
+    overflow-wrap: break-word !important; 
+    
+    /* 5. Ensure line height gives space for the second line */
+    line-height: 1.4 !important;
+    display: block !important;
+    margin: 0 0 15px 0 !important;
+    font-weight: bold !important;
 }
 
 @media screen and (max-width: 576px) {
-  .why-choose-right>h2 {
-    /* If it's still cutting, the font is just too big for the screen width */
-    font-size: 2.8rem !important;
-    font-weight: bold !important;
-  }
+    .why-choose-right > h2 {
+        /* If it's still cutting, the font is just too big for the screen width */
+        font-size: 2.8rem !important; 
+        font-weight: bold !important;
+    }
 }
 
-#innovatedata {
+#innovatedata{
   padding-top: 0px;
 }
-
-.tab-content {
+.tab-content{
   margin-bottom: -60px;
 }
-
-#solutions {
-  padding-top: 0px;
-
+#solutions{
+  padding-top:0px;
+  
 }
-
-#internship-data {
+#internship-data{
   padding-top: 0px;
 }
-
-#lifeatvedthird {
+#lifeatvedthird{
   padding-top: 0px;
   margin-top: -80px;
 }
+#industries{
+  padding-top:0px;
+  margin-top:-80px
 
-#industries {
-  padding-top: 0px;
-  margin-top: -80px
-}
-
-/* Company logos marquee (infinite horizontal scroll) */
-.company-marquee {
-  overflow: hidden;
-  width: 100%;
-  padding: 30px 0;
-  background: transparent;
-}
-
-.company-marquee-track {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  animation: marquee 20s linear infinite;
-}
-
-.company-item {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.company-item img {
-  max-height: 72px;
-  width: auto;
-  display: block;
-  opacity: 0.95;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .company-marquee-track {
-    gap: 24px;
-    animation-duration: 24s;
-  }
-
-  .company-item img {
-    max-height: 52px;
-  }
-}
-
-/* ========================================================
-   Sticky Stacking Cards on Scroll - Exceptional Services
-======================================================== */
-.cservice-features-section {
-  background: #f8fafc;
-  padding: 60px 0 120px;
-  position: relative;
-  overflow: visible !important;
-}
-
-.cservice-wrap {
-  width: 100%;
-  position: relative;
-}
-
-.cservice-section-head {
-  padding: 20px 0 40px;
-  margin-bottom: 20px;
-}
-
-.cservice-section-head .cservice-head-title {
-  font-size: 3.2rem;
-  text-align: start;
-  font-weight: 800;
-  margin-bottom: 12px;
-  color: #0f172a;
-  letter-spacing: -0.02em;
-}
-
-.cservice-section-head .cservice-head-slogan {
-  padding-left: 20px;
-  font-size: 1.65rem;
-  border-left: 3px solid #27286d;
-  color: #475569;
-  line-height: 1.6;
-  max-width: 820px;
-}
-
-/* Container for sticky stacking cards */
-.cservice-cards-stack {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  gap: 0;
-  padding-bottom: 40px;
-}
-
-/* Each card gets sticky positioned at a cascading top offset */
-.cservice-stack-card {
-  position: sticky;
-  top: 90px;
-  margin-bottom: 90px;
-  border-radius: 24px;
-  background: #ffffff;
-  box-shadow: 0 14px 40px -10px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  will-change: transform;
-}
-
-.cservice-stack-card:hover {
-  box-shadow: 0 22px 50px -10px rgba(39, 40, 109, 0.2), 0 0 0 1px rgba(39, 40, 109, 0.12);
-}
-
-.cservice-stack-card-inner {
-  display: grid;
-  grid-template-columns: 48% 52%;
-  min-height: 480px;
-  width: 100%;
-  position: relative;
-}
-
-/* Image column */
-.cservice-stack-image-col {
-  position: relative;
-  overflow: hidden;
-  background: #0f172a;
-}
-
-.cservice-stack-badge {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  z-index: 3;
-  padding: 6px 14px;
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(8px);
-  color: #38bdf8;
-  font-size: 1.4rem;
-  font-weight: 700;
-  border-radius: 999px;
-  border: 1px solid rgba(56, 189, 248, 0.3);
-  letter-spacing: 0.05em;
-}
-
-.cservice-stack-image-col img {
-  width: 100%;
-  height: 100%;
-  min-height: 380px;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.cservice-stack-card:hover .cservice-stack-image-col img {
-  transform: scale(1.05);
-}
-
-.cservice-stack-image-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.3) 100%);
-  pointer-events: none;
-  z-index: 2;
-}
-
-/* Content column */
-.cservice-stack-content-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 48px 50px;
-  background: #ffffff;
-  position: relative;
-  z-index: 2;
-}
-
-.cservice-stack-bg-number {
-  position: absolute;
-  right: 30px;
-  top: 20px;
-  font-size: clamp(6rem, 12vw, 11rem);
-  font-weight: 900;
-  color: rgba(39, 40, 109, 0.04);
-  line-height: 1;
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
-}
-
-.cservice-stack-tagline {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #c9652c;
-  letter-spacing: 0.12em;
-  margin-bottom: 12px;
-  position: relative;
-  z-index: 1;
-}
-
-.cservice-stack-line {
-  width: 32px;
-  height: 3px;
-  background: #27286d;
-  display: block;
-  border-radius: 2px;
-}
-
-.cservice-stack-title {
-  font-size: clamp(2.4rem, 3.2vw, 3.2rem);
-  font-weight: 800;
-  color: #0f172a;
-  margin: 0 0 16px 0;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  position: relative;
-  z-index: 1;
-}
-
-.cservice-stack-desc {
-  font-size: 1.55rem;
-  color: #475569;
-  line-height: 1.65;
-  margin: 0 0 24px 0;
-  position: relative;
-  z-index: 1;
-}
-
-/* Technology Icons */
-.cservice-stack-icons {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 28px;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
-}
-
-.cservice-stack-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 28px;
-  background: #27286d;
-  color: #ffffff !important;
-  font-size: 1.45rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 8px;
-  width: fit-content;
-  position: relative;
-  z-index: 1;
-  transition: all 0.25s ease;
-  box-shadow: 0 4px 14px rgba(39, 40, 109, 0.25);
-}
-
-.cservice-stack-btn:hover {
-  background: #1e1f57;
-  transform: translateX(4px);
-  box-shadow: 0 6px 18px rgba(39, 40, 109, 0.35);
-  color: #ffffff !important;
-}
-
-.cservice-stack-btn-arrow {
-  transition: transform 0.25s ease;
-}
-
-.cservice-stack-btn:hover .cservice-stack-btn-arrow {
-  transform: translateX(4px);
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 992px) {
-  .cservice-stack-card {
-    margin-bottom: 60px;
-    top: 85px;
-  }
-
-  .cservice-stack-card-inner {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
-
-  .cservice-stack-image-col {
-    height: 300px;
-  }
-
-  .cservice-stack-image-col img {
-    min-height: 300px;
-  }
-
-  .cservice-stack-content-col {
-    padding: 36px 30px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .cservice-section-head .cservice-head-title {
-    font-size: 2.4rem;
-  }
-
-  .cservice-section-head .cservice-head-slogan {
-    font-size: 1.4rem;
-  }
-
-  .cservice-stack-card {
-    border-radius: 16px;
-    margin-bottom: 45px;
-    top: 75px;
-  }
-
-  .cservice-stack-image-col {
-    height: 240px;
-  }
-
-  .cservice-stack-image-col img {
-    min-height: 240px;
-  }
-
-  .cservice-stack-content-col {
-    padding: 28px 20px;
-  }
-
-  .cservice-stack-title {
-    font-size: 2.2rem;
-  }
-
-  .cservice-stack-desc {
-    font-size: 1.4rem;
-  }
 }
