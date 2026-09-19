@@ -249,7 +249,7 @@
    ======================================================== */
 @media screen and (max-width: 991px) {
   .cservice-features-section {
-    padding: 12px 0 20px 0 !important;
+    padding: 8px 0 16px 0 !important;
     background: #f8fafc !important;
     position: relative !important;
     margin: 0 !important;
@@ -258,8 +258,8 @@
 
   /* Smooth scroll travel for 8 cards stacking on mobile */
   .cservice-stack-container {
-    height: calc(100vh + (7 * 36vh)) !important;
-    height: calc(100dvh + (7 * 36dvh)) !important;
+    height: calc(100vh + (7 * 42vh)) !important;
+    height: calc(100dvh + (7 * 42dvh)) !important;
     max-width: 100% !important;
     padding: 0 16px !important;
     margin: 0 auto !important;
@@ -271,7 +271,7 @@
   .cservice-sticky-stage {
     position: -webkit-sticky !important;
     position: sticky !important;
-    top: 76px !important;
+    top: 72px !important;
     height: auto !important;
     display: flex !important;
     flex-direction: column !important;
@@ -279,8 +279,10 @@
     box-sizing: border-box !important;
     width: 100% !important;
     overflow: visible !important;
+    padding-bottom: 8px !important;
   }
 
+  /* Section Heading & Slogan: 100% fully visible without clipping */
   .cservice-stack-head {
     margin-bottom: 10px !important;
     padding-top: 0 !important;
@@ -291,37 +293,37 @@
     font-size: clamp(1.45rem, 4.4vw, 1.75rem) !important;
     font-weight: 800 !important;
     color: #0f172a !important;
-    margin-bottom: 3px !important;
+    margin-bottom: 4px !important;
     line-height: 1.2 !important;
     letter-spacing: -0.01em !important;
   }
 
   .cservice-stack-head .cservice-head-slogan {
-    font-size: 1.12rem !important;
-    line-height: 1.36 !important;
-    padding-left: 8px !important;
+    font-size: 1.14rem !important;
+    line-height: 1.38 !important;
+    padding-left: 9px !important;
     border-left: 3px solid #27286d !important;
     color: #475569 !important;
     margin: 0 !important;
-    display: -webkit-box !important;
-    -webkit-line-clamp: 2 !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
+    display: block !important;
+    -webkit-line-clamp: unset !important;
+    -webkit-box-orient: unset !important;
+    overflow: visible !important;
   }
 
-  /* Cards Stack Deck Layer: compact height (~415px), reducing ~48px of excessive vertical space */
+  /* Cards Stack Deck Layer: increased height by ~1.2 inches (~115px) filling bottom viewport space cleanly */
   .cservice-cards-stack-list {
     position: relative !important;
     width: 100% !important;
-    height: clamp(390px, 56vh, 420px) !important;
-    min-height: 380px !important;
-    max-height: 425px !important;
-    border-radius: 18px !important;
+    height: clamp(500px, 68vh, 545px) !important;
+    min-height: 485px !important;
+    max-height: 555px !important;
+    border-radius: 20px !important;
     overflow: hidden !important;
     margin: 0 !important;
     padding: 0 !important;
     display: block !important;
-    box-shadow: 0 10px 30px -6px rgba(15, 23, 42, 0.14) !important;
+    box-shadow: 0 12px 36px -8px rgba(15, 23, 42, 0.16) !important;
   }
 
   /* Individual card stacked with GPU accelerated transform */
@@ -333,9 +335,9 @@
     bottom: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    border-radius: 18px !important;
+    border-radius: 20px !important;
     background: #ffffff !important;
-    box-shadow: 0 10px 30px -6px rgba(15, 23, 42, 0.14), 0 2px 10px rgba(15, 23, 42, 0.05) !important;
+    box-shadow: 0 12px 36px -8px rgba(15, 23, 42, 0.16), 0 2px 10px rgba(15, 23, 42, 0.05) !important;
     border: 1px solid rgba(226, 232, 240, 0.95) !important;
     overflow: hidden !important;
     box-sizing: border-box !important;
@@ -350,12 +352,12 @@
     grid-template-columns: none !important;
   }
 
-  /* 1. Image: ~35% height / 140px */
+  /* 1. Image: Enlarged image height (~42% of card / 205-225px) to eliminate blank space */
   .cservice-sticky-image-col {
     width: 100% !important;
-    height: 35% !important;
-    min-height: 130px !important;
-    max-height: 155px !important;
+    height: 42% !important;
+    min-height: 195px !important;
+    max-height: 230px !important;
     flex-shrink: 0 !important;
     position: relative !important;
     overflow: hidden !important;
@@ -371,11 +373,11 @@
 
   .cservice-sticky-badge {
     position: absolute !important;
-    top: 10px !important;
-    left: 10px !important;
+    top: 12px !important;
+    left: 12px !important;
     font-size: 1.15rem !important;
     font-weight: 700 !important;
-    padding: 3px 10px !important;
+    padding: 3px 11px !important;
     border-radius: 999px !important;
     background: rgba(15, 23, 42, 0.85) !important;
     color: #38bdf8 !important;
@@ -383,14 +385,14 @@
     z-index: 3 !important;
   }
 
-  /* 2-6. Content: Natural top-to-bottom flow with balanced, cohesive gaps */
+  /* 2-6. Content: Proportional spacing filling the lower card area cleanly */
   .cservice-sticky-content-col {
     flex: 1 1 auto !important;
-    padding: 12px 16px 14px 16px !important;
+    padding: 14px 16px 16px 16px !important;
     display: flex !important;
     flex-direction: column !important;
-    justify-content: flex-start !important;
-    gap: 7px !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
     background: #ffffff !important;
     position: relative !important;
     overflow: hidden !important;
@@ -405,8 +407,8 @@
   .cservice-sticky-tagline {
     display: flex !important;
     align-items: center !important;
-    gap: 6px !important;
-    font-size: 1.05rem !important;
+    gap: 7px !important;
+    font-size: 1.08rem !important;
     font-weight: 700 !important;
     color: #c9652c !important;
     letter-spacing: 0.08em !important;
@@ -414,14 +416,14 @@
   }
 
   .cservice-sticky-line {
-    width: 16px !important;
+    width: 18px !important;
     height: 2px !important;
     background: #27286d !important;
   }
 
   /* 3. Card heading */
   .cservice-sticky-title {
-    font-size: 1.55rem !important;
+    font-size: 1.6rem !important;
     font-weight: 800 !important;
     color: #0f172a !important;
     margin: 0 !important;
@@ -431,12 +433,12 @@
 
   /* 4. Description text */
   .cservice-sticky-desc {
-    font-size: 1.15rem !important;
+    font-size: 1.16rem !important;
     color: #475569 !important;
-    line-height: 1.42 !important;
+    line-height: 1.45 !important;
     margin: 0 !important;
     display: -webkit-box !important;
-    -webkit-line-clamp: 3 !important;
+    -webkit-line-clamp: 4 !important;
     -webkit-box-orient: vertical !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
@@ -446,82 +448,82 @@
   .cservice-sticky-icons {
     display: flex !important;
     align-items: center !important;
-    gap: 8px !important;
-    margin: 2px 0 !important;
+    gap: 9px !important;
+    margin: 2px 0 4px 0 !important;
     flex-wrap: wrap !important;
   }
 
   .cservice-sticky-icons svg {
-    font-size: 18px !important;
+    font-size: 20px !important;
   }
 
   /* 6. Read More button */
   .cservice-sticky-btn {
     display: inline-flex !important;
     align-items: center !important;
-    gap: 6px !important;
-    padding: 7px 18px !important;
-    font-size: 1.15rem !important;
+    gap: 7px !important;
+    padding: 8px 20px !important;
+    font-size: 1.18rem !important;
     font-weight: 600 !important;
     background: #27286d !important;
     color: #ffffff !important;
-    border-radius: 6px !important;
+    border-radius: 7px !important;
     margin-top: 2px !important;
     align-self: flex-start !important;
     text-decoration: none !important;
-    box-shadow: 0 3px 10px rgba(39, 40, 109, 0.2) !important;
+    box-shadow: 0 4px 12px rgba(39, 40, 109, 0.22) !important;
   }
 }
 
 @media screen and (max-width: 480px) {
   .cservice-stack-container {
     padding: 0 12px !important;
-    height: calc(100vh + (7 * 34vh)) !important;
-    height: calc(100dvh + (7 * 34dvh)) !important;
+    height: calc(100vh + (7 * 40vh)) !important;
+    height: calc(100dvh + (7 * 40dvh)) !important;
   }
 
   .cservice-cards-stack-list {
-    height: clamp(375px, 55vh, 405px) !important;
-    min-height: 370px !important;
-    max-height: 410px !important;
-    border-radius: 16px !important;
+    height: clamp(480px, 66vh, 530px) !important;
+    min-height: 470px !important;
+    max-height: 535px !important;
+    border-radius: 18px !important;
   }
 
   .cservice-sticky-card {
-    border-radius: 16px !important;
+    border-radius: 18px !important;
   }
 
   .cservice-sticky-image-col {
-    height: 34% !important;
-    min-height: 125px !important;
-    max-height: 145px !important;
+    height: 40% !important;
+    min-height: 185px !important;
+    max-height: 215px !important;
   }
 
   .cservice-sticky-content-col {
-    padding: 10px 14px 12px 14px !important;
-    gap: 6px !important;
-  }
-
-  .cservice-sticky-title {
-    font-size: 1.45rem !important;
-  }
-
-  .cservice-sticky-desc {
-    font-size: 1.1rem !important;
-    line-height: 1.36 !important;
-    -webkit-line-clamp: 3 !important;
-  }
-
-  .cservice-sticky-icons {
+    padding: 12px 14px 14px 14px !important;
     gap: 7px !important;
   }
 
+  .cservice-sticky-title {
+    font-size: 1.5rem !important;
+  }
+
+  .cservice-sticky-desc {
+    font-size: 1.12rem !important;
+    line-height: 1.4 !important;
+    -webkit-line-clamp: 4 !important;
+  }
+
+  .cservice-sticky-icons {
+    gap: 8px !important;
+  }
+
   .cservice-sticky-icons svg {
-    font-size: 17px !important;
+    font-size: 18px !important;
   }
 
   .cservice-sticky-btn {
-    padding: 6px 16px !important;
-    font-size: 1.1rem !important;
+    padding: 7px 18px !important;
+    font-size: 1.14rem !important;
   }
 }
