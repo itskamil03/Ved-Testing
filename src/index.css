@@ -19,13 +19,27 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   /* 1rem = 10px */
-  /* overflow-x: hidden; */
 }
 a {
   text-decoration: none;
 }
-/* body {
-  overflow-x: hidden;
-} */
+
+@media screen and (max-width: 991px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+    overflow-x: clip !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  #root {
+    overflow-x: hidden !important;
+    overflow-x: clip !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
 
 
