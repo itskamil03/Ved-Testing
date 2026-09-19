@@ -247,6 +247,18 @@ function Home({ target, label }) {
   const [events, setEvents] = useState([]);
 
 
+  const serviceSliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    arrows: false,
+    touchMove: true,
+  };
+
   const SERVICE_CARDS = [
     {
       id: 1,
@@ -813,7 +825,56 @@ function Home({ target, label }) {
 
 
       <section id="features" className="cservice-features-section">
-        <ServicesStackDeck cards={SERVICE_CARDS} />
+        {/* Desktop / Laptop: Original Slider Carousel Animation */}
+        <div className="cservice-desktop-wrapper">
+          <div className="container">
+            <div className="cservice-wrap">
+              <div className="cservice-section-head cservice-section-head-ref" data-aos="fade-down">
+                <h2 className="cservice-head-title head_title">
+                  Our Best Exceptional Service For You
+                </h2>
+                <p className="cservice-head-slogan page_title">
+                  At Venturing Digitally we measure our success by the growth and
+                  success of our clients. That's why we go above and beyond to
+                  deliver exceptional service and customized solutions that help
+                  them achieve their goals.
+                </p>
+              </div>
+              <div className="cservice-cards-slider">
+                <Slider {...serviceSliderSettings} className="cservice-slider">
+                  {SERVICE_CARDS.map((card) => (
+                    <div key={card.id} className="cservice-card-slide">
+                      <Link to={card.link} className="cservice-card-ref cservice-card-50">
+                        <div className="cservice-card-ref-image">
+                          <span className="cservice-card-ref-badge">{card.number}</span>
+                          <img src={card.image} alt={card.title} loading="lazy" />
+                          <span className="cservice-card-ref-image-overlay" aria-hidden="true" />
+                        </div>
+                        <div className="cservice-card-ref-content">
+                          <span className="cservice-card-ref-number" aria-hidden="true">{card.number}</span>
+                          <div className="cservice-card-ref-tagline">
+                            <span className="cservice-card-ref-line" />
+                            {card.tagline}
+                          </div>
+                          <h3 className="cservice-card-ref-title">{card.title}</h3>
+                          <p className="cservice-card-ref-desc">{card.description}</p>
+                          <span className="cservice-card-ref-btn">
+                            Read More <FaLongArrowAltRight className="cservice-card-ref-btn-arrow" />
+                          </span>
+                        </div>
+                      </Link>
+                    </div>
+                  ))}
+                </Slider>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile View: 8-Card Stacking Deck */}
+        <div className="cservice-mobile-wrapper">
+          <ServicesStackDeck cards={SERVICE_CARDS} />
+        </div>
       </section>
 
 

@@ -2402,6 +2402,23 @@ html.home-fullpage-snap {
   overflow: visible;
 }
 
+.cservice-desktop-wrapper {
+  display: block;
+}
+
+.cservice-mobile-wrapper {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .cservice-desktop-wrapper {
+    display: none !important;
+  }
+  .cservice-mobile-wrapper {
+    display: block !important;
+  }
+}
+
 /* Inline padding same for head + cards (align left/right) */
 .cservice-wrap {
   max-width: 100%;
