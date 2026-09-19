@@ -156,7 +156,7 @@ function Insights() {
                 <div className="col-lg-6">
                   <div className="icon-grid">
                     <div className="item">
-                      <div className="number">40+</div>
+                      <div className="number">120+</div>
                       <div className="title">Website & Mobile App Delivered</div>
                     </div>
                     <div className="item">
@@ -168,7 +168,7 @@ function Insights() {
                       <div className="title">Team Members</div>
                     </div>
                     <div className="item">
-                      <div className="number">2+</div>
+                      <div className="number">5+</div>
                       <div className="title">Years of Experience</div>
                     </div>
                   </div>

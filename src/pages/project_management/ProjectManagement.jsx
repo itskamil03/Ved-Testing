@@ -4,7 +4,7 @@ import projectmanagement from "../../assets/project-management.svg";
 import ContactForm from "../../components/contact_form/ContactForm";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import {toast, ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 const profirst = [
   {
@@ -41,7 +41,7 @@ const profirst = [
     id: "6",
     title: "Integration with Third-Party Tools",
     p1: "Seamlessly integrate our project management solutions with popular tools such as Slack, Jira, and Microsoft Teams for streamlined workflows and enhanced productivity.",
-    p2: "Easily customize integrations to suit your team’s unique needs and improve cross-platform collaboration."
+    p2: "Easily customize integrations to suit your team's unique needs and improve cross-platform collaboration.",
   },
 ];
 
@@ -71,6 +71,7 @@ const pro_why = [
     p2: "Our risk management strategies identify and mitigate potential risks, ensuring smooth project execution.",
   },
 ];
+
 function ProjectManagement() {
   const [isAgreed, setIsAgreed] = useState(false);
 
@@ -82,7 +83,7 @@ function ProjectManagement() {
     first_name: "",
     last_name: "",
     mobile: "",
-    title:"",
+    title: "",
     desc: "",
     email: "",
     business_name: "",
@@ -107,143 +108,149 @@ function ProjectManagement() {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
-  const handleSubmit= async (e)=>
-    {
-  
-        e.preventDefault();
-  
-        if (!validateEmail(formData.email)) {
-          toast.error("Please enter a valid email address", {
-            position: "top-right",
-            autoClose: 2000,
-          });
-          return;
-        }
-    
-        if (!validatePhone(formData.mobile)) {
-          toast.error("Please enter a valid phone number", {
-            position: "top-right",
-            autoClose: 2000,
-          });
-          return;
-        }
-  
-        if (!formData.agreement) {
-          toast.error("Please accept the agreement before submitting.", {
-            position: "top-right",
-            autoClose: 2000,
-          });
-          return;
-        }
-    
-        try {
-    
-    
-          const response = await fetch(
-            "https://ved.venturingdigitally.com/api/createSolution",
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(formData),
-            }
-          );
-    
-          if (response.status == 200) {
-    
-            setFormData({ first_name: "",
-              last_name: "",
-              mobile: "",
-              title:"",
-              desc: "",
-              email: "",
-              business_name: "",
-              date: "",
-              country: "",
-              user_access: "",
-              address: "",
-            })
-    
-            toast.success("Form Submitted Successfully", {
-              position: "top-right",
-              autoClose: 2000,
-            });
-        
-          } else {
-            toast.error("Submission failed. Please try again.", {
-              position: "top-right",
-              autoClose: 2000,
-            });
-          }
-          
-        } catch (error) {
-          console.error("An error occurred while submitting the form:", error);
-        }
-      
-  }
-    
-      const validateEmail = (email) => {
-        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        return emailRegex.test(email);
-      };
-    
-      const validatePhone = (phone) => {
-        const phoneRegex = /^[6-9]\d{9}$/;
-        return phoneRegex.test(phone);
-      };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
+    if (!validateEmail(formData.email)) {
+      toast.error("Please enter a valid email address", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
 
+    if (!validatePhone(formData.mobile)) {
+      toast.error("Please enter a valid phone number", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    if (!formData.agreement) {
+      toast.error("Please accept the agreement before submitting.", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        "https://ved.venturingdigitally.com/api/createSolution",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.status == 200) {
+        setFormData({
+          first_name: "",
+          last_name: "",
+          mobile: "",
+          title: "",
+          desc: "",
+          email: "",
+          business_name: "",
+          date: "",
+          country: "",
+          user_access: "",
+          address: "",
+        });
+
+        toast.success("Form Submitted Successfully", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+      } else {
+        toast.error("Submission failed. Please try again.", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+      }
+    } catch (error) {
+      console.error("An error occurred while submitting the form:", error);
+    }
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  };
+
+  const validatePhone = (phone) => {
+    const phoneRegex = /^[6-9]\d{9}$/;
+    return phoneRegex.test(phone);
+  };
 
   return (
     <>
-    <ToastContainer/>
+      <ToastContainer />
       <Hero
         heading="Project Management System"
         imgbtn="Projects"
         src="image/project-management/pms.png"
-        // slogan="Effective Project Management Solutions"
       />
 
-     <section id="solution">
-          <div className="container-fluid">
-            <div className="container">
-            
-             <div className="head_title margin_bottom-20">Project Management System (PMS)</div>
+      <section id="solution">
+        <div className="container-fluid">
+          <div className="container">
+            <div
+              className="head_title margin_bottom-20"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
+              {/* Project Management System (PMS) */}
+            </div>
 
             <div className="section">
-              <div className="left">
-              <div className="image">
-                <img loading="eager" fetchpriority="high"
-                  src="/image/solution/ProjectManagement.png"
-                  alt=""
-                  className="w-100 h-100"
-                   
-                />
-              </div>
-              </div>
-             
-              <div className="right">
-              <div class="text-box">
-           
-              PMS (Project Management System) Software helps businesses plan, track, and manage projects efficiently. It enables task scheduling, resource allocation, and real-time collaboration to ensure smooth execution. With automated workflows, milestone tracking, and performance analytics, teams can stay on schedule and within budget. Integration with time tracking, document sharing, and communication tools enhances productivity and teamwork. Cloud-based PMS provides remote access, scalability, and secure data storage for seamless project oversight. Implementing PMS Software improves efficiency, enhances transparency, and boosts project success rates. It also streamlines decision-making with real-time insights and ensures better risk management. A well-structured PMS enhances team coordination, accountability, and overall business growth.
-
+              <div className="left"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="200">
+                <div className="image">
+                  <img
+                    loading="eager"
+                    fetchpriority="high"
+                    src="/image/solution/ProjectManagement.png"
+                    alt="Project Management"
+                    className="w-100 h-100"
+                  />
                 </div>
-            </div>
-    
+              </div>
+
+              <div className="right"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-aos-offset="200">
+                <div className="text-box"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="400">
+                  PMS (Project Management System) Software helps businesses plan, track, and manage projects efficiently. It enables task scheduling, resource allocation, and real-time collaboration to ensure smooth execution. With automated workflows, milestone tracking, and performance analytics, teams can stay on schedule and within budget. Integration with time tracking, document sharing, and communication tools enhances productivity and teamwork. Cloud-based PMS provides remote access, scalability, and secure data storage for seamless project oversight. Implementing PMS Software improves efficiency, enhances transparency, and boosts project success rates. It also streamlines decision-making with real-time insights and ensures better risk management. A well-structured PMS enhances team coordination, accountability, and overall business growth.
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      {/* <------------------------------------Project Managemen first--------------------------------------------> */}
+
+      {/* Project Management first */}
       <section id="profirst">
         <div className="container-fluid">
           <div className="container">
-            <div className="profirst-section-head">
+            <div className="profirst-section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="profirst-custom-head">
                 <div className="profirst-head-title">
-                  Streamline Your Projects with Our Robust Project Management
-                  Software
+                  Streamline Your Projects with Our Robust Project Management Software
                 </div>
               </div>
             </div>
@@ -251,19 +258,27 @@ function ProjectManagement() {
               <div className="why-grid">
                 <div className="row justify-content-center">
                   <div>
-                    <div className="profirst-img-box">
-                      <img loading="eager" fetchpriority="high"
+                    <div className="profirst-img-box"
+                      data-aos="zoom-in"
+                      data-aos-duration="1000"
+                      data-aos-offset="200">
+                      <img
+                        loading="eager"
+                        fetchpriority="high"
                         src="image/project-management/project management cover.png"
-                        alt=""
+                        alt="Project Management Cover"
                         className="w-100 h-100"
-                         
                       />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="profirst-head-slogan">
+            <div className="profirst-head-slogan"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="100"
+              data-aos-offset="100">
               At Venturing Digitally, we understand the importance of efficient
               project management in achieving successful outcomes. Our project
               management solutions provide the necessary tools and features to
@@ -273,24 +288,32 @@ function ProjectManagement() {
           </div>
         </div>
       </section>
-      {/* <------------------------------------ project management second---------------------------> */}
+
+      {/* project management second */}
       <section id="prosecond" className="bg-light">
         <div className="container-fluid">
           <div className="container">
-            <div className="prosecond-section-head">
+            <div className="prosecond-section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="prosecond-custom-head">
                 <div className="prosecond-head-title">Project Management</div>
               </div>
-              <div className="prosecond-head-slogan">
+              <div className="prosecond-head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
                 Best Project Management Software with Venturing Digitally
               </div>
             </div>
 
-            <div className="prosecond-section-content">
+            <div className="prosecond-section-content"
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="prosecond-health-content">
-                <div className="prosecond-content-head">
-                  About project management
-                </div>
+                <div className="prosecond-content-head">About project management</div>
                 <div className="prosecond-content-data">
                   Project management is the key to ensuring projects are
                   completed on time, within budget, and with the desired
@@ -304,9 +327,13 @@ function ProjectManagement() {
             <div className="prosecond-section-card">
               <div className="why-grid">
                 <div className="row justify-content-center g-4">
-                  {profirst.map((peof) => {
+                  {profirst.map((peof, index) => {
                     return (
-                      <div className="col-lg-4 col-md-6"  key={peof.id}>
+                      <div className="col-lg-4 col-md-6" key={peof.id}
+                        data-aos="fade-up"
+                        data-aos-duration="600"
+                        data-aos-delay={index * 100}
+                        data-aos-offset="100">
                         <div className="prosecond-why-card">
                           <div className="prosecond-title">{peof.title}</div>
                           <div className="prosecond-data">
@@ -325,17 +352,24 @@ function ProjectManagement() {
           </div>
         </div>
       </section>
-      {/* <-------------------------- Project Management third -------------------------> */}
+
+      {/* Project Management third */}
       <section id="prothird">
         <div className="container-fluid">
           <div className="container">
-            <div className="prothird-section-head">
+            <div className="prothird-section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="prothird-custom-head">
                 <div className="prothird-head-title">
                   Why Venturing Digitally
                 </div>
               </div>
-              <div className="prothird-head-slogan">
+              <div className="prothird-head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
                 Choose Venturing Digitally as your trusted partner in project
                 management, and experience the benefits of streamlined project
                 workflows, enhanced team collaboration, and successful project
@@ -343,28 +377,38 @@ function ProjectManagement() {
               </div>
             </div>
             <div className="prothird-section-content">
-              <div className="prothird-img-box">
-                <img loading="eager" fetchpriority="high"
+              <div className="prothird-img-box"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="200">
+                <img
+                  loading="eager"
+                  fetchpriority="high"
                   src="images/project-management/project1.svg"
-                  alt="..."
+                  alt="Project Management Illustration"
                   className="w-100 h-100"
-                   
                 />
               </div>
 
               <div className="why-grid">
-                {pro_why.map((why) => {
+                {pro_why.map((why, index) => {
                   return (
-                    <div className="why-card" key={why.id}>
+                    <div className="why-card" key={why.id}
+                      data-aos="fade-left"
+                      data-aos-duration="600"
+                      data-aos-delay={index * 100}
+                      data-aos-offset="150">
                       <div className="title">{why.head}</div>
-                      <div className="content">
+                      <div className="content"
+                        data-aos="fade-up"
+                        data-aos-duration="400"
+                        data-aos-delay={index * 150}>
                         {why.p1} {why.p2}
                       </div>
                     </div>
                   );
                 })}
               </div>
-
             </div>
           </div>
         </div>
@@ -375,24 +419,41 @@ function ProjectManagement() {
           <div className="container">
             <div className="section-content">
               <div className="row align-items-center g-4">
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="200">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
-                      <img loading="eager" fetchpriority="high"
+                      <img
+                        loading="eager"
+                        fetchpriority="high"
                         src="crm.jpeg"
-                        alt="..."
+                        alt="Demo Request"
                         className="w-100 h-100"
-                        style={{aspectRatio:1.25}}
-                         
+                        style={{ aspectRatio: 1.25 }}
+                        data-aos="zoom-in"
+                        data-aos-duration="800"
+                        data-aos-delay="200"
                       />
                     </div>
                   </div>
                 </div>
 
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                  data-aos-offset="200">
                   <div className="health-content">
-                    <div className="form-container">
-                      <div className="form-header">
+                    <div className="form-container"
+                      data-aos="zoom-in"
+                      data-aos-duration="800"
+                      data-aos-delay="300">
+                      <div className="form-header"
+                        data-aos="fade-down"
+                        data-aos-duration="600"
+                        data-aos-delay="400">
                         <h2>Request Free Demo</h2>
                       </div>
 
@@ -402,7 +463,10 @@ function ProjectManagement() {
                           style={{ paddingBottom: "0px" }}
                         >
                           <div className="col-lg-6 padding-0">
-                            <div className="left-placeholder">
+                            <div className="left-placeholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="500">
                               <input
                                 type="text"
                                 name="first_name"
@@ -414,7 +478,10 @@ function ProjectManagement() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="550">
                               <input
                                 type="text"
                                 name="title"
@@ -426,7 +493,10 @@ function ProjectManagement() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="600">
                               <input
                                 type="tel"
                                 name="mobile"
@@ -438,7 +508,10 @@ function ProjectManagement() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="650">
                               <input
                                 type="email"
                                 name="email"
@@ -449,7 +522,10 @@ function ProjectManagement() {
                                 required
                               />
                             </div>
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="700">
                               <input
                                 type="text"
                                 name="address"
@@ -462,7 +538,10 @@ function ProjectManagement() {
                             </div>
                           </div>
                           <div className="col-lg-6 padding-0">
-                            <div className="right-placholder">
+                            <div className="right-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="500">
                               <input
                                 type="text"
                                 name="last_name"
@@ -473,7 +552,10 @@ function ProjectManagement() {
                                 required
                               />
                             </div>
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="550">
                               <input
                                 type="text"
                                 name="business_name"
@@ -485,7 +567,10 @@ function ProjectManagement() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="600">
                               <input
                                 type="text"
                                 name="country"
@@ -497,7 +582,10 @@ function ProjectManagement() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="650">
                               <input
                                 type="number"
                                 name="user_access"
@@ -509,12 +597,15 @@ function ProjectManagement() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="700">
                               <input
                                 type="date"
                                 name="date"
                                 className="form-control fs-3 second-input"
-                                placeholder="Preffered Date & Time*"
+                                placeholder="Preferred Date & Time*"
                                 value={formData.date}
                                 onChange={handleInputChange}
                                 required
@@ -527,7 +618,10 @@ function ProjectManagement() {
                           style={{ padding: "0px" }}
                         >
                           <div className="col-lg-12">
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-up"
+                              data-aos-duration="600"
+                              data-aos-delay="750">
                               <textarea
                                 rows={3}
                                 name="desc"
@@ -539,17 +633,20 @@ function ProjectManagement() {
                               ></textarea>
                             </div>
 
-                            <div>
-                            <label
+                            <div
+                              data-aos="fade-up"
+                              data-aos-duration="600"
+                              data-aos-delay="800">
+                              <label
                                 style={{
                                   display: "flex",
                                   gridColumnGap: "8px",
                                   alignItems: "start",
                                   fontSize: "12px",
-                                   paddingTop:"10px"
+                                  paddingTop: "10px"
                                 }}
                               >
-                                  <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />
+                                <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />
                                 I agree to the use of personal information
                                 collected from myself in organization software
                                 demo purpose and other IT related support from
@@ -559,11 +656,13 @@ function ProjectManagement() {
                           </div>
                         </div>
 
-                        <button type="submit" className="request-btn">
+                        <button type="submit" className="request-btn"
+                          data-aos="zoom-in"
+                          data-aos-duration="600"
+                          data-aos-delay="850">
                           Request Free Demo
                         </button>
                       </form>
-
                     </div>
                   </div>
                 </div>
@@ -576,131 +675,67 @@ function ProjectManagement() {
       <section id="enterprise-faq">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head">
+            <div className="section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="custom-head">
                 <div className="head-title">Frequently Ask Question</div>
               </div>
-              <div className="head-slogan">
+              <div className="head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
                 Frequently Asked Question For Project Management Software
               </div>
             </div>
             <div className="section-content">
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 1
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(1)}
-                  >
-                    What is project management software, and how can it benefit
-                    my business?
-                  </div>
-                  {activeIndex === 1 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        Project management software is a digital tool that helps
-                        businesses plan, execute, and track projects
-                        efficiently. It improves team collaboration, streamlines
-                        workflows, automates task assignments, and provides
-                        real-time progress tracking. Using project management
-                        software increases productivity, reduces delays, and
-                        ensures projects are completed on time and within
-                        budget.
-                      </div>
+              {[
+                {
+                  q: "What is project management software, and how can it benefit my business?",
+                  a: "Project management software is a digital tool that helps businesses plan, execute, and track projects efficiently. It improves team collaboration, streamlines workflows, automates task assignments, and provides real-time progress tracking. Using project management software increases productivity, reduces delays, and ensures projects are completed on time and within budget."
+                },
+                {
+                  q: "How do I choose the best project management software for my company?",
+                  a: "When selecting a project management tool, consider features like task automation, time tracking, team collaboration, reporting, and integration with existing tools (e.g., CRM, accounting software). Choose between cloud-based and on-premise solutions based on your security and scalability needs. Popular options include Trello, Asana, Jira, and Monday.com."
+                },
+                {
+                  q: "Can project management software integrate with other business tools?",
+                  a: "Yes! Most project management platforms offer integrations with CRM, ERP, communication tools (Slack, Microsoft Teams), cloud storage (Google Drive, Dropbox), and financial software. These integrations help streamline workflows, improve data consistency, and boost overall efficiency."
+                },
+                {
+                  q: "Is project management software suitable for small businesses and startups?",
+                  a: "Absolutely! Many project management solutions offer scalable plans for businesses of all sizes. Small businesses and startups can start with free or budget-friendly options like ClickUp or Trello, while larger enterprises may require advanced features like AI-driven analytics, automation, and portfolio management found in tools like Wrike or Microsoft Project."
+                }
+              ].map((faq, index) => (
+                <div className="accordion" key={index}
+                  data-aos="fade-right"
+                  data-aos-duration="600"
+                  data-aos-delay={index * 100}
+                  data-aos-offset="100">
+                  <div className="accordion-item">
+                    <div
+                      className={
+                        activeIndex === index + 1
+                          ? "accordion-item-header active"
+                          : "accordion-item-header"
+                      }
+                      onClick={() => toggleTab(index + 1)}
+                    >
+                      {faq.q}
                     </div>
-                  ) : null}
-                </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 2
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(2)}
-                  >
-                    How do I choose the best project management software for my
-                    company?
-                  </div>
-                  {activeIndex === 2 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        When selecting a project management tool, consider
-                        features like task automation, time tracking, team
-                        collaboration, reporting, and integration with existing
-                        tools (e.g., CRM, accounting software). Choose between
-                        cloud-based and on-premise solutions based on your
-                        security and scalability needs. Popular options include
-                        Trello, Asana, Jira, and Monday.com.
+                    {activeIndex === index + 1 ? (
+                      <div className="accordion-item-body"
+                        data-aos="fade-down"
+                        data-aos-duration="400">
+                        <div className="accordion-item-body-content">
+                          {faq.a}
+                        </div>
                       </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 3
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(3)}
-                  >
-                    Can project management software integrate with other
-                    business tools?
+                    ) : null}
                   </div>
-                  {activeIndex === 3 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        Yes! Most project management platforms offer
-                        integrations with CRM, ERP, communication tools (Slack,
-                        Microsoft Teams), cloud storage (Google Drive, Dropbox),
-                        and financial software. These integrations help
-                        streamline workflows, improve data consistency, and
-                        boost overall efficiency.
-                      </div>
-                    </div>
-                  ) : null}
                 </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 4
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(4)}
-                  >
-                    Is project management software suitable for small businesses
-                    and startups?
-                  </div>
-                  {activeIndex === 4 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        Absolutely! Many project management solutions offer
-                        scalable plans for businesses of all sizes. Small
-                        businesses and startups can start with free or
-                        budget-friendly options like ClickUp or Trello, while
-                        larger enterprises may require advanced features like
-                        AI-driven analytics, automation, and portfolio
-                        management found in tools like Wrike or Microsoft
-                        Project.
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

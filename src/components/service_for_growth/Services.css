@@ -148,6 +148,27 @@
   margin: 0 0 28px 0;
 }
 
+/* Icon row for service cards */
+.cservice-card-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.cservice-card-icons svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .cservice-card-icons svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .cservice-card-btn {
   display: inline-flex;
   align-items: center;

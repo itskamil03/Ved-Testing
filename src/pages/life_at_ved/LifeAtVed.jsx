@@ -7,6 +7,11 @@ import {
   FaCode, 
   FaServer, 
   FaMobileAlt,
+  FaRobot,
+  FaCloud,
+  FaLayerGroup,
+  FaPaintBrush,
+  FaUserTie,
   FaUsers,
   FaProjectDiagram,
   FaCertificate
@@ -166,6 +171,114 @@ function LifeAtVed() {
         "Push Notifications",
         "Mobile Database Management"
       ]
+    },
+    "AI/ML": {
+      title: "AI/ML",
+      icon: FaRobot,
+      whyImportant: "AI and Machine Learning are reshaping how businesses automate decisions, personalize experiences, and solve complex problems. Learning AI/ML prepares students for one of the fastest-growing areas in modern technology.",
+      scope: "AI/ML opens career paths such as Machine Learning Engineer, Data Scientist, AI Engineer, NLP Engineer, and Research Analyst. Demand is strong across product companies, startups, healthcare, finance, and automation-driven industries.",
+      technologies: [
+        "Python Programming",
+        "Statistics and Probability",
+        "NumPy, Pandas, and Matplotlib",
+        "Scikit-learn",
+        "Deep Learning Basics",
+        "TensorFlow / PyTorch",
+        "Model Training and Evaluation",
+        "Natural Language Processing",
+        "Computer Vision Basics",
+        "Prompt Engineering"
+      ]
+    },
+    "Cloud Computing": {
+      title: "Cloud Computing",
+      icon: FaCloud,
+      whyImportant: "Cloud Computing powers scalable applications, remote collaboration, and modern digital infrastructure. It is a core skill for teams building secure, flexible, and cost-efficient systems.",
+      scope: "Cloud Computing offers opportunities in cloud administration, solution architecture, DevOps, platform engineering, and cloud support roles. Skills in this area are valued by startups and large enterprises alike.",
+      technologies: [
+        "AWS, Azure, and Google Cloud",
+        "Virtual Machines and Storage",
+        "Networking and Security Basics",
+        "Serverless Computing",
+        "Docker and Containerization",
+        "Kubernetes Fundamentals",
+        "Cloud Deployment Strategies",
+        "Monitoring and Logging",
+        "Backup and Disaster Recovery",
+        "Infrastructure as Code"
+      ]
+    },
+    "Full Stack": {
+      title: "Full Stack",
+      icon: FaLayerGroup,
+      whyImportant: "Full Stack Development equips learners to build complete products from the user interface to the backend. It is one of the most practical paths for creating real-world applications end to end.",
+      scope: "Full Stack developers are needed in startups, product teams, agencies, and enterprise software teams. Career options include Full Stack Developer, Frontend Developer, Backend Developer, and Web Application Engineer.",
+      technologies: [
+        "HTML, CSS, and JavaScript",
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB / SQL",
+        "REST APIs",
+        "Authentication and Authorization",
+        "Git and GitHub",
+        "Deployment Basics",
+        "Responsive Application Design"
+      ]
+    },
+    "UI/UX": {
+      title: "UI/UX",
+      icon: FaPaintBrush,
+      whyImportant: "UI/UX Design focuses on making digital products intuitive, accessible, and visually effective. Strong design improves user satisfaction and directly supports business growth.",
+      scope: "UI/UX design opens roles such as UI Designer, UX Designer, Product Designer, Interaction Designer, and Design Researcher. Demand continues to grow as more companies invest in user-centered products.",
+      technologies: [
+        "User Research",
+        "Wireframing and Prototyping",
+        "Figma and Adobe XD",
+        "Design Systems",
+        "Information Architecture",
+        "Usability Testing",
+        "Accessibility Principles",
+        "Visual Hierarchy",
+        "Interaction Design",
+        "Responsive Interface Design"
+      ]
+    },
+    "Marketing": {
+      title: "Marketing",
+      icon: FaBullhorn,
+      whyImportant: "Marketing helps brands build awareness, attract the right audience, and convert interest into results. Strong marketing skills are essential for every business that wants to grow online and offline.",
+      scope: "Marketing careers include Digital Marketer, SEO Specialist, Content Strategist, Social Media Manager, Performance Marketer, and Brand Executive. The field offers broad opportunities across agencies, startups, and established companies.",
+      technologies: [
+        "SEO and Keyword Research",
+        "Content Strategy",
+        "Social Media Campaigns",
+        "Google Ads and Meta Ads",
+        "Email Marketing",
+        "Brand Positioning",
+        "Google Analytics",
+        "Conversion Optimization",
+        "Copywriting",
+        "Campaign Reporting"
+      ]
+    },
+    "HR": {
+      title: "HR",
+      icon: FaUserTie,
+      whyImportant: "Human Resources plays a key role in building healthy workplaces, supporting employee growth, and ensuring smooth organizational operations. It is a people-focused function with long-term career stability.",
+      scope: "HR opens opportunities in recruitment, HR operations, talent acquisition, employee engagement, payroll support, and HR generalist roles. Organizations across every industry depend on strong HR teams.",
+      technologies: [
+        "Recruitment and Selection",
+        "Onboarding and Induction",
+        "HR Policies and Compliance",
+        "Performance Management",
+        "Employee Engagement",
+        "Payroll and Attendance Systems",
+        "HRIS Tools",
+        "Communication and Conflict Resolution",
+        "Training and Development",
+        "Labor Law Basics"
+      ]
     }
   };
 
@@ -317,6 +430,8 @@ function LifeAtVed() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
   };
 
   const settingsdata = {
@@ -329,6 +444,8 @@ function LifeAtVed() {
     autoplaySpeed: 2000,
     arrows: false,
     touchMove: true,
+    pauseOnHover: false,
+    pauseOnFocus: false,
     responsive: [
       {
         breakpoint: 1024, 
@@ -864,6 +981,63 @@ function LifeAtVed() {
                 <h3 className="domain-title">App Development</h3>
                 <a href="#" className="domain-link" onClick={(e) => { e.preventDefault(); handleShowProgramModal("App Development"); }}>See Programs <FaLongArrowAltRight /></a>
               </div>
+
+              {/* Newly Added */}
+              {/* AI/ML */}
+                <div className="career-domain-card">
+                <div className="domain-icon">
+                    <FaRobot />
+                </div>
+                <h3 className="domain-title">AI/ML</h3>
+                  <a href="#" className="domain-link" onClick={(e) => { e.preventDefault(); handleShowProgramModal("AI/ML"); }}>See Programs <FaLongArrowAltRight /></a>
+                </div>
+
+                {/* Cloud Computing */}
+                <div className="career-domain-card">
+                <div className="domain-icon">
+                    <FaCloud />
+                </div>
+                <h3 className="domain-title">Cloud Computing</h3>
+                  <a href="#" className="domain-link" onClick={(e) => { e.preventDefault(); handleShowProgramModal("Cloud Computing"); }}>See Programs <FaLongArrowAltRight /></a>
+              </div>
+
+
+                 {/* Full stack Development */}
+                   <div className="career-domain-card">
+                <div className="domain-icon">
+                    <FaLayerGroup />
+                </div>
+                <h3 className="domain-title">Full Stack</h3>
+                  <a href="#" className="domain-link" onClick={(e) => { e.preventDefault(); handleShowProgramModal("Full Stack"); }}>See Programs <FaLongArrowAltRight /></a>
+                  </div>
+
+                {/* UI/UX */}
+                  <div className="career-domain-card">
+                <div className="domain-icon">
+                    <FaPaintBrush />
+                </div>
+                <h3 className="domain-title">UI/UX</h3>
+                  <a href="#" className="domain-link" onClick={(e) => { e.preventDefault(); handleShowProgramModal("UI/UX"); }}>See Programs <FaLongArrowAltRight /></a>
+                  </div>
+
+                {/* Marketing */}
+                  <div className="career-domain-card">
+                <div className="domain-icon">
+                    <FaBullhorn />
+                </div>
+                <h3 className="domain-title">Marketing</h3>
+                  <a href="#" className="domain-link" onClick={(e) => { e.preventDefault(); handleShowProgramModal("Marketing"); }}>See Programs <FaLongArrowAltRight /></a>
+                  </div>
+
+
+                {/* HR */}
+                  <div className="career-domain-card">
+                <div className="domain-icon">
+                    <FaUserTie />
+                </div>
+                <h3 className="domain-title">HR</h3>
+                  <a href="#" className="domain-link" onClick={(e) => { e.preventDefault(); handleShowProgramModal("HR"); }}>See Programs <FaLongArrowAltRight /></a>
+                  </div>
             </div>
           </div>
         </div>
@@ -1269,7 +1443,7 @@ function LifeAtVed() {
                                   required
                                 />
                               </div>
-                              <div className="left-placeholder" style={{marginTop:"12px"}}>
+                              {/* <div className="left-placeholder" style={{marginTop:"12px"}}>
                                 <input
                                   type="text"
                                   name="courses"
@@ -1278,7 +1452,7 @@ function LifeAtVed() {
                                   value={formData.courses}
                                   onChange={handleInputChange}
                                 />
-                              </div>
+                              </div> */}
 
                               <div className="left-placeholder" style={{marginTop:"12px"}}>
                                 <input

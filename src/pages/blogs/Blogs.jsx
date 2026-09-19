@@ -18,6 +18,8 @@ const blogImageCarouselSettings = {
   autoplaySpeed: 3500,
   arrows: false,
   adaptiveHeight: true,
+  pauseOnHover: false,
+  pauseOnFocus: false,
 };
 
 const getBlogImages = (blog) => {
@@ -144,8 +146,8 @@ function Blogs() {
             </div>
           </div>
         </div>
-      </section>
       <ContactForm />
+      </section>
     </>
   );
 }

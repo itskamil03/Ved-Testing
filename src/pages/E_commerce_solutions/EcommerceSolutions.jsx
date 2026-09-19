@@ -4,7 +4,7 @@ import Ecom1 from "../../assets/video-icons/SEO Clip Abstract Object.mp4";
 import ContactForm from "../../components/contact_form/ContactForm";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import {toast, ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 const Ecom = [
   {
@@ -70,6 +70,7 @@ const ecom_best = [
     p2: "Our expertise includes popular platforms like WooCommerce, Shopify, Magento, and custom-built solutions to meet your unique needs.",
   },
 ];
+
 function EcommerceSolutions() {
   const [isAgreed, setIsAgreed] = useState(false);
 
@@ -87,7 +88,7 @@ function EcommerceSolutions() {
     first_name: "",
     last_name: "",
     mobile: "",
-    title:"",
+    title: "",
     desc: "",
     email: "",
     business_name: "",
@@ -106,144 +107,157 @@ function EcommerceSolutions() {
     }));
   };
 
-  const handleSubmit= async (e)=>
-    {
-  
-        e.preventDefault();
-  
-        if (!validateEmail(formData.email)) {
-          toast.error("Please enter a valid email address", {
-            position: "top-right",
-            autoClose: 2000,
-          });
-          return;
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!validateEmail(formData.email)) {
+      toast.error("Please enter a valid email address", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    if (!validatePhone(formData.mobile)) {
+      toast.error("Please enter a valid phone number", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    if (!formData.agreement) {
+      toast.error("Please accept the agreement before submitting.", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        "https://ved.venturingdigitally.com/api/createSolution",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
         }
-    
-        if (!validatePhone(formData.mobile)) {
-          toast.error("Please enter a valid phone number", {
-            position: "top-right",
-            autoClose: 2000,
-          });
-          return;
-        }
-  
-        if (!formData.agreement) {
-          toast.error("Please accept the agreement before submitting.", {
-            position: "top-right",
-            autoClose: 2000,
-          });
-          return;
-        }
-    
-        try {
-    
-    
-          const response = await fetch(
-            "https://ved.venturingdigitally.com/api/createSolution",
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(formData),
-            }
-          );
-    
-          if (response.status == 200) {
-    
-            setFormData({ first_name: "",
-              last_name: "",
-              mobile: "",
-              title:"",
-              desc: "",
-              email: "",
-              business_name: "",
-              date: "",
-              country: "",
-              user_access: "",
-              address: "",
-            })
-    
-            toast.success("Form Submitted Successfully", {
-              position: "top-right",
-              autoClose: 2000,
-            });
-        
-          } else {
-            toast.error("Submission failed. Please try again.", {
-              position: "top-right",
-              autoClose: 2000,
-            });
-          }
-          
-        } catch (error) {
-          console.error("An error occurred while submitting the form:", error);
-        }
-      
-  }
-    
-      const validateEmail = (email) => {
-        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        return emailRegex.test(email);
-      };
-    
-      const validatePhone = (phone) => {
-        const phoneRegex = /^[6-9]\d{9}$/;
-        return phoneRegex.test(phone);
-      };
+      );
+
+      if (response.status == 200) {
+        setFormData({
+          first_name: "",
+          last_name: "",
+          mobile: "",
+          title: "",
+          desc: "",
+          email: "",
+          business_name: "",
+          date: "",
+          country: "",
+          user_access: "",
+          address: "",
+        });
+
+        toast.success("Form Submitted Successfully", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+      } else {
+        toast.error("Submission failed. Please try again.", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+      }
+    } catch (error) {
+      console.error("An error occurred while submitting the form:", error);
+    }
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  };
+
+  const validatePhone = (phone) => {
+    const phoneRegex = /^[6-9]\d{9}$/;
+    return phoneRegex.test(phone);
+  };
 
   return (
     <>
-        <ToastContainer/>
+      <ToastContainer />
       <Hero
         heading="E-Commerce Solutions"
         imgbtn="E-Commerce"
-        // slogan="Empower Your Online Business"
         src="image/Ecommerce-solutions/Ecommerce.png"
       />
 
-    <section id="solution">
-          <div className="container-fluid">
-            <div className="container">
-            
-             <div className="head_title margin_bottom-20">Ecommerce Solutions</div>
+      <section id="solution">
+        <div className="container-fluid">
+          <div className="container">
+            <div
+              className="head_title margin_bottom-20"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
+              {/* Ecommerce Solutions */}
+            </div>
 
             <div className="section">
-              <div className="left">
-              <div className="image">
-                <img loading="eager" fetchpriority="high"
-                  src="/image/solution/Ecommerce.png"
-                  alt=""
-                  className="w-100 h-100"
-                   
-                />
-              </div>
-              </div>
-      
-              <div className="right">
-              <div class="text-box">
-              E-commerce Solutions empower businesses to sell products and services online with seamless functionality and security. They ensure user-friendly navigation, secure payment processing, and inventory management for a smooth shopping experience. With order tracking, marketing automation, and customer analytics, businesses can optimize sales and engagement. Integration with CRM, ERP, and third-party logistics enhances efficiency and scalability. Cloud-based platforms provide remote accessibility, real-time updates, and multi-device compatibility for seamless operations. Implementing E-commerce Solutions boosts sales, enhances customer satisfaction, and streamlines business processes. They also support multi-vendor capabilities, personalized recommendations, and AI-driven insights. A well-structured e-commerce system fosters brand growth, market expansion, and increased profitability.
+              <div className="left"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="200">
+                <div className="image">
+                  <img
+                    loading="eager"
+                    fetchpriority="high"
+                    src="/image/solution/Ecommerce.png"
+                    alt="Ecommerce Solutions"
+                    className="w-100 h-100"
+                  />
                 </div>
-            </div>
-    
+              </div>
+
+              <div className="right"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-aos-offset="200">
+                <div className="text-box"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="400">
+                  E-commerce Solutions empower businesses to sell products and services online with seamless functionality and security. They ensure user-friendly navigation, secure payment processing, and inventory management for a smooth shopping experience. With order tracking, marketing automation, and customer analytics, businesses can optimize sales and engagement. Integration with CRM, ERP, and third-party logistics enhances efficiency and scalability. Cloud-based platforms provide remote accessibility, real-time updates, and multi-device compatibility for seamless operations. Implementing E-commerce Solutions boosts sales, enhances customer satisfaction, and streamlines business processes. They also support multi-vendor capabilities, personalized recommendations, and AI-driven insights. A well-structured e-commerce system fosters brand growth, market expansion, and increased profitability.
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* <------------------------------------------- E-commerce Solutions first --------------------------------------------> */}
+      {/* E-commerce Solutions first */}
       <section id="E-comfirst">
         <div className="container-fluid">
           <div className="container">
-            <div className="E-comfirst-section-head">
+            <div className="E-comfirst-section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="E-comfirst-custom-head">
                 <div className="E-comfirst-head-title">
                   Best-in-Class E-commerce Solutions with venturing digitally
                 </div>
               </div>
 
-              <div className="E-comfirst-head-slogan">
-                In today`s digital era, establishing a strong e-commerce
+              <div className="E-comfirst-head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
+                In today's digital era, establishing a strong e-commerce
                 presence is essential for businesses to thrive in the
                 competitive online landscape. At Venturing Digitally, we offer
                 comprehensive e-commerce solutions that empower businesses to
@@ -257,9 +271,13 @@ function EcommerceSolutions() {
 
             <div className="E-comfirst-section-content">
               <div className="ecommerce-grid">
-                {ecom_best.map((data) => {
+                {ecom_best.map((data, index) => {
                   return (
-                    <div className="ecommerce-box" key={data.id}>
+                    <div className="ecommerce-box" key={data.id}
+                      data-aos="fade-up"
+                      data-aos-duration="600"
+                      data-aos-delay={index * 100}
+                      data-aos-offset="100">
                       <div className="head">{data.head}</div>
                       <div className="details">
                         <div className="content">{data.p1}</div>
@@ -273,19 +291,29 @@ function EcommerceSolutions() {
           </div>
         </div>
       </section>
-      {/* <------------------------------------------- E-commerce Solutions second --------------------------------------------> */}
+
+      {/* E-commerce Solutions second */}
       <section id="E-comsecond">
         <div className="container-fluid">
           <div className="container">
             <div className="E-comsecond-section-content">
               <div className="row align-items-center g-4">
-                <div className="col-xl-7 col-lg-6">
+                <div className="col-xl-7 col-lg-6"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="200">
                   <div className="E-comsecond-left-box">
                     <div className="E-comsecond-left-about-content">
-                      <div className="E-comsecond-left-content-head">
+                      <div className="E-comsecond-left-content-head"
+                        data-aos="fade-down"
+                        data-aos-duration="600"
+                        data-aos-delay="100">
                         E Commerce Solutions with Venturing Digitally
                       </div>
-                      <div className="E-comsecond-left-content-data">
+                      <div className="E-comsecond-left-content-data"
+                        data-aos="fade-up"
+                        data-aos-duration="600"
+                        data-aos-delay="200">
                         Partner with Venturing Digitally to unlock the full
                         potential of your e-commerce business. Our expertise and
                         tailored solutions will help you establish a powerful
@@ -295,16 +323,25 @@ function EcommerceSolutions() {
                     </div>
                   </div>
                 </div>
-                <div className="col-xl-5 col-lg-6">
+                <div className="col-xl-5 col-lg-6"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                  data-aos-offset="200">
                   <div className="E-comsecond-right-box">
                     <div className="E-comsecond-media">
                       <div className="E-comsecond-video-box">
-                        <div className="E-comsecond-video">
-                          <img loading="eager" fetchpriority="high"
+                        <div className="E-comsecond-video"
+                          data-aos="zoom-in"
+                          data-aos-duration="800"
+                          data-aos-delay="300">
+                          <img
+                            loading="eager"
+                            fetchpriority="high"
                             src="/image/Ecommerce/Ecommerce.jpeg"
                             className="w-100 h-100"
                             alt="E-commerce Solutions"
-                            style={{objectFit: 'cover', borderRadius: '12px'}}
+                            style={{ objectFit: 'cover', borderRadius: '12px' }}
                           />
                         </div>
                       </div>
@@ -316,7 +353,7 @@ function EcommerceSolutions() {
           </div>
         </div>
 
-        {/* <----- shape -------> */}
+        {/* shape */}
         <div className="custom-shape-divider-bottom-1684931464">
           <svg
             data-name="Layer 1"
@@ -331,29 +368,44 @@ function EcommerceSolutions() {
           </svg>
         </div>
       </section>
-      {/* <------------------------------------------- E-commerce Solutions third --------------------------------------------> */}
+
+      {/* E-commerce Solutions third */}
       <section id="E-comthird" className="bg-light">
         <div className="container-fluid">
           <div className="container">
-            <div className="E-comthird-section-head">
+            <div className="E-comthird-section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="E-comthird-custom-head">
                 <div className="E-comthird-head-title">E-commerce Goals</div>
               </div>
-              <div className="E-comthird-head-slogan">
+              <div className="E-comthird-head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
                 Driving Online Success with venturing digitally
               </div>
             </div>
             <div className="E-comthird-section-content">
               <div className="goal-grid">
-                {Ecom.map((goal) => {
+                {Ecom.map((goal, index) => {
                   return (
-                    <div className="E-comthird-value-card" key={goal.id}>
-                      <div className="E-comthird-icon">
-                        <img loading="eager" fetchpriority="high"
+                    <div className="E-comthird-value-card" key={goal.id}
+                      data-aos="fade-up"
+                      data-aos-duration="600"
+                      data-aos-delay={index * 100}
+                      data-aos-offset="100">
+                      <div className="E-comthird-icon"
+                        data-aos="zoom-in"
+                        data-aos-duration="500"
+                        data-aos-delay={index * 100 + 50}>
+                        <img
+                          loading="eager"
+                          fetchpriority="high"
                           src={goal.imgs}
-                          alt=""
+                          alt={goal.head}
                           className="w-100 h-100"
-                           
                         />
                       </div>
                       <div className="E-comthird-title">{goal.head}</div>
@@ -369,30 +421,48 @@ function EcommerceSolutions() {
           </div>
         </div>
       </section>
-      {/* <------------------------------------------- E-commerce Solutions fourth --------------------------------------------> */}
-        <section id="health">
+
+      {/* E-commerce Solutions fourth */}
+      <section id="health">
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
               <div className="row align-items-center g-4">
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="200">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
-                      <img loading="eager" fetchpriority="high"
+                      <img
+                        loading="eager"
+                        fetchpriority="high"
                         src="crm.jpeg"
-                        alt="..."
+                        alt="Demo Request"
                         className="w-75 h-auto"
-                          style={{aspectRatio:1.25}}
+                        style={{ aspectRatio: 1.25 }}
+                        data-aos="zoom-in"
+                        data-aos-duration="800"
+                        data-aos-delay="200"
                       />
                     </div>
                   </div>
                 </div>
 
-            
-                <div className="col-lg-6 ">
+                <div className="col-lg-6"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                  data-aos-offset="200">
                   <div className="health-content">
-                    <div className="form-container">
-                      <div className="form-header">
+                    <div className="form-container"
+                      data-aos="zoom-in"
+                      data-aos-duration="800"
+                      data-aos-delay="300">
+                      <div className="form-header"
+                        data-aos="fade-down"
+                        data-aos-duration="600"
+                        data-aos-delay="400">
                         <h2>Request Free Demo</h2>
                       </div>
 
@@ -402,7 +472,10 @@ function EcommerceSolutions() {
                           style={{ paddingBottom: "0px" }}
                         >
                           <div className="col-lg-6 padding-0">
-                            <div className="left-placeholder">
+                            <div className="left-placeholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="500">
                               <input
                                 type="text"
                                 name="first_name"
@@ -414,7 +487,10 @@ function EcommerceSolutions() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="550">
                               <input
                                 type="text"
                                 name="title"
@@ -426,7 +502,10 @@ function EcommerceSolutions() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="600">
                               <input
                                 type="tel"
                                 name="mobile"
@@ -438,7 +517,10 @@ function EcommerceSolutions() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="650">
                               <input
                                 type="email"
                                 name="email"
@@ -449,7 +531,10 @@ function EcommerceSolutions() {
                                 required
                               />
                             </div>
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="700">
                               <input
                                 type="text"
                                 name="address"
@@ -462,7 +547,10 @@ function EcommerceSolutions() {
                             </div>
                           </div>
                           <div className="col-lg-6 padding-0">
-                            <div className="right-placholder">
+                            <div className="right-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="500">
                               <input
                                 type="text"
                                 name="last_name"
@@ -473,7 +561,10 @@ function EcommerceSolutions() {
                                 required
                               />
                             </div>
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="550">
                               <input
                                 type="text"
                                 name="business_name"
@@ -485,7 +576,10 @@ function EcommerceSolutions() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="600">
                               <input
                                 type="text"
                                 name="country"
@@ -497,7 +591,10 @@ function EcommerceSolutions() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="650">
                               <input
                                 type="number"
                                 name="user_access"
@@ -509,12 +606,15 @@ function EcommerceSolutions() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="700">
                               <input
                                 type="date"
                                 name="date"
                                 className="form-control fs-3 second-input"
-                                placeholder="Preffered Date & Time*"
+                                placeholder="Preferred Date & Time*"
                                 value={formData.date}
                                 onChange={handleInputChange}
                                 required
@@ -527,7 +627,10 @@ function EcommerceSolutions() {
                           style={{ padding: "0px" }}
                         >
                           <div className="col-lg-12">
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-up"
+                              data-aos-duration="600"
+                              data-aos-delay="750">
                               <textarea
                                 rows={3}
                                 name="desc"
@@ -539,17 +642,20 @@ function EcommerceSolutions() {
                               ></textarea>
                             </div>
 
-                            <div>
-                            <label
+                            <div
+                              data-aos="fade-up"
+                              data-aos-duration="600"
+                              data-aos-delay="800">
+                              <label
                                 style={{
                                   display: "flex",
                                   gridColumnGap: "8px",
                                   alignItems: "start",
                                   fontSize: "12px",
-                                   paddingTop:"10px"
+                                  paddingTop: "10px"
                                 }}
                               >
-                                  <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />
+                                <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />
                                 I agree to the use of personal information
                                 collected from myself in organization software
                                 demo purpose and other IT related support from
@@ -559,11 +665,13 @@ function EcommerceSolutions() {
                           </div>
                         </div>
 
-                        <button type="submit" className="request-btn">
+                        <button type="submit" className="request-btn"
+                          data-aos="zoom-in"
+                          data-aos-duration="600"
+                          data-aos-delay="850">
                           Request Free Demo
                         </button>
                       </form>
-
                     </div>
                   </div>
                 </div>
@@ -576,127 +684,67 @@ function EcommerceSolutions() {
       <section id="enterprise-faq">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head">
+            <div className="section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="custom-head">
                 <div className="head-title">Frequently Ask Question</div>
               </div>
-              <div className="head-slogan">
+              <div className="head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
                 Frequently Asked Question For E-commerce Solutions
               </div>
             </div>
             <div className="section-content">
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 1
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(1)}
-                  >
-                    What is e-commerce software, and how can it benefit my
-                    business?
-                  </div>
-                  {activeIndex === 1 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        E-commerce software is a digital platform that enables
-                        businesses to create, manage, and optimize online
-                        stores. It provides essential features like product
-                        management, payment processing, customer relationship
-                        tools, and order fulfillment automation. With e-commerce
-                        software, businesses can expand their reach, increase
-                        sales, and offer a seamless shopping experience to
-                        customers.
-                      </div>
+              {[
+                {
+                  q: "What is e-commerce software, and how can it benefit my business?",
+                  a: "E-commerce software is a digital platform that enables businesses to create, manage, and optimize online stores. It provides essential features like product management, payment processing, customer relationship tools, and order fulfillment automation. With e-commerce software, businesses can expand their reach, increase sales, and offer a seamless shopping experience to customers."
+                },
+                {
+                  q: "What features should I look for in an e-commerce platform?",
+                  a: "When choosing e-commerce software, consider key features like mobile responsiveness, secure payment gateways, inventory management, SEO tools, multi-channel selling, and integration with CRM and ERP systems. Look for scalability and customization options to support business growth and unique branding."
+                },
+                {
+                  q: "How does e-commerce software improve online sales and customer experience?",
+                  a: "E-commerce platforms enhance sales by offering personalized recommendations, abandoned cart recovery, seamless checkout processes, and fast website performance. Advanced analytics and AI-driven insights help businesses optimize marketing strategies, improve customer retention, and boost conversion rates."
+                },
+                {
+                  q: "Can e-commerce software integrate with my existing business tools?",
+                  a: "Yes! Most modern e-commerce solutions integrate with ERP, CRM, payment processors, shipping providers, and digital marketing tools. API-based integrations enable automated workflows, efficient inventory management, and a streamlined customer experience across multiple sales channels."
+                }
+              ].map((faq, index) => (
+                <div className="accordion" key={index}
+                  data-aos="fade-right"
+                  data-aos-duration="600"
+                  data-aos-delay={index * 100}
+                  data-aos-offset="100">
+                  <div className="accordion-item">
+                    <div
+                      className={
+                        activeIndex === index + 1
+                          ? "accordion-item-header active"
+                          : "accordion-item-header"
+                      }
+                      onClick={() => toggleTab(index + 1)}
+                    >
+                      {faq.q}
                     </div>
-                  ) : null}
-                </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 2
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(2)}
-                  >
-                    What features should I look for in an e-commerce platform?
-                  </div>
-                  {activeIndex === 2 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        When choosing e-commerce software, consider key features
-                        like mobile responsiveness, secure payment gateways,
-                        inventory management, SEO tools, multi-channel selling,
-                        and integration with CRM and ERP systems. Look for
-                        scalability and customization options to support
-                        business growth and unique branding.
+                    {activeIndex === index + 1 ? (
+                      <div className="accordion-item-body"
+                        data-aos="fade-down"
+                        data-aos-duration="400">
+                        <div className="accordion-item-body-content">
+                          {faq.a}
+                        </div>
                       </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 3
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(3)}
-                  >
-                    How does e-commerce software improve online sales and
-                    customer experience?
+                    ) : null}
                   </div>
-                  {activeIndex === 3 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        E-commerce platforms enhance sales by offering
-                        personalized recommendations, abandoned cart recovery,
-                        seamless checkout processes, and fast website
-                        performance. Advanced analytics and AI-driven insights
-                        help businesses optimize marketing strategies, improve
-                        customer retention, and boost conversion rates.
-                      </div>
-                    </div>
-                  ) : null}
                 </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 4
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(4)}
-                  >
-                    Can e-commerce software integrate with my existing business
-                    tools?
-                  </div>
-                  {activeIndex === 4 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        Yes! Most modern e-commerce solutions integrate with
-                        ERP, CRM, payment processors, shipping providers, and
-                        digital marketing tools. API-based integrations enable
-                        automated workflows, efficient inventory management, and
-                        a streamlined customer experience across multiple sales
-                        channels.
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

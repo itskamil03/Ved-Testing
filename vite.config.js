@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(),tailwindcss(),],
+ 
 
   build: {
     outDir: 'dist',
@@ -16,7 +17,33 @@ export default defineConfig({
       },
     },
   },
-  server: { port: 5173 },
+  server: {
+    port: 5173,
+    host: true,
+    proxy: {
+      '/chat': {
+        target: 'http://187.77.184.141:8019',
+        changeOrigin: true,
+        ws: true,
+      },
+      '/faq-suggestions': {
+        target: 'http://187.77.184.141:8019',
+        changeOrigin: true,
+      },
+      '/tickets': {
+        target: 'http://187.77.184.141:8019',
+        changeOrigin: true,
+      },
+      '/auth': {
+        target: 'http://187.77.184.141:8019',
+        changeOrigin: true,
+      },
+      '/user': {
+        target: 'http://187.77.184.141:8019',
+        changeOrigin: true,
+      },
+    },
+  },
   base: './', // Change from '/' to './' for correct asset loading
   resolve: {
     alias: {

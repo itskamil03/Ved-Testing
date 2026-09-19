@@ -13,13 +13,12 @@
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.13.0",
-
     "@tailwindcss/vite": "^4.2.1",
-
     "aos": "^2.3.4",
     "bootstrap": "^5.3.2",
     "country-state-city": "^3.2.1",
     "gsap": "^3.14.2",
+    "html-react-parser": "^6.1.7",
     "jquery": "^3.7.0",
     "js-cookie": "^3.0.5",
     "onsenui": "^2.12.8",
@@ -31,21 +30,22 @@
     "react-lazy-load-image-component": "^1.6.3",
     "react-multi-select-component": "^4.3.4",
     "react-owl-carousel": "^2.3.3",
-"react-router-dom": "^6.11.1",
-"react-slick": "^0.30.3",
-"react-toastify": "^10.0.6",
-"slick-carousel": "^1.8.1",
-"tailwindcss": "^4.2.1"
+    "react-router-dom": "^6.11.1",
+    "react-slick": "^0.30.3",
+    "react-toastify": "^10.0.6",
+    "slick-carousel": "^1.8.1",
+    "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
-    "@types/react": "^18.0.28",
-"@types/react-dom": "^18.0.11",
-"@vitejs/plugin-react": "^5.1.4",
+    "@types/react": "^18.3.30",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^5.1.4",
     "eslint": "^8.42.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-"eslint-plugin-react-refresh": "^0.3.4",
-"vite": "^7.3.1"
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "typescript": "^6.0.3",
+    "vite": "^7.3.1"
   }
 }

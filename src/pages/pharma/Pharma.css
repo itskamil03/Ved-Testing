@@ -1,0 +1,645 @@
+/* <------------------------------------------ hero section --------------------------------------------------> */
+body {
+  overflow-x: hidden;
+}
+
+.heroimg {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-container {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  z-index: 1;
+}
+
+.heroimg-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(85%);
+  object-fit: cover;
+}
+
+.heroimg-contant {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 120px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #00000047;
+}
+
+.heroimg-slogan {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  position: relative;
+  font-family: "sans-serif", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.heroimg-heading {
+  color: white;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.heroimg-imgbtn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: #27286d;
+  color: white;
+  font-size: 1.5rem;
+}
+/* <-------------------------------------------- Industries first section ---------------------------------------> */
+#IndustriesMain {
+  padding: 40px 0px;
+  background-image: url("/top.svg");
+  object-fit: cover;
+}
+
+.IndustriesMain-section-head {
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+.IndustriesMain-section-head .IndustriesMain-head-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+
+.IndustriesMain-section-head .IndustriesMain-head-slogan {
+  font-size: 2rem;
+}
+
+#IndustriesMain .IndustriesMain-health-video {
+  margin-top: 0rem;
+  margin-left: 0rem;
+  position: relative;
+}
+
+#IndustriesMain .IndustriesMain-health-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.IndustriesMain-content {
+  display: flex;
+  justify-content: center;
+}
+
+.IndustriesMain-content-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.IndustriesMain-content-list li {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.IndustriesMain-content-listicon {
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
+.IndustriesMain-content-list li span {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 54px;
+  color: #323232;
+  font-family: "sans-serif", sans-serif;
+}
+
+/* <----------------------------------------------- Industries second section ---------------------------------------> */
+#health {
+  padding: 50px 0px;
+}
+.section-head {
+  margin-bottom: 50px;
+}
+.section-head .circle {
+  display: none;
+}
+.section-head .head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "sans-serif", sans-serif;
+}
+.section-head .head-slogan {
+  padding-left: 20px;
+  border-left: 2px solid #27286d;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+#health .health-video {
+  position: relative;
+}
+
+#health .health-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-content .content-head {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 7px;
+  color: #27286d;
+  position: relative;
+  display: inline-block;
+  font-family: "sans-serif", sans-serif;
+  padding-left: 55px;
+  text-transform: uppercase;
+}
+
+.section-content .content-head::after {
+  content: "";
+  background-color: #27286d;
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+}
+
+.section-content .content-data {
+  color: #4e4e4e;
+  text-align: justify;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+.health-media2 {
+  margin-right: 2rem;
+}
+/* <---------------------------------------- Software Components  ----------------------------------------------------> */
+#industry_component {
+  padding: 50px 0px;
+}
+
+#industry_component .section-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#industry_component .section-head .title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "sans-serif", sans-serif;
+}
+
+#industry_component .section-head .slogan {
+  padding-left: 20px;
+  font-size: 1.8rem;
+  font-family: "sans-serif", sans-serif;
+}
+
+#industry_component .component-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#industry_component .component-box {
+  background: white;
+  box-shadow: 0 8px 24px #a3a3a363;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#industry_component .component-box div {
+  padding: 15px;
+  font-family: "sans-serif", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* <---------------------------------------- Software Solutions section  ----------------------------------------------------> */
+
+#softsolutions {
+  padding: 40px 0px;
+}
+
+.softsolutions-section-head {
+  text-align: center;
+  margin: 0px auto 20px auto;
+}
+
+.softsolutions-section-head .head-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "sans-serif", sans-serif;
+}
+
+.softsolutions-section-head .softsolutions-head-slogan {
+  padding-left: 20px;
+  font-size: 1.8rem;
+  font-family: "sans-serif", sans-serif;
+}
+
+.softsolutions-left {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.softsolutions-left-main {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.softsolutions-left-first {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0) !important;
+}
+
+.softsolutions-left-second {
+  position: absolute; 
+  top: 20%;
+  right: 10%;
+  transform: translate(-30px, 0px) !important;
+}
+
+.softsolutions-left-third {
+  position: absolute;
+  bottom: 30%;
+  right: 8%;
+  transform: translate(-30px, 0px) !important;
+}
+
+.softsolutions-left-fourth {
+  position: absolute;
+  bottom: 12%;
+  left: 48%;
+  transform: translate(-50%, 0px) !important;
+}
+
+.softsolutions-left-fifth {
+  position: absolute;
+  bottom: 30%;
+  left: 4%;
+  transform: translate(30px, 0px) !important;
+}
+
+.softsolutions-left-sixth {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  transform: translate(30px, 0px) !important;
+}
+
+/* <------------------------- right-------------------> */
+.softsolutions-right {
+  padding-top: 2rem;
+}
+
+.softsolutions-right-list {
+  height: 100%;
+  justify-content: center;
+}
+
+.softsolutions-right-list li {
+  font-size: 1.6rem;
+  list-style: none;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 30px auto;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.softsolutions-right-list li div:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  color: #2479e6;
+  display: grid;
+  background: #2479e633;
+  place-items: center;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+
+.softsolutions-right-list li div:nth-child(2) {
+  font-family: "sans-serif", sans-serif;
+}
+
+#health .health-video {
+  position: relative;
+}
+
+#health .health-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-content .content-data {
+  color: #4e4e4e;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+/* <------------------------------------------- talk to us btn & section --------------------------------------------------> */
+
+.healthcare-cta {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  -webkit-animation: none;
+  animation: none;
+  height: 210px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.healthcare-cta .service-cta__text-area--team-extension {
+  max-width: 710px;
+}
+
+.healthcare-cta .service-cta__white {
+  line-height: 34px;
+  margin-bottom: 0;
+}
+
+.service-cta__white {
+  font-size: 24px;
+  color: #fff;
+  line-height: 34px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.button--white-green {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 0 20px;
+  text-transform: uppercase;
+  background: #1476f2;
+  transition: all 0.3s;
+  border: none;
+  white-space: nowrap;
+  height: 50px;
+  min-width: 220px;
+  font-weight: 600;
+  color: #fff;
+  background: #17ca8e;
+  border: 2px solid #17ca8e;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.button--white-green:hover {
+  color: #fff;
+  background: #15da98;
+  border: 2px solid #15da98;
+}
+
+/* <------------------------------------------ OUR CLIENTS ------------------------------------------------------> */
+
+#Clients {
+  padding: 50px 0px;
+}
+
+.Clients-section-head {
+  width: 40rem;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+.Clients-section-head .Clients-head-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: "sans-serif", sans-serif;
+}
+
+.Clients-section-head .Clients-head-slogan {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+#Clients .Clients-main-content {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-bottom: 60px;
+}
+
+#Clients .Clients-why-card {
+  position: relative;
+  box-shadow: 0 8px 24px #a9a9a985;
+  padding: 40px 20px 20px;
+  text-align: center;
+  margin-bottom: 65px;
+  cursor: pointer;
+  height: 35rem;
+  border-radius: 0px;
+  transition: all 0.3s linear;
+}
+
+#Clients .Clients-why-card:hover {
+  transform: translate(0px, -10px);
+}
+
+#Clients .Clients-why-card .Clients-icon {
+  width: 100px;
+  position: absolute;
+  padding: 20px;
+  border-radius: 50%;
+  top: -50px;
+  background: #0000000d;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  display: grid;
+  place-items: center;
+}
+
+#Clients .Clients-why-card .Clients-title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+#Clients .Clients-why-card .Clients-data {
+  font-size: 1.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 130px;
+}
+@media screen and (max-width: 1200px) {
+  #IndustriesMain .IndustriesMain-health-video {
+    margin-top: 0rem;
+    margin-left: 0rem;
+    width: 100%;
+  }
+  .IndustriesMain-content-list li span {
+    font-size: 1.9rem;
+  }
+  #industry_component .component-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 994px) {
+  #IndustriesMain .IndustriesMain-health-video {
+    margin-top: 0rem;
+    margin-left: 0rem;
+  }
+  #IndustriesMain .IndustriesMain-health-photo {
+    aspect-ratio: 1/0.8;
+  }
+  #health .health-video {
+    margin-left: 0rem;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .health-data {
+    margin-bottom: 20px;
+  }
+  .health-img-second {
+    order: 2;
+  }
+  .health-data-second {
+    order: 1;
+    margin-bottom: 20px;
+  }
+  #industry_component .component-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-container {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+  }
+  .heroimg-contant {
+    position: absolute;
+    /* top: -20%; */
+    justify-content: center;
+    align-items: center;
+    background: none;
+  }
+  .heroimg-slogan {
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    /* padding-right: 105px; */
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .heroimg-heading {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  #IndustriesMain {
+    padding: 20px 0px;
+  }
+  .IndustriesMain-section-head {
+    margin: 0 auto 30px auto;
+  }
+  .IndustriesMain-section-head .IndustriesMain-head-title {
+    font-size: 3rem;
+  }
+  .IndustriesMain-section-head .IndustriesMain-head-slogan {
+    font-size: 1.8rem;
+  }
+  #IndustriesMain .IndustriesMain-health-video {
+    margin-top: 0rem;
+    margin-left: 0rem;
+    width: 100%;
+  }
+  .IndustriesMain-content-listicon {
+    font-size: 1.8rem;
+    color: #323232;
+  }
+  .IndustriesMain-content-list li span {
+    font-size: 1.5rem;
+  }
+  #health {
+    padding: 30px 0px;
+  }
+  .section-head {
+    margin-bottom: 25px;
+  }
+  .section-head .head-title {
+    font-size: 3rem;
+  }
+  #health .health-video {
+    margin-left: 0rem;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .health-data {
+    order: 2;
+    margin-bottom: 50px;
+  }
+  .health-img {
+    order: 1;
+  }
+  .health-media2 {
+    margin-right: 0;
+  }
+  .healthcare-cta {
+    flex-direction: column;
+  }
+  .healthcare-cta .service-cta__text-area--team-extension {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  #industry_component {
+    padding: 30px 0px;
+  }
+  #industry_component .section-head .title {
+    font-size: 3rem;
+  }
+  #industry_component .section-head .slogan {
+    padding-left: 0px;
+    font-size: 1.7rem;
+  }
+  #industry_component .component-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  #softsolutions {
+    padding: 20px 0px;
+  }
+}

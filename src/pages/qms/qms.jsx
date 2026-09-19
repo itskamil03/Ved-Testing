@@ -144,7 +144,7 @@ const Qms = () => {
         <div className="container-fluid">
           <div className="container">
             
-             <div className="head_title margin_bottom-20">Quality Management System (QMS)</div>
+             {/* <div className="head_title margin_bottom-20">Quality Management System (QMS)</div> */}
 
             <div className="section">
               <div className="left">

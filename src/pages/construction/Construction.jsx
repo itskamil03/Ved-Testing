@@ -26,20 +26,35 @@ function Construction() {
   return (
     <>
       {/* <----------------------------------------------- hero section ---------------------------------------------------> */}
-      <div className="heroimg">
+      <div className="heroimg"
+        data-aos="fade-in"
+        data-aos-duration="1000">
         <div className="hero-container">
-          <img loading="eager" fetchpriority="high"
+          <img
+            loading="eager"
+            fetchpriority="high"
             src="image/construction/construction.jpeg"
             alt="Hero-Image"
             className="heroimg-img"
-             
           />
-          <div className="heroimg-contant">
-            <div className="heroimg-heading">Construction</div>
-            <div className="heroimg-slogan">
+          <div className="heroimg-contant"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="300">
+            <div className="heroimg-heading"
+              data-aos="fade-down"
+              data-aos-duration="600"
+              data-aos-delay="400">Construction</div>
+            <div className="heroimg-slogan"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="500">
               Empowering Construction Industry with Innovative Solutions
             </div>
-            <Link to="/ContactUs">
+            <Link to="/ContactUs"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="600">
               <div className="heroimg-imgbtn">Industry</div>
             </Link>
           </div>
@@ -50,67 +65,70 @@ function Construction() {
       <section id="IndustriesMain">
         <div className="container-fluid">
           <div className="container">
-            <div className="IndustriesMain-section-head">
+            <div className="IndustriesMain-section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="IndustriesMain-custom-head">
                 <div className="IndustriesMain-head-title">
                   Construction industries
                 </div>
               </div>
-              <div className="IndustriesMain-head-slogan">
+              <div className="IndustriesMain-head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
                 Streamlining Construction Processes with Technology
               </div>
             </div>
 
             <div className="section-content">
               <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="200">
                   <div className="IndustriesMain-content">
                     <ul className="IndustriesMain-content-list">
-                      <li>
-                        <FaSun className="IndustriesMain-content-listicon" />
-                        <span>Project Management</span>
-                      </li>
-                      <li>
-                        <FaSun className="IndustriesMain-content-listicon" />
-                        <span>Cost Estimation</span>
-                      </li>
-                      <li>
-                        <FaSun className="IndustriesMain-content-listicon" />
-                        <span>Resource Allocation</span>
-                      </li>
-                      <li>
-                        <FaSun className="IndustriesMain-content-listicon" />
-                        <span>Collaboration Tools</span>
-                      </li>
-                      <li>
-                        <FaSun className="IndustriesMain-content-listicon" />
-                        <span>Document Management</span>
-                      </li>
-                      <li>
-                        <FaSun className="IndustriesMain-content-listicon" />
-                        <span>Safety and Compliance</span>
-                      </li>
-                      <li>
-                        <FaSun className="IndustriesMain-content-listicon" />
-                        <span>Schedule Optimization</span>
-                      </li>
-                      <li>
-                        <FaSun className="IndustriesMain-content-listicon" />
-                        <span>Reporting and Analytics</span>
-                      </li>
+                      {[
+                        "Project Management",
+                        "Cost Estimation",
+                        "Resource Allocation",
+                        "Collaboration Tools",
+                        "Document Management",
+                        "Safety and Compliance",
+                        "Schedule Optimization",
+                        "Reporting and Analytics"
+                      ].map((item, index) => (
+                        <li key={index}
+                          data-aos="fade-right"
+                          data-aos-duration="500"
+                          data-aos-delay={index * 80}>
+                          <FaSun className="IndustriesMain-content-listicon" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
 
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                  data-aos-offset="200">
                   <div className="IndustriesMain-health-media">
                     <div className="IndustriesMain-health-video">
-                      <div className="IndustriesMain-health-photo">
-                        <img loading="eager" fetchpriority="high"
+                      <div className="IndustriesMain-health-photo"
+                        data-aos="zoom-in"
+                        data-aos-duration="800"
+                        data-aos-delay="300">
+                        <img
+                          loading="eager"
+                          fetchpriority="high"
                           src="image/construction/first1.png"
-                          alt="..."
+                          alt="Construction Management"
                           className="w-100 h-100"
-                           
                         />
                       </div>
                     </div>
@@ -126,23 +144,34 @@ function Construction() {
       <section id="health">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head">
+            <div className="section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="custom-head">
                 <div className="circle"></div>
                 <div className="head-title">Construction industries</div>
               </div>
 
-              <div className="head-slogan">
-                Meet the Team Behind Venturing Digitally : Experts in IT
-                Solutions.
+              <div className="head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
+                Meet the Team Behind Venturing Digitally : Experts in IT Solutions.
               </div>
             </div>
 
             <div className="section-content">
               <div className="row align-items-center g-4">
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="200">
                   <div className="health-content">
-                    <div className="content-data">
+                    <div className="content-data"
+                      data-aos="fade-up"
+                      data-aos-duration="800"
+                      data-aos-delay="200">
                       In the fast-paced construction industry, leveraging
                       technology can significantly enhance efficiency,
                       productivity, and collaboration. At Venturing Digitally,
@@ -156,15 +185,23 @@ function Construction() {
                   </div>
                 </div>
 
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                  data-aos-offset="200">
                   <div className="health-media">
                     <div className="health-video">
-                      <div className="health-photo">
-                        <img loading="eager" fetchpriority="high"
+                      <div className="health-photo"
+                        data-aos="zoom-in"
+                        data-aos-duration="800"
+                        data-aos-delay="300">
+                        <img
+                          loading="eager"
+                          fetchpriority="high"
                           src="image/construction/second1.png"
-                          alt="..."
+                          alt="Construction Team"
                           className="w-100 h-100"
-                           
                         />
                       </div>
                     </div>
@@ -176,25 +213,42 @@ function Construction() {
             {/* <------------------------------------------------> */}
             <div className="section-content">
               <div className="row align-items-center g-4">
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="200">
                   <div className="health-media">
                     <div className="health-video-second">
-                      <div className="health-photo">
-                        <img loading="eager" fetchpriority="high"
+                      <div className="health-photo"
+                        data-aos="zoom-in"
+                        data-aos-duration="800"
+                        data-aos-delay="300">
+                        <img
+                          loading="eager"
+                          fetchpriority="high"
                           src="image/construction/second2.png"
-                          alt="..."
+                          alt="Construction Technology"
                           className="w-100 h-100"
-                           
                         />
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                  data-aos-offset="200">
                   <div className="health-content">
-                    <div className="content-head">Construction care</div>
-                    <div className="content-data">
+                    <div className="content-head"
+                      data-aos="fade-down"
+                      data-aos-duration="600"
+                      data-aos-delay="200">Construction care</div>
+                    <div className="content-data"
+                      data-aos="fade-up"
+                      data-aos-duration="800"
+                      data-aos-delay="300">
                       Our construction software solutions are designed to
                       address the specific challenges faced by the industry,
                       enabling seamless project execution and efficient resource
@@ -220,8 +274,14 @@ function Construction() {
         className="service-cta healthcare-cta"
         style={{ backgroundImage: "url('backgrounds/map.webp')" }}
       >
-        <div className="service-cta__text-area service-cta__text-area--team-extension">
-          <h2 className="service-cta__white">
+        <div className="service-cta__text-area service-cta__text-area--team-extension"
+          data-aos="fade-right"
+          data-aos-duration="800"
+          data-aos-offset="150">
+          <h2 className="service-cta__white"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">
             Adopt our agile mindset to deliver future-ready Construction
             software solutions at the speed of life.
           </h2>
@@ -229,7 +289,9 @@ function Construction() {
         <Link
           to="/ContactUs"
           className="button--white-green button-vantage-talk get-in-touch-form"
-        >
+          data-aos="zoom-in"
+          data-aos-duration="600"
+          data-aos-delay="200">
           Talk to us
         </Link>
       </section>
@@ -238,39 +300,38 @@ function Construction() {
       <section id="industry_component" className="bg-light">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head">
+            <div className="section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="title">Components</div>
-              <div className="slogan">
-                The key components of our Construction Specific Solutions
-                comprises of the following points.
+              <div className="slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
+                The key components of our Construction Specific Solutions comprises of the following points.
               </div>
             </div>
             <div className="section-content">
               <div className="component-grid">
-                <div className="component-box">
-                  <div>Project Planning</div>
-                </div>
-                <div className="component-box">
-                  <div>Resource Management</div>
-                </div>
-                <div className="component-box">
-                  <div>Document Control</div>
-                </div>
-                <div className="component-box">
-                  <div>Quality Assurance</div>
-                </div>
-                <div className="component-box">
-                  <div>Safety Management</div>
-                </div>
-                <div className="component-box">
-                  <div>Schedule Optimization</div>
-                </div>
-                <div className="component-box">
-                  <div>Equipment Tracking</div>
-                </div>
-                <div className="component-box">
-                  <div>Financial Management</div>
-                </div>
+                {[
+                  "Project Planning",
+                  "Resource Management",
+                  "Document Control",
+                  "Quality Assurance",
+                  "Safety Management",
+                  "Schedule Optimization",
+                  "Equipment Tracking",
+                  "Financial Management"
+                ].map((component, index) => (
+                  <div className="component-box" key={index}
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay={index * 80}
+                    data-aos-offset="100">
+                    <div>{component}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -281,12 +342,18 @@ function Construction() {
       <section id="softsolutions">
         <div className="container-fluid">
           <div className="container">
-            <div className="softsolutions-section-head">
+            <div className="softsolutions-section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="custom-head">
                 <div className="head-title">KEY BENEFITS</div>
               </div>
 
-              <div className="softsolutions-head-slogan">
+              <div className="softsolutions-head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
                 We help customers build custom (healthcare or insurance)
                 software solutions to overcome the challenges of technological
                 transformation both in daily and large-scale operations.
@@ -295,109 +362,109 @@ function Construction() {
 
             <div className="section-content">
               <div className="row align-items-center g-4">
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="200">
                   <div className="softsolutions-left">
-                    <img loading="eager" fetchpriority="high"
+                    <img
+                      loading="eager"
+                      fetchpriority="high"
                       className="softsolutions-left-main"
                       src={illustration}
-                      alt="..."
-                       
+                      alt="Software Illustration"
+                      data-aos="zoom-in"
+                      data-aos-duration="800"
+                      data-aos-delay="200"
                     />
-                    <img loading="eager" fetchpriority="high"
+                    <img
+                      loading="eager"
+                      fetchpriority="high"
                       className="softsolutions-left-first"
                       src={Group_1}
-                      alt=""
-                       
+                      alt="Group 1"
+                      data-aos="fade-up"
+                      data-aos-duration="600"
+                      data-aos-delay="300"
                     />
-                    <img loading="eager" fetchpriority="high"
+                    <img
+                      loading="eager"
+                      fetchpriority="high"
                       className="softsolutions-left-second"
                       src={Group_2}
-                      alt=""
-                       
+                      alt="Group 2"
+                      data-aos="fade-up"
+                      data-aos-duration="600"
+                      data-aos-delay="350"
                     />
-                    <image
+                    <img
                       className="softsolutions-left-third"
                       src={Group_3}
-                      alt=""
-                       
+                      alt="Group 3"
+                      data-aos="fade-up"
+                      data-aos-duration="600"
+                      data-aos-delay="400"
                     />
-                    <img loading="eager" fetchpriority="high"
+                    <img
+                      loading="eager"
+                      fetchpriority="high"
                       className="softsolutions-left-fourth"
                       src={Group_4}
-                      alt=""
-                       
+                      alt="Group 4"
+                      data-aos="fade-up"
+                      data-aos-duration="600"
+                      data-aos-delay="450"
                     />
-                    <img loading="eager" fetchpriority="high"
+                    <img
+                      loading="eager"
+                      fetchpriority="high"
                       className="softsolutions-left-fifth"
                       src={Group_5}
-                      alt=""
-                       
+                      alt="Group 5"
+                      data-aos="fade-up"
+                      data-aos-duration="600"
+                      data-aos-delay="500"
                     />
-                    <img loading="eager" fetchpriority="high"
+                    <img
+                      loading="eager"
+                      fetchpriority="high"
                       className="softsolutions-left-sixth"
                       src={Group_6}
-                      alt=""
-                       
+                      alt="Group 6"
+                      data-aos="fade-up"
+                      data-aos-duration="600"
+                      data-aos-delay="550"
                     />
                   </div>
                 </div>
 
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                  data-aos-offset="200">
                   <div className="softsolutions-right">
                     <ul className="softsolutions-right-list">
-                      <li>
-                        <div>
-                          <i className="fa-solid fa-check"></i>
-                        </div>
-                        <div>Improved project planning and execution</div>
-                      </li>
-                      <li>
-                        <div>
-                          <i className="fa-solid fa-check"></i>
-                        </div>
-                        <div>Enhanced resource management and allocation</div>
-                      </li>
-                      <li>
-                        <div>
-                          <i className="fa-solid fa-check"></i>
-                        </div>
-                        <div>Streamlined collaboration and communication</div>
-                      </li>
-                      <li>
-                        <div>
-                          <i className="fa-solid fa-check"></i>
-                        </div>
-                        <div>
-                          Real-time data and analytics for informed
-                          decision-making
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <i className="fa-solid fa-check"></i>
-                        </div>
-                        <div>Increased productivity and efficiency</div>
-                      </li>
-                      <li>
-                        <div>
-                          <i className="fa-solid fa-check"></i>
-                        </div>
-                        <div>Enhanced safety and compliance measures</div>
-                      </li>
-                      <li>
-                        <div>
-                          <i className="fa-solid fa-check"></i>
-                        </div>
-                        <div>Cost control and budget optimization</div>
-                      </li>
-                      <li>
-                        <div>
-                          <i className="fa-solid fa-check"></i>
-                        </div>
-                        <div>
-                          Enhanced client satisfaction and project success rates
-                        </div>
-                      </li>
+                      {[
+                        "Improved project planning and execution",
+                        "Enhanced resource management and allocation",
+                        "Streamlined collaboration and communication",
+                        "Real-time data and analytics for informed decision-making",
+                        "Increased productivity and efficiency",
+                        "Enhanced safety and compliance measures",
+                        "Cost control and budget optimization",
+                        "Enhanced client satisfaction and project success rates"
+                      ].map((benefit, index) => (
+                        <li key={index}
+                          data-aos="fade-left"
+                          data-aos-duration="600"
+                          data-aos-delay={index * 80}>
+                          <div>
+                            <i className="fa-solid fa-check"></i>
+                          </div>
+                          <div>{benefit}</div>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -407,134 +474,76 @@ function Construction() {
         </div>
       </section>
 
-      <ContactForm />
+      <div data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-offset="100">
+        <ContactForm />
+      </div>
 
       <section id="enterprise-faq">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head">
+            <div className="section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="custom-head">
                 <div className="head-title">Frequently Ask Question</div>
               </div>
-              <div className="head-slogan">
+              <div className="head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
                 Frequently Asked Question For GXP & GMP Software
               </div>
             </div>
             <div className="section-content">
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 1
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(1)}
-                  >
-                    What is construction management software, and how can it
-                    benefit my business?
-                  </div>
-                  {activeIndex === 1 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        Construction management software is a digital solution
-                        that helps construction companies streamline project
-                        planning, budgeting, resource allocation, and
-                        communication. It enhances efficiency by automating
-                        scheduling, tracking materials, improving team
-                        collaboration, and ensuring compliance with safety
-                        regulations, ultimately reducing project delays and
-                        costs.
-                      </div>
+              {[
+                {
+                  q: "What is construction management software, and how can it benefit my business?",
+                  a: "Construction management software is a digital solution that helps construction companies streamline project planning, budgeting, resource allocation, and communication. It enhances efficiency by automating scheduling, tracking materials, improving team collaboration, and ensuring compliance with safety regulations, ultimately reducing project delays and costs."
+                },
+                {
+                  q: "What key features should I look for in construction management software?",
+                  a: "When choosing a construction management system, look for essential features such as project scheduling, budget and cost tracking, document management, equipment management, subcontractor coordination, real-time reporting, and integration with accounting and ERP systems. Cloud-based solutions also allow remote access and team collaboration."
+                },
+                {
+                  q: "Can construction management software improve project efficiency and reduce costs?",
+                  a: "Yes! Construction software optimizes workflows by automating tasks like bidding, progress tracking, and financial reporting. It reduces costly errors, improves communication between teams, and ensures better resource management, leading to faster project completion and lower operational expenses."
+                },
+                {
+                  q: "Is construction management software secure for handling project data?",
+                  a: "Most modern construction software solutions provide robust security measures, including cloud encryption, access controls, real-time backups, and compliance with industry standards. Choosing a secure system ensures that sensitive project data, contracts, and financial records remain protected from cyber threats."
+                }
+              ].map((faq, index) => (
+                <div className="accordion" key={index}
+                  data-aos="fade-right"
+                  data-aos-duration="600"
+                  data-aos-delay={index * 100}
+                  data-aos-offset="100">
+                  <div className="accordion-item">
+                    <div
+                      className={
+                        activeIndex === index + 1
+                          ? "accordion-item-header active"
+                          : "accordion-item-header"
+                      }
+                      onClick={() => toggleTab(index + 1)}
+                    >
+                      {faq.q}
                     </div>
-                  ) : null}
-                </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 2
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(2)}
-                  >
-                    What key features should I look for in construction
-                    management software?
-                  </div>
-                  {activeIndex === 2 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        When choosing a construction management system, look for
-                        essential features such as project scheduling, budget
-                        and cost tracking, document management, equipment
-                        management, subcontractor coordination, real-time
-                        reporting, and integration with accounting and ERP
-                        systems. Cloud-based solutions also allow remote access
-                        and team collaboration.
+                    {activeIndex === index + 1 ? (
+                      <div className="accordion-item-body"
+                        data-aos="fade-down"
+                        data-aos-duration="400">
+                        <div className="accordion-item-body-content">
+                          {faq.a}
+                        </div>
                       </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 3
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(3)}
-                  >
-                    Can construction management software improve project
-                    efficiency and reduce costs?
+                    ) : null}
                   </div>
-                  {activeIndex === 3 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        Yes! Construction software optimizes workflows by
-                        automating tasks like bidding, progress tracking, and
-                        financial reporting. It reduces costly errors, improves
-                        communication between teams, and ensures better resource
-                        management, leading to faster project completion and
-                        lower operational expenses.
-                      </div>
-                    </div>
-                  ) : null}
                 </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 4
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(4)}
-                  >
-                    Is construction management software secure for handling
-                    project data?
-                  </div>
-                  {activeIndex === 4 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        Most modern construction software solutions provide
-                        robust security measures, including cloud encryption,
-                        access controls, real-time backups, and compliance with
-                        industry standards. Choosing a secure system ensures
-                        that sensitive project data, contracts, and financial
-                        records remain protected from cyber threats.
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

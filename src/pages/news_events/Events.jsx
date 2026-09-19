@@ -64,6 +64,8 @@ const eventImageCarouselSettings = {
   autoplaySpeed: 3500,
   arrows: false,
   adaptiveHeight: true,
+  pauseOnHover: false,
+  pauseOnFocus: false,
 };
 
 const getEventImages = (event) => {

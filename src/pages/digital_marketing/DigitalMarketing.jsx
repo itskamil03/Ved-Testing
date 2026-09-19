@@ -20,7 +20,7 @@ function DigitalMarketing() {
         heading="Digital Marketing"
         src="image/digitalmarketing/digitalmarketing.webp"
       />
-      <section id="support-first">
+      <section id="support-first" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -66,7 +66,7 @@ function DigitalMarketing() {
         </div>
       </section>
 
-      <section id="support-third">
+      <section id="support-third" className="fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -187,7 +187,7 @@ function DigitalMarketing() {
         </div>
       </section>
 
-      <section id="support-second">
+      <section id="support-second" className="fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section">
@@ -238,7 +238,7 @@ function DigitalMarketing() {
         </div>
       </section>
 
-      <section id="support-five">
+      <section id="support-five" className="fade-in-left">
         <div className="section-top">
           <div className="container">
             <div className="head-title">Our Digital Marketing Process</div>
@@ -340,7 +340,7 @@ function DigitalMarketing() {
         </div>
       </section>
 
-      <section id="support-six">
+      <section id="support-six" className="fade-in-right">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -627,7 +627,7 @@ function DigitalMarketing() {
         </div>
       </section>
 
-      <section id="enterprise-faq">
+      <section id="enterprise-faq" className="fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">

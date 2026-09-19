@@ -20,7 +20,7 @@ function AIML() {
         heading="AI-ML"
         src="image/ai/ai-ml.webp"
       />
-      <section id="ai-first">
+      <section id="ai-first" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -40,7 +40,7 @@ function AIML() {
         </div>
       </section>
 
-      <section id="ai-second">
+      <section id="ai-second" className="fade-in-right">
         <div className="container-fluid">
           <div className="container">
             <div className="section">
@@ -169,7 +169,7 @@ function AIML() {
         </div>
       </section>
 
-      <section id="ai-third">
+      <section id="ai-third" className="fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -248,7 +248,7 @@ function AIML() {
         </div>
       </section>
 
-      <section id="ai-four">
+      <section id="ai-four" className="fade-up">
         <div className="section-top">
           <div className="head-slogan page_title">
             <p>
@@ -262,7 +262,7 @@ function AIML() {
       </section>
 
 
-      <section id="ai-five">
+      <section id="ai-five" className="fade-in-right">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -298,7 +298,7 @@ function AIML() {
            </div>
           </section>  
 
-           <section id="cloud-third">
+           <section id="cloud-third" className="fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -470,7 +470,7 @@ function AIML() {
       </section>  
 
   
-      <section id="enterprise-faq">
+      <section id="enterprise-faq" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">

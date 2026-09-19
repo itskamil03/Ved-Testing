@@ -9,7 +9,61 @@ import {
   FaHandshake,
   FaStar,
   FaChartLine,
+  FaLongArrowAltRight, 
+  FaUsers, 
+  FaDesktop, 
+  FaAward, 
+  // FaHandshake, 
+  FaHtml5, 
+  FaCss3, 
+  FaJs, 
+  FaReact, 
+  FaNodeJs, 
+  FaPalette, 
+  FaPencilRuler, 
+  FaLaptop, 
+  FaMobileAlt, 
+  FaAndroid, 
+  FaApple, 
+  FaSwift, 
+  FaCloud, 
+  FaServer, 
+  FaShieldAlt, 
+  FaLock, 
+  FaCodeBranch, 
+  FaGit, 
+  FaDocker, 
+  FaPython, 
+  FaDatabase, 
+  FaTools, 
+  FaWrench, 
+  FaHeadset, 
+  FaComments, 
+  FaCheckCircle,
+  // New imports for Data Analytics
+  // FaChartLine,
+  FaChartBar,
+  FaChartPie,
+  // FaTable,
+  FaBrain,
+  FaRobot
 } from "react-icons/fa";
+
+
+import atlas from "../../assets/atlas.png";
+import gratlo from "../../assets/gratlo.png";
+import carca from "../../assets/carca.png";
+import sa from "../../assets/sa.png";
+import mbx from "../../assets/mbx.png";
+import ushamartin from "../../assets/ushamartin.png";
+import flender from "../../assets/flender.png";
+import abhi from "../../assets/abhi.png";
+import fling from "../../assets/fling.png";
+import doqssence from "../../assets/doqssence.png";
+import connexo from "../../assets/connexo.png";
+import caindia from "../../assets/caindia.png";
+import rashmi from "../../assets/rashmi.png";
+import dataImage from "../../assets/data_analytics.webp";
 
 function Testimonials() {
   return (
@@ -19,6 +73,49 @@ function Testimonials() {
         imgbtn="Testimonials"
         src="image/testimonials/testimonials.jpg"
       />
+
+
+      {/* Our Trusted Clients */}
+      <section id="company-logos" className="home-snap-section">
+        <div className="container">
+          <div className="section-head" data-aos="fade-down">
+            <h2 className="head-title">Our Trusted Client</h2>
+            <p className="head-slogan">Companies that trust us to deliver reliable digital solutions.</p>
+          </div>
+          <div className="company-marquee" data-aos="fade-up">
+            <div className="company-marquee-track">
+              <div className="company-item"><img src={atlas} alt="atlas" loading="lazy" style={{ maxHeight: "88px" }} /></div>
+              <div className="company-item"><img src={gratlo} alt="gratlo" loading="lazy" style={{ maxHeight: "64px" }} /></div>
+              <div className="company-item"><img src={carca} alt="carca" loading="lazy" style={{ maxHeight: "78px" }} /></div>
+              <div className="company-item"><img src={sa} alt="sa" loading="lazy" style={{ maxHeight: "58px" }} /></div>
+              <div className="company-item"><img src={mbx} alt="mbx" loading="lazy" style={{ maxHeight: "84px" }} /></div>
+              <div className="company-item"><img src={ushamartin} alt="ushamartin" loading="lazy" style={{ maxHeight: "72px" }} /></div>
+              <div className="company-item"><img src={flender} alt="flender" loading="lazy" style={{ maxHeight: "90px" }} /></div>
+              <div className="company-item"><img src={abhi} alt="abhi" loading="lazy" style={{ maxHeight: "46px" }} /></div>
+              <div className="company-item"><img src={fling} alt="fling" loading="lazy" style={{ maxHeight: "76px" }} /></div>
+              <div className="company-item"><img src={doqssence} alt="doqssence" loading="lazy" style={{ maxHeight: "90px" }} /></div>
+              <div className="company-item"><img src={connexo} alt="connexo" loading="lazy" style={{ maxHeight: "80px" }} /></div>
+              <div className="company-item"><img src={caindia} alt="caindia" loading="lazy" style={{ maxHeight: "62px" }} /></div>
+              <div className="company-item"><img src={rashmi} alt="rashmi" loading="lazy" style={{ maxHeight: "74px" }} /></div>
+              {/* duplicate for seamless scroll */}
+              <div className="company-item"><img src={atlas} alt="atlas" loading="lazy" style={{ maxHeight: "88px" }} /></div>
+              <div className="company-item"><img src={gratlo} alt="gratlo" loading="lazy" style={{ maxHeight: "64px" }} /></div>
+              <div className="company-item"><img src={carca} alt="carca" loading="lazy" style={{ maxHeight: "78px" }} /></div>
+              <div className="company-item"><img src={sa} alt="sa" loading="lazy" style={{ maxHeight: "58px" }} /></div>
+              <div className="company-item"><img src={mbx} alt="mbx" loading="lazy" style={{ maxHeight: "84px" }} /></div>
+              <div className="company-item"><img src={ushamartin} alt="ushamartin" loading="lazy" style={{ maxHeight: "72px" }} /></div>
+              <div className="company-item"><img src={flender} alt="flender" loading="lazy" style={{ maxHeight: "90px" }} /></div>
+              <div className="company-item"><img src={abhi} alt="abhi" loading="lazy" style={{ maxHeight: "46px" }} /></div>
+              <div className="company-item"><img src={fling} alt="fling" loading="lazy" style={{ maxHeight: "76px" }} /></div>
+              <div className="company-item"><img src={doqssence} alt="doqssence" loading="lazy" style={{ maxHeight: "90px" }} /></div>
+              <div className="company-item"><img src={connexo} alt="connexo" loading="lazy" style={{ maxHeight: "80px" }} /></div>
+              <div className="company-item"><img src={caindia} alt="caindia" loading="lazy" style={{ maxHeight: "62px" }} /></div>
+              <div className="company-item"><img src={rashmi} alt="rashmi" loading="lazy" style={{ maxHeight: "74px" }} /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* <----------------------------------------------- why we are diffrent ---------------------------------------------> */}
       <section id="why-different">
         <div className="container-fluid">

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Header.css";
 import Logo from "../../assets/Logo.png";
 import Logo1 from "../../assets/logo-white.png";
@@ -54,16 +54,45 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 function Header() {
   const [menubtn, setMenubtn] = useState(false);
   const [color, setColor] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
 
-  // <--scroll triger-->
-  const ChangeColor = () => {
-    if (window.scrollY >= 10) {
-      setColor(true);
+  // <--scroll trigger with cleanup-->
+  useEffect(() => {
+    const ChangeColor = () => {
+      if (window.scrollY >= 10) {
+        setColor(true);
+      } else {
+        setColor(false);
+      }
+    };
+    window.addEventListener("scroll", ChangeColor);
+    ChangeColor();
+    return () => window.removeEventListener("scroll", ChangeColor);
+  }, []);
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (menubtn) {
+      document.body.style.overflow = "hidden";
     } else {
-      setColor(false);
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menubtn]);
+
+  const handleDropdownClick = (e, name) => {
+    if (window.innerWidth <= 991) {
+      e.preventDefault();
+      setActiveDropdown((prev) => (prev === name ? null : name));
     }
   };
-  window.addEventListener("scroll", ChangeColor);
+
+  const closeMobileMenu = () => {
+    setMenubtn(false);
+    setActiveDropdown(null);
+  };
   return (
     <>
       <header>
@@ -71,27 +100,24 @@ function Header() {
           <div className="container-fluid">
             <div className="container">
               <div className="header-container">
-                {color ? (
-                  <NavLink to="/">
-                    <img
-                      loading="eager"
-                      fetchpriority="high"
-                      src={Logo}
-                      alt="logo"
-                      className="header-logo"
-                    />
-                  </NavLink>
-                ) : (
-                  <NavLink to="/">
-                    <img
-                      loading="eager"
-                      fetchpriority="high"
-                      src={Logo1}
-                      alt="logo"
-                      className="header-logo"
-                    />
-                  </NavLink>
-                )}
+                <NavLink to="/" className="header-logo-link">
+                  {/* Desktop Logo: dynamically changes on scroll */}
+                  <img
+                    loading="eager"
+                    fetchpriority="high"
+                    src={color ? Logo : Logo1}
+                    alt="logo"
+                    className="header-logo header-logo-desktop"
+                  />
+                  {/* Mobile Logo: permanently visible dark logo on fixed white navbar */}
+                  <img
+                    loading="eager"
+                    fetchpriority="high"
+                    src={Logo}
+                    alt="logo"
+                    className="header-logo header-logo-mobile"
+                  />
+                </NavLink>
                 <nav className="header-navbar">
                   <ul
                     className={
@@ -103,23 +129,22 @@ function Header() {
                     <li>
                       <NavLink
                         to=""
+                        onClick={(e) => handleDropdownClick(e, "company")}
                         className={
                           color
                             ? "header-navbar-link"
                             : "header-navbar-link header-navbar-link-bg"
                         }
                       >
-                        <span className="flex items-center justify-center">
-                          {" "}
-                          {/* Add a wrapper with flex */}
-                          Company&nbsp;
-                          <span>
+                        <span className="flex items-center justify-between">
+                          Company
+                          <span className={`dropdown-chevron ${activeDropdown === "company" ? "rotate-180" : ""}`}>
                             <FaChevronDown />
                           </span>
                         </span>
                       </NavLink>
 
-                      <div className="megadrop">
+                      <div className={`megadrop ${activeDropdown === "company" ? "mobile-dropdown-open" : ""}`}>
                         <div className="row">
                           <div className="col-xl-8 col-lg-7">
                             <div className="drop-img-grid">
@@ -221,23 +246,22 @@ function Header() {
                     <li>
                         <NavLink
                         to=""
+                        onClick={(e) => handleDropdownClick(e, "services")}
                         className={
                           color
                             ? "header-navbar-link"
                             : "header-navbar-link header-navbar-link-bg"
                         }
                       >
-                        <span className="flex items-center justify-center">
-                          {" "}
-                          {/* Add a wrapper with flex */}
-                          Services&nbsp;
-                          <span>
+                        <span className="flex items-center justify-between">
+                          Services
+                          <span className={`dropdown-chevron ${activeDropdown === "services" ? "rotate-180" : ""}`}>
                             <FaChevronDown />
                           </span>
                         </span>
                       </NavLink>
 
-                      <div className="service-grid">
+                      <div className={`service-grid ${activeDropdown === "services" ? "mobile-dropdown-open" : ""}`}>
                         <div className="megadrop">
                           <div className="megadrop-item">
                             <NavLink
@@ -429,23 +453,22 @@ function Header() {
                     <li>
                       <NavLink
                         to=""
+                        onClick={(e) => handleDropdownClick(e, "solutions")}
                         className={
                           color
                             ? "header-navbar-link"
                             : "header-navbar-link header-navbar-link-bg"
                         }
                       >
-                        <span className="flex items-center justify-center">
-                          {" "}
-                          {/* Add a wrapper with flex */}
-                          Solutions&nbsp;
-                          <span>
+                        <span className="flex items-center justify-between">
+                          Solutions
+                          <span className={`dropdown-chevron ${activeDropdown === "solutions" ? "rotate-180" : ""}`}>
                             <FaChevronDown />
                           </span>
                         </span>
                       </NavLink>
 
-                      <div className="megadrop">
+                      <div className={`megadrop ${activeDropdown === "solutions" ? "mobile-dropdown-open" : ""}`}>
                         <div className="megadrop-item">
                           <div className="solution-grid">
                             <div className="row">
@@ -457,7 +480,8 @@ function Header() {
                                       fetchpriority="high"
                                       src="/image/header/sh.png"
                                       alt="..."
-                                      className="w-100 h-100"
+                                      fit
+                                      className="w-100  h-100"
                                     />
                                   </div>
                                   <div className="text">
@@ -520,7 +544,57 @@ function Header() {
                                   </div>
                                 </NavLink>
 
+                                {/* New Added */}
+                              
+
                                 <NavLink
+                                  to="/oil_and_lubrication"
+                                  onClick={() => setMenubtn(!menubtn)}
+                                  className="megadrop-item-link"
+                                >
+                                  <div className="megadrop-item-about">
+                                    <FaCentos />
+                                    &nbsp;&nbsp;
+                                    <strong>Sampling and Lubrication Management System</strong>
+                                  </div>
+                                </NavLink>
+
+                                
+
+                                {/* <NavLink
+                                  to="/Healthcare"
+                                  onClick={() => setMenubtn(!menubtn)}
+                                  className="megadrop-item-link"
+                                >
+                                  <div className="megadrop-item-about">
+                                    <FaMedkit />
+                                    &nbsp;&nbsp;
+                                    <strong>Hospital Management System</strong>
+                                  </div>
+                                </NavLink> */}
+                                
+
+                                <NavLink
+                                  to="/inventory"
+                                  onClick={() => setMenubtn(!menubtn)}
+                                  className="megadrop-item-link"
+                                >
+                                  <div className="megadrop-item-about">
+                                    <FaWarehouse />
+                                    &nbsp;&nbsp;
+                                    <strong>Inventory Management System</strong>
+                                  </div>
+                                </NavLink>
+
+
+
+                                {/*  */}
+                                
+
+
+
+
+                                {/* <NavLink
                                   to="/WebPortal"
                                   onClick={() => setMenubtn(!menubtn)}
                                   className="megadrop-item-link"
@@ -530,7 +604,9 @@ function Header() {
                                     &nbsp;&nbsp;
                                     <strong>Web Portal</strong>
                                   </div>
-                                </NavLink>
+                                </NavLink> */}
+
+                                
 
                                 {/* <NavLink
                                   to="/SupplyChain"
@@ -558,6 +634,17 @@ function Header() {
                                     </strong>
                                   </div>
                                 </NavLink>
+                                  <NavLink
+                                  to="/excel"
+                                  onClick={() => setMenubtn(!menubtn)}
+                                  className="megadrop-item-link"
+                                >
+                                  <div className="megadrop-item-about">
+                                    <FaCentos />
+                                    &nbsp;&nbsp;
+                                    <strong>Graphical Representation Software</strong>
+                                  </div>
+                                </NavLink>
 
                                 <NavLink
                                   to="/EcommerceSolutions"
@@ -572,7 +659,7 @@ function Header() {
                                 </NavLink>
 
                                 <NavLink
-                                  to="/Cms"
+                                  to="/hms"
                                   onClick={() => setMenubtn(!menubtn)}
                                   className="megadrop-item-link"
                                 >
@@ -580,7 +667,7 @@ function Header() {
                                     <FaAccusoft />
                                     &nbsp;&nbsp;
                                     <strong>
-                                      Content Management System (CMS)
+                                      Hospital Management System (HMS)
                                     </strong>
                                   </div>
                                 </NavLink>
@@ -598,7 +685,22 @@ function Header() {
                                     </strong>
                                   </div>
                                 </NavLink>
-                                <NavLink
+
+
+                                  {/* <NavLink
+                                  to="/ProjectManagement"
+                                  onClick={() => setMenubtn(!menubtn)}
+                                  className="megadrop-item-link"
+                                >
+                                  <div className="megadrop-item-about">
+                                    <FaCentos />
+                                    &nbsp;&nbsp;
+                                    <strong>Biling Software</strong>
+                                  </div>
+                                </NavLink> */}
+
+
+                                {/* <NavLink
                                   to="/SchoolCollege"
                                   onClick={() => setMenubtn(!menubtn)}
                                   className="megadrop-item-link"
@@ -610,7 +712,7 @@ function Header() {
                                       School & College Management System
                                     </strong>
                                   </div>
-                                </NavLink>
+                                </NavLink> */}
                               </div>
                             </div>
                           </div>
@@ -621,24 +723,23 @@ function Header() {
                     <li>
                       <NavLink
                         to=""
+                        onClick={(e) => handleDropdownClick(e, "industries")}
                         className={
                           color
                             ? "header-navbar-link"
                             : "header-navbar-link header-navbar-link-bg"
                         }
                       >
-                        <span className="flex items-center justify-center">
-                          {" "}
-                          {/* Add a wrapper with flex */}
-                          Industries&nbsp;
-                          <span>
+                        <span className="flex items-center justify-between">
+                          Industries
+                          <span className={`dropdown-chevron ${activeDropdown === "industries" ? "rotate-180" : ""}`}>
                             <FaChevronDown />
                           </span>
                         </span>
                       </NavLink>
                       {/* <--------------------------------------- mega drop-down Industries ----------------------------------------------> */}
 
-                      <div className="megadrop">
+                      <div className={`megadrop ${activeDropdown === "industries" ? "mobile-dropdown-open" : ""}`}>
                         <div className="megadrop-item">
                           <div className="industry-grid">
                             <NavLink
@@ -820,6 +921,25 @@ function Header() {
                                 <strong>School & University</strong>
                               </div>
                             </NavLink>
+                             <NavLink
+                              to="/pharma"
+                              onClick={() => setMenubtn(!menubtn)}
+                              className="megadrop-item-link"
+                            >
+                              <div className="image">
+                                <img
+                                  loading="eager"
+                                  fetchpriority="high"
+                                  src="/images/career/healthcare.png"
+                                  alt="..."
+                                  className="w-100 h-100"
+                                />
+                              </div>
+                              <div className="megadrop-item-about">
+                                <VscSymbolConstant />
+                                <strong>Pharma</strong>
+                              </div>
+                            </NavLink>
                           </div>
                         </div>
                       </div>
@@ -828,23 +948,22 @@ function Header() {
                     <li>
                         <NavLink
                         to=""
+                        onClick={(e) => handleDropdownClick(e, "explore")}
                         className={
                           color
                             ? "header-navbar-link"
                             : "header-navbar-link header-navbar-link-bg"
                         }
                       >
-                        <span className="flex items-center justify-center">
-                          {" "}
-                          {/* Add a wrapper with flex */}
-                          Explore & Learn&nbsp;
-                          <span>
+                        <span className="flex items-center justify-between">
+                          Explore & Learn
+                          <span className={`dropdown-chevron ${activeDropdown === "explore" ? "rotate-180" : ""}`}>
                             <FaChevronDown />
                           </span>
                         </span>
                       </NavLink>
                       {/* <--------------------------------------- Explore & Learn Megamenu ----------------------------------------------> */}
-                      <div className="megadrop">
+                      <div className={`megadrop ${activeDropdown === "explore" ? "mobile-dropdown-open" : ""}`}>
                         <div className="megadrop-item">
                           <div className="explore-grid">
                             <NavLink
@@ -954,7 +1073,7 @@ function Header() {
                       <NavLink
                         className="header-navbar-linkbtn contact-us"
                         to="ContactUs"
-                        onClick={() => setMenubtn(!menubtn)}
+                        onClick={closeMobileMenu}
                       >
                         Contact Us
                       </NavLink>
@@ -962,10 +1081,11 @@ function Header() {
                   </ul>
                 </nav>
                 <div
-                  className={
+                  className={`${
                     color ? "mobile-navbar-btn-black" : "mobile-navbar-btn"
-                  }
+                  } ${menubtn ? "mobile-navbar-btn-open" : ""}`}
                   onClick={() => setMenubtn(!menubtn)}
+                  aria-label="Toggle Navigation Menu"
                 >
                   {menubtn ? (
                     <FaTimes
@@ -985,6 +1105,11 @@ function Header() {
                     />
                   )}
                 </div>
+                {/* Backdrop for closing mobile menu */}
+                <div
+                  className={`mobile-nav-backdrop ${menubtn ? "active" : ""}`}
+                  onClick={closeMobileMenu}
+                />
               </div>
             </div>
           </div>

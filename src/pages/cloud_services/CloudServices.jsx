@@ -20,7 +20,7 @@ function CloudServices() {
         heading="Cloud Services"
         src="image/cloudservices/cloudservices.webp"
       />
-      <section id="cloud">
+      <section id="cloud" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -38,7 +38,7 @@ function CloudServices() {
         </div>
       </section>
 
-      <section id="cloud-second">
+      <section id="cloud-second" className="fade-in-right">
         <div className="container-fluid">
           <div className="container">
             <div className="section">
@@ -166,7 +166,7 @@ function CloudServices() {
         </div>
       </section>
 
-      <section id="cloud-third">
+      <section id="cloud-third" className="fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -337,7 +337,7 @@ function CloudServices() {
         </div>
       </section>
 
-      <section id="cloud-five">
+      <section id="cloud-five" className="fade-up">
         <div className="section-top">
           <div className="container">
           <div className="head-title">
@@ -484,7 +484,7 @@ function CloudServices() {
             </div>
       </section>
 
-      <section id="cloud-four">
+      <section id="cloud-four" className="fade-in-right">
       <div className="container-fluid">
       <div className="container">
         <div className="section-top">
@@ -619,7 +619,7 @@ function CloudServices() {
 
      
 
-      <section id="cloud-six">
+      <section id="cloud-six" className="fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -735,7 +735,7 @@ function CloudServices() {
         </div>
       </section>
 
-      <section id="enterprise-faq">
+      <section id="enterprise-faq" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">

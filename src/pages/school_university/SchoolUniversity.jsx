@@ -24,7 +24,7 @@ function SchoolUniversity() {
       <Hero
         heading="School & University"
         imgbtn="School & University"
-        src="image/solution/schoolCollage.jpg"
+        src="/university.png"
       />
 
       {/* Existing Content */}

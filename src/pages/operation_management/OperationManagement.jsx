@@ -3,7 +3,7 @@ import Hero from "../../components/hero_section/Hero";
 import operationsmanagement from "../../assets/digital-operations-management-consulting_cover-pic.svg";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import {toast, ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 const operman = [
   {
@@ -49,6 +49,7 @@ const operman = [
     p2: "Enable real-time information sharing, task assignment, and progress tracking for improved teamwork and decision-making.",
   },
 ];
+
 function OperationManagement() {
   const [isAgreed, setIsAgreed] = useState(false);
 
@@ -60,7 +61,7 @@ function OperationManagement() {
     first_name: "",
     last_name: "",
     mobile: "",
-    title:"",
+    title: "",
     desc: "",
     email: "",
     business_name: "",
@@ -85,147 +86,154 @@ function OperationManagement() {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
-  const handleSubmit= async (e)=>
-    {
-  
-        e.preventDefault();
-  
-        if (!validateEmail(formData.email)) {
-          toast.error("Please enter a valid email address", {
-            position: "top-right",
-            autoClose: 2000,
-          });
-          return;
-        }
-    
-        if (!validatePhone(formData.mobile)) {
-          toast.error("Please enter a valid phone number", {
-            position: "top-right",
-            autoClose: 2000,
-          });
-          return;
-        }
-  
-        if (!formData.agreement) {
-          toast.error("Please accept the agreement before submitting.", {
-            position: "top-right",
-            autoClose: 2000,
-          });
-          return;
-        }
-    
-        try {
-    
-    
-          const response = await fetch(
-            "https://ved.venturingdigitally.com/api/createSolution",
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(formData),
-            }
-          );
-    
-          if (response.status == 200) {
-    
-            setFormData({ first_name: "",
-              last_name: "",
-              mobile: "",
-              title:"",
-              desc: "",
-              email: "",
-              business_name: "",
-              date: "",
-              country: "",
-              user_access: "",
-              address: "",
-            })
-    
-            toast.success("Form Submitted Successfully", {
-              position: "top-right",
-              autoClose: 2000,
-            });
-        
-          } else {
-            toast.error("Submission failed. Please try again.", {
-              position: "top-right",
-              autoClose: 2000,
-            });
-          }
-          
-        } catch (error) {
-          console.error("An error occurred while submitting the form:", error);
-        }
-      
-  }
-    
-      const validateEmail = (email) => {
-        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        return emailRegex.test(email);
-      };
-    
-      const validatePhone = (phone) => {
-        const phoneRegex = /^[6-9]\d{9}$/;
-        return phoneRegex.test(phone);
-      };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
+    if (!validateEmail(formData.email)) {
+      toast.error("Please enter a valid email address", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
 
+    if (!validatePhone(formData.mobile)) {
+      toast.error("Please enter a valid phone number", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
 
+    if (!formData.agreement) {
+      toast.error("Please accept the agreement before submitting.", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        "https://ved.venturingdigitally.com/api/createSolution",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.status == 200) {
+        setFormData({
+          first_name: "",
+          last_name: "",
+          mobile: "",
+          title: "",
+          desc: "",
+          email: "",
+          business_name: "",
+          date: "",
+          country: "",
+          user_access: "",
+          address: "",
+        });
+
+        toast.success("Form Submitted Successfully", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+      } else {
+        toast.error("Submission failed. Please try again.", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+      }
+    } catch (error) {
+      console.error("An error occurred while submitting the form:", error);
+    }
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  };
+
+  const validatePhone = (phone) => {
+    const phoneRegex = /^[6-9]\d{9}$/;
+    return phoneRegex.test(phone);
+  };
 
   return (
     <>
-       <ToastContainer/>
+      <ToastContainer />
       <Hero
         heading="Operation Management Software"
         imgbtn="Operation"
-        // slogan="Streamline and Optimize Your Operations"
         src="image/operation-management/OMS.png"
       />
 
-        
-
       <section id="solution">
-          <div className="container-fluid">
-            <div className="container">
-            
-             <div className="head_title margin_bottom-20">Operation Management Software</div>
+        <div className="container-fluid">
+          <div className="container">
+            {/* <div 
+              className="head_title margin_bottom-20"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
+              Operation Management Software
+            </div> */}
 
             <div className="section">
-              <div className="left">
-              <div className="image">
-                <img loading="eager" fetchpriority="high"
-                  src="/image/solution/Operational.png"
-                  alt=""
-                  className="w-100 h-100"
-                   
-                />
-              </div>
-            
-              </div>
-            
-              <div className="right">
-              <div class="text-box">
-              Operation Management Software optimizes business processes by streamlining workflows, resource allocation, and performance tracking. It ensures efficient task management, real-time monitoring, and automated reporting to enhance productivity. With inventory control, workforce scheduling, and compliance tracking, businesses can minimize errors and improve efficiency. Integration with ERP, CRM, and financial systems ensures seamless operations and data synchronization. Cloud-based solutions provide remote access, scalability, and secure data management for operational excellence. Implementing Operation Management Software enhances efficiency, reduces costs, and improves decision-making. It also automates routine processes, ensuring consistency and faster execution of tasks. A well-structured system fosters better collaboration, optimized resource utilization, and overall business growth.
+              <div className="left"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="200">
+                <div className="image">
+                  <img
+                    loading="eager"
+                    fetchpriority="high"
+                    src="/image/solution/Operational.png"
+                    alt="Operation Management"
+                    className="w-100 h-100"
+                  />
                 </div>
-            </div>
-   
+              </div>
+
+              <div className="right"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-aos-offset="200">
+                <div className="text-box"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="400">
+                  Operation Management Software optimizes business processes by streamlining workflows, resource allocation, and performance tracking. It ensures efficient task management, real-time monitoring, and automated reporting to enhance productivity. With inventory control, workforce scheduling, and compliance tracking, businesses can minimize errors and improve efficiency. Integration with ERP, CRM, and financial systems ensures seamless operations and data synchronization. Cloud-based solutions provide remote access, scalability, and secure data management for operational excellence. Implementing Operation Management Software enhances efficiency, reduces costs, and improves decision-making. It also automates routine processes, ensuring consistency and faster execution of tasks. A well-structured system fosters better collaboration, optimized resource utilization, and overall business growth.
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* <-------------------------------------------- Operation Management first ----------------------------------> */}
+      {/* Operation Management first */}
       <section id="opermfirst" className="pb-0">
         <div className="container-fluid">
           <div className="container">
-            <div className="opermfirst-section-head">
+            <div className="opermfirst-section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="opermfirst-custom-head">
                 <div className="opermfirst-head-title">
                   Streamline and Optimize Your Operations
                 </div>
-                <div className="operm-first-slogan">
+                <div className="operm-first-slogan"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="100">
                   Efficient operations management is crucial for businesses to
                   achieve operational excellence, maximize productivity, and
                   deliver superior customer experiences. At Venturing Digitally,
@@ -239,12 +247,16 @@ function OperationManagement() {
               <div className="why-grid">
                 <div className="row justify-content-center">
                   <div>
-                    <div className="opermfirst-img-box">
-                      <img loading="eager" fetchpriority="high"
+                    <div className="opermfirst-img-box"
+                      data-aos="zoom-in"
+                      data-aos-duration="1000"
+                      data-aos-offset="200">
+                      <img
+                        loading="eager"
+                        fetchpriority="high"
                         src={operationsmanagement}
-                        alt=""
+                        alt="Operations Management"
                         className="w-100 h-100"
-                         
                       />
                     </div>
                   </div>
@@ -254,16 +266,21 @@ function OperationManagement() {
           </div>
         </div>
       </section>
-      {/* <-------------------------------------------- Operation Management second ----------------------------------> */}
+
+      {/* Operation Management second */}
       <section id="opermsecond">
         <div className="container-fluid">
           <div className="container">
-            <div className="opermsecond-section-content">
+            <div className="opermsecond-section-content"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="opermsecond-content">
-                <div className="opermsecond-content-head">
-                  About Operation Management
-                </div>
-                <div className="opermsecond-content-data">
+                <div className="opermsecond-content-head">About Operation Management</div>
+                <div className="opermsecond-content-data"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="100">
                   Our operations management solutions leverage cutting-edge
                   technologies and industry best practices to help businesses
                   streamline their operations and overcome operational
@@ -271,24 +288,31 @@ function OperationManagement() {
                   automation, we provide tailored solutions to meet your
                   specific operational needs.
                 </div>
-                <div className="opermsecond-content-head mb-4">
-                  Key Features of venturing digitally Operations Management
-                  Solutions
+                <div className="opermsecond-content-head mb-4"
+                  data-aos="fade-right"
+                  data-aos-duration="600"
+                  data-aos-delay="150">
+                  Key Features of venturing digitally Operations Management Solutions
                 </div>
               </div>
             </div>
 
             <div className="opermsecond-section-card">
               <div className="why-grid">
-                {operman.map((oper) => {
+                {operman.map((oper, index) => {
                   return (
-                    <div className="opermsecond-why-card" key={oper.id}>
+                    <div className="opermsecond-why-card" key={oper.id}
+                      data-aos="fade-up"
+                      data-aos-duration="600"
+                      data-aos-delay={index * 100}
+                      data-aos-offset="100">
                       <div className="opermsecond-card-imgbox">
-                        <img loading="eager" fetchpriority="high"
+                        <img
+                          loading="eager"
+                          fetchpriority="high"
                           src={oper.img}
-                          alt=""
+                          alt={oper.head}
                           className="w-100 h-100"
-                           
                         />
                       </div>
                       <div className="prosecond-title">{oper.head}</div>
@@ -310,9 +334,15 @@ function OperationManagement() {
       <div id="why-venturing-digitally">
         <div className="container-fluid">
           <div className="container">
-            <div className="service-content">
+            <div className="service-content"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="outsource-content">
-                <div className="details">
+                <div className="details"
+                  data-aos="fade-right"
+                  data-aos-duration="600"
+                  data-aos-delay="100">
                   <div className="title">Why Venturing Digitally</div>
                   <div className="data">
                     By choosing Venturing Digitally for your operations
@@ -322,12 +352,16 @@ function OperationManagement() {
                     operational excellence.
                   </div>
                 </div>
-                <div className="image">
-                  <img loading="eager" fetchpriority="high"
+                <div className="image"
+                  data-aos="fade-left"
+                  data-aos-duration="600"
+                  data-aos-delay="200">
+                  <img
+                    loading="eager"
+                    fetchpriority="high"
                     src="images/icon/outsource.png"
-                    alt="..."
+                    alt="Why Venturing Digitally"
                     className="w-100 h-100"
-                     
                   />
                 </div>
               </div>
@@ -336,142 +370,156 @@ function OperationManagement() {
         </div>
       </div>
 
-      {/* <-------------------------------------------- Operation Management second ----------------------------------> */}
+      {/* Operation Management goals */}
       <section id="opermthird">
         <div className="container-fluid">
           <div className="container">
-            <div className="opermthird-section-head">
+            <div className="opermthird-section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="opermthird-custom-head">
                 <div className="opermthird-head-title">
                   Operation Management Goals
                 </div>
               </div>
-              <div className="opermthird-head-slogan">
+              <div className="opermthird-head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
                 Driving Operational Excellence
               </div>
             </div>
             <div className="opermthird-section-body">
-              <div className="opermthird-body-box1">
-                <div className="opermthird-body-box1-img">
-                  <img loading="eager" fetchpriority="high"
-                    src="image/operation-management/EFFICIENCY ENHANCEMENT.png"
-                    alt="..."
-                    className="w-100 h-100"
-                     
-                  />
+              {[
+                {
+                  img: "image/operation-management/EFFICIENCY ENHANCEMENT.png",
+                  title: "Efficiency Enhancement",
+                  p1: "Streamline processes, reduce operational waste, and optimize resource utilization to improve overall efficiency.",
+                  p2: "Minimize manual interventions and enable self-service capabilities to expedite operations.",
+                  imgFirst: true
+                },
+                {
+                  img: "image/operation-management/COST REDUCTION0.png",
+                  title: "Cost Reduction",
+                  p1: "Identify cost-saving opportunities, optimize procurement processes, and eliminate unnecessary expenses.",
+                  p2: "Leverage technology to automate manual tasks, reducing labor costs and improving cost efficiency.",
+                  imgFirst: false
+                },
+                {
+                  img: "image/operation-management/RISK MITIGATION.png",
+                  title: "Risk Mitigation",
+                  p1: "Identify and mitigate operational risks through proactive monitoring, data analysis, and contingency planning.",
+                  p2: "Implement robust security measures to safeguard operations and protect sensitive information.",
+                  imgFirst: true
+                },
+                {
+                  img: "image/operation-management/SCALABILITY AND AGILITY.png",
+                  title: "Scalability and Agility",
+                  p1: "Build flexible and scalable operational frameworks that can adapt to changing business needs and market dynamics.",
+                  p2: "Embrace agile methodologies to respond quickly to market demands and seize growth opportunities.",
+                  imgFirst: false
+                }
+              ].map((item, index) => (
+                <div className="opermthird-body-box1" key={index}
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay={index * 100}
+                  data-aos-offset="150">
+                  {item.imgFirst ? (
+                    <>
+                      <div className="opermthird-body-box1-img"
+                        data-aos="zoom-in"
+                        data-aos-duration="600"
+                        data-aos-delay={index * 100 + 50}>
+                        <img
+                          loading="eager"
+                          fetchpriority="high"
+                          src={item.img}
+                          alt={item.title}
+                          className="w-100 h-100"
+                        />
+                      </div>
+                      <div className="opermthird-body-box1-text"
+                        data-aos="fade-left"
+                        data-aos-duration="600"
+                        data-aos-delay={index * 100 + 100}>
+                        <div className="opermthird-body-box1-text-title">{item.title}</div>
+                        <div className="opermthird-body-box1-text-slogan">{item.p1}</div>
+                        <div className="opermthird-body-box1-text-slogan">{item.p2}</div>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div className="opermthird-body-box1-text"
+                        data-aos="fade-right"
+                        data-aos-duration="600"
+                        data-aos-delay={index * 100 + 100}>
+                        <div className="opermthird-body-box1-text-title">{item.title}</div>
+                        <div className="opermthird-body-box1-text-slogan">{item.p1}</div>
+                        <div className="opermthird-body-box1-text-slogan">{item.p2}</div>
+                      </div>
+                      <div className="opermthird-body-box1-img"
+                        data-aos="zoom-in"
+                        data-aos-duration="600"
+                        data-aos-delay={index * 100 + 50}>
+                        <img
+                          loading="eager"
+                          fetchpriority="high"
+                          src={item.img}
+                          alt={item.title}
+                          className="w-100 h-100"
+                        />
+                      </div>
+                    </>
+                  )}
                 </div>
-                <div className="opermthird-body-box1-text">
-                  <div className="opermthird-body-box1-text-title">
-                    Efficiency Enhancement
-                  </div>
-                  <div className="opermthird-body-box1-text-slogan">
-                    Streamline processes, reduce operational waste, and optimize
-                    resource utilization to improve overall efficiency.
-                  </div>
-                  <div className="opermthird-body-box1-text-slogan">
-                    Minimize manual interventions and enable self-service
-                    capabilities to expedite operations.
-                  </div>
-                </div>
-              </div>
-
-              <div className="opermthird-body-box1">
-                <div className="opermthird-body-box1-text">
-                  <div className="opermthird-body-box1-text-title">
-                    Cost Reduction
-                  </div>
-                  <div className="opermthird-body-box1-text-slogan">
-                    Identify cost-saving opportunities, optimize procurement
-                    processes, and eliminate unnecessary expenses.
-                  </div>
-                  <div className="opermthird-body-box1-text-slogan">
-                    Leverage technology to automate manual tasks, reducing labor
-                    costs and improving cost efficiency.
-                  </div>
-                </div>
-                <div className="opermthird-body-box1-img">
-                  <img loading="eager" fetchpriority="high"
-                    src="image/operation-management/COST REDUCTION0.png"
-                    alt="..."
-                    className="w-100 h-100"
-                     
-                  />
-                </div>
-              </div>
-
-              <div className="opermthird-body-box1">
-                <div className="opermthird-body-box1-img">
-                  <img loading="eager" fetchpriority="high"
-                    src="image/operation-management/RISK MITIGATION.png"
-                    alt="..."
-                    className="w-100 h-100"
-                     
-                  />
-                </div>
-                <div className="opermthird-body-box1-text">
-                  <div className="opermthird-body-box1-text-title">
-                    Risk Mitigation
-                  </div>
-                  <div className="opermthird-body-box1-text-slogan">
-                    Identify and mitigate operational risks through proactive
-                    monitoring, data analysis, and contingency planning.
-                  </div>
-                  <div className="opermthird-body-box1-text-slogan">
-                    Implement robust security measures to safeguard operations
-                    and protect sensitive information.
-                  </div>
-                </div>
-              </div>
-
-              <div className="opermthird-body-box1">
-                <div className="opermthird-body-box1-text">
-                  <div className="opermthird-body-box1-text-title">
-                    Scalability and Agility
-                  </div>
-                  <div className="opermthird-body-box1-text-slogan">
-                    Build flexible and scalable operational frameworks that can
-                    adapt to changing business needs and market dynamics.
-                  </div>
-                  <div className="opermthird-body-box1-text-slogan">
-                    Embrace agile methodologies to respond quickly to market
-                    demands and seize growth opportunities.
-                  </div>
-                </div>
-                <div className="opermthird-body-box1-img">
-                  <img loading="eager" fetchpriority="high"
-                    src="image/operation-management/SCALABILITY AND AGILITY.png"
-                    alt="..."
-                    className="w-100 h-100"
-                     
-                  />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
+
       <section id="health">
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
               <div className="row align-items-center">
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="200">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
-                      <img loading="eager" fetchpriority="high"
+                      <img
+                        loading="eager"
+                        fetchpriority="high"
                         src="crm.jpeg"
-                        alt="..."
+                        alt="Demo Request"
                         className="w-75 h-auto"
-                          style={{aspectRatio:1.25}}
+                        style={{ aspectRatio: 1.25 }}
+                        data-aos="zoom-in"
+                        data-aos-duration="800"
+                        data-aos-delay="200"
                       />
                     </div>
                   </div>
                 </div>
 
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                  data-aos-offset="200">
                   <div className="health-content">
-                    <div className="form-container">
-                      <div className="form-header">
+                    <div className="form-container"
+                      data-aos="zoom-in"
+                      data-aos-duration="800"
+                      data-aos-delay="300">
+                      <div className="form-header"
+                        data-aos="fade-down"
+                        data-aos-duration="600"
+                        data-aos-delay="400">
                         <h2>Request Free Demo</h2>
                       </div>
 
@@ -481,7 +529,10 @@ function OperationManagement() {
                           style={{ paddingBottom: "0px" }}
                         >
                           <div className="col-lg-6">
-                            <div className="left-placeholder">
+                            <div className="left-placeholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="500">
                               <input
                                 type="text"
                                 name="first_name"
@@ -493,7 +544,10 @@ function OperationManagement() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="550">
                               <input
                                 type="text"
                                 name="title"
@@ -505,7 +559,10 @@ function OperationManagement() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="600">
                               <input
                                 type="tel"
                                 name="mobile"
@@ -517,7 +574,10 @@ function OperationManagement() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="650">
                               <input
                                 type="email"
                                 name="email"
@@ -528,7 +588,10 @@ function OperationManagement() {
                                 required
                               />
                             </div>
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="700">
                               <input
                                 type="text"
                                 name="address"
@@ -541,7 +604,10 @@ function OperationManagement() {
                             </div>
                           </div>
                           <div className="col-lg-6">
-                            <div className="left-placholder">
+                            <div className="left-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="500">
                               <input
                                 type="text"
                                 name="last_name"
@@ -552,7 +618,10 @@ function OperationManagement() {
                                 required
                               />
                             </div>
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="550">
                               <input
                                 type="text"
                                 name="business_name"
@@ -564,7 +633,10 @@ function OperationManagement() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="600">
                               <input
                                 type="text"
                                 name="country"
@@ -576,7 +648,10 @@ function OperationManagement() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="650">
                               <input
                                 type="number"
                                 name="user_access"
@@ -588,12 +663,15 @@ function OperationManagement() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="700">
                               <input
                                 type="date"
                                 name="date"
                                 className="form-control fs-3 second-input"
-                                placeholder="Preffered Date & Time*"
+                                placeholder="Preferred Date & Time*"
                                 value={formData.date}
                                 onChange={handleInputChange}
                                 required
@@ -606,7 +684,10 @@ function OperationManagement() {
                           style={{ padding: "0px 4px 0px 15px" }}
                         >
                           <div className="col-lg-12">
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-up"
+                              data-aos-duration="600"
+                              data-aos-delay="750">
                               <textarea
                                 rows={3}
                                 name="desc"
@@ -618,8 +699,11 @@ function OperationManagement() {
                               ></textarea>
                             </div>
 
-                            <div>
-                            <label
+                            <div
+                              data-aos="fade-up"
+                              data-aos-duration="600"
+                              data-aos-delay="800">
+                              <label
                                 style={{
                                   display: "flex",
                                   gridColumnGap: "8px",
@@ -627,18 +711,20 @@ function OperationManagement() {
                                   fontSize: "12px",
                                 }}
                               >
-                                  <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />
+                                <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />
                                 I agree to the use of personal information
                                 collected from myself in organization software
                                 demo purpose and other IT related support from
                                 your company.
                               </label>
-
                             </div>
                           </div>
                         </div>
 
-                        <button type="submit" className="request-btn">
+                        <button type="submit" className="request-btn"
+                          data-aos="zoom-in"
+                          data-aos-duration="600"
+                          data-aos-delay="850">
                           Request Free Demo
                         </button>
                       </form>
@@ -654,128 +740,67 @@ function OperationManagement() {
       <section id="enterprise-faq">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head">
+            <div className="section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="custom-head">
                 <div className="head-title">Frequently Ask Question</div>
               </div>
-              <div className="head-slogan">
+              <div className="head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
                 Frequently Asked Question For Operation Management Software
               </div>
             </div>
             <div className="section-content">
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 1
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(1)}
-                  >
-                    What is operations management software, and how can it
-                    benefit my business?
-                  </div>
-                  {activeIndex === 1 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        Operations management software is a digital solution
-                        that helps businesses streamline workflows, automate
-                        processes, and optimize resource allocation. It improves
-                        efficiency by integrating key functions like inventory
-                        management, production tracking, supply chain
-                        coordination, and performance monitoring, leading to
-                        reduced costs and enhanced productivity.
-                      </div>
+              {[
+                {
+                  q: "What is operations management software, and how can it benefit my business?",
+                  a: "Operations management software is a digital solution that helps businesses streamline workflows, automate processes, and optimize resource allocation. It improves efficiency by integrating key functions like inventory management, production tracking, supply chain coordination, and performance monitoring, leading to reduced costs and enhanced productivity."
+                },
+                {
+                  q: "What features should I look for in operations management software?",
+                  a: "When selecting an operations management system, look for features such as real-time data analytics, workflow automation, inventory tracking, project management, reporting tools, and integration with ERP and CRM systems. A cloud-based, scalable solution ensures flexibility and long-term business growth."
+                },
+                {
+                  q: "Can operations management software integrate with other business tools?",
+                  a: "Yes! Most modern operations management solutions offer seamless integration with ERP, CRM, accounting software, supply chain management tools, and HR systems. These integrations help businesses improve collaboration, reduce manual errors, and achieve end-to-end operational visibility."
+                },
+                {
+                  q: "How does operations management software improve efficiency and decision-making?",
+                  a: "By automating repetitive tasks, providing real-time data insights, and enabling predictive analytics, operations management software helps businesses make data-driven decisions. It minimizes bottlenecks, reduces operational risks, and ensures optimal resource utilization, leading to increased profitability and smoother business processes."
+                }
+              ].map((faq, index) => (
+                <div className="accordion" key={index}
+                  data-aos="fade-right"
+                  data-aos-duration="600"
+                  data-aos-delay={index * 100}
+                  data-aos-offset="100">
+                  <div className="accordion-item">
+                    <div
+                      className={
+                        activeIndex === index + 1
+                          ? "accordion-item-header active"
+                          : "accordion-item-header"
+                      }
+                      onClick={() => toggleTab(index + 1)}
+                    >
+                      {faq.q}
                     </div>
-                  ) : null}
-                </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 2
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(2)}
-                  >
-                    What features should I look for in operations management
-                    software?
-                  </div>
-                  {activeIndex === 2 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        When selecting an operations management system, look for
-                        features such as real-time data analytics, workflow
-                        automation, inventory tracking, project management,
-                        reporting tools, and integration with ERP and CRM
-                        systems. A cloud-based, scalable solution ensures
-                        flexibility and long-term business growth.
+                    {activeIndex === index + 1 ? (
+                      <div className="accordion-item-body"
+                        data-aos="fade-down"
+                        data-aos-duration="400">
+                        <div className="accordion-item-body-content">
+                          {faq.a}
+                        </div>
                       </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 3
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(3)}
-                  >
-                    Can operations management software integrate with other
-                    business tools?
+                    ) : null}
                   </div>
-                  {activeIndex === 3 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        Yes! Most modern operations management solutions offer
-                        seamless integration with ERP, CRM, accounting software,
-                        supply chain management tools, and HR systems. These
-                        integrations help businesses improve collaboration,
-                        reduce manual errors, and achieve end-to-end operational
-                        visibility.
-                      </div>
-                    </div>
-                  ) : null}
                 </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 4
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(4)}
-                  >
-                    How does operations management software improve efficiency
-                    and decision-making?
-                  </div>
-                  {activeIndex === 4 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        By automating repetitive tasks, providing real-time data
-                        insights, and enabling predictive analytics, operations
-                        management software helps businesses make data-driven
-                        decisions. It minimizes bottlenecks, reduces operational
-                        risks, and ensures optimal resource utilization, leading
-                        to increased profitability and smoother business
-                        processes.
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

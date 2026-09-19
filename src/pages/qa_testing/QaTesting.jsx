@@ -20,7 +20,7 @@ function QaTesting() {
         heading="QA testing & Security"
         src="image/testing/testing.webp"
       />
-      <section id="qa-first">
+      <section id="qa-first" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -37,7 +37,7 @@ function QaTesting() {
         </div>
       </section>
 
-      <section id="qa-second">
+      <section id="qa-second" className="fade-in-right">
         <div className="container-fluid">
           <div className="container">
           <div className="section-container">
@@ -279,7 +279,7 @@ function QaTesting() {
         </div>
       </section>
 
-      <section id="qa-third">
+      <section id="qa-third" className="fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -422,7 +422,7 @@ function QaTesting() {
         </div>
       </section>
 
-      <section id="enterprise-faq">
+      <section id="enterprise-faq" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">

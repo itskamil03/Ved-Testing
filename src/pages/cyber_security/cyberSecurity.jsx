@@ -19,7 +19,7 @@ function CyberSecurity() {
         heading="Cyber Security"
         src="image/cyber-security/cyber-security.webp"
       />
-      <section id="cyber-security-introduction">
+      <section id="cyber-security-introduction" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -72,7 +72,7 @@ function CyberSecurity() {
         </div>
       </section>
 
-      <section id="cyber-security-services">
+      <section id="cyber-security-services" className="fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section">
@@ -193,7 +193,7 @@ function CyberSecurity() {
         </div>
       </section>
 
-      <section id="expert-cyber-security-services">
+      <section id="expert-cyber-security-services" className="fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section">
@@ -293,7 +293,7 @@ function CyberSecurity() {
 
      
 
-      <section id="enterprise-faq">
+      <section id="enterprise-faq" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">

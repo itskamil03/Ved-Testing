@@ -67,7 +67,7 @@ function SupplyChain() {
         src="image/supply-chain/supply-chain.jpeg"
       />
       {/* <-------------------------------------------- Supply Chain first ----------------------------------------> */}
-      <section id="supplychain" style={{ backgroundImage: "url('backgrounds/supply-chain.avif')" }}>
+      <section id="supplychain" style={{ backgroundImage: "url('backgrounds/supply-chain.avif')" }} className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="supplychain-section-head">
@@ -116,7 +116,7 @@ function SupplyChain() {
         </div>
       </section>
       {/* <------------------------------------------------------------ Supply Chain  second2 --------------------------------------------------- */}
-      <section id="supplychains2">
+      <section id="supplychains2" className="fade-in-right">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">
@@ -209,7 +209,7 @@ function SupplyChain() {
         </div>
       </section>
       {/* <-------------------------------------------------------- Supply Chain last third -------------------------------------------> */}
-      <section id="supchainthird" style={{ backgroundImage: "url('backgrounds/bg-offers.webp')" }}>
+      <section id="supchainthird" style={{ backgroundImage: "url('backgrounds/bg-offers.webp')" }} className="fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="supchainthird-container">
@@ -350,7 +350,7 @@ function SupplyChain() {
       {/* <------------------------------------------------------- contact form -------------------------------------------> */}
       <ContactForm />
       {/* <------------------------------------------------------- Supply Chain last second ---------------------------------------------------------> */}
-      <section id="supsecond" style={{ backgroundImage: "url('backgrounds/background-waves.svg')" }}>
+      <section id="supsecond" style={{ backgroundImage: "url('backgrounds/background-waves.svg')" }} className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="supsecond-section-main">

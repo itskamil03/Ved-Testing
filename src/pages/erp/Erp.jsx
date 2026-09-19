@@ -15,7 +15,7 @@ function Erp() {
         src="heroimg/erp.avif"
       />
       {/* <------------------------------------------------ Erp first ------------------------------------------> */}
-      <section id="erpfirst" style={{ backgroundImage: "url('backgrounds/background-waves.svg')" }}>
+      <section id="erpfirst" style={{ backgroundImage: "url('backgrounds/background-waves.svg')" }} className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="erpfirst-section-main">
@@ -62,7 +62,7 @@ function Erp() {
       </section>
 
       {/* <------------------------------------------------ Erp second ------------------------------------------> */}
-      <section id="erpsecond" className="pb-0">
+      <section id="erpsecond" className="pb-0 fade-in-right">
         <div className="container-fluid">
           <div className="container">
             <div className="erpsecond-section-head">
@@ -192,7 +192,7 @@ function Erp() {
       </section>
 
       {/* <------------------------------------------------ Erp third ------------------------------------------> */}
-      <section id="erpthird" className="pb-0">
+      <section id="erpthird" className="pb-0 fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="erpthird-section-content">

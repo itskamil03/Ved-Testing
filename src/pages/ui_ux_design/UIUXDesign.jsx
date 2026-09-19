@@ -141,7 +141,7 @@ function UIUXDesign() {
         </div>
       </section>
       {/* <---------------------------------- Leading UI/UX Design Company -------------------------------> */}
-      <section id="ui-clients2" className="ph-uiux-company ph-bg-color">
+      <section id="ui-clients2" className="ph-uiux-company ph-bg-color fade-up">
         <div className="container">
           <div className="row">
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
@@ -237,7 +237,7 @@ function UIUXDesign() {
       </section>
 
       {/* <---------------------------------- UI Wireframe Design Services -----------------------------> */}
-      <section id="ui-clients3" className="uiux-wireframe-sec">
+      <section id="ui-clients3" className="uiux-wireframe-sec fade-in-right">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
@@ -343,7 +343,7 @@ function UIUXDesign() {
         </div>
       </section>
       {/* <-----------------Mobile and Web Platforms---------------------> */}
-      <section id="ui-clients5" className="ph-plan-sec">
+      <section id="ui-clients5" className="ph-plan-sec fade-in-left">
         <div className="container">
           <div className="row">
             <div className="col-xxl-12 col-xl-12 col-md-12 mx-auto">
@@ -438,7 +438,7 @@ function UIUXDesign() {
         </div>
       </section>
 
-      <section id="enterprise-faq">
+      <section id="enterprise-faq" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">

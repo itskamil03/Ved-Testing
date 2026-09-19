@@ -189,6 +189,11 @@ function Footer() {
                       Document Management Software
                     </Link>
                   </li>
+                     <li>
+                    <Link to="/excel">
+                      Graphical Representation Software
+                    </Link>
+                  </li>
                   <li>
                     <Link to="/Ecommerce">E-Commerce Solutions</Link>
                   </li>
@@ -196,7 +201,7 @@ function Footer() {
                     <Link to="/qms">QMS</Link>
                   </li>
                   <li>
-                    <Link to="/Cms">CMS</Link>
+                    <Link to="/hms">HMS</Link>
                   </li>
                   <li>
                     <Link to="/ProjectManagement">Project Management</Link>
@@ -204,12 +209,12 @@ function Footer() {
                   <li>
                     <Link to="/Hrms">HRMS</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/WebPortal">Web Portal</Link>
-                  </li>
+                  </li> */}
                   <li>
-                    <Link to="/SchoolCollage">
-                      School & College Management System
+                    <Link to="/inventory">
+                      Inventory Management System
                     </Link>
                   </li>
                 </ul>
@@ -245,6 +250,9 @@ function Footer() {
                   </li>
                   <li>
                     <Link to="/SchoolUniversity">School & University</Link>
+                  </li>
+                   <li>
+                    <Link to="/pharma">Pharma</Link>
                   </li>
                 </ul>
               </div>

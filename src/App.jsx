@@ -59,6 +59,11 @@ import 'aos/dist/aos.css';
 import Events from "./pages/news_events/Events";
 import CyberSecurity from "./pages/cyber_security/cyberSecurity";
 import DataScience from "./pages/data_science/data_science";
+import Oil from "./pages/oil_and_lubrication/Oil";
+import Excel from "./pages/excel/Excel";
+import Pharma from "./pages/pharma/Pharma";
+import InventoryManagement from "./pages/inventory_management/InventoryManagement";
+import ChatWidget from "./Chatbot_Component/ChatWidget";
 
 
 function App() {
@@ -70,6 +75,7 @@ function App() {
   }, [])
 
   return (
+    <>
     <BrowserRouter>
       <SmoothScroll>
         <Header />
@@ -132,16 +138,20 @@ function App() {
           />
           <Route path="/WebPortal" element={<WebPortal />} />
           <Route path="/SupplyChain" element={<SupplyChain />} />
-          <Route path="/Cms" element={<Cms />} />
+          <Route path="/hms" element={<Cms />} />
           <Route path="/Erp" element={<Erp />} />
 
           <Route path="/Healthcare" element={<Healthcare />} />
+          <Route path="/pharma" element={<Pharma />} />
           <Route path="/Construction" element={<Construction />} />
           <Route path="/Insurance" element={<Insurance />} />
           <Route path="/TravelHospitality" element={<TravelHospitality />} />
           <Route path="/Ecommerce" element={<Ecommerce />} />
           <Route path="/Manufacturing" element={<Manufacturing />} />
           <Route path="/OilGas" element={<OilGas />} />
+          <Route path="/oil_and_lubrication" element={<Oil />} />
+          <Route path="/excel" element={<Excel />} />
+          <Route path="/inventory" element={<InventoryManagement />} />
           <Route
             path="/TransportationLogistic"
             element={<TransportationLogistic />}
@@ -162,6 +172,10 @@ function App() {
         <Footer />
       </SmoothScroll>
     </BrowserRouter>
+    <div className="fixed bottom-6 right-6 z-99999">
+        <ChatWidget/>
+    </div>
+    </>
   );
 }
 

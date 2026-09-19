@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import ctacrmservices from "../../assets/cta-crm-services.svg";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import {toast, ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 const CRMGoals = [
   {
@@ -75,6 +75,7 @@ const CRMGoals = [
     p4: "Monitor skill growth.",
   },
 ];
+
 function Hrms() {
   const [isAgreed, setIsAgreed] = useState(false);
 
@@ -86,7 +87,7 @@ function Hrms() {
     first_name: "",
     last_name: "",
     mobile: "",
-    title:"",
+    title: "",
     desc: "",
     email: "",
     business_name: "",
@@ -111,200 +112,207 @@ function Hrms() {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
-  const handleSubmit= async (e)=>
-    {
-  
-        e.preventDefault();
-  
-        if (!validateEmail(formData.email)) {
-          toast.error("Please enter a valid email address", {
-            position: "top-right",
-            autoClose: 2000,
-          });
-          return;
-        }
-    
-        if (!validatePhone(formData.mobile)) {
-          toast.error("Please enter a valid phone number", {
-            position: "top-right",
-            autoClose: 2000,
-          });
-          return;
-        }
-  
-        if (!formData.agreement) {
-          toast.error("Please accept the agreement before submitting.", {
-            position: "top-right",
-            autoClose: 2000,
-          });
-          return;
-        }
-    
-        try {
-    
-    
-          const response = await fetch(
-            "https://ved.venturingdigitally.com/api/createSolution",
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(formData),
-            }
-          );
-    
-          if (response.status == 200) {
-    
-            setFormData({ first_name: "",
-              last_name: "",
-              mobile: "",
-              title:"",
-              desc: "",
-              email: "",
-              business_name: "",
-              date: "",
-              country: "",
-              user_access: "",
-              address: "",
-            })
-    
-            toast.success("Form Submitted Successfully", {
-              position: "top-right",
-              autoClose: 2000,
-            });
-        
-          } else {
-            toast.error("Submission failed. Please try again.", {
-              position: "top-right",
-              autoClose: 2000,
-            });
-          }
-          
-        } catch (error) {
-          console.error("An error occurred while submitting the form:", error);
-        }
-      
-  }
-    
-      const validateEmail = (email) => {
-        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        return emailRegex.test(email);
-      };
-    
-      const validatePhone = (phone) => {
-        const phoneRegex = /^[6-9]\d{9}$/;
-        return phoneRegex.test(phone);
-      };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
+    if (!validateEmail(formData.email)) {
+      toast.error("Please enter a valid email address", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
 
-  
+    if (!validatePhone(formData.mobile)) {
+      toast.error("Please enter a valid phone number", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    if (!formData.agreement) {
+      toast.error("Please accept the agreement before submitting.", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        "https://ved.venturingdigitally.com/api/createSolution",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.status == 200) {
+        setFormData({
+          first_name: "",
+          last_name: "",
+          mobile: "",
+          title: "",
+          desc: "",
+          email: "",
+          business_name: "",
+          date: "",
+          country: "",
+          user_access: "",
+          address: "",
+        });
+
+        toast.success("Form Submitted Successfully", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+      } else {
+        toast.error("Submission failed. Please try again.", {
+          position: "top-right",
+          autoClose: 2000,
+        });
+      }
+    } catch (error) {
+      console.error("An error occurred while submitting the form:", error);
+    }
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  };
+
+  const validatePhone = (phone) => {
+    const phoneRegex = /^[6-9]\d{9}$/;
+    return phoneRegex.test(phone);
+  };
 
   return (
     <>
-    <ToastContainer/>
+      <ToastContainer />
       <Hero
         heading="Human Resource Management System (HRMS)"
         imgbtn="HRMS"
-        // slogan="Streamline HR Operations"
         src="image/hrms/HRMS.png"
       />
-      {/* <----------------------------------------- hrms first -----------------------------------------> */}
 
+      {/* hrms first */}
       <section id="solution">
-          <div className="container-fluid">
-            <div className="container">
-            
-             <div className="head_title margin_bottom-20">Human Resource Management System (HRMS)</div>
+        <div className="container-fluid">
+          <div className="container">
+            {/* <div
+              className="head_title margin_bottom-20"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
+              Human Resource Management System (HRMS)
+            </div> */}
 
             <div className="section">
-              <div className="left">
-              <div className="image">
-                <img loading="eager" fetchpriority="high"
-                  src="/image/solution/HumanResource.png"
-                  alt=""
-                  className="w-100 h-100"
-                   
-                />
-              </div>
-              </div>
-          
-              <div className="right">
-              <div class="text-box">
-              HRMS (Human Resource Management System) Software streamlines HR processes by automating employee management, payroll, and performance tracking. It ensures efficient recruitment, attendance monitoring, and compliance management to enhance workforce productivity. With self-service portals, benefits administration, and real-time analytics, businesses can optimize HR operations and employee engagement. Integration with payroll systems, time tracking, and learning management tools enhances efficiency and accuracy. Cloud-based HRMS provides remote access, data security, and scalability for seamless HR management. Implementing HRMS Software improves efficiency, reduces administrative workload, and enhances employee satisfaction. It also automates routine HR tasks, ensuring better compliance and decision-making. A well-structured HRMS fosters organizational growth, talent retention, and workforce optimization
+              <div className="left"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="200">
+                <div className="image">
+                  <img
+                    loading="eager"
+                    fetchpriority="high"
+                    src="/image/solution/HumanResource.png"
+                    alt="HRMS"
+                    className="w-100 h-100"
+                  />
                 </div>
-            </div>
+              </div>
+
+              <div className="right"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-aos-offset="200">
+                <div className="text-box"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="400">
+                  HRMS (Human Resource Management System) Software streamlines HR processes by automating employee management, payroll, and performance tracking. It ensures efficient recruitment, attendance monitoring, and compliance management to enhance workforce productivity. With self-service portals, benefits administration, and real-time analytics, businesses can optimize HR operations and employee engagement. Integration with payroll systems, time tracking, and learning management tools enhances efficiency and accuracy. Cloud-based HRMS provides remote access, data security, and scalability for seamless HR management. Implementing HRMS Software improves efficiency, reduces administrative workload, and enhances employee satisfaction. It also automates routine HR tasks, ensuring better compliance and decision-making. A well-structured HRMS fosters organizational growth, talent retention, and workforce optimization
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-     
 
       <section id="crm">
         <div className="container-fluid">
           <div className="container">
-            <div className="crmfirst-section-head">
+            <div className="crmfirst-section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="crmfirst-custom-head">
                 <div className="crmfirst-head-title">
                   Why Choose Venturing Digitally for HRMS
                 </div>
               </div>
 
-              <div className="crmfirst-head-slogan">
+              <div className="crmfirst-head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
                 Empowering Your HR Operations
               </div>
             </div>
 
             <div className="section-content">
               <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-right"
+                  data-aos-duration="800"
+                  data-aos-offset="150">
                   <div className="crmfirst-content">
                     <ul className="crmfirst-content-list">
-                      <li>
-                        <BsFastForwardCircleFill className="crmfirst-content-listicon" />
-                        <span>Streamlined onboarding and offboarding.</span>
-                      </li>
-                      <li>
-                        <BsFastForwardCircleFill className="crmfirst-content-listicon" />
-                        <span>Efficient employee data management.</span>
-                      </li>
-                      <li>
-                        <BsFastForwardCircleFill className="crmfirst-content-listicon" />
-                        <span>Automated payroll and benefits.</span>
-                      </li>
-                      <li>
-                        <BsFastForwardCircleFill className="crmfirst-content-listicon" />
-                        <span>Time and attendance tracking.</span>
-                      </li>
-                      <li>
-                        <BsFastForwardCircleFill className="crmfirst-content-listicon" />
-                        <span>Robust leave management system.</span>
-                      </li>
-                      <li>
-                        <BsFastForwardCircleFill className="crmfirst-content-listicon" />
-                        <span>Performance evaluation and feedback.</span>
-                      </li>
-                      <li>
-                        <BsFastForwardCircleFill className="crmfirst-content-listicon" />
-                        <span>Training and development management.</span>
-                      </li>
-                      <li>
-                        <BsFastForwardCircleFill className="crmfirst-content-listicon" />
-                        <span>HR analytics and reporting.</span>
-                      </li>
+                      {[
+                        "Streamlined onboarding and offboarding.",
+                        "Efficient employee data management.",
+                        "Automated payroll and benefits.",
+                        "Time and attendance tracking.",
+                        "Robust leave management system.",
+                        "Performance evaluation and feedback.",
+                        "Training and development management.",
+                        "HR analytics and reporting."
+                      ].map((item, index) => (
+                        <li key={index}
+                          data-aos="fade-right"
+                          data-aos-duration="500"
+                          data-aos-delay={index * 80}>
+                          <BsFastForwardCircleFill className="crmfirst-content-listicon" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
 
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-left"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                  data-aos-offset="150">
                   <div className="crmfirst-media">
                     <div className="crmfirst-video">
-                      <div className="crmfirst-photo">
-                        <img loading="eager" fetchpriority="high"
+                      <div className="crmfirst-photo"
+                        data-aos="zoom-in"
+                        data-aos-duration="600"
+                        data-aos-delay="300">
+                        <img
+                          loading="eager"
+                          fetchpriority="high"
                           src="image/hrms/Why Chose Us.png"
-                          alt="..."
+                          alt="Why Choose Us"
                           className="w-100 h-100"
-                           
                         />
                       </div>
                     </div>
@@ -315,17 +323,24 @@ function Hrms() {
           </div>
         </div>
       </section>
-      {/* <---------------------------------- hrms Goals card ------------------------> */}
+
+      {/* hrms Goals card */}
       <section id="crm-goals" className="bg-light">
         <div className="container-fluid">
           <div className="container">
-            <div className="crm-goals-section-head">
+            <div className="crm-goals-section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="crm-goals-custom-head">
                 <div className="crm-goals-head-title">
                   Some HRMS Feature and Module
                 </div>
               </div>
-              <div className="crm-goals-head-slogan">
+              <div className="crm-goals-head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
                 At Venturing Digitally, our HRMS solutions are designed with
                 specific goals in mind. Our primary objective is to optimize HR
                 processes for maximum efficiency and effectiveness. By
@@ -337,25 +352,39 @@ function Hrms() {
             </div>
             <div className="crm-goals-section-content">
               <div className="hrms-goals-grid">
-                {CRMGoals.map((crm) => {
+                {CRMGoals.map((crm, index) => {
                   return (
-                    <div className="crm-goals-value-card" key={crm.id}>
-                      <div className="crm-goals-icon">
-                        <img loading="eager" fetchpriority="high"
+                    <div className="crm-goals-value-card" key={crm.id}
+                      data-aos="fade-up"
+                      data-aos-duration="600"
+                      data-aos-delay={index * 100}
+                      data-aos-offset="100">
+                      <div className="crm-goals-icon"
+                        data-aos="zoom-in"
+                        data-aos-duration="500"
+                        data-aos-delay={index * 100 + 50}>
+                        <img
+                          loading="eager"
+                          fetchpriority="high"
                           src={crm.img}
-                          alt="..."
+                          alt={crm.head}
                           className="crm-goalsimg1 w-100 h-100"
-                           
                         />
                       </div>
                       <div className="crm-goals-title">{crm.head}</div>
                       <div className="details">
-                        <div className="content">
+                        <div className="content"
+                          data-aos="fade-right"
+                          data-aos-duration="400"
+                          data-aos-delay={index * 100 + 100}>
                           <div className="subhead">{crm.subhead1}</div>
                           <div className="data">{crm.p1}</div>
                           <div className="data">{crm.p2}</div>
                         </div>
-                        <div className="content">
+                        <div className="content"
+                          data-aos="fade-left"
+                          data-aos-duration="400"
+                          data-aos-delay={index * 100 + 150}>
                           <div className="subhead">{crm.subhead2}</div>
                           <div className="data">{crm.p3}</div>
                           <div className="data">{crm.p4}</div>
@@ -369,34 +398,57 @@ function Hrms() {
           </div>
         </div>
       </section>
-      {/* <-------------------------------------- hrms third component ----------------------------------------------------> */}
 
+      {/* hrms third component */}
       <section id="crm-third">
         <div className="container-fluid">
           <div className="container">
-            <div className="crm-third-main">
+            <div className="crm-third-main"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="crm-third-main-container">
-                <div className="crm-third-left">
-                  <div className="crm-third-left-heading">
+                <div className="crm-third-left"
+                  data-aos="fade-right"
+                  data-aos-duration="800"
+                  data-aos-delay="200">
+                  <div className="crm-third-left-heading"
+                    data-aos="fade-down"
+                    data-aos-duration="600"
+                    data-aos-delay="300">
                     Want to Discuss Your HRMS Case Individually? Read more on
                   </div>
-                  <div className="crm-third-left-slogn">
+                  <div className="crm-third-left-slogn"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="400">
                     Partner with Venturing Digitally to transform your HR
                     operations with our comprehensive HRMS solutions. Our
                     expertise and tailored solutions will help you streamline
                     processes, enhance employee engagement, and drive the
                     success of your HR initiatives.
                   </div>
-                  <div className="crm-third-left-btn">
+                  <div className="crm-third-left-btn"
+                    data-aos="zoom-in"
+                    data-aos-duration="600"
+                    data-aos-delay="500">
                     <Link to="/">Send your request</Link>
                   </div>
                 </div>
-                <div className="crm-third-right">
-                  <img loading="eager" fetchpriority="high"
+                <div className="crm-third-right"
+                  data-aos="fade-left"
+                  data-aos-duration="800"
+                  data-aos-delay="200">
+                  <img
+                    loading="eager"
+                    fetchpriority="high"
                     src={ctacrmservices}
-                    alt="..."
+                    alt="HRMS Services"
                     className="w-100 h-100"
-                      style={{aspectRatio:1.25}}
+                    style={{ aspectRatio: 1.25 }}
+                    data-aos="zoom-in"
+                    data-aos-duration="600"
+                    data-aos-delay="300"
                   />
                 </div>
               </div>
@@ -405,29 +457,45 @@ function Hrms() {
         </div>
       </section>
 
-       <section id="health">
+      <section id="health">
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
               <div className="row align-items-center g-4">
-                <div className="col-lg-6">
+                <div className="col-lg-6"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="200">
                   <div className="health-media" style={{ marginRight: "0rem" }}>
                     <div className="health-photo">
-                      <img loading="eager" fetchpriority="high"
+                      <img
+                        loading="eager"
+                        fetchpriority="high"
                         src="crm.jpeg"
-                        alt="..."
+                        alt="Demo Request"
                         className="w-75 h-auto"
-                         
+                        data-aos="zoom-in"
+                        data-aos-duration="800"
+                        data-aos-delay="200"
                       />
                     </div>
                   </div>
                 </div>
 
-            
-                <div className="col-lg-6 ">
+                <div className="col-lg-6"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                  data-aos-offset="200">
                   <div className="health-content">
-                    <div className="form-container">
-                      <div className="form-header">
+                    <div className="form-container"
+                      data-aos="zoom-in"
+                      data-aos-duration="800"
+                      data-aos-delay="300">
+                      <div className="form-header"
+                        data-aos="fade-down"
+                        data-aos-duration="600"
+                        data-aos-delay="400">
                         <h2>Request Free Demo</h2>
                       </div>
 
@@ -437,7 +505,10 @@ function Hrms() {
                           style={{ paddingBottom: "0px" }}
                         >
                           <div className="col-lg-6 padding-0">
-                            <div className="left-placeholder">
+                            <div className="left-placeholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="500">
                               <input
                                 type="text"
                                 name="first_name"
@@ -449,7 +520,10 @@ function Hrms() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="550">
                               <input
                                 type="text"
                                 name="title"
@@ -461,7 +535,10 @@ function Hrms() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="600">
                               <input
                                 type="tel"
                                 name="mobile"
@@ -473,7 +550,10 @@ function Hrms() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="650">
                               <input
                                 type="email"
                                 name="email"
@@ -484,7 +564,10 @@ function Hrms() {
                                 required
                               />
                             </div>
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              data-aos-delay="700">
                               <input
                                 type="text"
                                 name="address"
@@ -497,7 +580,10 @@ function Hrms() {
                             </div>
                           </div>
                           <div className="col-lg-6 padding-0">
-                            <div className="right-placholder">
+                            <div className="right-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="500">
                               <input
                                 type="text"
                                 name="last_name"
@@ -508,7 +594,10 @@ function Hrms() {
                                 required
                               />
                             </div>
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="550">
                               <input
                                 type="text"
                                 name="business_name"
@@ -520,7 +609,10 @@ function Hrms() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="600">
                               <input
                                 type="text"
                                 name="country"
@@ -532,24 +624,30 @@ function Hrms() {
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="650">
                               <input
                                 type="number"
                                 name="user_access"
                                 className="form-control fs-3 second-input"
-                                placeholder="No. of user access*"
+                                placeholder="No. of Employees*"
                                 value={formData.user_access}
                                 onChange={handleInputChange}
                                 required
                               />
                             </div>
 
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-left"
+                              data-aos-duration="600"
+                              data-aos-delay="700">
                               <input
                                 type="date"
                                 name="date"
                                 className="form-control fs-3 second-input"
-                                placeholder="Preffered Date & Time*"
+                                placeholder="Preferred Date & Time*"
                                 value={formData.date}
                                 onChange={handleInputChange}
                                 required
@@ -562,29 +660,35 @@ function Hrms() {
                           style={{ padding: "0px" }}
                         >
                           <div className="col-lg-12">
-                            <div className="email-placholder">
+                            <div className="email-placholder"
+                              data-aos="fade-up"
+                              data-aos-duration="600"
+                              data-aos-delay="750">
                               <textarea
                                 rows={3}
                                 name="desc"
                                 className="form-control fs-3 second-input"
-                                placeholder="Tell us About Project*"
+                                placeholder="Tell us About Your HR Requirements*"
                                 value={formData.desc}
                                 onChange={handleInputChange}
                                 required
                               ></textarea>
                             </div>
 
-                            <div>
-                            <label
+                            <div
+                              data-aos="fade-up"
+                              data-aos-duration="600"
+                              data-aos-delay="800">
+                              <label
                                 style={{
                                   display: "flex",
                                   gridColumnGap: "8px",
                                   alignItems: "start",
                                   fontSize: "12px",
-                                   paddingTop:"10px"
+                                  paddingTop: "10px"
                                 }}
                               >
-                                  <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />
+                                <input type="checkbox" name="agreement" checked={formData.agreement} onChange={handleInputChange} />
                                 I agree to the use of personal information
                                 collected from myself in organization software
                                 demo purpose and other IT related support from
@@ -594,11 +698,13 @@ function Hrms() {
                           </div>
                         </div>
 
-                        <button type="submit" className="request-btn">
+                        <button type="submit" className="request-btn"
+                          data-aos="zoom-in"
+                          data-aos-duration="600"
+                          data-aos-delay="850">
                           Request Free Demo
                         </button>
                       </form>
-
                     </div>
                   </div>
                 </div>
@@ -611,124 +717,67 @@ function Hrms() {
       <section id="enterprise-faq">
         <div className="container-fluid">
           <div className="container">
-            <div className="section-head">
+            <div className="section-head"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-offset="150">
               <div className="custom-head">
                 <div className="head-title">Frequently Ask Question</div>
               </div>
-              <div className="head-slogan">
+              <div className="head-slogan"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="100">
                 Frequently Asked Question For HRMS Software
               </div>
             </div>
             <div className="section-content">
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 1
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(1)}
-                  >
-                    What is HRMS software, and how can it benefit my business?
-                  </div>
-                  {activeIndex === 1 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        HRMS (Human Resource Management System) software is a
-                        digital solution that automates HR functions such as
-                        payroll processing, employee records management,
-                        recruitment, and performance tracking. It helps
-                        businesses streamline HR operations, improve compliance,
-                        enhance employee experience, and reduce administrative
-                        workload.
-                      </div>
+              {[
+                {
+                  q: "What is HRMS software, and how can it benefit my business?",
+                  a: "HRMS (Human Resource Management System) software is a digital solution that automates HR functions such as payroll processing, employee records management, recruitment, and performance tracking. It helps businesses streamline HR operations, improve compliance, enhance employee experience, and reduce administrative workload."
+                },
+                {
+                  q: "What key features should I look for in an HRMS solution?",
+                  a: "When selecting an HRMS, look for essential features such as payroll management, attendance tracking, employee self-service portals, recruitment automation, performance evaluation, and integration with accounting or ERP systems. A cloud-based HRMS ensures scalability and remote accessibility."
+                },
+                {
+                  q: "Can HRMS software improve employee engagement and productivity?",
+                  a: "Yes! An HRMS enhances employee engagement by providing self-service options, real-time feedback tools, and automated workflows for leave requests and performance appraisals. It also boosts productivity by reducing manual HR tasks, ensuring accurate payroll processing, and enabling data-driven decision-making."
+                },
+                {
+                  q: "Is HRMS software secure for storing employee data?",
+                  a: "Most modern HRMS solutions come with robust security measures, including encryption, multi-factor authentication, role-based access control, and compliance with data protection laws like GDPR and HIPAA. Choosing a secure HRMS ensures confidential employee data is protected from cyber threats."
+                }
+              ].map((faq, index) => (
+                <div className="accordion" key={index}
+                  data-aos="fade-right"
+                  data-aos-duration="600"
+                  data-aos-delay={index * 100}
+                  data-aos-offset="100">
+                  <div className="accordion-item">
+                    <div
+                      className={
+                        activeIndex === index + 1
+                          ? "accordion-item-header active"
+                          : "accordion-item-header"
+                      }
+                      onClick={() => toggleTab(index + 1)}
+                    >
+                      {faq.q}
                     </div>
-                  ) : null}
-                </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 2
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(2)}
-                  >
-                    What key features should I look for in an HRMS solution?
-                  </div>
-                  {activeIndex === 2 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        When selecting an HRMS, look for essential features such
-                        as payroll management, attendance tracking, employee
-                        self-service portals, recruitment automation,
-                        performance evaluation, and integration with accounting
-                        or ERP systems. A cloud-based HRMS ensures scalability
-                        and remote accessibility.
+                    {activeIndex === index + 1 ? (
+                      <div className="accordion-item-body"
+                        data-aos="fade-down"
+                        data-aos-duration="400">
+                        <div className="accordion-item-body-content">
+                          {faq.a}
+                        </div>
                       </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 3
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(3)}
-                  >
-                    Can HRMS software improve employee engagement and
-                    productivity?
+                    ) : null}
                   </div>
-                  {activeIndex === 3 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        Yes! An HRMS enhances employee engagement by providing
-                        self-service options, real-time feedback tools, and
-                        automated workflows for leave requests and performance
-                        appraisals. It also boosts productivity by reducing
-                        manual HR tasks, ensuring accurate payroll processing,
-                        and enabling data-driven decision-making.
-                      </div>
-                    </div>
-                  ) : null}
                 </div>
-              </div>
-
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div
-                    className={
-                      activeIndex === 4
-                        ? "accordion-item-header active"
-                        : "accordion-item-header"
-                    }
-                    onClick={() => toggleTab(4)}
-                  >
-                    Is HRMS software secure for storing employee data?
-                  </div>
-                  {activeIndex === 4 ? (
-                    <div className="accordion-item-body">
-                      <div className="accordion-item-body-content">
-                        Most modern HRMS solutions come with robust security
-                        measures, including encryption, multi-factor
-                        authentication, role-based access control, and
-                        compliance with data protection laws like GDPR and
-                        HIPAA. Choosing a secure HRMS ensures confidential
-                        employee data is protected from cyber threats.
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

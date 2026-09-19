@@ -1,0 +1,964 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --ind-bg-1: #070a22;
+  --ind-bg-2: #120e3b;
+  --ind-bg-3: #1a134a;
+  --ind-cyan: #3ec6ff;
+  --ind-purple: #7b5cff;
+  --ind-text: #eef0ff;
+  --ind-muted: #9aa0c8;
+}
+
+/* Outer Section Container */
+.industries-sphere-section {
+  position: relative;
+  background: var(--ind-bg-1);
+  color: var(--ind-text);
+  overflow-x: clip;
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  z-index: 10;
+}
+
+/* Scroll Pinning Track */
+.industries-pin-track {
+  position: relative;
+  height: 350vh;
+}
+
+/* Pinned Stage - Clears Sticky Navbar (80px) and keeps full view within 1 screen */
+.industries-pin-stage {
+  position: sticky;
+  top: 80px;
+  height: calc(100vh - 80px);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(62, 198, 255, 0.16), transparent 55%),
+    radial-gradient(circle at 15% 85%, rgba(123, 92, 255, 0.18), transparent 50%),
+    radial-gradient(circle at 85% 15%, rgba(180, 110, 255, 0.14), transparent 45%),
+    radial-gradient(rgba(120, 160, 255, 0.16) 1.5px, transparent 1.5px),
+    linear-gradient(160deg, var(--ind-bg-2) 0%, var(--ind-bg-3) 55%, var(--ind-bg-1) 100%);
+  background-size: auto, auto, auto, 34px 34px, auto;
+  perspective: 1200px;
+}
+
+/* Inner Stage Wrapper with 3D perspective */
+.industries-stage-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+/* Cinematic Section Header - Permanently visible at the top of the pinned section */
+.industries-heading {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 25;
+  pointer-events: none;
+}
+
+.industries-heading h2 {
+  font-size: clamp(1.6rem, 2.3vw, 2.2rem);
+  letter-spacing: 0.03em;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 850;
+  background: linear-gradient(180deg, #ffffff 30%, #c4d2ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 14px rgba(62, 198, 255, 0.25));
+}
+
+.industries-heading .rule {
+  width: 68px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--ind-cyan), var(--ind-purple));
+  margin: 0.45rem auto 0;
+  border-radius: 4px;
+  box-shadow: 0 0 14px rgba(62, 198, 255, 0.8), 0 0 28px rgba(123, 92, 255, 0.5);
+}
+
+/* Ambient Floating Background Particles */
+.industries-particle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(130, 180, 255, 0.85);
+  box-shadow: 0 0 8px rgba(130, 180, 255, 0.95);
+  animation: indParticleFloat var(--dur, 6s) ease-in-out var(--delay, 0s) infinite alternate;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@keyframes indParticleFloat {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: var(--op, 0.5);
+  }
+
+  100% {
+    transform: translate3d(var(--dx, 14px), var(--dy, -30px), 0) scale(1.25);
+    opacity: 0.15;
+  }
+}
+
+/* 8-Card 5x3 Orbital Grid - Perfectly balanced vertical and horizontal spacing */
+.industries-grid {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 28px);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1220px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(145px, 1fr));
+  grid-template-rows: auto auto auto;
+  column-gap: clamp(12px, 1.8vw, 24px);
+  row-gap: clamp(14px, 2.2vh, 24px);
+  align-items: center;
+  justify-items: center;
+  padding: 0 1.5rem;
+  z-index: 10;
+}
+
+.industries-cell {
+  grid-column: var(--gc);
+  grid-row: var(--gr);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Orbital Arch Offsets - Gentle Curves */
+.cell-top-center {
+  transform: translateY(-62px);
+  z-index: 12;
+}
+
+.cell-bottom-center {
+  transform: translateY(62px);
+  z-index: 12;
+}
+
+/* Inward Offsets - Bringing Mid Left and Mid Right closer to central ball */
+.cell-mid-left {
+  transform: translateX(24px);
+  z-index: 12;
+}
+
+.cell-mid-right {
+  transform: translateX(-24px);
+  z-index: 12;
+}
+
+/* =========================================================================
+   CONTINUOUS 3D ORBITAL SYSTEM (CENTER CELL)
+   ========================================================================= */
+.industries-center-cell {
+  grid-column: 3;
+  grid-row: 2;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+}
+
+/* Ambient Breathing Aura */
+.orbital-ambient-glow {
+  position: absolute;
+  width: clamp(230px, 25vw, 340px);
+  height: clamp(230px, 25vw, 340px);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(62, 198, 255, 0.18) 0%, rgba(123, 92, 255, 0.12) 42%, transparent 72%);
+  pointer-events: none;
+  animation: indAuraBreathe 6s ease-in-out infinite alternate;
+}
+
+@keyframes indAuraBreathe {
+  0% {
+    transform: scale(0.92);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+/* 3D Orbital Container */
+.orbital-system-3d {
+  position: absolute;
+  width: clamp(260px, 28vw, 380px);
+  height: clamp(260px, 28vw, 380px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  pointer-events: none;
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+/* Base Ellipse Structure */
+.orbital-ellipse {
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
+
+/* Elliptical Orbit 1 */
+.orbit-ellipse-1 {
+  width: clamp(270px, 28vw, 370px);
+  height: clamp(130px, 14vw, 180px);
+  border: 1.5px solid transparent;
+  border-top: 1.5px solid rgba(62, 198, 255, 0.8);
+  border-bottom: 1.3px solid rgba(123, 92, 255, 0.55);
+  border-left: 1.2px solid rgba(62, 198, 255, 0.35);
+  border-right: 1.3px solid rgba(180, 110, 255, 0.65);
+  filter: drop-shadow(0 0 6px rgba(62, 198, 255, 0.45));
+  animation: indOrbitTiltSpin1 22s linear infinite;
+}
+
+@keyframes indOrbitTiltSpin1 {
+  0% {
+    transform: rotateX(68deg) rotateY(-24deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(68deg) rotateY(-24deg) rotateZ(360deg);
+  }
+}
+
+/* Traveling Beacon Particle */
+.orbital-particle {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  top: -4.5px;
+  left: 50%;
+  margin-left: -4.5px;
+}
+
+.particle-cyan {
+  background: #3ec6ff;
+  box-shadow: 0 0 12px #3ec6ff, 0 0 24px #3ec6ff;
+}
+
+/* Elliptical Orbit 2 */
+.orbit-ellipse-2 {
+  width: clamp(290px, 30vw, 390px);
+  height: clamp(140px, 15vw, 190px);
+  border: 1.5px solid transparent;
+  border-top: 1.5px solid rgba(123, 92, 255, 0.85);
+  border-bottom: 1.3px solid rgba(62, 198, 255, 0.5);
+  border-left: 1.3px solid rgba(180, 110, 255, 0.65);
+  border-right: 1.2px solid rgba(123, 92, 255, 0.35);
+  filter: drop-shadow(0 0 6px rgba(123, 92, 255, 0.45));
+  animation: indOrbitTiltSpin2 18s linear infinite reverse;
+}
+
+@keyframes indOrbitTiltSpin2 {
+  0% {
+    transform: rotateX(60deg) rotateY(32deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(60deg) rotateY(32deg) rotateZ(360deg);
+  }
+}
+
+.particle-purple {
+  background: #b46eff;
+  box-shadow: 0 0 12px #b46eff, 0 0 24px #7b5cff;
+}
+
+/* Elliptical Orbit 3 */
+.orbit-ellipse-3 {
+  width: clamp(310px, 32vw, 410px);
+  height: clamp(120px, 13vw, 165px);
+  border: 1.5px solid transparent;
+  border-top: 1.5px solid rgba(62, 140, 255, 0.8);
+  border-bottom: 1.3px solid rgba(62, 198, 255, 0.5);
+  border-left: 1.2px solid rgba(62, 140, 255, 0.35);
+  filter: drop-shadow(0 0 6px rgba(62, 140, 255, 0.4));
+  animation: indOrbitTiltSpin3 26s linear infinite;
+}
+
+@keyframes indOrbitTiltSpin3 {
+  0% {
+    transform: rotateX(72deg) rotateY(-40deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(72deg) rotateY(-40deg) rotateZ(360deg);
+  }
+}
+
+.particle-blue {
+  background: #60a5fa;
+  box-shadow: 0 0 12px #60a5fa, 0 0 24px #3b82f6;
+}
+
+/* Elliptical Orbit 4 */
+.orbit-ellipse-4 {
+  width: clamp(260px, 27vw, 350px);
+  height: clamp(145px, 15.5vw, 195px);
+  border: 1.5px solid transparent;
+  border-top: 1.5px solid rgba(60, 200, 140, 0.75);
+  border-bottom: 1.3px solid rgba(62, 198, 255, 0.45);
+  border-right: 1.3px solid rgba(60, 200, 140, 0.55);
+  filter: drop-shadow(0 0 6px rgba(60, 200, 140, 0.4));
+  animation: indOrbitTiltSpin4 15s linear infinite reverse;
+}
+
+@keyframes indOrbitTiltSpin4 {
+  0% {
+    transform: rotateX(55deg) rotateY(15deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(55deg) rotateY(15deg) rotateZ(360deg);
+  }
+}
+
+.particle-aqua {
+  background: #3cc88c;
+  box-shadow: 0 0 12px #3cc88c, 0 0 24px #3cc88c;
+}
+
+/* Elliptical Orbit 5 - Golden Amber */
+.orbit-ellipse-5 {
+  width: clamp(300px, 31vw, 400px);
+  height: clamp(150px, 16vw, 200px);
+  border: 1.5px solid transparent;
+  border-top: 1.6px solid rgba(245, 158, 11, 0.85);
+  border-bottom: 1.3px solid rgba(251, 146, 60, 0.5);
+  border-left: 1.3px solid rgba(245, 158, 11, 0.65);
+  filter: drop-shadow(0 0 7px rgba(245, 158, 11, 0.5));
+  animation: indOrbitTiltSpin5 24s linear infinite;
+}
+
+@keyframes indOrbitTiltSpin5 {
+  0% {
+    transform: rotateX(65deg) rotateY(48deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(65deg) rotateY(48deg) rotateZ(360deg);
+  }
+}
+
+.particle-amber {
+  background: #f59e0b;
+  box-shadow: 0 0 12px #f59e0b, 0 0 24px #fb923c;
+}
+
+/* Elliptical Orbit 6 - Rose Magenta */
+.orbit-ellipse-6 {
+  width: clamp(280px, 29vw, 380px);
+  height: clamp(125px, 13.5vw, 175px);
+  border: 1.5px solid transparent;
+  border-top: 1.6px solid rgba(244, 63, 94, 0.85);
+  border-bottom: 1.3px solid rgba(232, 121, 249, 0.5);
+  border-right: 1.3px solid rgba(244, 63, 94, 0.65);
+  filter: drop-shadow(0 0 7px rgba(244, 63, 94, 0.45));
+  animation: indOrbitTiltSpin6 20s linear infinite reverse;
+}
+
+@keyframes indOrbitTiltSpin6 {
+  0% {
+    transform: rotateX(76deg) rotateY(-55deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(76deg) rotateY(-55deg) rotateZ(360deg);
+  }
+}
+
+.particle-rose {
+  background: #f43f5e;
+  box-shadow: 0 0 12px #f43f5e, 0 0 24px #e879f9;
+}
+
+/* Elliptical Orbit 7 - Neon Violet */
+.orbit-ellipse-7 {
+  width: clamp(320px, 33vw, 430px);
+  height: clamp(155px, 16.5vw, 210px);
+  border: 1.5px solid transparent;
+  border-top: 1.6px solid rgba(167, 139, 250, 0.9);
+  border-bottom: 1.3px solid rgba(123, 92, 255, 0.55);
+  border-left: 1.3px solid rgba(167, 139, 250, 0.65);
+  filter: drop-shadow(0 0 7px rgba(167, 139, 250, 0.5));
+  animation: indOrbitTiltSpin7 28s linear infinite;
+}
+
+@keyframes indOrbitTiltSpin7 {
+  0% {
+    transform: rotateX(48deg) rotateY(-30deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(48deg) rotateY(-30deg) rotateZ(360deg);
+  }
+}
+
+.particle-violet {
+  background: #a78bfa;
+  box-shadow: 0 0 12px #a78bfa, 0 0 24px #7b5cff;
+}
+
+/* Concentric Dashed Orbital Rings */
+.orbital-dashed-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.3px dashed;
+  pointer-events: none;
+}
+
+.ring-primary {
+  width: clamp(260px, 28vw, 360px);
+  height: clamp(260px, 28vw, 360px);
+  border-color: rgba(62, 198, 255, 0.4);
+  animation: indRingSpin 40s linear infinite;
+}
+
+.ring-secondary {
+  width: clamp(300px, 31vw, 400px);
+  height: clamp(300px, 31vw, 400px);
+  border-color: rgba(123, 92, 255, 0.3);
+  animation: indRingSpin 55s linear infinite reverse;
+}
+
+.ring-tertiary {
+  width: clamp(340px, 35vw, 450px);
+  height: clamp(340px, 35vw, 450px);
+  border-color: rgba(52, 211, 153, 0.26);
+  animation: indRingSpin 70s linear infinite;
+}
+
+.ring-inner-gyro {
+  width: clamp(200px, 21vw, 270px);
+  height: clamp(200px, 21vw, 270px);
+  border-color: rgba(245, 158, 11, 0.35);
+  animation: indRingSpin 25s linear infinite reverse;
+}
+
+@keyframes indRingSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Glowing Orbital Energy Arcs */
+.orbital-energy-arc {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  pointer-events: none;
+}
+
+.arc-cyan {
+  width: clamp(240px, 25vw, 330px);
+  height: clamp(240px, 25vw, 330px);
+  border-top-color: #3ec6ff;
+  border-right-color: rgba(62, 198, 255, 0.35);
+  filter: drop-shadow(0 0 7px rgba(62, 198, 255, 0.85));
+  animation: indArcPulse 3s ease-in-out infinite alternate, indRingSpin 12s linear infinite;
+}
+
+.arc-purple {
+  width: clamp(280px, 29vw, 370px);
+  height: clamp(280px, 29vw, 370px);
+  border-bottom-color: #b46eff;
+  border-left-color: rgba(180, 110, 255, 0.35);
+  filter: drop-shadow(0 0 7px rgba(180, 110, 255, 0.85));
+  animation: indArcPulse 3.8s ease-in-out infinite alternate-reverse, indRingSpin 16s linear infinite reverse;
+}
+
+.arc-emerald {
+  width: clamp(250px, 26vw, 340px);
+  height: clamp(250px, 26vw, 340px);
+  border-top-color: #34d399;
+  border-left-color: rgba(52, 211, 153, 0.35);
+  filter: drop-shadow(0 0 7px rgba(52, 211, 153, 0.85));
+  animation: indArcPulse 3.4s ease-in-out infinite alternate, indRingSpin 14s linear infinite;
+}
+
+.arc-rose {
+  width: clamp(290px, 30vw, 390px);
+  height: clamp(290px, 30vw, 390px);
+  border-bottom-color: #f43f5e;
+  border-right-color: rgba(244, 63, 94, 0.35);
+  filter: drop-shadow(0 0 7px rgba(244, 63, 94, 0.85));
+  animation: indArcPulse 4.2s ease-in-out infinite alternate-reverse, indRingSpin 18s linear infinite reverse;
+}
+
+@keyframes indArcPulse {
+  0% {
+    opacity: 0.45;
+  }
+
+  100% {
+    opacity: 0.95;
+  }
+}
+
+/* Center Core Radial Pulsing Halo */
+.industries-orb-halo {
+  position: absolute;
+  width: clamp(85px, 9vw, 115px);
+  height: clamp(85px, 9vw, 115px);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(62, 198, 255, 0.32) 0%, rgba(123, 92, 255, 0.22) 45%, transparent 72%);
+  animation: indCoreHaloPulse 3.5s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes indCoreHaloPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.65;
+  }
+
+  100% {
+    transform: scale(1.18);
+    opacity: 1;
+  }
+}
+
+/* Central 3D Glowing Ball / Sphere (reduced size without affecting anything else) */
+.industries-orb-wrap {
+  position: relative;
+  width: clamp(60px, 6.2vw, 82px);
+  height: clamp(60px, 6.2vw, 82px);
+  perspective: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 12;
+}
+
+.industries-orb {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  background:
+    radial-gradient(circle at 32% 26%, #dcf8ff 0%, #3ec6ff 36%, #6a5cff 72%, #3d23c2 100%);
+  box-shadow:
+    0 0 32px rgba(62, 198, 255, 0.8),
+    0 0 70px rgba(123, 92, 255, 0.55),
+    inset 0 -8px 18px rgba(15, 8, 60, 0.6),
+    inset 0 8px 14px rgba(255, 255, 255, 0.48);
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+/* =========================================================================
+   PREMIUM REFERENCE CARD DESIGN - SEQUENTIAL SCROLL REVEAL (1-BY-1)
+   ========================================================================= */
+.industries-card {
+  width: 100%;
+  max-width: 198px;
+  min-height: 122px;
+  padding: 1.05rem 0.95rem 0.95rem;
+  background: #1f1b3c;
+  background: linear-gradient(180deg, #27214d 0%, #1a1634 100%);
+  border-radius: 20px;
+  border: 1.2px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(18px) scale(0.96);
+  transition:
+    opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
+
+/* Revealed Card State - Shown Sequentially on Scroll */
+.industries-card.shown {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+/* Featured Card */
+.industries-card.featured {
+  max-width: 202px;
+  min-height: 122px;
+  border-color: rgba(167, 139, 250, 0.3);
+  box-shadow:
+    0 14px 32px rgba(0, 0, 0, 0.5),
+    0 0 16px rgba(167, 139, 250, 0.22);
+}
+
+/* Hover Animation - All Cards Including Featured */
+.industries-card:hover,
+.industries-card.featured:hover {
+  border-color: var(--icon-fg, #5ee3ff) !important;
+  box-shadow:
+    0 18px 38px rgba(0, 0, 0, 0.7),
+    0 0 20px var(--icon-glow, rgba(62, 198, 255, 0.45)) !important;
+  transform: translateY(-5px) scale(1.02) !important;
+}
+
+/* Reference Glowing Category SVG Icon Badge */
+.industries-card .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--icon-bg, rgba(245, 158, 11, 0.08));
+  border: 1.8px solid var(--icon-fg, #f59e0b);
+  box-shadow: 0 0 12px var(--icon-glow, rgba(245, 158, 11, 0.28));
+  margin-bottom: 0.45rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.industries-card:hover .icon {
+  transform: scale(1.08);
+  box-shadow: 0 0 18px var(--icon-glow, rgba(245, 158, 11, 0.55));
+}
+
+.industries-card .icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--icon-fg, #f59e0b);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  shape-rendering: geometricPrecision;
+  filter: none !important;
+}
+
+/* Reference Vibrant Bold Uppercase Title - White by Default */
+.industries-card h3 {
+  font-family: 'Outfit', 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  font-weight: 850;
+  margin: 0 0 0.22rem 0;
+  line-height: 1.25;
+  text-shadow: none !important;
+  transition: color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reference Clean Readable Subtitle */
+.industries-card p {
+  font-family: 'Outfit', 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.74rem;
+  line-height: 1.32;
+  color: #cbd5e1 !important;
+  font-weight: 450;
+  margin: 0;
+  text-shadow: none !important;
+  transition: color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hover State: Text changes to related card theme color */
+.industries-card:hover h3 {
+  color: var(--icon-fg, #3ec6ff) !important;
+}
+
+.industries-card:hover p {
+  color: #ffffff !important;
+}
+
+/* =========================================================================
+   RESPONSIVE STYLES - FULLY OPTIMIZED FOR ALL VIEWPORTS (DESKTOP UNCHANGED)
+   ========================================================================= */
+
+/* 1. Large Laptops / Medium Desktops (1025px - 1280px) */
+@media (max-width: 1280px) {
+  .industries-grid {
+    max-width: 1080px;
+    column-gap: clamp(8px, 1.4vw, 16px);
+    row-gap: clamp(10px, 1.6vh, 18px);
+  }
+
+  .industries-card {
+    max-width: 175px;
+    min-height: 112px;
+    padding: 0.85rem 0.8rem 0.75rem;
+  }
+
+  .industries-card.featured {
+    max-width: 180px;
+    min-height: 116px;
+  }
+}
+
+/* 2. Tablets & Small Laptops (769px - 1024px) */
+@media (max-width: 1024px) {
+  .industries-grid {
+    column-gap: 8px;
+    row-gap: 14px;
+    padding: 0 1rem;
+    max-width: 900px;
+  }
+
+  .industries-card {
+    max-width: 152px;
+    min-height: 100px;
+    padding: 0.7rem 0.65rem;
+    border-radius: 16px;
+  }
+
+  .industries-card.featured {
+    max-width: 158px;
+    min-height: 104px;
+  }
+
+  .industries-card .icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    margin-bottom: 0.35rem;
+  }
+
+  .industries-card .icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .industries-card h3 {
+    font-size: 0.76rem;
+    letter-spacing: 0.08em;
+  }
+
+  .industries-card p {
+    font-size: 0.68rem;
+  }
+
+  .orbital-system-3d {
+    width: clamp(200px, 22vw, 280px);
+    height: clamp(200px, 22vw, 280px);
+  }
+}
+
+/* 3. Mobile Devices & Small Tablets (<= 768px) */
+@media (max-width: 768px) {
+  .industries-pin-track {
+    height: 350vh;
+  }
+
+  .industries-pin-stage {
+    top: 65px;
+    height: calc(100vh - 65px);
+    padding: 10px 0.6rem;
+    box-sizing: border-box;
+  }
+
+  .industries-heading {
+    top: 10px;
+  }
+
+  .industries-heading h2 {
+    font-size: 1.35rem;
+  }
+
+  .industries-heading .rule {
+    width: 50px;
+    height: 2.5px;
+    margin: 0.35rem auto 0;
+  }
+
+  .industries-grid {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 20px);
+    transform: translate(-50%, -50%);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    row-gap: 8px;
+    column-gap: 8px;
+    max-width: 420px;
+    width: 95%;
+    padding: 0;
+  }
+
+  .industries-cell,
+  .industries-center-cell {
+    grid-column: span 1 !important;
+    grid-row: auto !important;
+  }
+
+  .industries-center-cell {
+    grid-column: 1 / span 2 !important;
+    order: -1;
+    margin-bottom: 0.25rem;
+    height: 80px;
+  }
+
+  .cell-top-center,
+  .cell-bottom-center,
+  .cell-mid-left,
+  .cell-mid-right {
+    margin: 0;
+    transform: none !important;
+  }
+
+  /* Scaled down 3D orbital system on mobile so it fits seamlessly */
+  .orbital-system-3d {
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+  .orbital-ambient-glow {
+    width: 130px !important;
+    height: 130px !important;
+  }
+
+  .orbit-ellipse-1 { width: 140px !important; height: 65px !important; }
+  .orbit-ellipse-2 { width: 150px !important; height: 70px !important; }
+  .orbit-ellipse-3 { width: 160px !important; height: 60px !important; }
+  .orbit-ellipse-4 { width: 135px !important; height: 70px !important; }
+  .orbit-ellipse-5 { width: 155px !important; height: 75px !important; }
+  .orbit-ellipse-6 { width: 145px !important; height: 65px !important; }
+  .orbit-ellipse-7 { width: 165px !important; height: 75px !important; }
+
+  .ring-primary { width: 135px !important; height: 135px !important; }
+  .ring-secondary { width: 155px !important; height: 155px !important; }
+  .ring-tertiary { width: 175px !important; height: 175px !important; }
+  .ring-inner-gyro { width: 105px !important; height: 105px !important; }
+
+  .arc-cyan { width: 125px !important; height: 125px !important; }
+  .arc-purple { width: 145px !important; height: 145px !important; }
+  .arc-emerald { width: 130px !important; height: 130px !important; }
+  .arc-rose { width: 150px !important; height: 150px !important; }
+
+  .industries-orb-wrap {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .industries-orb-halo {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  /* Mobile compact cards */
+  .industries-card {
+    max-width: 100%;
+    min-height: 70px;
+    padding: 0.45rem 0.55rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  }
+
+  .industries-card.featured {
+    max-width: 100%;
+    min-height: 70px;
+  }
+
+  .industries-card .icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    margin-bottom: 0.2rem;
+  }
+
+  .industries-card .icon svg {
+    width: 13px;
+    height: 13px;
+    stroke-width: 1.8;
+  }
+
+  .industries-card h3 {
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    margin: 0 0 0.12rem 0;
+    line-height: 1.2;
+  }
+
+  .industries-card p {
+    font-size: 0.58rem;
+    line-height: 1.2;
+  }
+}
+
+/* 4. Small Mobile Phones (<= 400px or short height screens) */
+@media (max-width: 400px), (max-height: 660px) and (max-width: 768px) {
+  .industries-heading h2 {
+    font-size: 1.15rem;
+  }
+
+  .industries-grid {
+    max-width: 340px;
+    row-gap: 6px;
+    column-gap: 6px;
+  }
+
+  .industries-center-cell {
+    height: 65px;
+    margin-bottom: 0.15rem;
+  }
+
+  .industries-card {
+    min-height: 62px;
+    padding: 0.35rem 0.45rem;
+    border-radius: 12px;
+  }
+
+  .industries-card .icon {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 0.15rem;
+  }
+
+  .industries-card .icon svg {
+    width: 11px;
+    height: 11px;
+  }
+
+  .industries-card h3 {
+    font-size: 0.62rem;
+  }
+
+  .industries-card p {
+    font-size: 0.52rem;
+  }
+}

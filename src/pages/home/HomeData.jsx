@@ -62,6 +62,13 @@ const industries = [
     heading: "School & University",
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
+ {
+    id: 10,
+    link: "/pharma",
+    img: "/pharmaerp.webp",
+    heading: "Pharma",
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
 ];
 
 export default industries;

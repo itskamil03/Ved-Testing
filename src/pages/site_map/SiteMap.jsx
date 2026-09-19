@@ -139,6 +139,11 @@ function SiteMap() {
                         Document Management
                       </Link>
                     </li>
+                      <li>
+                      <Link to="/excel">
+                        Graphical representation Software
+                      </Link>
+                    </li>
                     <li>
                       <Link to="/EcommerceSolutions">
                         E-commerce Solutions
@@ -148,7 +153,7 @@ function SiteMap() {
                       <Link to="/qms">QMS</Link>
                     </li>
                     <li>
-                      <Link to="/Cms">Cms</Link>
+                      <Link to="/hms">HMS</Link>
                     </li>
                     <li>
                       <Link to="/ProjectManagement">Project Management</Link>
@@ -157,10 +162,10 @@ function SiteMap() {
                       <Link to="/Hrms">HRMS</Link>
                     </li>
                     <li>
-                      <Link to="/WebPortal">Web Portal</Link>
+                      <Link to="/oil_and_lubrication">Sampling and Lubrication Management System</Link>
                     </li>
                     <li>
-                      <Link to="/SchoolCollege">Schools & Colleges</Link>
+                      <Link to="/inventory">Inventory Management System</Link>
                     </li>
                   </ul>
                 </li>
@@ -198,6 +203,11 @@ function SiteMap() {
                     <li>
                       <Link to="/SchoolUniversity">
                         School & University
+                      </Link>
+                    </li>
+                     <li>
+                      <Link to="/pharma">
+                        Pharma
                       </Link>
                     </li>
                   </ul>

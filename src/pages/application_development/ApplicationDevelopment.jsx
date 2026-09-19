@@ -280,7 +280,7 @@ function ApplicationDevelopment() {
       {/* {{-- ===========================================
                     PROJECT COST
     =========================================== --}} */}
-      <section id="website-contact" >
+      <section id="website-contact" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
@@ -316,7 +316,7 @@ function ApplicationDevelopment() {
       {/* {{-- ===========================================
                     ADVANTAGES
     =========================================== --}} */}
-      <section id="app-advantages" className="bg-light">
+      <section id="app-advantages" className="bg-light fade-in-right">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">
@@ -349,7 +349,7 @@ function ApplicationDevelopment() {
     {{-- ===========================================
                     SETPS INVOLVED
     =========================================== --}} */}
-      <section id="app-steps" className="bg-light">
+      <section id="app-steps" className="bg-light fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">
@@ -561,7 +561,7 @@ function ApplicationDevelopment() {
       {/* {{-- ===========================================
                         FAQ'S
     =========================================== --}} */}
-      <section id="enterprise-faq">
+      <section id="enterprise-faq" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">

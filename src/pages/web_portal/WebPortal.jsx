@@ -175,7 +175,7 @@ function WebPortal() {
         slogan="Empowering Your Digital Presence"
       />
 
-     <section id="solution">
+     <section id="solution" className="fade-up">
           <div className="container-fluid">
             <div className="container">
             
@@ -206,7 +206,7 @@ function WebPortal() {
       </section>
 
       {/* <------------------------------------------------ web portal first ----------------------------------------------> */}
-      <section id="webportal">
+      <section id="webportal" className="fade-in-right">
         <div className="container-fluid">
           <div className="container">
             <div className="webportal-section-head">
@@ -351,7 +351,7 @@ function WebPortal() {
       </section>
 
       {/* <------------------------------------------------ web portal fourth ----------------------------------------------> */}
-      <section id="webporfourth">
+      <section id="webporfourth" className="fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="webporfourth-section-head">
@@ -433,7 +433,7 @@ function WebPortal() {
       </section>
 
 
-      <section id="health">
+      <section id="health" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-content">
@@ -636,7 +636,7 @@ function WebPortal() {
         </div>
       </section>
 
-      <section id="enterprise-faq">
+      <section id="enterprise-faq" className="fade-in-right">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">

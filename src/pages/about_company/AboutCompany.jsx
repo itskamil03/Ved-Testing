@@ -44,7 +44,7 @@ function AboutCompany() {
       <AboutComponents />
       {/* <----------------------------------------- Our Values -------------------------------> */}
 
-      <section id="values" className="bg-light">
+      <section id="values" className="bg-light fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">
@@ -77,7 +77,7 @@ function AboutCompany() {
       </section>
 
       {/* <----------------------------------------- Our Expertise -------------------------------> */}
-      <section id="milestones">
+      <section id="milestones" className="fade-in-right">
         <div className="container-fluid">
           <div className="container">
             <div className="milestone-grid">

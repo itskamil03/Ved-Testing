@@ -11,6 +11,7 @@ function Testimonials() {
     nav: true,
     dots: false,
     autoplay: true,
+    autoplayHoverPause: false,
     navText: [
       '<i class="fa-regular fa-angle-left"></i>',
       '<i class="fa-regular fa-angle-right"></i>',

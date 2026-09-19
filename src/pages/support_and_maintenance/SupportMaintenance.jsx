@@ -20,7 +20,7 @@ function SupportMaintenance() {
         heading="Support and Maintenance"
         src="image/support-maintenance/hero.jpeg"
       />
-      <section id="support-first">
+      <section id="support-first" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -39,7 +39,7 @@ function SupportMaintenance() {
         </div>
       </section>
 
-      <section id="support-second">
+      <section id="support-second" className="fade-in-right">
         <div className="container-fluid">
           <div className="container">
             <div className="section">
@@ -73,7 +73,7 @@ function SupportMaintenance() {
         </div>
       </section>
 
-      <section id="support-third">
+      <section id="support-third" className="fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -150,7 +150,7 @@ function SupportMaintenance() {
         </div>
       </section>
 
-      <section id="support-four">
+      <section id="support-four" className="fade-up">
         <div className="section-top">
           <div className="head-slogan page_title">
             <p>
@@ -164,7 +164,7 @@ function SupportMaintenance() {
         </div>
       </section>
 
-      <section id="support-five">
+      <section id="support-five" className="fade-in-right">
         <div className="section-top">
           <div className="container">
           <div className="head-title">
@@ -240,7 +240,7 @@ function SupportMaintenance() {
         </div>
       </section>
 
-      <section id="support-six">
+      <section id="support-six" className="fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section-top">
@@ -411,7 +411,7 @@ function SupportMaintenance() {
         </div>
       </section>
 
-      <section id="enterprise-faq">
+      <section id="enterprise-faq" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">

@@ -1,0 +1,507 @@
+/* ========================================================
+   Sticky Stacking Cards on Scroll (Services Section)
+======================================================== */
+.cservice-features-section {
+  position: relative;
+  background: #f8fafc;
+  width: 100%;
+  padding: 15px 0 32px 0;
+  overflow: visible !important;
+}
+
+.cservice-stack-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  /* Exactly 55vh of scroll travel per card transition on Desktop */
+  height: calc(100vh + (7 * 55vh));
+  position: relative;
+}
+
+/* Sticky Stage pins under header at top: 90px on Desktop */
+.cservice-sticky-stage {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.cservice-stack-head {
+  margin-bottom: 18px;
+  padding-top: 5px;
+}
+
+.cservice-stack-head .cservice-head-title {
+  font-size: clamp(2.2rem, 2.8vw, 2.8rem);
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.cservice-stack-head .cservice-head-slogan {
+  padding-left: 16px;
+  font-size: clamp(1.25rem, 1.4vw, 1.45rem);
+  border-left: 3px solid #27286d;
+  color: #475569;
+  line-height: 1.45;
+  margin: 0;
+  max-width: 840px;
+}
+
+/* Cards Stack Deck Layer: relative frame holding all cards on top of each other */
+.cservice-cards-stack-list {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  min-height: 460px;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+/* Individual Card */
+.cservice-sticky-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 460px;
+  max-height: 500px;
+  border-radius: 24px;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0 20px 45px -12px rgba(15, 23, 42, 0.18), 0 4px 16px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  overflow: hidden;
+  will-change: transform;
+}
+
+.cservice-sticky-card-inner {
+  display: grid;
+  grid-template-columns: 46% 54%;
+  width: 100%;
+  height: 100%;
+  min-height: 460px;
+  position: relative;
+}
+
+/* Left Image Column */
+.cservice-sticky-image-col {
+  position: relative;
+  overflow: hidden;
+  background: #0f172a;
+  height: 100%;
+  min-height: 460px;
+}
+
+.cservice-sticky-badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 3;
+  padding: 5px 14px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  color: #38bdf8;
+  font-size: 1.35rem;
+  font-weight: 700;
+  border-radius: 999px;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+.cservice-sticky-image-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cservice-sticky-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.3) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Right Content Column */
+.cservice-sticky-content-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px 40px;
+  background: #ffffff;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.cservice-sticky-bg-number {
+  position: absolute;
+  right: 24px;
+  top: 12px;
+  font-size: clamp(5rem, 9vw, 9rem);
+  font-weight: 900;
+  color: rgba(39, 40, 109, 0.04);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.cservice-sticky-tagline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #c9652c;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.cservice-sticky-line {
+  width: 28px;
+  height: 3px;
+  background: #27286d;
+  display: block;
+  border-radius: 2px;
+}
+
+.cservice-sticky-title {
+  font-size: clamp(2.1rem, 2.5vw, 2.7rem);
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  position: relative;
+  z-index: 1;
+}
+
+.cservice-sticky-desc {
+  font-size: 1.4rem;
+  color: #475569;
+  line-height: 1.55;
+  margin: 0 0 16px 0;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cservice-sticky-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.cservice-sticky-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background: #27286d;
+  color: #ffffff !important;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(39, 40, 109, 0.25);
+}
+
+.cservice-sticky-btn:hover {
+  background: #1e1f57;
+  transform: translateX(4px);
+  box-shadow: 0 6px 18px rgba(39, 40, 109, 0.35);
+  color: #ffffff !important;
+}
+
+.cservice-sticky-btn-arrow {
+  transition: transform 0.25s ease;
+}
+
+.cservice-sticky-btn:hover .cservice-sticky-btn-arrow {
+  transform: translateX(4px);
+}
+
+/* ========================================================
+   Responsive Media Queries (Mobile & Tablet <= 991px)
+   Card Stacking Animation Fully Preserved & Responsive
+   No Dead Space, No Unnecessary Blank Space
+   ======================================================== */
+@media screen and (max-width: 991px) {
+  .cservice-features-section {
+    padding: 10px 0 24px 0 !important;
+    background: #f8fafc !important;
+    position: relative !important;
+    margin: 0 !important;
+  }
+
+  /* Compact container scroll travel: 46vh per card gives natural animation without trailing empty scroll */
+  .cservice-stack-container {
+    height: calc(100vh + (7 * 46vh)) !important;
+    height: calc(100dvh + (7 * 46dvh)) !important;
+    max-width: 100% !important;
+    padding: 0 16px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Sticky stage pinned directly below the 70px mobile top navbar */
+  .cservice-sticky-stage {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 76px !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  .cservice-stack-head {
+    margin-bottom: 8px !important;
+    padding-top: 0 !important;
+    flex-shrink: 0 !important;
+  }
+
+  .cservice-stack-head .cservice-head-title {
+    font-size: clamp(1.45rem, 4.4vw, 1.75rem) !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    margin-bottom: 3px !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  .cservice-stack-head .cservice-head-slogan {
+    font-size: 1.12rem !important;
+    line-height: 1.36 !important;
+    padding-left: 8px !important;
+    border-left: 3px solid #27286d !important;
+    color: #475569 !important;
+    margin: 0 !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  /* Cards Stack Deck Layer: responsive height fitting mobile screens cleanly */
+  .cservice-cards-stack-list {
+    position: relative !important;
+    width: 100% !important;
+    height: min(460px, calc(100dvh - 165px)) !important;
+    min-height: 390px !important;
+    max-height: 480px !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    box-shadow: 0 10px 30px -6px rgba(15, 23, 42, 0.15) !important;
+  }
+
+  /* Individual card stacked with GPU accelerated transform */
+  .cservice-sticky-card {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 16px !important;
+    background: #ffffff !important;
+    box-shadow: 0 10px 30px -6px rgba(15, 23, 42, 0.15), 0 2px 10px rgba(15, 23, 42, 0.06) !important;
+    border: 1px solid rgba(226, 232, 240, 0.95) !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    will-change: transform !important;
+  }
+
+  .cservice-sticky-card-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    height: 100% !important;
+    grid-template-columns: none !important;
+  }
+
+  /* Image: 38% height / 150-170px */
+  .cservice-sticky-image-col {
+    width: 100% !important;
+    height: 38% !important;
+    min-height: 140px !important;
+    max-height: 175px !important;
+    flex-shrink: 0 !important;
+    position: relative !important;
+    overflow: hidden !important;
+    background: #0f172a !important;
+  }
+
+  .cservice-sticky-image-col img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  .cservice-sticky-badge {
+    position: absolute !important;
+    top: 10px !important;
+    left: 10px !important;
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+    padding: 3px 10px !important;
+    border-radius: 999px !important;
+    background: rgba(15, 23, 42, 0.85) !important;
+    color: #38bdf8 !important;
+    border: 1px solid rgba(56, 189, 248, 0.35) !important;
+    z-index: 3 !important;
+  }
+
+  /* Content: fills remaining height naturally without excessive empty space */
+  .cservice-sticky-content-col {
+    flex: 1 !important;
+    padding: 11px 14px 13px 14px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    gap: 5px !important;
+    background: #ffffff !important;
+    position: relative !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .cservice-sticky-bg-number {
+    display: none !important;
+  }
+
+  .cservice-sticky-tagline {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    color: #c9652c !important;
+    letter-spacing: 0.08em !important;
+    margin: 0 !important;
+  }
+
+  .cservice-sticky-line {
+    width: 16px !important;
+    height: 2px !important;
+    background: #27286d !important;
+  }
+
+  .cservice-sticky-title {
+    font-size: 1.55rem !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    margin: 0 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  .cservice-sticky-desc {
+    font-size: 1.14rem !important;
+    color: #475569 !important;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .cservice-sticky-icons {
+    display: flex !important;
+    align-items: center !important;
+    gap: 7px !important;
+    margin: 1px 0 2px 0 !important;
+    flex-wrap: wrap !important;
+  }
+
+  .cservice-sticky-icons svg {
+    font-size: 17px !important;
+  }
+
+  .cservice-sticky-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    padding: 6px 16px !important;
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+    background: #27286d !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
+    margin-top: 1px !important;
+    align-self: flex-start !important;
+    text-decoration: none !important;
+    box-shadow: 0 3px 10px rgba(39, 40, 109, 0.2) !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cservice-stack-container {
+    padding: 0 10px !important;
+    height: calc(100vh + (7 * 44vh)) !important;
+    height: calc(100dvh + (7 * 44dvh)) !important;
+  }
+
+  .cservice-cards-stack-list {
+    height: min(440px, calc(100dvh - 160px)) !important;
+    min-height: 380px !important;
+  }
+
+  .cservice-sticky-image-col {
+    height: 36% !important;
+    min-height: 130px !important;
+    max-height: 155px !important;
+  }
+
+  .cservice-sticky-title {
+    font-size: 1.45rem !important;
+  }
+
+  .cservice-sticky-desc {
+    font-size: 1.08rem !important;
+    line-height: 1.34 !important;
+    -webkit-line-clamp: 3 !important;
+  }
+
+  .cservice-sticky-content-col {
+    padding: 9px 11px 11px 11px !important;
+    gap: 4px !important;
+  }
+
+  .cservice-sticky-btn {
+    padding: 5px 14px !important;
+    font-size: 1.08rem !important;
+  }
+}

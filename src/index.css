@@ -1,10 +1,9 @@
-
-@import "tailwindcss";
-
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo&family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Exo&family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Exo&family=Marcellus&family=Nunito&display=swap");
+
+@import "tailwindcss";
 /* @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Exo&family=Nunito&display=swap"); */
 /* @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Exo&family=Fira+Mono&family=Marcellus&family=Nunito&display=swap"); */
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); */
@@ -14,10 +13,6 @@
   box-sizing: border-box;
   font-family: "sans-serif", sans-serif;
   /* font-family: 'Nunito', sans-serif; */
-}
-
-html, body {
-  overflow: auto !important;
 }
 
 html {

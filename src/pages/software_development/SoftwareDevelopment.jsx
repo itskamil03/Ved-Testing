@@ -37,7 +37,7 @@ function SoftwareDevelopment() {
       {/* {{-- ===========================================
                     OUTSOURCING WHY VED
     =========================================== --}} */}
-      <section id="outsourcing-why">
+      <section id="outsourcing-why" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">
@@ -355,7 +355,7 @@ function SoftwareDevelopment() {
       {/* {{-- ===========================================
                   DEVELOPMENT PROCESS
     =========================================== --}} */}
-      <section id="outsourcing-development" className="bg-light">
+      <section id="outsourcing-development" className="bg-light fade-in-right">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">
@@ -508,7 +508,7 @@ function SoftwareDevelopment() {
       {/* {{-- ===========================================
                         ENQUIRY
     =========================================== --}} */}
-      <section id="outsourcing-expertise" className="bg-light">
+      <section id="outsourcing-expertise" className="bg-light fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">

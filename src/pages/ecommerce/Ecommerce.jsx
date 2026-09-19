@@ -49,7 +49,7 @@ function Ecommerce() {
       </div>
 
       {/* <----------------------------------------------- Industries first section ------------------------------------------> */}
-      <section id="IndustriesMain">
+      <section id="IndustriesMain" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="IndustriesMain-section-head">
@@ -124,7 +124,7 @@ function Ecommerce() {
         </div>
       </section>
       {/* <--------------------------------------------- Industries second section -----------------------------------------> */}
-      <section id="health">
+      <section id="health" className="fade-in-right">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">
@@ -232,7 +232,7 @@ function Ecommerce() {
       </section>
 
       {/* <------------------------------------------- Components ----------------------------------------------------------- */}
-      <section id="industry_component" className="bg-light">
+      <section id="industry_component" className="bg-light fade-in-left">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">
@@ -275,7 +275,7 @@ function Ecommerce() {
       </section>
 
       {/* <----------------------------------------- Software Solutions section ---------------------------------------- */}
-      <section id="softsolutions">
+      <section id="softsolutions" className="fade-up">
         <div className="container-fluid">
           <div className="container">
             <div className="softsolutions-section-head">
@@ -425,7 +425,7 @@ function Ecommerce() {
 
       <ContactForm />
 
-      <section id="enterprise-faq">
+      <section id="enterprise-faq" className="fade-in-right">
         <div className="container-fluid">
           <div className="container">
             <div className="section-head">
