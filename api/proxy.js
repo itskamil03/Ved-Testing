@@ -1,72 +1,67 @@
-export default async function handler(req, res) {
-  // Set CORS headers
-  res.setHeader('Access-Control-Allow-Credentials', 'true');
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
-  res.setHeader(
-    'Access-Control-Allow-Headers',
-    'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, Authorization'
-  );
+export const config = {
+  runtime: 'edge',
+};
 
-  if (req.method === 'OPTIONS') {
-    res.status(200).end();
-    return;
+export default async function handler(request) {
+  const url = new URL(request.url);
+
+  // Handle CORS preflight
+  if (request.method === 'OPTIONS') {
+    return new Response(null, {
+      status: 204,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers': '*',
+      },
+    });
   }
 
-  const BACKEND_HOST = 'http://187.77.184.141:8019';
-
-  // Construct target URL
-  let targetPath = req.url || '/';
-  if (targetPath.startsWith('/api/proxy')) {
-    const urlObj = new URL(req.url, 'http://localhost');
-    const pathParam = urlObj.searchParams.get('path');
-    if (pathParam) {
-      urlObj.searchParams.delete('path');
-      const remainingSearch = urlObj.searchParams.toString();
-      targetPath = pathParam + (remainingSearch ? (pathParam.includes('?') ? `&${remainingSearch}` : `?${remainingSearch}`) : '');
-    }
+  // Extract the target path
+  let targetPath = url.searchParams.get('path') || url.pathname;
+  url.searchParams.delete('path');
+  const remainingQuery = url.searchParams.toString();
+  if (remainingQuery) {
+    targetPath += (targetPath.includes('?') ? '&' : '?') + remainingQuery;
   }
 
-  const targetUrl = `${BACKEND_HOST}${targetPath.startsWith('/') ? targetPath : `/${targetPath}`}`;
+  const backendUrl = `http://187.77.184.141:8019${targetPath.startsWith('/') ? targetPath : `/${targetPath}`}`;
 
   try {
-    const headers = {};
-    for (const [key, value] of Object.entries(req.headers)) {
+    const forwardHeaders = new Headers();
+    request.headers.forEach((value, key) => {
       const lower = key.toLowerCase();
-      if (
-        lower !== 'host' &&
-        lower !== 'connection' &&
-        lower !== 'content-length' &&
-        lower !== 'x-forwarded-host'
-      ) {
-        headers[key] = value;
+      if (lower !== 'host' && lower !== 'x-forwarded-host') {
+        forwardHeaders.set(key, value);
       }
-    }
+    });
 
-    const fetchOptions = {
-      method: req.method,
-      headers: headers,
-    };
+    const bodyBuffer = (request.method !== 'GET' && request.method !== 'HEAD')
+      ? await request.arrayBuffer()
+      : undefined;
 
-    if (req.method !== 'GET' && req.method !== 'HEAD') {
-      if (typeof req.body === 'string' || Buffer.isBuffer(req.body)) {
-        fetchOptions.body = req.body;
-      } else if (req.body && typeof req.body === 'object') {
-        fetchOptions.body = JSON.stringify(req.body);
-      }
-    }
+    const response = await fetch(backendUrl, {
+      method: request.method,
+      headers: forwardHeaders,
+      body: bodyBuffer,
+    });
 
-    const backendRes = await fetch(targetUrl, fetchOptions);
-    const data = await backendRes.arrayBuffer();
+    const responseHeaders = new Headers(response.headers);
+    responseHeaders.set('Access-Control-Allow-Origin', '*');
+    responseHeaders.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    responseHeaders.set('Access-Control-Allow-Headers', '*');
 
-    res.status(backendRes.status);
-    const contentType = backendRes.headers.get('content-type');
-    if (contentType) {
-      res.setHeader('Content-Type', contentType);
-    }
-    res.send(Buffer.from(data));
+    return new Response(response.body, {
+      status: response.status,
+      headers: responseHeaders,
+    });
   } catch (err) {
-    console.error('Vercel proxy handler error:', err);
-    res.status(500).json({ error: 'Proxy error', message: err.message });
+    return new Response(JSON.stringify({ error: 'Proxy request failed', details: err.message }), {
+      status: 502,
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      },
+    });
   }
 }

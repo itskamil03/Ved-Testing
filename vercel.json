@@ -41,6 +41,10 @@
       "destination": "/api/proxy?path=/user"
     },
     {
+      "source": "/api/proxy",
+      "destination": "/api/proxy"
+    },
+    {
       "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
