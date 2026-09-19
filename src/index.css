@@ -18,13 +18,25 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  /* 1rem = 10px */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#root {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
-/* body {
-  overflow-x: hidden;
-} */
 
