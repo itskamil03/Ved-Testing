@@ -715,6 +715,36 @@ const ChatWidget: React.FC = () => {
       margin: 0 !important;
     }
 
+    .${uniquePrefix}backBtn {
+      display: none !important;
+      align-items: center !important;
+      gap: 5px !important;
+      background: rgba(255, 255, 255, 0.16) !important;
+      border: 1px solid rgba(255, 255, 255, 0.28) !important;
+      color: #ffffff !important;
+      padding: 6px 12px 6px 8px !important;
+      border-radius: 9999px !important;
+      cursor: pointer !important;
+      font-size: 13px !important;
+      font-weight: 600 !important;
+      margin-right: 4px !important;
+      transition: all 0.15s ease !important;
+      outline: none !important;
+      flex-shrink: 0 !important;
+    }
+
+    .${uniquePrefix}backBtn:hover,
+    .${uniquePrefix}backBtn:active {
+      background: rgba(255, 255, 255, 0.28) !important;
+      transform: translateX(-2px) !important;
+    }
+
+    .${uniquePrefix}backBtn svg {
+      width: 18px !important;
+      height: 18px !important;
+      color: #ffffff !important;
+    }
+
     .${uniquePrefix}closeBtn {
       background: none !important;
       border: none !important;
@@ -1341,6 +1371,10 @@ const ChatWidget: React.FC = () => {
         font-size: 12px !important;
         padding: 5px 11px !important;
       }
+
+      .${uniquePrefix}backBtn {
+        display: inline-flex !important;
+      }
     }
   `
 
@@ -1388,6 +1422,17 @@ const ChatWidget: React.FC = () => {
           {/* Header */}
           <div className={`${uniquePrefix}header`}>
             <div className={`${uniquePrefix}headerLeft`}>
+              <button
+                className={`${uniquePrefix}backBtn`}
+                onClick={() => setOpen(false)}
+                aria-label="Back to website"
+                title="Back to website"
+              >
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+                </svg>
+                <span>Back</span>
+              </button>
               <div className={`${uniquePrefix}headerAvatar`}>
                 <img src={chatbotAvatar} alt="Chatbot" />
               </div>

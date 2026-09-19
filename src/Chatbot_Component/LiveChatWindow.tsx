@@ -217,12 +217,33 @@ const LiveChatWindow: React.FC<LiveChatWindowProps> = ({
         justifyContent: 'space-between',
         alignItems: 'center'
       }}>
-        <div>
-          <div style={{ fontSize: '14px', fontWeight: '600' }}>
-            Live Chat
-          </div>
-          <div style={{ fontSize: '12px', opacity: 0.9 }}>
-            Connected to support
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <button
+            onClick={endChat}
+            style={{
+              background: 'rgba(255, 255, 255, 0.2)',
+              border: '1px solid rgba(255, 255, 255, 0.35)',
+              color: 'white',
+              cursor: 'pointer',
+              fontSize: '13px',
+              fontWeight: 600,
+              padding: '5px 10px',
+              borderRadius: '9999px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '4px'
+            }}
+            aria-label="Back to website"
+          >
+            ← Back
+          </button>
+          <div>
+            <div style={{ fontSize: '14px', fontWeight: '600' }}>
+              Live Chat
+            </div>
+            <div style={{ fontSize: '12px', opacity: 0.9 }}>
+              Connected to support
+            </div>
           </div>
         </div>
         <button
@@ -232,9 +253,10 @@ const LiveChatWindow: React.FC<LiveChatWindowProps> = ({
             border: 'none',
             color: 'white',
             cursor: 'pointer',
-            fontSize: '16px',
+            fontSize: '18px',
             padding: '4px'
           }}
+          aria-label="Close"
         >
           ×
         </button>
