@@ -6,6 +6,10 @@ export const buildApiUrl = (path: string): string => {
   const normalizedPath = path.startsWith('/') ? path : `/${path}`
   // If an explicit API base URL is configured in environment, use it
   if (API_BASE_URL) {
+    // If the browser is on HTTPS, don't use insecure http:// base URL directly (causes browser Mixed Content block)
+    if (typeof window !== 'undefined' && window.location.protocol === 'https:' && API_BASE_URL.startsWith('http://')) {
+      return normalizedPath
+    }
     return `${API_BASE_URL}${normalizedPath}`
   }
   // Otherwise use relative paths (works with Vite dev proxy and Vercel/Netlify rewrites)

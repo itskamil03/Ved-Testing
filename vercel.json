@@ -2,46 +2,46 @@
   "rewrites": [
     {
       "source": "/chat/:match*",
-      "destination": "http://187.77.184.141:8019/chat/:match*"
+      "destination": "/api/proxy?path=/chat/:match*"
     },
     {
       "source": "/chat",
-      "destination": "http://187.77.184.141:8019/chat"
+      "destination": "/api/proxy?path=/chat"
     },
     {
       "source": "/faq-suggestions/:match*",
-      "destination": "http://187.77.184.141:8019/faq-suggestions/:match*"
+      "destination": "/api/proxy?path=/faq-suggestions/:match*"
     },
     {
       "source": "/faq-suggestions",
-      "destination": "http://187.77.184.141:8019/faq-suggestions"
+      "destination": "/api/proxy?path=/faq-suggestions"
     },
     {
       "source": "/tickets/:match*",
-      "destination": "http://187.77.184.141:8019/tickets/:match*"
+      "destination": "/api/proxy?path=/tickets/:match*"
     },
     {
       "source": "/tickets",
-      "destination": "http://187.77.184.141:8019/tickets"
+      "destination": "/api/proxy?path=/tickets"
     },
     {
       "source": "/auth/:match*",
-      "destination": "http://187.77.184.141:8019/auth/:match*"
+      "destination": "/api/proxy?path=/auth/:match*"
     },
     {
       "source": "/auth",
-      "destination": "http://187.77.184.141:8019/auth"
+      "destination": "/api/proxy?path=/auth"
     },
     {
       "source": "/user/:match*",
-      "destination": "http://187.77.184.141:8019/user/:match*"
+      "destination": "/api/proxy?path=/user/:match*"
     },
     {
       "source": "/user",
-      "destination": "http://187.77.184.141:8019/user"
+      "destination": "/api/proxy?path=/user"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
   ]
