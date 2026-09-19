@@ -788,49 +788,64 @@
   .industries-pin-stage {
     top: 65px;
     height: calc(100vh - 65px);
-    padding: 10px 0.6rem;
+    height: calc(100dvh - 65px);
+    padding: 8px 0.5rem;
     box-sizing: border-box;
   }
 
   .industries-heading {
-    top: 10px;
+    top: 8px;
   }
 
   .industries-heading h2 {
-    font-size: 1.35rem;
+    font-size: clamp(1.15rem, 4.5vw, 1.4rem);
   }
 
   .industries-heading .rule {
-    width: 50px;
+    width: 48px;
     height: 2.5px;
-    margin: 0.35rem auto 0;
+    margin: 0.3rem auto 0;
   }
 
+  /* 2-Column Mobile Grid: 4 cards above (2x2), Ball in middle, 4 cards below (2x2) */
   .industries-grid {
     position: absolute;
     left: 50%;
     top: calc(50% + 20px);
     transform: translate(-50%, -50%);
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    row-gap: 8px;
-    column-gap: 8px;
-    max-width: 420px;
+    grid-template-rows: auto auto auto auto auto;
+    row-gap: clamp(5px, 1vh, 8px);
+    column-gap: clamp(6px, 2vw, 10px);
+    max-width: 410px;
     width: 95%;
     padding: 0;
+    align-items: center;
+    justify-items: center;
   }
 
-  .industries-cell,
-  .industries-center-cell {
+  .industries-cell {
     grid-column: span 1 !important;
     grid-row: auto !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
+  /* Central Ball in the Middle (Row 3, spanning both columns) */
   .industries-center-cell {
     grid-column: 1 / span 2 !important;
-    order: -1;
-    margin-bottom: 0.25rem;
-    height: 80px;
+    grid-row: auto !important;
+    order: 0 !important;
+    height: clamp(75px, 11vh, 95px);
+    margin: 0.15rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 15;
   }
 
   .cell-top-center,
@@ -841,34 +856,34 @@
     transform: none !important;
   }
 
-  /* Scaled down 3D orbital system on mobile so it fits seamlessly */
+  /* Scaled down 3D orbital system in central zone */
   .orbital-system-3d {
-    width: 140px !important;
-    height: 140px !important;
+    width: 145px !important;
+    height: 145px !important;
   }
 
   .orbital-ambient-glow {
-    width: 130px !important;
-    height: 130px !important;
+    width: 135px !important;
+    height: 135px !important;
   }
 
-  .orbit-ellipse-1 { width: 140px !important; height: 65px !important; }
-  .orbit-ellipse-2 { width: 150px !important; height: 70px !important; }
-  .orbit-ellipse-3 { width: 160px !important; height: 60px !important; }
-  .orbit-ellipse-4 { width: 135px !important; height: 70px !important; }
-  .orbit-ellipse-5 { width: 155px !important; height: 75px !important; }
-  .orbit-ellipse-6 { width: 145px !important; height: 65px !important; }
-  .orbit-ellipse-7 { width: 165px !important; height: 75px !important; }
+  .orbit-ellipse-1 { width: 145px !important; height: 68px !important; }
+  .orbit-ellipse-2 { width: 155px !important; height: 72px !important; }
+  .orbit-ellipse-3 { width: 165px !important; height: 62px !important; }
+  .orbit-ellipse-4 { width: 140px !important; height: 72px !important; }
+  .orbit-ellipse-5 { width: 160px !important; height: 78px !important; }
+  .orbit-ellipse-6 { width: 150px !important; height: 68px !important; }
+  .orbit-ellipse-7 { width: 170px !important; height: 78px !important; }
 
-  .ring-primary { width: 135px !important; height: 135px !important; }
-  .ring-secondary { width: 155px !important; height: 155px !important; }
-  .ring-tertiary { width: 175px !important; height: 175px !important; }
-  .ring-inner-gyro { width: 105px !important; height: 105px !important; }
+  .ring-primary { width: 140px !important; height: 140px !important; }
+  .ring-secondary { width: 160px !important; height: 160px !important; }
+  .ring-tertiary { width: 180px !important; height: 180px !important; }
+  .ring-inner-gyro { width: 110px !important; height: 110px !important; }
 
-  .arc-cyan { width: 125px !important; height: 125px !important; }
-  .arc-purple { width: 145px !important; height: 145px !important; }
-  .arc-emerald { width: 130px !important; height: 130px !important; }
-  .arc-rose { width: 150px !important; height: 150px !important; }
+  .arc-cyan { width: 130px !important; height: 130px !important; }
+  .arc-purple { width: 150px !important; height: 150px !important; }
+  .arc-emerald { width: 135px !important; height: 135px !important; }
+  .arc-rose { width: 155px !important; height: 155px !important; }
 
   .industries-orb-wrap {
     width: 44px !important;
@@ -876,89 +891,129 @@
   }
 
   .industries-orb-halo {
-    width: 60px !important;
-    height: 60px !important;
+    width: 62px !important;
+    height: 62px !important;
   }
 
-  /* Mobile compact cards */
+  /* Mobile compact cards - perfectly readable & balanced */
   .industries-card {
+    width: 100%;
     max-width: 100%;
-    min-height: 70px;
-    padding: 0.45rem 0.55rem;
+    min-height: clamp(58px, 8.2vh, 68px);
+    padding: clamp(0.35rem, 0.8vh, 0.48rem) clamp(0.4rem, 1.4vw, 0.55rem);
     border-radius: 14px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
   }
 
   .industries-card.featured {
     max-width: 100%;
-    min-height: 70px;
+    min-height: clamp(58px, 8.2vh, 68px);
   }
 
   .industries-card .icon {
-    width: 26px;
-    height: 26px;
-    border-radius: 8px;
-    margin-bottom: 0.2rem;
+    width: 24px;
+    height: 24px;
+    border-radius: 7px;
+    margin-bottom: 0.15rem;
   }
 
   .industries-card .icon svg {
-    width: 13px;
-    height: 13px;
+    width: 12px;
+    height: 12px;
     stroke-width: 1.8;
   }
 
   .industries-card h3 {
-    font-size: 0.68rem;
-    letter-spacing: 0.06em;
-    margin: 0 0 0.12rem 0;
-    line-height: 1.2;
+    font-size: clamp(0.63rem, 2.4vw, 0.7rem);
+    letter-spacing: 0.05em;
+    margin: 0 0 0.1rem 0;
+    line-height: 1.18;
   }
 
   .industries-card p {
-    font-size: 0.58rem;
-    line-height: 1.2;
+    font-size: clamp(0.53rem, 1.9vw, 0.59rem);
+    line-height: 1.15;
   }
 }
 
-/* 4. Small Mobile Phones (<= 400px or short height screens) */
-@media (max-width: 400px), (max-height: 660px) and (max-width: 768px) {
+/* 4. Small Mobile Phones (<= 380px or short height screens) */
+@media (max-width: 380px), (max-height: 670px) and (max-width: 768px) {
   .industries-heading h2 {
-    font-size: 1.15rem;
+    font-size: 1.12rem;
   }
 
   .industries-grid {
-    max-width: 340px;
-    row-gap: 6px;
-    column-gap: 6px;
+    max-width: 330px;
+    row-gap: 4px;
+    column-gap: 5px;
+    top: calc(50% + 18px);
   }
 
   .industries-center-cell {
-    height: 65px;
-    margin-bottom: 0.15rem;
+    height: 64px;
+    margin: 0.08rem 0;
+  }
+
+  .orbital-system-3d {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .orbital-ambient-glow {
+    width: 110px !important;
+    height: 110px !important;
+  }
+
+  .orbit-ellipse-1 { width: 120px !important; height: 55px !important; }
+  .orbit-ellipse-2 { width: 130px !important; height: 58px !important; }
+  .orbit-ellipse-3 { width: 140px !important; height: 50px !important; }
+  .orbit-ellipse-4 { width: 115px !important; height: 58px !important; }
+  .orbit-ellipse-5 { width: 135px !important; height: 62px !important; }
+  .orbit-ellipse-6 { width: 125px !important; height: 55px !important; }
+  .orbit-ellipse-7 { width: 145px !important; height: 62px !important; }
+
+  .ring-primary { width: 115px !important; height: 115px !important; }
+  .ring-secondary { width: 130px !important; height: 130px !important; }
+  .ring-tertiary { width: 145px !important; height: 145px !important; }
+  .ring-inner-gyro { width: 90px !important; height: 90px !important; }
+
+  .arc-cyan { width: 105px !important; height: 105px !important; }
+  .arc-purple { width: 120px !important; height: 120px !important; }
+  .arc-emerald { width: 110px !important; height: 110px !important; }
+  .arc-rose { width: 125px !important; height: 125px !important; }
+
+  .industries-orb-wrap {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .industries-orb-halo {
+    width: 48px !important;
+    height: 48px !important;
   }
 
   .industries-card {
-    min-height: 62px;
-    padding: 0.35rem 0.45rem;
-    border-radius: 12px;
+    min-height: 52px;
+    padding: 0.28rem 0.38rem;
+    border-radius: 10px;
   }
 
   .industries-card .icon {
-    width: 22px;
-    height: 22px;
-    margin-bottom: 0.15rem;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0.1rem;
   }
 
   .industries-card .icon svg {
-    width: 11px;
-    height: 11px;
+    width: 10px;
+    height: 10px;
   }
 
   .industries-card h3 {
-    font-size: 0.62rem;
+    font-size: 0.58rem;
   }
 
   .industries-card p {
-    font-size: 0.52rem;
+    font-size: 0.49rem;
   }
 }
