@@ -282,9 +282,9 @@
     padding-bottom: 8px !important;
   }
 
-  /* Section Heading & Slogan: 100% fully visible without clipping */
+  /* Section Heading & Slogan: 100% fully visible with 0.5 inches (48px) gap to the cards deck */
   .cservice-stack-head {
-    margin-bottom: 10px !important;
+    margin-bottom: 48px !important;
     padding-top: 0 !important;
     flex-shrink: 0 !important;
   }
